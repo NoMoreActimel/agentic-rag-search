@@ -1,0 +1,28 @@
+name: agentic-rag
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Data
+      - datasets
+      - requests
+      - beautifulsoup4
+      - lxml
+      # LLM
+      - google-genai
+      - python-dotenv
+      # Indexing
+      - bm25s
+      - faiss-cpu
+      - PyStemmer
+      # Core
+      - pandas
+      - pyarrow
+      - numpy
+      # Utils
+      - tenacity
+      - tqdm
+      - pydantic

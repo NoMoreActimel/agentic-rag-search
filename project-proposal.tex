@@ -1,0 +1,328 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{algpseudocode}
+
+\title{Process-Level Feedback and Quality Metrics for Agentic Information Search}\author{Vedant Jagtap, Sergey Sedov, Adhiraj Singh \\
+New York University \\
+\texttt{vsj7589, ss19021, as19687}@nyu.edu}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We explore how verifier feedback affects the quality of Agentic Information Retrieval, comparing different retrieval and verification methods on local index and question-answer pairs for video transcripts. Current benchmarks often prioritize end-to-end task completion, treating the agent's intermediate reasoning and retrieval steps as a black box. However, agents frequently overfit to the retrieved information, even if it was not relevant to the actual task. This study investigates to which extent process feedback provided by an LLM-as-a-Judge can improve the final agent performance. We compare its effect on Exact-Match, BM-25 and Embedding-model retrieval methods. On the other hand, we explore query-independent application of LLM verifiers, generating chunk quality scores to deal with pitfalls of similarity-based retrieval. To provide clear experimental results without pre-training knowledge contamination, we base our experiments on the dataset of recent Lex Fridman's podcast transcripts. We generate Question-Answer pairs based on common information between episodes.
+\end{abstract}
+
+
+
+
+\section{Introduction}
+Modern AI agents increasingly rely on iterative tool-use to solve complex information-seeking tasks. However, agents often overfit to retrieved information provided in context, poorly filtering only relevant chunks as the context length grows.
+We hypothesize that there is a generator-verifier gap: LLMs may struggle to retrieve only the most relevant chunks in a single pass but perform better at verifying and ranking the quality of those chunks when prompted to do so. This project aims to quantify this gap, applying verification on two different stages. Firstly, we experiment with providing LLM-as-a-Judge feedback in context after each retrieval step. Secondly, we move towards verifications during the retrieval stage. 
+
+\noindent
+In particular, while web search benefits from established quality signals like PageRank, standard Retrieval-Augmented Generation (RAG) relies on similarity scores. However, index used for RAG may consist of low-quality chunks that are hard to filter with simple methods. For instance, video transcripts may include ads chunks which are regularly non-relevant to queries of the same topic, unless queries target ads specifically. In such simple setup, similarity scores would most likely fail to capture specifics.
+
+\noindent
+In this work we assign chunk quality scores using pre-trained LLM verifier. It is also possible to train smaller model to perform such task more effectively, significantly cutting down costs of retrieval due to index pre-processing. These steps should allow to scale retrieval systems that work on relatively raw textual data absent of rich graph structure which web pages provide.
+
+
+% \section{Introduction}
+% As Large Language Model (LLM) agents are increasingly deployed in autonomous research roles, the paradigm of Retrieval-Augmented Generation (RAG) is shifting from static, single-turn retrieval toward iterative, multi-step search. Despite this progress, current agentic systems suffer from a significant failure mode: agents often lack the "discernment" to reject irrelevant context. Because agents are prompted to answer based on provided context, they frequently overfit to noise, incorporating irrelevant information from retrieved chunks (such as advertisements or tangentially related anecdotes) simply because the chunks were retrieved by a similarity-based search engine.This project investigates the potential of a "process-level" judge to intervene during the retrieval loop. We argue that there is a fundamental gap between an LLM's ability to retrieve information and its ability to verify it. By separating the agent (the actor) from the verifier (the judge), we can implement a feedback loop that critiques the quality of retrieved data before it is incorporated into the final answer. Furthermore, we address the lack of query-independent quality signals in RAG systems—a sharp contrast to web search, which utilizes signals like PageRank. We propose a methodology for generating intrinsic chunk quality scores using verifiers to improve the robustness of retrieval systems.
+
+\section{Related Work and Novelty}
+
+\subsection{Agentic and Iterative Retrieval}
+The transition from single-turn Retrieval-Augmented Generation (RAG) to agentic, multi-step search has been facilitated by frameworks that treat retrieval as tool-use \citep{schick2023toolformerlanguagemodelsteach}. Recent benchmarks like \textit{InfoDeepSeek} \citep{xi2025infodeepseekbenchmarkingagenticinformation} and \textit{RAGCap-Bench} \citep{lin2025ragcapbenchbenchmarkingcapabilitiesllms} have begun to evaluate how agents navigate complex information environments. However, these works primarily evaluate the end result (outcome-based) rather than the process (step-by-step reasoning). Our work builds on these foundations but introduces a feedback loop during the intermediate reasoning steps.
+
+\subsection{LLM-as-a-Judge and Process Feedback}
+The use of LLMs to evaluate other models, termed LLM-as-a-Judge \citep{zheng2023judgingllmasajudgemtbenchchatbot}, has traditionally focused on scoring final outputs. Research into Process-supervised Reward Models (PRMs) \citep{lightman2023letsverifystepstep} suggests that providing feedback on intermediate reasoning steps significantly improves performance in mathematical and logical domains. We extend this to the domain of information retrieval, investigating whether process-level critique of retrieved chunks by a separate judge LLM can outperform the default agent decision making, as agents frequently demonstrate biases towards retrieved information noise \citep{liu2023lostmiddlelanguagemodels}.
+
+\subsection{Quality-Aware Retrieval and Noise Mitigation}
+Standard RAG systems rely heavily on semantic similarity, which often fails to distinguish between high-quality content and "clean" noise (e.g., advertisements or filler) \citep{Cuconasu_2024}. While web search utilizes exogenous signals like PageRank, local indices often lack such quality metrics. We bridge this gap by exploring query-independent quality scores, effectively treating an LLM as a zero-shot content verifier to preprocess the retrieval index.
+
+\subsection{Gap Analysis and Novelty}
+We stem from the hypothesis of existing generator-verifier gap, meaning that agents that are prompted to answer the question are more biased towards retrieved information than judges that are prompted to score it. We aim to properly evaluate this hypothesis, expanding it further on by moving LLM verification to the retrieval stage.
+The novelty of our project lies in three specific areas:
+\begin{enumerate}
+\item \textbf{RAG evaluation:}
+To ensure the validity of our claims, we generate a Q\&A dataset of Lex Fridman podcast transcripts to prevent parametric memory contamination, a known issue of RAG evaluation. 
+\item \textbf{Process vs. Outcome:} Unlike existing agentic RAG frameworks that evaluate task completion, we quantify the generator-verifier gap by providing feedback during the retrieval loop.
+\item \textbf{Query-Independent Index Scoring:} We propose three methodologies to generate chunk quality scores for raw textual data (podcast transcripts) which lack the hyperlink structure. We associate this step with using LLM verifiers on the retrieval stage. Note that we plan to experiment only with the simplest methodology out of three.
+\end{enumerate}
+
+% \section{Related Work and Novelty}The \textit{Agent-as-a-Judge} framework \citep{zhuge2024agentasajudgeevaluateagentsagents} demonstrated that agents can be effective evaluators of end-to-end task success. We extend this work by moving the judge from the "end-of-task" evaluation to the "intra-task" process level. Unlike \textit{RAGCap-Bench} \citep{lin2025ragcapbenchbenchmarkingcapabilitiesllms} or \textit{InfoDeepSeek} \citep{xi2025infodeepseekbenchmarkingagenticinformation}, which focus on benchmarking existing systems, our work focuses on the comparative effectiveness of different feedback loops and the introduction of static quality metrics for RAG chunks.A major challenge in benchmarking agentic RAG is "parametric memory contamination," where the LLM already knows the answer from its training data (e.g., Wikipedia). To ensure a clean room experiment, we utilize the \textit{YouTube-Commons} project \citep{langlais2025commoncorpuslargestcollection} and specifically focus on recent transcripts from the Lex Fridman Podcast. This dataset represents "fresh" knowledge that falls outside the knowledge cutoff of many models, allowing us to evaluate true retrieval and reasoning capabilities.
+
+
+
+
+\section{Methodology}
+Our methodology stems from the dataset selection, 
+
+\subsection{Dataset and Indexing}
+We will construct a local search index consisting of approximately 450 Lex Fridman podcast transcripts. This includes ~350 auto-generated transcripts that are already published as datasets and 100+ high-fidelity handwritten transcripts from the official website. Additionally, we separate dataset into two parts, by model knowledge cut-off date. This allows us to analyze the effect of contamination in case of YouTube transcripts data. 
+
+\subsubsection{Synthetic Q\&A Generation}
+To evaluate the system, we will generate a set of ~200 Question-Answer pairs. Our approach is to manually select topics, utilizing LLMs on summaries of episodes with pre-defined retrieval guidelines. Thus, we assume that this methodology would provide challenging tasks for RAG evaluation on index created from raw chunked data. We will use Gemini 2.5 Flash to analyze the full text of episodes and their summaries and generate multi-hop questions that require information found in specific chunks. We will focus on "cross-episode" queries, such as: "How does the guest in episode A's view on artificial consciousness contrast with the guest in episode B?" or "What recurring argument about the Fermi Paradox does Lex bring up across his interviews with physicists?". The following section describes dataset generation in detail.
+
+\section*{Agentic RAG Dataset Construction Algorithms}
+
+Let $\mathcal{C}$ be the corpus of full transcripts, and $\mathcal{S} = \{s_1, s_2, \dots, s_n\}$ be the set of high-level summaries for each episode. We specifically extract metadata regarding Guests $\mathcal{G} = \{G_1, G_2, \dots, G_n\}$, entities $E$ and details $D$. Entities are unique identifiers (Person, Project, or Concept) that exists in $\mathcal{S}_i$ and serves as a search key to retrieve $\mathcal{C}_j$. Details are specific, high-granularity facts or perspectives within $\mathcal{S}$. We utilize high-reasoning LLM used for automated topic selection and question generation, based on manually selected inputs to algorithms. For each question type, we define the Ground Truth (GT) as the tuple $(Q, A, \text{Ref})$, where $A$ is the final answer and $\text{Ref}$ is the set of required transcript segments.
+
+% \section*{Agentic RAG Dataset Construction: Logic \& Examples}
+
+% The following algorithms define the precise generation of ground truth $(Q, A, \text{Ref})$ tuples. This framework ensures that an agentic RAG system must perform iterative retrieval to arrive at the correct answer.
+
+\subsection*{Type 1: Multi-Hop Bridge Questions}
+Objective: Create a dependency where Episode $j$ can only be identified by a specific entity $E$ found in Episode $i$. These require the agent to find one entity to unlock the next. The agent cannot find the final answer without first retrieving and processing an intermediate piece of information.
+
+\noindent
+Example: 
+\begin{itemize}
+    \item \textbf{$Q$:} ``What does the creator of the 'Atlas' humanoid robot think about the 'uncanny valley' effect?''
+    \item \textbf{Step 1 (Iterative):} Search 'Atlas robot' $\rightarrow$ Identify Marc Raibert (Episode 42).
+    \item \textbf{Step 2 (Iterative):} Search 'Marc Raibert uncanny valley' $\rightarrow$ Retrieve answer.
+    \item \textbf{A:} He believes it is a distraction and focuses on functional movement over human likeness.
+\end{itemize}
+
+\noindent
+Algorithm:
+\begin{algorithmic}[1]
+\State \textbf{Input:} Episode Summaries $\mathcal{S}$, Guest $G$.
+\State \textbf{Select:} $s_i, s_j \in \mathcal{S}$ where $s_i$ contains entity $E_i$ associated with the guest $G$, and $s_j$ is one of the interviews of the same guest where they mentioned detail $D$.
+\State \textbf{Prompt:} ``Formulate $Q$ asking for a detail $D \in s_j$ by referencing $E_i \in s_i$ without naming the guest.''
+\end{algorithmic}
+
+\subsection*{Type 2: Comparative Viewpoint}
+The objective is to find a shared topic $\theta$ discussed by Guest $G_1$ and Guest $G_2$.
+
+\noindent
+Example:
+\begin{itemize}
+    \item \textbf{$Q$:} ``Contrast Yann LeCun's and Andrej Karpathy's views on the necessity of 'world models' for AGI.''
+    \item \textbf{Step 1:} Retrieve LeCun on LLM limitations.
+    \item \textbf{Step 2:} Retrieve Karpathy on Software 2.0/LLM scaling.
+    \item \textbf{A:} LeCun argues LLMs lack world models; Karpathy views them as a foundational OS that can simulate reasoning via scale.
+\end{itemize}
+
+\noindent
+Algorithm:
+\begin{algorithmic}[1]
+\State \textbf{Input:} Episode Summaries $\mathcal{S}$, guests $G_1$, $G_2$, shared topic $\theta$.
+\State \textbf{Select:} $\{s_i, s_j\}$ where both guests discuss topic $\theta$ but reach different conclusions.
+\State \textbf{Prompt:} ``Identify the differences in opinions between Guest $A$ and Guest $B$ regarding $\theta$.''
+\end{algorithmic}
+
+\subsection*{Type 3: Temporal Evolution}
+The objective is to track a change in a guest's position over time $t$. Agent will need to understand total amount of episodes and handle metadata in retrieval queries. 
+
+% Objective: Evaluate the agent's ability to handle metadata (dates) and state-tracking.
+
+\noindent
+Example:
+    \begin{itemize}
+        \item \textbf{$Q$:} ``How did Elon Musk's timeline for a crewed Mars mission change between his 2021 and 2024 interviews?''
+        \item \textbf{Step 1:} Search 'Elon Musk Mars 2021'
+        \item \textbf{Step 2:} Search 'Elon Musk Mars 2024'
+        \item \textbf{A:} The timeline became more aggressive, shifting from a 5–10 year window to 3–5 years.
+    \end{itemize}
+
+\noindent
+Algorithm:
+\begin{algorithmic}[1]
+\State \textbf{Input:} Summaries $\mathcal{S}$ for Guest $G_k$ at $t_1, t_2, \dots, t_n$.
+\State \textbf{Select:} A claim $C$ that shifted between $t_{early}$ and $t_{late}$.
+\State \textbf{Prompt:} ``How did Guest $G_k$'s prediction for [Event] change between their first and most recent appearance?''
+\end{algorithmic}
+
+\subsection*{Type 4: Quantitative Aggregation}
+Objective: Force exhaustive retrieval across the entire corpus to find an extremum.
+
+\noindent
+Example:
+\begin{itemize}
+    \item \textbf{$Q$:} ``Among all AI safety experts interviewed, who gave the most pessimistic (lowest) probability for human survival post-AGI?''
+    \item \textbf{Step 1:} Search 'Probability human survival AGI'.
+    \item \textbf{Step 2:} Aggregate values (e.g., Eliezer Yudkowsky: 1\%, Max Tegmark: 20\%).
+    \item \textbf{A:} Eliezer Yudkowsky, with a near-zero probability.
+\end{itemize}
+
+Algorithm:
+\begin{algorithmic}[1]
+\State \textbf{Input:} All Summaries $\mathcal{S}$, Topic $\theta$.
+\State \textbf{Select:} Looking at summaries, identify all videos where topic $\theta$ was mentioned. Define a common metric $M$ associated with topic $\theta$ (e.g., probability, years, percentage). Lower down the scope of considered videos.
+\State \textbf{Prompt:} ``Which guest assigned the lowest probability to the 'alignment problem' being solved by 2050?''
+\end{algorithmic}
+
+
+% \subsection*{Type 1: Multi-Hop Bridge Questions ($T_1$)}
+% The objective is to find an entity $E$ in Episode $i$ that serves as the search key for Episode $j$.
+
+% \begin{algorithmic}[1]
+% \State \textbf{Input:} Summaries $\mathcal{S}$
+% \State \textbf{Select:} $s_i, s_j \in \mathcal{S}$ such that $s_i$ mentions a unique entity $E$ (e.g., a specific project, person, or paper) that is the primary subject of $s_j$.
+% \State \textbf{Prompt $G$:} ``Identify a specific detail $D$ about $E$ mentioned in $s_j$. Construct a question $Q$ that asks for $D$ by referencing the context of $E$ found only in $s_i$.''
+% \State \textbf{Verification:} Ensure $Q$ cannot be answered by $s_j$ alone without first identifying $E$ from $s_i$.
+% \State \textbf{Output:} $Q, A = \{D\}, \text{Ref} = \{s_i, s_j\}$
+% \end{algorithmic}
+
+% \subsection*{Type 2: Comparative Viewpoint Analysis ($T_2$)}
+
+% \begin{algorithmic}[1]
+% \State \textbf{Input:} Summaries $\mathcal{S}$
+% \State \textbf{Identify:} $\{s_i, s_j\}$ where $Topic(\theta) \in s_i \cap s_j$ and $Guest(s_i) \neq Guest(s_j)$.
+% \State \textbf{Prompt $G$:} ``Extract the specific stance $P_i$ from $s_i$ and $P_j$ from $s_j$ regarding $\theta$. Formulate $Q$ asking to contrast these stances.''
+% \State \textbf{Refinement:} Query the full transcripts $\mathcal{C}$ using $P_i, P_j$ to ensure the nuance exists beyond the summary.
+% \State \textbf{Output:} $Q, A = \{P_i \text{ vs } P_j\}, \text{Ref} = \{s_i, s_j\}$
+% \end{algorithmic}
+
+% \subsection*{Type 3: Temporal Evolution / State Tracking ($T_3$)}
+% The objective is to track a change in a guest's position over time $t$.
+
+% \begin{algorithmic}[1]
+% \State \textbf{Input:} Summaries $\mathcal{S}$ filtered by $Guest(G_k)$
+% \State \textbf{Sort:} Sub-collection $\{s_{t1}, s_{t2}, \dots, s_{tm}\}$ chronologically.
+% \State \textbf{Select:} A specific claim $C$ made in $s_{t1}$ and updated/contradicted in $s_{tm}$.
+% \State \textbf{Prompt $G$:} ``Construct $Q$ asking how $G_k$'s view on $C$ evolved between $t_1$ and $t_m$.''
+% \State \textbf{Output:} $Q, A = \{C_{t1} \to C_{tm}\}, \text{Ref} = \{s_{t1}, s_{tm}\}$
+% \end{algorithmic}
+
+% \subsection*{Type 5: Quantitative Aggregation / Superlatives ($T_5$)}
+% The objective is to force an exhaustive search across $N$ episodes to find an extremum.
+
+% \begin{algorithmic}[1]
+% \State \textbf{Input:} Summaries $\mathcal{S}$
+% \State \textbf{Define:} A quantitative metric $M$ (e.g., probability of AGI, number of years, cost of a rocket).
+% \State \textbf{Search:} All $s \in \mathcal{S}$ where $M$ is mentioned. Let $K$ be the set of $(Guest, Value)$ pairs.
+% \State \textbf{Prompt $G$:} ``Which guest provided the [highest/lowest] value for $M$?''
+% \State \textbf{Output:} $Q, A = \text{argmax}_{K}(Value), \text{Ref} = \{s \in \mathcal{S} \mid M \in s\}$
+% \end{algorithmic}
+
+\subsection{Retrieval Modules}
+We will implement and compare three distinct retrieval mechanisms:
+\begin{enumerate}
+\item \textbf{Exact-Match (grep):} A baseline utilizing basic string matching. Agent will need to reformulate the question to retrieve all relevant chunks.
+\item \textbf{BM-25:} A probabilistic retrieval model that ranks documents based on term frequency and inverse document frequency.
+\item \textbf{Embedding-Based Retrieval:} A neural approach using vector embeddings to calculate cosine similarity between the query and the text chunks. We will be using default Google text embedding model.
+\end{enumerate}
+
+\subsection{Agent and Verifier Configurations}
+The core of our experiment involves comparing the "actor" agent’s performance across three levels of verification:
+\begin{enumerate}
+\item \textbf{No Judge:} The agent performs an iterative search (using tools to call the retrieval backends) and generates an answer once it deems it has enough information.
+\item \textbf{Judge-in-Process:} After each retrieval call, the verifier reviews the retrieved chunks. The verifier provides natural language feedback to the agent (e.g., "Chunk 2 is an advertisement; ignore it," or "The retrieved info is too broad; try searching for specifically X").
+\item \textbf{Oracle Judge:} Same as above, but the verifier is provided with the ground-truth answer, allowing us to measure the performance ceiling of the feedback mechanism.
+\end{enumerate}
+
+\subsection{Chunk Quality Metrics}
+At this stage we consider using LLM verification during the chunk retrieval stage, rather than on online agent contexts. This allows us to pre-process chunk quality scores for index, without performing these computations on inference time.
+
+We propose using three simple LLM-based chunk quality scores. As this is an extension of our project scope, we plan to experiment primarily with the first method. The following proposals capture the main idea behind every method, while some of them may require significant in-depth exploration towards optimal design. Again, we believe that this rather accounts for further work than falls into the frame of the course project.
+
+\begin{enumerate}
+\item \textbf{Static Ranking:} LLM is prompted to score individual chunks on a scale for "Integrity" (clarity and lack of transcription errors) and "Information Density" (the ratio of meaningful content to filler words or ads). 
+
+\item \textbf{Relative Ranking:} 
+We compute a quality ranking for chunks within each document. Then, we compute document quality ranking based on summaries retrieved from dataset generation stage. We normalize and combine these rankings afterwards to get single chunk quality score. This approach is therefore similar to TF-IDF.
+More specifically, first LLM is given all chunks from single document, its task is to rank them by quality between each other (using the same metrics as in the previous approach). Secondly, we pass all document summaries into another LLM call, prompting to rank them by "quality". Mention that the notion of document quality may differ from chunk quality significantly. Mention also that document ranking with a single LLM call is non-trivial, so instead absolute scores may be considered.
+
+
+\item \textbf{Average Relevance Ranking (Popularity):}
+Embedding model scores an extensive amount of question-chunk pairs, ranking their relevance to each other. Final chunk quality is computed as average embedding model score. It is unclear whether these scores will capture chunk quality greatly. Instead, they may be used to normalize similarity scores at the retrieval stage. Note that this method is generally hardly feasible due to extensive number of evaluations needed. Most likely, we will not experiment with this ranking due to compute limitations. 
+
+% Agent LLM is iteratively retrieving chunks for a large batch of "training set" questions. Verifier LLM scores each of the retrieved chunks based on its relevance to ground-truth answer. Finally, average relevance scores are calculated for each chunk across the entire query set, identifying "globally useful" chunks. 
+\end{enumerate}
+
+
+
+% \subsubsection{Dynamic Quality Score (Sequence-Averaged)}We will run the agent across 100 diverse queries and record every chunk that appears in the retrieval set. The verifier will assign a relevance score $R \in [0, 1]$ for each instance. The final quality score for chunk $c$ is:\begin{equation}Q_{dynamic}(c) = \frac{1}{N} \sum_{i=1}^{N} R_i\end{equation}Chunks that are consistently flagged as "Noise" across different queries (like sponsor segments) will naturally trend toward a zero score, allowing the retriever to penalize them in future runs.\section{Experimental Plan}We will execute a structured grid of experiments to isolate the impact of each component.
+
+% \begin{table}[h]\centering\begin{tabular}{@{}lll@{}}\toprule\textbf{Retriever} & \textbf{Verification Level} & \textbf{Metric} \ \midruleGrep      & No Judge           & Success Rate    \BM25      & Judge-in-Process   & Precision@K     \Vector    & Oracle Judge       & Latency/Cost    \ \bottomrule\end{tabular}\caption{Experimental Grid for Retrieval and Verification Methods.}\end{table}
+
+
+
+
+\section{Experimental Plan}
+We plan to conduct a grid of 36 experiments. These experiments grid will cover 3 different retrieval backends, 3 values for number of iterations performed by agent. Half of the experiments will be using process feedback from LLM-as-a-Judge. Half of the experiments will be using pre-computed chunk quality scores from LLM verifier (type 1). 
+
+\noindent
+We will use Gemini 2.5 Flash for both agent and judges through API and Google text embedding model for index creation. We made a separate pricing review for each stage of the project, choosing the dataset scope under the available compute resources.
+We will measure the following metrics:
+% \section{Evaluation Metrics}
+% To quantify the impact of process-level feedback and the generator-verifier gap, we utilize a multi-dimensional evaluation framework.
+
+% \subsection{Outcome-Based Metrics}
+% \begin{itemize}
+%     \item \textbf{Success Rate (SR):} The percentage of queries where the final answer matches the Ground Truth (GT) facts.
+%     \item \textbf{Judge score (JS):} An LLM-as-a-Judge score (1-5) evaluating whether the final answer is strictly derived from retrieved chunks without hallucinating from parametric memory.
+%     \item \textbf{Completeness:} For multi-hop and comparative questions, the ratio of correctly identified entities or viewpoints to the total required in the GT. Subpart of Judge scoring.
+% \end{itemize}
+
+% \subsection{Process and Efficiency Metrics}
+% \begin{itemize}
+%     \item \textbf{Noise Ratio in Context (NRC):} The percentage of tokens in the final prompt context that originate from non-relevant chunks (e.g., ads or filler).
+%     \item \textbf{Trajectory Length:} The average number of iterative retrieval steps performed by the agent before concluding.
+%     \item \textbf{Feedback Adoption Rate (FAR):} The frequency with which the Agent modifies its retrieval strategy or query formulation following a Judge's intervention.
+%     \item \textbf{Judge ROI:} The ratio of the improvement in Success Rate relative to the increase in total token cost ($\frac{\Delta SR}{\Delta Cost}$).
+% \end{itemize}
+
+% \begin{table}[ht]
+% \centering
+% \small
+% \begin{tabular}{@{}lcccc@{}}
+% \toprule
+% \textbf{Configuration} & \textbf{SR $\uparrow$} & \textbf{Steps $\downarrow$} & \textbf{NRC $\downarrow$} & \textbf{Faithful $\uparrow$} \\ \midrule
+% No Judge (Baseline)    & - & - & - & - \\
+% Judge-in-Process       & - & - & - & - \\
+% Static Quality Score   & - & - & - & - \\
+% Oracle Judge           & - & - & - & - \\ \bottomrule
+% \end{tabular}
+% \caption{Performance comparison across different verification levels and retrieval methods.}
+% \label{tab:results_summary}
+% \end{table}
+
+
+\begin{itemize}
+\item \textbf{Success Rate:} Accuracy of the final answer compared to ground truth.
+\item \textbf{Judge Score:} An LLM-as-a-Judge score (1-5) comparing the final answer with ground truth.
+\item \textbf{Retrieval Precision:} Percentage of retrieved chunks that were actually relevant to the query, evaluated within LLM-as-a-Judge call.
+\item \textbf{Hallucination Rate:} Frequency of the agent including information not present in the index, evaluated within LLM-as-a-Judge call. 
+\item \textbf{Trajectory Length:} The average number of iterative retrieval steps performed by the agent before concluding.
+% \item \textbf{Knowledge contamination:} Performance difference between questions on older and newer podcast episodes. 
+\end{itemize}
+
+
+\section{Plan of Work and Division of Labor}
+
+The project is structured into three primary workstreams to effectively distribute the labor and optimize the effectiveness of weekly team meetings. Each of the team members has their own line of coding tasks, working on integration between them during meetings.
+\begin{itemize}
+    \item \textbf{Branch 1: Data Engineering \& Indexing (Sergey Sedov)} \\
+    Scraping and cleaning YouTube transcripts (filtered by creator, length, and date); generating the synthetic multi-hop Q\&A dataset; and implementing the indexing pipeline for BM-25 and embedding-based models. This branch also includes the implementation of LLM-scored chunk quality metrics.
+    
+    \item \textbf{Branch 2: Agentic Architecture \& Tooling (Vedant Jagtap)} \\
+    Developing the agentic framework and tools for \texttt{grep}, BM-25, and vector retrieval; implementing the \textit{Judge-in-Process} feedback hooks; and optimizing the loop with context caching and batched generation to optimize costs.
+    
+    \item \textbf{Branch 3: Experimental Evaluation (Adhiraj Singh)} \\
+    Automating the 36-experiment grid; calculating metrics (Success Rate, Retrieval Precision, Trajectory Length); and analyzing the delta between baseline agents and those augmented by process-level feedback.
+\end{itemize}
+
+
+% \section{Division of Labor}
+% \begin{itemize}
+% \item \textbf{Vedant Jagtap:} Leading the dataset branch; responsible for scraping, cleaning, and chunking the 450 podcast transcripts, as well as embedding the indices.
+% \item \textbf{Sergey Sedov:} Leading the agentic architecture; responsible for implementing the iterative retrieval tools and the "Judge-in-Process" feedback hooks.
+% \item \textbf{Adhiraj Singh:} Leading the evaluation and quality branch; responsible for the synthetic Q\&A generation, experimental automation, and the implementation of the chunk quality metrics.
+% \end{itemize}
+\bibliographystyle{acl_natbib}
+\bibliography{latex/custom}
+\end{document}
