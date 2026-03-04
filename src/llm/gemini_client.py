@@ -8,7 +8,8 @@ from dataclasses import dataclass, field
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from tenacity import retry, stop_after_attempt, wait_exponential
+from google.genai.errors import ClientError
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from config.settings import (
     GEMINI_CONCURRENT_LIMIT,
@@ -166,8 +167,9 @@ class GeminiClient:
         return await asyncio.gather(*tasks, return_exceptions=True)
 
     @retry(
-        stop=stop_after_attempt(GEMINI_MAX_RETRIES),
-        wait=wait_exponential(multiplier=1, min=2, max=30),
+        stop=stop_after_attempt(6),
+        wait=wait_exponential(multiplier=2, min=2, max=60),
+        retry=retry_if_exception_type((ClientError, Exception)),
         reraise=True,
     )
     async def embed(self, texts: list[str]) -> list[list[float]]:

@@ -1,0 +1,296 @@
+[
+  {
+    "question": "Ben Goertzel mentions the work of Stephen Wolfram in the context of computational complexity and AGI; according to Wolfram's own explanation of his Physics Project, how is the concept of 'time' fundamentally defined?",
+    "answer": "In the Wolfram Physics Project, time is defined as the progression of computation, representing the repeated application of rules to the underlying structure of space. This differs from space itself, which Wolfram describes as being composed of discrete 'atoms of space' connected in a hypergraph.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      103,
+      124
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Ben Goertzel mentions Stephen Wolfram as a peer or relevant figure in the field of computational systems and AGI.",
+      "Step 2: Locate the discussion by Stephen Wolfram regarding his 'Wolfram Physics Project' and the fundamental nature of the universe.",
+      "Step 3: Extract the specific definition of 'time' from Wolfram's explanation, which characterizes it as the progression of computation through the application of rules."
+    ]
+  },
+  {
+    "question": "According to the guest who discusses the 'Rulliad' and 'Rule 30', what is the estimated elementary length of the universe, and what is the primary programming language used in the OpenCog project discussed by Ben Goertzel?",
+    "answer": "The estimated elementary length of the universe is 10 to the minus 100 meters, and the primary programming language for OpenCog is C++. Stephen Wolfram provides this length estimate in his discussion of the Wolfram Physics Project, while Ben Goertzel specifies C++ as the core language for his cognitive architecture.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      103,
+      234
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the guest who discusses the 'Rulliad' and 'Rule 30' as Stephen Wolfram.",
+      "Step 2: Locate the specific value for the elementary length (10^-100 meters) within Stephen Wolfram's discussion of the Wolfram Physics Project.",
+      "Step 3: Identify the primary programming language for the OpenCog project (C++) mentioned in Ben Goertzel's discussion of AGI and cognitive architectures."
+    ]
+  },
+  {
+    "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+    "answer": "Noland Arbaugh achieved a bit rate of 8.5 bits per second with his Neuralink implant. This performance metric was highlighted by Elon Musk and his team as exceeding the previous world record for brain-computer interface communication.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      103,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Elon Musk as the industry leader mentioned by Ben Goertzel in the context of AI and future technology.",
+      "Step 2: Locate the discussion featuring Elon Musk and the Neuralink team regarding their recent human clinical trials and the participant Noland Arbaugh.",
+      "Step 3: Extract the specific bit rate (8.5 bits per second) achieved by Noland Arbaugh as detailed by the Neuralink team."
+    ]
+  },
+  {
+    "question": "Ryan Hall mentions a tech entrepreneur in his discussion on the mindset of warriors; in a separate conversation with that entrepreneur about brain-computer interfaces, what was the specific bit rate achieved by the first human participant, Noland Arbaugh?",
+    "answer": "Noland Arbaugh achieved a bit rate of 8.5 bits per second using the Neuralink implant. This performance exceeded previous world records and was highlighted during Elon Musk's discussion on the progress of human-AI symbiosis.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      125,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the tech entrepreneur mentioned by Ryan Hall as Elon Musk.",
+      "Step 2: Locate the conversation featuring Elon Musk and the Neuralink team discussing the N1 implant and human trials.",
+      "Step 3: Retrieve the specific bit rate (8.5 bits per second) achieved by the first human participant, Noland Arbaugh, from that discussion."
+    ]
+  },
+  {
+    "question": "Based on the update provided by the team led by the individual Matthew Johnson mentions in his discussion on neuroscience, how many humans have currently received the N1 implant?",
+    "answer": "As of the discussion with Elon Musk and the Neuralink team, two humans have received the N1 implant. The team also stated their goal is to have a total of ten human participants implanted by the end of the year.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      145,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the individual mentioned by Matthew Johnson in the context of neurotechnology or innovation (Elon Musk).",
+      "Step 2: Locate the discussion featuring Elon Musk and his team regarding their brain-computer interface project, Neuralink.",
+      "Step 3: Extract the specific count of human participants who have received the N1 implant as stated in that conversation."
+    ]
+  },
+  {
+    "question": "How do David Fravor, Andrew Bustamante, and Ryan Hall differ in their perspectives on the foundations of authority and effective leadership within high-stakes organizations?",
+    "answer": "David Fravor advocates for a meritocracy where expertise and school seniority supersede formal military rank, whereas Andrew Bustamante highlights the risk of cronyism when leadership roles, like the CIA Director, are politically appointed. Ryan Hall shifts the focus to the individual's mindset, arguing that true wisdom and authority begin with the humility to admit one knows almost nothing.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      122,
+      125,
+      310
+    ],
+    "reasoning_steps": [
+      "Identify David Fravor's point that hierarchy at Top Gun is based on seniority at the school rather than standard military rank.",
+      "Identify Andrew Bustamante's observation regarding the CIA Director being a presidential appointee and the resulting potential for cronyism.",
+      "Identify Ryan Hall's philosophical assertion that the journey toward wisdom starts with admitting one knows very little.",
+      "Contrast the merit-based military structure (Fravor) with the politically-driven intelligence structure (Bustamante) and the humility-driven philosophical approach (Hall)."
+    ]
+  },
+  {
+    "question": "How do the perspectives of Matthew Johnson, Stephen Wolfram, and Lee Cronin differ regarding the fundamental mechanism or origin of consciousness?",
+    "answer": "Matthew Johnson approaches consciousness through a neurochemical lens, attributing altered states to specific receptor-level events in the brain, whereas Stephen Wolfram views it as a product of our specific reference frame within a computational 'rule space.' In contrast, Lee Cronin describes consciousness as an evolutionary milestone where the universe develops a memory through selection and complex information processing.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      145,
+      234,
+      269
+    ],
+    "reasoning_steps": [
+      "Identify Matthew Johnson's focus on the biological and chemical drivers of consciousness, specifically the role of the Serotonin 2A receptor and brain activity.",
+      "Identify Stephen Wolfram's computational framework, where consciousness is linked to how observers perceive and filter the 'Rulliad' or rule space.",
+      "Identify Lee Cronin's evolutionary perspective, which frames consciousness as a consequence of assembly theory and the universe's ability to store information.",
+      "Synthesize the three views to contrast the biological (Johnson), the computational (Wolfram), and the informational/evolutionary (Cronin) explanations."
+    ]
+  },
+  {
+    "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+    "answer": "Travis Oliphant emphasizes building complex, community-driven open-source foundations like NumPy to solve large-scale scientific problems, whereas John Carmack prioritizes performance-oriented pragmatism, choosing tools solely based on their ability to solve immediate hardware or AI challenges. Pieter Levels contrasts both by intentionally using simple, 'boring' tech like PHP and jQuery to minimize technical overhead and maximize the speed of shipping products to market.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      224,
+      309,
+      440
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Travis Oliphant's focus on foundational open-source infrastructure and the collaborative effort required to build tools like NumPy and Conda.",
+      "Step 2: Identify John Carmack's pragmatic approach to software engineering, where the 'best' language is simply the one that works for the specific performance or hardware task at hand.",
+      "Step 3: Identify Pieter Levels' philosophy of rapid prototyping, which rejects complex modern stacks in favor of simple, solo-managed tools that prioritize business validation over technical sophistication.",
+      "Step 4: Contrast the three perspectives: Oliphant's community-centric complexity, Carmack's performance-driven pragmatism, and Levels' speed-focused simplicity."
+    ]
+  },
+  {
+    "question": "How do Ryan Hall and Kelsi Sheren differ in their interpretation of the history of human conflict and its impact on the individual?",
+    "answer": "Ryan Hall approaches the history of violence and conflict through a philosophical lens, viewing the mindset of historical warriors like Miyamoto Musashi as a path toward personal grace and wisdom. In contrast, Kelsi Sheren focuses on the visceral and traumatic reality of modern warfare, highlighting how historical patterns of conflict result in lasting psychological damage like PTSD for those on the front lines.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      125,
+      230,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Ryan Hall's perspective on historical figures (Alexander the Great, Musashi) and his belief that the study of violence can lead to intellectual freedom and personal development.",
+      "Step 2: Identify Kelsi Sheren's perspective on the history of war, specifically her experience in Afghanistan, focusing on the mechanical brutality of artillery and the subsequent struggle with trauma.",
+      "Step 3: Contrast Hall's philosophical/warrior-spirit approach with Sheren's focus on the human cost and the psychological aftermath of combat."
+    ]
+  },
+  {
+    "question": "How do Stephen Wolfram and the duo of Sara Walker and Lee Cronin differ in their conceptualization of the universe's fundamental nature and the 'Big Bang' event?",
+    "answer": "Stephen Wolfram views the universe as a computational execution of all possible rules within a 'rule space,' whereas Sara Walker and Lee Cronin describe the universe as a mechanism for exploring possibilities through 'Assembly Theory.' Furthermore, while Wolfram analyzes the early universe through dimension fluctuations, Walker and Cronin characterize the Big Bang as a 'forgetting' event where information and memory were reset.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      234,
+      257,
+      279
+    ],
+    "reasoning_steps": [
+      "Identify Stephen Wolfram's perspective on the universe as a computational 'Rulliad' running all possible rules.",
+      "Identify Sara Walker and Lee Cronin's perspective on the universe as an exploration of possible structures via information and Assembly Theory.",
+      "Contrast Wolfram's focus on the physical/dimensional fluctuations of the early universe with Walker and Cronin's informational view of the Big Bang as a memory reset."
+    ]
+  },
+  {
+    "question": "How did Stephen Wolfram's conceptualization of the fundamental laws of the universe evolve from his initial description of the Wolfram Physics Project to his later introduction of the 'Rulliad'?",
+    "answer": "Wolfram initially focused on identifying a single, specific rule that defines our universe's hypergraph evolution. In his later discussion, he transitioned to the concept of the 'Rulliad,' positing that the universe actually executes all possible rules simultaneously, with our perceived reality being a specific reference frame within this infinite computational space.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      124,
+      234
+    ],
+    "reasoning_steps": [
+      "Identify the core objective in the first discussion: finding the fundamental theory of physics using simple rules operating on hypergraphs to explain space and time.",
+      "Identify the shift in the second discussion: the introduction of 'Rule Space' and the 'Rulliad,' which represents the limit of all possible computations.",
+      "Contrast the two stages: the first stage seeks a unique rule for our universe, while the second stage suggests our universe is just one perspective of a structure containing every possible rule."
+    ]
+  },
+  {
+    "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+    "answer": "The approach has shifted from Ben Goertzel's emphasis on symbolic logic, decentralized cognitive architectures like OpenCog, and physical embodiment to a focus on massive LLM scaling laws and reinforcement learning methodologies. While Goertzel prioritized the 'embodied communication prior' and structured knowledge representation, the later discussion by Raschka and Lambert highlights how data-driven scaling and verifiable rewards have become the dominant path toward AGI.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      103,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Ben Goertzel's early stance, which focused on the necessity of OpenCog's symbolic/neural hybrid system and the importance of robotics (Hanson Robotics) for grounding intelligence.",
+      "Step 2: Identify the later perspective from Sebastian Raschka and Nathan Lambert, which centers on the success of Large Language Models (LLMs), scaling laws, and Reinforcement Learning with Verifiable Rewards (RLVR).",
+      "Step 3: Contrast the two periods to show a shift from specialized architectural design and embodiment toward a paradigm defined by compute power, massive datasets, and iterative model scaling."
+    ]
+  },
+  {
+    "question": "How did the perspective on career success and overcoming professional obstacles evolve between the discussion with David Fravor and the later conversation with Robert Rodriguez?",
+    "answer": "The focus shifted from a mindset of psychological persistence and refusing to accept institutional 'no's to a philosophy centered on creative resourcefulness and technical self-reliance. While the earlier discussion emphasized willpower within a structured hierarchy, the later conversation prioritized the ability to bypass limitations through creative problem-solving and mastering multiple roles independently.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      122,
+      465
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify David Fravor's core career advice, which centers on believing in one's capabilities and never taking 'no' for an answer within the context of naval aviation.",
+      "Step 2: Identify Robert Rodriguez's core career advice, which emphasizes that creativity is 90% of the job and that resourcefulness (using what is available) is key to independent success.",
+      "Step 3: Compare these two approaches to identify the shift from institutional persistence/willpower to creative autonomy/resourcefulness as the primary driver of success."
+    ]
+  },
+  {
+    "question": "How has the discussion of leadership evolved from David Fravor's focus on high-performance military environments to Marc Andreessen's analysis of national and institutional success?",
+    "answer": "The treatment of leadership shifted from David Fravor\u2019s emphasis on meritocratic, skill-based hierarchies and individual tenacity within specialized naval units to Marc Andreessen\u2019s focus on leadership as a tool for national revitalization and institutional reform. While Fravor highlights operational excellence and personal accountability, Andreessen views leadership through the lens of steering entire societies away from bureaucratic decay and toward technological and economic growth.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      122,
+      458
+    ],
+    "reasoning_steps": [
+      "Step 1: Analyze David Fravor's discussion of leadership, which centers on the merit-based hierarchy at Top Gun and the personal drive required to succeed in naval aviation.",
+      "Step 2: Analyze Marc Andreessen's discussion of leadership, which focuses on macro-level institutional shifts, the role of political leadership in national morale, and the movement away from corporate trends like ESG.",
+      "Step 3: Synthesize the evolution from leadership as a localized, skill-dependent military discipline to leadership as a broader mechanism for societal and institutional transformation."
+    ]
+  },
+  {
+    "question": "How has the treatment of personal development evolved between the discussions with Ryan Hall and Michael Paulson?",
+    "answer": "The discourse shifted from Ryan Hall\u2019s philosophical focus on martial arts and the 'warrior mindset' as a path to wisdom toward Michael Paulson\u2019s more visceral account of personal development through addiction recovery and spiritual transformation. This marks an evolution from seeking excellence through external disciplines and historical study to finding growth through internal resilience and overcoming personal crisis.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      125,
+      461
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Ryan Hall's framing of personal development as a philosophical and intellectual pursuit centered on martial arts, humility, and the study of historical figures like Miyamoto Musashi.",
+      "Step 2: Identify Michael Paulson's framing of personal development as a narrative of recovery, focusing on his struggles with addiction, mental health, and spiritual awakening.",
+      "Step 3: Compare the two approaches to identify the shift from an abstract, discipline-based model of growth to a grounded, experience-based model of resilience."
+    ]
+  },
+  {
+    "question": "Based on the discussions with Brian Keating and Robin Hanson regarding cosmic and terrestrial timelines, what are the specific durations provided for the fusion of light elements in the early universe, the remaining window for complex life on Earth, and the point at which universal expansion will isolate galaxy clusters?",
+    "answer": "Brian Keating notes that the fusion and production of the lightest elements occurred in a timeframe shorter than an episode of the TV show 'The Big Bang Theory.' Robin Hanson provides the future metrics, stating that complex life has roughly 1 billion years left on Earth and that the expansion of the universe will isolate galaxy clusters in approximately 150 billion years.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      257,
+      292
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the specific numerical claim made by Brian Keating regarding the duration of light element production in the early universe.",
+      "Step 2: Locate Robin Hanson's prediction for the remaining lifespan of complex life on Earth before it is no longer possible.",
+      "Step 3: Extract the specific timeline provided by Robin Hanson for the isolation of galaxy clusters due to the expansion of the universe.",
+      "Step 4: Aggregate these three distinct temporal metrics into a single comparative summary."
+    ]
+  },
+  {
+    "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+    "answer": "DeepSeek utilizes a cluster of approximately 50,000 GPUs, with the DeepSeek-V3 model specifically pre-trained on 2,000 H800 GPUs, while the industry analysis with Sebastian Raschka focuses on the state of AI in the year 2026. These figures highlight the current hardware scale of Chinese AI development alongside the projected timeline for global competition.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      459,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the specific hardware metrics for DeepSeek mentioned by Dylan Patel, specifically the 2,000 H800 GPUs used for V3 pre-training and the 50,000 GPU total cluster size.",
+      "Step 2: Identify the specific future timeline benchmarked in the discussion with Sebastian Raschka, which is the year 2026.",
+      "Step 3: Aggregate these quantitative data points to answer the query regarding infrastructure scale and industry projections."
+    ]
+  },
+  {
+    "question": "Comparing the perspectives of Ben Goertzel and the duo of Sebastian Raschka and Nathan Lambert, what specific numbers are cited regarding the scale of the AGI conference's origins versus its current state, and what specific year and model versioning milestones are used to frame the future of the AI race?",
+    "answer": "Ben Goertzel states the AGI conference grew from an initial 60 attendees to several hundred today, while Sebastian Raschka and Nathan Lambert frame their future analysis around the year 2026 and the release of Claude Opus 4.5. These metrics track the expansion of the AGI field from a small niche to a landscape defined by rapid model iteration.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      103,
+      279,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the initial and current attendee figures for the AGI conference from the Ben Goertzel summary (60 and several hundred).",
+      "Step 2: Identify the specific future year and model version number discussed by Sebastian Raschka and Nathan Lambert (2026 and Claude Opus 4.5).",
+      "Step 3: Aggregate these quantitative markers to show the progression from community growth to specific technological forecasting."
+    ]
+  },
+  {
+    "question": "Based on the interviews with Jared Kushner and Ryan Hall, what are the specific dollar amounts mentioned in relation to the Peace to Prosperity business plan for Gaza and the West Bank, and the individual donation amount contributed to the FIRST robotics organization?",
+    "answer": "The Peace to Prosperity plan is a $27 billion business plan intended for Gaza and the West Bank, while the individual donation amount mentioned for the FIRST robotics and STEM education organization is $10. These figures represent the scale of international economic proposals and grassroots charitable contributions discussed by the guests respectively.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      122,
+      125,
+      310,
+      399
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the financial metric in the Jared Kushner summary related to the Peace to Prosperity plan, which is $27 billion.",
+      "Step 2: Identify the financial metric in the Ryan Hall summary related to the Cash App donation to the FIRST organization, which is $10.",
+      "Step 3: Aggregate these specific numerical claims into a comparative answer regarding organizational and initiative funding."
+    ]
+  },
+  {
+    "question": "Identify and compare the specific numerical values associated with the following career-defining metrics and observations mentioned by David Fravor, Michael Paulson, and Robert Rodriguez: the duration of the USS Princeton's radar tracking of the 'Tic Tac' objects, the number of times Paulson failed pre-calculus, and the percentage of any job that Rodriguez attributes to creativity.",
+    "answer": "The USS Princeton tracked the 'Tic Tac' objects for 2 weeks, Michael Paulson failed pre-calculus 2 times, and Robert Rodriguez claims that creativity accounts for 90% of any job. These figures represent the specific observational timeframe, academic persistence, and professional philosophy shared by the guests during their respective interviews.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      122,
+      461,
+      465
+    ],
+    "reasoning_steps": [
+      "Step 1: Locate the specific duration of the USS Princeton's radar tracking mentioned in the David Fravor interview summary.",
+      "Step 2: Identify the specific number of times Michael Paulson (ThePrimeagen) failed pre-calculus as detailed in his career and education history.",
+      "Step 3: Find the specific percentage Robert Rodriguez assigns to creativity versus technical skills in his discussion on filmmaking and professional success.",
+      "Step 4: Aggregate these three distinct numerical metrics into a single comparative response."
+    ]
+  }
+]

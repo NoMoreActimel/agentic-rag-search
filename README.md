@@ -32,8 +32,36 @@ cp .env.example .env  # Add your GEMINI_API_KEY
 ## Pipeline
 
 ```bash
-python scripts/01_build_raw_dataset.py   # Build raw transcripts
-python scripts/02_extract_metadata.py    # Extract metadata with Gemini
-python scripts/03_generate_qa.py         # Generate Q&A pairs
-python scripts/04_create_indices.py      # Create BM25 + embedding indices
+# Step 1: Build raw transcripts (HuggingFace + web scraping)
+python scripts/01_build_raw_dataset.py
+
+# Step 2: Extract metadata with Gemini (requires GEMINI_API_KEY)
+python scripts/02_extract_metadata.py
+
+# Step 3a: Find Q&A candidates (pure Python, no API calls)
+python scripts/03a_find_qa_candidates.py
+
+# Step 3b: Generate Q&A pairs from candidates (requires GEMINI_API_KEY)
+python scripts/03b_generate_qa.py
+
+# Step 4: Create BM25 + embedding search indices (requires GEMINI_API_KEY)
+python scripts/04_create_indices.py
 ```
+
+## For Colleagues: Creating Search Indices
+
+If the raw dataset, metadata, and Q&A pairs are already generated (steps 1-3), you only need to run step 4 to create the search indices:
+
+```bash
+conda env create -f environment.yml
+conda activate agentic-rag
+cp .env.example .env  # Add your GEMINI_API_KEY
+python scripts/04_create_indices.py
+```
+
+This will:
+1. Chunk the 50-episode subset into ~1000-char segments with 150-char overlap
+2. Build a BM25 index (saved to `data/indices/bm25/`)
+3. Generate Gemini embeddings (768 dims) and build a FAISS index (saved to `data/indices/embeddings/`)
+
+The embedding step calls the Gemini API and takes ~5 minutes. It has checkpointing built in, so if it's interrupted by rate limits it will resume from the last checkpoint.

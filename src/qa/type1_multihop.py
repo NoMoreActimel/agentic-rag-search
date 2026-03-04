@@ -2,40 +2,36 @@
 
 import json
 
-from src.llm.gemini_client import GeminiClient
-from src.qa.qa_generator import QAPair, QATypeGenerator
+from src.qa.qa_generator import Candidate, QAPair, QATypeGenerator, PROMPT_CONSTRAINTS
 
 SYSTEM_INSTRUCTION = """You are a Q&A dataset creator for podcast transcripts.
-Create multi-hop bridge questions that require connecting information from two different podcast episodes.
-The question should require the reader to first identify one piece of information from one episode,
-then use that to find related information in another episode.
-The question should NOT directly name the connecting entity — the reader must discover it through retrieval."""
+Create multi-hop bridge questions that require connecting information across two different episodes.
+The question must force the reader to first retrieve one piece of information, then use it to find related information in a different episode."""
 
-GENERATION_PROMPT = """Create a multi-hop bridge question based on these two podcast episodes.
+GENERATION_PROMPT = """Create a multi-hop bridge question based on these two podcast episodes connected by: {connection}
 
-Episode A: #{ep_a_id} — "{ep_a_title}" with {ep_a_guest}
-Summary: {ep_a_summary}
-Key entities: {ep_a_entities}
+Episode A:
+{episode_a}
 
-Episode B: #{ep_b_id} — "{ep_b_title}" with {ep_b_guest}
-Summary: {ep_b_summary}
-Key entities: {ep_b_entities}
-
-Shared entity/connection: {shared_entity}
+Episode B:
+{episode_b}
 
 Create a question that:
-1. Requires finding information about the shared entity in Episode A
-2. Then using that to find related information in Episode B
-3. Does NOT directly name both guests — the reader must discover the connection
+1. Requires finding information about the connecting element in one episode
+2. Then using that to find related information in the other episode
+3. References guests/topics/concepts — NOT episode numbers
+4. Cannot be answered from a single episode alone
+
+{constraints}
 
 Return JSON:
 {{
-  "question": "The multi-hop question",
-  "answer": "A detailed answer citing both episodes",
+  "question": "The multi-hop question (no episode numbers!)",
+  "answer": "Direct factual answer in 2-3 sentences with brief justification.",
   "reasoning_steps": [
-    "Step 1: Find X in episode about Y",
-    "Step 2: Use X to identify Z in episode about W",
-    "Step 3: Combine to answer"
+    "Step 1: ...",
+    "Step 2: ...",
+    "Step 3: ..."
   ]
 }}"""
 
@@ -43,99 +39,87 @@ Return JSON:
 class MultiHopGenerator(QATypeGenerator):
     qa_type = "multihop"
 
-    def _find_bridge_pairs(self) -> list[tuple[int, int, str]]:
-        """Find pairs of episodes connected by shared entities."""
-        entity_eps = self._get_episodes_by_entity()
-
+    def find_candidates(self, count: int = 10) -> list[Candidate]:
+        """Find pairs of episodes connected by shared entities or guest cross-references."""
         pairs = []
-        for entity, ep_ids in entity_eps.items():
-            if len(ep_ids) >= 2:
-                # Pick the first two distinct episodes
-                unique_eps = sorted(set(ep_ids))
-                for i in range(len(unique_eps)):
-                    for j in range(i + 1, len(unique_eps)):
-                        pairs.append((unique_eps[i], unique_eps[j], entity))
+        seen_pairs = set()
 
-        # Also check for guest cross-references
+        # Strategy 1: Guest cross-references (guest A mentions person who is guest B)
+        # Require at least 2 words in the mentioned name to avoid "Ryan", "Matt" false matches
         for m in self.metadata:
             ep_id = m["episode_id"]
-            guest_name = m.get("guest_info", {}).get("name", "").lower()
             for other in m.get("other_persons_mentioned", []):
-                other_name = other.get("name", "").lower()
-                # Check if this mentioned person is a guest in another episode
+                other_name = other.get("name", "").strip()
+                if not other_name or len(other_name.split()) < 2:
+                    continue  # Skip single-word names (too ambiguous)
+                other_name_lower = other_name.lower()
                 for other_m in self.metadata:
-                    if other_m["episode_id"] != ep_id:
-                        other_guest = other_m.get("guest_info", {}).get("name", "").lower()
-                        if other_name and other_guest and other_name in other_guest:
-                            pairs.append((ep_id, other_m["episode_id"], other_name))
+                    if other_m["episode_id"] == ep_id:
+                        continue
+                    other_guest = self._get_guest_name(other_m).lower()
+                    if other_guest and other_name_lower in other_guest:
+                        key = (min(ep_id, other_m["episode_id"]),
+                               max(ep_id, other_m["episode_id"]))
+                        if key not in seen_pairs:
+                            seen_pairs.add(key)
+                            guest_a = self._get_guest_name(m)
+                            pairs.append(Candidate(
+                                qa_type=self.qa_type,
+                                episode_ids=[ep_id, other_m["episode_id"]],
+                                connection=f"{guest_a} mentions {other['name']}, who is the guest in another episode",
+                            ))
 
-        # Deduplicate
-        seen = set()
-        unique_pairs = []
-        for a, b, e in pairs:
-            key = (min(a, b), max(a, b), e)
-            if key not in seen:
-                seen.add(key)
-                unique_pairs.append((a, b, e))
-
-        return unique_pairs
-
-    async def generate(self, count: int = 5) -> list[QAPair]:
-        bridge_pairs = self._find_bridge_pairs()
-
-        if not bridge_pairs:
-            print("  Warning: No bridge pairs found for multi-hop questions")
-            return []
-
-        # Take up to `count` pairs
-        selected = bridge_pairs[:count * 2]  # Generate extras in case some fail
-        results = []
-
-        for ep_a_id, ep_b_id, shared in selected:
-            if len(results) >= count:
-                break
-
-            ep_a = self.episodes.get(ep_a_id)
-            ep_b = self.episodes.get(ep_b_id)
-            if not ep_a or not ep_b:
+        # Strategy 2: Shared entities across different guests
+        entity_eps = self._get_episodes_by_entity()
+        for entity, ep_ids in entity_eps.items():
+            unique_eps = sorted(set(ep_ids))
+            if len(unique_eps) < 2:
                 continue
+            # Only pair episodes with different guests
+            for i in range(len(unique_eps)):
+                for j in range(i + 1, len(unique_eps)):
+                    ep_a, ep_b = unique_eps[i], unique_eps[j]
+                    guest_a = self._get_guest_name(self.episodes.get(ep_a, {}))
+                    guest_b = self._get_guest_name(self.episodes.get(ep_b, {}))
+                    if guest_a.lower() == guest_b.lower():
+                        continue  # Same guest — not a bridge
+                    key = (ep_a, ep_b)
+                    if key not in seen_pairs:
+                        seen_pairs.add(key)
+                        pairs.append(Candidate(
+                            qa_type=self.qa_type,
+                            episode_ids=[ep_a, ep_b],
+                            connection=f"Shared entity '{entity}' discussed by {guest_a} and {guest_b}",
+                        ))
 
-            entities_a = ", ".join(
-                e["name"] for e in ep_a.get("main_entities", [])[:5]
+        # Prioritize guest cross-references (stronger bridges), then entity-based
+        # Deduplicate by episode pair to ensure diversity
+        return pairs[:count]
+
+    async def generate_from_candidate(self, candidate: Candidate) -> QAPair | None:
+        ep_a_id, ep_b_id = candidate.episode_ids[:2]
+
+        prompt = GENERATION_PROMPT.format(
+            connection=candidate.connection,
+            episode_a=self._build_episode_summary(ep_a_id),
+            episode_b=self._build_episode_summary(ep_b_id),
+            constraints=PROMPT_CONSTRAINTS,
+        )
+
+        try:
+            response = await self.client.generate_json(
+                prompt=prompt,
+                system_instruction=SYSTEM_INSTRUCTION,
+                temperature=0.5,
             )
-            entities_b = ", ".join(
-                e["name"] for e in ep_b.get("main_entities", [])[:5]
+            data = json.loads(response)
+            return QAPair(
+                question=data["question"],
+                answer=data["answer"],
+                qa_type=self.qa_type,
+                reference_episodes=[ep_a_id, ep_b_id],
+                reasoning_steps=data.get("reasoning_steps", []),
             )
-
-            prompt = GENERATION_PROMPT.format(
-                ep_a_id=ep_a_id,
-                ep_a_title=ep_a.get("guest_info", {}).get("name", "Unknown"),
-                ep_a_guest=ep_a.get("guest_info", {}).get("name", "Unknown"),
-                ep_a_summary=ep_a.get("summary", ""),
-                ep_a_entities=entities_a,
-                ep_b_id=ep_b_id,
-                ep_b_title=ep_b.get("guest_info", {}).get("name", "Unknown"),
-                ep_b_guest=ep_b.get("guest_info", {}).get("name", "Unknown"),
-                ep_b_summary=ep_b.get("summary", ""),
-                ep_b_entities=entities_b,
-                shared_entity=shared,
-            )
-
-            try:
-                response = await self.client.generate_json(
-                    prompt=prompt,
-                    system_instruction=SYSTEM_INSTRUCTION,
-                    temperature=0.5,
-                )
-                data = json.loads(response)
-                results.append(QAPair(
-                    question=data["question"],
-                    answer=data["answer"],
-                    qa_type=self.qa_type,
-                    reference_episodes=[ep_a_id, ep_b_id],
-                    reasoning_steps=data.get("reasoning_steps", []),
-                ))
-            except Exception as e:
-                print(f"  Failed to generate multi-hop Q&A for eps {ep_a_id},{ep_b_id}: {e}")
-
-        return results[:count]
+        except Exception as e:
+            print(f"    Failed for episodes {ep_a_id},{ep_b_id}: {e}")
+            return None

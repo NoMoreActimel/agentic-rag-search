@@ -33,6 +33,17 @@ def _fetch_with_retry(url: str) -> requests.Response | None:
             resp = SESSION.get(url, timeout=30)
             resp.raise_for_status()
             return resp
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code in (404, 410):
+                # Permanent error — don't retry
+                return None
+            if attempt < SCRAPE_MAX_RETRIES - 1:
+                wait = SCRAPE_DELAY_SECONDS * (attempt + 1)
+                print(f"  Retry {attempt + 1}/{SCRAPE_MAX_RETRIES} for {url}: {e}")
+                time.sleep(wait)
+            else:
+                print(f"  Failed to fetch {url}: {e}")
+                return None
         except requests.RequestException as e:
             if attempt < SCRAPE_MAX_RETRIES - 1:
                 wait = SCRAPE_DELAY_SECONDS * (attempt + 1)
@@ -98,28 +109,6 @@ def get_episode_urls() -> list[dict]:
             "transcript_url": t_url,
         })
 
-    # Also check for episode URLs that might not have transcript links on the listing
-    for href in all_hrefs:
-        if "lexfridman.com/" not in href:
-            continue
-        if href.endswith("-transcript"):
-            continue
-        # Skip known non-episode paths
-        slug = href.split("lexfridman.com/")[-1].strip("/")
-        if not slug or slug in skip_slugs or "/" in slug:
-            continue
-        if any(href.endswith(ext) for ext in [".xml", ".mp3", ".png", ".jpg"]):
-            continue
-        # Skip if already found via transcript
-        if any(e["slug"] == slug for e in episodes):
-            continue
-        # This might be an episode without a transcript link on the listing page
-        episodes.append({
-            "slug": slug,
-            "episode_url": href,
-            "transcript_url": f"{href}-transcript",
-        })
-
     episodes.sort(key=lambda x: x["slug"])
     print(f"Found {len(episodes)} potential episode URLs")
     return episodes
@@ -152,8 +141,12 @@ def _extract_episode_info_from_page(html: str) -> dict:
     else:
         info["title"] = page_title.strip()
 
-    # Extract guest from title (part before ":")
+    # Strip "#NNN – " prefix from title (e.g. "#399 – Jared Kushner: ..." -> "Jared Kushner: ...")
     title_text = info["title"] or ""
+    title_text = re.sub(r"^#\d+\s*[–-]\s*", "", title_text).strip()
+    info["title"] = title_text
+
+    # Extract guest from title (part before ":")
     if ":" in title_text:
         info["guest"] = title_text.split(":")[0].strip()
     else:
@@ -177,46 +170,60 @@ def _extract_transcript_from_transcript_page(html: str) -> str | None:
     """
     Extract transcript text from a dedicated transcript page.
 
-    Transcript format:
-    - Speaker labels like "Lex Fridman (00:00:00)" with timestamp links
-    - Chapter headings as h2/h3 with dashes underneath
-    - Paragraphs of conversation
+    HTML structure:
+        <h2 id="chapter0_...">Chapter Title</h2>
+        <div class="ts-segment">
+            <span class="ts-name">Speaker Name</span>
+            <span class="ts-timestamp"><a href="...">(HH:MM:SS)</a></span>
+            <span class="ts-text">The actual spoken text.</span>
+        </div>
+
+    We store: "Speaker Name: text" per segment, with chapter headings on their own line.
     """
     soup = BeautifulSoup(html, "lxml")
 
-    # Find the main content area
-    content_div = soup.find("div", class_=re.compile(
-        r"entry-content|post-content|article-content"
-    ))
+    content_div = soup.find("div", class_="entry-content")
     if not content_div:
         content_div = soup.find("article") or soup
 
-    # Extract all paragraphs, stripping timestamp links but keeping speaker labels
     transcript_parts = []
-    for element in content_div.find_all(["p", "h2", "h3"]):
-        text = element.get_text(strip=True)
+
+    # Iterate over chapter headings and transcript segments in order
+    for element in content_div.find_all(["h2", "div"]):
+        # Chapter headings
+        if element.name == "h2":
+            heading_id = element.get("id", "")
+            # Only include chapter headings (skip "Table of Contents" etc.)
+            if heading_id.startswith("chapter"):
+                transcript_parts.append(f"\n## {element.get_text(strip=True)}")
+            continue
+
+        # Transcript segments
+        if "ts-segment" not in element.get("class", []):
+            continue
+
+        name_el = element.find("span", class_="ts-name")
+        text_el = element.find("span", class_="ts-text")
+
+        if not text_el:
+            continue
+
+        speaker = name_el.get_text(strip=True) if name_el else ""
+        text = text_el.get_text(strip=True)
+
         if not text:
             continue
 
-        # Clean up timestamp patterns like "(00:00:00)" that remain after stripping links
-        text = re.sub(r"\(?\d{1,2}:\d{2}:\d{2}\)?", "", text).strip()
-
-        # Skip very short lines (nav elements, etc.)
-        if len(text) < 5:
-            continue
-
-        # Skip table of contents entries (lines that are just timestamps)
-        if re.match(r"^[\d:]+$", text):
-            continue
-
-        transcript_parts.append(text)
+        if speaker:
+            transcript_parts.append(f"{speaker}: {text}")
+        else:
+            transcript_parts.append(text)
 
     if not transcript_parts:
         return None
 
     transcript = "\n\n".join(transcript_parts)
 
-    # Only return if we got substantial content
     if len(transcript) < 500:
         return None
 

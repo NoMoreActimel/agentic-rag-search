@@ -10,6 +10,18 @@ from src.llm.gemini_client import GeminiClient
 
 
 @dataclass
+class Candidate:
+    """A group of episodes identified as a potential Q&A source."""
+
+    qa_type: str
+    episode_ids: list[int]
+    connection: str  # Why these episodes are grouped (shared entity, topic, etc.)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+@dataclass
 class QAPair:
     """A single question-answer pair with metadata."""
 
@@ -23,6 +35,17 @@ class QAPair:
         return asdict(self)
 
 
+# Shared prompt constraints appended to all Q&A generation prompts
+PROMPT_CONSTRAINTS = """
+STRICT RULES:
+- The question must NEVER mention episode numbers, episode IDs, or "#NNN".
+- Instead, reference guests by name, topics, concepts, or projects they discussed.
+- The answer must be 2-3 sentences max: a direct factual answer followed by brief justification.
+- The answer must NOT mention episode numbers either.
+- The question should require genuine retrieval — a reader must search the transcript corpus to answer it.
+"""
+
+
 class QATypeGenerator(ABC):
     """Abstract base class for Q&A type generators."""
 
@@ -31,13 +54,42 @@ class QATypeGenerator(ABC):
     def __init__(self, client: GeminiClient, metadata: list[dict]):
         self.client = client
         self.metadata = metadata
-        # Build episode lookup
         self.episodes = {m["episode_id"]: m for m in metadata}
 
     @abstractmethod
-    async def generate(self, count: int = QA_PAIRS_PER_TYPE) -> list[QAPair]:
-        """Generate Q&A pairs of this type."""
+    def find_candidates(self, count: int = QA_PAIRS_PER_TYPE) -> list[Candidate]:
+        """Stage 1: Find candidate episode groups from metadata."""
         ...
+
+    @abstractmethod
+    async def generate_from_candidate(self, candidate: Candidate) -> QAPair | None:
+        """Stage 2: Generate a Q&A pair from a candidate group."""
+        ...
+
+    async def generate(self, count: int = QA_PAIRS_PER_TYPE) -> list[QAPair]:
+        """Run both stages: find candidates, then generate Q&A for each."""
+        # Stage 1: find more candidates than needed (some may fail generation)
+        candidates = self.find_candidates(count=count * 2)
+        print(f"  Found {len(candidates)} candidates")
+
+        # Stage 2: generate Q&A from each candidate until we have enough
+        results = []
+        for candidate in candidates:
+            if len(results) >= count:
+                break
+            pair = await self.generate_from_candidate(candidate)
+            if pair is not None:
+                results.append(pair)
+
+        return results[:count]
+
+    @staticmethod
+    def _get_guest_name(episode: dict) -> str:
+        """Extract guest name, handling both dict and list guest_info."""
+        gi = episode.get("guest_info", {})
+        if isinstance(gi, list):
+            return ", ".join(g.get("name", "") for g in gi if g.get("name"))
+        return gi.get("name", "")
 
     def _get_episodes_by_entity(self) -> dict[str, list[int]]:
         """Build entity -> episode_id index."""
@@ -63,6 +115,26 @@ class QATypeGenerator(ABC):
                 topic_eps[topic_key].append(ep_id)
         return topic_eps
 
+    def _build_episode_summary(self, ep_id: int) -> str:
+        """Build a text summary of an episode for use in prompts."""
+        ep = self.episodes.get(ep_id)
+        if not ep:
+            return ""
+        guest = self._get_guest_name(ep) or "Unknown"
+        summary = ep.get("summary", "")
+        entities = ", ".join(e["name"] for e in ep.get("main_entities", [])[:8])
+        topics = ", ".join(ep.get("topics", [])[:6])
+        details = "\n".join(
+            f"  - {d['fact']}" for d in ep.get("key_details", [])[:6]
+        )
+        return (
+            f"Guest: {guest}\n"
+            f"Summary: {summary}\n"
+            f"Key entities: {entities}\n"
+            f"Topics: {topics}\n"
+            f"Key details:\n{details}"
+        )
+
 
 def load_all_metadata(metadata_dir=None) -> list[dict]:
     """Load all metadata JSON files."""
@@ -78,11 +150,7 @@ async def generate_all_qa_pairs(
     metadata: list[dict] | None = None,
     output_path=None,
 ) -> list[QAPair]:
-    """
-    Orchestrate Q&A generation across all 4 types.
-
-    Generates QA_PAIRS_PER_TYPE pairs for each type.
-    """
+    """Orchestrate Q&A generation across all 4 types."""
     from src.qa.type1_multihop import MultiHopGenerator
     from src.qa.type2_comparative import ComparativeGenerator
     from src.qa.type3_temporal import TemporalGenerator
@@ -108,6 +176,7 @@ async def generate_all_qa_pairs(
     all_pairs: list[QAPair] = []
     for gen in generators:
         print(f"\nGenerating {gen.qa_type} questions...")
+        print(f"  Stage 1: Finding candidates...")
         pairs = await gen.generate(count=QA_PAIRS_PER_TYPE)
         all_pairs.extend(pairs)
         print(f"  Generated {len(pairs)} {gen.qa_type} pairs")

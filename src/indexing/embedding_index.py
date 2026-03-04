@@ -42,10 +42,31 @@ async def build_embedding_index(
     client = GeminiClient()
     all_embeddings = []
 
-    for i in tqdm(range(0, len(texts), EMBEDDING_BATCH_SIZE), desc="Embedding batches"):
+    # Resume from checkpoint if available
+    checkpoint_path = output_dir / "embeddings_checkpoint.npy"
+    start_batch = 0
+    if checkpoint_path.exists():
+        saved = np.load(str(checkpoint_path))
+        all_embeddings = saved.tolist()
+        start_batch = len(all_embeddings) // EMBEDDING_BATCH_SIZE
+        print(f"Resuming from checkpoint: {len(all_embeddings)} embeddings already done")
+
+    total_batches = (len(texts) + EMBEDDING_BATCH_SIZE - 1) // EMBEDDING_BATCH_SIZE
+    for i in tqdm(range(start_batch * EMBEDDING_BATCH_SIZE, len(texts), EMBEDDING_BATCH_SIZE),
+                  initial=start_batch, total=total_batches, desc="Embedding batches"):
         batch = texts[i : i + EMBEDDING_BATCH_SIZE]
         embeddings = await client.embed(batch)
         all_embeddings.extend(embeddings)
+
+        # Checkpoint every 50 batches
+        if (len(all_embeddings) // EMBEDDING_BATCH_SIZE) % 50 == 0:
+            np.save(str(checkpoint_path), np.array(all_embeddings, dtype=np.float32))
+
+        # Pause to stay within 3000 RPM embedding rate limit
+        # 298 batches / 3000 RPM = need ~6s per batch to be safe, but
+        # the limit resets per minute, so 60s / 3000 = 0.02s minimum.
+        # Use 0.25s to leave headroom for retries.
+        await asyncio.sleep(0.25)
 
     # Convert to numpy array
     embeddings_array = np.array(all_embeddings, dtype=np.float32)
@@ -57,6 +78,10 @@ async def build_embedding_index(
 
     # Save raw embeddings
     np.save(str(output_dir / EMBEDDINGS_FILE), embeddings_array)
+
+    # Clean up checkpoint
+    if checkpoint_path.exists():
+        checkpoint_path.unlink()
 
     # Build FAISS index (inner product on normalized vectors = cosine similarity)
     index = faiss.IndexFlatIP(GEMINI_EMBEDDING_DIMS)
