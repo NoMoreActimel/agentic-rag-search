@@ -109,6 +109,13 @@ Respond in JSON:
   "answer": "final answer (if action=answer)"
 }}"""
 
+# ── Separate system prompt for forced answers (plain text, no JSON) ──────────
+
+FORCE_ANSWER_SYSTEM = """You are a research agent that answers questions about the Lex Fridman Podcast.
+Based ONLY on the retrieved transcript chunks provided, give a direct answer in 2-3 sentences.
+Do NOT use any prior knowledge. If the context is insufficient, say so.
+Respond in plain text only — no JSON, no formatting."""
+
 
 class SearchAgent:
     """Iterative search agent that uses retrieval tools to answer questions."""
@@ -187,12 +194,18 @@ class SearchAgent:
                 )
                 decision = json.loads(response)
             except (json.JSONDecodeError, Exception) as e:
-                # If parsing fails, try to answer with what we have
-                decision = {
-                    "action": "answer",
-                    "reasoning": f"JSON parse error: {e}",
-                    "answer": await self._force_answer(question, context_str, system_prompt),
-                }
+                # If parsing fails, force a plain-text answer with what we have
+                context_str = self._build_context_string(all_retrieved)
+                trajectory.final_answer = await self._force_answer(question, context_str)
+                trajectory.steps.append(AgentStep(
+                    step_number=step_num,
+                    tool_used="none",
+                    query="",
+                    num_results=0,
+                    results=[],
+                    timestamp=time.time() - start_time,
+                ))
+                break
 
             action = decision.get("action", "answer")
 
@@ -240,8 +253,14 @@ class SearchAgent:
                 trajectory.steps.append(step)
 
             elif action == "answer":
-                # Agent decided to answer
-                trajectory.final_answer = decision.get("answer", "")
+                # Extract just the answer text
+                answer_text = decision.get("answer", "")
+                if not answer_text:
+                    # Fallback: force a plain-text answer
+                    context_str = self._build_context_string(all_retrieved)
+                    answer_text = await self._force_answer(question, context_str)
+
+                trajectory.final_answer = answer_text
 
                 # Record a terminal step
                 trajectory.steps.append(AgentStep(
@@ -257,9 +276,7 @@ class SearchAgent:
         # If agent used all steps without answering, force an answer
         if not trajectory.final_answer:
             context_str = self._build_context_string(all_retrieved)
-            trajectory.final_answer = await self._force_answer(
-                question, context_str, system_prompt,
-            )
+            trajectory.final_answer = await self._force_answer(question, context_str)
 
         trajectory.elapsed_seconds = time.time() - start_time
         return trajectory
@@ -273,13 +290,8 @@ class SearchAgent:
             parts.append(f"--- Retrieved Chunk {i} ---\n{r.to_context_string()}")
         return "\n\n".join(parts)
 
-    async def _force_answer(
-        self,
-        question: str,
-        context: str,
-        system_prompt: str,
-    ) -> str:
-        """Force the agent to produce an answer from current context."""
+    async def _force_answer(self, question: str, context: str) -> str:
+        """Force the agent to produce a plain-text answer from current context."""
         force_prompt = (
             f"QUESTION: {question}\n\n"
             f"RETRIEVED CONTEXT:\n{context}\n\n"
@@ -290,7 +302,7 @@ class SearchAgent:
         try:
             response = await self.client.generate(
                 prompt=force_prompt,
-                system_instruction=system_prompt,
+                system_instruction=FORCE_ANSWER_SYSTEM,
                 temperature=0.3,
             )
             return response.strip()

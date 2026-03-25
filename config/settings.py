@@ -30,7 +30,7 @@ SCRAPE_DELAY_SECONDS = 2.0
 SCRAPE_MAX_RETRIES = 3
 
 # ── Gemini LLM ────────────────────────────────────────────────────────────────
-GEMINI_MODEL = "gemini-3-flash-preview"
+GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_EMBEDDING_MODEL = "gemini-embedding-001"
 GEMINI_EMBEDDING_DIMS = 768
 GEMINI_RPM_LIMIT = 140
