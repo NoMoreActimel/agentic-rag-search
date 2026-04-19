@@ -9,10 +9,10 @@ Current RAG evaluations focus on final retrieval quality but ignore the *search 
 1. **Dataset Construction** — Merge transcripts from HuggingFace (episodes 1-325) and web-scraped data (episodes 326+) from the Lex Fridman Podcast into a unified corpus.
 2. **Metadata Extraction** — Use Gemini to extract structured metadata (entities, topics, summaries) per episode.
 3. **Synthetic Q&A Generation** — Generate 4 types of questions that require different retrieval strategies:
-   - **Type 1: Multi-Hop Bridge** — Questions requiring entity-linking across episodes (e.g., "What did the inventor of X say about Y?")
-   - **Type 2: Comparative Viewpoint** — Questions comparing perspectives of different guests on shared topics
-   - **Type 3: Temporal Evolution** — Questions tracking how a guest's views changed across appearances
-   - **Type 4: Quantitative Aggregation** — Questions requiring exhaustive retrieval of numeric claims
+  - **Type 1: Multi-Hop Bridge** — Questions requiring entity-linking across episodes (e.g., "What did the inventor of X say about Y?")
+  - **Type 2: Comparative Viewpoint** — Questions comparing perspectives of different guests on shared topics
+  - **Type 3: Temporal Evolution** — Questions tracking how a guest's views changed across appearances
+  - **Type 4: Quantitative Aggregation** — Questions requiring exhaustive retrieval of numeric claims
 4. **Search Index Creation** — Build BM25 and embedding-based indices over chunked transcripts for hybrid retrieval.
 
 ## Dataset
@@ -46,6 +46,12 @@ python scripts/03b_generate_qa.py
 
 # Step 4: Create BM25 + embedding search indices (requires GEMINI_API_KEY)
 python scripts/04_create_indices.py
+
+# Step 4b (optional): Precompute chunk quality scores for quality_reweight experiments
+python scripts/04b_score_chunks.py
+
+# Step 5: Run evaluation experiments (smoke run)
+python scripts/05_run_experiments.py --run-main-grid --mode smoke --num-questions 3 --max-steps-values 2,3,4
 ```
 
 ## For Colleagues: Creating Search Indices
@@ -60,8 +66,101 @@ python scripts/04_create_indices.py
 ```
 
 This will:
+
 1. Chunk the 50-episode subset into ~1000-char segments with 150-char overlap
 2. Build a BM25 index (saved to `data/indices/bm25/`)
 3. Generate Gemini embeddings (768 dims) and build a FAISS index (saved to `data/indices/embeddings/`)
 
 The embedding step calls the Gemini API and takes ~5 minutes. It has checkpointing built in, so if it's interrupted by rate limits it will resume from the last checkpoint.
+
+## Evaluation Branch (Branch 3)
+
+### 1) Bootstrap data from teammate archive
+
+If you received `agentic-rag-search-data.zip`, bootstrap and validate in one step:
+
+```bash
+python scripts/00_setup_experiment_data.py --zip-path ../agentic-rag-search-data.zip
+```
+
+Validate only (no extraction):
+
+```bash
+python scripts/00_setup_experiment_data.py --check-only
+```
+
+Validate data only (skip API key check):
+
+```bash
+python scripts/00_setup_experiment_data.py --check-only --skip-env-check
+```
+
+### 2) Run strict 36-condition main grid
+
+The main grid is:
+
+- 3 retrievers: `grep`, `bm25`, `embedding`
+- 3 iteration settings: `max_steps in {2,3,4}`
+- process feedback: on/off
+- quality reweight: on/off
+
+```bash
+python scripts/05_run_experiments.py \
+  --run-main-grid \
+  --mode full \
+  --max-steps-values 2,3,4 \
+  --top-k 5
+```
+
+Run only the quality-off arm (18 conditions) while chunk quality scoring is still in progress:
+
+```bash
+python scripts/05_run_experiments.py \
+  --run-main-grid \
+  --only-quality-off \
+  --mode smoke \
+  --num-questions 3 \
+  --max-steps-values 2,3,4 \
+  --top-k 5
+```
+
+### 3) Run oracle mini-study (separate phase)
+
+```bash
+python scripts/05_run_experiments.py \
+  --run-oracle-mini-study \
+  --mode smoke \
+  --num-questions 3
+```
+
+### 4) Run quick smoke for pipeline verification
+
+```bash
+python scripts/05_run_experiments.py \
+  --run-main-grid \
+  --run-oracle-mini-study \
+  --mode smoke \
+  --num-questions 2 \
+  --max-steps-values 2,3,4 \
+  --output-tag smoke_check
+```
+
+### 5) Outputs and report artifacts
+
+Each run creates `data/results/<timestamp>[_tag]/` with:
+
+- `manifest.json`: run configuration and dataset references
+- `conditions_main.json` / `conditions_oracle_mini.json`: executed condition definitions
+- `runs.jsonl`: per-example records (config, answers, metrics, usage deltas)
+- `trajectories/*.json`: full trajectory per example-condition pair
+- `per_example_metrics.csv`: flattened table for analysis
+- `summary_by_condition.csv`: aggregate metrics by condition
+- `summary_overview.json`: top-level KPI snapshot
+- `gemini_usage_final.json`: cumulative API usage/cost counters
+
+### 6) Basic verification checks
+
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
+

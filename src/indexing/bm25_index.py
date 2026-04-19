@@ -4,7 +4,10 @@ from pathlib import Path
 
 import bm25s
 import pandas as pd
-import Stemmer
+try:
+    import Stemmer
+except Exception:
+    Stemmer = None
 
 from config.settings import BM25_DIR, CHUNKS_PARQUET
 
@@ -28,7 +31,7 @@ def build_bm25_index(
     print(f"Building BM25 index over {len(corpus)} chunks...")
 
     # Tokenize with stemming
-    stemmer = Stemmer.Stemmer("english")
+    stemmer = Stemmer.Stemmer("english") if Stemmer is not None else None
     tokenized = bm25s.tokenize(corpus, stemmer=stemmer)
 
     # Build index
@@ -65,7 +68,7 @@ def search_bm25(
     if chunks_df is None:
         chunks_df = pd.read_parquet(str(CHUNKS_PARQUET))
 
-    stemmer = Stemmer.Stemmer("english")
+    stemmer = Stemmer.Stemmer("english") if Stemmer is not None else None
     query_tokens = bm25s.tokenize([query], stemmer=stemmer)
 
     results, scores = retriever.retrieve(query_tokens, k=top_k)

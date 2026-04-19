@@ -183,16 +183,21 @@ def reweight_results(
     """
     for r in results:
         chunk_id = r.get("chunk_id", -1)
-        q_score = quality_scores.get(chunk_id, {})
+        original = r.get("score", 0.0)
+        r["original_score"] = original
+
+        q_score = quality_scores.get(chunk_id)
+        if q_score is None:
+            r["quality_score"] = None
+            continue
+
         quality = compute_chunk_quality(q_score)
 
-        original = r.get("score", 0.0)
         # Normalize original score to 0-1 range (approximate)
         if original > 1:
             original = min(original / 30.0, 1.0)  # BM25 scores can be large
 
         r["quality_score"] = quality
-        r["original_score"] = r["score"]
         r["score"] = (1 - quality_weight) * original + quality_weight * quality
 
     # Re-sort by new combined score

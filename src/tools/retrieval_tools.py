@@ -13,6 +13,7 @@ from config.settings import CHUNKS_PARQUET, BM25_DIR, EMBEDDINGS_DIR
 from src.indexing.bm25_index import load_bm25_index, search_bm25
 from src.indexing.embedding_index import load_embedding_index, search_embeddings
 from src.llm.gemini_client import GeminiClient
+from src.tools.chunk_quality import load_quality_scores, reweight_results
 
 
 @dataclass
@@ -26,6 +27,8 @@ class RetrievalResult:
     text: str
     score: float
     source: str  # "grep", "bm25", or "embedding"
+    quality_score: float | None = None
+    original_score: float | None = None
 
     def to_context_string(self) -> str:
         """Format for injection into agent context."""
@@ -44,6 +47,8 @@ class RetrievalResult:
             "text": self.text,
             "score": self.score,
             "source": self.source,
+            "quality_score": self.quality_score,
+            "original_score": self.original_score,
         }
 
 
@@ -170,6 +175,9 @@ class ToolRegistry:
         bm25_retriever=None,
         faiss_index=None,
         gemini_client: GeminiClient | None = None,
+        quality_reweight: bool = False,
+        quality_weight: float = 0.3,
+        quality_scores: dict[int, dict] | None = None,
     ):
         self.chunks_df = chunks_df if chunks_df is not None else pd.read_parquet(str(CHUNKS_PARQUET))
         self.grep = GrepTool(chunks_df=self.chunks_df)
@@ -179,17 +187,50 @@ class ToolRegistry:
             index=faiss_index,
             client=gemini_client,
         )
+        self.quality_reweight = quality_reweight
+        self.quality_weight = quality_weight
+        self.quality_scores = quality_scores if quality_scores is not None else {}
+        if self.quality_reweight and not self.quality_scores:
+            self.quality_scores = load_quality_scores()
 
     async def search(self, tool_name: str, query: str, top_k: int = 10) -> list[RetrievalResult]:
         """Dispatch search to the named tool."""
+        results: list[RetrievalResult]
         if tool_name == "grep":
-            return self.grep.search(query, top_k=top_k)
+            results = self.grep.search(query, top_k=top_k)
         elif tool_name == "bm25":
-            return self.bm25.search(query, top_k=top_k)
+            results = self.bm25.search(query, top_k=top_k)
         elif tool_name == "embedding":
-            return await self.embedding.search(query, top_k=top_k)
+            results = await self.embedding.search(query, top_k=top_k)
         else:
             raise ValueError(f"Unknown tool: {tool_name}. Use 'grep', 'bm25', or 'embedding'.")
+
+        if not self.quality_reweight:
+            return results
+
+        results_dicts = [r.to_dict() for r in results]
+        reweighted = reweight_results(
+            results=results_dicts,
+            quality_scores=self.quality_scores,
+            quality_weight=self.quality_weight,
+        )
+
+        converted: list[RetrievalResult] = []
+        for r in reweighted:
+            converted.append(
+                RetrievalResult(
+                    chunk_id=int(r["chunk_id"]),
+                    episode_id=int(r["episode_id"]),
+                    guest=str(r["guest"]),
+                    chunk_index=int(r["chunk_index"]),
+                    text=str(r["text"]),
+                    score=float(r["score"]),
+                    source=str(r["source"]),
+                    quality_score=float(r.get("quality_score")) if r.get("quality_score") is not None else None,
+                    original_score=float(r.get("original_score")) if r.get("original_score") is not None else None,
+                )
+            )
+        return converted
 
     @staticmethod
     def available_tools() -> list[str]:

@@ -13,6 +13,7 @@ RAW_SCRAPED_DIR = RAW_DIR / "scraped"
 PROCESSED_DIR = DATA_DIR / "processed"
 METADATA_DIR = PROCESSED_DIR / "metadata"
 INDICES_DIR = DATA_DIR / "indices"
+RESULTS_DIR = DATA_DIR / "results"
 
 TRANSCRIPTS_PARQUET = PROCESSED_DIR / "transcripts.parquet"
 TRANSCRIPTS_SUBSET_PARQUET = PROCESSED_DIR / "transcripts_subset.parquet"
@@ -58,6 +59,6 @@ def ensure_dirs():
     """Create all data directories if they don't exist."""
     for d in [
         RAW_HF_DIR, RAW_SCRAPED_DIR, PROCESSED_DIR,
-        METADATA_DIR, INDICES_DIR, BM25_DIR, EMBEDDINGS_DIR,
+        METADATA_DIR, INDICES_DIR, BM25_DIR, EMBEDDINGS_DIR, RESULTS_DIR,
     ]:
         d.mkdir(parents=True, exist_ok=True)

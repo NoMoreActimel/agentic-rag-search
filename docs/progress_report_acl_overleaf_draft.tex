@@ -1,0 +1,198 @@
+\documentclass[11pt]{article}
+\usepackage{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+
+\title{Process-Level Feedback for Agentic Information Search:\\
+Progress Report}
+
+\author{
+Vedant Jagtap \and Sergey Sedov \and Adhiraj Singh \\
+New York University \\
+\texttt{vsj7589\symbol{64}nyu.edu, ss19021\symbol{64}nyu.edu, as19687\symbol{64}nyu.edu}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This progress report analyzes process-level behavior in agentic retrieval over a local transcript corpus. We evaluate retrieval agents across three backends (\texttt{grep}, \texttt{bm25}, \texttt{embedding}), three step budgets ($\{2,3,4\}$), and two feedback settings (no judge vs.\ judge-in-process), yielding 18 quality-off conditions over 20 QA items each (360 evaluations). The run completes without row-level API fallbacks. We find moderate overall performance (success 0.439), strong interaction effects between process feedback and retriever/step configuration, and a concentrated failure mode on aggregation questions. We present reproducible metrics, confidence-interval visualizations, and a concrete plan for completing quality-aware experiments after chunk scoring is finalized.
+\end{abstract}
+
+\section{Introduction}
+Modern agentic RAG systems frequently optimize only end-task outputs while under-analyzing retrieval trajectories and intermediate decision quality. Our project investigates whether process-level verifier feedback improves retrieval-grounded QA in a local corpus setting, and whether quality-aware retrieval signals can further improve robustness.
+
+This report is self-contained and focuses on empirical progress completed so far. Relative to the proposal, we have fully implemented and executed the quality-off experimental arm and built a reproducible analysis pipeline with publication-ready plots and diagnostics.
+
+\paragraph{Scope in this report.}
+To avoid confounding from incomplete chunk-quality scoring, the primary evidence here is the completed \textbf{quality-off full run} (18 conditions). Quality-aware retrieval (\texttt{quality\_reweight=True}) is treated as upcoming work.
+
+\paragraph{Progress relative to project timeline.}
+This report reflects approximately one month of post-proposal work (excluding spring break) and is consistent with expected team effort. In this period, we implemented the full evaluation pipeline, executed a complete 18-condition quality-off run (360 evaluated examples), and built reproducible diagnostics/figure generation for reporting.
+
+\section{Experimental Setup}
+\subsection{Data and task}
+We use a local index derived from Lex Fridman podcast transcripts and evaluate on a synthetic QA set of 20 examples spanning multiple reasoning styles (multi-hop, comparative, temporal, aggregation). The current completed run evaluates all 20 questions in each condition.
+
+\subsection{Agent and retrieval conditions}
+We evaluate a factorial grid with:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item Retrieval backend: \texttt{grep}, \texttt{bm25}, \texttt{embedding}
+    \item Max step budget: $2, 3, 4$
+    \item Process feedback: no judge vs judge-in-process
+\end{itemize}
+
+This gives 18 quality-off conditions. Each condition is run over all 20 QA items, for 360 total per-example evaluations.
+
+\subsection{Models, hyperparameters, and metrics}
+Key implementation settings for this run are:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item Generation model: \texttt{gemini-2.5-flash}
+    \item Embedding model: \texttt{gemini-embedding-001} (768 dimensions, FAISS index)
+    \item Retrieval per step: top-$k=5$ chunks
+    \item Agent decoding temperature: 0.3; evaluator temperature: 0.1
+    \item Chunking: 1000 characters with 150-character overlap
+    \item Success criterion: \texttt{is\_correct} OR lexical F1 $\ge 0.55$
+\end{itemize}
+
+For each example we log trajectory artifacts and compute:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item \textbf{Success} (binary): true if LLM-judge correctness is true or lexical F1 exceeds threshold
+    \item \textbf{Judge score} (1--5)
+    \item \textbf{Retrieval precision}
+    \item \textbf{Hallucination rate}
+    \item \textbf{Lexical F1} and exact match (EM)
+    \item \textbf{Cost and latency} per example
+\end{itemize}
+
+All outputs are versioned under \texttt{data/results}; this report analyzes run
+\texttt{20260330\_185830\_report\_full\_qualityoff}.
+
+\section{Run Integrity and Reproducibility}
+Integrity checks verify that expected and observed counts match exactly:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item 18 conditions, 20 examples each, 360 rows total
+    \item 0 row-level API exhaustion/error fallbacks
+    \item all conditions quality-off by construction
+\end{itemize}
+
+Client-level usage for this run is 2450 API requests with 1 transient error and estimated cost around \$0.52 from final usage accounting. Aggregated per-example deltas sum to \$0.45; we report both values transparently and use one convention consistently in each table.
+
+\section{Results}
+\subsection{Global outcomes}
+Across 360 evaluated examples:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item Success: 0.439
+    \item Judge score: 3.10
+    \item Retrieval precision: 0.353
+    \item Hallucination rate: 0.325
+\end{itemize}
+
+These values indicate moderate quality with substantial remaining headroom.
+
+\subsection{Retriever-level behavior}
+BM25 and grep tie on mean success (0.45), while embedding is slightly lower (0.417) but has the highest retrieval precision. This mismatch suggests that better retrieval relevance alone does not guarantee final grounded answer quality.
+
+\subsection{Process feedback effects}
+Averaged across all retrievers and step budgets, process feedback improves success by +0.056 and reduces hallucination by -0.051, but with large latency overhead (+11.3s/example) and higher cost. Interaction effects are pronounced:
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item Strong gain at BM25, 2 steps (+0.35 success delta)
+    \item Negative or small effects for some BM25 3--4 step settings
+    \item Mixed outcomes in embedding/grep depending on step budget
+\end{itemize}
+
+\subsection{Step-budget tradeoff}
+Increasing max steps from 2 to 4 improves success from 0.442 to 0.475, but raises cost and latency materially. Step 3 underperforms step 2 on success in this run, indicating non-monotonic behavior and strong dependence on interaction with retriever and process feedback.
+
+\subsection{Error concentration by question family}
+Per-question diagnostics show the hardest cases are aggregation-type examples (lowest success, high hallucination), while several temporal and multihop examples are much stronger. This indicates that exhaustive synthesis across many chunks remains a bottleneck.
+
+\subsection{Actionable takeaways from current results}
+The quality-off run gives three immediate design lessons for the final system. First, process feedback should be treated as a conditional tool rather than a universal default, because its gains are concentrated in specific retriever/step settings and come with substantial latency overhead. Second, adding search depth is beneficial only when paired with suitable retrieval and feedback policy; the non-monotonic step trend suggests we need explicit stopping/selection controls instead of ``more steps is better.'' Third, future quality-aware retrieval should target aggregation robustness specifically, since that family dominates current failures and therefore offers the highest expected return from chunk-quality filtering and grounding constraints.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.48\linewidth]{fig_success_by_retriever_ci.png}
+    \hfill
+    \includegraphics[width=0.48\linewidth]{fig_steps_vs_success_ci.png}
+    \caption{Left: success by retriever with 95\% confidence intervals. Right: success vs.\ step budget with 95\% confidence intervals, split by process feedback.}
+    \label{fig:retriever_step}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.48\linewidth]{fig_process_feedback_delta_heatmap.png}
+    \hfill
+    \includegraphics[width=0.48\linewidth]{fig_success_by_qatype_ci.png}
+    \caption{Left: process-feedback success delta (process minus none) by retriever and step budget. Right: success by QA type with 95\% confidence intervals.}
+    \label{fig:feedback_qatype}
+\end{figure*}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.98\linewidth]{fig_cost_success_frontier.png}
+    \caption{Cost--success frontier across all quality-off conditions. Several 2-step settings are efficient baselines, while some higher-step settings improve success with notable cost/latency increases.}
+    \label{fig:frontier}
+\end{figure}
+
+\begin{table}[t]
+    \centering
+    \small
+    \begin{tabular}{lcccc}
+        \toprule
+        Group & Success & Judge & Precision & Halluc. \\
+        \midrule
+        Overall & 0.439 & 3.10 & 0.353 & 0.325 \\
+        BM25 & 0.450 & 3.25 & 0.287 & 0.316 \\
+        Grep & 0.450 & 3.09 & 0.343 & 0.329 \\
+        Embedding & 0.417 & 2.95 & 0.430 & 0.332 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Core quality-off metrics by retriever and overall aggregate.}
+    \label{tab:core_metrics}
+\end{table}
+
+\section{Preliminary Error Analysis}
+The strongest current failure mode is under-performing aggregation questions, where answers require broader coverage and careful numeric/comparative synthesis. We also observe cells where retrieval precision is strong but hallucination remains elevated, suggesting that final answer grounding and chunk selection in later steps need additional control.
+
+Another key observation is that process feedback is not universally beneficial; gains depend on retriever and step budget. This supports further targeted analysis of feedback prompts and stopping behavior rather than a blanket ``judge always helps'' conclusion.
+
+\paragraph{Concrete failure patterns in this run.}
+The weakest questions are concentrated in aggregation-style prompts, where answers require combining evidence across multiple retrieved chunks and maintaining numeric consistency. In these cases, the trajectories often retrieve partially relevant evidence but still produce unsupported synthesis in the final answer. This error profile is consistent with the observed precision--hallucination mismatch and motivates explicit grounding controls in late-step answer construction.
+
+\section{Limitations}
+\begin{itemize}[leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item This report does not yet include quality-on results; it cannot test chunk-quality weighting claims directly.
+    \item Exact-match is not informative in this abstractive setting (EM remains near zero).
+    \item Current confidence intervals are descriptive over the 20-item evaluation set, not multi-seed significance tests.
+\end{itemize}
+
+\section{Reproducibility Artifacts}
+To support independent verification, we retain condition manifests, per-example metrics, per-condition summaries, trajectory JSON files, and final API-usage accounting for the analyzed run. The analysis scripts deterministically regenerate all tables and figures from these artifacts.
+
+\section{Next Steps Before Final Submission}
+\begin{enumerate}
+    \item Complete chunk-quality scoring with strict filtering of failed fallback rows, then freeze a validated score file for reproducible reruns.
+    \item Run the full quality-on arm with identical settings for direct quality-off vs quality-on deltas, and report paired per-condition changes.
+    \item Add focused ablations for process feedback prompts and step stopping, prioritizing settings that were strongest in the quality-off run.
+    \item Expand error analysis with qualitative trajectory snippets for hardest aggregation failures and convert them into targeted prompt/retrieval fixes.
+\end{enumerate}
+
+\section{Progress Summary}
+Since the proposal deadline, the team has delivered a complete, reproducible quality-off evaluation stack and a full empirical run (18 conditions x 20 examples), including diagnostics and report-grade visualizations. This provides a solid quantitative baseline and identifies concrete bottlenecks to address in the quality-aware phase. The remaining semester work is now clearly scoped: controlled quality-on comparisons, targeted ablations, and failure-driven iteration on aggregation-heavy questions.
+
+\end{document}
