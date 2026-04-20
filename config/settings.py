@@ -1,9 +1,20 @@
 """Central configuration for all paths, model names, and parameters."""
 
+import os
 from pathlib import Path
+
+from dotenv import load_dotenv
+
+
+def _env_truthy(value: str | None) -> bool:
+    if value is None:
+        return False
+    return value.strip().lower() in ("1", "true", "yes", "on")
+
 
 # ── Project root ──────────────────────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(PROJECT_ROOT / ".env")
 
 # ── Data paths ────────────────────────────────────────────────────────────────
 DATA_DIR = PROJECT_ROOT / "data"
@@ -37,6 +48,16 @@ GEMINI_EMBEDDING_DIMS = 768
 GEMINI_RPM_LIMIT = 140
 GEMINI_CONCURRENT_LIMIT = 5
 GEMINI_MAX_RETRIES = 3
+
+# ── Vertex AI (Gemini API on Vertex) vs Gemini Developer API (API key) ───────
+# Official env pattern: https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview
+# Set GOOGLE_GENAI_USE_VERTEXAI=true and GOOGLE_CLOUD_PROJECT / GOOGLE_CLOUD_LOCATION,
+# then use Application Default Credentials (gcloud auth application-default login).
+GEMINI_USE_VERTEX_AI: bool = _env_truthy(os.getenv("GOOGLE_GENAI_USE_VERTEXAI")) or _env_truthy(
+    os.getenv("GEMINI_USE_VERTEX")
+)
+GOOGLE_CLOUD_PROJECT: str | None = os.getenv("GOOGLE_CLOUD_PROJECT") or os.getenv("GCP_PROJECT")
+GOOGLE_CLOUD_LOCATION: str = os.getenv("GOOGLE_CLOUD_LOCATION", "us-central1")
 
 # ── Chunking ──────────────────────────────────────────────────────────────────
 CHUNK_SIZE = 1000       # characters

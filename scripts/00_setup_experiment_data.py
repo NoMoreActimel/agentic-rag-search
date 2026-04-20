@@ -36,14 +36,39 @@ def _validate_data_layout(root: Path) -> list[str]:
     return missing
 
 
+def _env_truthy(value: str | None) -> bool:
+    if value is None:
+        return False
+    return value.strip().lower() in ("1", "true", "yes", "on")
+
+
 def _validate_environment(root: Path) -> tuple[bool, str]:
     env_file = root / ".env"
     if not env_file.exists():
-        return False, ".env file missing. Copy from .env.example and add GEMINI_API_KEY."
+        return (
+            False,
+            ".env file missing. Copy from .env.example and add either GEMINI_API_KEY "
+            "or Vertex settings (GOOGLE_GENAI_USE_VERTEXAI + GOOGLE_CLOUD_PROJECT).",
+        )
     dotenv.load_dotenv(dotenv_path=env_file)
-    if not os.getenv("GEMINI_API_KEY"):
-        return False, "GEMINI_API_KEY not found in .env."
-    return True, "Environment looks good."
+    use_vertex = _env_truthy(os.getenv("GOOGLE_GENAI_USE_VERTEXAI")) or _env_truthy(
+        os.getenv("GEMINI_USE_VERTEX")
+    )
+    if use_vertex:
+        if not os.getenv("GOOGLE_CLOUD_PROJECT"):
+            return (
+                False,
+                "Vertex AI enabled but GOOGLE_CLOUD_PROJECT not set in .env. "
+                "See .env.example.",
+            )
+        return (
+            True,
+            "Vertex AI env vars present. Ensure: gcloud auth application-default login "
+            "and Vertex AI API enabled for this project.",
+        )
+    if not os.getenv("GEMINI_API_KEY") and not os.getenv("GOOGLE_API_KEY"):
+        return False, "GEMINI_API_KEY (or GOOGLE_API_KEY) not found in .env."
+    return True, "Environment looks good (Gemini Developer API / API key)."
 
 
 def _extract_zip(zip_path: Path, root: Path) -> None:

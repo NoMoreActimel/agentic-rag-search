@@ -26,8 +26,28 @@ Current RAG evaluations focus on final retrieval quality but ignore the *search 
 ```bash
 conda env create -f environment.yml
 conda activate agentic-rag
-cp .env.example .env  # Add your GEMINI_API_KEY
+cp .env.example .env
 ```
+
+Then choose **one** auth mode in `.env` (see `.env.example`):
+
+- **Gemini Developer API (Google AI Studio):** set `GEMINI_API_KEY` — billed on AI Studio / API key tier.
+- **Gemini on Vertex AI (GCP / free trial credits):** set `GOOGLE_GENAI_USE_VERTEXAI=true`, `GOOGLE_CLOUD_PROJECT`, and `GOOGLE_CLOUD_LOCATION`, then use **Application Default Credentials** (no AI Studio API key required for requests). Official overview: [Google Gen AI SDK — Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview).
+
+### Gemini on Vertex AI (quick checklist)
+
+1. Install [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) and log in: `gcloud auth application-default login`
+2. Pick your **GCP project ID** (Console home → project selector; numeric *project number* is not the same as **project ID**).
+3. Enable **Vertex AI API** for that project: Cloud Console → APIs & Services → Enable **Vertex AI API**.
+4. In `.env` set for example:
+   - `GOOGLE_GENAI_USE_VERTEXAI=true`
+   - `GOOGLE_CLOUD_PROJECT=your-project-id`
+   - `GOOGLE_CLOUD_LOCATION=us-central1`
+5. (Optional) Service account JSON instead of ADC: set `GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/key.json` and grant the account **Vertex AI User** (or broader) on the project.
+
+The code still uses the **`google-genai`** package; only client initialization switches to Vertex when the env vars above are set. Agent, judge, and evaluator call sites are unchanged.
+
+**Note:** GCP trial credits apply to **Google Cloud** (e.g. Vertex), not to the separate **Google AI Studio** paid tier tied to `GEMINI_API_KEY`.
 
 ## Pipeline
 

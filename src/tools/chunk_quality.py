@@ -70,6 +70,10 @@ async def score_single_chunk(
         )
         data = json.loads(response)
         data["chunk_id"] = chunk_id
+        # Normalize types (model may return numeric fields as strings).
+        data["integrity"] = _rating_1_to_5(data.get("integrity", 3))
+        data["information_density"] = _rating_1_to_5(data.get("information_density", 3))
+        data["is_ad_or_filler"] = _truthy_ad(data.get("is_ad_or_filler", False))
         return data
     except Exception as e:
         return {
@@ -153,15 +157,40 @@ def load_quality_scores(path: str | None = None) -> dict[int, dict]:
     return {int(k): v for k, v in data.items()}
 
 
+def _rating_1_to_5(value, default: int = 3) -> int:
+    """Coerce model/JSON output to int in [1, 5] (Gemini sometimes returns strings)."""
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        return default
+    if isinstance(value, (int, float)):
+        n = int(round(float(value)))
+    else:
+        s = str(value).strip()
+        try:
+            n = int(round(float(s)))
+        except ValueError:
+            return default
+    return max(1, min(5, n))
+
+
+def _truthy_ad(value) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        return value.strip().lower() in ("true", "1", "yes")
+    return bool(value)
+
+
 def compute_chunk_quality(score: dict) -> float:
     """
     Compute a single quality score from integrity and density ratings.
 
     Returns a value between 0 and 1.
     """
-    integrity = score.get("integrity", 3)
-    density = score.get("information_density", 3)
-    is_ad = score.get("is_ad_or_filler", False)
+    integrity = _rating_1_to_5(score.get("integrity", 3))
+    density = _rating_1_to_5(score.get("information_density", 3))
+    is_ad = _truthy_ad(score.get("is_ad_or_filler", False))
 
     if is_ad:
         return 0.1  # Heavily penalize ads/filler

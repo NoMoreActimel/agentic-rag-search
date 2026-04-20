@@ -18,6 +18,9 @@ from config.settings import (
     GEMINI_MAX_RETRIES,
     GEMINI_MODEL,
     GEMINI_RPM_LIMIT,
+    GEMINI_USE_VERTEX_AI,
+    GOOGLE_CLOUD_LOCATION,
+    GOOGLE_CLOUD_PROJECT,
 )
 
 load_dotenv()
@@ -65,11 +68,34 @@ class GeminiClient:
     """Async Gemini client with rate limiting, retry, and cost tracking."""
 
     def __init__(self, model: str = GEMINI_MODEL):
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            raise ValueError("GEMINI_API_KEY not found in environment. Set it in .env")
+        # Vertex AI (GCP / trial credits): Application Default Credentials + project/location.
+        # See https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview
+        if GEMINI_USE_VERTEX_AI:
+            project = GOOGLE_CLOUD_PROJECT
+            if not project:
+                raise ValueError(
+                    "Vertex AI is enabled (GOOGLE_GENAI_USE_VERTEXAI or GEMINI_USE_VERTEX) but "
+                    "GOOGLE_CLOUD_PROJECT is not set. Add it to .env and run: "
+                    "gcloud auth application-default login"
+                )
+            location = GOOGLE_CLOUD_LOCATION or "us-central1"
+            self.client = genai.Client(
+                vertexai=True,
+                project=project,
+                location=location,
+                http_options=types.HttpOptions(api_version="v1"),
+            )
+            self._auth_mode = "vertex"
+        else:
+            api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+            if not api_key:
+                raise ValueError(
+                    "No API key found. Set GEMINI_API_KEY in .env for Gemini Developer API, "
+                    "or enable Vertex with GOOGLE_GENAI_USE_VERTEXAI=true and GOOGLE_CLOUD_PROJECT."
+                )
+            self.client = genai.Client(api_key=api_key)
+            self._auth_mode = "api_key"
 
-        self.client = genai.Client(api_key=api_key)
         self.model = model
         self.embedding_model = GEMINI_EMBEDDING_MODEL
         self.stats = UsageStats()
@@ -199,4 +225,5 @@ class GeminiClient:
 
     def print_stats(self):
         """Print current usage statistics."""
-        print(f"\nGemini Usage: {self.stats}")
+        mode = getattr(self, "_auth_mode", "unknown")
+        print(f"\nGemini backend: {mode} | Usage: {self.stats}")
