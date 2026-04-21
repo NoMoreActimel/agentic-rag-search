@@ -1,0 +1,176 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI strategy cognitive architectures embodiment",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.7547012567520142,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6312,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 291,
+          "text": "I mean, I have a million questions to you about your ideas about AGI, but do you think it needs to be embodied? Do you think it needs to have a body to start to notice the signs of life and to develop the kind of system that's able to reason, perceive the world in the way that an AGI should and act in the world? So should we be thinking about robots or can this be achieved in a purely digital system? So I have a clear opinion on that and that's that no, it does not need to be embodied in the physical world where you could say most of my career is about making simulated virtual worlds in games or virtual reality. And so on a fundamental level, I believe that you can make a simulated environment that provides much of the value of what the real environment does and restricting yourself to operating at real time in the physical world with physical objects, I think is an enormous handicap.",
+          "score": 0.740917444229126,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6316,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 295,
+          "text": "And when it proves to be beneficial, you know, there's fast followers in all sorts of places. Yeah, and you're saying that, I mean, you know, Quake and VR is a kind of embodiment, but just in a digital world. And if you're able to demonstrate, if you're able to do something productive in that kind of digital reality, then AGI doesn't need to have a body. Yeah, it's like one of the really practical technical questions that I kind of keep arguing with myself over. If you're doing a training and learning and you've got like, you can watch Sesame Street, you can play Master System games or something, is it enough to have just a video feed that is that video coming in? Or should it literally be on a virtual TV set in a virtual room, even if it's, you know, a simple room, just to have that sense of you're looking at a 2D projection on a screen versus having the screen beam directly into your retinas.",
+          "score": 0.7358269691467285,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 32,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 0.7232979536056519,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 57,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.7195491790771484,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.421938419342041
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Sebastian Raschka AGI strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14784,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 234,
+          "text": "I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI? I think the real cool thing here is that we have foundation models that we can specialize. That\u2019s the breakthrough. Sebastian Raschka: Right now, I think we are not there yet because first, it\u2019s too expensive, but also ChatGPT doesn\u2019t just give away their model to customize it. I can imagine a business model where OpenAI says at some point, \u201cHey, Bank of America, for $100 million we will do your custom model.\u201d I think that will be the huge economic value add. The other thing though is, what is the differentiating factor? If everyone uses ChatGPT, they will all do the same thing. Everyone is moving in lockstep, but usually companies want to have a competitive advantage. I think there is no way around using some of their private data and experimenting with specialization. It\u2019s going to be interesting. Nathan Lambert: Given the pace of progress, it does feel like things are coming.",
+          "score": 0.6998370885848999,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14783,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 233,
+          "text": "I think there are startups\u2014maybe Harmonic is one\u2014where they\u2019re going all in on language models plus Lean for math. I think you had another podcast guest where you talked about this recently, and it\u2019s like we don\u2019t know exactly what\u2019s going to fall out of spending $100 million on that model. Nathan Lambert: Most of them will fail, but a couple of them might be big breakthroughs that are very different than ChatGPT or Claude Code type software experiences. Like a tool that\u2019s only good for a PhD mathematician but makes them 100 times more effective. Sebastian Raschka: I agree. I think this will happen in a lot of domains, especially those with a lot of resources like finance, legal, and pharmaceutical companies. But then again, is it really AGI? Because we are specializing it again. Is it really that much different from how we had specialized algorithms back in the day? I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI?",
+          "score": 0.6869220733642578,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14553,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 3,
+          "text": "Sebastian, Nathan, it\u2019s good to see you guys. So Sebastian, who do you think is winning? Sebastian Raschka: So winning is a very broad term. I would say you mentioned the DeepSeek moment, and I do think DeepSeek is definitely winning the hearts of the people who work on open weight models because they share these as open models. Winning, I think, has multiple timescales to it. We have today, we have next year, we have in ten years. One thing I know for sure is that I don\u2019t think nowadays, in 2026, that there will be any company having access to a technology that no other company has access to. And that is mainly because researchers are frequently changing jobs, changing labs. They rotate. So I don\u2019t think there will be a clear winner in terms of technology access. Sebastian Raschka: However, I do think the differentiating factor will be budget and hardware constraints. I don\u2019t think the ideas will be proprietary, but rather the resources that are needed to implement them.",
+          "score": 0.678593635559082,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14753,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 203,
+          "text": "There are actually pretty nice problem setups in this where these agentic models learn to use their context in a different way than just plowing forward. Sebastian Raschka: One interesting recent example would be DeepSeek-V3.2, where they had a sparse attention mechanism with a very efficient, small, lightweight indexer. Instead of attending to all the tokens, it selects which tokens I actually need. It almost comes back to the original idea of attention where you are selective, but attention is always on; you have maybe zero weight on some of them, but you use them all. But they are even more like, \u201cOkay, let\u2019s just mask that out or not even do that.\u201d And even with sliding window attention in OLMo, that is also kind of like that idea. You have that rolling window where you keep it fixed, because you don\u2019t need everything all the time. Sebastian Raschka: Occasionally, in some layers you might, but it\u2019s wasteful.",
+          "score": 0.6685928106307983,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14710,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 160,
+          "text": "I think you could train models to do this and it would be a wonderful contribution. In the book, you had to reevaluate every decision\u2014 Which is such a great example. I think there\u2019s a chance we work on it at AI2, which I think would be so fun. Sebastian Raschka: It makes sense. I did something like that the other day for video games. In my spare time, I like video games with puzzles, like Zelda and Metroid. There\u2019s this new game where I got really stuck. I didn\u2019t want to struggle for two days, so I used an LLM. But I told it, \u201cPlease don\u2019t add any spoilers. I\u2019m at this point; what do I have to do next?\u201d You can do the same thing for math where you say, \u201cI\u2019m at this point and I\u2019m getting stuck. Don\u2019t give me the full solution, but what is something I could try?\u201d You kind of carefully probe it. Sebastian Raschka: But the problem is that it requires discipline.",
+          "score": 0.6659566164016724,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.290672540664673
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI strategy embodiment",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 104,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 104,
+          "text": "So you're not giving it labeled examples. So you're not giving it like a thousand sentences where the parses were marked up by graduate students. So it's just got to infer the grammar from the text. It's like the Rosetta Stone, but worse, right? Because you only have the one language, and you have to figure out what is the grammar. So that's not really AGI because, I mean, the way a human learns language is not that, right? I mean, we learn from language that's used in context. So it's a social embodied thing. We see how a given sentence is grounded in observation. There's an interactive element, I guess. Yeah, yeah, yeah. On the other hand, so I'm more interested in that. I'm more interested in making an AGI system learn language from its social and embodied experience. On the other hand, that's also more of a pain to do, and that would lead us into Hanson Robotics and their robotics work I've known much. We'll talk about it in a few minutes.",
+          "score": 0.7071449756622314,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6314,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 293,
+          "text": "Well, that's very interesting because he has a very pragmatic view of that. That's just a way to solve a particular problem in a factory. Now, I do think that once you have an AGI, robotic bodies, humanoid bodies are going to be enormously valuable. I just don't think they're helpful getting to AGI. Well, he has a very sort of practical view, which I disagree with and argue with him, but it's a practical view that there's, you know, you could transfer the problem of driving to the problem of robotic manipulation because so much of it is perception. It's perception and action and it's just a different context and so you can apply all the same kind of data engine learning processes to a different environment. And so why not apply it to the humanoid robot environment? But I think, I do think that there's a certain magic to the embodied robot. That may be the thing that finally convinces people. But again, I don't really care that much about convincing people.",
+          "score": 0.7028525471687317,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.835193634033203
+    }
+  ],
+  "final_answer": "Ben Goertzel's strategy for AGI focused on cognitive architectures like OpenCog, integrating logic-based systems, and considering social and embodied experience crucial for learning. He believed deep neural nets alone would not achieve AGI.\n\nIn contrast, Sebastian Raschka and Nathan Lambert describe a landscape where the primary strategy involves large foundation models, their specialization for various domains, and the economic factors of cost and hardware. They question whether these sophisticated, specialized models truly constitute AGI.",
+  "total_chunks_retrieved": 12,
+  "unique_episodes_found": [
+    490,
+    309,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 14.78620433807373
+}

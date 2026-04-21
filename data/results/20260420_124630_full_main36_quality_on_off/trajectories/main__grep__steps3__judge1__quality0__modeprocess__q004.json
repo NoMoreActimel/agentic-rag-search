@@ -1,0 +1,96 @@
+{
+  "question": "Based on the update provided by the team led by the individual Matthew Johnson mentions in his discussion on neuroscience, how many humans have currently received the N1 implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Matthew Johnson N1 implant",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1151,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Matthew Johnson, a professor of psychiatry and behavioral science at John Hopkins, and is one of the top scientists in the world conducting seminal research on psychedelics. This was one of the most eye opening and fascinating conversations I've ever had on this podcast. I'm sure I'll talk with Matt many more times. Quick mention of a sponsor followed by some thoughts related to the episode. Thank you to a new sponsor, Brave, a fast browser that feels like Chrome but has more privacy preserving features. Neuro, the maker of functional sugar free gum and mints that I use to give my brain a quick caffeine boost. Four Sigmatic, the maker of delicious mushroom coffee, I'm just now realizing how ironic the set of sponsors are. And Cash App, the app I use to send money to friends. Please check out these sponsors in the description to get a discount and support this podcast.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1153,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 2,
+          "text": "If you enjoy this thing, subscribe on YouTube, review it with five stars on Apple Podcast, follow on Spotify, support on Patreon, or connect with me on Twitter at Lex Friedman. And now, here's my conversation with Matthew Johnson. Can you give an introduction to psychedelics, like a whirlwind overview? Maybe what are psychedelics and what are the kinds of psychedelics out there and in whatever way you find meaningful to categorize? Yeah, you can categorize them by their chemical structure. So, phenethylamines, tryptamines, ergolines, that is less of a meaningful way to classify them. I think that their pharmacological activity, their receptor activities are the best way. Well, let me start even broader than that because there I'm talking about the classic psychedelics. So, broadly speaking, when we say psychedelic, that refers to, for most people, a broad number of compounds that work in different pharmacological ways. So, it includes the so called classic psychedelics.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1361,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 210,
+          "text": "Like, yeah, we have this like modifiable constitutional republic that just like I still think is the best thing going. That as a model system of like how humans have to figure out how to work together. It's like, there's no better system that I've come across. Yeah, there's, if we're willing to look for it, there's a beautiful core to a lot of things we've created. Yeah, this country is a great example of that. But most of the human experience has a beauty to it, even the suffering. Right. So, the meaning is choosing to focus on that positivity and not forget it. Beautifully put. Speaking of experiences, this was one of my favorite experiences on this podcast talking to you today, Matthew. I hope we get a chance to talk again. I hope to see you and Joe Rogan. It's a huge honor to talk to you. Can't wait to read your papers. Thanks for talking today. Likewise, I very much enjoyed it. Thank you. Thanks for listening to this conversation with Matthew Johnson.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1362,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 211,
+          "text": "Thanks for talking today. Likewise, I very much enjoyed it. Thank you. Thanks for listening to this conversation with Matthew Johnson. And thank you to our sponsors. Brave, a fast browser that feels like Chrome but has more privacy preserving features. Neuro, the micro functional sugar free gum and mints that I use to give my brain a quick caffeine boost. Four Sigmatic, the maker of delicious mushroom coffee and Cash App, the app I use to send money to friends. Please check out these sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube, review it with five stars on Apple Podcast, follow on Spotify, support on Patreon, or connect with me on Twitter at Lex Friedman. And now let me leave you with some words from Terrence McKenna. Nature loves courage. You make the commitment and nature will respond to that commitment by removing impossible obstacles. Dream the impossible dream and the world will not grind you under.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 7326,
+          "episode_id": 409,
+          "guest": "Matthew Cox",
+          "chunk_index": 157,
+          "text": "The hair in my head, this isn\u2019t my hair. It\u2019s my hair, but it\u2019s from back here. They cut it here-\n\nLex Fridman: It looks great. Matthew Cox: Appreciate it. They reimplanted it there. Got liposuction, just some other stuff. And, got my teeth done, that sort of thing. That was my plan. I\u2019ll go, I\u2019ll take off. I got 80 grand. I\u2019ll steal some more money. But, I let her come with me. We ran up all my credit cards over the next few days, packed up the car, traded in my Audi and got an Audi\u2026 I don\u2019t know, it was it like an A6 or a four-door, like the big four-door, whatever it was. Got that and drove straight to Atlanta. I wrote a letter to my parents before I left, just explaining this is what\u2019s happening. I\u2019m leaving. I\u2019m done. I\u2019m not going to prison. Love you. Sorry.\n\n\n## Identity theft\n\nLex Fridman: Sorry. Matthew Cox: Sorry. Sorry. I know I\u2019m a disappointment. Sorry. Bam. I take off, go to Atlanta.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1. All retrieved chunks are irrelevant. Chunks 1-4 are filler/introductions from an episode with Matthew Johnson about psychedelics, and Chunk 5 is from an episode with Matthew Cox, discussing hair implants, which is off-topic.\n2. No, the chunks do not contain any useful information toward answering the question about the N1 implant or any individual Matthew Johnson might mention in a neuroscience context.\n3. Search for discussions by Matthew Johnson specifically about brain implants or neurotechnology to identify any individuals or specific implants he might mention. A good next query would be: \"Matthew Johnson brain implants\" or \"Matthew Johnson neurotechnology\".",
+      "timestamp": 2.031787395477295
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Matthew Johnson N1 implant",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 24.1976261138916
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Matthew Johnson N1 implant",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 26.535255908966064
+    }
+  ],
+  "final_answer": "The provided transcript chunks do not contain information about the N1 implant or how many humans have received it. The discussions with Matthew Johnson focus on psychedelics, and there is no mention of neuroscience implants in his segments.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    145,
+    409
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 30.286683797836304
+}

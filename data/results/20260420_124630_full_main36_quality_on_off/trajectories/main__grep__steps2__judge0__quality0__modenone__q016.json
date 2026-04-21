@@ -1,0 +1,143 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dylan Patel DeepSeek GPU count pre-training",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11136,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 68,
+          "text": "Nathan Lambert: Accepted practice is that for any given model that is a notable advancement, you\u2019re going to do two to 4x compute of the full training run in experiments alone. Lex Fridman: So a lot of this compute that\u2019s being scaled up is probably used in large part at this time for research? Dylan Patel: Yeah. And research begets the new ideas that lets you get huge efficiency. Nathan Lambert: Research gets you o1. Research gets you breakthroughs and you need to bet on it. Lex Fridman: So some of the pricing strategy that we\u2019ll discuss has the research baked into the price? Dylan Patel: So the numbers that DeepSeek specifically said publicly are just the 10,000 GPUs in 2021 and then 2,000 GPUs for only the pre-training for V3. They did not discuss cost on R1. They did not discuss cost on all the other RL for the instruct model that they made. They only discussed the pre-training for the base model and they did not discuss anything on research and ablations.",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11068,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11117,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 49,
+          "text": "Nathan Lambert: I\u2019m sure DeepSeek definitely has code bases that are extremely messy, where they\u2019re testing these new ideas. Multi-head latent attention probably could start in something like a Jupyter Notebook, or somebody tries something on a few GPUs and that is really messy. But the stuff that trains the DeepSeek V3 and DeepSeek-R1, those libraries, if you were to present them to us, I would guess are extremely high-quality code. Lex Fridman: So, high-quality, readable code. Yeah. Dylan Patel: I think there is one aspect to note though is that there is the general ability for that to transfer across different types of runs. You may make really, really high-quality code for one specific model architecture at one size, and then that is not transferable to, \u201d Hey, when I make this architecture tweak, everything\u2019s broken again,\u201d right? That\u2019s something that could be with their specific low-level coding of scheduling SMs is specific to this model architecture and size.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11122,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 54,
+          "text": "And what you could do is you just skip those. You see that there\u2019s a spike. You\u2019re like, \u201cOkay, I can ignore this data. Don\u2019t update the model and do the next one, and it\u2019ll recover quickly.\u201d\n\nBut on trickier implementations, so as you get more complex in your architecture and you scale up to more GPUs, you have more potential for your loss blowing up. So it\u2019s like, there\u2019s a distribution. Dylan Patel: And then the whole idea of grokking also comes in, right? It\u2019s like, just because it slowed down from improving in loss doesn\u2019t mean it\u2019s not learning because all of a sudden it could be like this and it could just spike down in loss again because it truly learned something, right? And it took some time for it to learn that. It\u2019s not a gradual process, and that\u2019s what humans are like. That\u2019s what models are like. So it\u2019s really a stressful task, as you mentioned. Lex Fridman: And the whole time the dollar count is going up. Nathan Lambert: Every company has failed runs.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11124,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 56,
+          "text": "Talking to people at Frontier Labs, there\u2019s a story that you can tell where training language models is kind of a path that you need to follow. So you need to unlock the ability to train a certain type of model or a certain scale, and then your code base and your internal know-how of which hyperparameters work for IT is kind of known. And you look at the DeepSeek papers and models, they\u2019ve scaled up, they\u2019ve added complexity, and it\u2019s just continuing to build the capabilities that they have. Dylan Patel: There\u2019s the concept of a YOLO run. So YOLO, you only live once. Lex Fridman: Yep. Dylan Patel: What it is, is there\u2019s all this experimentation you do at the small scale, research ablations. You have your Jupyter Notebook where you\u2019re experimenting with MLA on three GPUs or whatever and you\u2019re doing all these different things like, \u201cHey, do I do four active experts, 128 experts?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.583130121231079
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Sebastian Raschka AI landscape future year",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14584,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 34,
+          "text": "But that\u2019s just a wonderful interface where you can have an intermediary and not have to do the awful low-level work that you would have to do to maintain different web projects.\n\n\n## Open Source vs Closed Source LLMs\n\nLex Fridman: All right. So we just talked about a bunch of the closed-weight models. Let\u2019s talk about the open ones. Tell me about the landscape of open LLM models. Which are interesting ones? Which stand out to you and why? We already mentioned DeepSeek. Nathan Lambert: Do you wanna see how many we can name off the top of our head? Lex Fridman: Yeah, yeah. Without looking at notes. Nathan Lambert: DeepSeek, Kimi, MiniMax, Z.ai, Antlang. We\u2019re just going Chinese. Sebastian Raschka: Let\u2019s throw in Mistral AI, Gemma\u2014 \u2026gpt-oss, the open source model by OpenAI. Actually, NVIDIA had a really cool one, Nemotron 3. There\u2019s a lot of stuff, especially at the end of the year. Qwen might be the one\u2014\n\nNathan Lambert: Oh, yeah. Qwen was the obvious name I was gonna say.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14736,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 186,
+          "text": "Every second, you lose users. So I think that it\u2019s going to be this thing where it\u2019s going to-\n\nNathan Lambert: -grow and have some applications, but I actually thought that different types of models were going to be used for different things sooner than they have been. I think the tool use point is the one that\u2019s stopping them from being most general purpose because, with something like Claude Code or ChatGPT with search, the autoregressive chain is interrupted with an external tool, and I don\u2019t know how to do that with the diffusion setup.\n\n\n## Tool use\n\nLex Fridman: So what\u2019s the future of tool use this year and in the coming years? Do you think there\u2019s going to be a lot of developments there, and how that\u2019s integrated into the entire stack? Sebastian Raschka: I do think right now it\u2019s mostly on the proprietary LLM side, but we will see more of that in open-source tooling.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14831,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 281,
+          "text": "For example, gpt-oss-120b might not be the cutting-edge model, or Gemini 3 might not be, because they want to ensure it is safe. But when these companies see that DeepSeek-V3.2 is really awesome and is being used with no backlash or security risk, that could encourage them to release better models. Maybe that is a very positive thing. Nathan Lambert: A hundred percent. These Chinese companies have set things into motion that I think would potentially not have happened if they were not all releasing models. I\u2019m almost sure that those discussions have been had by leadership. Sebastian Raschka: Is there a possible future where the dominant models, AI models in the world are all open source? Nathan Lambert: Depends on the trajectory of progress that you predict. If you think saturation in progress is coming within a few years, essentially within the time where financial support is still very good, then open models will be so optimized and so much cheaper to run that they\u2019ll win out.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14849,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 299,
+          "text": "We remember the engine\u2014it is probably the equivalent of the computer in this. But there\u2019s a lot of other physical transformations that people are aware of, like the cotton gin and all these machines that are still known\u2014air conditioning, refrigerators\u2014 Some of these things from AI will still be known; the word \u201ctransformer\u201d could still very well be known. I would guess that deep learning is definitely still known, but the transformer might be evolved away from in 100 years with AI researchers everywhere. But I think deep learning is likely to be a term that is remembered. Lex Fridman: And I wonder what the air conditioning and the refrigeration of the future is that AI brings. If we travel forward 100 years from now, what do you think is different? How does the world look? First of all, do you think there\u2019s humans? Do you think there\u2019s robots everywhere walking around? Sebastian Raschka: I do think there will be specialized robots for certain tasks. Lex Fridman: Humanoid form?",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14550,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.086430549621582
+    }
+  ],
+  "final_answer": "DeepSeek publicly stated they used 10,000 GPUs in 2021 for their cluster and 2,000 GPUs specifically for the pre-training of V3. The analysis of the AI landscape is targeted for the year 2026, as indicated by the episode title \"State of AI in 2026.\"",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    459
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 5.944515705108643
+}

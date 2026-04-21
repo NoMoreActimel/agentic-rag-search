@@ -1,0 +1,133 @@
+{
+  "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals, John Carmack programming philosophy technical complexity project goals, Pieter Levels programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8835,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 58,
+          "text": "It\u2019s like, \u201cOne day I\u2019ll start coding properly,\u201d and I never got to it. Lex Fridman: I sometimes wonder if I need to learn that stuff. It\u2019s still a to-do item for me to really learn Node.js or Flask or these kind of-\n\nPieter Levels: React [inaudible 00:42:28]-\n\nLex Fridman: Yeah, React, and it feels like a responsible software engineer should know how to use these, but you can get stuff done so fast with vanilla versions of stuff. Pieter Levels: Yeah, it\u2019s like software developers if you want to get a job, and there\u2019s people making stuff, like startups, and if you want to be entrepreneur, probably you maybe shouldn\u2019t, right? Lex Fridman: I really want to measure performance and speed. I think there\u2019s a deep wisdom in that. I do think that frameworks and just constantly wanting to learn the new thing, this complicated way of software engineering gets in the way.",
+          "score": 0.7031293511390686,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8834,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 57,
+          "text": "PHP just stays the same and works. Lex Fridman: Yeah. Can you actually just speak to that stack? You build all your websites, apps, startups, projects, all of that with mostly vanilla HTML, JavaScript with jQuery, PHP, and SQLite. So, that\u2019s a really simple stack, and you get stuff done really fast with that. Can you just speak to the philosophy behind that? Pieter Levels: I think it\u2019s accidental, because that\u2019s the thing I knew. I knew PHP, I knew HTML, CSS, because you make websites, and when my startups started taking off, I didn\u2019t have time to\u2026 I remember putting on my to-do list like, \u201cLearn Node.js,\u201d because it\u2019s important to switch, because this obviously is much better language than PHP, and I never learned it. I never did it, because I didn\u2019t have time. These things were growing like this, and I was launching more projects, and I never had time. It\u2019s like, \u201cOne day I\u2019ll start coding properly,\u201d and I never got to it.",
+          "score": 0.6942044496536255,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6203,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 182,
+          "text": "Most of us, if you do any kind of programming, you kind of do boring kind of very vanilla type of code. That's the way to build large systems but it's nice to see that the possibility of creative genius is still within those languages. It's laden within those languages. So given that you are once again, one of the greatest programmers ever, what do you think makes a good programmer? Maybe a good modern programmer. So I just gave a long rant slash lecture at Meta to the TPM organization and my biggest point was everything that we're doing really should flow from user value, all the good things that we're doing. It's like, we're not technical people. It's like, you shouldn't be taking pride just in the specific thing. Like CodeGolf is the sort of thing, it's a fun puzzle game but that really should not be a major motivator for you. It's like, we're solving problems for people or we're providing entertainment to people.",
+          "score": 0.6936933994293213,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8836,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 59,
+          "text": "I do think that frameworks and just constantly wanting to learn the new thing, this complicated way of software engineering gets in the way. I\u2019m not sure what to say about that, because definitely you shouldn\u2019t build everything from just vanilla JavaScript or vanilla C for example, C++ when you\u2019re building systems engineering is like\u2026 There\u2019s a lot of benefits for a pointer safety, and all that kind of stuff. So I don\u2019t know, but it just feels like you can get so much more stuff done if you don\u2019t care about how you do it. Pieter Levels: Man, this is my most controversial take, I think, and maybe I\u2019m wrong, but I feel like this frameworks now that raise money, they raise a lot of money.",
+          "score": 0.6921545267105103,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8841,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 64,
+          "text": "It\u2019s not efficient, and if your benchmark is people building stuff that actually gets done. And for society, if we want to save time, we should probably use the technology that\u2019s simple, that\u2019s pragmatic, that works, that\u2019s not overly complicated, it doesn\u2019t make your life like a living hell. Lex Fridman: And use a framework when it obviously solves a direct problem that you-\n\nPieter Levels: Yeah, of course. I\u2019m not saying you should code without a framework. You should use whatever you want, but yeah, I think it\u2019s suspicious. And I think [inaudible 00:47:32], when I talk about it on Twitter, there\u2019s this army comes out, there\u2019s these framework armies. Man, something my gut tells me-\n\nLex Fridman: I want to ask the framework army, what have they built this week? It\u2019s the Elon question, \u201cWhat did you do this week?\u201d\n\nPieter Levels: Yeah, did you make money with it? Did you charge users? Is it a real business? And yeah.",
+          "score": 0.6921015977859497,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "The chunks provide excellent insight into Pieter Levels' philosophy, emphasizing simplicity and vanilla tech to achieve project goals quickly, often avoiding unnecessary technical complexity. Chunk 3 for John Carmack is too general and doesn't directly address his balance between technical complexity and project goals. There is no information on Travis Oliphant.\n\nThe agent should search for Travis Oliphant's programming philosophy, specifically regarding technical complexity and project goals. For John Carmack, refine the search to focus on his views on engineering trade-offs, pragmatism, or efficiency in relation to project delivery.",
+      "timestamp": 1.659501314163208
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals OR Travis Oliphant software development trade-offs OR John Carmack engineering pragmatism project goals OR John Carmack technical debt vs delivery",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 2796,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.6961712837219238,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3003,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 207,
+          "text": "Build, don't destroy. Build, like so often the tendency is to not like something and wanna go attack it. Build something, build something to replace it. Yeah. Build up, attract people to your new thing. You'll be far better, right? You don't need to destroy something to build something else. So that's, I guess, generally. And then definitely like curiosity, follow your curiosity and let it, don't just follow the money. And all of that, like you said, is grounded in family, friendship, and ultimately love. Yes. Which is a great way to end it. Travis, you're one of the most impactful people in the engineering and the computer science in the human world. So I truly appreciate everything you've done. And I really appreciate that you would spend your valuable time with me. It was an honor. It was a real pleasure for me. I appreciate that. Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.6832724809646606,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6213,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 192,
+          "text": "You can't look at everything, it's too complicated, but sometimes you can step back up and make a different decision. And we kind of went through this on the graphic side on Quake, where in some ways it was kind of bad where Michael would spend his time writing, like I'd rough out the basic routines, like, okay, here's our span rasterizer. And he would spend a month writing this beautiful cycle optimized piece of assembly language that does what I asked it to do. And he did it faster than like my original code would do, or probably what I would be able to do even if I had spent that month on it. But then we'd have some cases when I'd be like, okay, well, I figured out at this higher level instead of drawing these in a painter's order here, I do a span buffer and it cuts out 30% or 40% of all of these pixels, but it means you need to rewrite kind of this interface of all of that.",
+          "score": 0.6817893981933594,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6038,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 17,
+          "text": "You have to figure out how you can reformat this into some big vector operation or something that's going to be done completely within a C++ library. But the other hand is it's amazingly convenient and you just see stuff that people are able to cobble together by you just import a few different things and you can do stuff that nobody on earth could do 10 years ago. And you can do it in a little cookbook thing that you copy paste it out of a website. So that is really great. When I'm sitting down to do what I consider kind of serious programming, it's still in C++. And it's really kind of a C flavored C++ at that where I'm not big into the modern template metaprogramming sorts of things. I see a lot of train wrecks coming from some of that over abstraction. I spent a few years really going kind of deep into the kind of the historical Lisp work and Haskell and some of the functional programming sides of things. And there is a lot of value there in the way you think about things.",
+          "score": 0.6733695864677429,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1 and 2 for Travis Oliphant are too general and do not address his philosophy on the balance between technical complexity and project goals. Chunks 3 and 4 for John Carmack offer some insight into his approach to technical optimization and managing complexity, but don't explicitly state his philosophy on the *balance*. There is no information on Pieter Levels.\n\nThe agent should search for explicit statements or examples from Travis Oliphant and John Carmack regarding trade-offs between technical perfection/complexity and shipping/project goals. A new search is needed for Pieter Levels covering his philosophy on technical complexity, pragmatism, and project delivery.",
+      "timestamp": 8.336140155792236
+    }
+  ],
+  "final_answer": "Pieter Levels prioritizes simplicity and speed, using vanilla technologies like PHP and HTML to quickly build and launch projects, viewing complex frameworks as hindrances to getting things done. John Carmack emphasizes that programming should flow from user value, not just technical pride, and while he acknowledges the convenience of modern libraries, he prefers C-flavored C++ for serious programming to avoid over-abstraction. The provided text introduces Travis Oliphant as a highly impactful programmer who empowers others to solve difficult problems, but it does not detail his specific philosophy regarding the balance between technical complexity and project goals.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    440,
+    224,
+    309
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 18.919902324676514
+}

@@ -1,0 +1,153 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI strategy cognitive architectures embodiment",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 26,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 26,
+          "text": "So I mean it's... AKA neural networks. Yeah, yeah, yeah. Well, certain architectures for learning using neural networks. So yeah, the AGI conferences are sort of now the main concentration of people not obsessed with deep neural nets and deep reinforcement learning, but still interested in AGI, not the only ones. I mean, there's other little conferences and groupings interested in human level AI and cognitive architectures and so forth. But yeah, it's been a big shift. Like back then, you couldn't really... It'll be very, very edgy then to give a university department seminar that mentioned AGI or human level AI. It was more like you had to talk about something more short term and immediately practical than in the bar after the seminar, you could bullshit about AGI in the same breath as time travel or the simulation hypothesis or something. Whereas now, AGI is not only in the academic seminar room, like you have Vladimir Putin knows what AGI is.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 70,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 70,
+          "text": "We were looking at how do you make a biologically realistic simulation of seven different parts of the brain cooperating with each other, using like realistic nonlinear dynamical models of neurons, and how do you get that to simulate what's going on in the mind of a geo intelligence analyst while they're trying to find terrorists on a map, right? So if you want to do something like that, having neuromorphic hardware that really let you simulate like a realistic model of the neuron would be amazing. But that's sort of with my computational neuroscience hat on, right? With an AGI hat on, I'm just more interested in these hypergraph knowledge representation based architectures, which would benefit more from various types of graph processors because the main processing bottleneck is reading writing to RAM. It's reading writing to the graph in RAM. The main processing bottleneck for this kind of proto AGI architecture is not multiplying matrices.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 154,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 154,
+          "text": "And part of my thought was really kind of abstract connected to AGI ethics. And many people are concerned AGI is gonna enslave everybody or turn everybody into computronium to make extra hard drives for their cognitive engine or whatever. And emotionally I'm not driven to that sort of paranoia. I'm really just an optimist by nature, but intellectually I have to assign a non zero probability to those sorts of nasty outcomes. Cause if you're making something 10 times as smart as you, how can you know what it's gonna do? There's an irreducible uncertainty there just as my dog can't predict what I'm gonna do tomorrow. So it seemed to me that based on our current state of knowledge, the best way to bias the AGI as we create toward benevolence would be to infuse them with love and compassion the way that we do our own children. So you want to interact with AIs in the context of doing compassionate, loving and beneficial things.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6316,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 295,
+          "text": "And when it proves to be beneficial, you know, there's fast followers in all sorts of places. Yeah, and you're saying that, I mean, you know, Quake and VR is a kind of embodiment, but just in a digital world. And if you're able to demonstrate, if you're able to do something productive in that kind of digital reality, then AGI doesn't need to have a body. Yeah, it's like one of the really practical technical questions that I kind of keep arguing with myself over. If you're doing a training and learning and you've got like, you can watch Sesame Street, you can play Master System games or something, is it enough to have just a video feed that is that video coming in? Or should it literally be on a virtual TV set in a virtual room, even if it's, you know, a simple room, just to have that sense of you're looking at a 2D projection on a screen versus having the screen beam directly into your retinas.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.5472216606140137
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Sebastian Raschka Nathan Lambert AGI strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14662,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 112,
+          "text": "That could potentially lead to burnout. For example, if I use an LLM to do all my coding for me, now there\u2019s no coding; I\u2019m just managing something that is coding for me. Sebastian Raschka: Two years later, let\u2019s say, if I just do that eight hours a day\u2014having something code for me\u2014do I still feel fulfilled? Is this hurting me in terms of being excited about my job and what I\u2019m doing? Am I still proud to build something? Lex Fridman: On that topic of enjoyment, it\u2019s quite interesting. We should just throw this in there, that there\u2019s this recent survey of about 791 professional developers\u2014professional meaning 10-plus years of experience. Nathan Lambert: That\u2019s a long time. As a junior developer? Lex Fridman: Yeah, in this day and age. The results are surprising on many fronts. They break it down by junior and senior developers, and it shows that both groups use AI-generated code in the code they ship. This is not just for fun or learning; this is code they ship.",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14783,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 233,
+          "text": "I think there are startups\u2014maybe Harmonic is one\u2014where they\u2019re going all in on language models plus Lean for math. I think you had another podcast guest where you talked about this recently, and it\u2019s like we don\u2019t know exactly what\u2019s going to fall out of spending $100 million on that model. Nathan Lambert: Most of them will fail, but a couple of them might be big breakthroughs that are very different than ChatGPT or Claude Code type software experiences. Like a tool that\u2019s only good for a PhD mathematician but makes them 100 times more effective. Sebastian Raschka: I agree. I think this will happen in a lot of domains, especially those with a lot of resources like finance, legal, and pharmaceutical companies. But then again, is it really AGI? Because we are specializing it again. Is it really that much different from how we had specialized algorithms back in the day? I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI?",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14784,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 234,
+          "text": "I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI? I think the real cool thing here is that we have foundation models that we can specialize. That\u2019s the breakthrough. Sebastian Raschka: Right now, I think we are not there yet because first, it\u2019s too expensive, but also ChatGPT doesn\u2019t just give away their model to customize it. I can imagine a business model where OpenAI says at some point, \u201cHey, Bank of America, for $100 million we will do your custom model.\u201d I think that will be the huge economic value add. The other thing though is, what is the differentiating factor? If everyone uses ChatGPT, they will all do the same thing. Everyone is moving in lockstep, but usually companies want to have a competitive advantage. I think there is no way around using some of their private data and experimenting with specialization. It\u2019s going to be interesting. Nathan Lambert: Given the pace of progress, it does feel like things are coming.",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14790,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 240,
+          "text": "So there\u2019s a lot of things coming. Sebastian Raschka: I used that feature before, and I always feel bad because it does that every day, and I rarely check it out. How much compute is burned on something I don\u2019t even look at, you know? Nathan Lambert: There\u2019s also a lot of idle compute in the world, so don\u2019t feel too bad. Lex Fridman: Okay. Do you think new ideas might be needed? Is it possible that the path to AGI\u2014whatever that is, however we define that\u2014to solve computer use more generally, to solve biology and chemistry and physics, sort of the Dario definition of AGI or powerful AI? Do you think it\u2019s possible that totally new ideas are needed? Non-LLM, non-RL ideas. What might they look like? We\u2019re now going into philosophy land a little bit. Nathan Lambert: For something like a singularity to happen, I would say yes. And the new ideas could be architectures or training algorithms, which are fundamental deep learning things. But they\u2019re, in that nature, pretty hard to predict.",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14550,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.8949689865112305
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 7.1686320304870605
+    }
+  ],
+  "final_answer": "Ben Goertzel's primary strategy for achieving Artificial General Intelligence (AGI) has historically focused on cognitive architectures, such as the OpenCog AI Framework, and hypergraph knowledge representation. He emphasizes biologically realistic simulations of brain parts and is associated with AGI conferences that cater to those not solely focused on deep neural nets and deep reinforcement learning, also considering embodiment and infusing AIs with compassion. In contrast, Sebastian Raschka and Nathan Lambert describe a contemporary landscape heavily influenced by Large Language Models (LLMs) and their specialization, questioning whether these specialized models truly constitute AGI. They acknowledge the economic value of customizing foundation models and ponder if entirely new, non-LLM, non-RL ideas or novel architectures and training algorithms will be necessary for true AGI or a singularity, indicating a shift towards LLM-centric approaches while still recognizing their limitations for general intelligence.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    309,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 7.168635606765747
+}

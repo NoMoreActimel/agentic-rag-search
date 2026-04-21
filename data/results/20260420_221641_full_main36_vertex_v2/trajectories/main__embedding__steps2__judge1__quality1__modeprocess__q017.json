@@ -1,0 +1,98 @@
+{
+  "question": "Comparing the perspectives of Ben Goertzel and the duo of Sebastian Raschka and Nathan Lambert, what specific numbers are cited regarding the scale of the AGI conference's origins versus its current state, and what specific year and model versioning milestones are used to frame the future of the AI race?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI conference scale origins current state",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 28,
+          "text": "On the other hand, sometimes a modest size community can be better for making intellectual progress also. Like you go to a society for neuroscience conference, you have 35 or 40,000 neuroscientists. On the one hand, it's amazing. On the other hand, you're not gonna talk to the leaders of the field there if you're an outsider. Yeah, in the same sense, the AAAI, the artificial intelligence, the main kind of generic artificial intelligence conference is too big. It's too amorphous. Like it doesn't make sense. Well, yeah, and NIPS has become a company advertising outlet in the whole of it. So, I mean, to comment on the role of AGI in the research community, I'd still, if you look at NeurIPS, if you look at CVPR, if you look at these iClear, AGI is still seen as the outcast. I would say in these main machine learning, in these main artificial intelligence conferences amongst the researchers, I don't know if it's an accepted term yet.",
+          "score": 0.8055741965770722,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7222488522529602
+        },
+        {
+          "chunk_id": 237,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 237,
+          "text": "And if someone made a super longevity pill and distributed it tomorrow, I mean, that would be huge and a much larger impact than a Mars colony is gonna have for quite some time. But perhaps not as much as an AGI system. No, because if you can make a benevolent AGI, then all the other problems are solved. I mean, if then the AGI can be, once it's as generally intelligent as humans, it can rapidly become massively more generally intelligent than humans. And then that AGI should be able to solve science and engineering problems much better than human beings, as long as it is in fact motivated to do so. That's why I said a benevolent AGI. There could be other kinds. Maybe it's good to step back a little bit. I mean, we've been using the term AGI. People often cite you as the creator, or at least the popularizer of the term AGI, artificial general intelligence. Can you tell the origin story of the term maybe?",
+          "score": 0.8025969505310058,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7179956436157227
+        },
+        {
+          "chunk_id": 27,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 27,
+          "text": "Whereas now, AGI is not only in the academic seminar room, like you have Vladimir Putin knows what AGI is. And he's like, Russia needs to become the leader in AGI. So national leaders and CEOs of large corporations. I mean, the CTO of Intel, Justin Ratner, this was years ago, Singularity Summit Conference, 2008 or something. He's like, we believe Ray Kurzweil, the singularity will happen in 2045 and it will have Intel inside. So, I mean, it's gone from being something which is the pursuit of like crazed mavericks, crackpots and science fiction fanatics to being a marketing term for large corporations and the national leaders, which is a astounding transition. But yeah, in the course of this transition, I think a bunch of sub communities have formed and the community around the AGI conference series is certainly one of them. It hasn't grown as big as I might've liked it to. On the other hand, sometimes a modest size community can be better for making intellectual progress also.",
+          "score": 0.7984788239002227,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7121126055717468
+        },
+        {
+          "chunk_id": 24,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 24,
+          "text": "So that there was a lot going on in AGI that did ultimately lay the groundwork for what we have today, but there wasn't a community, right? And so when I started trying to pull together an AGI community, it was in the, I guess, the early aughts when I was living in Washington, D.C. and making a living doing AI consulting for various U.S. government agencies. And I organized the first AGI workshop in 2006. And I mean, it wasn't like it was literally in my basement or something. I mean, it was in the conference room at the Marriott in Bethesda, it's not that edgy or underground, unfortunately, but still. How many people attended? About 60 or something. That's not bad. I mean, D.C. has a lot of AI going on, probably until the last five or 10 years, much more than Silicon Valley, although it's just quiet because of the nature of what happens in D.C. Their business isn't driven by PR. Mostly when something starts to work really well, it's taken black and becomes even more quiet, right?",
+          "score": 0.7972550809383392,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7103644013404846
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5753303635120391,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.7790433764457703
+        }
+      ],
+      "judge_feedback": "The chunks provide a good starting point for Ben Goertzel's perspective, noting the \"first AGI workshop in 2006\" and the \"2045\" singularity milestone. However, they lack specific numbers for the AGI conference's *current* scale. Crucially, there is no information from Sebastian Raschka and Nathan Lambert.\n\nThe agent should next search for \"AGI conference current attendance\" or \"AGI conference scale statistics\" to get the current state numbers, and then initiate a new search for \"Sebastian Raschka Nathan Lambert AGI conference scale\" and \"Sebastian Raschka Nathan Lambert AI race future milestones\" to address their perspectives.",
+      "timestamp": 1.8680088520050049
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI conference current attendance numbers",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 25,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 25,
+          "text": "Their business isn't driven by PR. Mostly when something starts to work really well, it's taken black and becomes even more quiet, right? But yeah, the thing is that really had the feeling of a group of starry eyed mavericks huddled in a basement, like plotting how to overthrow the narrow AI establishment. And for the first time, in some cases, coming together with others who shared their passion for AGI and the technical seriousness about working on it. And that's very, very different than what we have today. I mean, now it's a little bit different. We have AGI conference every year and there's several hundred people rather than 50. Now it's more like this is the main gathering of people who want to achieve AGI and think that large scale nonlinear regression is not the golden path to AGI. So I mean it's... AKA neural networks. Yeah, yeah, yeah. Well, certain architectures for learning using neural networks.",
+          "score": 0.7810485184192657,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.6872121691703796
+        }
+      ],
+      "judge_feedback": "This chunk describes the *feeling* of the early AGI conference but provides no specific numbers for its origins or current state. It also lacks information on future AI milestones.\n\nThe agent should search for specific attendance numbers or scale metrics for the AGI conference, both historically and currently, and then for Ben Goertzel's predictions on future AI race milestones (years, model versions).",
+      "timestamp": 11.520907878875732
+    }
+  ],
+  "final_answer": "Ben Goertzel states that the first AGI workshop he organized in 2006 had about 60 attendees. Currently, the AGI conference attracts several hundred people. Regarding the future of the AI race, the CTO of Intel, Justin Ratner, cited Ray Kurzweil's belief that the singularity would occur in 2045. The provided context does not include the perspectives of Sebastian Raschka and Nathan Lambert, nor does it mention specific model versioning milestones for the future of the AI race.",
+  "total_chunks_retrieved": 6,
+  "unique_episodes_found": [
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 17.924683809280396
+}

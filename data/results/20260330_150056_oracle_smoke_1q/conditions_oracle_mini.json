@@ -1,0 +1,29 @@
+[
+  {
+    "suite": "oracle-mini",
+    "retriever": "bm25",
+    "max_steps": 3,
+    "process_feedback": false,
+    "quality_reweight": false,
+    "judge_mode": "none",
+    "condition_id": "oracle-mini__bm25__steps3__judge0__quality0__modenone"
+  },
+  {
+    "suite": "oracle-mini",
+    "retriever": "bm25",
+    "max_steps": 3,
+    "process_feedback": true,
+    "quality_reweight": false,
+    "judge_mode": "process",
+    "condition_id": "oracle-mini__bm25__steps3__judge1__quality0__modeprocess"
+  },
+  {
+    "suite": "oracle-mini",
+    "retriever": "bm25",
+    "max_steps": 3,
+    "process_feedback": true,
+    "quality_reweight": false,
+    "judge_mode": "oracle",
+    "condition_id": "oracle-mini__bm25__steps3__judge1__quality0__modeoracle"
+  }
+]

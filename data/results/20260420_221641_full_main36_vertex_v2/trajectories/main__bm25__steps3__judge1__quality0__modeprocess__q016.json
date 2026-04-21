@@ -1,0 +1,175 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "DeepSeek GPU count Dylan Patel Sebastian Raschka",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11134,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 9.612022399902344,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11340,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 272,
+          "text": "Nathan Lambert: How many watts is a toaster? Dylan Patel: A toaster has also-\n\nNathan Lambert: That\u2019s a good example. Dylan Patel: \u2026 a similar power consumption to an A100. H100 comes around. They increase the power from 400 to 700 watts and that\u2019s just per GPU, and then there\u2019s all the associated stuff around it. So once you count all of that, it\u2019s roughly 1,200 to 1,400 watts for everything. Networking, CPUs, memory, blah, blah, blah. Lex Fridman: So we should also say, what\u2019s required, you said power. So, a lot of power is required. A lot of heat is generated, so the cooling is required. And because there\u2019s a lot of GPUs or CPUs or whatever, they have to be connected. So, there\u2019s a lot of networking, right? Dylan Patel: Yeah. I think-\n\nSorry for skipping past that. And then the data center itself is complicated, but these are still standard sized data centers for GPT-4 scale. Now, we step forward to what is the scale of clusters that people built last year, and it ranges widely.",
+          "score": 9.504087448120117,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11138,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 70,
+          "text": "Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had. I think the clearest example we have, because Meta is also open, they talk about order of 60k to 100k H100 equivalent GPUs in their training clusters. Dylan Patel: Right. So Llama 3, they trained on 16,000 H100s, but the company of Meta last year publicly disclosed they bought 400 something thousand GPUs. Nathan Lambert: Yeah. Dylan Patel: Right? So of course, tiny percentage on the training. Again, most of it is serving me the best Instagram Reels or whatever. Nathan Lambert: I mean, we could get into a cost of, what is the cost of ownership for a 2,000 GPU cluster, 10,000? There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big.",
+          "score": 9.373052597045898,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11230,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 162,
+          "text": "Lex Fridman: Okay, so that\u2019s one-\n\nNathan Lambert: There\u2019s multiple factors. We should break down the factors, I think. Lex Fridman: It\u2019s two bucks per million token output for R1 and $60 per million token output for o1. Dylan Patel: Yeah, let\u2019s look at this. I think this is very important. OpenAI is that drastic gap between DeepSeek and pricing. But DeepSeek is offering the same model because they open weight to everyone else for a very similar, much lower price than what others are able to serve it for. So there\u2019s two factors here. Their model is cheaper. It is 27 times cheaper. I don\u2019t remember the number exactly off the top of my head. Lex Fridman: We\u2019re looking at a graphic that\u2019s showing different places serving V3, DeepSeek-V3, which is similar to DeepSeek-R1. And there\u2019s a vast difference in-\n\nDylan Patel: In serving cost. Lex Fridman: \u2026 in serving cost. And what explains that difference? Dylan Patel: And so part of it is OpenAI has a fantastic margin.",
+          "score": 8.985069274902344,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11129,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 61,
+          "text": "Lex Fridman: Yeah. Dylan Patel: Right? Lex Fridman: Yeah. Dylan Patel: Now people have all these training run failures that are in the media, right? It\u2019s like, \u201cOkay, great, but actually a huge chunk of my GPUs are doing inference. I still have a bunch doing research constantly. And yes, my biggest cluster is training, but on this YOLO run,\u201d but that YOLO run is much less risky than what OpenAI did in 2022, or maybe what DeepSeek did now or sort of like, \u201cHey, we\u2019re just going to throw everything at it.\u201d\n\nLex Fridman: The big winners throughout human history are the ones who are willing to do YOLO at some point. Okay. What do we understand about the hardware it\u2019s been trained on, DeepSeek?\n\n\n## DeepSeek compute cluster\n\nDylan Patel: DeepSeek is very interesting. This is where a second could take to zoom out, out of who they are first of all, right? High-Flyer is a hedge fund that has historically done quantitative trading in China as well as elsewhere.",
+          "score": 8.910945892333984,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks are generally relevant to the AI race and infrastructure but do not provide the specific GPU counts for DeepSeek's cluster or pre-training, nor do they mention a specific future year for AI landscape analysis.\n\nThe agent should search for \"DeepSeek GPU cluster size\", \"DeepSeek pre-training GPU count\", and \"Dylan Patel Sebastian Raschka AI landscape future year\" to find the missing numerical details.",
+      "timestamp": 1.3274891376495361
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "DeepSeek GPU cluster size pre-training H800 H100 Dylan Patel Sebastian Raschka AI landscape future year",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 11139,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 71,
+          "text": "There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big. Their compute allocation is one of the top few in the world that\u2019s not OpenAI, Anthropic, et cetera, but they have a lot of compute.\n\n\n## Export controls on GPUs to China\n\nLex Fridman: Can you in gentlemen actually just zoom out and also talk about the Hopper architecture, the Nvidia Hopper GPU architecture and the difference between H100 and H800, like you mentioned, the interconnects? Dylan Patel: Yeah. So there\u2019s, Ampere was the A100 and then H100 Hopper, right? People use them synonymously in the U.S. because really there\u2019s just H100 and now there\u2019s H200, right, but same thing mostly? In China, there\u2019ve been different salvos of expert restrictions. So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs.",
+          "score": 18.087697982788086,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11140,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 72,
+          "text": "So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs. So any chip that had interconnects above a certain level and FLOPs above a certain \u2026 Floating point operations above a certain level was restricted. Later, the government realized that this was a flaw in the restriction and they cut it down to just floating point operations. And so-\n\nNathan Lambert: H800 had high FLOPs, low communication? Dylan Patel: Exactly. So, the H800 was the same performance as H100 on FLOPs, but it just had the interconnect bandwidth cut. DeepSeek knew how to utilize this. \u201cHey, even though we\u2019re cut back on the interconnect, we can do all this fancy stuff to figure out how to use the GPU fully anyways.\u201d\n\nAnd so that was back in October 2022. But later in 2023, into 2023 implemented in 2024, the U.S. government banned the H800. Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023.",
+          "score": 17.997901916503906,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks are somewhat relevant as they mention DeepSeek, Dylan Patel, and H100/H800, but they do not provide the specific GPU counts or the future year requested.\n\nThe agent should search for specific numbers regarding DeepSeek's GPU cluster size and pre-training, explicitly looking for mentions of \"GPU count,\" \"number of GPUs,\" or \"cluster size\" in discussions involving Dylan Patel or Sebastian Raschka. Also, search for a specific \"future year\" mentioned in their AI landscape analysis.",
+      "timestamp": 8.685140132904053
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Dylan Patel Sebastian Raschka AI landscape future year",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11381,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 313,
+          "text": "Lex Fridman: Let\u2019s talk about the broad AI race. Who do you think wins? We talked about Google, Meta. Nathan Lambert: The default leader has been Google because of their infrastructure advantage. Lex Fridman: Well, in the news, OpenAI is the leader. Nathan Lambert: They\u2019re the leading in the narrative. Dylan Patel: They have the best model. Nathan Lambert: They have the best model that people can use and they\u2019re experts-Experts. Dylan Patel: And they have the most AI revenue. Nathan Lambert: Yeah. OpenAI is winning. Lex Fridman: So who\u2019s making money on AI right now? Is anyone making money? Dylan Patel: So accounting profit-wise, Microsoft is making money, but they\u2019re spending a lot of CapEx and that gets depreciated over years. Meta\u2019s making tons of money with recommendation systems, which is AI, but not with Llama, right? Llama\u2019s losing money for sure. I think Anthropic and OpenAI are obviously not making money otherwise they wouldn\u2019t be raising money.",
+          "score": 8.354598999023438,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11252,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 184,
+          "text": "Nathan Lambert: There\u2019s no reason in some number of years that you can\u2019t train a language model to maximize time spent on a chat app. Right now they are trained for-\n\nDylan Patel: Is that not what Character AI has done? Their time per session is like two hours. Nathan Lambert: Yeah. Character AI very likely could be optimizing this where it\u2019s the way that this data is collected is naive, whereas you\u2019re presented a few options and you choose them. But that\u2019s not the only way that these models are going to be trained. Dylan Patel: It\u2019s naive stuff, like talk to an anime girl, but it can be. Yeah, this is a risk, right? Lex Fridman: It\u2019s a bit of a cliche thing to say, but I\u2019ve, over the past year, I had a few stretches of time where I didn\u2019t use social media or the internet at all and just read books and was out in nature.",
+          "score": 7.850412845611572,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14674,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 124,
+          "text": "Sebastian Raschka: I think that\u2019s called reinforcement learning with AI feedback, right? Nathan Lambert: That\u2019s the older term from it that was coined in Anthropic\u2019s Constitutional AI paper. So a lot of these things come in cycles. Sebastian Raschka: Also, just one step back for the RLVR. I think the interesting, beautiful thing here is that you ask the LLM a math question, you know the correct answer, and you let the LLM figure it out, but how it does it is\u2026 I mean, you don\u2019t really constrain it much. There are some constraints you can add, like \u2018use the same language\u2019 or \u2018don\u2019t switch between Spanish and English.\u2019 But let\u2019s say you\u2019re pretty much hands-off. Sebastian Raschka: You only give the question and the answer, and then the LLM has the task to arrive at the right answer. But the beautiful thing here is what happens in practice: the LLM will do a step-by-step description, like how a student or a mathematician would derive the solution.",
+          "score": 7.672490119934082,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14845,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 295,
+          "text": "So far we have Turing to today, which is 80 years. Sebastian Raschka: I think it would still be computing, like the umbrella term \u201ccomputing.\u201d I don\u2019t necessarily think that even 100 or 200 years from now it would be AI. It could still well be computers, you know? We are now taking better advantage of computers, but it\u2019s the fact of computing. Lex Fridman: It\u2019s basically a Moore\u2019s Law kind of discussion. Even the details of CUDA and GPUs won\u2019t even be remembered, and there won\u2019t be all this software turmoil. It\u2019ll be just, obviously, compute. Nathan Lambert: I generally agree, but is it the connectivity of the internet and compute able to be merged? Or is it both of them? Sebastian Raschka: I think the internet will probably be related to communication\u2014it could be a phone, internet, or a satellite. And compute is more like the scaling aspect of it. Lex Fridman: It\u2019s possible that the internet is completely forgotten.",
+          "score": 7.647013187408447,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11207,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 139,
+          "text": "And obviously there\u2019s butting of heads here, in the most simple terms. Lex Fridman: And that could take shape in all kinds of ways, including proxy wars. And now-\n\nNathan Lambert: Yeah, it seems like it\u2019s already happening. As much as I want there to be centuries of prolonged peace, it looks like further instability internationally is ahead. Dylan Patel: And the US\u2019 current task is, \u201cHey, if we control AI, if we\u2019re the leader in AI and AI significantly accelerates progress, then we can maintain the global hegemony position.\u201d And therefore-\n\nNathan Lambert: I hope that works. Dylan Patel: And as an American, like, okay, I guess that\u2019s going to lead to peace for us. Now obviously other people around the world get affected negatively.",
+          "score": 7.336142539978027,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "None of the chunks provide the specific GPU counts for DeepSeek's cluster or pre-training. While the title of Episode 490 suggests \"2026\" is the future year for AI analysis, the chunk content does not explicitly confirm this.\n\nSearch for \"DeepSeek GPU count\" or \"DeepSeek cluster size\" in discussions with Dylan Patel. Also, search specifically within Episode 490 for \"2026 AI landscape\" or \"future year analysis\" to confirm the target year.",
+      "timestamp": 14.126293897628784
+    }
+  ],
+  "final_answer": "DeepSeek acquired 10,000 GPUs in 2021 and a paper claims they used 2,000 H800 GPUs for pre-training, which were purchased in late 2023. The specific future year targeted for the analysis of the AI landscape is 2026, as indicated by the episode title \"State of AI in 2026\".",
+  "total_chunks_retrieved": 12,
+  "unique_episodes_found": [
+    490,
+    459
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 22.40985345840454
+}

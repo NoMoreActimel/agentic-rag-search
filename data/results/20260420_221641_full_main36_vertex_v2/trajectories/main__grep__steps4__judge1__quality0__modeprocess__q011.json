@@ -1,0 +1,212 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 70,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 70,
+          "text": "We were looking at how do you make a biologically realistic simulation of seven different parts of the brain cooperating with each other, using like realistic nonlinear dynamical models of neurons, and how do you get that to simulate what's going on in the mind of a geo intelligence analyst while they're trying to find terrorists on a map, right? So if you want to do something like that, having neuromorphic hardware that really let you simulate like a realistic model of the neuron would be amazing. But that's sort of with my computational neuroscience hat on, right? With an AGI hat on, I'm just more interested in these hypergraph knowledge representation based architectures, which would benefit more from various types of graph processors because the main processing bottleneck is reading writing to RAM. It's reading writing to the graph in RAM. The main processing bottleneck for this kind of proto AGI architecture is not multiplying matrices.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 147,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 154,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 154,
+          "text": "And part of my thought was really kind of abstract connected to AGI ethics. And many people are concerned AGI is gonna enslave everybody or turn everybody into computronium to make extra hard drives for their cognitive engine or whatever. And emotionally I'm not driven to that sort of paranoia. I'm really just an optimist by nature, but intellectually I have to assign a non zero probability to those sorts of nasty outcomes. Cause if you're making something 10 times as smart as you, how can you know what it's gonna do? There's an irreducible uncertainty there just as my dog can't predict what I'm gonna do tomorrow. So it seemed to me that based on our current state of knowledge, the best way to bias the AGI as we create toward benevolence would be to infuse them with love and compassion the way that we do our own children. So you want to interact with AIs in the context of doing compassionate, loving and beneficial things.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 155,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 155,
+          "text": "So you want to interact with AIs in the context of doing compassionate, loving and beneficial things. And in that way, as your children will learn by doing compassionate, beneficial, loving things alongside you. And that way the AI will learn in practice what it means to be compassionate, beneficial and loving. It will get a sort of ingrained intuitive sense of this, which it can then abstract in its own way as it gets more and more intelligent. Now, David saw this the same way. That's why he came up with the name Sophia, which means wisdom. So it seemed to me making these beautiful, loving robots to be rolled out for beneficial applications would be the perfect way to roll out early stage AGI systems so they can learn from people and not just learn factual knowledge, but learn human values and ethics from people while being their home service robots, their education assistants, their nursing robots. So that was the grand vision.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "No chunks are irrelevant, but most are tangential. Chunks 1, 2, and 5 offer some context and hints about Ben Goertzel's AGI approach (biological simulation, learning through interaction), but lack specific details on \"cognitive architectures and embodiment.\"\n\nThe agent needs to find explicit descriptions of Ben Goertzel's AGI strategy, focusing on cognitive architectures and embodiment. Also, it needs to find information on Sebastian Raschka and Nathan Lambert's perspectives on AGI strategy.\n\n**Next Search Query:** \"Ben Goertzel AGI cognitive architectures embodiment\" AND \"Sebastian Raschka Nathan Lambert AGI strategy\"",
+      "timestamp": 1.1800575256347656
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI cognitive architectures embodiment OR OpenCog OR Sophia robot AND Sebastian Raschka AGI strategy OR Nathan Lambert AGI strategy",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 14790,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 240,
+          "text": "So there\u2019s a lot of things coming. Sebastian Raschka: I used that feature before, and I always feel bad because it does that every day, and I rarely check it out. How much compute is burned on something I don\u2019t even look at, you know? Nathan Lambert: There\u2019s also a lot of idle compute in the world, so don\u2019t feel too bad. Lex Fridman: Okay. Do you think new ideas might be needed? Is it possible that the path to AGI\u2014whatever that is, however we define that\u2014to solve computer use more generally, to solve biology and chemistry and physics, sort of the Dario definition of AGI or powerful AI? Do you think it\u2019s possible that totally new ideas are needed? Non-LLM, non-RL ideas. What might they look like? We\u2019re now going into philosophy land a little bit. Nathan Lambert: For something like a singularity to happen, I would say yes. And the new ideas could be architectures or training algorithms, which are fundamental deep learning things. But they\u2019re, in that nature, pretty hard to predict.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11095,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 27,
+          "text": "And then it goes, wait, the user wants something that\u2019s not seen anywhere else. Let me dig deeper. And consider the human ability to hold contradictory beliefs simultaneously. Cognitive dissonance is known, but perhaps the function is to allow flexible adaptation, so on and so forth. That really captures the public imagination that holy shit, this isn\u2019t intelligence/almost like an inkling of sentience because you\u2019re thinking through, you\u2019re self-reflecting, you\u2019re deliberating. And the final result of that after 157 seconds is, humans instinctively convert selfish desires into cooperative systems by collectively pretending abstract rules, money, laws, rights are real. These shared hallucinations act as quote \u201cgames\u201d where competition is secretly redirected to benefit the group, turning conflict into society\u2019s fuel. Pretty profound. Nathan Lambert: This is a potential digression, but a lot of people have found that these reasoning models can sometimes produce much more eloquent text.",
+          "score": 0.4444444444444444,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14662,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 112,
+          "text": "That could potentially lead to burnout. For example, if I use an LLM to do all my coding for me, now there\u2019s no coding; I\u2019m just managing something that is coding for me. Sebastian Raschka: Two years later, let\u2019s say, if I just do that eight hours a day\u2014having something code for me\u2014do I still feel fulfilled? Is this hurting me in terms of being excited about my job and what I\u2019m doing? Am I still proud to build something? Lex Fridman: On that topic of enjoyment, it\u2019s quite interesting. We should just throw this in there, that there\u2019s this recent survey of about 791 professional developers\u2014professional meaning 10-plus years of experience. Nathan Lambert: That\u2019s a long time. As a junior developer? Lex Fridman: Yeah, in this day and age. The results are surprising on many fronts. They break it down by junior and senior developers, and it shows that both groups use AI-generated code in the code they ship. This is not just for fun or learning; this is code they ship.",
+          "score": 0.4444444444444444,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14783,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 233,
+          "text": "I think there are startups\u2014maybe Harmonic is one\u2014where they\u2019re going all in on language models plus Lean for math. I think you had another podcast guest where you talked about this recently, and it\u2019s like we don\u2019t know exactly what\u2019s going to fall out of spending $100 million on that model. Nathan Lambert: Most of them will fail, but a couple of them might be big breakthroughs that are very different than ChatGPT or Claude Code type software experiences. Like a tool that\u2019s only good for a PhD mathematician but makes them 100 times more effective. Sebastian Raschka: I agree. I think this will happen in a lot of domains, especially those with a lot of resources like finance, legal, and pharmaceutical companies. But then again, is it really AGI? Because we are specializing it again. Is it really that much different from how we had specialized algorithms back in the day? I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI?",
+          "score": 0.4444444444444444,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Chunk 2 is completely irrelevant. Chunks 1, 3, and 4 mention Sebastian Raschka and Nathan Lambert but do not discuss their specific AGI strategies or approaches.\n2.  No useful information was retrieved regarding the AGI strategies of Ben Goertzel, Sebastian Raschka, or Nathan Lambert, nor any evolution or comparison between them.\n3.  The agent should search for explicit descriptions of each individual's AGI strategy or approach, and look for discussions comparing or showing an evolution in AGI strategies.\n\n**Next Search Query:** `\"Ben Goertzel AGI strategy\" OR \"OpenCog AGI approach\" OR \"Sebastian Raschka AGI strategy\" OR \"Nathan Lambert AGI strategy\" OR \"AGI strategy evolution Ben Goertzel Raschka Lambert\"`",
+      "timestamp": 9.074335098266602
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "\"Ben Goertzel AGI cognitive architectures embodiment OpenCog\" OR \"Sebastian Raschka AGI strategy LLM\" OR \"Nathan Lambert AGI strategy LLM\" OR \"AGI strategy evolution Goertzel Raschka Lambert\"",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 14800,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 250,
+          "text": "Human knowledge. Sebastian Raschka: I do agree with you, and in a sense it makes knowledge more accessible, but it also depends on what the topic is. For something like math, you can ask it questions and it answers, but if you want to learn a topic from scratch\u2014we talked about this earlier\u2014I think the sweet spot is still math textbooks where someone laid it out linearly. That is a proven strategy to learn a topic, and it makes sense if you start from zero to get information-dense text to soak it up, but then you use the LLM to make infinite exercises. Sebastian Raschka: If you have problems in a certain area or have questions about things you are uncertain about, you ask it to generate example problems, you solve them, and then maybe you need more background knowledge and you ask it to generate that. But it won\u2019t give you anything that is not in the textbook. It\u2019s just packaging it differently, if that makes sense.",
+          "score": 0.34782608695652173,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5879,
+          "episode_id": 292,
+          "guest": "Robin Hanson",
+          "chunk_index": 140,
+          "text": "Why aren't you doing it, right? So, the authority is often pushing for the conservative? Well, no, the authority can do more. I mean, so for example, we just think about, I don't know, in a pandemic even, right? You could just think, I'll just stay home and close all the doors or I'll just ignore it, right? You could just think of just some very simple strategy that might be defensible if there were no authorities, right? But authorities might be able to know more than that. They might be able to like look at some evidence, draw a more context dependent conclusion, declare it as the authority's opinion. And then other people might follow that and that could be better than doing nothing. So, what you mentioned, WHO, the world's most beloved organization. So, this is me speaking in general, WHO and CDC has been kind of, I, depending on degrees and details, just not behaving as I would have imagined in the best possible evolution of human civilization, authorities should act.",
+          "score": 0.30434782608695654,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1540,
+          "episode_id": 176,
+          "guest": "Robert Breedlove",
+          "chunk_index": 156,
+          "text": "And Taleb would say. The fire of their failure, okay. Yeah, exactly. Taleb would say individual fragility is inseparable from ensemble anti fragility. So this means that, again, every time that entrepreneur goes up in flames or say a restaurant goes out of business, when a restaurant goes out of business, that particular cuisine strategy they were implementing in that particular time and place, that's a signal to all the other restaurants in the area that that doesn't work. So restaurant food improves from bankruptcy to bankruptcy. So it's this death of the individual components that contributes to the growth of the ensemble. As a small aside, maybe you can guide me through it. I don't know if you're paying attention, but there was some chaos around Taleb and the Bitcoin community. I wasn't quite paying attention, but from my outsider's perspective, I thought it seemed Taleb was a supporter of Bitcoin. And then a lot of people were very upset about something.",
+          "score": 0.2608695652173913,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2868,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 72,
+          "text": "Like my strategy was to, oh, we were moving to Python three. Let's have that be, and it seems funny in retrospect because like, wait, Python three, that was in 2020, right? When we finally ended the support for Python two or at least 2017. The reason it took a long time, a lot of time, I think it was because one of the things is there wasn't much to like about Python three. 3.0, 3.1, it really wasn't until 3.3. Like I consider Python 3.3 to be Python 3.0. But it wasn't until Python 3.3 that I felt there's enough stuff in it to make it worth anybody using it, right? And then 3.4 started to be, oh yeah, I want that. And then 3.5 as the matrix multiply operator, and now it's like, okay, we gotta use that. Plus the libraries that started leveraging some of the features of Python three. Exactly.",
+          "score": 0.2608695652173913,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant to the question about AGI strategy evolution. None of them discuss AGI, Ben Goertzel, Sebastian Raschka, or Nathan Lambert in the context of AGI strategies.\n\nThe agent needs to find information specifically linking these individuals to AGI strategies and their evolution. A more targeted search should focus on finding discussions or writings by these individuals *about AGI strategy*.\n\nNext search query: \"Ben Goertzel AGI strategy evolution\" OR \"Sebastian Raschka AGI strategy\" OR \"Nathan Lambert AGI strategy\" OR \"AGI strategy comparison Goertzel Raschka Lambert\"",
+      "timestamp": 35.974165201187134
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI strategy OR Sebastian Raschka AGI strategy OR Nathan Lambert AGI strategy OR AGI strategy evolution",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 6310,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 289,
+          "text": "And there are all the other problems about, like, say you want to have a strategy meeting and you want to go ahead and bring in all of your remote workers and your consultants, and you want a world where some of those could be AIs that are talking and interacting with you in an area that is too murky to have a crisp loss function, but they still have things that on some level, they're rewarded on some internal level for building a valuable to humans kind of life and ability to interact with things. See, I still think that self driving cars, solving that problem will take us very far towards AGI. You might not need AGI, but I am really inspired by what Autopilot is doing. Waymo, so some of the other companies, I think Waymo leads the way there is also really interesting, but they don't have quite as ambitious of an effort in terms of learning based sort of data hungry approach to driving, which I think is very close to the kind of thing that would take us far towards AGI.",
+          "score": 0.5333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant. It discusses general AI interaction in a business context, not specific AGI strategies or the named individuals.\n\nThe agent needs to find information specifically about Ben Goertzel's AGI strategy (cognitive architectures, embodiment) and the AGI strategies or perspectives of Sebastian Raschka and Nathan Lambert.\n\nNext search: Focus on finding content directly linking Ben Goertzel to \"cognitive architectures\" and \"embodiment\" for AGI, and then separately search for \"Sebastian Raschka AGI strategy\" and \"Nathan Lambert AGI strategy.\"",
+      "timestamp": 41.240877628326416
+    }
+  ],
+  "final_answer": "Ben Goertzel's primary strategy for AGI focused on hypergraph knowledge representation architectures and the development of benevolent AGI by infusing them with love and compassion through interaction, as seen with robots like Sophia. In contrast, Sebastian Raschka and Nathan Lambert discuss whether current approaches, such as large language models, are sufficient for AGI or if entirely new ideas, architectures, or training algorithms are needed. They question if highly specialized, sophisticated algorithms truly constitute AGI, or if a different paradigm is required for general intelligence.",
+  "total_chunks_retrieved": 14,
+  "unique_episodes_found": [
+    224,
+    292,
+    103,
+    490,
+    459,
+    176,
+    309
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 49.269469022750854
+}

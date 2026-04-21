@@ -1,0 +1,162 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI decentralized systems neurotechnology Noland Arbaugh bit rate",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.8061902403831482,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7231289148330688
+        },
+        {
+          "chunk_id": 8701,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 492,
+          "text": "Noland Arbaugh: Yeah, it blew my mind, no pun intended. Blew my mind when I first moved the cursor just with my thoughts and not attempting to move. It\u2019s something that I found over the couple of weeks building up to that, that as I get better cursor controls, the model gets better, then it gets easier for me to\u2026 I don\u2019t have to attempt as much to move it. And part of that is something that I\u2019d even talked with them about when I was watching the signals of my brain one day. I was watching when I attempted to move to the right and I watched the screen as I saw the spikes. I was seeing the spike, the signal was being sent before I was actually attempting to move. I imagine just because when you go to say, move your hand or any body part, that signal gets sent before you\u2019re actually moving, has to make it all the way down and back up before you actually do any sort of movement. So there\u2019s a delay there.",
+          "score": 0.7929605901241302,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7042294144630432
+        },
+        {
+          "chunk_id": 70,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 70,
+          "text": "We were looking at how do you make a biologically realistic simulation of seven different parts of the brain cooperating with each other, using like realistic nonlinear dynamical models of neurons, and how do you get that to simulate what's going on in the mind of a geo intelligence analyst while they're trying to find terrorists on a map, right? So if you want to do something like that, having neuromorphic hardware that really let you simulate like a realistic model of the neuron would be amazing. But that's sort of with my computational neuroscience hat on, right? With an AGI hat on, I'm just more interested in these hypergraph knowledge representation based architectures, which would benefit more from various types of graph processors because the main processing bottleneck is reading writing to RAM. It's reading writing to the graph in RAM. The main processing bottleneck for this kind of proto AGI architecture is not multiplying matrices.",
+          "score": 0.7894997298717499,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.6992853283882141
+        },
+        {
+          "chunk_id": 8745,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 536,
+          "text": "It\u2019s just like, \u201cI want this, please do something about it,\u201d and it\u2019ll come back, super well-thought-out, and it\u2019s way better than anything I could have ever thought of or implemented myself. So they\u2019re just great. They\u2019re really, really cool. Lex Fridman: As the BCI community grows, would you like to hang out with the other folks with Neuralinks? What relationship, if any, would you want to have with them? Because you said they might have a different set of ideas of how to use the thing. Noland Arbaugh: Yeah. Lex Fridman: Would you be intimidated by their Webgrid performance? Noland Arbaugh: No. No. I hope-\n\nLex Fridman: Compete. Noland Arbaugh: I hope, day one, they wipe the floor with me. I hope they beat it and they crush it, double it if they can, just because on one hand it\u2019s only going to push me to be better because I\u2019m super competitive. I want other people to push me.",
+          "score": 0.7855673551559448,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.6936676502227783
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5257886338233947,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.708269476890564
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.6226630210876465
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel Neuralink Noland Arbaugh bit rate",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 8761,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 552,
+          "text": "So I would love to get the upgrade. Lex Fridman: What future capabilities are you excited about? So beyond this telepathy, is vision interesting? So for folks, for example, who are blind, so Neuralink enabling people to see, or for speech. Noland Arbaugh: Yeah, there\u2019s a lot that\u2019s very, very cool about this. I mean, we\u2019re talking about the brain, so this is just motor cortex stuff. There\u2019s so much more that can be done. The vision one is fascinating to me. I think that is going to be very, very cool. To give someone the ability to see for the first time in their life would just be\u2026 I mean, it might be more amazing than even helping someone like me. That just sounds incredible. The speech thing is really interesting. Being able to have some real-time translation and cut away that language barrier would be really cool.",
+          "score": 0.8043798267841338,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7205426096916199
+        },
+        {
+          "chunk_id": 8706,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 497,
+          "text": "I thought of something and I wanted to try it and so I did. It seems like it works, so maybe we should explore that a little bit.\u201d\n\nLex Fridman: So I think that discovery\u2019s not just for you, at least from my perspective. That\u2019s a discovery for everyone else who ever uses a Neuralink that this is possible. I don\u2019t think that\u2019s an obvious thing that this is even possible. It\u2019s like I was saying to Bliss earlier, it\u2019s like the four-minute mile. People thought it was impossible to run a mile in four minutes and once the first person did it, then everyone just started doing it. So just to show that it\u2019s possible, that paves the way to anyone can now do it. That\u2019s the thing that\u2019s actually possible. You don\u2019t need to do the attempted movement, you can just go direct. Noland Arbaugh: Yeah. Yeah. Lex Fridman: That\u2019s crazy. Noland Arbaugh: It is crazy. It is crazy, yeah. Lex Fridman: For people who don\u2019t know, can you explain how the Link app works? You have an amazing stream on the topic.",
+          "score": 0.7692028179168701,
+          "source": "embedding",
+          "quality_score": 0.88,
+          "original_score": 0.7217183113098145
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 6.259512186050415
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel Neuralink Noland Arbaugh",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 8765,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 556,
+          "text": "It\u2019ll ruin a lot of my plans. Lex Fridman: Yeah, I assume you\u2019re going to have to take over the world. I mean, I love your Twitter. You tweeted, \u201cI\u2019d like to make jokes about hearing voices in my head since getting the Neuralink, but I feel like people would take it the wrong way. Plus the voices in my head told me not to.\u201d\n\nNoland Arbaugh: Yeah. Lex Fridman: Yeah. Noland Arbaugh: Yeah.\n\n\n## Controlling Optimus robot\n\nLex Fridman: Please never stop. So you were talking about Optimus. Is that something you would love to be able to do to control the robotic arm or the entirety of Optimus? Noland Arbaugh: Oh, yeah, for sure. For sure. Absolutely. Lex Fridman: You think there\u2019s something fundamentally different about just being able to physically interact with the world? Noland Arbaugh: Yeah. Oh, 100%.",
+          "score": 0.7879753186702728,
+          "source": "embedding",
+          "quality_score": 0.88,
+          "original_score": 0.7485361695289612
+        },
+        {
+          "chunk_id": 8680,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 471,
+          "text": "Lex Fridman: In some sense it was a demonstration that you still got\u2026 Still had a sense of humor. Noland Arbaugh: That\u2019s all I wanted it to be. That\u2019s all I wanted it to be. And I knew that doing something super mean to her like that would show her. Lex Fridman: To show that you\u2019re still there, that you love her. Noland Arbaugh: Yeah, exactly. Exactly. Lex Fridman: It\u2019s a dark way to do it, but I love it. Noland Arbaugh: Yeah. Lex Fridman: What was the first time you were able to feel that you can use the Neuralink device to affect the world around you? Noland Arbaugh: The first little taste I got of it was actually not too long after surgery. Some of the Neuralink team had brought in a little iPad, a little tablet screen, and they had put up eight different channels that were recording some of my neuron spikes and they put it in front of me.",
+          "score": 0.7824586703777313,
+          "source": "embedding",
+          "quality_score": 0.88,
+          "original_score": 0.740655243396759
+        },
+        {
+          "chunk_id": 8688,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 479,
+          "text": "Noland Arbaugh: No. Lex Fridman: Just training hard [inaudible 07:18:38]. Noland Arbaugh: Yeah. And I still do it. I do it subconsciously, and I think that that helped a lot with things with Neuralink, honestly. It\u2019s something that I talked about the other day at the All Hands that I did at Neuralink\u2019s Austin facility. Lex Fridman: Welcome to Austin, by the way. Noland Arbaugh: Yeah. Hey, thanks man. I went to school-\n\nLex Fridman: Nice hat. Noland Arbaugh: \u2026 Hey, thanks. Thanks, man. The Gigafactory was super cool. I went to school at [inaudible 07:19:01], so I\u2019ve been around before. Lex Fridman: So you should be saying welcome to me. Welcome to Texas, Lex. Noland Arbaugh: Yeah. Lex Fridman: I get you. Noland Arbaugh: But yeah, I was talking about how a lot of what they\u2019ve had me do, especially at the beginning, well, I still do it now, is body mapping.",
+          "score": 0.722002301454544,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7400032877922058
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 10.698033094406128
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 13.877735614776611
+    }
+  ],
+  "final_answer": "According to Noland Arbaugh, the first human participant with a Neuralink implant, he initially achieved eight bits per second (BPS) and later broke that record, reaching 8.5 BPS.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    438,
+    103
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 13.87773847579956
+}

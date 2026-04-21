@@ -1,0 +1,153 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel neurotechnology company founder Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 131,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 131,
+          "text": "Two years ago, that was less so. It's a very rapidly evolving ecosystem. So like one example, maybe you can comment on something I worked a lot on is autonomous vehicles. You can see each individual vehicle as an AI system. And you can see vehicles from Tesla, for example, and then Ford and GM and all these as also like larger... I mean, they all are running the same kind of system on each sets of vehicles. So it's individual AI systems and individual vehicles, but it's all different. The station is the same AI system within the same company. So you can envision a situation where all of those AI systems are put on SingularityNet, right? And how do you see that happening? And what would be the benefit? And could they share data? I guess one of the biggest things is that the power there's in a decentralized control, but the benefit would have been, is really nice if they can somehow share the knowledge in an open way if they choose to. Yeah, yeah, yeah, those are all quite good points.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 147,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 560,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Stephen Wolfram, his second time on the podcast. He's a computer scientist, mathematician, theoretical physicist, and the founder and CEO of Wolfram Research, a company behind Mathematica, Wolfram Alpha, Wolfram Language, and the new Wolfram Physics Project. He's the author of several books, including A New Kind of Science, and the new book, A Project to Find the Fundamental Theory of Physics. This second round of our conversation is primarily focused on this latter endeavor of searching for the physics of our universe in simple rules that do their work on hypergraphs and eventually generate the infrastructure from which space, time, and all of modern physics can emerge. Quick summary of the sponsors, SimpliSafe, Sunbasket, and Masterclass. Please check out these sponsors in the description to get a discount and to support this podcast.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.5687689781188965
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Noland Arbaugh neurotechnology company",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8209,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Elon Musk, DJ Seo, Matthew MacDougall, Bliss Chapman, and Noland Arbaugh about Neuralink and the future of humanity. Elon, DJ, Matthew and Bliss are of course part of the amazing Neuralink team, and Noland is the first human to have a Neuralink device implanted in his brain. I speak with each of them individually, so use timestamps to jump around, or as I recommend, go hardcore, and listen to the whole thing. This is the longest podcast I\u2019ve ever done. It\u2019s a fascinating, super technical, and wide-ranging conversation, and I loved every minute of it. And now, dear friends, here\u2019s Elon Musk, his fifth time on this, the Lex Fridman podcast,\n\n\n## Elon Musk\n\nElon Musk: Drinking coffee or water? Lex Fridman: Water. I\u2019m so over-caffeinated right now. Do you want some caffeine? Elon Musk: Sure. Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8370,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 161,
+          "text": "And yeah, I mean, that\u2019s the other thing that I told the team as well of just this immense sense of optimism for the future. I mean, it\u2019s a very important moment for the company, needless to say, as well as hopefully for many others out there that we can help.\n\n\n## Retracted threads\n\nLex Fridman: Speaking of challenges, Neuralink published a blog post describing that some of the threads retracted. And so the performance as measured by bits per second dropped at first, but then eventually it was regained. And the whole story of how it was regained is super interesting, that\u2019s definitely something I\u2019ll talk to Bliss and to Noland about. But in general, can you speak to this whole experience, how was the performance regained, and just the technical aspects of the threads being retracted and moving? DJ Seo: The main takeaway is that in the end, the performance have come back and it\u2019s actually gotten better than it was before.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8376,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 167,
+          "text": "So whether it\u2019s movement of threads or different aspects of signal drift, sort of on the software or the human brain, something changing, like Noland talks about cursor drift, they could be corrected. And there\u2019s a whole UX challenge to how to do that. So it sounds like adaptability is a fundamental property that has to be engineered in. DJ Seo: It is. I mean, as a company, we\u2019re extremely vertically integrated. We make these thin-film arrays in our own microfab. Lex Fridman: Yeah, there\u2019s like you said, built in-house. This whole paragraph here from this blog post is pretty gangster.\n\n\u201cBuilding the technologies described above has been no small feat,\u201d and there\u2019s a bunch of links here that I recommend people click on. \u201cWe constructed in-house microfabrication capabilities to rapidly produce various iterations of thin-film arrays that constitute our electrode threads. We created a custom femtosecond laser mill-\u201c\n\nDJ Seo: [inaudible 02:45:13].",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8657,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 448,
+          "text": "Lex Fridman: It\u2019s interesting how much value you assign to the task of asking the right questions. That\u2019s the main thing, it\u2019s not the answers, it\u2019s the questions. Bliss Chapman: This point, by the way, is driven home in a very painful way when you try to communicate with someone who cannot speak, because a lot of the time, the last thing to go is they have the ability to somehow wiggle a lip or move something that allows them to say yes or no. And in that situation, it\u2019s very obvious that what matters is, are you asking them the right question to be able to say yes or no to? Lex Fridman: Wow, that\u2019s powerful. Well, Bliss, thank you for everything you do, and thank you for being you, and thank you for talking today. Bliss Chapman: Thank you.\n\n\n## Noland Arbaugh\n\nLex Fridman: Thanks for listening to this conversation with Bliss Chapman. And now, dear friends, here\u2019s Noland Arbaugh, the first human being to have a Neuralink device implanted in his brain.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8658,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 449,
+          "text": "And now, dear friends, here\u2019s Noland Arbaugh, the first human being to have a Neuralink device implanted in his brain. You had a diving accident in 2016 that left you paralyzed with no feeling from the shoulders down. How did that accident change your life?\n\n\n## Becoming paralyzed\n\nNoland Arbaugh: It was a freak thing that happened. Imagine you\u2019re running into the ocean, although this is a lake, but you\u2019re running into the ocean and you get to about waist high, and then you dive in, take the rest of the plunge under the wave or something. That\u2019s what I did, and then I just never came back up. Not sure what happened. I did it running into the water with a couple of guys, and so my idea of what happened is really just that I took a stray fist, elbow, knee, foot, something to the side of my head. The left side of my head was sore for about a month afterwards, so I must\u2019ve taken a pretty big knock, and then they both came up and I didn\u2019t. And so I was face down in the water for a while.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.733699560165405
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 6.557711362838745
+    }
+  ],
+  "final_answer": "According to Noland Arbaugh, the first human participant with a Neuralink implant, he initially achieved eight bits per second (BPS) and more recently reached 8.5 BPS. He also mentioned that he would have surpassed that rate just before coming to Austin.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    124,
+    438,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 6.557713508605957
+}

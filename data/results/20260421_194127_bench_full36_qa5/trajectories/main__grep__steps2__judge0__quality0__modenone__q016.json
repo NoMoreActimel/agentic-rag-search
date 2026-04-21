@@ -1,0 +1,145 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dylan Patel DeepSeek GPU count pre-training",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11136,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 68,
+          "text": "Nathan Lambert: Accepted practice is that for any given model that is a notable advancement, you\u2019re going to do two to 4x compute of the full training run in experiments alone. Lex Fridman: So a lot of this compute that\u2019s being scaled up is probably used in large part at this time for research? Dylan Patel: Yeah. And research begets the new ideas that lets you get huge efficiency. Nathan Lambert: Research gets you o1. Research gets you breakthroughs and you need to bet on it. Lex Fridman: So some of the pricing strategy that we\u2019ll discuss has the research baked into the price? Dylan Patel: So the numbers that DeepSeek specifically said publicly are just the 10,000 GPUs in 2021 and then 2,000 GPUs for only the pre-training for V3. They did not discuss cost on R1. They did not discuss cost on all the other RL for the instruct model that they made. They only discussed the pre-training for the base model and they did not discuss anything on research and ablations.",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11068,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11117,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 49,
+          "text": "Nathan Lambert: I\u2019m sure DeepSeek definitely has code bases that are extremely messy, where they\u2019re testing these new ideas. Multi-head latent attention probably could start in something like a Jupyter Notebook, or somebody tries something on a few GPUs and that is really messy. But the stuff that trains the DeepSeek V3 and DeepSeek-R1, those libraries, if you were to present them to us, I would guess are extremely high-quality code. Lex Fridman: So, high-quality, readable code. Yeah. Dylan Patel: I think there is one aspect to note though is that there is the general ability for that to transfer across different types of runs. You may make really, really high-quality code for one specific model architecture at one size, and then that is not transferable to, \u201d Hey, when I make this architecture tweak, everything\u2019s broken again,\u201d right? That\u2019s something that could be with their specific low-level coding of scheduling SMs is specific to this model architecture and size.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11122,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 54,
+          "text": "And what you could do is you just skip those. You see that there\u2019s a spike. You\u2019re like, \u201cOkay, I can ignore this data. Don\u2019t update the model and do the next one, and it\u2019ll recover quickly.\u201d\n\nBut on trickier implementations, so as you get more complex in your architecture and you scale up to more GPUs, you have more potential for your loss blowing up. So it\u2019s like, there\u2019s a distribution. Dylan Patel: And then the whole idea of grokking also comes in, right? It\u2019s like, just because it slowed down from improving in loss doesn\u2019t mean it\u2019s not learning because all of a sudden it could be like this and it could just spike down in loss again because it truly learned something, right? And it took some time for it to learn that. It\u2019s not a gradual process, and that\u2019s what humans are like. That\u2019s what models are like. So it\u2019s really a stressful task, as you mentioned. Lex Fridman: And the whole time the dollar count is going up. Nathan Lambert: Every company has failed runs.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11124,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 56,
+          "text": "Talking to people at Frontier Labs, there\u2019s a story that you can tell where training language models is kind of a path that you need to follow. So you need to unlock the ability to train a certain type of model or a certain scale, and then your code base and your internal know-how of which hyperparameters work for IT is kind of known. And you look at the DeepSeek papers and models, they\u2019ve scaled up, they\u2019ve added complexity, and it\u2019s just continuing to build the capabilities that they have. Dylan Patel: There\u2019s the concept of a YOLO run. So YOLO, you only live once. Lex Fridman: Yep. Dylan Patel: What it is, is there\u2019s all this experimentation you do at the small scale, research ablations. You have your Jupyter Notebook where you\u2019re experimenting with MLA on three GPUs or whatever and you\u2019re doing all these different things like, \u201cHey, do I do four active experts, 128 experts?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 157.7209451198578
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Dylan Patel AI landscape future year analysis OR Sebastian Raschka AI landscape future year analysis",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 5316,
+          "episode_id": 284,
+          "guest": "Saifedean Ammous",
+          "chunk_index": 122,
+          "text": "Serious questions are being asked about the survival of the postwar dollar based world monetary order. Will Russia, China and other countries actually build an alternative international settlement system after years of threatening to do so? Question mark. Will global central banks stop accumulating US treasury bonds and replace them with gold and commodities? Will we witness the birth of a new commodity gold based monetary order? In this seminar, we use the insights from the Bitcoin Standard and the Fiat Standard on temporal and spatial salability to explain why reports of the death of the dollar and the emergence of a new gold standard may be exaggerated. So I would love to get your analysis on this situation. What are the fundamentals of it? What is SWIFT? What are the possible future evolutions of the global monetary system? Yeah, so SWIFT is the network that the US Federal Reserve uses for moving money around the world.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5908,
+          "episode_id": 292,
+          "guest": "Robin Hanson",
+          "chunk_index": 169,
+          "text": "If it's so difficult, what, how do like, so it's like cancer, right? There's all these cells, each of which randomly does or doesn't get cancer. And eventually some cell gets cancer and you know, we were one of those, but hold on a second. Okay. But we got it early. We got early compared to the prediction with an assumption that's wrong. That's so that's how we do a lot of, you know, theoretical analysis. You have a model that makes a prediction that's wrong. Then that helps you reject that model. Okay. Let's try to understand exactly where the wrong is. So the assumption is that the universe is empty, stays empty, stays empty and waits until this advanced life appears in trillions of years. That is if the universe would just stay empty, if there was just, you know, nobody else out there, then when you should expect advanced life to appear, if you're the only one in the universe, when should you expect to appear? You should expect to appear trillions of years in the future. I see.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 9784,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 175,
+          "text": "But look, I mean IDEs are great at lots of static analysis of so much is possible with static analysis like many bugs you can find without even writing the code. Then IDEs are good for running particular things, organizing your code, measuring coverage of unit tests. There\u2019s so much that\u2019s been possible with a normal IDEs. Now you add something like, well, the model can now write code and run code. I am absolutely convinced that over the next year or two, even if the quality of the models didn\u2019t improve, that there would be enormous opportunity to enhance people\u2019s productivity by catching a bunch of mistakes, doing a bunch of grunt work for people, and that we haven\u2019t even scratched the surface. Anthropic itself, I mean you can\u2019t say no\u2026 It\u2019s hard to say what will happen in the future.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11195,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 127,
+          "text": "If Hsinchu disappeared off the face of the planet, within a year, couple years, Arizona would stop producing too. It\u2019s actually pretty critical. One of the things I like to say is if I had a few missiles, I know exactly where I could cause the most economic damage. It\u2019s not targeting the White House. Lex Fridman: It\u2019s the R&D centers. Dylan Patel: It\u2019s the R&D centers for TSMC, Intel, Samsung. And then some of the memory guys, Micron and Hynix. Lex Fridman: Because they define the future evolution of these semiconductors, and everything\u2019s moving so rapidly that it really is fundamentally about R&D. And it is all about TSMC. Huh. Dylan Patel: And so TSMC, you cannot purchase a vehicle without TSMC chips. You cannot purchase a fridge without TSMC chips. I think one of the few things you can purchase ironically, is a Texas Instruments graphing calculator because they actually manufacture in Texas. But outside of that, a laptop, a phone. Lex Fridman: It\u2019s depressing.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11435,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 367,
+          "text": "So I think you\u2019re right in that sense that open AI or Trump is sort of championing, people are going to build more and his actions are going to let people build more.\n\n\n## Future of AI\n\nLex Fridman: What are you excited about these several years that are upcoming in terms of cluster build outs, in terms of breakthroughs in AI, the best possible future you can imagine in the next couple of years, two, three, four years? What does that look like? It could be very specific technical things like breakthroughs on post-training or it could be just size, big impressive clusters. Dylan Patel: I really enjoy tracking supply chain and who\u2019s involved and what, I really do. It\u2019s really fun to see the numbers, the cost, who\u2019s building what capacity, helping them figure out how much capacity they should build winning deals, strategic stuff. That\u2019s really cool.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 163.1025640964508
+    }
+  ],
+  "final_answer": "DeepSeek publicly stated they had 10,000 GPUs in 2021 and used 2,000 GPUs specifically for the pre-training of V3. The provided context discusses the future of AI over \"several years\" or \"two, three, four years,\" but does not specify a single future year targeted for the analysis of the AI landscape.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    452,
+    459,
+    284,
+    292
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 166.28109574317932
+}

@@ -1,0 +1,172 @@
+{
+  "episode_id": 490,
+  "guest_info": [
+    {
+      "name": "Sebastian Raschka",
+      "title": "Machine Learning Researcher and Author",
+      "expertise": [
+        "Large Language Models",
+        "Reasoning Models",
+        "Machine Learning",
+        "Open Source Models",
+        "AI Training Methodologies"
+      ]
+    },
+    {
+      "name": "Nathan Lambert",
+      "title": "Post-Training Lead at the Allen Institute for AI",
+      "expertise": [
+        "Reinforcement Learning from Human Feedback",
+        "Open Source Models",
+        "AI Training Methodologies",
+        "Language Models",
+        "Robotics"
+      ]
+    }
+  ],
+  "summary": "This episode features a discussion on the state of AI in 2026, covering topics such as LLMs, coding, scaling laws, the AI race between China and the US, AI agents, GPUs, and the potential for AGI. The conversation includes predictions for the upcoming year and analysis of current trends in the AI landscape.",
+  "main_entities": [
+    {
+      "name": "DeepSeek",
+      "type": "organization",
+      "context": "A Chinese company known for releasing open-weight models, particularly DeepSeek R1, and its impact on the AI landscape."
+    },
+    {
+      "name": "Claude Opus 4.5",
+      "type": "technology",
+      "context": "Anthropic's language model, noted for its strong coding capabilities and the hype surrounding its release."
+    },
+    {
+      "name": "Gemini",
+      "type": "technology",
+      "context": "Google's language model, seen as a competitor to ChatGPT, with discussions around its progress and potential."
+    },
+    {
+      "name": "ChatGPT",
+      "type": "technology",
+      "context": "OpenAI's chatbot, recognized for its wide user base and customization features."
+    },
+    {
+      "name": "GPT-5",
+      "type": "technology",
+      "context": "OpenAI's language model, mentioned for its router feature and trade-offs between intelligence and speed."
+    },
+    {
+      "name": "RLVR (Reinforcement Learning with Verifiable Rewards)",
+      "type": "concept",
+      "context": "A post-training technique used to improve language models by having them generate answers and grading the completion for accuracy."
+    },
+    {
+      "name": "OLMo",
+      "type": "project",
+      "context": "The Allen Institute for AI's open language model project, emphasizing data and code release."
+    },
+    {
+      "name": "Scaling Laws",
+      "type": "concept",
+      "context": "The power law relationship between compute/data and model performance, discussed in the context of pre-training, post-training, and inference."
+    },
+    {
+      "name": "Tool Use",
+      "type": "concept",
+      "context": "The ability of LLMs to use external tools like web search or Python interpreters to enhance their capabilities and reduce hallucinations."
+    },
+    {
+      "name": "Text Diffusion Models",
+      "type": "technology",
+      "context": "An alternative to autoregressive transformers for text generation, offering potential for parallelization and efficiency."
+    },
+    {
+      "name": "KV Cache",
+      "type": "concept",
+      "context": "A mechanism for storing key-value pairs in attention mechanisms, with discussions on optimizing its size for long context."
+    },
+    {
+      "name": "Mixture of Experts (MoE)",
+      "type": "concept",
+      "context": "An architecture where a model uses multiple feedforward networks (experts) and a router selects which ones to use based on the input."
+    },
+    {
+      "name": "Continual Learning",
+      "type": "concept",
+      "context": "The ability of AI models to continuously adapt and learn from new information, discussed in the context of personalized models and global updates."
+    },
+    {
+      "name": "Codeium",
+      "type": "technology",
+      "context": "A VS Code plugin used for coding assistance, providing a chat interface with access to the repository."
+    }
+  ],
+  "key_details": [
+    {
+      "fact": "Chinese companies are releasing open-weight models to influence the US AI market and gain international recognition.",
+      "topic": "AI Race"
+    },
+    {
+      "fact": "Anthropic is known for betting hard on code, giving them an advantage in the AI market.",
+      "topic": "AI Companies"
+    },
+    {
+      "fact": "Google has an advantage in infrastructure due to TPUs and data center development.",
+      "topic": "Infrastructure"
+    },
+    {
+      "fact": "GPT-5 was trying to solve the trade-off between intelligence and speed.",
+      "topic": "Language Models"
+    },
+    {
+      "fact": "Building an LLM from scratch is the best way to learn how it works.",
+      "topic": "Education"
+    },
+    {
+      "fact": "Pre-training involves training on next token prediction on a vast corpus of data.",
+      "topic": "AI Training"
+    },
+    {
+      "fact": "RLVR involves generating answers and grading the completion for accuracy.",
+      "topic": "AI Training"
+    },
+    {
+      "fact": "The goal of building a model from scratch is to see exactly what goes into the LLM, what exactly comes out of the LLM, and how pre-training works on your own computer.",
+      "topic": "Education"
+    }
+  ],
+  "topics": [
+    "Artificial Intelligence",
+    "Large Language Models",
+    "AI Training Methodologies",
+    "Open Source Models",
+    "AI Race (US vs China)",
+    "Coding",
+    "Scaling Laws",
+    "Robotics",
+    "Education",
+    "AGI/ASI"
+  ],
+  "other_persons_mentioned": [
+    {
+      "name": "Sam Altman",
+      "context": "Mentioned in the context of OpenAI releasing gpt-oss because they can use other people's GPUs."
+    },
+    {
+      "name": "Yann LeCun",
+      "context": "Mentioned as an example of a researcher who doesn't care about language model development."
+    },
+    {
+      "name": "Karpathy",
+      "context": "Referenced with a quote about agents being 'slop'."
+    },
+    {
+      "name": "Bryne Hobart",
+      "context": "Mentioned as the author of a book classifying bubbles."
+    },
+    {
+      "name": "Patrick McGee",
+      "context": "Mentioned as the author of the book Apple in China."
+    },
+    {
+      "name": "Dario",
+      "context": "Mentioned in the context of how much code is built with Claude Code at Anthropic."
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "question": "According to the guest who discusses the 'Rulliad' and 'Rule 30', what is the estimated elementary length of the universe, and what is the primary programming language used in the OpenCog project discussed by Ben Goertzel?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Rulliad Rule 30 elementary length universe",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 674,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 114,
+          "text": "So, you know, we have the mathematical derivation, it's all fine, but, you know, mathematical derivations, okay. So one thing that's sort of a, you know, we're taking this limit of what happens when you, the limit, you have to look at things which are large compared to the size of an elementary length, small compared to the whole size of the universe, large compared to certain kinds of fluctuations, blah, blah, blah. There's a, there's a, there's a tower of many, many of these mathematical limits that have to be taken. So if you're a pure mathematician saying, where's the precise proof? It's like, well, there are all these limits, we can, you know, we can try each one of them computationally and we could say, yeah, it really works, but the formal mathematics is really hard to do. I mean, for example, in the case of deriving the equations of fluid dynamics from molecular dynamics, that derivation has never been done. There is no rigorous version of that derivation. So, so that could be.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3362,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 56,
+          "text": "So I don't know how it will work, but this is a potential direction. And if you can tell, by the way, if we could measure the maximum entanglement speed, we would know the elementary length. These are all related. So if we get that one number, we just need one number. If we can get that one number, the theory has no parameters anymore. And there are other places, well, there's another hope for doing that is in cosmology. In this model, one of the features is the universe is not fixed dimensional. We think we live in three dimensional space, but this hypergraph doesn't have any particular dimension. It can emerge as something which on an approximation, it's as if you say, what's the volume of a sphere in the hypergraph where a sphere is defined as how many nodes do you get to when you go a distance R away from a given point? And you can say, well, if I get to about R cubed nodes, when I go a distance R away in the hypergraph, then I'm living roughly in three dimensional space.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3408,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 102,
+          "text": "What's your intuition where the 10 to the minus 100 comes from? What's your intuition about this scale? Well, okay, so there's a calculation, which I consider to be somewhat rickety, okay, which has to do with comparing, so there are various fundamental constants, there's a speed of light, the speed of light, once you know the elementary time, the speed of light tells you the conversion from the elementary time to the elementary length. Then there's the question of how do you convert to the elementary energy? And how do you convert to between other things? And the various constants we know, we know the speed of light, we know the gravitational constant, we know Planck's constant and quantum mechanics, those are the three important ones. And we actually know some other things, we know things like the size of the universe, the Hubble constant, things like that. And essentially, this calculation of the elementary length comes from looking at the combination of those.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3409,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 103,
+          "text": "And essentially, this calculation of the elementary length comes from looking at the combination of those. Okay, so the most obvious thing, people have assumed that quantum gravity happens at this thing, the Planck scale, 10 to the minus 34 meters, which is the combination of Planck's constant and the gravitational constant, the speed of light, that gives you that kind of length. Turns out in our model, there is an additional parameter, which is essentially the number of simultaneous threads of execution of the universe, which is essentially the number of sort of independent quantum processes that are going on. And that number, let's see if I remember that number, that number is 10 to the 170, I think, and so it's a big number. But that number then connects, sort of modifies what you might think from all these Planck units to give you the things we're giving.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3414,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 108,
+          "text": "It'll tell you what the Turing machine will do after an infinite time. You can imagine such a box. You can't necessarily build one in the physical universe, but you can imagine such a box. And so we could say, well, in addition to, so in this Rulliad, we're imagining that there is a computational, that at the end, it's running rules that are computational. It doesn't have a bunch of oracle black boxes in it. You say, well, why not? Well, it turns out if there are oracle black boxes, the Rulliad that is, you can make a sort of super Rulliad that contains those oracle black boxes, but it has a cosmological event horizon relative to the first one. They can't communicate.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.4065628051757812
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel OpenCog programming language",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 6119,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 98,
+          "text": "You write enough C code, you're going to shoot yourself in the foot. And garbage collection is a very great thing for the vast majority of programs. It's only when you get into the tightest of real time things that you start saying, it's like, no, the garbage collection has more costs than it has benefits for me there, but that's not 99 plus percent of all the software in the world. So JavaScript is not terrible in those ways. And so much of programming is not the language itself. It's the infrastructure around that surrounds it. All the libraries that you can get and the different stuff that you can, ways you can deploy it, the portability that it gives you.",
+          "score": 0.72,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 14539,
+          "episode_id": 488,
+          "guest": "Infinity, Paradoxes that Broke Mathematics, G\u00f6del Incompleteness & the Multiverse - Joel David Hamkins",
+          "chunk_index": 253,
+          "text": "You really have to load in everything you possibly can from your body of work, from the way you\u2019re thinking, and that\u2019s a real skill. And then the other thing is, for me, if it\u2019s at all anything like programming, because I have a lot of colleagues and friends who are programmers who feel similarly to you. And for me, I\u2019ve gotten better and better at giving as much information as possible to the systems in a really structured way, maybe because I just like natural language as a way to express my thinking. Lex Fridman: And then the benefit comes from the inspiration that the system can provide by its ability to know a lot of things and make connections between disparate fields and between disparate concepts. And in that way, it provides not the answer but the inspiration, the handholding, the camaraderie that helps me get to the answer, because it does know a lot more than me, like knowledge.",
+          "score": 0.6839999999999999,
+          "source": "grep",
+          "quality_score": 0.88,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 59,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 0.58,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.4
+        },
+        {
+          "chunk_id": 98,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 98,
+          "text": "We've been prototyping and experimenting with this within OpenCog and before that WebMind since the mid 1990s. Now, disappointingly to all of us, this has not yet been cashed out in an AGI system, right? I mean, we've used this system within our consulting business. So we've built natural language processing and robot control and financial analysis. We've built a bunch of sort of vertical market specific proprietary AI projects. They use OpenCog on the backend, but we haven't, that's not the AGI goal, right? It's interesting, but it's not the AGI goal. So now what we're looking at with our rebuild of the system. 2.0. Yeah, we're also calling it True AGI. So we're not quite sure what the name is yet. We made a website for trueagi.io, but we haven't put anything on there yet. We may come up with an even better name. It's kind of like the real AI starting point for your AGI book. Yeah, but I like True better because True has like, you can be true hearted, right?",
+          "score": 0.58,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.4
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.44999999999999996,
+          "source": "grep",
+          "quality_score": 0.1,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 6.7451560497283936
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.000968217849731
+    }
+  ],
+  "final_answer": "According to Stephen Wolfram, the guest who discusses the 'Rulliad', the estimated elementary length of the universe is 10^-100, though he considers this calculation somewhat rickety. He also mentions the Planck scale of 10^-34 meters as a related concept. The primary programming language used in the OpenCog project, discussed by Ben Goertzel, is C++, with a significant amount of Scheme as well.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    103,
+    488,
+    234,
+    309,
+    124
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 9.000972270965576
+}

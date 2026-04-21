@@ -1,0 +1,133 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel neurotechnology Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8209,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Elon Musk, DJ Seo, Matthew MacDougall, Bliss Chapman, and Noland Arbaugh about Neuralink and the future of humanity. Elon, DJ, Matthew and Bliss are of course part of the amazing Neuralink team, and Noland is the first human to have a Neuralink device implanted in his brain. I speak with each of them individually, so use timestamps to jump around, or as I recommend, go hardcore, and listen to the whole thing. This is the longest podcast I\u2019ve ever done. It\u2019s a fascinating, super technical, and wide-ranging conversation, and I loved every minute of it. And now, dear friends, here\u2019s Elon Musk, his fifth time on this, the Lex Fridman podcast,\n\n\n## Elon Musk\n\nElon Musk: Drinking coffee or water? Lex Fridman: Water. I\u2019m so over-caffeinated right now. Do you want some caffeine? Elon Musk: Sure. Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8572,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 363,
+          "text": "You could also imagine that if the user is prompted with that kind of consistency metric, that maybe they just become more behaviorally engaged to begin with, because the task is kind of boring when you don\u2019t have any feedback at all. And so there may be benefits to the user experience of showing something on the screen, even if it\u2019s not accurate. Just because it keeps the user motivated to try to increase that number, or push it upwards. Lex Fridman: So there\u2019s this psychology element here? Bliss Chapman: Yeah. Absolutely.\n\n\n## Calibration\n\nLex Fridman: And again, all of that is UX challenge? How much signal drift is there hour-to-hour, day-to-day, week-to-week, month-to-month? How often do you have to recalibrate because of the signal drift? Bliss Chapman: Yeah. So this is a problem we\u2019ve worked on both with NHP, non-human primates, before our clinical trial, and then also with Noland during the clinical trial. Maybe the first thing that\u2019s worth stating is what the goal is here.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8657,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 448,
+          "text": "Lex Fridman: It\u2019s interesting how much value you assign to the task of asking the right questions. That\u2019s the main thing, it\u2019s not the answers, it\u2019s the questions. Bliss Chapman: This point, by the way, is driven home in a very painful way when you try to communicate with someone who cannot speak, because a lot of the time, the last thing to go is they have the ability to somehow wiggle a lip or move something that allows them to say yes or no. And in that situation, it\u2019s very obvious that what matters is, are you asking them the right question to be able to say yes or no to? Lex Fridman: Wow, that\u2019s powerful. Well, Bliss, thank you for everything you do, and thank you for being you, and thank you for talking today. Bliss Chapman: Thank you.\n\n\n## Noland Arbaugh\n\nLex Fridman: Thanks for listening to this conversation with Bliss Chapman. And now, dear friends, here\u2019s Noland Arbaugh, the first human being to have a Neuralink device implanted in his brain.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 4 and 5 are irrelevant. Chunks 1 and 3 are useful for identifying Noland Arbaugh and Neuralink, and that a bit rate metric is discussed. Search for the specific bit rate number Noland Arbaugh achieved with Neuralink. Also, search for Ben Goertzel discussing Elon Musk or Neuralink to confirm the connection.",
+      "timestamp": 1.8297901153564453
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Neuralink OR Elon Musk",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 245,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 245,
+          "text": "If we do things wrong, we could either annihilate all life on the planet, or we could lead to a scenario where, say, all humans are annihilated and there's some super AGI that goes on and does its own thing unrelated to us except via our role in originating it. And we may well be at a bifurcation point now, right? Where what we do now has significant causal impact on what comes about, and yet most people on the planet aren't thinking that way whatsoever, they're thinking only about their own narrow aims and aims and goals, right? Now, of course, I'm thinking about my own narrow aims and goals to some extent also, but I'm trying to use as much of my energy and mind as I can to push toward this more benevolent alternative, which will be better for me, but also for everybody else. And it's weird that so few people understand what's going on. I know you interviewed Elon Musk, and he understands a lot of what's going on, but he's much more paranoid than I am, right?",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1295,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 144,
+          "text": "The problem with all those haters in the three communities is that they're looking one year ahead, five years ahead. The hilarious thing about the, quote unquote, ridiculous things that Elon Musk is saying, is they have a pretty good shot at being true in 20 years. And so like, when you just look at the, you know, when you look at the progression of these kinds of predictions, and sometimes first principles thinking can allow you to do that, is you see that it's kind of obvious that things are going to progress this way. And if you just remove the prejudice you hold about the particular battles of the current academic environment, and just look at the big picture, the progression of the technology, you can usually see the world in the same kind of way. And so in that same way, looking at psychedelics, you can see like, there is so many exciting possibilities here if we fully engage in the research. Same thing with Neuralink.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8210,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 1,
+          "text": "Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah. Yeah. I don\u2019t want to [inaudible 00:01:11]. Elon Musk: So what is Nitro? It\u2019s just got a lot of caffeine or something? Lex Fridman: Don\u2019t ask questions. It\u2019s called Nitro. Do you need to know anything else? Elon Musk: It\u2019s got nitrogen in it. That\u2019s ridiculous. What we breathe is 78% nitrogen anyway. What do you need to add more for? Elon Musk: Unfortunately, you\u2019re going to eat it. Elon Musk: Most people think that they\u2019re breathing oxygen and they\u2019re actually breathing 78% nitrogen. You need like a milk bar, like from Clockwork Orange. Lex Fridman: Yeah. Yeah. Is that the top three Kubrick film for you? Elon Musk: Clockwork Orange? It\u2019s pretty good. It\u2019s demented. Jarring, I\u2019d say. Lex Fridman: Okay. Okay. So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8211,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Ignore Chunks 1, 2, and 3. Chunk 4 confirms Neuralink's human trials with Elon Musk but does not mention Noland Arbaugh or the achieved bit rate.\n\nThe agent should search for \"Neuralink Noland Arbaugh bit rate\" or \"Neuralink first human participant bit rate\" to find the specific data from the company.",
+      "timestamp": 16.086084365844727
+    }
+  ],
+  "final_answer": "Noland Arbaugh, the first human participant with a Neuralink implant, initially achieved eight bits per second. He later improved upon this, reaching 8.5 bits per second. He mentioned he would have beaten that record the day before his appearance on the podcast.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    145,
+    438,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 23.338394165039062
+}

@@ -1,0 +1,128 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "DeepSeek GPU count pre-training cluster Dylan Patel Sebastian Raschka",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11138,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 70,
+          "text": "Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had. I think the clearest example we have, because Meta is also open, they talk about order of 60k to 100k H100 equivalent GPUs in their training clusters. Dylan Patel: Right. So Llama 3, they trained on 16,000 H100s, but the company of Meta last year publicly disclosed they bought 400 something thousand GPUs. Nathan Lambert: Yeah. Dylan Patel: Right? So of course, tiny percentage on the training. Again, most of it is serving me the best Instagram Reels or whatever. Nathan Lambert: I mean, we could get into a cost of, what is the cost of ownership for a 2,000 GPU cluster, 10,000? There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big.",
+          "score": 0.8210282802581788,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.744326114654541
+        },
+        {
+          "chunk_id": 11131,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.8147848963737487,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7354069948196411
+        },
+        {
+          "chunk_id": 11085,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 17,
+          "text": "This is a crawler that is maintained publicly. Yes, other tech companies eventually shift to their own crawler and DeepSeek likely has done this as well as most frontier labs do. But this sort of data is something that people can get started with and you\u2019re just predicting text in a series of documents. This can be scaled to be very efficient and there\u2019s a lot of numbers that are thrown around in AI training like how many floating-point operations or flops are used. And then you can also look at how many hours of these GPUs that are used. And it\u2019s largely one loss function taken to a very large amount of compute usage. You set up really efficient systems and then at the end of that you have the base model and pre-training is where there is a lot more of complexity in terms of how the process is emerging or evolving and the different types of training losses that you\u2019ll use. I think this is a lot of techniques grounded in the natural language processing literature.",
+          "score": 0.810939973592758,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7299142479896545
+        },
+        {
+          "chunk_id": 11358,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 290,
+          "text": "So\u2026\n\nDylan Patel: There\u2019s another word there, but I won\u2019t say it. Lex Fridman: Who\u2019s got the biggest now and who\u2019s going to have the biggest? Dylan Patel: Today, individual largest is Elon. Right? Lex Fridman: Right. Elon\u2019s cluster. Dylan Patel: Elon\u2019s cluster in Memphis, 200,000 GPUs. Meta has 128,000, OpenAI has 100,000 now. Now to be clear, other companies have more GPUs than Elon. They just don\u2019t have them in one place. And for training, you want them tightly connected. There\u2019s some techniques that people are researching and working on that let you train across multiple regions. But for the most part, you want them all in one area so you can connect them highly with high-speed networking. And so, Elon today has 200,000 H100s, 100,000 H100s and 100,000 H200s. Meta, OpenAI, and Amazon all have on the scale of a hundred thousand, a little bit less. But next this year, people are building much more.",
+          "score": 0.7987219452857971,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.712459921836853
+        },
+        {
+          "chunk_id": 11129,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 61,
+          "text": "Lex Fridman: Yeah. Dylan Patel: Right? Lex Fridman: Yeah. Dylan Patel: Now people have all these training run failures that are in the media, right? It\u2019s like, \u201cOkay, great, but actually a huge chunk of my GPUs are doing inference. I still have a bunch doing research constantly. And yes, my biggest cluster is training, but on this YOLO run,\u201d but that YOLO run is much less risky than what OpenAI did in 2022, or maybe what DeepSeek did now or sort of like, \u201cHey, we\u2019re just going to throw everything at it.\u201d\n\nLex Fridman: The big winners throughout human history are the ones who are willing to do YOLO at some point. Okay. What do we understand about the hardware it\u2019s been trained on, DeepSeek?\n\n\n## DeepSeek compute cluster\n\nDylan Patel: DeepSeek is very interesting. This is where a second could take to zoom out, out of who they are first of all, right? High-Flyer is a hedge fund that has historically done quantitative trading in China as well as elsewhere.",
+          "score": 0.7849670305252076,
+          "source": "embedding",
+          "quality_score": 0.88,
+          "original_score": 0.7442386150360107
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.470052719116211
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "DeepSeek current GPU cluster size or pre-training GPUs Dylan Patel Sebastian Raschka",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 6.239562511444092
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "DeepSeek current GPU cluster size and pre-training GPUs, future year for AI landscape analysis",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 11134,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 0.8276087880134582,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7537268400192261
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 10.772407293319702
+    },
+    {
+      "step_number": 4,
+      "tool_used": "embedding",
+      "query": "DeepSeek GPU count for pre-training, future year for AI landscape analysis Dylan Patel Sebastian Raschka",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 11136,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 68,
+          "text": "Nathan Lambert: Accepted practice is that for any given model that is a notable advancement, you\u2019re going to do two to 4x compute of the full training run in experiments alone. Lex Fridman: So a lot of this compute that\u2019s being scaled up is probably used in large part at this time for research? Dylan Patel: Yeah. And research begets the new ideas that lets you get huge efficiency. Nathan Lambert: Research gets you o1. Research gets you breakthroughs and you need to bet on it. Lex Fridman: So some of the pricing strategy that we\u2019ll discuss has the research baked into the price? Dylan Patel: So the numbers that DeepSeek specifically said publicly are just the 10,000 GPUs in 2021 and then 2,000 GPUs for only the pre-training for V3. They did not discuss cost on R1. They did not discuss cost on all the other RL for the instruct model that they made. They only discussed the pre-training for the base model and they did not discuss anything on research and ablations.",
+          "score": 0.8270925462245942,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7529893517494202
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.843362092971802
+    }
+  ],
+  "final_answer": "DeepSeek had a cluster of 10,000 A100 GPUs in 2021. For the pre-training of their V3 model, they used 2,000 H800 GPUs. The provided context does not specify a future year targeted for the analysis of the AI landscape.",
+  "total_chunks_retrieved": 7,
+  "unique_episodes_found": [
+    459
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 19.316657781600952
+}

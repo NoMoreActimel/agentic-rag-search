@@ -1,0 +1,209 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "DeepSeek GPU count Dylan Patel Sebastian Raschka",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11068,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11117,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 49,
+          "text": "Nathan Lambert: I\u2019m sure DeepSeek definitely has code bases that are extremely messy, where they\u2019re testing these new ideas. Multi-head latent attention probably could start in something like a Jupyter Notebook, or somebody tries something on a few GPUs and that is really messy. But the stuff that trains the DeepSeek V3 and DeepSeek-R1, those libraries, if you were to present them to us, I would guess are extremely high-quality code. Lex Fridman: So, high-quality, readable code. Yeah. Dylan Patel: I think there is one aspect to note though is that there is the general ability for that to transfer across different types of runs. You may make really, really high-quality code for one specific model architecture at one size, and then that is not transferable to, \u201d Hey, when I make this architecture tweak, everything\u2019s broken again,\u201d right? That\u2019s something that could be with their specific low-level coding of scheduling SMs is specific to this model architecture and size.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11122,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 54,
+          "text": "And what you could do is you just skip those. You see that there\u2019s a spike. You\u2019re like, \u201cOkay, I can ignore this data. Don\u2019t update the model and do the next one, and it\u2019ll recover quickly.\u201d\n\nBut on trickier implementations, so as you get more complex in your architecture and you scale up to more GPUs, you have more potential for your loss blowing up. So it\u2019s like, there\u2019s a distribution. Dylan Patel: And then the whole idea of grokking also comes in, right? It\u2019s like, just because it slowed down from improving in loss doesn\u2019t mean it\u2019s not learning because all of a sudden it could be like this and it could just spike down in loss again because it truly learned something, right? And it took some time for it to learn that. It\u2019s not a gradual process, and that\u2019s what humans are like. That\u2019s what models are like. So it\u2019s really a stressful task, as you mentioned. Lex Fridman: And the whole time the dollar count is going up. Nathan Lambert: Every company has failed runs.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11124,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 56,
+          "text": "Talking to people at Frontier Labs, there\u2019s a story that you can tell where training language models is kind of a path that you need to follow. So you need to unlock the ability to train a certain type of model or a certain scale, and then your code base and your internal know-how of which hyperparameters work for IT is kind of known. And you look at the DeepSeek papers and models, they\u2019ve scaled up, they\u2019ve added complexity, and it\u2019s just continuing to build the capabilities that they have. Dylan Patel: There\u2019s the concept of a YOLO run. So YOLO, you only live once. Lex Fridman: Yep. Dylan Patel: What it is, is there\u2019s all this experimentation you do at the small scale, research ablations. You have your Jupyter Notebook where you\u2019re experimenting with MLA on three GPUs or whatever and you\u2019re doing all these different things like, \u201cHey, do I do four active experts, 128 experts?",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11129,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 61,
+          "text": "Lex Fridman: Yeah. Dylan Patel: Right? Lex Fridman: Yeah. Dylan Patel: Now people have all these training run failures that are in the media, right? It\u2019s like, \u201cOkay, great, but actually a huge chunk of my GPUs are doing inference. I still have a bunch doing research constantly. And yes, my biggest cluster is training, but on this YOLO run,\u201d but that YOLO run is much less risky than what OpenAI did in 2022, or maybe what DeepSeek did now or sort of like, \u201cHey, we\u2019re just going to throw everything at it.\u201d\n\nLex Fridman: The big winners throughout human history are the ones who are willing to do YOLO at some point. Okay. What do we understand about the hardware it\u2019s been trained on, DeepSeek?\n\n\n## DeepSeek compute cluster\n\nDylan Patel: DeepSeek is very interesting. This is where a second could take to zoom out, out of who they are first of all, right? High-Flyer is a hedge fund that has historically done quantitative trading in China as well as elsewhere.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "The chunks discuss DeepSeek and general GPU scaling but do not provide specific GPU counts for DeepSeek's cluster or pre-training. Sebastian Raschka is not mentioned, and there is no information about a specific future year for AI landscape analysis.\n\nSearch for: \"DeepSeek GPU count pre-training cluster size\" and \"Sebastian Raschka Dylan Patel AI landscape future year\".",
+      "timestamp": 1.538480281829834
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "DeepSeek GPU count pre-training cluster size Sebastian Raschka AI landscape future year",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11138,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 70,
+          "text": "Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had. I think the clearest example we have, because Meta is also open, they talk about order of 60k to 100k H100 equivalent GPUs in their training clusters. Dylan Patel: Right. So Llama 3, they trained on 16,000 H100s, but the company of Meta last year publicly disclosed they bought 400 something thousand GPUs. Nathan Lambert: Yeah. Dylan Patel: Right? So of course, tiny percentage on the training. Again, most of it is serving me the best Instagram Reels or whatever. Nathan Lambert: I mean, we could get into a cost of, what is the cost of ownership for a 2,000 GPU cluster, 10,000? There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big.",
+          "score": 0.45454545454545453,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11340,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 272,
+          "text": "Nathan Lambert: How many watts is a toaster? Dylan Patel: A toaster has also-\n\nNathan Lambert: That\u2019s a good example. Dylan Patel: \u2026 a similar power consumption to an A100. H100 comes around. They increase the power from 400 to 700 watts and that\u2019s just per GPU, and then there\u2019s all the associated stuff around it. So once you count all of that, it\u2019s roughly 1,200 to 1,400 watts for everything. Networking, CPUs, memory, blah, blah, blah. Lex Fridman: So we should also say, what\u2019s required, you said power. So, a lot of power is required. A lot of heat is generated, so the cooling is required. And because there\u2019s a lot of GPUs or CPUs or whatever, they have to be connected. So, there\u2019s a lot of networking, right? Dylan Patel: Yeah. I think-\n\nSorry for skipping past that. And then the data center itself is complicated, but these are still standard sized data centers for GPT-4 scale. Now, we step forward to what is the scale of clusters that people built last year, and it ranges widely.",
+          "score": 0.45454545454545453,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14584,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 34,
+          "text": "But that\u2019s just a wonderful interface where you can have an intermediary and not have to do the awful low-level work that you would have to do to maintain different web projects.\n\n\n## Open Source vs Closed Source LLMs\n\nLex Fridman: All right. So we just talked about a bunch of the closed-weight models. Let\u2019s talk about the open ones. Tell me about the landscape of open LLM models. Which are interesting ones? Which stand out to you and why? We already mentioned DeepSeek. Nathan Lambert: Do you wanna see how many we can name off the top of our head? Lex Fridman: Yeah, yeah. Without looking at notes. Nathan Lambert: DeepSeek, Kimi, MiniMax, Z.ai, Antlang. We\u2019re just going Chinese. Sebastian Raschka: Let\u2019s throw in Mistral AI, Gemma\u2014 \u2026gpt-oss, the open source model by OpenAI. Actually, NVIDIA had a really cool one, Nemotron 3. There\u2019s a lot of stuff, especially at the end of the year. Qwen might be the one\u2014\n\nNathan Lambert: Oh, yeah. Qwen was the obvious name I was gonna say.",
+          "score": 0.45454545454545453,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14596,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 46,
+          "text": "But top of my head, DeepSeek, what was unique there is the Mixture of Experts. I mean, they were not inventing Mixture of Experts. Sebastian Raschka: We can maybe talk a bit more about what Mixture of Experts means. But just to list these things first before we dive into detail: Mixture of Experts, but then they also had multi-head latent attention, which is a tweak to the attention mechanism. This was, I would say in 2025, the main distinguishing factor between these open weight models: different tweaks to make inference or KV cache size more economical. We can also define KV cache in a few moments. But it makes it more economical to have long context, to shrink the KV cache size. So what are tweaks that we can do? Most of them focused on the attention mechanism. There is multi-head latent attention in DeepSeek; there is group query attention, which is still very popular. Sebastian Raschka: It\u2019s not invented by any of those models; it goes back a few years.",
+          "score": 0.45454545454545453,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14831,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 281,
+          "text": "For example, gpt-oss-120b might not be the cutting-edge model, or Gemini 3 might not be, because they want to ensure it is safe. But when these companies see that DeepSeek-V3.2 is really awesome and is being used with no backlash or security risk, that could encourage them to release better models. Maybe that is a very positive thing. Nathan Lambert: A hundred percent. These Chinese companies have set things into motion that I think would potentially not have happened if they were not all releasing models. I\u2019m almost sure that those discussions have been had by leadership. Sebastian Raschka: Is there a possible future where the dominant models, AI models in the world are all open source? Nathan Lambert: Depends on the trajectory of progress that you predict. If you think saturation in progress is coming within a few years, essentially within the time where financial support is still very good, then open models will be so optimized and so much cheaper to run that they\u2019ll win out.",
+          "score": 0.45454545454545453,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1 and 2 are irrelevant as they discuss other companies' GPU counts or general GPU power, not DeepSeek's. Chunks 3, 4, and 5 mention DeepSeek but do not provide its specific GPU counts. The future year for AI landscape analysis is strongly hinted by the episode title \"State of AI in 2026\" (for chunks 3, 4, 5), but not explicitly stated within the chunks themselves.\n\nSearch for \"DeepSeek GPU count\" or \"DeepSeek pre-training infrastructure\" to find specific numbers. Also, confirm the target year for the AI landscape analysis from the relevant episode.",
+      "timestamp": 8.429255723953247
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "DeepSeek GPU count pre-training",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11085,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 17,
+          "text": "This is a crawler that is maintained publicly. Yes, other tech companies eventually shift to their own crawler and DeepSeek likely has done this as well as most frontier labs do. But this sort of data is something that people can get started with and you\u2019re just predicting text in a series of documents. This can be scaled to be very efficient and there\u2019s a lot of numbers that are thrown around in AI training like how many floating-point operations or flops are used. And then you can also look at how many hours of these GPUs that are used. And it\u2019s largely one loss function taken to a very large amount of compute usage. You set up really efficient systems and then at the end of that you have the base model and pre-training is where there is a lot more of complexity in terms of how the process is emerging or evolving and the different types of training losses that you\u2019ll use. I think this is a lot of techniques grounded in the natural language processing literature.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11136,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 68,
+          "text": "Nathan Lambert: Accepted practice is that for any given model that is a notable advancement, you\u2019re going to do two to 4x compute of the full training run in experiments alone. Lex Fridman: So a lot of this compute that\u2019s being scaled up is probably used in large part at this time for research? Dylan Patel: Yeah. And research begets the new ideas that lets you get huge efficiency. Nathan Lambert: Research gets you o1. Research gets you breakthroughs and you need to bet on it. Lex Fridman: So some of the pricing strategy that we\u2019ll discuss has the research baked into the price? Dylan Patel: So the numbers that DeepSeek specifically said publicly are just the 10,000 GPUs in 2021 and then 2,000 GPUs for only the pre-training for V3. They did not discuss cost on R1. They did not discuss cost on all the other RL for the instruct model that they made. They only discussed the pre-training for the base model and they did not discuss anything on research and ablations.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11309,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 241,
+          "text": "No one spent more than a billion dollars on a model that\u2019s released publicly. GPT-4 was a couple hundred million and then they\u2019ve reduced the cost with 4o, 4 Turbo, 4o, right? But billion dollar model runs are coming and this concludes pre-training and post-training, right? And then the other number is like, \u201cHey, DeepSeek didn\u2019t include everything.\u201d They didn\u2019t include a lot of the cost goes to research and all this sort of stuff. A lot of the cost goes to inference. A lot of the cost goes to post-training. None of these things were factored. Research, salaries, all these things are counted in the \u201cbillions of dollars\u201d that OpenAI is spending, but they weren\u2019t counted in the, \u201cHey, $6 million, $5 million that DeepSeek spent.\u201d\n\nSo, there\u2019s a bit of misunderstanding of what these numbers are, and then there\u2019s also an element of\u2026 NVIDIA has just been a straight line up and there\u2019s been so many different narratives that have been trying to push down NVIDIA.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14615,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 65,
+          "text": "I think DeepSeek had this famous number of about five million dollars for pre-training at cloud market rates. Nathan Lambert: In the OLMo 3 paper, section 2.4, we just detailed how long we had the GPU clusters sitting around for training\u2014which includes engineering issues, multiple seeds\u2014and it was about two million dollars to rent the cluster to deal with all the problems and headaches of training a model. So these models are\u2026 a lot of people could get one to 10 million dollars to train a model, but the recurring costs of serving millions of users is really billions of dollars of compute. A thousand GPU rental you can pay 100 grand a day for. And these companies could have millions of GPUs. You can look at how much these things cost to sit around. Nathan Lambert: So that\u2019s kind of a big thing, and then it\u2019s like, if scaling is actually giving you a better model, is it going to be financially worth it?",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6345,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 324,
+          "text": "It's not really bearing down on the problem. So there's a few things that I've done that are kind of tactics for myself to make me more effective. Like one thing I noticed I was not doing well is I had a Google Cloud account to get GPUs there and I was finding I was very rarely doing that for no good psychological reasons where I'm like, oh, I can always think of something to do other than to spin up instances and run an experiment. I can keep working on my local Titans or something. But it was really stupid. I mean, it was not a lot of money. I should have been running more experiments there. So I thought to myself, well, I'm going to go buy a quarter million dollar DGX station. I'm going to just like sit it right there and it's going to mock me if I'm not using it. If the fans aren't running on that thing, I'm not properly utilizing it. And that's been helpful. You know, I've done a lot more experiments since then.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Ignore Chunk 5 as it is off-topic. The chunks discuss DeepSeek's pre-training costs but do not provide specific GPU counts. The future year for AI landscape analysis is also missing.\n\nSearch for \"DeepSeek pre-training GPU count\" and \"AI landscape analysis future year Dylan Patel Sebastian Raschka\" to find the missing numerical details.",
+      "timestamp": 16.341948747634888
+    }
+  ],
+  "final_answer": "DeepSeek publicly stated they used 10,000 GPUs in 2021 for their cluster, and 2,000 GPUs specifically for the pre-training of V3. The future year targeted for the analysis of the AI landscape, as indicated by the episode title, is 2026.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    490,
+    459,
+    309
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 21.912898778915405
+}

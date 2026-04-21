@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-03-30T15:07:50.441650",
+  "args": {
+    "mode": "smoke",
+    "num_questions": 3,
+    "limit": null,
+    "seed": 42,
+    "top_k": 5,
+    "max_steps_values": "2,3,4",
+    "run_main_grid": true,
+    "run_oracle_mini_study": false,
+    "output_tag": "main36_smoke_3q",
+    "output_dir": null
+  },
+  "qa_count": 3,
+  "qa_file": "/home/adhiraj/Downloads/llm_project/agentic-rag-search/data/processed/qa_pairs.json",
+  "quality_scores_path": "/home/adhiraj/Downloads/llm_project/agentic-rag-search/data/processed/chunk_quality_scores.json"
+}

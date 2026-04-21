@@ -1,0 +1,46 @@
+{
+  "run_dir": "data/results/20260330_185830_report_full_qualityoff",
+  "overview": {
+    "rows": 360,
+    "conditions": 18,
+    "qa_count_per_condition": 20,
+    "overall_success_rate": 0.4388888888888889,
+    "overall_judge_score": 3.0972222222222223,
+    "overall_retrieval_precision": 0.3533567724867725,
+    "overall_hallucination_rate": 0.32545734567901236,
+    "overall_cost_usd": 0.45129795999999994
+  },
+  "checks": {
+    "run_dir": "data/results/20260330_185830_report_full_qualityoff",
+    "manifest_qa_count": 20,
+    "rows_expected": 360,
+    "rows_actual": 360,
+    "conditions_expected": 18,
+    "conditions_actual": 18,
+    "qa_count_per_condition_expected": 20,
+    "qa_count_per_condition_actual_min": 20,
+    "qa_count_per_condition_actual_max": 20,
+    "api_error_like_rows": 0,
+    "error_answer_rows": 0,
+    "all_quality_off": true
+  },
+  "generated_tables": [
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/aggregate_by_process_feedback.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/aggregate_by_retriever.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/aggregate_by_step.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/condition_efficiency_ranking.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/per_question_diagnostics.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/process_vs_none_deltas.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/question_condition_success_matrix.csv",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/tables/run_integrity_checks.csv"
+  ],
+  "generated_plots": [
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/condition_success_rate.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/condition_hallucination_rate.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/retriever_metric_comparison.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/process_feedback_delta_heatmap.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/step_tradeoff_quality_cost.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/question_condition_success_heatmap.png",
+    "data/results/20260330_185830_report_full_qualityoff/analysis/plots/cost_vs_success_scatter.png"
+  ]
+}

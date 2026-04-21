@@ -1,0 +1,86 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel neurotechnology company founder Noland Arbaugh bit rate",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.7106332778930664,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8701,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 492,
+          "text": "Noland Arbaugh: Yeah, it blew my mind, no pun intended. Blew my mind when I first moved the cursor just with my thoughts and not attempting to move. It\u2019s something that I found over the couple of weeks building up to that, that as I get better cursor controls, the model gets better, then it gets easier for me to\u2026 I don\u2019t have to attempt as much to move it. And part of that is something that I\u2019d even talked with them about when I was watching the signals of my brain one day. I was watching when I attempted to move to the right and I watched the screen as I saw the spikes. I was seeing the spike, the signal was being sent before I was actually attempting to move. I imagine just because when you go to say, move your hand or any body part, that signal gets sent before you\u2019re actually moving, has to make it all the way down and back up before you actually do any sort of movement. So there\u2019s a delay there.",
+          "score": 0.6963237524032593,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8694,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 485,
+          "text": "Noland Arbaugh: Yeah, I knew all of that, but it\u2019s all Greek to me. I was like, \u201cOkay, 64 threads, 16 electrodes, 1,024 channels. Okay, that math checks out.\u201d\n\nLex Fridman: Sounds right.\n\n\n## Moving mouse with brain\n\nNoland Arbaugh: Yeah. Lex Fridman: When was the first time you were able to move a mouse cursor? Noland Arbaugh: I know it must have been within the first maybe week, a week or two weeks that I was able to first move the cursor. And again, it kind of made sense to me. It didn\u2019t seem like that big of a deal. It was like, okay, well, how do I explain this? When everyone around you starts clapping for something that you\u2019ve done, it\u2019s easy to say, \u201cOkay, I did something cool.\u201d\n\nThat was impressive in some way. What exactly that meant, what it was hadn\u2019t really set in for me.",
+          "score": 0.6829688549041748,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8715,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 506,
+          "text": "So thank you for being a pioneer in all these kinds of different super technical ways. And it\u2019s also cool to hear that there\u2019s a different feeling to the experience when it\u2019s calibrated in different ways because I imagine your brain is doing something different and that\u2019s why there\u2019s a different feeling to it. And then trying to find the words and the measurements to those feelings would be also interesting. But at the end of the day, you can also measure your actual performance, on whether it\u2019s Snake or Webgrid, you could see what actually works well. And you\u2019re saying, for the open loop calibration, the attempted movement works best for now. Noland Arbaugh: Yep. Yep. Lex Fridman: So the open loop, you don\u2019t get the feedback that you did something. Noland Arbaugh: Yeah. I just-\n\nLex Fridman: Is that frustrating? [inaudible 07:44:43]-\n\nNoland Arbaugh: No, no, it makes sense to me. We\u2019ve done it with a cursor and without a cursor in open loop.",
+          "score": 0.6778744459152222,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8764,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 555,
+          "text": "I told him, I was like, \u201cI don\u2019t know how I feel about people being able to just wipe parts of your memory. That seems a little sketchy to me.\u201d He\u2019s like, \u201cThey\u2019re already doing it.\u201d\n\nLex Fridman: Sounds legit. I would love memory replay. Just actually high resolution, replay of old memories. Noland Arbaugh: Yeah. I saw an episode of Black Mirror about that once, so I don\u2019t think I want it. Lex Fridman: Yeah, so Black Mirror always considers the worst case, which is important. I think people don\u2019t consider the best case or the average case enough. I don\u2019t know what it is about us humans. We want to think about the worst possible thing. We love drama. It\u2019s like how is this new technology going to kill everybody? We just love that. Again like, \u201cYes, let\u2019s watch.\u201d\n\nNoland Arbaugh: Hopefully people don\u2019t think about that too much with me. It\u2019ll ruin a lot of my plans. Lex Fridman: Yeah, I assume you\u2019re going to have to take over the world. I mean, I love your Twitter.",
+          "score": 0.6758437156677246,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.587068796157837
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 5.293912887573242
+    }
+  ],
+  "final_answer": "According to Noland Arbaugh, the first human participant with the neurotechnology implant, he initially achieved 8 bits per second with his implant. He later surpassed this, reaching 8.5 bits per second.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 5.293916940689087
+}

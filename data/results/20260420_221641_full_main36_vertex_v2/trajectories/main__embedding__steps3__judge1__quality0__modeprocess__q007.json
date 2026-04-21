@@ -1,0 +1,187 @@
+{
+  "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals, John Carmack programming philosophy technical complexity project goals, Pieter Levels programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8835,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 58,
+          "text": "It\u2019s like, \u201cOne day I\u2019ll start coding properly,\u201d and I never got to it. Lex Fridman: I sometimes wonder if I need to learn that stuff. It\u2019s still a to-do item for me to really learn Node.js or Flask or these kind of-\n\nPieter Levels: React [inaudible 00:42:28]-\n\nLex Fridman: Yeah, React, and it feels like a responsible software engineer should know how to use these, but you can get stuff done so fast with vanilla versions of stuff. Pieter Levels: Yeah, it\u2019s like software developers if you want to get a job, and there\u2019s people making stuff, like startups, and if you want to be entrepreneur, probably you maybe shouldn\u2019t, right? Lex Fridman: I really want to measure performance and speed. I think there\u2019s a deep wisdom in that. I do think that frameworks and just constantly wanting to learn the new thing, this complicated way of software engineering gets in the way.",
+          "score": 0.7031293511390686,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8834,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 57,
+          "text": "PHP just stays the same and works. Lex Fridman: Yeah. Can you actually just speak to that stack? You build all your websites, apps, startups, projects, all of that with mostly vanilla HTML, JavaScript with jQuery, PHP, and SQLite. So, that\u2019s a really simple stack, and you get stuff done really fast with that. Can you just speak to the philosophy behind that? Pieter Levels: I think it\u2019s accidental, because that\u2019s the thing I knew. I knew PHP, I knew HTML, CSS, because you make websites, and when my startups started taking off, I didn\u2019t have time to\u2026 I remember putting on my to-do list like, \u201cLearn Node.js,\u201d because it\u2019s important to switch, because this obviously is much better language than PHP, and I never learned it. I never did it, because I didn\u2019t have time. These things were growing like this, and I was launching more projects, and I never had time. It\u2019s like, \u201cOne day I\u2019ll start coding properly,\u201d and I never got to it.",
+          "score": 0.6942044496536255,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6203,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 182,
+          "text": "Most of us, if you do any kind of programming, you kind of do boring kind of very vanilla type of code. That's the way to build large systems but it's nice to see that the possibility of creative genius is still within those languages. It's laden within those languages. So given that you are once again, one of the greatest programmers ever, what do you think makes a good programmer? Maybe a good modern programmer. So I just gave a long rant slash lecture at Meta to the TPM organization and my biggest point was everything that we're doing really should flow from user value, all the good things that we're doing. It's like, we're not technical people. It's like, you shouldn't be taking pride just in the specific thing. Like CodeGolf is the sort of thing, it's a fun puzzle game but that really should not be a major motivator for you. It's like, we're solving problems for people or we're providing entertainment to people.",
+          "score": 0.6936933994293213,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8836,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 59,
+          "text": "I do think that frameworks and just constantly wanting to learn the new thing, this complicated way of software engineering gets in the way. I\u2019m not sure what to say about that, because definitely you shouldn\u2019t build everything from just vanilla JavaScript or vanilla C for example, C++ when you\u2019re building systems engineering is like\u2026 There\u2019s a lot of benefits for a pointer safety, and all that kind of stuff. So I don\u2019t know, but it just feels like you can get so much more stuff done if you don\u2019t care about how you do it. Pieter Levels: Man, this is my most controversial take, I think, and maybe I\u2019m wrong, but I feel like this frameworks now that raise money, they raise a lot of money.",
+          "score": 0.6921545267105103,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8841,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 64,
+          "text": "It\u2019s not efficient, and if your benchmark is people building stuff that actually gets done. And for society, if we want to save time, we should probably use the technology that\u2019s simple, that\u2019s pragmatic, that works, that\u2019s not overly complicated, it doesn\u2019t make your life like a living hell. Lex Fridman: And use a framework when it obviously solves a direct problem that you-\n\nPieter Levels: Yeah, of course. I\u2019m not saying you should code without a framework. You should use whatever you want, but yeah, I think it\u2019s suspicious. And I think [inaudible 00:47:32], when I talk about it on Twitter, there\u2019s this army comes out, there\u2019s these framework armies. Man, something my gut tells me-\n\nLex Fridman: I want to ask the framework army, what have they built this week? It\u2019s the Elon question, \u201cWhat did you do this week?\u201d\n\nPieter Levels: Yeah, did you make money with it? Did you charge users? Is it a real business? And yeah.",
+          "score": 0.6921015977859497,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All chunks are relevant to the question, though some are more useful than others. Chunks 1, 2, 4, and 5 provide excellent insight into Pieter Levels' philosophy, emphasizing simplicity and vanilla tech to achieve project goals quickly, avoiding unnecessary complexity. Chunk 3 for John Carmack is less direct, touching on \"vanilla code\" for large systems but not explicitly detailing his philosophy on balancing complexity with project goals.\n\nThe main gap is information on Travis Oliphant, and more specific details for John Carmack.\n\nNext, search for:\n1.  \"Travis Oliphant programming philosophy technical complexity project goals\"\n2.  \"John Carmack technical debt project management philosophy\" or \"John Carmack software engineering tradeoffs complexity goals\"",
+      "timestamp": 2.245060443878174
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 2796,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.7159910202026367,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2797,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 1,
+          "text": "To support this podcast, please check out our sponsors in the description. This is the Lex Friedman Podcast, and here is my conversation with Travis Oliphant. What was the first computer program you've ever written? Do you remember? Whoa, that's a good question. I think it was in fourth grade. Just a simple loop in BASIC. BASIC. BASIC, yeah, on an Atari 800, Atari 400, I think, or maybe it was an Atari 800. It was a part of a class, and we just were just BASIC loops to print things out. Did you use go to statements? Yes, yes, we used go to statements. I remember in the early days, that's when I first realized there's like principles to programming, when I was told that don't use go to statements. Those are bad software engineering principles, like it goes against what great, beautiful code is. I was like, oh, okay, there's rules to this game. I didn't see that until high school when I took an AP computer science course.",
+          "score": 0.698961615562439,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3003,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 207,
+          "text": "Build, don't destroy. Build, like so often the tendency is to not like something and wanna go attack it. Build something, build something to replace it. Yeah. Build up, attract people to your new thing. You'll be far better, right? You don't need to destroy something to build something else. So that's, I guess, generally. And then definitely like curiosity, follow your curiosity and let it, don't just follow the money. And all of that, like you said, is grounded in family, friendship, and ultimately love. Yes. Which is a great way to end it. Travis, you're one of the most impactful people in the engineering and the computer science in the human world. So I truly appreciate everything you've done. And I really appreciate that you would spend your valuable time with me. It was an honor. It was a real pleasure for me. I appreciate that. Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.6850419640541077,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3014,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 218,
+          "text": "So I love software, but we need more entrepreneurs and I wanna understand that better. So once I kind of had that virus infect my brain, even though I was on a trajectory to go to a tenure track position at a university and I was there for six years, I was kind of already out the door when I started. And we can get into that, but. Well, can I just ask you a quick question on, is there some design principles that were in your mind around SciPy? Like, is there some key ideas that were just like sticking to you that this is the fundamental ideas? Yeah, I would say so. I would think it's basically accessibility to scientists, like give them, give scientists and engineers tools that they don't have to think a lot about programming. So give them really good building blocks, give them functions that they wanna call and sort of just the right length of spelling. There's one tradition in programming where it's like, make very, very long names, right?",
+          "score": 0.6832765340805054,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2975,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 179,
+          "text": "Like, yeah, we know it's not great, but next time it'll be better. I mean, just keep learning and keep improving. So it's an attitude. And then it doesn't take intense concentration, right? Good things don't happen just, it's not quite like TikTok or like Facebook, you know? You can't scroll your way to good programming, right? There are sincere hours of deep, don't be afraid of the deep problem. Like, often people will run away from something because, oh, I can't solve this. And you might be right, but give it an hour. Give it a couple of hours and see. And just five minutes, not gonna give you that. Was it lonely when you were building SciPy and NumPy? Hugely, yeah, absolutely lonely, in the sense of you had to have an inner drive, and that inner drive for me always comes from, I have to see that this is right in some angle. I have to believe it, that this is the right approach, the right thing to do. With SciPy, it was like, oh yeah, the world needs libraries and Python.",
+          "score": 0.6755807995796204,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 2 is irrelevant filler. The other chunks provide general background on Travis Oliphant and some broad philosophical statements, but they do not directly address his specific approach to balancing technical complexity with project goals.\n\nThe agent should search for Travis Oliphant's design principles for NumPy/SciPy or discussions on technical trade-offs he made. Additionally, the agent needs to begin searching for information on John Carmack and Pieter Levels regarding their programming philosophies on technical complexity versus project goals.",
+      "timestamp": 10.394696950912476
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant design principles NumPy SciPy technical complexity accessibility, John Carmack philosophy technical complexity user value",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 2992,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 196,
+          "text": "There was a company, there was a guy actually, Eric Jones and Travis Vought. They were two friends who founded a company called NTHOT. It's here in Austin, still here. And they, Eric contacted me at the time when I was a graduate student still. And he said, hey, why don't you come down? We want to build a company. We're thinking of a scientific company and we want to take what you're doing and kind of add it to some stuff that he'd done. He'd written some tools. And then Piero Peterson had done F2Py. Let's come together and build, pull this all together and call it SciPy. So that's the origin of the SciPy brand. It came from multi pack and a whole bunch of modules I'd written, plus a few things from some other folks and then pulled together in a single installer. SciPy was really a distribution of Python masquerading as a library. How did you think about SciPy in context of Python, in context of Numeric, like what?",
+          "score": 0.6842390894889832,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2993,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 197,
+          "text": "How did you think about SciPy in context of Python, in context of Numeric, like what? So we saw SciPy as a way to make an R&D environment for Python, like use Python, depended on Numeric. So Numeric was the array library we depended on. And then from there, extend it with a bunch of modules that allowed for, and at the time, the original vision of SciPy was to have plotting, was to have the REPL environment and kind of really a whole data environment that you could then install and get going with. And that was kind of the thinking. It didn't really evolve that way, right? It sort of had a, for one, it's really hard to do massive scale projects with open source collectives. Actually, there's sort of an intrinsic cooperation limit as to which, too many cooks in the kitchen, you can do amazing infrastructure work.",
+          "score": 0.6825171709060669,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2819,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 23,
+          "text": "So, but doing, using these tools you could construct and then you start to think at that level, you think in n dimensions is something I like to say, and you start to think differently about data at that point. Now you're, it really helps. Yeah, I mean, outside of programming, if you really internalize linear algebra as a course, I mean, it's philosophically allows you to think of the world differently. It's almost like liberating, you don't have to, you don't have to think about the individual numbers in the n dimensional array. You could think of it as an object in itself and all of a sudden this world can open up. You're saying MATLAB and APL were like the early C, I don't know if many languages got that right ever. No, no, no they didn't. Even still. Even still, I would say. I mean, NumPy is an inheritor of the traditions but advanced indexing so that you could do masked indexing and indirect indexing instead of just slicing.",
+          "score": 0.6770898103713989,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Ignore Chunk 1 and 3; they are largely irrelevant to Travis Oliphant's programming philosophy or project goals.\n2.  Chunk 2 provides some context on Travis Oliphant's vision for SciPy (an R&D environment for Python), which hints at his project goals, but doesn't explicitly discuss his philosophy on technical complexity.\n3.  The agent needs to search for information on John Carmack and Pieter Levels' programming philosophies, specifically regarding technical complexity and project goals. For Travis Oliphant, search for his explicit views on balancing technical depth with practical project outcomes.",
+      "timestamp": 23.98593497276306
+    }
+  ],
+  "final_answer": "Pieter Levels prioritizes speed and efficiency in achieving project goals, advocating for simple, vanilla technology stacks like PHP and vanilla JavaScript, and viewing frameworks and complex software engineering as hindrances. John Carmack emphasizes that programming efforts should stem from user value, focusing on solving problems for people rather than taking pride in technical complexity for its own sake. Travis Oliphant's philosophy centers on accessibility for scientists and engineers, creating powerful yet easy-to-use tools like SciPy and NumPy that abstract away underlying complexity, enabling users to focus on solving difficult problems.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    440,
+    224,
+    309
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 33.14340806007385
+}

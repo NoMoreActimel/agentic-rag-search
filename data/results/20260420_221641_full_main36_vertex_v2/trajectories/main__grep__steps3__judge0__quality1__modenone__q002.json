@@ -1,0 +1,87 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.825,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 8572,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 363,
+          "text": "You could also imagine that if the user is prompted with that kind of consistency metric, that maybe they just become more behaviorally engaged to begin with, because the task is kind of boring when you don\u2019t have any feedback at all. And so there may be benefits to the user experience of showing something on the screen, even if it\u2019s not accurate. Just because it keeps the user motivated to try to increase that number, or push it upwards. Lex Fridman: So there\u2019s this psychology element here? Bliss Chapman: Yeah. Absolutely.\n\n\n## Calibration\n\nLex Fridman: And again, all of that is UX challenge? How much signal drift is there hour-to-hour, day-to-day, week-to-week, month-to-month? How often do you have to recalibrate because of the signal drift? Bliss Chapman: Yeah. So this is a problem we\u2019ve worked on both with NHP, non-human primates, before our clinical trial, and then also with Noland during the clinical trial. Maybe the first thing that\u2019s worth stating is what the goal is here.",
+          "score": 0.6499999999999999,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.38,
+          "source": "grep",
+          "quality_score": 0.1,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 8209,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Elon Musk, DJ Seo, Matthew MacDougall, Bliss Chapman, and Noland Arbaugh about Neuralink and the future of humanity. Elon, DJ, Matthew and Bliss are of course part of the amazing Neuralink team, and Noland is the first human to have a Neuralink device implanted in his brain. I speak with each of them individually, so use timestamps to jump around, or as I recommend, go hardcore, and listen to the whole thing. This is the longest podcast I\u2019ve ever done. It\u2019s a fascinating, super technical, and wide-ranging conversation, and I loved every minute of it. And now, dear friends, here\u2019s Elon Musk, his fifth time on this, the Lex Fridman podcast,\n\n\n## Elon Musk\n\nElon Musk: Drinking coffee or water? Lex Fridman: Water. I\u2019m so over-caffeinated right now. Do you want some caffeine? Elon Musk: Sure. Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah.",
+          "score": 0.38,
+          "source": "grep",
+          "quality_score": 0.1,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 8657,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 448,
+          "text": "Lex Fridman: It\u2019s interesting how much value you assign to the task of asking the right questions. That\u2019s the main thing, it\u2019s not the answers, it\u2019s the questions. Bliss Chapman: This point, by the way, is driven home in a very painful way when you try to communicate with someone who cannot speak, because a lot of the time, the last thing to go is they have the ability to somehow wiggle a lip or move something that allows them to say yes or no. And in that situation, it\u2019s very obvious that what matters is, are you asking them the right question to be able to say yes or no to? Lex Fridman: Wow, that\u2019s powerful. Well, Bliss, thank you for everything you do, and thank you for being you, and thank you for talking today. Bliss Chapman: Thank you.\n\n\n## Noland Arbaugh\n\nLex Fridman: Thanks for listening to this conversation with Bliss Chapman. And now, dear friends, here\u2019s Noland Arbaugh, the first human being to have a Neuralink device implanted in his brain.",
+          "score": 0.38,
+          "source": "grep",
+          "quality_score": 0.1,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.9829521179199219
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 3.842665910720825
+    }
+  ],
+  "final_answer": "Noland Arbaugh, the first human participant with a Neuralink implant, initially achieved 8 bits per second. He later broke that record, reaching 8.5 bits per second.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    438,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 3.8426687717437744
+}

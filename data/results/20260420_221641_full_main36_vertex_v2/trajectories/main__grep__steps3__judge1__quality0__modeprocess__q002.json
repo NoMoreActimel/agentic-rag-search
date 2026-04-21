@@ -1,0 +1,189 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel neurotechnology company Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 131,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 131,
+          "text": "Two years ago, that was less so. It's a very rapidly evolving ecosystem. So like one example, maybe you can comment on something I worked a lot on is autonomous vehicles. You can see each individual vehicle as an AI system. And you can see vehicles from Tesla, for example, and then Ford and GM and all these as also like larger... I mean, they all are running the same kind of system on each sets of vehicles. So it's individual AI systems and individual vehicles, but it's all different. The station is the same AI system within the same company. So you can envision a situation where all of those AI systems are put on SingularityNet, right? And how do you see that happening? And what would be the benefit? And could they share data? I guess one of the biggest things is that the power there's in a decentralized control, but the benefit would have been, is really nice if they can somehow share the knowledge in an open way if they choose to. Yeah, yeah, yeah, those are all quite good points.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 147,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2478,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 239,
+          "text": "What can you do, sue them for slander? I mean, so you just let it ride and you let it roll. And if it was just ending there, that'd be great. But the problem is it cascades and people just repost it and they relive it again and again and again. And then what do you do about it? You eventually just say, I'm not gonna talk about it anymore. I'm done with it. And you move on and you say, you know what? If it's your problem, it's your problem. It's your reality that you wanna live in. I'll be defined by the things that I achieve and do and the people that we help and the things that we build. And, you know, since I started in this industry, I've gotten to a point where not only do we have this amazing company with these incredible people who work at this company, but we also have the ability to pursue amazing different interests. Like I met Ben Gortzell. And Ben and I are gonna do an AGI project together. And of all places, Rwanda. And he gave me this 85 fucking page paper.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Ignore Chunk 5 as it is completely off-topic. Chunk 2 contains relevant information about Noland Arbaugh and bit rate, but it is from an Elon Musk episode, not Ben Goertzel, and therefore does not fulfill the \"Ben Goertzel discusses\" criteria.\n2.  No chunks directly answer the question as none show Ben Goertzel discussing a neurotechnology company founder or Noland Arbaugh's bit rate.\n3.  The agent should search for \"Ben Goertzel Neuralink\" or \"Ben Goertzel Elon Musk neurotechnology\" to find where Ben Goertzel mentions the relevant company or its founder.",
+      "timestamp": 1.879542350769043
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Neuralink",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 8219,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 10,
+          "text": "So that is perhaps helpful. I think we\u2019ll probably get\u2026 If our data rate increases, it\u2019s highly probable it will become far more verbose. Just like your computer, when computers had\u2026 My first computer had 8K of RAM, so you really thought about every byte. And now you\u2019ve got computers with many gigabytes of RAM. So, if you want to do an iPhone app that just says, \u201cHello world,\u201d it\u2019s probably, I don\u2019t know, several megabytes minimum, a bunch of fluff. But nonetheless, we still prefer to have the computer with the more memory and more compute. So, the long-term aspiration of Neuralink is to improve the AI human symbiosis by increasing the bandwidth of the communication. Because even if\u2026 In the most benign scenario of AI, you have to consider that the AI is simply going to get bored waiting for you to spit out a few words.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8433,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 224,
+          "text": "DJ Seo: Oh yeah, this is even before going to that, right? There\u2019s almost, I mean, the entire world that could benefit from these types of things. And then, if we\u2019re talking about next generation of how we interface with machines or even ourselves, in many ways, I think BCI can play a role in that. And some of the things that I also talk about is, I do think that there is a real possibility that you could see 8 billion people walking around with Neuralink. Lex Fridman: Well, thank you so much for pushing ahead. And I look forward to that exciting future. DJ Seo: Thanks for having me.\n\n\n## Matthew MacDougall\n\nLex Fridman: Thanks for listening to this conversation with DJ Seo. And now, dear friends, here\u2019s Matthew MacDougall, the head neurosurgeon at Neuralink. When did you first become fascinated with the human brain? Matthew MacDougall: Since forever. As far back as I can remember, I\u2019ve been interested in the human brain.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12871,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 97,
+          "text": "If it\u2019s generating pro golf code, it\u2019s not a collaboration. So it has to be speaking the human \u2026 it\u2019s not just, you\u2019re writing the prompts in English, you also want to read the responses in the human-interpretable language at Ruby, right? So that actually is beneficial for AI too. Because you\u2019ve said that for you the sculptor, the elitist Coco Chanel sculptor, you want on your fancy keyboard to type every single letter yourself with your own fingers. But it\u2019s also, the benefit of Ruby also applies once that is written by AI and you\u2019re actually doing with your own fingers the editing part, because you can interact with it because it\u2019s human interpretable. DHH: The paradigm I really love with this was something Elon actually said on one of your shows when you guys were talking about Neuralink, that Neuralink allows the bandwidth between you and the machine to increase. That language, either spoken or written, is very low bandwidth.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 3,
+          "text": "Ben Sims on Game Design, Carlos Santana on Guitar, Keira Kasparov, the greatest chess player ever on chess, Daniel Negrano on Poker, and many more. Chris Hadfield explaining how rockets work and the experience of being launched into space alone is worth the money. Once again, sign up at masterclass.com slash lex to get a discount and to support this podcast. Now, here's my conversation with Ben Kurtzell. What books, authors, ideas had a lot of impact on you in your life in the early days? You know, what got me into AI and science fiction and such in the first place wasn't a book, but the original Star Trek TV show, which my dad watched with me like in its first run. It would have been 1968, 69 or something, and that was incredible because every show they visited a different alien civilization with different culture and weird mechanisms.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, and 3 are irrelevant. Chunk 4 is an ad/intro from a Ben Goertzel episode but contains no useful information.\n\nNone of the chunks contain information about Noland Arbaugh or the bit rate achieved with his implant, nor do they show Ben Goertzel discussing this topic.\n\nSearch for \"Ben Goertzel Noland Arbaugh Neuralink bit rate\" to find specific discussions by Ben Goertzel about this event.",
+      "timestamp": 14.005603790283203
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Noland Arbaugh Neuralink bit rate",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 8670,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 461,
+          "text": "I just get along great with people. I really enjoy meeting new people, and so I just wanted to do everything. This is kind of just how I\u2019ve been. Lex Fridman: It\u2019s just great to see that cynicism didn\u2019t take over given everything you\u2019ve been through. Noland Arbaugh: Yeah. Lex Fridman: Was that a deliberate choice you made, that you\u2019re not going to let this keep you down? Noland Arbaugh: Yeah, a bit. Also, it\u2019s just kind of how I am. I just, like I said, I roll with the punches with everything. I always used to tell people I don\u2019t stress about things much, and whenever I\u2019d see people getting stressed, I would just say, \u201cIt\u2019s not hard just don\u2019t stress about it and that\u2019s all you need to do. And they\u2019re like, \u201cThat\u2019s not how that works.\u201d I\u2019m like, \u201cIt works for me. Just don\u2019t stress and everything will be fine.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8706,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 497,
+          "text": "I thought of something and I wanted to try it and so I did. It seems like it works, so maybe we should explore that a little bit.\u201d\n\nLex Fridman: So I think that discovery\u2019s not just for you, at least from my perspective. That\u2019s a discovery for everyone else who ever uses a Neuralink that this is possible. I don\u2019t think that\u2019s an obvious thing that this is even possible. It\u2019s like I was saying to Bliss earlier, it\u2019s like the four-minute mile. People thought it was impossible to run a mile in four minutes and once the first person did it, then everyone just started doing it. So just to show that it\u2019s possible, that paves the way to anyone can now do it. That\u2019s the thing that\u2019s actually possible. You don\u2019t need to do the attempted movement, you can just go direct. Noland Arbaugh: Yeah. Yeah. Lex Fridman: That\u2019s crazy. Noland Arbaugh: It is crazy. It is crazy, yeah. Lex Fridman: For people who don\u2019t know, can you explain how the Link app works? You have an amazing stream on the topic.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8713,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 504,
+          "text": "So calibrated on attempted movement will create a model that makes it really effective for you to then use the force. Noland Arbaugh: Yes. I\u2019ve tried doing calibration with imagined movement and it just doesn\u2019t work as well for some reason. So that was the center-out targets. There\u2019s also one where a random target will pop up on the screen and it\u2019s the same. I just move, I follow along wherever the cursor is, to that target all across the screen. I\u2019ve tried those with imagined movement and for some reason the models just don\u2019t, they don\u2019t give as high level as quality when we get into closed loop. I haven\u2019t played around with it a ton, so maybe the different ways that we\u2019re doing calibration now might make it a bit better. But what I\u2019ve found is there will be a point in calibration where I can use imagined movement. Before that point, it doesn\u2019t really work. So if I do calibration for 45 minutes, the first 15 minutes, I can\u2019t use imagined movement. It just doesn\u2019t work for some reason.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1617,
+          "episode_id": 176,
+          "guest": "Robert Breedlove",
+          "chunk_index": 233,
+          "text": "What is it? From a Bitcoin perspective, I'm like, I'm mining. I'm solving the cryptographic problem and generate. In that sense, I'm a useful node. Yeah, you're competing to solve the puzzle of entropy, right? And when you do solve it, it benefits the entire network. But I guess from my perspective, just because just working in AI, I'm looking at the longterm vision. I see us humans and AI systems as really the same and AI systems ultimately as something that supersedes humans. So what is intelligence? So in the context of our current discussion, I think intelligence is very closely linked to this notion of ideas. And it's the ability to generate ideas, to mold ideas, to compress seeming chaos into some model, into some theory that efficiently compresses the chaos in a way where you can then integrate it with other ideas and they can play and all those kinds of things. So in that sense, it's the turning chaos into order.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 4 is irrelevant. Chunks 1-3 mention Noland Arbaugh and Neuralink but do not include Ben Goertzel or the specific bit rate.\n\nThe agent should search for \"Ben Goertzel Noland Arbaugh Neuralink bit rate\" again, but specifically look for mentions *by Ben Goertzel* or a Neuralink company announcement. Prioritize sources where Ben Goertzel discusses this topic.",
+      "timestamp": 20.802910804748535
+    }
+  ],
+  "final_answer": "According to Noland Arbaugh, he initially achieved eight bits per second with his implant. He recently surpassed that, reaching 8.5 bits per second.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    192,
+    103,
+    176,
+    438,
+    474
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 25.795430421829224
+}

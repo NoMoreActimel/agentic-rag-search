@@ -1,0 +1,156 @@
+{
+  "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 4725,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 57,
+          "text": "I would love to have time to actually learn about their story, but there's not enough time in the world. And I just think well of them and then I move on and enjoy a delicious meal with people that are close to me and I love and so on and just, and move on. And then never adding to the negativity of like, just even in the privacy of my own mind, thinking a hateful thought towards them, it serves no purpose whatsoever. Yeah, I love that about you. And I know that what you just said to be true, one of the, I think more toxic things in life is what's called, you know, a vacuative projection. When people feel something and they try and evacuate it and project it onto somebody else. Projection is fascinating, right? What you essentially just said is that you don't accept projections. And in fact, you transmute them to put it in the language of the Buddhist, you know, you transmute it into positivity. And in that way, you truly neutralize it and transmute it.",
+          "score": 2.6776645183563232,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2941,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 145,
+          "text": "And so I wanted to replicate that. This time we did a lot of innovation at Anaconda. I wanted to do innovation, but also contribute to the projects that existed, like create a place where maintainers, so the SciPy and NumPy and Numba and all these projects we already started can pay people to work on them and keep them going. So that's Labs. Quansight Labs is a separate organization. It's a nonprofit mission. The profits of Quansight help fund it. And in fact, every project that we have at Quansight, a portion of the money goes directly to Quansight Labs to help keep it funded. So we've gotten several mechanisms that we keep Quansight Labs funded. And currently, so I'm really excited about Labs because it's been a mission for a long time. What kind of projects are within Labs? So Labs is working to make the software better, like make NumPy better, make SciPy better. It only works on open source.",
+          "score": 2.657722234725952,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12878,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 104,
+          "text": "That may be the economic value. It\u2019s not the only human value. The human value is just as much in the expression. When someone who sits down on a guitar and plays Stairways to Heaven, there\u2019s a perfect recording of that, that will last in eternity. You can just put it on Spotify, you don\u2019t actually need to do it. The joy is to command the guitar yourself. The joy of a programmer, of me as a programmer, is to type the code myself. If I elevate, if I promote myself out of programming, I turn myself into a project manager, a project manager of a murder of AI crows, as I wrote the other day. I could have become a project manager my whole career. I could have become a project manager 20 years ago if I didn\u2019t care to write code myself and I just wanted outcomes. That\u2019s how I got started in programming, I just wanted outcomes. Then I fell in love with programming, and now I\u2019d rather retire than giving it up. Now, that doesn\u2019t mean you can\u2019t have your cake and eat it too.",
+          "score": 2.6429593563079834,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12807,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 33,
+          "text": "The webpage I did in ninth grade would render on a modern browser today, 30 years later. Lex Fridman: That\u2019s crazy. DHH: That is completely crazy when you think about the amount of evolution we\u2019ve had with the web, how much better we\u2019ve made it, how many more standards browsers have adopted. It\u2019s essentially an Apollo project today to create a new browser, which is why it doesn\u2019t happen very often, which is why even companies like Microsoft had to throw in the towel and say, we can\u2019t do it. Now, I actually don\u2019t think that\u2019s good for the web. There is the danger of the monoculture if we just get a single browser engine that runs everything, and we are in danger of that. I love the fact that the Ladybird project, for example, is trying to make a new browser engine from scratch. I\u2019ve supported that project. I would encourage people to look into that. It\u2019s really a wonderful thing. It\u2019s staffed by a bunch of people who worked on other browser projects in the past.",
+          "score": 2.6235287189483643,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12150,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 9,
+          "text": "I was rather just going from project to project, doing things that I thought would be fun and cool. And with each project I learned new things, learning about how to store and manage data, learning how to deal with advanced data structures, how to write complex programs that have deeply nested data and control flow. Each one of those provide a lesson which were later essential. In 1991, I released my first game and over the course of that decade went from zero commercial releases to the first generation Unreal Engine. But this was largely just using the knowledge that I\u2019d built up over the previous decade, just doing fun hobby projects. And if I hadn\u2019t done all of that work, there\u2019s no way I could have ever built the things that came later. Lex Fridman: All the experimentation and all the exploration somehow contributed, somehow made sense later on. All of that is integrated somehow in the stuff you build. It\u2019s funny how life works. The pieces kind of come together eventually.",
+          "score": 2.613919973373413,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Ignore chunks 1, 3, 4, and 5 as they are irrelevant or feature individuals not mentioned in the question.\n2.  Chunk 2 provides a starting point for Travis Oliphant's project goals (sustaining open-source projects like SciPy/NumPy, funding maintainers), but it lacks information on his views regarding technical complexity or the balance.\n3.  Next, search for \"Travis Oliphant technical complexity philosophy\" to get more specific details. Then, initiate searches for \"John Carmack programming philosophy technical complexity project goals\" and \"Pieter Levels programming philosophy technical complexity project goals\" to cover the other individuals.",
+      "timestamp": 1.2347602844238281
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant technical complexity philosophy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14863,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 313,
+          "text": "Thanks for listening to this conversation with Sebastian Raschka and Nathan Lambert. To support this podcast, please check out our sponsors in the description, where you can also find links to contact me, ask questions, give feedback, and so on. And now let me leave you with some words from Albert Einstein: \u201cIt is not that I\u2019m so smart, but I stay with the questions much longer.\u201d Thank you for listening, and hope to see you next time.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4955,
+          "episode_id": 279,
+          "guest": "Alien Debate",
+          "chunk_index": 49,
+          "text": "Maybe there's evolution and maybe there's going to be life. So what I'm trying to say is narrow down the regions of space where you say there's definitely evidence of memory as high assembly there or not high assembly, because that would be life, but where it's capable of happening. And then that would also help us frame the search for aliens. I don't know how likely it is to make the transition to cells and all the other things. I think you're right. But I think that we just need to get more data. Well, I didn't like the thought experiment because I don't like the idea that if the universe has a maximal limit on the amount it can generate per unit time that our existence is actually precluding the existence of other things. Well, I'll just say one thing. But I think that's probably true anyway because of the resource limitations. So I don't like your thought experiment because I think it's wrong. Well, no, no, I do like the thought experiment.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4953,
+          "episode_id": 279,
+          "guest": "Alien Debate",
+          "chunk_index": 47,
+          "text": "And when we're thinking about cosmological arrow of time and things like that. Now, I think those are pretty superficial proposals as they stand now, but assembly would give you a way of counting it. And then the question is if there's a certain maximal capacity of the universe's speed of generating stuff, which Lee always has this argument that assembly is about time. The universe is generating more states. Really what it's generating is more assembly possibilities. And then dark energy might be one manifestation of that, that the universe is accelerating its expansion because that makes more physical space. And what's happening on our planet is it's accelerating in the expansion of possible things that exist. And maybe the universe just has a maximal rate of what it can do to generate things. And then if there is a maximal rate, maybe only a certain number of planets can actually do that. Or there's a trade off about the pace of growth on certain planets versus others.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4951,
+          "episode_id": 279,
+          "guest": "Alien Debate",
+          "chunk_index": 45,
+          "text": "If we did, we would know the likelihood of life in the universe. And a lot of people wanna say life is common, but I don't think that we can say that yet till we have the empirical data, which I think you would agree with. But then there's this other kind of thought experiment I have which I don't like, but I did have it, which is if life emerges on one planet and you get this real high density of things that can exist on that planet, is it sort of dominating the density of creation that the universe can actually generate? So like if you're thinking about counting entropy, right? Like the universe has a certain amount of stuff in it. And then assembly is kind of like an entropic principle. It's not entropy. But the idea is that now transformations among stuff or the actual physical histories of things now become things that you have to count as far as saying that these things exist and we're increasing the number of things that exist.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4954,
+          "episode_id": 279,
+          "guest": "Alien Debate",
+          "chunk_index": 48,
+          "text": "Or there's a trade off about the pace of growth on certain planets versus others. I have a million questions there, but do you have thoughts on? Just a quick, yeah, I'll just say something very quick. It's a thought experiment. No, it's good, I think I get it. I think I get it. So what I want to say is when I mean aliens are everywhere, I mean memories are the prerequisite for aliens via selection and then concentration of selection when selection becomes autonomous. So what I would love to do is to build, say a magical telescope that was a memory, a magical one, or a real one, that would be a memory detector to see selection. So you could get to exoplanets and say that exoplanet looks like there's lots of selection going on there. Maybe there's evolution and maybe there's going to be life.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant filler or off-topic discussions about aliens and cosmology. They contain no useful information about Travis Oliphant's programming philosophy or technical complexity.\n\nThe agent should search for information specifically on Travis Oliphant's views on technical complexity, project goals, or his overall programming philosophy. Consider broadening the search to include terms like \"Travis Oliphant programming principles\" or \"Travis Oliphant software design philosophy.\"",
+      "timestamp": 8.392934799194336
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 12.694106340408325
+    }
+  ],
+  "final_answer": "Travis Oliphant's programming philosophy, as described, focuses on fostering and improving existing open-source projects like SciPy and NumPy through Quansight Labs. His approach balances innovation with the sustained maintenance and enhancement of foundational technical software.\n\nThe provided context does not contain information about the programming philosophies of John Carmack or Pieter Levels, making it impossible to compare their views on technical complexity and project goals. Therefore, the context is insufficient to fully answer the question.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    224,
+    490,
+    467,
+    277,
+    279,
+    474
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 15.344409465789795
+}

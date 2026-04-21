@@ -1,0 +1,4 @@
+suite,condition_id,retriever,max_steps,process_feedback,quality_reweight,judge_mode,qa_count,success,judge_score,retrieval_precision,hallucination_rate,lexical_f1,exact_match,reference_episode_recall,trajectory_length,elapsed_seconds,cost_usd
+oracle-mini,oracle-mini__bm25__steps3__judge0__quality0__modenone,bm25,3,False,False,none,1,0.0,2.0,0.8,0.4,0.32142857142857145,0.0,1.0,3.0,10.582767486572266,0.0008228
+oracle-mini,oracle-mini__bm25__steps3__judge1__quality0__modeoracle,bm25,3,True,False,oracle,1,1.0,5.0,0.0,0.0,0.24615384615384614,0.0,0.0,1.0,10.556291580200195,3.21e-05
+oracle-mini,oracle-mini__bm25__steps3__judge1__quality0__modeprocess,bm25,3,True,False,process,1,1.0,4.0,0.6,0.15,0.2653061224489796,0.0,0.5,2.0,17.566115856170654,0.0002501

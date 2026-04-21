@@ -1,0 +1,232 @@
+{
+  "episode_id": 474,
+  "guest_info": {
+    "name": "David Heinemeier Hansson",
+    "title": "Co-owner and CTO of 37signals",
+    "expertise": [
+      "Programming",
+      "Web development",
+      "Ruby on Rails",
+      "Productivity",
+      "Parenting",
+      "Race car driving"
+    ]
+  },
+  "summary": "Lex Fridman interviews David Heinemeier Hansson (DHH) about the future of programming, AI, Ruby on Rails, productivity, and parenting. DHH shares his journey into programming, his love for Ruby, and his views on the current state of web development, AI's impact, and the importance of programmer happiness.",
+  "main_entities": [
+    {
+      "name": "Ruby on Rails",
+      "type": "project",
+      "context": "Web development framework created by DHH, used by Shopify, GitHub, and Airbnb"
+    },
+    {
+      "name": "PHP",
+      "type": "technology",
+      "context": "Programming language that DHH credits with giving him his start in web development"
+    },
+    {
+      "name": "JavaScript",
+      "type": "technology",
+      "context": "DHH's second favorite programming language, discusses the churn and complexity in the JavaScript ecosystem"
+    },
+    {
+      "name": "AWS",
+      "type": "organization",
+      "context": "Amazon Web Services, DHH discusses 37signals' decision to leave AWS and run their own servers"
+    },
+    {
+      "name": "Basecamp",
+      "type": "project",
+      "context": "Project management system created by 37signals"
+    },
+    {
+      "name": "HEY",
+      "type": "project",
+      "context": "Email service created by 37signals"
+    },
+    {
+      "name": "ActiveRecord",
+      "type": "concept",
+      "context": "The ORM (Object-Relational Mapping) component of Rails, which DHH considers the crown jewel of the framework"
+    },
+    {
+      "name": "Metaprogramming",
+      "type": "concept",
+      "context": "A programming technique used extensively in Ruby on Rails to add keywords and domain-specific languages"
+    },
+    {
+      "name": "Dynamic Typing",
+      "type": "concept",
+      "context": "A feature of Ruby that DHH defends strongly, contrasting it with static typing"
+    },
+    {
+      "name": "Small Teams",
+      "type": "concept",
+      "context": "DHH's belief in the effectiveness and importance of small, autonomous teams in software development"
+    },
+    {
+      "name": "AI",
+      "type": "concept",
+      "context": "Discussed in the context of its impact on programming, collaboration, and the future of the industry"
+    },
+    {
+      "name": "Cookie Banners",
+      "type": "concept",
+      "context": "Criticized as a monument to everything the EU gets wrong with tech legislation"
+    },
+    {
+      "name": "YJIT",
+      "type": "technology",
+      "context": "Shopify's compiler for Ruby that improves efficiency"
+    },
+    {
+      "name": "Monolith",
+      "type": "concept",
+      "context": "DHH expresses value in integrated systems and explains why he is against microservices"
+    }
+  ],
+  "key_details": [
+    {
+      "fact": "DHH's first computer was an Amstrad 464, not the Commodore 64 he initially wanted.",
+      "topic": "Programming"
+    },
+    {
+      "fact": "DHH didn't learn programming until he was almost 20 years old.",
+      "topic": "Programming"
+    },
+    {
+      "fact": "DHH believes the pinnacle of web developer ergonomics is late \u201990s PHP.",
+      "topic": "Programming"
+    },
+    {
+      "fact": "DHH describes the JavaScript scene from 2010 to 2020 as the 'dark ages'.",
+      "topic": "JavaScript"
+    },
+    {
+      "fact": "DHH believes Chrome is a complete gift to web developers everywhere.",
+      "topic": "Browsers"
+    },
+    {
+      "fact": "DHH believes the DOJ trying to split up Chrome and Google is a disaster.",
+      "topic": "Google Chrome and DOJ"
+    },
+    {
+      "fact": "Ruby was made for DHH's brain like a perfect tailored glove by someone he'd never met.",
+      "topic": "Ruby programming language"
+    },
+    {
+      "fact": "Shopify did one million requests per second on Black Friday.",
+      "topic": "Scaling"
+    },
+    {
+      "fact": "DHH believes Ruby is a luxury language.",
+      "topic": "Scaling"
+    }
+  ],
+  "topics": [
+    "Programming",
+    "Web Development",
+    "Ruby on Rails",
+    "JavaScript",
+    "Browsers",
+    "Google Chrome",
+    "AI",
+    "Software Development",
+    "Productivity",
+    "Scaling",
+    "Cloud Computing",
+    "Open Source",
+    "Business",
+    "Parenting"
+  ],
+  "other_persons_mentioned": [
+    {
+      "name": "Lex Fridman",
+      "context": "Host of the podcast"
+    },
+    {
+      "name": "Elon Musk",
+      "context": "Mentioned in the context of space travel and cookie banners"
+    },
+    {
+      "name": "Jason Fried",
+      "context": "Co-owner of 37signals and DHH's business partner"
+    },
+    {
+      "name": "Pieter Levels",
+      "context": "Mentioned as an example of a developer who works in a simple, productive way"
+    },
+    {
+      "name": "Matz (Yukihiro Matsumoto)",
+      "context": "Creator of the Ruby programming language"
+    },
+    {
+      "name": "Dave Thomas",
+      "context": "Helped put DHH on the trail of Ruby"
+    },
+    {
+      "name": "Martin Fowler",
+      "context": "Helped put DHH on the trail of Ruby"
+    },
+    {
+      "name": "Guido van Rossum",
+      "context": "Creator of Python"
+    },
+    {
+      "name": "James Gosling",
+      "context": "Designer of Java"
+    },
+    {
+      "name": "Brendan Eich",
+      "context": "Creator of JavaScript"
+    },
+    {
+      "name": "Tim Sweeney",
+      "context": "Mentioned in the context of Unreal Engine and performance optimization"
+    },
+    {
+      "name": "Toby (Tobi L\u00fctke)",
+      "context": "CEO of Shopify and former Rails core team member"
+    },
+    {
+      "name": "Jordan Peterson",
+      "context": "Mentioned in the context of responsibility and meaning"
+    },
+    {
+      "name": "Viktor Frankl",
+      "context": "Mentioned in the context of responsibility and meaning"
+    },
+    {
+      "name": "Mihaly Csikszentmihalyi",
+      "context": "Author of Flow"
+    },
+    {
+      "name": "Derek Sivers",
+      "context": "Mentioned in the context of balancing hard work and enjoyment"
+    },
+    {
+      "name": "Karl Marx",
+      "context": "Mentioned in the context of alienation and variety"
+    },
+    {
+      "name": "Michael Dell",
+      "context": "Mentioned as the king of servers"
+    },
+    {
+      "name": "Jeff Bezos",
+      "context": "Founder of Amazon, invested in Basecamp"
+    },
+    {
+      "name": "John Carmack",
+      "context": "Mentioned in the context of small teams and innovation"
+    },
+    {
+      "name": "Kathy Sierra",
+      "context": "Creator of Creating Passionate Users"
+    },
+    {
+      "name": "Senna",
+      "context": "Mentioned in the context of singular obsession"
+    }
+  ]
+}

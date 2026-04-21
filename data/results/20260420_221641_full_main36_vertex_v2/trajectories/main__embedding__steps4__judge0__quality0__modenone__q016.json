@@ -1,0 +1,195 @@
+{
+  "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "DeepSeek GPU count pre-training cluster Dylan Patel Sebastian Raschka",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11138,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 70,
+          "text": "Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had. I think the clearest example we have, because Meta is also open, they talk about order of 60k to 100k H100 equivalent GPUs in their training clusters. Dylan Patel: Right. So Llama 3, they trained on 16,000 H100s, but the company of Meta last year publicly disclosed they bought 400 something thousand GPUs. Nathan Lambert: Yeah. Dylan Patel: Right? So of course, tiny percentage on the training. Again, most of it is serving me the best Instagram Reels or whatever. Nathan Lambert: I mean, we could get into a cost of, what is the cost of ownership for a 2,000 GPU cluster, 10,000? There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big.",
+          "score": 0.744326114654541,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11129,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 61,
+          "text": "Lex Fridman: Yeah. Dylan Patel: Right? Lex Fridman: Yeah. Dylan Patel: Now people have all these training run failures that are in the media, right? It\u2019s like, \u201cOkay, great, but actually a huge chunk of my GPUs are doing inference. I still have a bunch doing research constantly. And yes, my biggest cluster is training, but on this YOLO run,\u201d but that YOLO run is much less risky than what OpenAI did in 2022, or maybe what DeepSeek did now or sort of like, \u201cHey, we\u2019re just going to throw everything at it.\u201d\n\nLex Fridman: The big winners throughout human history are the ones who are willing to do YOLO at some point. Okay. What do we understand about the hardware it\u2019s been trained on, DeepSeek?\n\n\n## DeepSeek compute cluster\n\nDylan Patel: DeepSeek is very interesting. This is where a second could take to zoom out, out of who they are first of all, right? High-Flyer is a hedge fund that has historically done quantitative trading in China as well as elsewhere.",
+          "score": 0.7442386150360107,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11131,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.7354069948196411,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11085,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 17,
+          "text": "This is a crawler that is maintained publicly. Yes, other tech companies eventually shift to their own crawler and DeepSeek likely has done this as well as most frontier labs do. But this sort of data is something that people can get started with and you\u2019re just predicting text in a series of documents. This can be scaled to be very efficient and there\u2019s a lot of numbers that are thrown around in AI training like how many floating-point operations or flops are used. And then you can also look at how many hours of these GPUs that are used. And it\u2019s largely one loss function taken to a very large amount of compute usage. You set up really efficient systems and then at the end of that you have the base model and pre-training is where there is a lot more of complexity in terms of how the process is emerging or evolving and the different types of training losses that you\u2019ll use. I think this is a lot of techniques grounded in the natural language processing literature.",
+          "score": 0.7299142479896545,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11358,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 290,
+          "text": "So\u2026\n\nDylan Patel: There\u2019s another word there, but I won\u2019t say it. Lex Fridman: Who\u2019s got the biggest now and who\u2019s going to have the biggest? Dylan Patel: Today, individual largest is Elon. Right? Lex Fridman: Right. Elon\u2019s cluster. Dylan Patel: Elon\u2019s cluster in Memphis, 200,000 GPUs. Meta has 128,000, OpenAI has 100,000 now. Now to be clear, other companies have more GPUs than Elon. They just don\u2019t have them in one place. And for training, you want them tightly connected. There\u2019s some techniques that people are researching and working on that let you train across multiple regions. But for the most part, you want them all in one area so you can connect them highly with high-speed networking. And so, Elon today has 200,000 H100s, 100,000 H100s and 100,000 H200s. Meta, OpenAI, and Amazon all have on the scale of a hundred thousand, a little bit less. But next this year, people are building much more.",
+          "score": 0.712459921836853,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 604.3981466293335
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "DeepSeek GPU count for pre-training, future year AI landscape analysis Dylan Patel Sebastian Raschka",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 11136,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 68,
+          "text": "Nathan Lambert: Accepted practice is that for any given model that is a notable advancement, you\u2019re going to do two to 4x compute of the full training run in experiments alone. Lex Fridman: So a lot of this compute that\u2019s being scaled up is probably used in large part at this time for research? Dylan Patel: Yeah. And research begets the new ideas that lets you get huge efficiency. Nathan Lambert: Research gets you o1. Research gets you breakthroughs and you need to bet on it. Lex Fridman: So some of the pricing strategy that we\u2019ll discuss has the research baked into the price? Dylan Patel: So the numbers that DeepSeek specifically said publicly are just the 10,000 GPUs in 2021 and then 2,000 GPUs for only the pre-training for V3. They did not discuss cost on R1. They did not discuss cost on all the other RL for the instruct model that they made. They only discussed the pre-training for the base model and they did not discuss anything on research and ablations.",
+          "score": 0.7545902729034424,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11137,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 69,
+          "text": "They only discussed the pre-training for the base model and they did not discuss anything on research and ablations. And they do not talk about any of the resources that are shared in terms of, \u201cHey, the fund is using all these GPUs,\u201d right? And we know that they\u2019re very profitable and they had 10,000 GPUs in 2021. So, some of the research that we\u2019ve found is that we actually believe they have closer to 50,000 GPUs. Lex Fridman: We as semi-analysis. So we should say that you\u2019re sort of one of the world experts in figuring out what everybody\u2019s doing in terms of the semiconductor, in terms of cluster buildouts, in terms of who is doing what in terms of training runs. So yeah, that\u2019s the we. Okay, go ahead. Dylan Patel: Yeah, sorry. We believe they actually have something closer to 50,000 GPUs, right? Now this is split across many tasks, right? Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had.",
+          "score": 0.7529447078704834,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11232,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 164,
+          "text": "Lex Fridman: So the suggestion is that DeepSeek is really bleeding out money. Dylan Patel: Well, so here\u2019s one thing, we\u2019ll get to this in a second, but DeepSeek doesn\u2019t have any capacity to actually serve the model. They stopped signups. The ability to use it is non-existent now for most people because so many people are trying to use it. They just don\u2019t have the GPUs to serve it. OpenAI has hundreds of thousands of GPUs between them and Microsoft to serve their models. DeepSeek has a factor of much lower, even if you believe our research, which is 50,000 GPUs, and a portion of those are for research, a portion of those are for the hedge fund, they still have nowhere close to the GPU volumes and capacity to serve the model at scale. So it is cheaper. A part of that, is OpenAI making a ton of money? Is DeepSeek making on their API? Unknown, I don\u2019t actually think so. And part of that is this chart. Look at all the other providers. Together AI, Fireworks.ai are very high-end companies.",
+          "score": 0.752547025680542,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 608.5864994525909
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "future year targeted for AI landscape analysis Dylan Patel Sebastian Raschka",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14849,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 299,
+          "text": "We remember the engine\u2014it is probably the equivalent of the computer in this. But there\u2019s a lot of other physical transformations that people are aware of, like the cotton gin and all these machines that are still known\u2014air conditioning, refrigerators\u2014 Some of these things from AI will still be known; the word \u201ctransformer\u201d could still very well be known. I would guess that deep learning is definitely still known, but the transformer might be evolved away from in 100 years with AI researchers everywhere. But I think deep learning is likely to be a term that is remembered. Lex Fridman: And I wonder what the air conditioning and the refrigeration of the future is that AI brings. If we travel forward 100 years from now, what do you think is different? How does the world look? First of all, do you think there\u2019s humans? Do you think there\u2019s robots everywhere walking around? Sebastian Raschka: I do think there will be specialized robots for certain tasks. Lex Fridman: Humanoid form?",
+          "score": 0.7015478610992432,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14845,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 295,
+          "text": "So far we have Turing to today, which is 80 years. Sebastian Raschka: I think it would still be computing, like the umbrella term \u201ccomputing.\u201d I don\u2019t necessarily think that even 100 or 200 years from now it would be AI. It could still well be computers, you know? We are now taking better advantage of computers, but it\u2019s the fact of computing. Lex Fridman: It\u2019s basically a Moore\u2019s Law kind of discussion. Even the details of CUDA and GPUs won\u2019t even be remembered, and there won\u2019t be all this software turmoil. It\u2019ll be just, obviously, compute. Nathan Lambert: I generally agree, but is it the connectivity of the internet and compute able to be merged? Or is it both of them? Sebastian Raschka: I think the internet will probably be related to communication\u2014it could be a phone, internet, or a satellite. And compute is more like the scaling aspect of it. Lex Fridman: It\u2019s possible that the internet is completely forgotten.",
+          "score": 0.6960014700889587,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14550,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.6851179599761963,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11164,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 96,
+          "text": "If you do not believe AI is going to make significant changes to society in the next 10 years or 5 years. Five-year timelines are sort of what the more executives and such of AI companies and even big tech companies believe. But even 10-year timelines, it\u2019s reasonable. But once you get to, hey, these timelines are below that time period, then the only way to create a sizable advantage or disadvantage for America versus China is if you constrain and compute, because talent is not really something that\u2019s constraining. China arguably has more talent, more STEM graduates, more programmers. The US can draw upon the world\u2019s people, which it does. There\u2019s tons of foreigners in the AI industry. Nathan Lambert: So many of these AI teams are all people without a US passport. Dylan Patel: Yeah. I mean, many of them are Chinese people who are moving to America, and that\u2019s great. That\u2019s exactly what we want.",
+          "score": 0.6816615462303162,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14850,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 300,
+          "text": "Sebastian Raschka: I do think there will be specialized robots for certain tasks. Lex Fridman: Humanoid form? Sebastian Raschka: Maybe half-humanoid. We\u2019ll see. I think for certain things, yes, there will be humanoid robots because it\u2019s just amenable to the environment. But for certain tasks, it might not make sense. What\u2019s harder to imagine is how we interact with devices and what humans do with them. I\u2019m pretty sure it will not be the cellphone or the laptop. Will it be implants? Lex Fridman: I mean, it has to be brain-computer interfaces, right? I mean, 100 years from now, it has to\u2014given the progress we\u2019re seeing now\u2014 \u2014there has to be, unless there\u2019s legitimately a complete alteration of how we interact with reality. Sebastian Raschka: On the other hand, if you think of cars, cars are older than 100 years, right? And it\u2019s still the same interface. We haven\u2019t replaced cars with something else; we just made them better. But it\u2019s still a steering wheel, it\u2019s still wheels.",
+          "score": 0.6800482869148254,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 611.4425790309906
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 724.153178691864
+    }
+  ],
+  "final_answer": "DeepSeek publicly stated they had a cluster of 10,000 A100 GPUs in 2021. For the pre-training of their V3 model, they used 2,000 GPUs. Dylan Patel's research suggests DeepSeek actually has closer to 50,000 GPUs in total. The specific future year targeted for the analysis of the AI landscape, as discussed in Episode #490, is 2026.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    490,
+    459
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 724.1531822681427
+}

@@ -1,0 +1,110 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI strategy cognitive architectures embodiment",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.7547012567520142,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6312,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 291,
+          "text": "I mean, I have a million questions to you about your ideas about AGI, but do you think it needs to be embodied? Do you think it needs to have a body to start to notice the signs of life and to develop the kind of system that's able to reason, perceive the world in the way that an AGI should and act in the world? So should we be thinking about robots or can this be achieved in a purely digital system? So I have a clear opinion on that and that's that no, it does not need to be embodied in the physical world where you could say most of my career is about making simulated virtual worlds in games or virtual reality. And so on a fundamental level, I believe that you can make a simulated environment that provides much of the value of what the real environment does and restricting yourself to operating at real time in the physical world with physical objects, I think is an enormous handicap.",
+          "score": 0.740917444229126,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6316,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 295,
+          "text": "And when it proves to be beneficial, you know, there's fast followers in all sorts of places. Yeah, and you're saying that, I mean, you know, Quake and VR is a kind of embodiment, but just in a digital world. And if you're able to demonstrate, if you're able to do something productive in that kind of digital reality, then AGI doesn't need to have a body. Yeah, it's like one of the really practical technical questions that I kind of keep arguing with myself over. If you're doing a training and learning and you've got like, you can watch Sesame Street, you can play Master System games or something, is it enough to have just a video feed that is that video coming in? Or should it literally be on a virtual TV set in a virtual room, even if it's, you know, a simple room, just to have that sense of you're looking at a 2D projection on a screen versus having the screen beam directly into your retinas.",
+          "score": 0.7358269691467285,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 32,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 0.7232979536056519,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 57,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.7195491790771484,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 2 and 3 are not from Ben Goertzel and therefore do not directly address his strategy regarding embodiment. Chunks 1, 4, and 5 provide useful information on Ben Goertzel's AGI strategy, particularly his focus on cognitive architectures (OpenCog) and his views on deep learning.\n\nTo fill the gaps, the agent should search for Ben Goertzel's specific views on AGI embodiment and then initiate separate searches for the AGI strategies of Sebastian Raschka and Nathan Lambert.",
+      "timestamp": 2.160707950592041
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI embodiment strategy",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 6314,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 293,
+          "text": "Well, that's very interesting because he has a very pragmatic view of that. That's just a way to solve a particular problem in a factory. Now, I do think that once you have an AGI, robotic bodies, humanoid bodies are going to be enormously valuable. I just don't think they're helpful getting to AGI. Well, he has a very sort of practical view, which I disagree with and argue with him, but it's a practical view that there's, you know, you could transfer the problem of driving to the problem of robotic manipulation because so much of it is perception. It's perception and action and it's just a different context and so you can apply all the same kind of data engine learning processes to a different environment. And so why not apply it to the humanoid robot environment? But I think, I do think that there's a certain magic to the embodied robot. That may be the thing that finally convinces people. But again, I don't really care that much about convincing people.",
+          "score": 0.7167134881019592,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 104,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 104,
+          "text": "So you're not giving it labeled examples. So you're not giving it like a thousand sentences where the parses were marked up by graduate students. So it's just got to infer the grammar from the text. It's like the Rosetta Stone, but worse, right? Because you only have the one language, and you have to figure out what is the grammar. So that's not really AGI because, I mean, the way a human learns language is not that, right? I mean, we learn from language that's used in context. So it's a social embodied thing. We see how a given sentence is grounded in observation. There's an interactive element, I guess. Yeah, yeah, yeah. On the other hand, so I'm more interested in that. I'm more interested in making an AGI system learn language from its social and embodied experience. On the other hand, that's also more of a pain to do, and that would lead us into Hanson Robotics and their robotics work I've known much. We'll talk about it in a few minutes.",
+          "score": 0.7160133719444275,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is indirectly relevant as it discusses embodiment's role in AGI, but from a contrasting viewpoint, not directly describing Ben Goertzel's strategy. Chunk 2 is from Ben Goertzel but focuses on language learning rather than his specific AGI strategy involving cognitive architectures and embodiment.\n\nThe chunks do not clearly describe Ben Goertzel's primary strategy for AGI, nor do they mention Sebastian Raschka or Nathan Lambert.\n\nSearch for \"Ben Goertzel AGI cognitive architectures embodiment\" to get his specific strategy. Then, search for \"Sebastian Raschka AGI strategy\" and \"Nathan Lambert AGI strategy\" to understand their perspectives.",
+      "timestamp": 11.43765902519226
+    }
+  ],
+  "final_answer": "Ben Goertzel's primary strategy for AGI involves cognitive architectures like OpenCog, incorporating logic-based systems, and learning from social and embodied experience, as seen with Hanson Robotics. He acknowledges the successes of deep neural nets but believes current architectures alone will not achieve AGI. However, the provided context does not mention Sebastian Raschka or Nathan Lambert, so it is insufficient to describe how the strategy has evolved to their described landscape.",
+  "total_chunks_retrieved": 7,
+  "unique_episodes_found": [
+    309,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 22.097092866897583
+}

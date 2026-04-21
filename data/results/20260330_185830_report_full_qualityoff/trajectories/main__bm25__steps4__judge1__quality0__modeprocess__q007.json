@@ -1,0 +1,212 @@
+{
+  "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 4725,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 57,
+          "text": "I would love to have time to actually learn about their story, but there's not enough time in the world. And I just think well of them and then I move on and enjoy a delicious meal with people that are close to me and I love and so on and just, and move on. And then never adding to the negativity of like, just even in the privacy of my own mind, thinking a hateful thought towards them, it serves no purpose whatsoever. Yeah, I love that about you. And I know that what you just said to be true, one of the, I think more toxic things in life is what's called, you know, a vacuative projection. When people feel something and they try and evacuate it and project it onto somebody else. Projection is fascinating, right? What you essentially just said is that you don't accept projections. And in fact, you transmute them to put it in the language of the Buddhist, you know, you transmute it into positivity. And in that way, you truly neutralize it and transmute it.",
+          "score": 2.6776645183563232,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2941,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 145,
+          "text": "And so I wanted to replicate that. This time we did a lot of innovation at Anaconda. I wanted to do innovation, but also contribute to the projects that existed, like create a place where maintainers, so the SciPy and NumPy and Numba and all these projects we already started can pay people to work on them and keep them going. So that's Labs. Quansight Labs is a separate organization. It's a nonprofit mission. The profits of Quansight help fund it. And in fact, every project that we have at Quansight, a portion of the money goes directly to Quansight Labs to help keep it funded. So we've gotten several mechanisms that we keep Quansight Labs funded. And currently, so I'm really excited about Labs because it's been a mission for a long time. What kind of projects are within Labs? So Labs is working to make the software better, like make NumPy better, make SciPy better. It only works on open source.",
+          "score": 2.657722234725952,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12878,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 104,
+          "text": "That may be the economic value. It\u2019s not the only human value. The human value is just as much in the expression. When someone who sits down on a guitar and plays Stairways to Heaven, there\u2019s a perfect recording of that, that will last in eternity. You can just put it on Spotify, you don\u2019t actually need to do it. The joy is to command the guitar yourself. The joy of a programmer, of me as a programmer, is to type the code myself. If I elevate, if I promote myself out of programming, I turn myself into a project manager, a project manager of a murder of AI crows, as I wrote the other day. I could have become a project manager my whole career. I could have become a project manager 20 years ago if I didn\u2019t care to write code myself and I just wanted outcomes. That\u2019s how I got started in programming, I just wanted outcomes. Then I fell in love with programming, and now I\u2019d rather retire than giving it up. Now, that doesn\u2019t mean you can\u2019t have your cake and eat it too.",
+          "score": 2.6429593563079834,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12807,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 33,
+          "text": "The webpage I did in ninth grade would render on a modern browser today, 30 years later. Lex Fridman: That\u2019s crazy. DHH: That is completely crazy when you think about the amount of evolution we\u2019ve had with the web, how much better we\u2019ve made it, how many more standards browsers have adopted. It\u2019s essentially an Apollo project today to create a new browser, which is why it doesn\u2019t happen very often, which is why even companies like Microsoft had to throw in the towel and say, we can\u2019t do it. Now, I actually don\u2019t think that\u2019s good for the web. There is the danger of the monoculture if we just get a single browser engine that runs everything, and we are in danger of that. I love the fact that the Ladybird project, for example, is trying to make a new browser engine from scratch. I\u2019ve supported that project. I would encourage people to look into that. It\u2019s really a wonderful thing. It\u2019s staffed by a bunch of people who worked on other browser projects in the past.",
+          "score": 2.6235287189483643,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12150,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 9,
+          "text": "I was rather just going from project to project, doing things that I thought would be fun and cool. And with each project I learned new things, learning about how to store and manage data, learning how to deal with advanced data structures, how to write complex programs that have deeply nested data and control flow. Each one of those provide a lesson which were later essential. In 1991, I released my first game and over the course of that decade went from zero commercial releases to the first generation Unreal Engine. But this was largely just using the knowledge that I\u2019d built up over the previous decade, just doing fun hobby projects. And if I hadn\u2019t done all of that work, there\u2019s no way I could have ever built the things that came later. Lex Fridman: All the experimentation and all the exploration somehow contributed, somehow made sense later on. All of that is integrated somehow in the stuff you build. It\u2019s funny how life works. The pieces kind of come together eventually.",
+          "score": 2.613919973373413,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Ignore chunks 1, 3, 4, and 5 as they are irrelevant to the individuals or the specific question.\n2.  Chunk 2 mentions Travis Oliphant's work with Anaconda and Quansight Labs, focusing on innovation and sustaining open-source projects. While it touches on project goals, it does not address his philosophy regarding the *balance* between technical complexity and those goals.\n3.  The agent should search for Travis Oliphant's specific views on managing technical complexity and its trade-offs with project delivery or long-term goals. Then, repeat this process for John Carmack and Pieter Levels.",
+      "timestamp": 1.234391212463379
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals balance",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 11.37093186378479
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "John Carmack programming philosophy technical complexity project goals, Pieter Levels programming philosophy technical complexity project goals, Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 9061,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 284,
+          "text": "All the projects that you\u2019ve tried and the ones that succeeded. Pieter Levels: There\u2019s very few. Lex Fridman: Mute life. Pieter Levels: This was for Twitter to mute, to share the mute list. Lex Fridman: Yeah. Fire calculator, no more Google, maker rank, how much is my side project worth, climate finder, ideasai, airlinelist-\n\nPieter Levels: Airlinelist still runs, but it doesn\u2019t make money. Airlinelist compares the safety of airlines. Because I was nervous to fly, so I was like, \u201cLet\u2019s collect all the data on the crashes for all the airplanes.\u201d\n\nLex Fridman: Bali sea cable. Nice. That\u2019s awesome. Make village, nomad gear, 3D and virtual reality dev, play my inbox, like you mentioned. There\u2019s a lot of stuff. Pieter Levels: Yeah, man. Lex Fridman: I\u2019m trying to find some embarrassing tweets of yours. Pieter Levels: You can go to the highlights tab. It has all the good shit. Lex Fridman: There you go. Pieter Levels: This was Dubai. Lex Fridman: POV, building an AI startup. Wow.",
+          "score": 9.101102828979492,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12943,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 169,
+          "text": "Most engineering managers are actually former programmers. They at least know program to some extent, but what I\u2019ve seen time and again is that they lose their touch, their feel with it very, very quickly and turn into pointy-haired bosses very, very quickly who are really good at checking for updates, \u201cJust seeing where we are on project A here if you need anything,\u201d or, \u201cWe\u2019re really to deliver?\u201d Okay, yes. Also, no. Shut up, leave me the hell alone. Let me program and then I\u2019ll come up for air. I\u2019ll talk with other programmers who I can spar with, that we can learn something with, where I can turn the problems over with and we can move forward. If you look back on the history of computer industry, all the great innovation that\u2019s happened, it\u2019s all been done by tiny teams with no engineering managers. Just full of highly-skilled individuals. You\u2019ve had John Carmack on here.",
+          "score": 8.811220169067383,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12944,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 170,
+          "text": "Just full of highly-skilled individuals. You\u2019ve had John Carmack on here. I used to look up to its software so much, not just because I love Quake, not just because I loved what they were doing, but because he shared a bit about how the company worked. There were no managers or maybe they had one business guy doing some business stuff, but that was just to get paid. Everything else was basically just designers and programmers, and there were about eight of them and they created goddamn Quake 2. Why do you need all these people again? Why do you need all these managers again? I think, again, at a certain scale, it does break down. It\u2019s hard to just have 100,000 programmers running around wild without any product mommies or daddies telling them what to do. I understand that. Then even as I say that, I also don\u2019t understand it, because if you look at something like Gmail for example, that was like a side project done by Buchheit at Google at the time.",
+          "score": 8.433409690856934,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8792,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 15,
+          "text": "My money was shrinking, I wasn\u2019t making money anymore, a lot. I was making $500 a month or something. And I was looking at the ceiling thinking, \u201cNow I\u2019m 27, I\u2019m a loser.\u201d And that\u2019s the moment when I started building startups. And it was because my dad said, \u201cIf you\u2019re depressed, you need to get sand, get a shovel, start shoveling, doing something. You can\u2019t just sit still.\u201d Which is an interesting way to deal with depression. It\u2019s not, \u201cOh, let\u2019s talk about it,\u201d it\u2019s more, \u201cLet\u2019s go do something.\u201d And I started doing a project called 12 Startups in 12 months where every month I would make something like a project and I would launch it with Stripe so people could pay for it. Lex Fridman: So the basic format is, try to build a thing, put it online, and put Stripe to where you can pay money for it. Pieter Levels: Yeah. I\u2019m not sponsored by Stripe, but add a Stripe Checkout button. Lex Fridman: Is that still the easiest way to just pay for stuff, stripe? Pieter Levels: 100%. I think so.",
+          "score": 8.232146263122559,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 2 is irrelevant. Chunks 1 and 4 mention Pieter Levels but do not discuss his programming philosophy or the balance between technical complexity and project goals. Chunk 3 mentions John Carmack's company structure, which hints at his approach, but lacks specifics on his philosophy regarding technical complexity vs. project goals. Travis Oliphant is not mentioned.\n\nSearch for:\n1. Travis Oliphant programming philosophy technical complexity project goals.\n2. Pieter Levels programming philosophy MVP technical debt shipping fast.\n3. John Carmack technical debt pragmatism elegant solutions project goals.",
+      "timestamp": 13.728009462356567
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals; Pieter Levels programming philosophy MVP technical debt shipping fast; John Carmack technical debt pragmatism elegant solutions project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 5438,
+          "episode_id": 284,
+          "guest": "Saifedean Ammous",
+          "chunk_index": 244,
+          "text": "House builders can build more houses. Governments can issue more bonds. The crappy fraudulent companies can list on the stock market and make more stocks. Well, Bitcoin finally offers us an outlet. We don't need to keep creating more debt. We can invest in this asset that is hard and that is internationally liquid and that nobody can make more of. So there is no bubble in it. There is no mechanism for somebody to increase the supply and bring the price crashing down, like with copper and real estate and bonds. So Bitcoin is the way out. And this is why I think there's a good case to be made for why the fiat authorities might embrace Bitcoin because they'll see it is their way out of this enormous debt bubble that everybody is stuck in. Particularly, the richest and most powerful people in the world and the richest and most powerful governments in the world are the world's biggest borrowers. They're the ones in a lot of debt.",
+          "score": 8.036468505859375,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 9248,
+          "episode_id": 441,
+          "guest": "Cenk Uygur",
+          "chunk_index": 178,
+          "text": "You have to make the case against them. And so two times Bernie flinched. One in 2016, in the Brooklyn debate, they asked, \u201cDid the money that Hillary Clinton taken from the banks affect her votes?\u201d And he said, \u201cNo.\u201d Of course it affected our votes. Of course it did. You have to say yes, and you have to show it and prove it. The bankruptcy bill. When she was First Lady, she was totally in favor of the American people and against the bankruptcy bill, because it has the banks, you can\u2019t discharge any debts, credit card debt and bank debt, et cetera. It\u2019s an awful bill. It\u2019s one of the most corporatist bills. She was on the right side as a First Lady. She becomes a senator, takes banker money, and all of a sudden she flips over to the banker side. Say it Bernie, for God\u2019s sake, say it. Then in one of the debates in 2020, his team prepares attacks against Biden.",
+          "score": 7.926689624786377,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5439,
+          "episode_id": 284,
+          "guest": "Saifedean Ammous",
+          "chunk_index": 245,
+          "text": "They're the ones in a lot of debt. So a continuous slow devaluation of the value of that debt as people upgrade and move on to a hard asset that continues to appreciate is the peaceful way that we wind down the fiat ponzi, I think. You could see it being like a political, part of a political platform for future people that run for president, those kinds of things to address. Obviously, it's not just for the powerful and the rich. The people are bothered by the debt. The people are bothered by everything that you describe with fiat. And if you wanna sell yourself in a democracy as a good leader, you might want to make that part of the platform. You mentioned you know Michael Malice. He just texted me asking me to ask you, what do you like best about Michael Malice? If you can spend five to 10 to 20 to an hour talking about the genius of Michael Malice, what do you like? Where does one even start? Well, obviously, the haircut first. Yeah, he just gets sexier with age, that's for sure.",
+          "score": 7.698827266693115,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5306,
+          "episode_id": 284,
+          "guest": "Saifedean Ammous",
+          "chunk_index": 112,
+          "text": "I still can go back to the three years of gold that I have saved. It's still okay to take on debt given the stuff, the gold under the mattress. Well, this is the thing, under the gold standard, the way that people finance things was predominantly with capital, with equity. So you would, because you had gold savings, I had gold savings, everybody had gold savings. When you wanted to start the business, you could use your own savings or somebody else's savings. So you didn't need to get into debt. Well, you could get equity from others and you could also get debt from others. So there was. But it's directly mapped to physical reality. Yeah, it's directly mapped to economic reality and that there's a hard money out there that, you know, what you're spending money, you know, you wanna build your airplane factory, you need to get actual resources. So you get actual gold, either yours or somebody else's, you borrow it or you give them equity, but there's real resources.",
+          "score": 7.581475734710693,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3857,
+          "episode_id": 247,
+          "guest": "Jamie Metzl",
+          "chunk_index": 288,
+          "text": "Not that this already happened. But that's how like... I think it's quite likely that that was the story that he was telling himself. But it's that lack of transparency, in my mind, is fraudulent, that we were struggling to understand something that we didn't understand. And that I just think that people who possess that kind of information, especially when the existence, like the entire career of Peter Daszak is based on US taxpayers, there's a debt that comes with that. And that debt is honesty and transparency. And for all of us, and you talked about your girlfriend checking your phone. For all of us, being honest and transparent in the most difficult times is really difficult. If it were easy, everybody would do it. And I just feel that Peter was the opposite of transparent and then went on the offensive.",
+          "score": 7.454117298126221,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are completely irrelevant, discussing financial debt, Bitcoin, and politics rather than programming philosophies. The term \"technical debt\" in the query seems to have been misinterpreted as financial debt.\n\nThe agent should search for each individual's programming philosophy separately, explicitly including terms like \"software development,\" \"coding,\" or \"engineering\" to ensure context. Focus on their views on technical complexity, project goals, and specific approaches like MVP or elegant solutions.",
+      "timestamp": 21.589198350906372
+    }
+  ],
+  "final_answer": "Travis Oliphant's philosophy, as seen with Quansight Labs, focuses on contributing to and improving existing open-source projects like NumPy and SciPy, emphasizing technical quality and sustainability. John Carmack, through id Software, achieved complex project goals like Quake 2 with small teams of highly skilled programmers and designers, suggesting a direct, expert-driven technical execution without extensive management. Pieter Levels, conversely, prioritizes rapid project creation and commercial validation, launching \"12 Startups in 12 months\" to quickly build and monetize ideas, indicating a focus on achieving project outcomes and market feedback over deep technical complexity.",
+  "total_chunks_retrieved": 14,
+  "unique_episodes_found": [
+    224,
+    467,
+    277,
+    247,
+    440,
+    441,
+    474,
+    284
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 28.4729425907135
+}

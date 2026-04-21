@@ -1,0 +1,186 @@
+{
+  "question": "Comparing the perspectives of Ben Goertzel and the duo of Sebastian Raschka and Nathan Lambert, what specific numbers are cited regarding the scale of the AGI conference's origins versus its current state, and what specific year and model versioning milestones are used to frame the future of the AI race?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI conference scale Sebastian Raschka Nathan Lambert AI race numbers years model versioning",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14843,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 293,
+          "text": "Nathan Lambert: I don\u2019t think it would be a company that exists. Sebastian Raschka: A new company. Nathan Lambert: I think it would be a different company that would rise. Sebastian Raschka: Like Silicon Graphics or something. Nathan Lambert: So yeah, some company that has died would have done it. Lex Fridman: But looking at it, it seems like these singular figures, these leaders, have a huge impact on the trajectory of the world. Obviously, incredible teams are behind them. But, you know, having that kind of very singular, almost dogmatic focus- \u2026is necessary to make progress. Sebastian Raschka: Yeah, I mean, even with GPT, it wouldn\u2019t exist if there wasn\u2019t a person, Ilya, who pushed for this scaling, right? Nathan Lambert: Yeah, Dario was also deeply involved in that.",
+          "score": 13.166633605957031,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14551,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 1,
+          "text": "First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch. I truly believe in the machine learning and computer science world, the best way to learn and understand something is to build it yourself from scratch. Nathan is the post-training lead at the Allen Institute for AI, and author of the definitive book on reinforcement learning from human feedback. Both of them have great X accounts, great Substacks. Sebastian has courses on YouTube, Nathan has a podcast. And everyone should absolutely follow all of those. This is the Lex Fridman podcast. Lex Fridman: To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, get feedback, and so on. And now, dear friends, here\u2019s Sebastian Raschka and Nathan Lambert.\n\n\n## China vs US: Who wins the AI race? Lex Fridman: So I think one useful lens to look at all this through is the so-called DeepSeek moment.",
+          "score": 12.697747230529785,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14829,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 279,
+          "text": "I think open source is essential for educating the population and training the next generation of researchers. It\u2019s the only way. Nathan Lambert: The way that I could\u2019ve gotten this to go more viral was to tell a story of Chinese AI integrating with an authoritarian state, becoming ASI and taking over the world, and therefore we need our own American models. But it\u2019s very intentional why I talk about innovation and science in the US, because I think it\u2019s both more realistic as an outcome and it\u2019s a world that I would like to manifest. Sebastian Raschka: I would say, though, that any open-weight model is a valuable model. Nathan Lambert: Yeah. And my argument is that we should be in a leading position. But I think it\u2019s worth saying it so simply because there are still voices in the AI ecosystem that say we should consider banning the release of open models due to the safety risks.",
+          "score": 11.594836235046387,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14775,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 225,
+          "text": "But will it do things independently where\u2026\n\nSebastian Raschka: Will you still have humans asking the AI to do something? Like will there be a person to say, \u201cBuild that website?\u201d Or will there be AI that just builds websites or something, or whatever? Lex Fridman: I think talking about building websites is the\u2014\n\nNathan Lambert: Too simple. Sebastian Raschka: Yeah. Sure. Lex Fridman: It\u2019s just that the problem with websites and the problem with the web, you know, HTML and all that kind of stuff, it\u2019s very resilient to just\u2014 slop. It will show you slop. It\u2019s good at showing slop. I would rather think of safety-critical systems, like asking AI to end-to-end generate something that manages logistics\u2014 or manages cars\u2014 a fleet of cars, all that kind of stuff. So it end-to-end generates that for you. Nathan Lambert: I think a more intermediate example is take something like Slack or Microsoft Word.",
+          "score": 11.43925952911377,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14588,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 38,
+          "text": "Did you actually name LLaMA? Nathan Lambert: No. Lex Fridman: I feel like \u2026\n\nNathan Lambert: RIP. Sebastian Raschka: This was not on purpose. Lex Fridman: RIP LLaMA. All right. Can you mention what are some interesting models that stand out? You mentioned Qwen 3 is obviously a standout. Sebastian Raschka: So I would say the year\u2019s almost book-ended by DeepSeek-V3 and DeepSeek R1. And then on the other hand, in December, DeepSeek-V3.2. Because what I like about those is they always have an interesting architecture tweak- \u2026 that others don\u2019t have. But otherwise, if you want to go with the familiar but really good performance, Qwen 3 and, like Nathan said, also gpt-oss. And I think with gpt-oss, what\u2019s interesting about it is it\u2019s kind of the first open-weight model that was really trained with tool use in mind, which I do think is a bit of a paradigm shift where the ecosystem was not quite ready for it.",
+          "score": 11.06064224243164,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are largely irrelevant as they do not mention Ben Goertzel or the AGI conference, nor do they provide specific numbers for scale or years for AI race milestones. Chunk 5 mentions some model versions (DeepSeek-V3, DeepSeek R1, DeepSeek-V3.2) from Sebastian Raschka's perspective, but without specific years or context of an \"AI race.\"\n\nTo fill the gaps, search specifically for \"Ben Goertzel AGI conference scale numbers\" and \"Sebastian Raschka Nathan Lambert AI race years model milestones.\"",
+      "timestamp": 1.8100306987762451
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI conference origins current scale numbers OR Sebastian Raschka Nathan Lambert AI race future years model milestones",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 14574,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 24,
+          "text": "Lex Fridman: Well, it\u2019s interesting that none of us talked about the Chinese models from a user perspective. What does that say? Does that mean the Chinese models are not as good, or does that mean we\u2019re just very biased and US-focused? Sebastian Raschka: I do think that\u2019s currently the discrepancy between the model and the platform. I think the open models are more known for the open weights, not their platform yet. Nathan Lambert: There are also a lot of companies that are willing to sell you open-model inference at a very low cost. I think, like OpenRouter, it\u2019s easy to look at multi-model things. You can run DeepSeek on Perplexity. I think all of us sitting here are like, \u201cWe use OpenAI GPT-5 Pro consistently.\u201d We\u2019re all willing to pay for the marginal\u2014\n\nNathan Lambert: \u2026intelligence gain. And these models from the US are better in terms of the outputs. I think the question is, will they stay better for this year and for years going forward?",
+          "score": 11.195646286010742,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant as it discusses Chinese models and open-source platforms, not AGI conference scale or AI race milestones. The search needs to be more specific.\n\nNext, search for Ben Goertzel discussing \"AGI conference attendance numbers\" or \"AGI conference growth statistics.\" Also, search for Sebastian Raschka and Nathan Lambert discussing \"AI race timeline years\" or \"future model versions.\"",
+      "timestamp": 9.47295331954956
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI conference attendance numbers growth",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 7.990514278411865,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2479,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 240,
+          "text": "Like I met Ben Gortzell. And Ben and I are gonna do an AGI project together. And of all places, Rwanda. And he gave me this 85 fucking page paper. He was wearing that damn hat that he always wears. I think he showers with the hat on. He never takes that thing off. I think he refused, I interviewed him and he refused to tell me the story of the hat. He wouldn't tell me either. I interviewed him as well in Wyoming. And every time I call him, he'll have his shirt off. He'll have the fucking hat on. And now all I can think about is the hat. I wonder what the story there is. I know, it's like, it's gotta be. That might be the AGI. Yeah, exactly. But anyway, he gives me this 80 page paper and he says, Charles, it's like the combination of everything. This is how we're gonna do AGI. And I said, that's crazy, Ben. I said, I'll throw some money at it. So we're gonna hire some developers. I have no idea where it's gonna go, but I mean, I get to hang out with Ben Corson. That's fun.",
+          "score": 6.7825517654418945,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2478,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 239,
+          "text": "What can you do, sue them for slander? I mean, so you just let it ride and you let it roll. And if it was just ending there, that'd be great. But the problem is it cascades and people just repost it and they relive it again and again and again. And then what do you do about it? You eventually just say, I'm not gonna talk about it anymore. I'm done with it. And you move on and you say, you know what? If it's your problem, it's your problem. It's your reality that you wanna live in. I'll be defined by the things that I achieve and do and the people that we help and the things that we build. And, you know, since I started in this industry, I've gotten to a point where not only do we have this amazing company with these incredible people who work at this company, but we also have the ability to pursue amazing different interests. Like I met Ben Gortzell. And Ben and I are gonna do an AGI project together. And of all places, Rwanda. And he gave me this 85 fucking page paper.",
+          "score": 4.933067798614502,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 244,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 244,
+          "text": "But I think most of it will be there. And these will be incarnations of your consciousness in a slightly different flavor. And, you know, creating these different versions will be amazing, and each of them will discover meanings of life that have some overlap, but probably not total overlap with the human Ben's meaning of life. The thing is, to get to that future where we can explore different varieties of joy, different variations of human experience and values and transhuman experiences and values to get to that future, we need to navigate through a whole lot of human bullshit of companies and governments and killer drones and making and losing money and so forth, right? And that's the challenge we're facing now is if we do things right, we can get to a benevolent singularity, which is levels of joy, growth, and choice that are literally unimaginable to human beings.",
+          "score": 4.821768283843994,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 247,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 247,
+          "text": "It's terrible how little understanding of these fundamental issues exists out there now. That may be different five or 10 years from now though, because I can see understanding of AGI and longevity and other such issues is certainly much stronger and more prevalent now than 10 or 15 years ago, right? So I mean, humanity as a whole can be slow learners relative to what I would like, but on a historical sense, on the other hand, you could say the progress is astoundingly fast. But Elon also said, I think on the Joe Rogan podcast, that love is the answer. So maybe in that way, you and him are both on the same page of how we should proceed with AGI. I think there's no better place to end it. I hope we get to talk again about the hat and about consciousness and about a million topics we didn't cover. Ben, it's a huge honor to talk to you. Thank you for making it out. Thank you for talking today. Thanks for having me.",
+          "score": 4.699375152587891,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Ignore chunks 2, 3, 4, and 5 as they are irrelevant. Chunk 1 is partially relevant as it confirms Ben Goertzel's involvement with the AGI conference, but it provides no specific numbers regarding its origins or current state.\n\nThe chunks do not contain the specific numbers for the AGI conference's origins versus its current state, nor do they mention specific year and model versioning milestones from Ben Goertzel's perspective, or any information from Sebastian Raschka and Nathan Lambert.\n\nThe agent should search for specific attendance or participant numbers for the AGI conference, both historically and currently, from Ben Goertzel's perspective. A good next query would be: \"Ben Goertzel AGI conference attendance numbers initial current\" or \"Ben Goertzel AGI conference growth statistics\".",
+      "timestamp": 15.084739685058594
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI conference attendance numbers initial current",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 249,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 249,
+          "text": "I'm sure eventually you will figure it out. And now let me leave you with some words from Ben Gertzel. Our language for describing emotions is very crude. That's what music is for. Thank you for listening and hope to see you next time. whether what title it should be. And so we talked about narrow AI, broad AI, wide AI, narrow AI, general AI. And I think it was either Shane Legge or Peter Vos on the private email discussion we had. He said, but why don't we go with AGI, artificial general intelligence? And Pei Wang wanted to do GAI, general artificial intelligence, because in Chinese it goes in that order. But we figured gay wouldn't work in US culture at that time, right? So we went with the AGI. We used it for the title of that book. And part of Peter and Shane's reasoning was you have the G factor in psychology, which is IQ, general intelligence, right? So you have a meaning of GI, general intelligence, in psychology, so then you're looking like artificial GI.",
+          "score": 4.513885498046875,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant; it discusses the term \"AGI\" but provides no numbers about conference scale or future milestones. The search needs to find specific attendance numbers for the AGI conference, both initial and current, from Ben Goertzel's perspective. Also, search for Raschka and Lambert's views on AI race milestones (years, model versions).",
+      "timestamp": 24.237370252609253
+    }
+  ],
+  "final_answer": "The provided text does not offer specific numbers regarding the scale of the AGI conference's origins or its current state from either Ben Goertzel's or Sebastian Raschka and Nathan Lambert's perspectives. However, Sebastian Raschka and Nathan Lambert frame the future of the AI race with specific model versioning milestones, mentioning \"the year\u2019s almost book-ended by DeepSeek-V3 and DeepSeek R1,\" and \"in December, DeepSeek-V3.2.\"",
+  "total_chunks_retrieved": 12,
+  "unique_episodes_found": [
+    192,
+    490,
+    103
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 29.624364852905273
+}

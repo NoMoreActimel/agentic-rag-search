@@ -1,0 +1,155 @@
+{
+  "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 2941,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 145,
+          "text": "And so I wanted to replicate that. This time we did a lot of innovation at Anaconda. I wanted to do innovation, but also contribute to the projects that existed, like create a place where maintainers, so the SciPy and NumPy and Numba and all these projects we already started can pay people to work on them and keep them going. So that's Labs. Quansight Labs is a separate organization. It's a nonprofit mission. The profits of Quansight help fund it. And in fact, every project that we have at Quansight, a portion of the money goes directly to Quansight Labs to help keep it funded. So we've gotten several mechanisms that we keep Quansight Labs funded. And currently, so I'm really excited about Labs because it's been a mission for a long time. What kind of projects are within Labs? So Labs is working to make the software better, like make NumPy better, make SciPy better. It only works on open source.",
+          "score": 0.3620135188102722,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 2.657722234725952
+        },
+        {
+          "chunk_id": 12878,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 104,
+          "text": "That may be the economic value. It\u2019s not the only human value. The human value is just as much in the expression. When someone who sits down on a guitar and plays Stairways to Heaven, there\u2019s a perfect recording of that, that will last in eternity. You can just put it on Spotify, you don\u2019t actually need to do it. The joy is to command the guitar yourself. The joy of a programmer, of me as a programmer, is to type the code myself. If I elevate, if I promote myself out of programming, I turn myself into a project manager, a project manager of a murder of AI crows, as I wrote the other day. I could have become a project manager my whole career. I could have become a project manager 20 years ago if I didn\u2019t care to write code myself and I just wanted outcomes. That\u2019s how I got started in programming, I just wanted outcomes. Then I fell in love with programming, and now I\u2019d rather retire than giving it up. Now, that doesn\u2019t mean you can\u2019t have your cake and eat it too.",
+          "score": 0.36166905164718627,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 2.6429593563079834
+        },
+        {
+          "chunk_id": 12807,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 33,
+          "text": "The webpage I did in ninth grade would render on a modern browser today, 30 years later. Lex Fridman: That\u2019s crazy. DHH: That is completely crazy when you think about the amount of evolution we\u2019ve had with the web, how much better we\u2019ve made it, how many more standards browsers have adopted. It\u2019s essentially an Apollo project today to create a new browser, which is why it doesn\u2019t happen very often, which is why even companies like Microsoft had to throw in the towel and say, we can\u2019t do it. Now, I actually don\u2019t think that\u2019s good for the web. There is the danger of the monoculture if we just get a single browser engine that runs everything, and we are in danger of that. I love the fact that the Ladybird project, for example, is trying to make a new browser engine from scratch. I\u2019ve supported that project. I would encourage people to look into that. It\u2019s really a wonderful thing. It\u2019s staffed by a bunch of people who worked on other browser projects in the past.",
+          "score": 0.3612156701087952,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 2.6235287189483643
+        },
+        {
+          "chunk_id": 12150,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 9,
+          "text": "I was rather just going from project to project, doing things that I thought would be fun and cool. And with each project I learned new things, learning about how to store and manage data, learning how to deal with advanced data structures, how to write complex programs that have deeply nested data and control flow. Each one of those provide a lesson which were later essential. In 1991, I released my first game and over the course of that decade went from zero commercial releases to the first generation Unreal Engine. But this was largely just using the knowledge that I\u2019d built up over the previous decade, just doing fun hobby projects. And if I hadn\u2019t done all of that work, there\u2019s no way I could have ever built the things that came later. Lex Fridman: All the experimentation and all the exploration somehow contributed, somehow made sense later on. All of that is integrated somehow in the stuff you build. It\u2019s funny how life works. The pieces kind of come together eventually.",
+          "score": 0.3609914660453796,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 2.613919973373413
+        },
+        {
+          "chunk_id": 4725,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 57,
+          "text": "I would love to have time to actually learn about their story, but there's not enough time in the world. And I just think well of them and then I move on and enjoy a delicious meal with people that are close to me and I love and so on and just, and move on. And then never adding to the negativity of like, just even in the privacy of my own mind, thinking a hateful thought towards them, it serves no purpose whatsoever. Yeah, I love that about you. And I know that what you just said to be true, one of the, I think more toxic things in life is what's called, you know, a vacuative projection. When people feel something and they try and evacuate it and project it onto somebody else. Projection is fascinating, right? What you essentially just said is that you don't accept projections. And in fact, you transmute them to put it in the language of the Buddhist, you know, you transmute it into positivity. And in that way, you truly neutralize it and transmute it.",
+          "score": 0.32647883876164757,
+          "source": "bm25",
+          "quality_score": 0.88,
+          "original_score": 2.6776645183563232
+        }
+      ],
+      "judge_feedback": "1.  Chunks 2, 3, 4, and 5 are irrelevant as they discuss DHH, Tim Sweeney, and Andrew Huberman, not the individuals in the question.\n2.  Chunk 1 provides a small amount of context on Travis Oliphant's project goals (innovation, supporting open-source projects), but doesn't discuss his programming philosophy regarding technical complexity or the balance between the two.\n3.  The agent should search for the programming philosophies of John Carmack and Pieter Levels, specifically looking for discussions on their approach to technical complexity versus project goals. Also, refine the search for Travis Oliphant to include \"technical complexity.\"",
+      "timestamp": 1.2277002334594727
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "John Carmack programming philosophy technical complexity project goals",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 6023,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.42367256100972495,
+          "source": "bm25",
+          "quality_score": 0.92,
+          "original_score": 6.328824043273926
+        },
+        {
+          "chunk_id": 12238,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 97,
+          "text": "It\u2019s so inspiring to hear these kinds of stories when there\u2019s so much uncertainty and you figure out and so many constraints and you figure out how to bring it to life in real time and create this world that Unreal did. Maybe if we could just pause, since you mentioned John Carmack a few times, as a fellow pioneer in the game industry at that time, what do you admire about John?\n\n\n## John Carmack\n\nTim Sweeney: John singularly has this intense dedication to getting the best result from his code and having absolutely no attachment to passcode and some of the legendary things he did. The end result was an absolute breakthrough in real-time computer graphics, weren\u2019t his first try. They were like his seventh or eighth try after he\u2019d done something time and time again, tried it, found a better approach, thrown out the old one, built it again, and continually rewrite his code until he found the absolute best solution to a problem.",
+          "score": 0.41422540855407713,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.952517509460449
+        },
+        {
+          "chunk_id": 12943,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 169,
+          "text": "Most engineering managers are actually former programmers. They at least know program to some extent, but what I\u2019ve seen time and again is that they lose their touch, their feel with it very, very quickly and turn into pointy-haired bosses very, very quickly who are really good at checking for updates, \u201cJust seeing where we are on project A here if you need anything,\u201d or, \u201cWe\u2019re really to deliver?\u201d Okay, yes. Also, no. Shut up, leave me the hell alone. Let me program and then I\u2019ll come up for air. I\u2019ll talk with other programmers who I can spar with, that we can learn something with, where I can turn the problems over with and we can move forward. If you look back on the history of computer industry, all the great innovation that\u2019s happened, it\u2019s all been done by tiny teams with no engineering managers. Just full of highly-skilled individuals. You\u2019ve had John Carmack on here.",
+          "score": 0.4137725791931153,
+          "source": "bm25",
+          "quality_score": 0.92,
+          "original_score": 5.904539108276367
+        },
+        {
+          "chunk_id": 6022,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.19114460945129394,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 6.906197547912598
+        },
+        {
+          "chunk_id": 6387,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 366,
+          "text": "You're an incredible human being. I can't wait what you do next, but you've already changed the world. You're an inspiration to so many people. And again, we haven't covered like most of what I was planning to talk about, so I hope we get a chance to talk someday in the future. I can't wait to see what you do next. Thank you so much again for talking to me. Thank you very much. Thanks for listening to this conversation with John Carmack. To support this podcast, please check out our sponsors in the description. And now, let me leave you with some words from John Carmack himself. Focused hard work is the real key to success. Keep your eyes on the goal, and just keep taking the next step towards completing it. If you aren't sure which way to do something, do it both ways and see which works better. Thank you for listening and hope to see you next time.",
+          "score": 0.1743295383453369,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 6.185551643371582
+        }
+      ],
+      "judge_feedback": "1.  Chunks 1, 3, 4, and 5 are irrelevant. Chunk 1 discusses his first program, Chunk 3 is about engineering managers, and Chunks 4 and 5 are biographical introductions/outros.\n2.  Chunk 2 offers a slight hint, noting John Carmack's \"intense dedication to getting the best result from his code,\" which suggests a focus on technical excellence, but doesn't elaborate on the balance with project goals.\n3.  The agent should search for John Carmack's specific views on code optimization, pragmatism, and the trade-offs between technical perfection and shipping products to find his stance on technical complexity versus project goals.",
+      "timestamp": 6.837207317352295
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "John Carmack programming philosophy optimization pragmatism project goals",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 13.0678071975708
+    }
+  ],
+  "final_answer": "The provided context does not contain information about Pieter Levels' programming philosophy. Travis Oliphant focuses on innovation within existing open-source projects like NumPy and SciPy, aiming to make them better and ensure their ongoing maintenance and funding. John Carmack, as described by Tim Sweeney, demonstrates an intense dedication to achieving the absolute best technical solution for a problem, continually rewriting code and experimenting until the optimal result is found, prioritizing technical excellence for the project goal.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    224,
+    467,
+    309,
+    277,
+    474
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 17.591912746429443
+}

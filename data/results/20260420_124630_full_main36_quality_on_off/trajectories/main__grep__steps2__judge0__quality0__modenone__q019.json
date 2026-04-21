@@ -1,0 +1,143 @@
+{
+  "question": "Identify and compare the specific numerical values associated with the following career-defining metrics and observations mentioned by David Fravor, Michael Paulson, and Robert Rodriguez: the duration of the USS Princeton's radar tracking of the 'Tic Tac' objects, the number of times Paulson failed pre-calculus, and the percentage of any job that Rodriguez attributes to creativity.",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Fravor Princeton radar Tic Tac duration",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 260,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Commander David Fravor, who was a Navy pilot for 18 years and commander of the Strike Fighter Squadron 41, also known as the Black Aces, a squadron of 12 airplanes consisting of several hundred people. He's also famously one of the people who with his own eyes saw and chased a UFO, an identified flying object in 2004 that is referred to as the Tic Tac and the incident more formally referred to as the USS Nimitz UFO incident. His story, corroborated by several other pilots from my perspective as a curious scientist and an open minded human being, is the most credible sighting of a UFO in history, at least that I'm aware of. He's a humble, fascinating, and fun human being to talk to. I put out a call for questions on Reddit and many other places and tried to ask as many of the questions that people posted as I could.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 298,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 38,
+          "text": "And not only witnessed, but got to, how do you put it? Like chase it, essentially? Chase it. Chase it. So let me just lay out, I think it's easier than you telling the story. Maybe me and my dumb simpleton ways trying to explain the stories, I understand it. And then maybe you can correct me. So on November 10th, 2004, the USS Princeton, which is one of the carriers. That's a cruiser. It's a cruiser. It's a cruiser. So you can't land on a. No, helicopter, it has a helicopter pad on the back. Gotcha. And it has weapons on it. Okay, gotcha. It shoots the missiles up. But it has a nice radar. It has an incredible spy one system phased array, four panels. So it looks in quadrants. Perfect. So they started noticing on November 10th that there is a few objects flying around at 28,000 feet with speed of what I guess is considered a low speed of 120 miles an hour. Don't know what that's in knots, but on the coast of California. And they kept detecting these objects for just about a week.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 328,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 68,
+          "text": "So he has the ability to just move one switch real quick and it will go from that azimuth elevation on the radar to the targeting pod. Well, as soon as he commanded the radar to look at that target, the targeting pod goes, oh, what's over there? And it'll stare because it goes down the line of sight because all the systems are hooked together. You can decouple them, but they're going to automatically couple up. So when he castles over, it's a switch, it looks like a castle switch, what's a castle? So when he moves that thing to the left and he swaps the displays out and he says, instead of looking at the radar, I want to look at the targeting pod, he sees it on the targeting pod because the targeting pod's already looking there. And now he's on a passive track because he's not literally sending any energy out, he's just receiving IR energy from the tic tac and then the system itself will track the pixels and the contrast differences, it depends on what mode you're in.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 343,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 83,
+          "text": "So the bottom information. I got it. So when you see it, because he's coming almost coaltitude with it, you can see the bottom of it. It looks like little, you know, like if you look at a Cessna, there's little antennas hanging out of the bottom. Kind of like that. There was two little things out of the bottom. There's nothing on the top. There was no plume, no IR, no visible propulsions, even heat signature. You know, it's all that stuff. And then the other thing that people didn't see is they didn't see the radar display, which that really raises a classification of it, especially to see what the radar does when it's being jammed. You know, matter of fact, when they did the unofficial official investigation in about 2000 and let me think about 2009. I got a call on my cell phone from a guy who government employee and said, hey, he told me who he was. He's still in the government. I'm friends with him. And he said, hey, we're going to investigate your Tic Tac thing.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 434,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 174,
+          "text": "I mean, what are you going to do? Can you catch one, go out with a giant net and try and bag one? You don't know because they've seen them. They picked them up like hovering on radar. And then all of a sudden they're traveling at really high rates of speed. So you know, what are you going to do? Well, and that, let me ask this, cause this is what people kind of think about. After you witnessed Tic Tac and after this, these incidents, as far as we know, uh, with the gimbal and the go fast, it seems like people in the military did not, did not react like what, like did not freak out. It almost like was like a mundane event. How do you explain that? Why didn't the people on the ship, not the higher ups, why wasn't there a big freakout? Or as some people suggest, the higher ups knew about it all along and just were not letting everyone know that there's some kind of secret military, uh, uh, you know, like, like tests. Yeah.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.796532154083252
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Michael Paulson failed pre-calculus",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 11449,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Michael Paulson, better known online as ThePrimeagen. He is a programmer who has entertained and inspired millions of people to have fun building stuff with software, whether you\u2019re a newbie or a seasoned developer who has been battling it out in the software engineering trenches for decades. In short, ThePrimeagen is a legendary programmer and a great human being with an inspiring roller coaster of a life story. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s ThePrimeagen.\n\n\n## Love for programming\n\nLex Fridman: What do you love most about programming? What brings you joy when you program? ThePrimeagen: I can tell you the first time that I ever felt love in programming, or felt that joy or that excitement-\n\nLex Fridman: Sure. ThePrimeagen: Which was in college.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11483,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 34,
+          "text": "And it turns out it\u2019s really hard. I was really bad. I still got Cs. I went and took pre-calculus and failed pre-calculus, and I\u2019m like, \u201cOh my gosh, I used to be the smart math guy, and now I\u2019m the idiot failing.\u201d And so I\u2019m just questioning myself and all that, and I spent hours upon hours in a studying, math learning center, and then just at some point years into this journey, I\u2019m like a year and a half into this journey, at this point, something clicks, and I go from being the worst person to just immediately becoming the best. Everything after that is just, I don\u2019t know what happened. All of a sudden I was the best person at math. I started going into my computer science classes. I just really got everything. Everything, at just years after trying, just all of a sudden became easier. And I\u2019m not sure if it happened over the course of weeks or when the easier started, but it was just first predicated by just a huge amount of difficulty.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11525,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 76,
+          "text": "You can be thrilled by the experience, but you cannot find\u2026 I doubt you can find purpose. Maybe some people in specific jobs. This obviously have very broad strokes, I\u2019m painting with. Like if you\u2019re an EMT and you save someone\u2019s life, maybe there can be purpose in that whole experience, right? So I\u2019m not saying all things, but as programming goes, most programmers, you cannot just simply find your purpose. And same with drugs, you cannot find that thing you\u2019re looking for, but they are a very great distraction. And then at some point that distraction comes with a heavy cost. I think Dr. Faust would probably know the best about the heavy cost, but it\u2019s just you\u2019re making one trade for another and at some point the bill comes due and that bill can be very, very large.\n\n\n## Perseverance\n\nLex Fridman: The other moment you mentioned that I think is really inspiring is that you failed pre-calculus. You really struggled in school.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11526,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 77,
+          "text": "You really struggled in school. You realize that school is really hard and then eventually you\u2019re able to sort of persevere and, I don\u2019t know, break through that wall of struggle. Can you, by way of advice, figure out what happened and what kind of advice you can give to people who are struggling? ThePrimeagen: Yeah. I\u2019ll paint it in a more clear picture, or a very fast speed run of it is that I took pre-calculus, failed. I took pre-calculus again, failed, took pre-calculus again and got a C. So I took it three times. Then I took Calc over the summer, so Calc 1. In that one at the end, the final\u2026 The final was a two-hour final. I finished it in 30 minutes and that was the highest score in all of the school. And I proceeded to be the highest score in all calculus and Diffy Q. I was the only person out of 400 people to finish the Diffy Q final. And I got the highest grade. And so I was like\u2026 I got really good. So I somehow went from really bad to really good.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11618,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 169,
+          "text": "And I beat it. And it was such an incredible, great experience. And the last leader of Turok II is called the Primeagen. And so when I was a kid, when you\u2019re in fifth grade, that\u2019s super cool, named after the bad guy. And so for a long time on any internet thing, like Grail Online that I mentioned earlier, the name was ThePrimeagen. It was great. And then I became an adult eventually, and it\u2019s just like, okay, I\u2019m an adult. My name\u2019s Michael Paulson underscore. And that\u2019s what I was on the internet for a long time was that. And I remember it was like 2017, 2018, somewhere in there. I remember just how bad the tech world had kind of become. It was just like this super pretentious place, tons of dick measuring, just everything that just was the worst. Ken Wheeler got canceled over playing the Circle game. It was just like, it is so hard to describe to people that weren\u2019t there, but it was just the worst place to be. Tech was extremely unfun. It was extremely awful.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.053680658340454
+    }
+  ],
+  "final_answer": "The USS Princeton's radar detected the 'Tic Tac' objects for just about a week. Michael Paulson failed pre-calculus two times before taking it a third time and getting a C. The provided context does not mention Robert Rodriguez or any percentage of a job he attributes to creativity.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    122,
+    461
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 7.848879337310791
+}

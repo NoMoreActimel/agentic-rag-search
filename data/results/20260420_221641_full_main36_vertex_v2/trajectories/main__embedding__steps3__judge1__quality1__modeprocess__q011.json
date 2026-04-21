@@ -1,0 +1,188 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI strategy cognitive architectures embodiment",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 6312,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 291,
+          "text": "I mean, I have a million questions to you about your ideas about AGI, but do you think it needs to be embodied? Do you think it needs to have a body to start to notice the signs of life and to develop the kind of system that's able to reason, perceive the world in the way that an AGI should and act in the world? So should we be thinking about robots or can this be achieved in a purely digital system? So I have a clear opinion on that and that's that no, it does not need to be embodied in the physical world where you could say most of my career is about making simulated virtual worlds in games or virtual reality. And so on a fundamental level, I believe that you can make a simulated environment that provides much of the value of what the real environment does and restricting yourself to operating at real time in the physical world with physical objects, I think is an enormous handicap.",
+          "score": 0.8186422109603881,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.740917444229126
+        },
+        {
+          "chunk_id": 6316,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 295,
+          "text": "And when it proves to be beneficial, you know, there's fast followers in all sorts of places. Yeah, and you're saying that, I mean, you know, Quake and VR is a kind of embodiment, but just in a digital world. And if you're able to demonstrate, if you're able to do something productive in that kind of digital reality, then AGI doesn't need to have a body. Yeah, it's like one of the really practical technical questions that I kind of keep arguing with myself over. If you're doing a training and learning and you've got like, you can watch Sesame Street, you can play Master System games or something, is it enough to have just a video feed that is that video coming in? Or should it literally be on a virtual TV set in a virtual room, even if it's, you know, a simple room, just to have that sense of you're looking at a 2D projection on a screen versus having the screen beam directly into your retinas.",
+          "score": 0.8150788784027099,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7358269691467285
+        },
+        {
+          "chunk_id": 57,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.8036844253540039,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7195491790771484
+        },
+        {
+          "chunk_id": 32,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 0.7823085675239563,
+          "source": "embedding",
+          "quality_score": 0.92,
+          "original_score": 0.7232979536056519
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5582908797264099,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.7547012567520142
+        }
+      ],
+      "judge_feedback": "Chunks 3, 4, and 5 are highly useful as they directly address Ben Goertzel's AGI strategy, including his focus on OpenCog (cognitive architecture) and his involvement with embodied AI (Sophia robot). Chunks 1 and 2 discuss embodiment but are from John Carmack, not Ben Goertzel, making them less directly relevant to Goertzel's specific strategy.\n\nTo fill the gaps, the agent needs to search for information regarding Sebastian Raschka and Nathan Lambert's perspectives on AGI strategy. A good next step would be to search for their views on AGI, perhaps including terms like \"AGI strategy,\" \"AGI landscape,\" or \"AGI approaches.\"",
+      "timestamp": 1.8682103157043457
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Sebastian Raschka Nathan Lambert AGI strategy landscape",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 14783,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 233,
+          "text": "I think there are startups\u2014maybe Harmonic is one\u2014where they\u2019re going all in on language models plus Lean for math. I think you had another podcast guest where you talked about this recently, and it\u2019s like we don\u2019t know exactly what\u2019s going to fall out of spending $100 million on that model. Nathan Lambert: Most of them will fail, but a couple of them might be big breakthroughs that are very different than ChatGPT or Claude Code type software experiences. Like a tool that\u2019s only good for a PhD mathematician but makes them 100 times more effective. Sebastian Raschka: I agree. I think this will happen in a lot of domains, especially those with a lot of resources like finance, legal, and pharmaceutical companies. But then again, is it really AGI? Because we are specializing it again. Is it really that much different from how we had specialized algorithms back in the day? I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI?",
+          "score": 0.8286300063133238,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7551857233047485
+        },
+        {
+          "chunk_id": 14784,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 234,
+          "text": "I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI? I think the real cool thing here is that we have foundation models that we can specialize. That\u2019s the breakthrough. Sebastian Raschka: Right now, I think we are not there yet because first, it\u2019s too expensive, but also ChatGPT doesn\u2019t just give away their model to customize it. I can imagine a business model where OpenAI says at some point, \u201cHey, Bank of America, for $100 million we will do your custom model.\u201d I think that will be the huge economic value add. The other thing though is, what is the differentiating factor? If everyone uses ChatGPT, they will all do the same thing. Everyone is moving in lockstep, but usually companies want to have a competitive advantage. I think there is no way around using some of their private data and experimenting with specialization. It\u2019s going to be interesting. Nathan Lambert: Given the pace of progress, it does feel like things are coming.",
+          "score": 0.8267593860626221,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7525134086608887
+        },
+        {
+          "chunk_id": 14790,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 240,
+          "text": "So there\u2019s a lot of things coming. Sebastian Raschka: I used that feature before, and I always feel bad because it does that every day, and I rarely check it out. How much compute is burned on something I don\u2019t even look at, you know? Nathan Lambert: There\u2019s also a lot of idle compute in the world, so don\u2019t feel too bad. Lex Fridman: Okay. Do you think new ideas might be needed? Is it possible that the path to AGI\u2014whatever that is, however we define that\u2014to solve computer use more generally, to solve biology and chemistry and physics, sort of the Dario definition of AGI or powerful AI? Do you think it\u2019s possible that totally new ideas are needed? Non-LLM, non-RL ideas. What might they look like? We\u2019re now going into philosophy land a little bit. Nathan Lambert: For something like a singularity to happen, I would say yes. And the new ideas could be architectures or training algorithms, which are fundamental deep learning things. But they\u2019re, in that nature, pretty hard to predict.",
+          "score": 0.8203995943069458,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7434279918670654
+        },
+        {
+          "chunk_id": 14860,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 310,
+          "text": "Nathan Lambert: But it is something that is probably doable. It just will take longer than people want. And we have to go through that long period of hard, distraught AI discussions if we want to have the lasting benefits. Lex Fridman: Yeah. Through that process, I\u2019m especially excited that we get a chance to better understand ourselves at the individual level as humans and at the civilization level, and answer some of the big mysteries, like what is this whole consciousness thing going on here? It seems to be truly special. Like, there\u2019s a real miracle in our mind. And AI puts a mirror to ourselves and we get to answer some of the big questions about what is this whole thing going on here. Sebastian Raschka: Well, one thing about that is also what I do think makes us very different from AI and why I don\u2019t worry about AI taking over is, like you said, consciousness. We humans, we decide what we want to do. AI in its current implementation, I can\u2019t see it changing.",
+          "score": 0.810989499092102,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7299849987030029
+        },
+        {
+          "chunk_id": 14550,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.7949887886047363,
+          "source": "embedding",
+          "quality_score": 0.88,
+          "original_score": 0.7585554122924805
+        }
+      ],
+      "judge_feedback": "Chunk 5 is irrelevant. Chunks 1, 2, and 3 provide some insight into Raschka and Lambert's current view on AGI strategy, focusing on foundation models and specialization, and questioning if new ideas are needed. However, they lack any mention of Ben Goertzel's approach or how strategies have *evolved*.\n\nThe agent should search for information directly comparing Ben Goertzel's AGI strategy (cognitive architectures, embodiment) with the current landscape, or specifically for Goertzel's perspective on the evolution of AGI approaches.",
+      "timestamp": 8.917576789855957
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI strategy evolution cognitive architectures embodiment vs large language models foundation models",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 42,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 42,
+          "text": "So I think there's been coevolution of the patterns of organization in the human brain and the physiological particulars of the human brain over time. And when you look at neural networks, that is one powerful class of learning algorithms, but it's also a class of learning algorithms that evolve to exploit the particulars of the human brain as a computational substrate. If you're looking at the computational substrate of a modern server farm, you won't necessarily want the same algorithms that you want on the human brain. And from the right level of abstraction, you could look at maybe the best algorithms on the brain and the best algorithms on a modern computer network as implementing the same abstract learning and representation processes, but finding that level of abstraction is its own AGI research project then, right? So that's about the hardware side and the software side, which follows from that.",
+          "score": 0.8099679470062255,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7285256385803223
+        },
+        {
+          "chunk_id": 37,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 37,
+          "text": "So you're kind of evolving human beings, or you're living creatures. Your Russian heritage is showing there. So with Alexander Vityaev and Peter Anokhin and so on, I mean, there's a long history of thinking about evolution that way also, right? So, well, my point is that what we're thinking of as a human level general intelligence, if you start from narrow AIs, like are being used in the commercial AI field now, then you're thinking, okay, how do we make it more and more general? On the other hand, if you start from AICSI or Schmidhuber's G\u00f6del machine, or these infinitely powerful, but practically infeasible AIs, then getting to a human level AGI is a matter of specialization. It's like, how do you take these maximally general learning processes and how do you specialize them so that they can operate within the resource constraints that you have, but will achieve the particular things that you care about? Because we humans are not maximally general intelligence.",
+          "score": 0.8066939234733581,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7238484621047974
+        },
+        {
+          "chunk_id": 10486,
+          "episode_id": 455,
+          "guest": "Adam Frank",
+          "chunk_index": 236,
+          "text": "But I think probably the view I\u2019m advocating would say that one of the most important parts of agency is there\u2019s something called, E-four. The E-four theory of cognition, embodiment, enaction, embedding, and there\u2019s another one, extension. But so the idea is that you actually have to be in a body which is itself part of an environment that is the physical nature of it and of the extension with other living systems as well is essential. So that\u2019s why I think the LLMs are not going to, it\u2019s not imitation. It\u2019s going to require, this goes to the brain in the VAT thing. I did an article about the brain in the vat, which was really Evans, I was reporting on Evans. Where they did the brain in the VAT argument. But they said, \u201cLook, in the end, actually the only way to actually get a real brain in the VAT is actually to have a brain in a body.\u201d And it could be a robot body, but you still need a brain in the body. So I don\u2019t think LLMs will get there because they can\u2019t.",
+          "score": 0.806201672554016,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7231452465057373
+        }
+      ],
+      "judge_feedback": "Chunk 3 is useful for the embodiment vs. LLM aspect, despite being from Adam Frank. The other chunks offer general insights into Ben Goertzel's AGI philosophy but lack specific details on his cognitive architectures strategy and its evolution. The most significant gap is the complete absence of information from Sebastian Raschka and Nathan Lambert regarding their AGI strategy, particularly concerning large language models and foundation models.\n\nThe next search should focus on: `Sebastian Raschka Nathan Lambert AGI strategy large language models foundation models`.",
+      "timestamp": 18.755654096603394
+    }
+  ],
+  "final_answer": "Ben Goertzel's primary strategy for AGI focused on cognitive architectures like OpenCog, incorporating insights from deep neural nets but believing they wouldn't achieve AGI on their own, and considering logic-based systems. In contrast, Sebastian Raschka and Nathan Lambert describe a current landscape characterized by the specialization of powerful foundation models, particularly large language models, for specific domains. While recognizing the breakthroughs, they question if this specialization truly constitutes AGI or if entirely new ideas beyond current LLM/RL paradigms are necessary.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    490,
+    455,
+    309,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 47.776437282562256
+}

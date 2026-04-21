@@ -1,0 +1,154 @@
+{
+  "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel neurotechnology company founder Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8723,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 514,
+          "text": "Noland Arbaugh: Yeah, it\u2019s literally just a grid. They can make it as big or small as you can make a grid. A single box on that grid will light up and you go and click it. And it is a way for them to benchmark how good a BCI is. So it\u2019s pretty straightforward. You just click targets. Lex Fridman: Only one blue cell appears and you\u2019re supposed to move the mouse to there and click on it. Noland Arbaugh: Yep. So I like playing on bigger grids because the bigger the grid, the more BPS, it\u2019s bits per second, that you get every time you click one. So I\u2019ll say I\u2019ll play on a 35 by 35 grid, and then one of those little squares, a cell, you can call it, target, whatever, will light up. And you move the cursor there, and you click it, and then you do that forever. Lex Fridman: And you\u2019ve been able to achieve, at first, eight bits per second, then you\u2019ve recently broke that. Noland Arbaugh: Yeah. Yeah, I\u2019m at 8.5 right now. I would\u2019ve beaten that literally the day before I came to Austin.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 131,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 131,
+          "text": "Two years ago, that was less so. It's a very rapidly evolving ecosystem. So like one example, maybe you can comment on something I worked a lot on is autonomous vehicles. You can see each individual vehicle as an AI system. And you can see vehicles from Tesla, for example, and then Ford and GM and all these as also like larger... I mean, they all are running the same kind of system on each sets of vehicles. So it's individual AI systems and individual vehicles, but it's all different. The station is the same AI system within the same company. So you can envision a situation where all of those AI systems are put on SingularityNet, right? And how do you see that happening? And what would be the benefit? And could they share data? I guess one of the biggest things is that the power there's in a decentralized control, but the benefit would have been, is really nice if they can somehow share the knowledge in an open way if they choose to. Yeah, yeah, yeah, those are all quite good points.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 147,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 560,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Stephen Wolfram, his second time on the podcast. He's a computer scientist, mathematician, theoretical physicist, and the founder and CEO of Wolfram Research, a company behind Mathematica, Wolfram Alpha, Wolfram Language, and the new Wolfram Physics Project. He's the author of several books, including A New Kind of Science, and the new book, A Project to Find the Fundamental Theory of Physics. This second round of our conversation is primarily focused on this latter endeavor of searching for the physics of our universe in simple rules that do their work on hypergraphs and eventually generate the infrastructure from which space, time, and all of modern physics can emerge. Quick summary of the sponsors, SimpliSafe, Sunbasket, and Masterclass. Please check out these sponsors in the description to get a discount and to support this podcast.",
+          "score": 0.2857142857142857,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Ignore chunks 1, 3, 4, and 5. They are irrelevant to the specific neurotechnology company founder or Noland Arbaugh's bit rate.\n2.  Chunk 2 mentions Noland Arbaugh and \"BPS\" (bits per second), which is relevant to the bit rate concept, but it's from an Elon Musk episode, not Ben Goertzel's. It does not provide the specific bit rate number.\n3.  The agent needs to find where Ben Goertzel discusses a specific neurotechnology company founder (likely Elon Musk/Neuralink) and the specific bit rate Noland Arbaugh achieved. Search for \"Ben Goertzel Elon Musk neurotechnology\" or \"Ben Goertzel Neuralink\".",
+      "timestamp": 1.749917984008789
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Elon Musk Neuralink Noland Arbaugh",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8209,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Elon Musk, DJ Seo, Matthew MacDougall, Bliss Chapman, and Noland Arbaugh about Neuralink and the future of humanity. Elon, DJ, Matthew and Bliss are of course part of the amazing Neuralink team, and Noland is the first human to have a Neuralink device implanted in his brain. I speak with each of them individually, so use timestamps to jump around, or as I recommend, go hardcore, and listen to the whole thing. This is the longest podcast I\u2019ve ever done. It\u2019s a fascinating, super technical, and wide-ranging conversation, and I loved every minute of it. And now, dear friends, here\u2019s Elon Musk, his fifth time on this, the Lex Fridman podcast,\n\n\n## Elon Musk\n\nElon Musk: Drinking coffee or water? Lex Fridman: Water. I\u2019m so over-caffeinated right now. Do you want some caffeine? Elon Musk: Sure. Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8212,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 3,
+          "text": "The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah. I think it\u2019s obviously going to get better with each one. I don\u2019t want to jinx it, but it seems to have gone extremely well with the second implant. So, there\u2019s a lot of signal, a lot of electrodes. It\u2019s working very well. Lex Fridman: What improvements do you think we\u2019ll see in Neuralink in the coming, let\u2019s say, let\u2019s get crazy, the coming years. Elon Musk: In years, it\u2019s going to be gigantic, because we\u2019ll increase the number of electrodes dramatically. We\u2019ll improve the signal processing. So, even with only roughly, I don\u2019t know, 10, 15% of the electrodes working with Noland, with our first patient, we were able to get to achieve a bit per second. That\u2019s twice the world record. So, I think we\u2019ll start vastly exceeding the world record by orders of magnitude in the years to come. So, start getting to, I don\u2019t know, 100 bits per second, thousand.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8775,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 566,
+          "text": "I\u2019ll be training all night tonight to try to catch up. Noland Arbaugh: Hey, man. You can do it. You can do it. Lex Fridman: And I believe in you that once you come back\u2026 So sorry to interrupt with the Austin trip, once you come back, eventually beat Bliss. Noland Arbaugh: Yeah, yeah, for sure. Absolutely. Lex Fridman: I\u2019m rooting for you, though. The whole world is rooting for you. Noland Arbaugh: Thank you. Lex Fridman: Thank you for everything you\u2019ve done, man. Noland Arbaugh: Thanks. Thanks, man. Lex Fridman: Thanks for listening to this conversation with Nolan Arbaugh, and before that, with Elon Musk, DJ Seo, Matthew McDougall, and Bliss Chapman. To support this podcast, please check out our sponsors in the description. And now, let me leave you with some words from Aldous Huxley in The Doors of Perception. \u201cWe live together. We act on and react to one another. But always, and in all circumstances, we are by ourselves. The martyrs go hand in hand into the arena.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 245,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 245,
+          "text": "If we do things wrong, we could either annihilate all life on the planet, or we could lead to a scenario where, say, all humans are annihilated and there's some super AGI that goes on and does its own thing unrelated to us except via our role in originating it. And we may well be at a bifurcation point now, right? Where what we do now has significant causal impact on what comes about, and yet most people on the planet aren't thinking that way whatsoever, they're thinking only about their own narrow aims and aims and goals, right? Now, of course, I'm thinking about my own narrow aims and goals to some extent also, but I'm trying to use as much of my energy and mind as I can to push toward this more benevolent alternative, which will be better for me, but also for everybody else. And it's weird that so few people understand what's going on. I know you interviewed Elon Musk, and he understands a lot of what's going on, but he's much more paranoid than I am, right?",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1295,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 144,
+          "text": "The problem with all those haters in the three communities is that they're looking one year ahead, five years ahead. The hilarious thing about the, quote unquote, ridiculous things that Elon Musk is saying, is they have a pretty good shot at being true in 20 years. And so like, when you just look at the, you know, when you look at the progression of these kinds of predictions, and sometimes first principles thinking can allow you to do that, is you see that it's kind of obvious that things are going to progress this way. And if you just remove the prejudice you hold about the particular battles of the current academic environment, and just look at the big picture, the progression of the technology, you can usually see the world in the same kind of way. And so in that same way, looking at psychedelics, you can see like, there is so many exciting possibilities here if we fully engage in the research. Same thing with Neuralink.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1. Chunks 4 and 5 are irrelevant. Chunk 4 discusses AGI generally, and Chunk 5 mentions Elon Musk but not in the context of Neuralink's performance.\n2. Chunks 1, 2, and 3 are useful as they confirm Noland Arbaugh is the first human Neuralink participant and involve the Neuralink team, which is the correct source for the bit rate. However, they do not contain the specific bit rate.\n3. Search for the specific bit rate Noland Arbaugh achieved with his Neuralink implant.\n**Next Search Query:** Noland Arbaugh Neuralink bit rate",
+      "timestamp": 13.119072437286377
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 26.214030265808105
+    }
+  ],
+  "final_answer": "According to Noland Arbaugh, the first human participant with a Neuralink implant, he initially achieved eight bits per second and later broke that record, reaching 8.5 bits per second. Elon Musk also mentioned that with Noland, they were able to achieve a bit per second that was twice the world record.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    145,
+    124,
+    438,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 26.214033842086792
+}

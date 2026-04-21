@@ -1,0 +1,199 @@
+{
+  "episode_id": 467,
+  "guest_info": {
+    "name": "Tim Sweeney",
+    "title": "Founder and CEO of Epic Games",
+    "expertise": [
+      "Video game programming",
+      "Game engine development",
+      "Computer graphics",
+      "Game design",
+      "Entrepreneurship"
+    ]
+  },
+  "summary": "Lex Fridman interviews Tim Sweeney, founder and CEO of Epic Games, discussing the history and future of gaming, the development of Unreal Engine and Fortnite, and the challenges of creating realistic digital humans. They explore the evolution of computer graphics, the potential of the metaverse, and the impact of AI on content creation.",
+  "main_entities": [
+    {
+      "name": "Tim Sweeney",
+      "type": "person",
+      "context": "Founder and CEO of Epic Games, the guest of the podcast."
+    },
+    {
+      "name": "Epic Games",
+      "type": "organization",
+      "context": "Video game company founded by Tim Sweeney, creator of Unreal Engine and Fortnite."
+    },
+    {
+      "name": "Unreal Engine",
+      "type": "project",
+      "context": "A real-time 3D creation tool used for game development, film, architecture, and more."
+    },
+    {
+      "name": "Fortnite",
+      "type": "project",
+      "context": "A popular online video game developed by Epic Games, known for its Battle Royale mode and creative tools."
+    },
+    {
+      "name": "Verse",
+      "type": "technology",
+      "context": "A new programming language being developed by Epic Games for large-scale simulation programming and the metaverse."
+    },
+    {
+      "name": "MetaHuman Creator",
+      "type": "technology",
+      "context": "A tool within Unreal Engine for creating realistic digital humans."
+    },
+    {
+      "name": "Lumen",
+      "type": "technology",
+      "context": "Global illumination and reflections system in Unreal Engine 5."
+    },
+    {
+      "name": "Nanite",
+      "type": "technology",
+      "context": "Virtualized micropolygon geometry system in Unreal Engine 5."
+    },
+    {
+      "name": "Constructive Solid Geometry (CSG)",
+      "type": "concept",
+      "context": "A technique used in Unreal Engine for building environments by adding and subtracting geometry."
+    },
+    {
+      "name": "Shareware",
+      "type": "concept",
+      "context": "A software distribution model where a program is initially provided free of charge to users, who are asked to pay for it after a trial period."
+    },
+    {
+      "name": "The Metaverse",
+      "type": "concept",
+      "context": "A concept of a persistent, shared, 3D virtual world or worlds that are interoperable, social, and often involve user-generated content."
+    },
+    {
+      "name": "AI",
+      "type": "concept",
+      "context": "The use of artificial intelligence in content creation and game development."
+    },
+    {
+      "name": "Digital Humans",
+      "type": "concept",
+      "context": "The creation and rendering of realistic human characters in computer graphics."
+    },
+    {
+      "name": "Game Engines",
+      "type": "concept",
+      "context": "Software frameworks used for creating video games, providing tools for rendering, physics, scripting, and more."
+    }
+  ],
+  "key_details": [
+    {
+      "fact": "Humans are the hardest part of computer graphics because of our evolved ability to detect imperfections in faces.",
+      "topic": "Digital Humans"
+    },
+    {
+      "fact": "Subsurface scattering, the way light travels through skin, is crucial for realistic human appearance.",
+      "topic": "Digital Humans"
+    },
+    {
+      "fact": "The shareware model was critical to Epic's early success, allowing them to reach a larger audience.",
+      "topic": "Epic Games Origin"
+    },
+    {
+      "fact": "Unreal Engine was initially developed alongside the game Unreal and licensed to other developers.",
+      "topic": "Unreal Engine"
+    },
+    {
+      "fact": "Dynamic lighting and volumetric fog were significant technical challenges in early Unreal Engine development.",
+      "topic": "Unreal Engine"
+    },
+    {
+      "fact": "Lumen is a global illumination system that calculates the interaction of light with the entire scene, mimicking reality.",
+      "topic": "Unreal Engine 5"
+    },
+    {
+      "fact": "Nanite is a virtualized micropolygon geometry system that allows for highly detailed scenes with billions of polygons.",
+      "topic": "Unreal Engine 5"
+    },
+    {
+      "fact": "Verse is a new programming language designed for large-scale simulation programming and the metaverse.",
+      "topic": "Verse"
+    },
+    {
+      "fact": "The goal of Verse is to enable programmers to write code that can scale to huge environments and simulations with millions of users.",
+      "topic": "Verse"
+    }
+  ],
+  "topics": [
+    "Video Game Development",
+    "Computer Graphics",
+    "Game Engines",
+    "Unreal Engine",
+    "Fortnite",
+    "The Metaverse",
+    "Digital Humans",
+    "AI in Content Creation",
+    "Programming Languages",
+    "Entrepreneurship"
+  ],
+  "other_persons_mentioned": [
+    {
+      "name": "Steve Sweeney",
+      "context": "Tim Sweeney's brother who introduced him to programming."
+    },
+    {
+      "name": "Cliff Bleszinski",
+      "context": "A game designer who worked with Tim Sweeney on Jazz Jackrabbit and Unreal."
+    },
+    {
+      "name": "Arjan Brussee",
+      "context": "A demo coder from Holland who worked with Cliff Bleszinski on Jazz Jackrabbit."
+    },
+    {
+      "name": "Robert Allen",
+      "context": "A musician who worked on Jazz Jackrabbit."
+    },
+    {
+      "name": "John Carmack",
+      "context": "A pioneer in the game industry, known for his work on Wolfenstein and Doom."
+    },
+    {
+      "name": "Michael Abrash",
+      "context": "A computer graphics expert who wrote about 3D graphics techniques."
+    },
+    {
+      "name": "James Schmalz",
+      "context": "A game developer who made Epic Pinball and worked on Unreal."
+    },
+    {
+      "name": "Mark Rein",
+      "context": "Vice President of Epic Games."
+    },
+    {
+      "name": "Andrew Scheidecker",
+      "context": "Epic Luminary who wrote the core of the Unreal Engine Three render."
+    },
+    {
+      "name": "Brian Karis",
+      "context": "Brilliant engineer with Epic who built Nanite."
+    },
+    {
+      "name": "Daniel Wright",
+      "context": "Worked on the Lumen lighting system."
+    },
+    {
+      "name": "Vladimir Mostilovic",
+      "context": "Talented digital humans visionary."
+    },
+    {
+      "name": "Bruce Naylor",
+      "context": "Computer graphics researcher."
+    },
+    {
+      "name": "Niklaus Wirth",
+      "context": "Programming language designer who built Pascal."
+    },
+    {
+      "name": "Guido van Rossum",
+      "context": "Decided that Python should support indentation in a certain way."
+    }
+  ]
+}

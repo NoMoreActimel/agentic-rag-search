@@ -1,0 +1,120 @@
+{
+  "question": "Based on the update provided by the team led by the individual Matthew Johnson mentions in his discussion on neuroscience, how many humans have currently received the N1 implant?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Matthew Johnson N1 implant neuroscience",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8333,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 124,
+          "text": "And all of this, I\u2019m asking in the context of, there\u2019s a gigantic historic milestone that Neuralink just accomplished in January of this year. Putting a Neuralink implant in the first human being, Noland. And there\u2019s been a lot to talk about there about his experience because he\u2019s able to describe all the nuance and the beauty and the fascinating complexity of that experience of everything involved. But on the technical level, how does Neuralink work? DJ Seo: So there are three major components to the technology that we\u2019re building. One is the device, the thing that\u2019s actually recording these neural chatters. We call it N1 Implant or The Link. And we have a surgical robot that\u2019s actually doing an implantation of these tiny, tiny wires that we call threads that are smaller than human hair.",
+          "score": 0.46404597759246824,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 7.030541896820068
+        },
+        {
+          "chunk_id": 8337,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 128,
+          "text": "And then being able to use that to decode the intended cursor movement. So the implant itself processes it, figures out whether a spike happened or not with our spike detection algorithm, and then sends it off, packages it, sends it off through Bluetooth to an external device that then has the model to decode, okay, based on these spiking inputs, did Noland wish to go up, down, left, right, or click or right click or whatever. Lex Fridman: All of this is really fascinating, but let\u2019s stick on the N1 Implant itself. So the thing that\u2019s in the brain. So I\u2019m looking at a picture of it, there\u2019s an enclosure, there\u2019s a charging coil, so we didn\u2019t talk about the charging, which is fascinating. The battery, the power electronics, the antenna. Then there\u2019s the signal processing electronics. I wonder if there\u2019s more kinds of signal processing you can do? That\u2019s another question. And then there\u2019s the threads themselves with the enclosure on the bottom. So maybe to ask about the charging.",
+          "score": 0.44270773887634274,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 6.116045951843262
+        },
+        {
+          "chunk_id": 8545,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 336,
+          "text": "Lex Fridman: Unless, people without paralysis are also allowed to implant N1? Bliss Chapman: Right. Lex Fridman: Which, it is another way to interact with a digital device, and there\u2019s something to that, if it\u2019s a fundamentally different experience, more efficient experience? Even if it\u2019s not like some kind of full-on high bandwidth communication, if it\u2019s just the ability to move the mouse 10X faster, like the bits per second? If I can achieve a bits per second at 10X what I can do with a mouse, that\u2019s a really interesting possibility of what that can do? Especially as you get really good at it. With training. Bliss Chapman: It\u2019s definitely the case that you have a higher ceiling performance, because you don\u2019t have to buffer your intention through your arm, through your muscle. You get just by nature of having a brain implant at all, like 75 millisecond lead time on any action that you\u2019re actually trying to take.",
+          "score": 0.4381952857971191,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 5.92265510559082
+        },
+        {
+          "chunk_id": 8456,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 247,
+          "text": "And to be able to restore some of that functionality is a real gift. Matthew MacDougall: Yeah. We\u2019re just starting. We\u2019re going to do so much more.\n\n\n## Neuralink surgery\n\nLex Fridman: Well, can you take me through the full procedure for implanting, say, the N1 chip in Neuralink? Matthew MacDougall: Sure. Yeah. It\u2019s a really simple, straightforward procedure. The human part of the surgery that I do is dead simple. It\u2019s one of the most basic neurosurgery procedures imaginable. And I think there\u2019s evidence that some version of it has been done for thousands of years. That there are examples, I think, from ancient Egypt of healed or partially healed trepanations, and from Peru or ancient times in South America where these proto-surgeons would drill holes in people\u2019s skulls, presumably to let out the evil spirits, but maybe to drain blood clots. And there\u2019s evidence of bone healing around the edge, meaning the people at least survived some months after a procedure.",
+          "score": 0.43283372624715166,
+          "source": "bm25",
+          "quality_score": 0.88,
+          "original_score": 7.23573112487793
+        },
+        {
+          "chunk_id": 8498,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 289,
+          "text": "There\u2019s so much more to do. Lex Fridman: So on the complete other side of it, you have an RFID chip implanted in you? Matthew MacDougall: Yeah. Lex Fridman: So I hear. Matthew MacDougall: Nice. Lex Fridman: So this is-\n\nMatthew MacDougall: Little subtle thing. Lex Fridman: It\u2019s a passive device that you use for unlocking a safe with top secrets or what do you use it for? What\u2019s the story behind it? Matthew MacDougall: I\u2019m not the first one. There\u2019s this whole community of weirdo biohackers that have done this stuff, and I think one of the early use cases was storing private crypto wallet keys and whatever. I dabbled in that a bit and had some fun with it. Lex Fridman: You have some Bitcoin implanted in your body somewhere. You can\u2019t tell where. Yeah, yeah. Matthew MacDougall: Actually, yeah. It was the modern day equivalent of finding change in the sofa cushions after I put some orphaned crypto on there that I thought was worthless and forgot about it for a few years.",
+          "score": 0.40038863563537597,
+          "source": "bm25",
+          "quality_score": 0.88,
+          "original_score": 5.845227241516113
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.568674087524414
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Matthew Johnson Neuralink N1 implant number of humans",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 8497,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 288,
+          "text": "Looking forward to it. Lex Fridman: Give it to a teenager. Anytime I think I\u2019m good at something I\u2019ll always go to\u2026 I don\u2019t know. Even with the bits per second and playing a video game, you realize you give it to a teenager, you give a Neuralink to a teenager. Just a large number of them, the kind of stuff they get good at stuff, they\u2019re going to get hundreds of bits per second. Even just with the current technology. Matthew MacDougall: Probably. Probably. Lex Fridman: Because it\u2019s also addicting, the number go up aspect of it of improving and training. It is almost like a skill and plus there\u2019s the software on the other end that adapts to you, and especially if the adapting procedure algorithm becomes better and better and better. You\u2019re like learning together. Matthew MacDougall: Yeah, we\u2019re scratching the surface on that right now. There\u2019s so much more to do. Lex Fridman: So on the complete other side of it, you have an RFID chip implanted in you? Matthew MacDougall: Yeah.",
+          "score": 0.48476911544799806,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 7.918676376342773
+        },
+        {
+          "chunk_id": 8468,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 259,
+          "text": "And so we kind of broke new ground on how extensively we practiced for this surgery. Lex Fridman: So there was a historic moment, a big milestone for Neuralink, in part for humanity, with the first human getting a Neuralink implant in January of this year. Take me through the surgery on Noland. What did it feel like to be part of this? Matthew MacDougall: Yeah. Well, we are lucky to have just incredible partners at the Barrow Neurologic Institute. They are, I think, the premier neurosurgical hospital in the world. They made everything as easy as possible for the trial to get going and helped us immensely with their expertise on how to arrange the details. It was a much more high pressure surgery in some ways.",
+          "score": 0.46982844193776446,
+          "source": "bm25",
+          "quality_score": 1.0,
+          "original_score": 7.278361797332764
+        },
+        {
+          "chunk_id": 8209,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Elon Musk, DJ Seo, Matthew MacDougall, Bliss Chapman, and Noland Arbaugh about Neuralink and the future of humanity. Elon, DJ, Matthew and Bliss are of course part of the amazing Neuralink team, and Noland is the first human to have a Neuralink device implanted in his brain. I speak with each of them individually, so use timestamps to jump around, or as I recommend, go hardcore, and listen to the whole thing. This is the longest podcast I\u2019ve ever done. It\u2019s a fascinating, super technical, and wide-ranging conversation, and I loved every minute of it. And now, dear friends, here\u2019s Elon Musk, his fifth time on this, the Lex Fridman podcast,\n\n\n## Elon Musk\n\nElon Musk: Drinking coffee or water? Lex Fridman: Water. I\u2019m so over-caffeinated right now. Do you want some caffeine? Elon Musk: Sure. Lex Fridman: There\u2019s a Nitro drink. Elon Musk: This supposed to keep you up for like tomorrow afternoon, basically. Lex Fridman: Yeah.",
+          "score": 0.20209144433339438,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 7.37534761428833
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.247546195983887
+    }
+  ],
+  "final_answer": "Based on the provided information, Noland is mentioned as the first human to have received the Neuralink N1 implant in January of this year. The context consistently refers to him as \"the first human being\" or \"the first human\" to undergo this procedure. No other individuals are mentioned as having received the N1 implant.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 7.4092137813568115
+}

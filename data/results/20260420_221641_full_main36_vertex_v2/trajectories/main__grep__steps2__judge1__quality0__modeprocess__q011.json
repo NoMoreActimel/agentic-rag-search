@@ -1,0 +1,99 @@
+{
+  "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI strategy cognitive architectures embodiment",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 0,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 26,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 26,
+          "text": "So I mean it's... AKA neural networks. Yeah, yeah, yeah. Well, certain architectures for learning using neural networks. So yeah, the AGI conferences are sort of now the main concentration of people not obsessed with deep neural nets and deep reinforcement learning, but still interested in AGI, not the only ones. I mean, there's other little conferences and groupings interested in human level AI and cognitive architectures and so forth. But yeah, it's been a big shift. Like back then, you couldn't really... It'll be very, very edgy then to give a university department seminar that mentioned AGI or human level AI. It was more like you had to talk about something more short term and immediately practical than in the bar after the seminar, you could bullshit about AGI in the same breath as time travel or the simulation hypothesis or something. Whereas now, AGI is not only in the academic seminar room, like you have Vladimir Putin knows what AGI is.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 70,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 70,
+          "text": "We were looking at how do you make a biologically realistic simulation of seven different parts of the brain cooperating with each other, using like realistic nonlinear dynamical models of neurons, and how do you get that to simulate what's going on in the mind of a geo intelligence analyst while they're trying to find terrorists on a map, right? So if you want to do something like that, having neuromorphic hardware that really let you simulate like a realistic model of the neuron would be amazing. But that's sort of with my computational neuroscience hat on, right? With an AGI hat on, I'm just more interested in these hypergraph knowledge representation based architectures, which would benefit more from various types of graph processors because the main processing bottleneck is reading writing to RAM. It's reading writing to the graph in RAM. The main processing bottleneck for this kind of proto AGI architecture is not multiplying matrices.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 154,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 154,
+          "text": "And part of my thought was really kind of abstract connected to AGI ethics. And many people are concerned AGI is gonna enslave everybody or turn everybody into computronium to make extra hard drives for their cognitive engine or whatever. And emotionally I'm not driven to that sort of paranoia. I'm really just an optimist by nature, but intellectually I have to assign a non zero probability to those sorts of nasty outcomes. Cause if you're making something 10 times as smart as you, how can you know what it's gonna do? There's an irreducible uncertainty there just as my dog can't predict what I'm gonna do tomorrow. So it seemed to me that based on our current state of knowledge, the best way to bias the AGI as we create toward benevolence would be to infuse them with love and compassion the way that we do our own children. So you want to interact with AIs in the context of doing compassionate, loving and beneficial things.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 6316,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 295,
+          "text": "And when it proves to be beneficial, you know, there's fast followers in all sorts of places. Yeah, and you're saying that, I mean, you know, Quake and VR is a kind of embodiment, but just in a digital world. And if you're able to demonstrate, if you're able to do something productive in that kind of digital reality, then AGI doesn't need to have a body. Yeah, it's like one of the really practical technical questions that I kind of keep arguing with myself over. If you're doing a training and learning and you've got like, you can watch Sesame Street, you can play Master System games or something, is it enough to have just a video feed that is that video coming in? Or should it literally be on a virtual TV set in a virtual room, even if it's, you know, a simple room, just to have that sense of you're looking at a 2D projection on a screen versus having the screen beam directly into your retinas.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 4 (AGI ethics) is less relevant to the *strategy* for achieving AGI. Chunk 5 (John Carmack on embodiment) is off-topic as it's not Ben Goertzel's perspective.\n\nChunks 1, 2, and 3 provide good foundational information on Ben Goertzel's focus on cognitive architectures, biologically realistic simulations, and his role in the AGI community, contrasting with deep neural nets.\n\nThe agent needs to find information on Ben Goertzel's specific views on *embodiment* for AGI, and critically, retrieve information on Sebastian Raschka and Nathan Lambert's current strategies or perspectives on achieving AGI.\n\n**Next Search:**\n1. \"Ben Goertzel AGI embodiment strategy\"\n2. \"Sebastian Raschka AGI strategy\"\n3. \"Nathan Lambert AGI strategy\"",
+      "timestamp": 1.4751372337341309
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI embodiment strategy",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 147,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is partially relevant as it mentions Ben Goertzel and Sophia, an example of embodied AI, but it doesn't detail his AGI *strategy* or its evolution. It's more about the robot's origin.\n\nThe agent should search for \"Ben Goertzel AGI cognitive architectures strategy\" to get specific details on his approach. Additionally, begin searching for \"Sebastian Raschka AGI strategy\" and \"Nathan Lambert AGI strategy\" to cover the other key figures.",
+      "timestamp": 11.557437419891357
+    }
+  ],
+  "final_answer": "The provided context details Ben Goertzel's focus on cognitive architectures, hypergraph knowledge representation, and the development of benevolent AGI, often in conjunction with humanoid robots like Sophia, which implies an interest in embodiment and computational compassion. He is noted for being part of a community not primarily focused on deep neural nets and deep reinforcement learning for AGI. However, the provided text does not contain any information about Sebastian Raschka or Nathan Lambert, making it impossible to describe how the strategy for achieving AGI has evolved to their landscape.",
+  "total_chunks_retrieved": 6,
+  "unique_episodes_found": [
+    309,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 18.33770775794983
+}
