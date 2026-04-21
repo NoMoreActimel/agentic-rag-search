@@ -15,6 +15,7 @@ from config.settings import (
     GEMINI_CONCURRENT_LIMIT,
     GEMINI_EMBEDDING_DIMS,
     GEMINI_EMBEDDING_MODEL,
+    GEMINI_HTTP_TIMEOUT_MS,
     GEMINI_MAX_RETRIES,
     GEMINI_MODEL,
     GEMINI_RPM_LIMIT,
@@ -79,11 +80,15 @@ class GeminiClient:
                     "gcloud auth application-default login"
                 )
             location = GOOGLE_CLOUD_LOCATION or "us-central1"
+            self._http_options = types.HttpOptions(
+                api_version="v1",
+                timeout=GEMINI_HTTP_TIMEOUT_MS,
+            )
             self.client = genai.Client(
                 vertexai=True,
                 project=project,
                 location=location,
-                http_options=types.HttpOptions(api_version="v1"),
+                http_options=self._http_options,
             )
             self._auth_mode = "vertex"
         else:
@@ -93,7 +98,11 @@ class GeminiClient:
                     "No API key found. Set GEMINI_API_KEY in .env for Gemini Developer API, "
                     "or enable Vertex with GOOGLE_GENAI_USE_VERTEXAI=true and GOOGLE_CLOUD_PROJECT."
                 )
-            self.client = genai.Client(api_key=api_key)
+            self._http_options = types.HttpOptions(
+                api_version="v1",
+                timeout=GEMINI_HTTP_TIMEOUT_MS,
+            )
+            self.client = genai.Client(api_key=api_key, http_options=self._http_options)
             self._auth_mode = "api_key"
 
         self.model = model

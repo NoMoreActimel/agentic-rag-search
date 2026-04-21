@@ -49,6 +49,8 @@ The code still uses the **`google-genai`** package; only client initialization s
 
 **Note:** GCP trial credits apply to **Google Cloud** (e.g. Vertex), not to the separate **Google AI Studio** paid tier tied to `GEMINI_API_KEY`.
 
+**Long runs:** optional `.env` variable `GEMINI_HTTP_TIMEOUT_MS` (default **600000** = 10 minutes) sets the **HTTP timeout** on each Gemini request so a stuck call does not block the whole experiment.
+
 ## Pipeline
 
 ```bash

@@ -48,6 +48,8 @@ GEMINI_EMBEDDING_DIMS = 768
 GEMINI_RPM_LIMIT = 140
 GEMINI_CONCURRENT_LIMIT = 5
 GEMINI_MAX_RETRIES = 3
+# Per-request HTTP timeout for google-genai (milliseconds). Prevents hung calls from blocking the full grid.
+GEMINI_HTTP_TIMEOUT_MS = int(os.getenv("GEMINI_HTTP_TIMEOUT_MS", "600000"))  # default 10 minutes
 
 # ── Vertex AI (Gemini API on Vertex) vs Gemini Developer API (API key) ───────
 # Official env pattern: https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview
