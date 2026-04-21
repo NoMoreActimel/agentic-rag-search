@@ -14,6 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 from tqdm import tqdm
+from tqdm.asyncio import tqdm_asyncio
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -113,6 +114,27 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional output directory path. Defaults to data/results/<timestamp>_<tag>.",
     )
+    parser.add_argument(
+        "--qa-concurrency",
+        type=int,
+        default=5,
+        help="Max concurrent QA trajectories within a single condition. "
+             "Keep <= GEMINI_CONCURRENT_LIMIT unless you know the client handles it.",
+    )
+    parser.add_argument(
+        "--condition-concurrency",
+        type=int,
+        default=1,
+        help="Max concurrent conditions (within one process). "
+             "Usually leave at 1 and shard across processes for real parallelism.",
+    )
+    parser.add_argument(
+        "--shard",
+        type=str,
+        default=None,
+        help="Shard selector 'i/N' — run only conditions where index %% N == i. "
+             "Use to split the grid across multiple processes with separate quotas.",
+    )
     return parser.parse_args()
 
 
@@ -192,6 +214,23 @@ def build_oracle_conditions() -> list[ExperimentCondition]:
     ]
 
 
+def apply_shard(
+    conditions: list[ExperimentCondition],
+    shard: str | None,
+) -> list[ExperimentCondition]:
+    """Filter conditions by 'i/N' shard selector for multi-process runs."""
+    if not shard:
+        return conditions
+    try:
+        i_str, n_str = shard.split("/")
+        i, n = int(i_str), int(n_str)
+    except ValueError as e:
+        raise ValueError(f"Invalid --shard value '{shard}'; expected 'i/N'.") from e
+    if n <= 0 or not (0 <= i < n):
+        raise ValueError(f"Invalid shard indices in '{shard}'; need 0 <= i < N.")
+    return [c for idx, c in enumerate(conditions) if idx % n == i]
+
+
 def load_qa_subset(mode: str, num_questions: int, seed: int, limit: int | None) -> list[dict]:
     with open(QA_PAIRS_JSON) as f:
         qa_pairs = json.load(f)
@@ -211,15 +250,25 @@ def create_output_dir(args: argparse.Namespace) -> Path:
         out_dir = args.output_dir
     else:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        suffix = f"_{args.output_tag}" if args.output_tag else ""
+        suffix_parts = []
+        if args.output_tag:
+            suffix_parts.append(args.output_tag)
+        if args.shard:
+            # Make shard directories distinct so parallel processes don't collide.
+            suffix_parts.append(f"shard{args.shard.replace('/', '-of-')}")
+        suffix = ("_" + "_".join(suffix_parts)) if suffix_parts else ""
         out_dir = RESULTS_DIR / f"{timestamp}{suffix}"
     (out_dir / "trajectories").mkdir(parents=True, exist_ok=True)
     return out_dir
 
 
-def write_jsonl(path: Path, payload: dict) -> None:
-    with open(path, "a", encoding="utf-8") as f:
-        f.write(json.dumps(payload, ensure_ascii=True) + "\n")
+async def append_jsonl(path: Path, payload: dict, lock: asyncio.Lock) -> None:
+    """Append to JSONL with an async lock so concurrent writers don't interleave lines."""
+    line = json.dumps(payload, ensure_ascii=True) + "\n"
+    async with lock:
+        # File I/O is sync; under the lock it's fine and each write is tiny.
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(line)
 
 
 def aggregate_results(df: pd.DataFrame) -> pd.DataFrame:
@@ -253,34 +302,20 @@ def aggregate_results(df: pd.DataFrame) -> pd.DataFrame:
     return summary
 
 
-async def run_single_condition(
+async def _run_single_qa(
+    qa_idx: int,
+    qa: dict,
     condition: ExperimentCondition,
-    qa_items: list[dict],
     client: GeminiClient,
+    registry: ToolRegistry,
     output_dir: Path,
     top_k: int,
-) -> list[dict]:
-    print(f"\n=== Running {condition.condition_id} on {len(qa_items)} questions ===")
-    records: list[dict] = []
-
-    if condition.quality_reweight and not QUALITY_SCORES_PATH.exists():
-        print(
-            "WARNING: quality_reweight enabled but chunk quality score file not found. "
-            "Reweighting will effectively be disabled."
-        )
-
-    registry = ToolRegistry(
-        gemini_client=client,
-        quality_reweight=condition.quality_reweight,
-    )
-
-    progress_desc = f"{condition.retriever}|steps={condition.max_steps}|judge={condition.judge_mode}|quality={int(condition.quality_reweight)}"
-    for qa_idx, qa in tqdm(
-        list(enumerate(qa_items)),
-        total=len(qa_items),
-        desc=progress_desc,
-        leave=False,
-    ):
+    qa_count: int,
+    runs_jsonl_lock: asyncio.Lock,
+    sem: asyncio.Semaphore,
+) -> dict:
+    """Run one (condition, question) trajectory end-to-end. Safe to run concurrently."""
+    async with sem:
         question = qa["question"]
         answer = qa["answer"]
         reference_episodes = qa.get("reference_episodes", [])
@@ -303,6 +338,9 @@ async def run_single_condition(
             judge=judge,
         )
 
+        # Note: usage_snapshot/delta is best-effort under concurrency — GeminiClient
+        # stats are process-global, so deltas around concurrent trajectories will
+        # include other in-flight work. The aggregate totals at end-of-run are exact.
         before = usage_snapshot(client)
         trajectory = await agent.run(question)
         after = usage_snapshot(client)
@@ -341,7 +379,7 @@ async def run_single_condition(
             "predicted_answer": trajectory.final_answer,
             "reference_episodes": reference_episodes,
             "trajectory_path": str(trajectory_path),
-            "qa_count": len(qa_items),
+            "qa_count": qa_count,
             "trajectory_length": len(trajectory.steps),
             "elapsed_seconds": trajectory.elapsed_seconds,
             "total_chunks_retrieved": trajectory.total_chunks_retrieved,
@@ -349,10 +387,117 @@ async def run_single_condition(
             "cost_usd": delta["estimated_cost"],
             **metrics.to_dict(),
         }
-        records.append(record)
-        write_jsonl(output_dir / "runs.jsonl", record)
+        await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
+        return record
 
+
+async def run_single_condition(
+    condition: ExperimentCondition,
+    qa_items: list[dict],
+    client: GeminiClient,
+    output_dir: Path,
+    top_k: int,
+    qa_concurrency: int,
+    runs_jsonl_lock: asyncio.Lock,
+) -> list[dict]:
+    print(
+        f"\n=== Running {condition.condition_id} on {len(qa_items)} questions "
+        f"(qa_concurrency={qa_concurrency}) ==="
+    )
+
+    if condition.quality_reweight and not QUALITY_SCORES_PATH.exists():
+        print(
+            "WARNING: quality_reweight enabled but chunk quality score file not found. "
+            "Reweighting will effectively be disabled."
+        )
+
+    registry = ToolRegistry(
+        gemini_client=client,
+        quality_reweight=condition.quality_reweight,
+    )
+
+    sem = asyncio.Semaphore(qa_concurrency)
+    progress_desc = (
+        f"{condition.retriever}|steps={condition.max_steps}"
+        f"|judge={condition.judge_mode}|quality={int(condition.quality_reweight)}"
+    )
+
+    tasks = [
+        _run_single_qa(
+            qa_idx=qa_idx,
+            qa=qa,
+            condition=condition,
+            client=client,
+            registry=registry,
+            output_dir=output_dir,
+            top_k=top_k,
+            qa_count=len(qa_items),
+            runs_jsonl_lock=runs_jsonl_lock,
+            sem=sem,
+        )
+        for qa_idx, qa in enumerate(qa_items)
+    ]
+
+    # tqdm_asyncio.gather preserves submission order in the returned list.
+    records: list[dict] = await tqdm_asyncio.gather(
+        *tasks,
+        desc=progress_desc,
+        leave=False,
+    )
     return records
+
+
+async def run_condition_group(
+    conditions: list[ExperimentCondition],
+    qa_items: list[dict],
+    client: GeminiClient,
+    output_dir: Path,
+    top_k: int,
+    qa_concurrency: int,
+    condition_concurrency: int,
+    runs_jsonl_lock: asyncio.Lock,
+    group_desc: str,
+) -> list[dict]:
+    """Run a list of conditions, optionally with N conditions in flight at once."""
+    if condition_concurrency <= 1:
+        # Sequential path — preserves original behavior and progress bar semantics.
+        all_records: list[dict] = []
+        for condition in tqdm(conditions, desc=group_desc):
+            all_records.extend(
+                await run_single_condition(
+                    condition=condition,
+                    qa_items=qa_items,
+                    client=client,
+                    output_dir=output_dir,
+                    top_k=top_k,
+                    qa_concurrency=qa_concurrency,
+                    runs_jsonl_lock=runs_jsonl_lock,
+                )
+            )
+        return all_records
+
+    cond_sem = asyncio.Semaphore(condition_concurrency)
+
+    async def _run(condition: ExperimentCondition) -> list[dict]:
+        async with cond_sem:
+            return await run_single_condition(
+                condition=condition,
+                qa_items=qa_items,
+                client=client,
+                output_dir=output_dir,
+                top_k=top_k,
+                qa_concurrency=qa_concurrency,
+                runs_jsonl_lock=runs_jsonl_lock,
+            )
+
+    nested: list[list[dict]] = await tqdm_asyncio.gather(
+        *[_run(c) for c in conditions],
+        desc=group_desc,
+    )
+    flat: list[dict] = []
+    for chunk in nested:
+        flat.extend(chunk)
+    return flat
 
 
 async def main() -> None:
@@ -377,6 +522,8 @@ async def main() -> None:
 
     output_dir = create_output_dir(args)
     print(f"Writing outputs to: {output_dir}")
+    if args.shard:
+        print(f"Running shard {args.shard}")
 
     manifest = {
         "created_at": datetime.now().isoformat(),
@@ -385,10 +532,13 @@ async def main() -> None:
         "qa_file": str(QA_PAIRS_JSON),
         "quality_scores_path": str(QUALITY_SCORES_PATH),
     }
+    # vars(args) contains a Path; make it JSON-serializable.
+    manifest["args"] = {k: (str(v) if isinstance(v, Path) else v) for k, v in manifest["args"].items()}
     with open(output_dir / "manifest.json", "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=True)
 
     client = GeminiClient()
+    runs_jsonl_lock = asyncio.Lock()
     all_records: list[dict] = []
 
     if args.run_main_grid:
@@ -396,31 +546,53 @@ async def main() -> None:
             max_steps_values=max_steps_values,
             only_quality_off=args.only_quality_off,
         )
-        with open(output_dir / "conditions_main.json", "w", encoding="utf-8") as f:
-            json.dump([asdict(c) | {"condition_id": c.condition_id} for c in main_conditions], f, indent=2)
-        for condition in tqdm(main_conditions, desc="Main grid conditions"):
+        main_conditions = apply_shard(main_conditions, args.shard)
+        if not main_conditions:
+            print("Main grid has no conditions after shard filter; skipping.")
+        else:
+            with open(output_dir / "conditions_main.json", "w", encoding="utf-8") as f:
+                json.dump(
+                    [asdict(c) | {"condition_id": c.condition_id} for c in main_conditions],
+                    f,
+                    indent=2,
+                )
             all_records.extend(
-                await run_single_condition(
-                    condition=condition,
+                await run_condition_group(
+                    conditions=main_conditions,
                     qa_items=qa_items,
                     client=client,
                     output_dir=output_dir,
                     top_k=args.top_k,
+                    qa_concurrency=args.qa_concurrency,
+                    condition_concurrency=args.condition_concurrency,
+                    runs_jsonl_lock=runs_jsonl_lock,
+                    group_desc="Main grid conditions",
                 )
             )
 
     if args.run_oracle_mini_study:
         oracle_conditions = build_oracle_conditions()
-        with open(output_dir / "conditions_oracle_mini.json", "w", encoding="utf-8") as f:
-            json.dump([asdict(c) | {"condition_id": c.condition_id} for c in oracle_conditions], f, indent=2)
-        for condition in tqdm(oracle_conditions, desc="Oracle mini conditions"):
+        oracle_conditions = apply_shard(oracle_conditions, args.shard)
+        if not oracle_conditions:
+            print("Oracle mini study has no conditions after shard filter; skipping.")
+        else:
+            with open(output_dir / "conditions_oracle_mini.json", "w", encoding="utf-8") as f:
+                json.dump(
+                    [asdict(c) | {"condition_id": c.condition_id} for c in oracle_conditions],
+                    f,
+                    indent=2,
+                )
             all_records.extend(
-                await run_single_condition(
-                    condition=condition,
+                await run_condition_group(
+                    conditions=oracle_conditions,
                     qa_items=qa_items,
                     client=client,
                     output_dir=output_dir,
                     top_k=args.top_k,
+                    qa_concurrency=args.qa_concurrency,
+                    condition_concurrency=args.condition_concurrency,
+                    runs_jsonl_lock=runs_jsonl_lock,
+                    group_desc="Oracle mini conditions",
                 )
             )
 
