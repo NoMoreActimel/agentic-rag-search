@@ -18,7 +18,16 @@ from tqdm.asyncio import tqdm_asyncio
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from config.settings import QA_PAIRS_JSON, RESULTS_DIR, ensure_dirs
+from config.settings import (
+    GEMINI_CONCURRENT_LIMIT,
+    GEMINI_EVAL_CONCURRENCY,
+    GEMINI_QA_CONCURRENCY_DEFAULT,
+    GEMINI_RPM_BURST_CAPACITY,
+    GEMINI_RPM_LIMIT,
+    QA_PAIRS_JSON,
+    RESULTS_DIR,
+    ensure_dirs,
+)
 from src.agent.search_agent import SearchAgent
 from src.evaluation.metrics import evaluate_example_metrics
 from src.judge.judges import OracleJudge, ProcessJudge
@@ -117,9 +126,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--qa-concurrency",
         type=int,
-        default=5,
-        help="Max concurrent QA trajectories within a single condition. "
-             "Keep <= GEMINI_CONCURRENT_LIMIT unless you know the client handles it.",
+        default=GEMINI_QA_CONCURRENCY_DEFAULT,
+        help=(
+            "Max concurrent QA trajectories within a single condition (default from "
+            "GEMINI_QA_CONCURRENCY_DEFAULT). Higher overlaps local retrieval work; "
+            "very high values vs GEMINI_CONCURRENT_LIMIT increase API contention tails."
+        ),
+    )
+    parser.add_argument(
+        "--eval-concurrency",
+        type=int,
+        default=GEMINI_EVAL_CONCURRENCY,
+        help=(
+            "Max concurrent post-hoc LLM evaluator calls (global within this process). "
+            "Caps 'thundering herd' when many agents finish together (default from "
+            "GEMINI_EVAL_CONCURRENCY)."
+        ),
     )
     parser.add_argument(
         "--condition-concurrency",
@@ -313,6 +335,7 @@ async def _run_single_qa(
     qa_count: int,
     runs_jsonl_lock: asyncio.Lock,
     sem: asyncio.Semaphore,
+    eval_sem: asyncio.Semaphore,
 ) -> dict:
     """Run one (condition, question) trajectory end-to-end. Safe to run concurrently."""
     async with sem:
@@ -347,6 +370,16 @@ async def _run_single_qa(
         delta = usage_delta(before, after)
 
         trajectory_dict = trajectory.to_dict()
+
+    trajectory_path = (
+        output_dir
+        / "trajectories"
+        / f"{condition.condition_id}__{qa_id}.json"
+    )
+    with open(trajectory_path, "w", encoding="utf-8") as f:
+        json.dump(trajectory_dict, f, indent=2, ensure_ascii=True)
+
+    async with eval_sem:
         metrics = await evaluate_example_metrics(
             client=client,
             question=question,
@@ -356,39 +389,31 @@ async def _run_single_qa(
             trajectory=trajectory_dict,
         )
 
-        trajectory_path = (
-            output_dir
-            / "trajectories"
-            / f"{condition.condition_id}__{qa_id}.json"
-        )
-        with open(trajectory_path, "w", encoding="utf-8") as f:
-            json.dump(trajectory_dict, f, indent=2, ensure_ascii=True)
-
-        record = {
-            "suite": condition.suite,
-            "condition_id": condition.condition_id,
-            "retriever": condition.retriever,
-            "max_steps": condition.max_steps,
-            "process_feedback": condition.process_feedback,
-            "quality_reweight": condition.quality_reweight,
-            "judge_mode": condition.judge_mode,
-            "qa_id": qa_id,
-            "qa_type": qa_type,
-            "question": question,
-            "ground_truth_answer": answer,
-            "predicted_answer": trajectory.final_answer,
-            "reference_episodes": reference_episodes,
-            "trajectory_path": str(trajectory_path),
-            "qa_count": qa_count,
-            "trajectory_length": len(trajectory.steps),
-            "elapsed_seconds": trajectory.elapsed_seconds,
-            "total_chunks_retrieved": trajectory.total_chunks_retrieved,
-            "usage_delta": delta,
-            "cost_usd": delta["estimated_cost"],
-            **metrics.to_dict(),
-        }
-        await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
-        return record
+    record = {
+        "suite": condition.suite,
+        "condition_id": condition.condition_id,
+        "retriever": condition.retriever,
+        "max_steps": condition.max_steps,
+        "process_feedback": condition.process_feedback,
+        "quality_reweight": condition.quality_reweight,
+        "judge_mode": condition.judge_mode,
+        "qa_id": qa_id,
+        "qa_type": qa_type,
+        "question": question,
+        "ground_truth_answer": answer,
+        "predicted_answer": trajectory.final_answer,
+        "reference_episodes": reference_episodes,
+        "trajectory_path": str(trajectory_path),
+        "qa_count": qa_count,
+        "trajectory_length": len(trajectory.steps),
+        "elapsed_seconds": trajectory.elapsed_seconds,
+        "total_chunks_retrieved": trajectory.total_chunks_retrieved,
+        "usage_delta": delta,
+        "cost_usd": delta["estimated_cost"],
+        **metrics.to_dict(),
+    }
+    await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
+    return record
 
 
 async def run_single_condition(
@@ -399,6 +424,7 @@ async def run_single_condition(
     top_k: int,
     qa_concurrency: int,
     runs_jsonl_lock: asyncio.Lock,
+    eval_sem: asyncio.Semaphore,
 ) -> list[dict]:
     print(
         f"\n=== Running {condition.condition_id} on {len(qa_items)} questions "
@@ -434,6 +460,7 @@ async def run_single_condition(
             qa_count=len(qa_items),
             runs_jsonl_lock=runs_jsonl_lock,
             sem=sem,
+            eval_sem=eval_sem,
         )
         for qa_idx, qa in enumerate(qa_items)
     ]
@@ -456,6 +483,7 @@ async def run_condition_group(
     qa_concurrency: int,
     condition_concurrency: int,
     runs_jsonl_lock: asyncio.Lock,
+    eval_sem: asyncio.Semaphore,
     group_desc: str,
 ) -> list[dict]:
     """Run a list of conditions, optionally with N conditions in flight at once."""
@@ -472,6 +500,7 @@ async def run_condition_group(
                     top_k=top_k,
                     qa_concurrency=qa_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
+                    eval_sem=eval_sem,
                 )
             )
         return all_records
@@ -488,6 +517,7 @@ async def run_condition_group(
                 top_k=top_k,
                 qa_concurrency=qa_concurrency,
                 runs_jsonl_lock=runs_jsonl_lock,
+                eval_sem=eval_sem,
             )
 
     nested: list[list[dict]] = await tqdm_asyncio.gather(
@@ -520,6 +550,24 @@ async def main() -> None:
     if len(max_steps_values) != 3:
         print("WARNING: expected 3 max_steps values for strict 36 grid.")
 
+    if args.qa_concurrency > GEMINI_CONCURRENT_LIMIT * 4:
+        print(
+            f"WARNING: --qa-concurrency={args.qa_concurrency} is high vs "
+            f"GEMINI_CONCURRENT_LIMIT={GEMINI_CONCURRENT_LIMIT}; expect longer tail latency / retries."
+        )
+    if args.condition_concurrency > 1 and args.eval_concurrency > GEMINI_CONCURRENT_LIMIT * 2:
+        print(
+            "WARNING: --condition-concurrency > 1 with high --eval-concurrency can spike API load; "
+            "consider lowering eval concurrency or sharding across processes."
+        )
+
+    print(
+        f"Tuning: RPM={GEMINI_RPM_LIMIT} (burst cap={GEMINI_RPM_BURST_CAPACITY}), "
+        f"concurrent_sdk={GEMINI_CONCURRENT_LIMIT}, "
+        f"qa_concurrency={args.qa_concurrency}, eval_concurrency={args.eval_concurrency}, "
+        f"condition_concurrency={args.condition_concurrency}"
+    )
+
     output_dir = create_output_dir(args)
     print(f"Writing outputs to: {output_dir}")
     if args.shard:
@@ -539,6 +587,7 @@ async def main() -> None:
 
     client = GeminiClient()
     runs_jsonl_lock = asyncio.Lock()
+    eval_sem = asyncio.Semaphore(args.eval_concurrency)
     all_records: list[dict] = []
 
     if args.run_main_grid:
@@ -566,6 +615,7 @@ async def main() -> None:
                     qa_concurrency=args.qa_concurrency,
                     condition_concurrency=args.condition_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
+                    eval_sem=eval_sem,
                     group_desc="Main grid conditions",
                 )
             )
@@ -592,6 +642,7 @@ async def main() -> None:
                     qa_concurrency=args.qa_concurrency,
                     condition_concurrency=args.condition_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
+                    eval_sem=eval_sem,
                     group_desc="Oracle mini conditions",
                 )
             )

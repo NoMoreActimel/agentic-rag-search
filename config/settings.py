@@ -12,6 +12,21 @@ def _env_truthy(value: str | None) -> bool:
     return value.strip().lower() in ("1", "true", "yes", "on")
 
 
+def _env_int(name: str, default: int, lo: int = 1, hi: int | None = None) -> int:
+    """Parse a positive integer from the environment with bounds."""
+    raw = os.getenv(name)
+    if raw is None or not str(raw).strip():
+        return default
+    try:
+        v = int(str(raw).strip(), 10)
+    except ValueError:
+        return default
+    v = max(lo, v)
+    if hi is not None:
+        v = min(hi, v)
+    return v
+
+
 # ── Project root ──────────────────────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
@@ -45,9 +60,17 @@ SCRAPE_MAX_RETRIES = 3
 GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_EMBEDDING_MODEL = "gemini-embedding-001"
 GEMINI_EMBEDDING_DIMS = 768
-GEMINI_RPM_LIMIT = 140
-GEMINI_CONCURRENT_LIMIT = 5
-GEMINI_MAX_RETRIES = 3
+# Throughput / stability (override via .env — see .env.example)
+GEMINI_RPM_LIMIT = _env_int("GEMINI_RPM_LIMIT", 140, 1, 100_000)
+GEMINI_CONCURRENT_LIMIT = _env_int("GEMINI_CONCURRENT_LIMIT", 6, 1, 128)
+GEMINI_MAX_RETRIES = _env_int("GEMINI_MAX_RETRIES", 4, 1, 12)
+# Token-bucket burst (requests) for average RPM; larger = burstier starts, still capped by sustained RPM.
+_default_rpm_burst = max(8, min(28, GEMINI_CONCURRENT_LIMIT * 2))
+GEMINI_RPM_BURST_CAPACITY = _env_int("GEMINI_RPM_BURST_CAPACITY", _default_rpm_burst, 1, 500)
+# scripts/05_run_experiments.py defaults when --qa-concurrency / --eval-concurrency omitted
+GEMINI_QA_CONCURRENCY_DEFAULT = _env_int("GEMINI_QA_CONCURRENCY_DEFAULT", 4, 1, 64)
+GEMINI_EVAL_CONCURRENCY = _env_int("GEMINI_EVAL_CONCURRENCY", 3, 1, 32)
+GEMINI_EMBED_MAX_RETRIES = _env_int("GEMINI_EMBED_MAX_RETRIES", 5, 1, 12)
 # Per-request HTTP timeout for google-genai (milliseconds). Prevents hung calls from blocking the full grid.
 GEMINI_HTTP_TIMEOUT_MS = int(os.getenv("GEMINI_HTTP_TIMEOUT_MS", "600000"))  # default 10 minutes
 
