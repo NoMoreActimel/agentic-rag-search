@@ -13,11 +13,13 @@ from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_ex
 
 from config.settings import (
     GEMINI_CONCURRENT_LIMIT,
+    GEMINI_EMBED_MAX_RETRIES,
     GEMINI_EMBEDDING_DIMS,
     GEMINI_EMBEDDING_MODEL,
     GEMINI_HTTP_TIMEOUT_MS,
     GEMINI_MAX_RETRIES,
     GEMINI_MODEL,
+    GEMINI_RPM_BURST_CAPACITY,
     GEMINI_RPM_LIMIT,
     GEMINI_USE_VERTEX_AI,
     GOOGLE_CLOUD_LOCATION,
@@ -117,22 +119,35 @@ class GeminiClient:
         self.embedding_model = GEMINI_EMBEDDING_MODEL
         self.stats = UsageStats()
 
-        # Rate limiting: token bucket for RPM
+        # Concurrency: max in-flight SDK calls. RPM: token bucket (burst + sustained average).
+        # Constructor params override the module-level defaults so chunk_quality.py
+        # can use the higher Tier-1 limits without polluting main-grid clients.
         effective_concurrent = concurrent_limit or GEMINI_CONCURRENT_LIMIT
         effective_rpm = rpm_limit or GEMINI_RPM_LIMIT
         self._semaphore = asyncio.Semaphore(effective_concurrent)
-        self._rpm_interval = 60.0 / effective_rpm
-        self._last_request_time = 0.0
+        self._rpm_capacity = float(GEMINI_RPM_BURST_CAPACITY)
+        self._rpm_tokens = self._rpm_capacity
+        self._rpm_refill_per_sec = effective_rpm / 60.0
+        self._rpm_last_refill = time.monotonic()
         self._rate_lock = asyncio.Lock()
 
-    async def _wait_for_rate_limit(self):
-        """Enforce rate limiting between requests."""
-        async with self._rate_lock:
-            now = time.time()
-            elapsed = now - self._last_request_time
-            if elapsed < self._rpm_interval:
-                await asyncio.sleep(self._rpm_interval - elapsed)
-            self._last_request_time = time.time()
+    async def _acquire_rpm_slot(self) -> None:
+        """Token-bucket limiter: allows short bursts while averaging GEMINI_RPM_LIMIT RPM."""
+        while True:
+            async with self._rate_lock:
+                now = time.monotonic()
+                dt = now - self._rpm_last_refill
+                self._rpm_last_refill = now
+                self._rpm_tokens = min(
+                    self._rpm_capacity,
+                    self._rpm_tokens + dt * self._rpm_refill_per_sec,
+                )
+                if self._rpm_tokens >= 1.0:
+                    self._rpm_tokens -= 1.0
+                    return
+                deficit = 1.0 - self._rpm_tokens
+                wait = deficit / self._rpm_refill_per_sec if self._rpm_refill_per_sec > 0 else 0.25
+            await asyncio.sleep(wait)
 
     @retry(
         stop=stop_after_attempt(GEMINI_MAX_RETRIES),
@@ -148,7 +163,7 @@ class GeminiClient:
     ) -> str:
         """Generate text with Gemini, with rate limiting and retry."""
         async with self._semaphore:
-            await self._wait_for_rate_limit()
+            await self._acquire_rpm_slot()
 
             try:
                 config = types.GenerateContentConfig(
@@ -213,15 +228,15 @@ class GeminiClient:
         return await asyncio.gather(*tasks, return_exceptions=True)
 
     @retry(
-        stop=stop_after_attempt(6),
-        wait=wait_exponential(multiplier=2, min=2, max=60),
-        retry=retry_if_exception_type((ClientError, Exception)),
+        stop=stop_after_attempt(GEMINI_EMBED_MAX_RETRIES),
+        wait=wait_exponential(multiplier=2, min=2, max=45),
+        retry=retry_if_exception_type((ClientError, OSError, TimeoutError)),
         reraise=True,
     )
     async def embed(self, texts: list[str]) -> list[list[float]]:
         """Generate embeddings for a batch of texts."""
         async with self._semaphore:
-            await self._wait_for_rate_limit()
+            await self._acquire_rpm_slot()
 
             try:
                 response = await asyncio.to_thread(
