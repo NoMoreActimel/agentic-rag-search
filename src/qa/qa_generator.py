@@ -30,6 +30,7 @@ class QAPair:
     qa_type: str
     reference_episodes: list[int]
     reasoning_steps: list[str]
+    era: str = ""  # "old" (<=2025-01 cutoff) or "new" (post-cutoff); "" if unspecified
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -149,14 +150,29 @@ def load_all_metadata(metadata_dir=None) -> list[dict]:
 async def generate_all_qa_pairs(
     metadata: list[dict] | None = None,
     output_path=None,
+    count_per_type: int | None = None,
+    era: str = "",
+    client: GeminiClient | None = None,
+    save: bool = True,
 ) -> list[QAPair]:
-    """Orchestrate Q&A generation across all 4 types."""
+    """Orchestrate Q&A generation across all 4 types.
+
+    Args:
+        metadata: Episode metadata list (filters the candidate pool). Loaded from
+            METADATA_DIR if None.
+        output_path: Where to write the JSON. Defaults to QA_PAIRS_JSON.
+        count_per_type: Number of pairs per QA type. Defaults to QA_PAIRS_PER_TYPE.
+        era: Optional cohort tag stamped on every generated pair (e.g. "old" / "new").
+        client: Shared GeminiClient; created if None.
+        save: If False, skip writing output_path (caller aggregates and saves).
+    """
     from src.qa.type1_multihop import MultiHopGenerator
     from src.qa.type2_comparative import ComparativeGenerator
     from src.qa.type3_temporal import TemporalGenerator
     from src.qa.type4_aggregation import AggregationGenerator
 
     output_path = output_path or QA_PAIRS_JSON
+    count_per_type = count_per_type or QA_PAIRS_PER_TYPE
 
     if metadata is None:
         metadata = load_all_metadata()
@@ -165,7 +181,8 @@ async def generate_all_qa_pairs(
         print("No metadata found. Run 02_extract_metadata.py first.")
         return []
 
-    client = GeminiClient()
+    if client is None:
+        client = GeminiClient()
     generators = [
         MultiHopGenerator(client, metadata),
         ComparativeGenerator(client, metadata),
@@ -175,17 +192,18 @@ async def generate_all_qa_pairs(
 
     all_pairs: list[QAPair] = []
     for gen in generators:
-        print(f"\nGenerating {gen.qa_type} questions...")
+        print(f"\nGenerating {gen.qa_type} questions (era={era or 'unset'}) ...")
         print(f"  Stage 1: Finding candidates...")
-        pairs = await gen.generate(count=QA_PAIRS_PER_TYPE)
+        pairs = await gen.generate(count=count_per_type)
+        for p in pairs:
+            p.era = era
         all_pairs.extend(pairs)
         print(f"  Generated {len(pairs)} {gen.qa_type} pairs")
 
-    # Save
-    output = [p.to_dict() for p in all_pairs]
-    with open(output_path, "w") as f:
-        json.dump(output, f, indent=2)
-    print(f"\nSaved {len(all_pairs)} Q&A pairs to {output_path}")
-
-    client.print_stats()
+    if save:
+        output = [p.to_dict() for p in all_pairs]
+        with open(output_path, "w") as f:
+            json.dump(output, f, indent=2)
+        print(f"\nSaved {len(all_pairs)} Q&A pairs to {output_path}")
+        client.print_stats()
     return all_pairs

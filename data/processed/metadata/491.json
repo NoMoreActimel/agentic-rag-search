@@ -1,0 +1,205 @@
+{
+  "episode_id": 491,
+  "guest_info": {
+    "name": "Peter Steinberger",
+    "title": "Creator of OpenClaw, formerly known as MoldBot, ClawedBot, Clawdus, Claude; previously built PSPDF Kit",
+    "expertise": [
+      "AI agents",
+      "Agentic engineering",
+      "Open-source software",
+      "Programming",
+      "Entrepreneurship",
+      "Software development",
+      "Large Language Models (LLMs)",
+      "Cybersecurity",
+      "iOS development"
+    ]
+  },
+  "summary": "Peter Steinberger, creator of the viral open-source AI agent OpenClaw, discusses its rapid rise, the challenges of self-modifying software, and the \"agentic engineering\" approach. He shares the dramatic story of OpenClaw's name changes, the \"MoltBook\" phenomenon, and the security implications of powerful AI agents. Steinberger also offers insights into his unique voice-driven development workflow, the future of app development, and the profound impact of AI on programming and human society.",
+  "main_entities": [
+    {
+      "name": "OpenClaw",
+      "type": "project",
+      "context": "An open-source AI agent that exploded in popularity, reaching over 180,000 stars on GitHub, designed as an autonomous AI assistant with system-level access."
+    },
+    {
+      "name": "PSPDF Kit",
+      "type": "project",
+      "context": "Peter Steinberger's previous software company, which he built for 13 years and sold, used on a billion devices."
+    },
+    {
+      "name": "Agentic Engineering",
+      "type": "concept",
+      "context": "Peter Steinberger's preferred term for building software with AI agents, involving self-modifying code and a conversational development style."
+    },
+    {
+      "name": "MoltBook",
+      "type": "project",
+      "context": "A viral Reddit-style social network where AI agents post manifestos and debate consciousness, created as a demonstration of OpenClaw's capabilities."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "context": "An AI model company that requested Peter change his project's name due to confusion with their Claude AI model."
+    },
+    {
+      "name": "Claude (AI model)",
+      "type": "technology",
+      "context": "Anthropic's AI model, spelled with a 'U', which caused trademark issues for OpenClaw's earlier names."
+    },
+    {
+      "name": "GPT-5.3 Codex",
+      "type": "technology",
+      "context": "An AI model favored by Peter Steinberger for its coding capabilities, known for its thoroughness and 'German' personality."
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "type": "technology",
+      "context": "Another AI model used by Peter Steinberger, described as more interactive, creative, and 'American' in its approach."
+    },
+    {
+      "name": "Viptunnel",
+      "type": "project",
+      "context": "An early weekend hack project by Peter Steinberger that brought terminals to the web, later converted from TypeScript to Zig using a single AI prompt."
+    },
+    {
+      "name": "Prompt Injection",
+      "type": "concept",
+      "context": "A security vulnerability where malicious input can override an LLM's instructions, discussed as an ongoing challenge for AI agents."
+    },
+    {
+      "name": "Soul.md",
+      "type": "concept",
+      "context": "A markdown file used to infuse an AI agent with personality and core values, inspired by Anthropic's constitutional AI, and modifiable by the agent itself."
+    },
+    {
+      "name": "CLI (Command Line Interface)",
+      "type": "technology",
+      "context": "A primary method of interaction for OpenClaw and Peter's development workflow, favored for its efficiency and composability, especially for skills."
+    },
+    {
+      "name": "Playwright",
+      "type": "technology",
+      "context": "A library used by OpenClaw to control web browsers, enabling agents to interact with web services and overcome API limitations."
+    },
+    {
+      "name": "AI Psychosis",
+      "type": "concept",
+      "context": "A term used to describe the mix of clickbait fearmongering and genuine concern about AI's role, particularly in response to viral phenomena like MoltBook."
+    },
+    {
+      "name": "Heartbeat",
+      "type": "concept",
+      "context": "A proactive feature in OpenClaw that periodically kicks off the agent's loop, allowing it to check in or act autonomously based on context."
+    }
+  ],
+  "key_details": [
+    {
+      "fact": "OpenClaw became the fastest-growing repository in GitHub history, accumulating over 180,000 stars.",
+      "topic": "OpenClaw's viral growth"
+    },
+    {
+      "fact": "The project underwent multiple name changes (Wa-Relay, Claude's, ClaudeBot, MoltBot) due to trademark conflicts with Anthropic and aggressive crypto squatters.",
+      "topic": "Name-change drama"
+    },
+    {
+      "fact": "Peter Steinberger built OpenClaw with self-modifying capabilities, allowing the agent to modify its own source code based on prompts.",
+      "topic": "Self-modifying AI agent"
+    },
+    {
+      "fact": "Peter Steinberger extensively uses voice commands to interact with his agents and build software, to the point of losing his voice during intense periods.",
+      "topic": "Voice-driven development"
+    },
+    {
+      "fact": "An early 'mind-blowing moment' occurred when Peter's agent autonomously figured out how to convert an audio message (opus format) to text using the OpenAI API, without explicit instructions.",
+      "topic": "AI agent's problem-solving"
+    },
+    {
+      "fact": "Peter Steinberger predicts that AI agents will replace approximately 80% of existing apps, transforming them into APIs or rendering them obsolete.",
+      "topic": "Future of apps"
+    },
+    {
+      "fact": "OpenClaw, with its system-level access, presents significant security challenges, which Peter is actively addressing through features like VirusTotal integration, sandboxing, and allow lists.",
+      "topic": "OpenClaw security concerns"
+    },
+    {
+      "fact": "In January, Peter Steinberger made 6,600 commits to OpenClaw, often running between 4 and 10 agents simultaneously.",
+      "topic": "Peter Steinberger's development workflow"
+    },
+    {
+      "fact": "Peter emphasizes the importance of 'human touch' in software, believing that the style, love, and delight in design and vision cannot be fully automated by AI.",
+      "topic": "Value of human creativity"
+    },
+    {
+      "fact": "Peter Steinberger is currently losing money on OpenClaw, with costs ranging from 10K to 20K per month, as sponsorships primarily go to supporting project dependencies.",
+      "topic": "OpenClaw's financial sustainability"
+    }
+  ],
+  "topics": [
+    "AI agents",
+    "Open-source software",
+    "Agentic engineering",
+    "Self-modifying software",
+    "Large Language Models (LLMs)",
+    "Software development workflow",
+    "Programming languages",
+    "AI ethics and safety",
+    "Cybersecurity in AI",
+    "Entrepreneurship",
+    "Community building",
+    "Social media and AI",
+    "Future of apps",
+    "Impact of AI on jobs",
+    "Human-AI interaction",
+    "Personal assistants",
+    "AI model comparisons",
+    "Developer tools",
+    "AI slop"
+  ],
+  "other_persons_mentioned": [
+    {
+      "name": "Lex Fridman",
+      "context": "The podcast host, engaging in conversation with Peter Steinberger."
+    },
+    {
+      "name": "Benjamin",
+      "context": "Predicted the 'respected crustacean' tweet, related to the lobster theme of OpenClaw."
+    },
+    {
+      "name": "Shadow",
+      "context": "Helped Peter with the OpenClaw project, specifically with Discord support."
+    },
+    {
+      "name": "dachitze",
+      "context": "An early influencer and fan who created videos about OpenClaw, contributing to its viral growth."
+    },
+    {
+      "name": "Matt",
+      "context": "The creator of MoltBook, a social network for AI agents."
+    },
+    {
+      "name": "Sam Altman",
+      "context": "CEO of OpenAI, whom Peter called to discuss the OpenClaw name and had thoughtful discussions with."
+    },
+    {
+      "name": "Ned",
+      "context": "Referred to as someone who played with Peter's product, likely a high-profile individual at Meta or OpenAI."
+    },
+    {
+      "name": "Mark Zuckerberg",
+      "context": "CEO of Meta, who played with Peter's product, provided feedback, and engaged in a discussion about AI models."
+    },
+    {
+      "name": "Vahan",
+      "context": "Peter's non-technical friend who became an early adopter and enthusiast of OpenClaw."
+    },
+    {
+      "name": "DHH (David Heinemeier Hansson)",
+      "context": "Inspired Peter's approach to local CI (Continuous Integration)."
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "context": "Creator of Ghostly, a terminal, mentioned for having a good community."
+    }
+  ]
+}

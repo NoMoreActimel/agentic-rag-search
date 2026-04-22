@@ -1,93 +1,369 @@
 [
   {
-    "question": "Ben Goertzel mentions the work of Stephen Wolfram in the context of computational complexity and AGI; according to Wolfram's own explanation of his Physics Project, how is the concept of 'time' fundamentally defined?",
-    "answer": "In the Wolfram Physics Project, time is defined as the progression of computation, representing the repeated application of rules to the underlying structure of space. This differs from space itself, which Wolfram describes as being composed of discrete 'atoms of space' connected in a hypergraph.",
+    "question": "Considering Ben Goertzel's discussion of Artificial General Intelligence and his acknowledgement of Stephen Wolfram's work, what concept from the Wolfram Physics Project suggests how the progression of time is understood?",
+    "answer": "Within the Wolfram Physics Project, time is understood as the progression of computation. This involves the repeated application of rules to the structure of space, a key aspect of the project discussed by Stephen Wolfram.",
     "qa_type": "multihop",
     "reference_episodes": [
       103,
       124
     ],
     "reasoning_steps": [
-      "Step 1: Identify that Ben Goertzel mentions Stephen Wolfram as a peer or relevant figure in the field of computational systems and AGI.",
-      "Step 2: Locate the discussion by Stephen Wolfram regarding his 'Wolfram Physics Project' and the fundamental nature of the universe.",
-      "Step 3: Extract the specific definition of 'time' from Wolfram's explanation, which characterizes it as the progression of computation through the application of rules."
-    ]
+      "Step 1: Identify that Ben Goertzel, in his discussion of AGI, acknowledges Stephen Wolfram's work.",
+      "Step 2: Locate information related to Stephen Wolfram's 'Wolfram Physics Project'.",
+      "Step 3: Find the specific detail within Stephen Wolfram's discussion that explains how 'time' is understood in the context of his project."
+    ],
+    "era": "old"
   },
   {
-    "question": "According to the guest who discusses the 'Rulliad' and 'Rule 30', what is the estimated elementary length of the universe, and what is the primary programming language used in the OpenCog project discussed by Ben Goertzel?",
-    "answer": "The estimated elementary length of the universe is 10 to the minus 100 meters, and the primary programming language for OpenCog is C++. Stephen Wolfram provides this length estimate in his discussion of the Wolfram Physics Project, while Ben Goertzel specifies C++ as the core language for his cognitive architecture.",
+    "question": "Ben Goertzel, during his discussion on Artificial General Intelligence and the philosophical challenges of creating human-level intelligence, mentions Stephen Wolfram. According to Stephen Wolfram's own discussion about complexity and the fundamental nature of reality, what is the estimated elementary length in the Wolfram Physics Project?",
+    "answer": "The estimated elementary length in the Wolfram Physics Project, as discussed by Stephen Wolfram, is around 10 to the minus 100 meters. This measurement is a key component of his model for a unified theory of physics and the nature of the universe.",
     "qa_type": "multihop",
     "reference_episodes": [
       103,
       234
     ],
     "reasoning_steps": [
-      "Step 1: Identify the guest who discusses the 'Rulliad' and 'Rule 30' as Stephen Wolfram.",
-      "Step 2: Locate the specific value for the elementary length (10^-100 meters) within Stephen Wolfram's discussion of the Wolfram Physics Project.",
-      "Step 3: Identify the primary programming language for the OpenCog project (C++) mentioned in Ben Goertzel's discussion of AGI and cognitive architectures."
-    ]
+      "Step 1: Identify that Ben Goertzel's discussion of Artificial General Intelligence includes a mention of Stephen Wolfram.",
+      "Step 2: Locate Stephen Wolfram's discussion about the Wolfram Physics Project and the fundamental nature of reality.",
+      "Step 3: Extract the specific detail regarding the estimated elementary length from Stephen Wolfram's explanation of the Wolfram Physics Project."
+    ],
+    "era": "old"
   },
   {
-    "question": "Ben Goertzel discusses the future of AGI and decentralized systems. One of the industry leaders he mentions is the founder of a neurotechnology company that recently conducted human trials. According to the team from that company, what bit rate did their first human participant, Noland Arbaugh, achieve with his implant?",
-    "answer": "Noland Arbaugh achieved a bit rate of 8.5 bits per second with his Neuralink implant. This performance metric was highlighted by Elon Musk and his team as exceeding the previous world record for brain-computer interface communication.",
+    "question": "Ben Goertzel, a proponent of Artificial General Intelligence, mentions Elon Musk during his discussion. Considering Musk's work, what is Neuralink's long-term aspiration regarding human-AI interaction, as detailed in the episode featuring him and his team?",
+    "answer": "Neuralink's long-term aspiration is to improve AI-human symbiosis by significantly increasing the bandwidth of communication between humans and AI. This goal was discussed by Elon Musk and the Neuralink team in their episode.",
     "qa_type": "multihop",
     "reference_episodes": [
       103,
       438
     ],
     "reasoning_steps": [
-      "Step 1: Identify Elon Musk as the industry leader mentioned by Ben Goertzel in the context of AI and future technology.",
-      "Step 2: Locate the discussion featuring Elon Musk and the Neuralink team regarding their recent human clinical trials and the participant Noland Arbaugh.",
-      "Step 3: Extract the specific bit rate (8.5 bits per second) achieved by Noland Arbaugh as detailed by the Neuralink team."
-    ]
+      "Step 1: Identify the established connection that Ben Goertzel mentions Elon Musk.",
+      "Step 2: Locate the episode where Elon Musk is a guest and his projects, specifically Neuralink, are discussed.",
+      "Step 3: Retrieve Neuralink's stated long-term aspiration regarding human-AI interaction from the details of Elon Musk's episode."
+    ],
+    "era": "old"
   },
   {
-    "question": "Ryan Hall mentions a tech entrepreneur in his discussion on the mindset of warriors; in a separate conversation with that entrepreneur about brain-computer interfaces, what was the specific bit rate achieved by the first human participant, Noland Arbaugh?",
-    "answer": "Noland Arbaugh achieved a bit rate of 8.5 bits per second using the Neuralink implant. This performance exceeded previous world records and was highlighted during Elon Musk's discussion on the progress of human-AI symbiosis.",
+    "question": "Considering Ryan Hall's philosophical discussion on the journey towards wisdom and the potential of human capability, what specific record-breaking achievement did Elon Musk and the Neuralink team highlight regarding the N1 Implant's performance in human participants?",
+    "answer": "Elon Musk and the Neuralink team highlighted that Noland Arbaugh achieved a bit rate of 8.5 bits per second with the Neuralink implant. This performance exceeded the previous world record for brain-computer interface speed, demonstrating a significant advancement in human-AI symbiosis.",
     "qa_type": "multihop",
     "reference_episodes": [
       125,
       438
     ],
     "reasoning_steps": [
-      "Step 1: Identify the tech entrepreneur mentioned by Ryan Hall as Elon Musk.",
-      "Step 2: Locate the conversation featuring Elon Musk and the Neuralink team discussing the N1 implant and human trials.",
-      "Step 3: Retrieve the specific bit rate (8.5 bits per second) achieved by the first human participant, Noland Arbaugh, from that discussion."
-    ]
+      "Step 1: Identify the context of Ryan Hall's discussion, which includes philosophical insights on wisdom and human potential, and recall that Elon Musk is mentioned in this broader context.",
+      "Step 2: Locate the episode featuring Elon Musk and the Neuralink team, where they discuss the N1 Implant's progress.",
+      "Step 3: Pinpoint the specific record-breaking achievement related to the N1 Implant's performance by a human participant as detailed in Elon Musk's conversation."
+    ],
+    "era": "old"
   },
   {
-    "question": "Based on the update provided by the team led by the individual Matthew Johnson mentions in his discussion on neuroscience, how many humans have currently received the N1 implant?",
-    "answer": "As of the discussion with Elon Musk and the Neuralink team, two humans have received the N1 implant. The team also stated their goal is to have a total of ten human participants implanted by the end of the year.",
+    "question": "Considering Matthew Johnson's deep dive into the brain's mechanisms and the impact of various substances on its receptors, what is the ultimate goal of the Neuralink project, which Elon Musk, a figure mentioned in Matthew Johnson's discussion, leads, concerning the relationship between humans and artificial intelligence, and what specific communication aspect does it aim to enhance to achieve this?",
+    "answer": "The ultimate goal of the Neuralink project is to improve AI-human symbiosis. It aims to achieve this by significantly increasing the bandwidth of communication between humans and artificial intelligence, as discussed by Elon Musk and his team.",
     "qa_type": "multihop",
     "reference_episodes": [
       145,
       438
     ],
     "reasoning_steps": [
-      "Step 1: Identify the individual mentioned by Matthew Johnson in the context of neurotechnology or innovation (Elon Musk).",
-      "Step 2: Locate the discussion featuring Elon Musk and his team regarding their brain-computer interface project, Neuralink.",
-      "Step 3: Extract the specific count of human participants who have received the N1 implant as stated in that conversation."
-    ]
+      "Step 1: Understand Matthew Johnson's focus on neuroscience, brain mechanisms, and receptor-level events from his discussion.",
+      "Step 2: Identify the connecting element: Elon Musk, who is mentioned in Matthew Johnson's discussion, is a guest in another episode where Neuralink is discussed.",
+      "Step 3: Retrieve information from the episode featuring Elon Musk and the Neuralink team regarding the project's long-term aspiration concerning human-AI interaction and the specific communication aspect it aims to enhance.",
+      "Step 4: Formulate the answer by combining the long-term goal (AI-human symbiosis) and the method (increasing communication bandwidth) from the Neuralink discussion, framed by the neuroscience context from Matthew Johnson's episode."
+    ],
+    "era": "old"
   },
   {
-    "question": "How do David Fravor, Andrew Bustamante, and Ryan Hall differ in their perspectives on the foundations of authority and effective leadership within high-stakes organizations?",
-    "answer": "David Fravor advocates for a meritocracy where expertise and school seniority supersede formal military rank, whereas Andrew Bustamante highlights the risk of cronyism when leadership roles, like the CIA Director, are politically appointed. Ryan Hall shifts the focus to the individual's mindset, arguing that true wisdom and authority begin with the humility to admit one knows almost nothing.",
-    "qa_type": "comparative",
+    "question": "Considering Robert Breedlove's discussion on the philosophy of Bitcoin, and his mention of Elon Musk, what is the long-term aspiration Elon Musk articulates for Neuralink concerning human-AI symbiosis?",
+    "answer": "Elon Musk's long-term aspiration for Neuralink is to improve human-AI symbiosis by significantly increasing the bandwidth of communication. This goal aims to enhance the interaction and integration between human cognition and artificial intelligence.",
+    "qa_type": "multihop",
     "reference_episodes": [
-      122,
-      125,
-      310
+      176,
+      438
     ],
     "reasoning_steps": [
-      "Identify David Fravor's point that hierarchy at Top Gun is based on seniority at the school rather than standard military rank.",
-      "Identify Andrew Bustamante's observation regarding the CIA Director being a presidential appointee and the resulting potential for cronyism.",
-      "Identify Ryan Hall's philosophical assertion that the journey toward wisdom starts with admitting one knows very little.",
-      "Contrast the merit-based military structure (Fravor) with the politically-driven intelligence structure (Bustamante) and the humility-driven philosophical approach (Hall)."
-    ]
+      "Step 1: Identify the context from Robert Breedlove's discussion, which includes his mention of Elon Musk.",
+      "Step 2: Locate the podcast episode where Elon Musk is a guest and discusses Neuralink.",
+      "Step 3: Extract the specific detail from Elon Musk's conversation regarding Neuralink's long-term aspiration for human-AI symbiosis."
+    ],
+    "era": "old"
   },
   {
-    "question": "How do the perspectives of Matthew Johnson, Stephen Wolfram, and Lee Cronin differ regarding the fundamental mechanism or origin of consciousness?",
-    "answer": "Matthew Johnson approaches consciousness through a neurochemical lens, attributing altered states to specific receptor-level events in the brain, whereas Stephen Wolfram views it as a product of our specific reference frame within a computational 'rule space.' In contrast, Lee Cronin describes consciousness as an evolutionary milestone where the universe develops a memory through selection and complex information processing.",
+    "question": "Charles Hoskinson highlights Cardano's development using Haskell for its mathematical rigor and ability to translate academic papers into code. Considering this emphasis on foundational, mathematically-driven systems, what does Stephen Wolfram's project propose about the fundamental nature of space?",
+    "answer": "Stephen Wolfram's project proposes that space is made of discrete 'atoms of space' connected to each other. This concept is central to the Wolfram Physics Project, which seeks to find the fundamental theory of physics using simple rules operating on hypergraphs.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      192,
+      124
+    ],
+    "reasoning_steps": [
+      "Step 1: Understand Charles Hoskinson's discussion about Cardano's development, specifically its rigorous, mathematically-driven approach and the use of Haskell for translating academic papers into code.",
+      "Step 2: Recognize that Stephen Wolfram, mentioned in the context of foundational, mathematically-driven systems, is a guest in another episode where he discusses his own foundational project.",
+      "Step 3: Retrieve information from Stephen Wolfram's discussion about the fundamental nature of space as proposed by his Wolfram Physics Project, specifically that space is made of discrete 'atoms of space'."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Charles Hoskinson, when discussing Cardano's rigorous, peer-reviewed development and the use of Haskell due to its proximity to math, implicitly values a deeply mathematical and computational approach to complex systems. Considering this perspective, what major project discussed by Stephen Wolfram in his own conversation explores the fundamental nature of reality through computational rules, representing an ultimate expression of such a rigorous, mathematical methodology?",
+    "answer": "Stephen Wolfram discusses the Wolfram Physics Project, which aims to find a fundamental theory of physics by exploring all possible computational rules. This project seeks to derive the laws of the universe from abstract computational systems, aligning with a highly rigorous and mathematical approach to understanding reality.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      192,
+      234
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Charles Hoskinson's emphasis on mathematical rigor and the use of Haskell in Cardano's development, which suggests an appreciation for formal, computational approaches.",
+      "Step 2: Recall that Charles Hoskinson mentions Stephen Wolfram, indicating a connection between their intellectual domains.",
+      "Step 3: From Stephen Wolfram's episode, identify a project or concept that aligns with a rigorous, mathematical, and computational exploration of fundamental reality. The Wolfram Physics Project directly fits this description, focusing on deriving the universe from computational rules."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+    "answer": "Sundar Pichai highlighted Gemini as a central product in Google's AI-first strategy. He shared that Gemini processes 480 trillion tokens per month, which represents a 50x increase in the last 12 months.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      459,
+      471
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Dylan Patel and Nathan Lambert's discussion of DeepSeek's AI models included comparisons to Google's offerings.",
+      "Step 2: Recall that Sundar Pichai, as a guest, detailed Google's AI-first strategy and its key products.",
+      "Step 3: Connect these points to identify the specific AI product (Gemini) and the scaling achievement (480 trillion tokens per month, 50x increase) mentioned by Sundar Pichai."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering Narendra Modi's discussions on India's global impact and the achievements of its people, what specific technology, which Sundar Pichai leads at Google, does Pichai believe is more profound than fire or electricity?",
+    "answer": "Sundar Pichai considers Artificial Intelligence (AI) to be the most profound technology humanity will ever work on, surpassing even fire or electricity. This perspective is shared in his discussion about Google's AI-first strategy and its potential, connecting to Narendra Modi's broader recognition of India's global talent.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      460,
+      471
+    ],
+    "reasoning_steps": [
+      "Step 1: Understand that Narendra Modi mentions Sundar Pichai, implying an acknowledgment of Pichai's prominence in global technology, aligning with Modi's discussions on India's global contributions.",
+      "Step 2: Identify Sundar Pichai as the guest who leads Google and its technological advancements.",
+      "Step 3: Retrieve information from Sundar Pichai's discussion about the technology he considers the most profound, which he explicitly states is AI, surpassing fire or electricity."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "During Michael Paulson's conversation about programming and software engineering, he mentions Dave Plummer. What iconic Windows operating system feature, which Michael Paulson likely references as one of Plummer's key contributions, did Dave Plummer create, and for which specific Windows operating system version was it originally developed?",
+    "answer": "Dave Plummer created the iconic Windows Task Manager. It was originally developed for Windows NT 4.0. Michael Paulson, a fellow programmer, would likely reference this significant contribution during his discussion.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      461,
+      479
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Michael Paulson (ThePrimeagen) mentions Dave Plummer in his episode. Given the context of programming and software engineering, infer that Michael Paulson's reference would be to one of Dave Plummer's significant software contributions.",
+      "Step 2: From Dave Plummer's episode summary and key details, identify his most well-known creation: the Windows Task Manager. This is the feature Michael Paulson likely references.",
+      "Step 3: From Dave Plummer's episode details, find the specific Windows operating system version for which the Task Manager was originally written, which is Windows NT 4.0."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "In the conversation between Ezra Klein and Derek Thompson about political leadership and the ability of figures like Donald Trump to reshape parties and command attention, Derek Thompson mentions Narendra Modi. According to the episode featuring Narendra Modi, what does he attribute his strength to as a leader?",
+    "answer": "Narendra Modi attributes his strength not to his name, but to the backing of 1.4 billion Indians and thousands of years of timeless culture and heritage. He emphasizes that his power comes from the collective support of the people and India's rich history, rather than personal influence.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      462,
+      460
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Derek Thompson, in the discussion with Ezra Klein about political leadership and its currency, mentions Narendra Modi.",
+      "Step 2: Recognize that the question asks for Narendra Modi's own explanation of his strength as a leader.",
+      "Step 3: Retrieve the specific detail from the episode featuring Narendra Modi where he discusses the source of his strength."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering Douglas Murray's discussions on global leadership, what specific personal spiritual practices, including details about his fasting habits, does Narendra Modi observe, as shared in his own conversation about his journey and beliefs?",
+    "answer": "Narendra Modi regularly observes various fasts, including eating only once a day for 4-4.5 months during Chaturmas. He also undertakes a nine-day fast during Navratri, consuming only hot water or a single fruit. These practices are part of his personal spiritual journey.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      463,
+      460
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the connecting element, Narendra Modi, who is mentioned by Douglas Murray in the context of global leadership discussions.",
+      "Step 2: Locate the episode featuring Narendra Modi to find details about his personal spiritual practices and fasting habits.",
+      "Step 3: Extract the specific information regarding his Chaturmas and Navratri fasts from his own conversation."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Janna Levin, while discussing the profound mysteries of black holes and spacetime, mentions the mathematician Terence Tao. What specific approach does Terence Tao, in his own discussions, describe for tackling difficult mathematical problems, and how does he envision AI contributing to mathematical discovery, particularly through formal proof languages?",
+    "answer": "Terence Tao describes approaching difficult problems by breaking them down and exploring connections to various mathematical fields, often using analogies and simplified models. He envisions AI, particularly through formal proof languages like Lean, as a powerful tool for producing certificates of correctness for proofs, making collaboration and verification more robust in mathematical discovery.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      468,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Janna Levin's discussion of black holes and spacetime includes a mention of the mathematician Terence Tao.",
+      "Step 2: Retrieve information from Terence Tao's discussions regarding his approach to solving complex mathematical problems, such as the Kakeya Problem or Navier-Stokes regularity problem.",
+      "Step 3: Retrieve information from Terence Tao's discussions about his perspective on AI's potential role in mathematical discovery, specifically mentioning formal proof languages like Lean."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering Sundar Pichai's profound optimism for AI's potential and Google's AI-first strategy, what specific conjecture did Demis Hassabis propose in his Nobel Prize lecture regarding the learnability of natural patterns by classical algorithms?",
+    "answer": "Demis Hassabis proposed in his Nobel Prize lecture that 'any pattern that can be generated or found in nature can be efficiently discovered and modeled by a classical learning algorithm.' This conjecture reflects his deep belief in AI's capacity to understand the fundamental nature of reality, aligning with the broad vision for AI's transformative power discussed by Sundar Pichai.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      471,
+      475
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Sundar Pichai's discussion of Google's AI-first strategy and his optimism for AI's potential provides the context for the connection to Demis Hassabis.",
+      "Step 2: Locate the specific key detail or concept associated with Demis Hassabis's work that relates to the fundamental capabilities of AI, as discussed in his own conversation.",
+      "Step 3: Retrieve the detail about Demis Hassabis's Nobel Prize lecture conjecture, which posits that natural patterns are learnable by classical algorithms."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "During his conversation about programming and web development, David Heinemeier Hansson references Tim Sweeney. According to Tim Sweeney's own interview, what specific technical challenges were significant in the early development of Unreal Engine?",
+    "answer": "In the early development of Unreal Engine, significant technical challenges included dynamic lighting and volumetric fog. Tim Sweeney discussed these hurdles as part of the evolution of computer graphics and game engines at Epic Games.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      474,
+      467
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that David Heinemeier Hansson, while discussing programming and web development, mentions Tim Sweeney.",
+      "Step 2: Transition to Tim Sweeney's interview to find details related to his work at Epic Games and the development of Unreal Engine.",
+      "Step 3: Locate the specific technical challenges mentioned by Tim Sweeney regarding the early stages of Unreal Engine development."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Ben Goertzel, in his discussion of Artificial General Intelligence, mentions Demis Hassabis as another prominent figure in the field. What is Demis Hassabis's estimate for the probability of achieving AGI by 2030, and how does he define AGI in his own discussion?",
+    "answer": "Demis Hassabis estimates a 50% chance of achieving AGI by 2030. He defines AGI as matching human cognitive functions with consistency and true invention capabilities.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      103,
+      475
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Ben Goertzel's discussion of Artificial General Intelligence (AGI) includes a mention of Demis Hassabis.",
+      "Step 2: Locate the discussion featuring Demis Hassabis as the guest.",
+      "Step 3: From Demis Hassabis's discussion, retrieve his specific estimate for the probability of achieving AGI by 2030 and his definition of AGI."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Noland Arbaugh, who discussed his experience as the first human with a Neuralink implant, made a reference to Paul Rosolie. What is the title of Paul Rosolie's new book, and what significant threat does he highlight in his work concerning the Amazon rainforest?",
+    "answer": "Paul Rosolie's new book is titled \"Jungle Keeper\". In his work, he highlights the escalating dangers in the Amazon rainforest, including intense encounters with uncontacted tribes like the Mashco Piro and threats from narco-traffickers due to illegal logging and gold mining.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      438,
+      489
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Noland Arbaugh, a participant in the Neuralink discussion, mentioned Paul Rosolie.",
+      "Step 2: Locate the podcast discussion featuring Paul Rosolie to find details about his recent work.",
+      "Step 3: Retrieve the title of Paul Rosolie's new book and the specific threats he discusses regarding the Amazon rainforest."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "If Saagar Enjeti refers to the work of Jack Weatherford, the guest who discussed Genghis Khan, what specific event involving Genghis Khan's wife, B\u00f6rte, motivated him to build a military force, according to Jack Weatherford?",
+    "answer": "According to Jack Weatherford, Genghis Khan was motivated to build a military force after his wife, B\u00f6rte, was kidnapped. This traumatic event directly spurred him to develop his military capabilities to rescue her.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      454,
+      476
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Saagar Enjeti mentions Jack Weatherford, connecting the two episodes.",
+      "Step 2: Recognize that Jack Weatherford is the guest who discussed Genghis Khan and the Mongol Empire.",
+      "Step 3: Retrieve from Jack Weatherford's discussion the key motivation for Genghis Khan building a military force, which was the kidnapping of his wife, B\u00f6rte."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+    "answer": "Anthropic, led by Dario Amodei, employs a 'Race to the Top' strategy. The intended outcome of this approach is to encourage other AI companies to prioritize safety and responsible development in the AI industry.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      459,
+      452
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Nathan Lambert mentions Dario Amodei during the discussion with Dylan Patel about AI models and companies.",
+      "Step 2: Connect Dario Amodei to his role as CEO of Anthropic, the company he discusses in a separate episode.",
+      "Step 3: Retrieve from Dario Amodei's discussion the specific strategy Anthropic uses to influence other AI companies regarding safety and its stated goal."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "In the conversation featuring Narendra Modi, he touches upon the future of AI and mentions a prominent entrepreneur. What is the long-term goal of this entrepreneur's company, Neuralink, concerning human-AI symbiosis, as detailed in the episode where he and his team are guests?",
+    "answer": "The long-term aspiration of Neuralink is to improve AI-human symbiosis by significantly increasing the bandwidth of communication between humans and AI. This goal was discussed by Elon Musk and the Neuralink team in their episode, building upon the entrepreneur mentioned by Narendra Modi in his discussion of AI.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      460,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the prominent entrepreneur mentioned by Narendra Modi in his discussion of AI (Elon Musk).",
+      "Step 2: Locate the episode featuring Elon Musk and the Neuralink team.",
+      "Step 3: Extract Neuralink's long-term aspiration regarding human-AI symbiosis from that episode."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+    "answer": "John Carmack considered the best programming language to be the one that works and is currently being used, emphasizing a practical approach over theoretical ideals. He believed that the effectiveness of a language is determined by its utility and current application in solving problems.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      461,
+      309
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that ThePrimeagen (Michael Paulson), discussing software engineering and personal development, mentioned John Carmack.",
+      "Step 2: Locate John Carmack's discussion about programming languages within his own conversation about game development and virtual reality (id Software, Oculus VR).",
+      "Step 3: Extract John Carmack's specific stance on what he considered to be the 'best' programming language from his own episode."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering ThePrimeagen's (Michael Paulson's) dedication to building tools for developers and enhancing human interaction with technology, what is the long-term aspiration of Elon Musk's Neuralink project, as discussed in the episode featuring Elon Musk and the Neuralink team, that aims to significantly advance human-technology capabilities?",
+    "answer": "The long-term aspiration of Elon Musk's Neuralink project is to improve AI-human symbiosis by increasing the bandwidth of communication. This goal directly relates to enhancing human-technology capabilities by creating a more seamless and efficient integration between humans and artificial intelligence.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      461,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify ThePrimeagen's (Michael Paulson's) professional focus from his episode, which includes building tools for developers and improving human interaction with technology.",
+      "Step 2: Recognize that Elon Musk is the connecting element and a guest in another episode where Neuralink is discussed.",
+      "Step 3: Retrieve the long-term aspiration of Neuralink from the episode featuring Elon Musk and the Neuralink team.",
+      "Step 4: Connect Neuralink's long-term goal (improving AI-human symbiosis by increasing communication bandwidth) to ThePrimeagen's interest in enhancing human-technology capabilities."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering the discussion where Michael Paulson mentions Pieter Levels, what is Pieter Levels' preferred approach to funding his startups, as detailed in his own interview?",
+    "answer": "Pieter Levels prefers building startups without VC funding. He acts as the designer, developer, and marketer himself, emphasizing rapid prototyping and launching products quickly to validate ideas with real paying customers.",
+    "qa_type": "multihop",
+    "reference_episodes": [
+      461,
+      440
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify that Michael Paulson, the guest, mentions Pieter Levels in his discussion.",
+      "Step 2: Locate the separate interview featuring Pieter Levels as the guest.",
+      "Step 3: Extract information from Pieter Levels' interview regarding his preferred approach to startup funding and development."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Matthew Johnson, Stephen Wolfram, and Lee Cronin each touch upon the topic of consciousness. How do their distinct disciplinary lenses\u2014Johnson's neuropharmacology, Wolfram's computational physics, and Cronin's assembly theory for the origin of life\u2014shape their fundamental approach or conceptualization of consciousness?",
+    "answer": "Matthew Johnson approaches consciousness through its pharmacological manipulation, examining how psychedelics alter states of consciousness via receptor-level events in the brain. Stephen Wolfram views consciousness as potentially an emergent property or aspect of the fundamental computational rules governing the universe, tying it to the nature of reality itself. In contrast, Lee Cronin links consciousness to the emergence of life and information processing, suggesting it arises from the universe developing a memory through increasing complexity as described by assembly theory.",
     "qa_type": "comparative",
     "reference_episodes": [
       145,
@@ -95,15 +371,55 @@
       269
     ],
     "reasoning_steps": [
-      "Identify Matthew Johnson's focus on the biological and chemical drivers of consciousness, specifically the role of the Serotonin 2A receptor and brain activity.",
-      "Identify Stephen Wolfram's computational framework, where consciousness is linked to how observers perceive and filter the 'Rulliad' or rule space.",
-      "Identify Lee Cronin's evolutionary perspective, which frames consciousness as a consequence of assembly theory and the universe's ability to store information.",
-      "Synthesize the three views to contrast the biological (Johnson), the computational (Wolfram), and the informational/evolutionary (Cronin) explanations."
-    ]
+      "Step 1: Identify that all three guests (Matthew Johnson, Stephen Wolfram, Lee Cronin) mention 'consciousness' as a topic or key detail.",
+      "Step 2: Analyze Matthew Johnson's summary to understand his perspective on consciousness. His discussion of psychedelics, their effects, and receptor-level events indicates an approach focused on the neurobiological and pharmacological manipulation of conscious states.",
+      "Step 3: Analyze Stephen Wolfram's summary to understand his perspective. His work on the Wolfram Physics Project, fundamental nature of reality, and the universe running all possible rules suggests a view of consciousness as potentially emergent from or deeply intertwined with the universe's underlying computational structure.",
+      "Step 4: Analyze Lee Cronin's summary to understand his perspective. His work on assembly theory, the origin of life, and the statement 'Life is the universe developing a memory' points to consciousness as an emergent property of complex, information-processing systems, particularly biological ones.",
+      "Step 5: Formulate a comparative question that highlights these distinct disciplinary lenses (neuropharmacology, computational physics, assembly theory/origin of life) and how they shape each guest's fundamental approach or conceptualization of consciousness, ensuring no episode numbers are mentioned.",
+      "Step 6: Construct a concise answer (2-3 sentences) that directly compares and contrasts their perspectives based on the identified disciplinary approaches, without using episode numbers."
+    ],
+    "era": "old"
   },
   {
-    "question": "How do the programming philosophies of Travis Oliphant, John Carmack, and Pieter Levels differ regarding the balance between technical complexity and project goals?",
-    "answer": "Travis Oliphant emphasizes building complex, community-driven open-source foundations like NumPy to solve large-scale scientific problems, whereas John Carmack prioritizes performance-oriented pragmatism, choosing tools solely based on their ability to solve immediate hardware or AI challenges. Pieter Levels contrasts both by intentionally using simple, 'boring' tech like PHP and jQuery to minimize technical overhead and maximize the speed of shipping products to market.",
+    "question": "How do David Fravor, Ryan Hall, and Andrew Bustamante's discussions on personal success, wisdom, and institutional structures offer different perspectives on the essential qualities or challenges of effective leadership?",
+    "answer": "David Fravor emphasizes individual drive and self-belief as key to success, suggesting a merit-based approach to leadership, while Ryan Hall highlights humility and acknowledging one's limitations as the foundation for wisdom, implying an introspective leadership style. In contrast, Andrew Bustamante discusses leadership within formal hierarchies, pointing out the potential for political appointments and cronyism to undermine effective institutional leadership.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      122,
+      125,
+      310
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common theme of 'leadership' or qualities related to it across all summaries.",
+      "Step 2: Extract specific details from David Fravor's summary that relate to personal success and hierarchy ('never taking 'no' for an answer', 'believing in his own capabilities', 'Top Gun hierarchy based on seniority'). This indicates a view of leadership rooted in individual competence and merit.",
+      "Step 3: Extract specific details from Ryan Hall's summary that relate to wisdom and evaluation ('humbly admit to yourself that you know very little', 'circumstances are important when evaluating people'). This suggests a philosophical, self-aware, and context-sensitive view of leadership.",
+      "Step 4: Extract specific details from Andrew Bustamante's summary that relate to institutional leadership and its challenges ('President dictates PDB', 'Director of the CIA is a presidential appointee, which can lead to cronyism'). This highlights leadership within a formal, political structure, including potential flaws.",
+      "Step 5: Formulate a comparative question that asks how these distinct viewpoints contribute to understanding leadership, referencing each guest by name and their core ideas.",
+      "Step 6: Construct a concise answer (2-3 sentences) that directly contrasts these perspectives, ensuring no episode numbers are mentioned and adhering to the JSON format."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering Robin Hanson's theoretical work on advanced civilizations, John Carmack's focus on building artificial general intelligence, and Elon Musk's vision for human-AI symbiosis through Neuralink, how do their perspectives diverge regarding the primary challenges or opportunities presented by artificial intelligence?",
+    "answer": "Robin Hanson views advanced intelligence, potentially AI, through a cosmic lens, exploring its long-term implications for the universe and humanity's place within it. John Carmack focuses on the technical and engineering challenges of actually developing artificial general intelligence. In contrast, Elon Musk and the Neuralink team emphasize the opportunity for human enhancement and survival through direct integration with AI via brain-computer interfaces, aiming for a symbiotic future.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      292,
+      309,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'artificial intelligence' across all guest summaries.",
+      "Step 2: Extract each guest's specific perspective or area of focus regarding AI. Robin Hanson discusses advanced civilizations (potentially AI) in the context of cosmic expansion and the Fermi paradox. John Carmack's current focus is on the technical development and challenges of artificial general intelligence (AGI). Elon Musk and the Neuralink team are centered on human-AI symbiosis through brain-computer interfaces and restoring function.",
+      "Step 3: Compare and contrast these perspectives to highlight genuine differences. Hanson's view is macro-scale and theoretical, Carmack's is micro-scale and developmental/engineering, and Musk's is human-centric, focusing on integration and immediate application/enhancement.",
+      "Step 4: Formulate a question that references the guests by name and their key ideas, asking how their approaches or concerns regarding AI differ.",
+      "Step 5: Construct a concise answer that directly addresses the question, outlining the distinct viewpoints of each guest."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+    "answer": "Travis Oliphant prioritizes building robust, unified open-source tools in Python for scientific computing, emphasizing community and solving complex data challenges. John Carmack focuses on extreme performance and hardware optimization, historically using C++ for game development, choosing languages pragmatically based on what \"works\" for pushing technical limits. Pieter Levels emphasizes rapid prototyping and quick market validation using a simple web stack like PHP and jQuery, prioritizing speed to launch and business agility for indie startups.",
     "qa_type": "comparative",
     "reference_episodes": [
       224,
@@ -111,30 +427,17 @@
       440
     ],
     "reasoning_steps": [
-      "Step 1: Identify Travis Oliphant's focus on foundational open-source infrastructure and the collaborative effort required to build tools like NumPy and Conda.",
-      "Step 2: Identify John Carmack's pragmatic approach to software engineering, where the 'best' language is simply the one that works for the specific performance or hardware task at hand.",
-      "Step 3: Identify Pieter Levels' philosophy of rapid prototyping, which rejects complex modern stacks in favor of simple, solo-managed tools that prioritize business validation over technical sophistication.",
-      "Step 4: Contrast the three perspectives: Oliphant's community-centric complexity, Carmack's performance-driven pragmatism, and Levels' speed-focused simplicity."
-    ]
-  },
-  {
-    "question": "How do Ryan Hall and Kelsi Sheren differ in their interpretation of the history of human conflict and its impact on the individual?",
-    "answer": "Ryan Hall approaches the history of violence and conflict through a philosophical lens, viewing the mindset of historical warriors like Miyamoto Musashi as a path toward personal grace and wisdom. In contrast, Kelsi Sheren focuses on the visceral and traumatic reality of modern warfare, highlighting how historical patterns of conflict result in lasting psychological damage like PTSD for those on the front lines.",
-    "qa_type": "comparative",
-    "reference_episodes": [
-      125,
-      230,
-      438
+      "Step 1: Identify each guest's primary domain and their stated or implied philosophy regarding programming languages and development.",
+      "Step 2: Note Travis Oliphant's focus on Python, NumPy, and open-source scientific computing, highlighting his emphasis on community and robust foundational tools.",
+      "Step 3: Observe John Carmack's background in game development, his use of C++ for performance, and his pragmatic view that the 'best programming language is the one that works,' indicating a priority on raw performance and pushing hardware boundaries.",
+      "Step 4: Recognize Pieter Levels' startup philosophy of rapid prototyping, using a simple tech stack like PHP and jQuery, and prioritizing quick launches and market validation over deep technical complexity or long-term open-source development.",
+      "Step 5: Synthesize these distinct priorities and approaches into a comparative question and a concise answer that highlights the genuine differences in their programming methodologies and what they value most in software creation."
     ],
-    "reasoning_steps": [
-      "Step 1: Identify Ryan Hall's perspective on historical figures (Alexander the Great, Musashi) and his belief that the study of violence can lead to intellectual freedom and personal development.",
-      "Step 2: Identify Kelsi Sheren's perspective on the history of war, specifically her experience in Afghanistan, focusing on the mechanical brutality of artillery and the subsequent struggle with trauma.",
-      "Step 3: Contrast Hall's philosophical/warrior-spirit approach with Sheren's focus on the human cost and the psychological aftermath of combat."
-    ]
+    "era": "old"
   },
   {
-    "question": "How do Stephen Wolfram and the duo of Sara Walker and Lee Cronin differ in their conceptualization of the universe's fundamental nature and the 'Big Bang' event?",
-    "answer": "Stephen Wolfram views the universe as a computational execution of all possible rules within a 'rule space,' whereas Sara Walker and Lee Cronin describe the universe as a mechanism for exploring possibilities through 'Assembly Theory.' Furthermore, while Wolfram analyzes the early universe through dimension fluctuations, Walker and Cronin characterize the Big Bang as a 'forgetting' event where information and memory were reset.",
+    "question": "When discussing the fundamental nature and mechanisms of the universe within cosmology, how do Stephen Wolfram's computational framework, Sara Walker and Lee Cronin's Assembly Theory perspective, and Brian Keating's focus on empirical observation differ in their core understanding of what drives the cosmos and its origins?",
+    "answer": "Stephen Wolfram views the universe as a computational system exploring all possible rules, with reality emerging from our reference frame in rule space. In contrast, Sara Walker and Lee Cronin propose that the universe's fundamental mechanism is to explore the space of what's possible through life and the generation of novelty, describing the Big Bang as a 'reset' event. Brian Keating, however, approaches cosmology through empirical evidence, focusing on observable phenomena like the Cosmic Microwave Background and experimental astrophysics to understand the universe's history and test theories like the Big Bang and inflation.",
     "qa_type": "comparative",
     "reference_episodes": [
       234,
@@ -142,128 +445,703 @@
       279
     ],
     "reasoning_steps": [
-      "Identify Stephen Wolfram's perspective on the universe as a computational 'Rulliad' running all possible rules.",
-      "Identify Sara Walker and Lee Cronin's perspective on the universe as an exploration of possible structures via information and Assembly Theory.",
-      "Contrast Wolfram's focus on the physical/dimensional fluctuations of the early universe with Walker and Cronin's informational view of the Big Bang as a memory reset."
-    ]
+      "Step 1: Identify the shared topic 'cosmology' and each guest's core contribution to it.",
+      "Step 2: Extract Stephen Wolfram's perspective: universe as a computational system, rule space, Rulliad, fundamental rules.",
+      "Step 3: Extract Sara Walker and Lee Cronin's perspective: Assembly Theory, universe's mechanism for exploring possibilities through life, Big Bang as a 'reset'.",
+      "Step 4: Extract Brian Keating's perspective: observational cosmology, empirical evidence, Big Bang, Cosmic Microwave Background, experimental astrophysics.",
+      "Step 5: Identify the key contrasts in their approaches: Wolfram's theoretical/computational derivation, Walker/Cronin's focus on life/novelty as the universe's mechanism, and Keating's empirical/observational measurement.",
+      "Step 6: Formulate a question that highlights these distinct approaches to the 'fundamental nature and mechanisms' of the universe, referencing guests by name and their core ideas.",
+      "Step 7: Construct a concise answer directly addressing the contrasts identified in the previous steps."
+    ],
+    "era": "old"
   },
   {
-    "question": "How did Stephen Wolfram's conceptualization of the fundamental laws of the universe evolve from his initial description of the Wolfram Physics Project to his later introduction of the 'Rulliad'?",
-    "answer": "Wolfram initially focused on identifying a single, specific rule that defines our universe's hypergraph evolution. In his later discussion, he transitioned to the concept of the 'Rulliad,' positing that the universe actually executes all possible rules simultaneously, with our perceived reality being a specific reference frame within this infinite computational space.",
-    "qa_type": "temporal",
+    "question": "How do Lee Cronin and Sara Walker's focus on intrinsic mechanisms for life's emergence, such as Assembly Theory and the universe developing memory, compare with Adam Frank's emphasis on external planetary conditions and co-evolution as crucial for the origin of life?",
+    "answer": "Lee Cronin and Sara Walker propose that life emerges from intrinsic principles like information structuring matter and the universe's capacity to explore possibilities through Assembly Theory. Conversely, Adam Frank highlights the critical role of external planetary conditions, such as plate tectonics and the co-evolution of life with its planet, as fundamental for life's origin and sustained development.",
+    "qa_type": "comparative",
     "reference_episodes": [
-      124,
-      234
+      269,
+      279,
+      455
     ],
     "reasoning_steps": [
-      "Identify the core objective in the first discussion: finding the fundamental theory of physics using simple rules operating on hypergraphs to explain space and time.",
-      "Identify the shift in the second discussion: the introduction of 'Rule Space' and the 'Rulliad,' which represents the limit of all possible computations.",
-      "Contrast the two stages: the first stage seeks a unique rule for our universe, while the second stage suggests our universe is just one perspective of a structure containing every possible rule."
-    ]
+      "Step 1: Identify the shared topic 'origin of life' across all guest summaries.",
+      "Step 2: Extract Lee Cronin's and Sara Walker's perspectives, noting their shared focus on Assembly Theory, information, memory, and intrinsic mechanisms for life's emergence.",
+      "Step 3: Extract Adam Frank's perspective, noting his emphasis on external factors like habitable zones, plate tectonics, and the co-evolution of life with its planet.",
+      "Step 4: Formulate a comparative question that contrasts the intrinsic, mechanism-focused approach of Cronin/Walker with Frank's extrinsic, conditions-focused approach.",
+      "Step 5: Construct a concise answer (2-3 sentences) that directly addresses this contrast, referencing the key concepts and guests by name without using episode numbers."
+    ],
+    "era": "old"
   },
   {
-    "question": "How has the primary strategy for achieving Artificial General Intelligence (AGI) evolved from Ben Goertzel's focus on cognitive architectures and embodiment to the landscape described by Sebastian Raschka and Nathan Lambert?",
-    "answer": "The approach has shifted from Ben Goertzel's emphasis on symbolic logic, decentralized cognitive architectures like OpenCog, and physical embodiment to a focus on massive LLM scaling laws and reinforcement learning methodologies. While Goertzel prioritized the 'embodied communication prior' and structured knowledge representation, the later discussion by Raschka and Lambert highlights how data-driven scaling and verifiable rewards have become the dominant path toward AGI.",
-    "qa_type": "temporal",
+    "question": "Considering Ryan Hall's discussions of historical figures, Kelsi Sheren's reflections on past wars, and the Neuralink team's focus on future human evolution, how do these guests demonstrate distinct approaches to the significance or utility of 'history'?",
+    "answer": "Ryan Hall primarily views history as a source of philosophical lessons and examples for personal development, drawing wisdom from figures like Miyamoto Musashi. Kelsi Sheren uses historical perspectives on war to understand the enduring psychological impact of trauma and inform solutions for veterans. In contrast, Elon Musk and the Neuralink team are focused on actively shaping the future history of humanity through brain-computer interfaces, rather than primarily analyzing the past.",
+    "qa_type": "comparative",
     "reference_episodes": [
-      103,
-      490
+      125,
+      230,
+      438
     ],
     "reasoning_steps": [
-      "Step 1: Identify Ben Goertzel's early stance, which focused on the necessity of OpenCog's symbolic/neural hybrid system and the importance of robotics (Hanson Robotics) for grounding intelligence.",
-      "Step 2: Identify the later perspective from Sebastian Raschka and Nathan Lambert, which centers on the success of Large Language Models (LLMs), scaling laws, and Reinforcement Learning with Verifiable Rewards (RLVR).",
-      "Step 3: Contrast the two periods to show a shift from specialized architectural design and embodiment toward a paradigm defined by compute power, massive datasets, and iterative model scaling."
-    ]
+      "Step 1: Identified 'history' as a common, albeit sometimes implicit, thread across the summaries.",
+      "Step 2: Analyzed Ryan Hall's summary to understand his engagement with history, noting his use of historical figures (e.g., Miyamoto Musashi, Genghis Khan) to illustrate philosophical points about martial arts and violence.",
+      "Step 3: Analyzed Kelsi Sheren's summary to understand her engagement with history, noting her discussion of 'historical perspectives on war' and how past conflicts (e.g., World War II) inform understanding of current trauma and veteran support.",
+      "Step 4: Analyzed Elon Musk and the Neuralink team's summary. While not directly discussing past history, their focus on 'the future of human-AI symbiosis' and 'long-term implications for humanity' implies a forward-looking perspective on *making* history, rather than interpreting it.",
+      "Step 5: Identified the contrasting approaches: Hall uses history as a teacher of wisdom, Sheren uses it as a mirror to understand and address present human costs, and Musk/Neuralink are focused on creating the next chapter of human history.",
+      "Step 6: Formulated a comparative question that references guests by name and highlights these distinct relationships with the concept of history.",
+      "Step 7: Constructed a concise answer that directly addresses the question by outlining each guest's unique perspective on the significance and utility of history, emphasizing the contrasts."
+    ],
+    "era": "old"
   },
   {
-    "question": "How did the perspective on career success and overcoming professional obstacles evolve between the discussion with David Fravor and the later conversation with Robert Rodriguez?",
-    "answer": "The focus shifted from a mindset of psychological persistence and refusing to accept institutional 'no's to a philosophy centered on creative resourcefulness and technical self-reliance. While the earlier discussion emphasized willpower within a structured hierarchy, the later conversation prioritized the ability to bypass limitations through creative problem-solving and mastering multiple roles independently.",
-    "qa_type": "temporal",
+    "question": "While Lee Cronin and Adam Frank both suggest that the emergence of life may be common, how do their perspectives on the conditions for life and civilization, along with Robin Hanson's 'Grabby Aliens' model, offer different ways of approaching or attempting to resolve the Fermi Paradox?",
+    "answer": "Lee Cronin's work on Assembly Theory suggests life could be as common as star formation, intensifying the paradox by making the absence of observable life more perplexing. Adam Frank, by emphasizing the high probability of life on habitable planets and the co-evolution of life and planets, similarly deepens the paradox but hints at the 'technosphere' as a potential self-limiting factor for advanced civilizations. In contrast, Robin Hanson directly offers a resolution through his 'Grabby Aliens' model, which posits that rapidly expanding, observable civilizations are either extremely rare or have not yet reached our region of the universe, thus explaining the observed silence.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      269,
+      292,
+      455
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic, 'Fermi Paradox', across all three guests.",
+      "Step 2: Extract each guest's core argument or perspective related to the Fermi Paradox from their summaries.",
+      "Step 3: For Lee Cronin, note his emphasis on life being 'as common as the formation of a star' and his work on Assembly Theory, which suggests a high probability of life's emergence.",
+      "Step 4: For Adam Frank, note his statement that 'the only way humans are alone in the universe is if the probability of life arising on a habitable zone planet is less than one in 10 billion trillion' and his discussion of the 'technosphere' as a potentially unsustainable system.",
+      "Step 5: For Robin Hanson, identify his direct approach to the paradox with the 'Grabby Aliens' theoretical model, which offers an explanation for the lack of observed extraterrestrial civilizations.",
+      "Step 6: Formulate a question that highlights the common ground (life's potential commonality) between Cronin and Frank, and then contrasts their approaches (Cronin's focus on emergence, Frank's on planetary conditions/technosphere) with Hanson's direct 'solution' model for the paradox.",
+      "Step 7: Construct an answer that directly addresses the question, outlining each guest's contribution or approach to the Fermi Paradox and highlighting the differences in their perspectives, ensuring it is 2-3 sentences and does not use episode numbers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "How do Keyu Jin's and Jeffrey Wasserstrom's characterizations of China's internal system, particularly regarding decentralization and control, inform or contrast with Dylan Patel and Nathan Lambert's observations on China's technological resilience in the face of US export controls?",
+    "answer": "Keyu Jin would argue that China's decentralized economic model and the unintended consequences of US export controls have spurred its technological resilience, as evidenced by companies like DeepSeek. In contrast, Jeffrey Wasserstrom's analysis emphasizes China's centralized political control and sophisticated censorship, which provides a different lens through which to understand the state's role in fostering or directing such resilience. Dylan Patel and Nathan Lambert's observations on DeepSeek's advanced AI models and adaptations to hardware bans illustrate this practical capacity for innovation and self-reliance within the complex US-China relationship.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      459,
+      466,
+      477
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic of 'US-China relations' and how each guest contributes to it.",
+      "Step 2: Extract Keyu Jin's perspective: China's economy is decentralized, US export controls (like the CHIPS Act) unintentionally spurred domestic innovation (e.g., DeepSeek, Huawei), and it has a unique blend of capitalism/socialism.",
+      "Step 3: Extract Jeffrey Wasserstrom's perspective: China is characterized by centralized political control, a personality cult around Xi Jinping, and sophisticated censorship, focusing on the state's top-down influence.",
+      "Step 4: Extract Dylan Patel and Nathan Lambert's perspective: DeepSeek's AI models demonstrate China's technical prowess and adaptation (e.g., modifying CUDA layer, large GPU clusters) in response to US hardware bans (like the H800 ban), showcasing technological resilience.",
+      "Step 5: Formulate a question that contrasts Jin's emphasis on economic decentralization and unintended innovation with Wasserstrom's focus on centralized political control, and how both relate to Patel and Lambert's concrete examples of China's technological resilience against US policies.",
+      "Step 6: Construct a concise answer (2-3 sentences) that directly addresses the question, highlighting the specific contrasting or complementary viewpoints from each guest without mentioning episode numbers."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "How do Narendra Modi's perspective on India's experiences with cross-border hostility and 'betrayal' from nations like Pakistan, and Douglas Murray's analysis of groups like Hamas as 'death cults' driven by explicit ideological hatred, highlight different dimensions of the global challenge of terrorism?",
+    "answer": "Narendra Modi emphasizes the geopolitical dimension of terrorism, where states engage in 'hostility and betrayal' despite peace overtures, requiring a strong national response. In contrast, Douglas Murray focuses on the ideological roots of terrorism, describing groups like Hamas as non-state 'death cults' driven by explicit charters calling for destruction, highlighting fanaticism and antisemitism as primary drivers.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      460,
+      463,
+      473
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic of 'terrorism' across the summaries.",
+      "Step 2: Extract Narendra Modi's perspective on terrorism, noting his experience with Pakistan's 'hostility and betrayal' following peace gestures, which points to state-level or cross-border terrorism as a geopolitical challenge.",
+      "Step 3: Extract Douglas Murray's perspective on terrorism, focusing on his description of Hamas as a 'death cult' driven by explicit ideological hatred and antisemitism, highlighting the role of fanaticism in non-state actors.",
+      "Step 4: Identify the core contrast: Modi's view centers on state-to-state geopolitical conflict and betrayal, while Murray's focuses on the ideological and fanatical nature of non-state actors.",
+      "Step 5: Formulate a comparative question that asks how these different perspectives illustrate distinct 'dimensions' or 'drivers' of terrorism, referencing both guests by name and their key ideas.",
+      "Step 6: Construct a concise answer that directly addresses the question by outlining the distinct dimensions each guest highlights."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "While both Janna Levin and Terence Tao engage with profound concepts that rely on mathematics, how do their perspectives differ regarding the fundamental nature and purpose of mathematics itself, especially in its relationship to understanding reality?",
+    "answer": "Terence Tao views mathematics as a discipline focused on exploring the consequences of models and axioms, distinct from physics, and is concerned with its internal problems and discovery. In contrast, Janna Levin applies mathematics as a crucial tool and language to describe and comprehend the physical universe, such as black holes and gravitational waves, using it to uncover the mysteries of physical reality.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      460,
+      468,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify 'mathematics' as the common topic across the provided summaries.",
+      "Step 2: Analyze each guest's interaction with or perspective on mathematics. Narendra Modi's summary does not directly address mathematics.",
+      "Step 3: For Janna Levin, note her focus on applying mathematical concepts (like spacetime curvature, general relativity) to describe and understand physical phenomena such as black holes and gravitational waves, indicating an instrumental view of mathematics for physical reality.",
+      "Step 4: For Terence Tao, note his explicit statement that 'Mathematics is distinguished from physics and other sciences by its focus on exploring the consequences of models (axioms) rather than being solely conclusion-driven,' and his work on abstract mathematical problems, indicating an intrinsic view of mathematics as a field of study in itself.",
+      "Step 5: Formulate a comparative question that highlights this contrast between an intrinsic/axiomatic view (Tao) and an applied/descriptive view for physical reality (Levin).",
+      "Step 6: Construct an answer that directly addresses the contrast, referencing specific ideas and approaches from each guest's summary."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Given Narendra Modi's account of India's peace overtures to Pakistan being met with 'hostility and betrayal,' and Douglas Murray's analysis of groups like Hamas having explicit charters for destruction, how do their views diverge on the primary impediments to achieving lasting peace in complex geopolitical landscapes?",
+    "answer": "Narendra Modi, despite experiencing 'hostility and betrayal' in peace attempts, still emphasizes India's role in global peace and the potential for democratic processes to foster stability. Douglas Murray, conversely, highlights that explicit, ideologically driven aims of destruction, as seen in Hamas's charter, represent a more fundamental and perhaps insurmountable impediment to peace, suggesting some conflicts are rooted in an inherent refusal of coexistence.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      460,
+      463
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic of 'geopolitics' and specifically the aspect of achieving peace or resolving conflict.",
+      "Step 2: Extract Narendra Modi's perspective: He describes India's peace gestures with Pakistan being met with 'hostility and betrayal,' yet still frames India as a force for global peace and attributes strength to democratic backing, implying a belief in the potential for peace despite setbacks.",
+      "Step 3: Extract Douglas Murray's perspective: He focuses on groups like Hamas, whose charter explicitly calls for destruction, and discusses the ideological roots of hatred, suggesting that such fundamental, destructive aims are a core impediment to peace.",
+      "Step 4: Formulate a comparative question that contrasts their views on the 'primary impediments to achieving lasting peace,' referencing their specific examples and approaches.",
+      "Step 5: Construct an answer that directly highlights Modi's emphasis on diplomatic effort and democratic strength despite betrayal, versus Murray's focus on explicit ideological destruction as a more fundamental barrier."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "When examining destructive political leadership, how do Douglas Murray and James Holland differ in their emphasis regarding the primary drivers or characteristics of such leaders?",
+    "answer": "Douglas Murray tends to emphasize the ideological fanaticism and explicit destructive intent, as seen in his analysis of Hamas's charter and concepts like 'death cults.' In contrast, James Holland, while acknowledging destructive ideologies like Hitler's, often highlights how these ideologies manifest in strategic and operational blunders, underscoring the practical incompetence that can characterize even highly destructive leaders.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      463,
+      470
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic of 'political leadership' in both summaries.",
+      "Step 2: Analyze Douglas Murray's perspective on destructive leadership, noting his focus on 'motivations of leaders like Putin and Hamas,' 'ideological roots of hatred, fanaticism, and antisemitism,' and his book 'On Democracies and Death Cults,' which points to ideological drive and destructive intent.",
+      "Step 3: Analyze James Holland's perspective on destructive leadership, noting his focus on 'Hitler's ideology,' 'strategic and logistical blunders of the Axis powers,' and 'operational level of war,' which highlights how ideology translates into practical incompetence and strategic failures.",
+      "Step 4: Identify the core difference in emphasis: Murray focuses more on the *ideological intent* and *fanaticism*, while Holland, while acknowledging ideology, also strongly emphasizes the *operational and strategic incompetence* that can accompany such leadership.",
+      "Step 5: Formulate a comparative question that directly asks about these differing emphases regarding the 'primary drivers or characteristics' of destructive political leadership, referencing both guests by name."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Douglas Murray attributes the Israel-Palestine conflict significantly to explicit, ideological antisemitism found in groups like Hamas, citing their charter. How might Dave Smith's broader approach to challenging government narratives and discussing the nature of antisemitism and conspiracy theories offer a contrasting perspective on the conflict's underlying causes or the understanding of antisemitism itself?",
+    "answer": "Douglas Murray views antisemitism as a fundamental, explicit ideological hatred, deeply rooted in groups like Hamas as evidenced by their charter's call for the destruction of Israel. Dave Smith, while discussing antisemitism, approaches it through the lens of challenging government narratives and examining how political strategies, such as Benjamin Netanyahu's alleged propping up of Hamas, might contribute to the conflict, suggesting a more critical or contextual understanding of its role beyond purely ideological hatred.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      463,
+      464
+    ],
+    "reasoning_steps": [
+      "Identified the common topic of 'antisemitism' and its role in the Israel-Palestine conflict across both summaries.",
+      "Extracted Douglas Murray's perspective: He emphasizes the explicit ideological antisemitism of Hamas, citing their charter as a direct driver of conflict and hatred.",
+      "Extracted Dave Smith's perspective: He discusses antisemitism in the context of challenging government narratives and critiques specific Israeli policies, like Netanyahu's strategy of propping up Hamas, suggesting a focus on political dynamics and the construction of narratives around antisemitism.",
+      "Formulated a question that contrasts Murray's focus on explicit ideological antisemitism with Smith's broader, critical approach to narratives and political context as underlying causes or understandings of antisemitism in the conflict.",
+      "Constructed a concise answer highlighting the direct contrast between Murray's ideological emphasis and Smith's more critical, context-driven perspective."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "How do Jeffrey Wasserstrom and Keyu Jin describe the enduring influence of Confucianism on contemporary China, particularly regarding its impact on political stability and leadership versus its role in shaping the broader social fabric and economic approach?",
+    "answer": "Jeffrey Wasserstrom emphasizes Confucianism's basis in stable, hierarchical relationships with mutual obligations, linking it to leaders like Xi Jinping's focus on order and stability. Keyu Jin, while not explicitly detailing Confucianism, describes China's \"highly socialist social fabric\" characterized by communalism and a focus on common prosperity, which can be seen as reflecting Confucian values in the social and economic spheres.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      466,
+      477
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic 'Confucianism' in both summaries.",
+      "Step 2: Analyze Jeffrey Wasserstrom's perspective on Confucianism, noting his explicit definition of it as based on stable, hierarchical relationships with mutual obligations, and its connection to political leadership and order (e.g., Xi Jinping).",
+      "Step 3: Analyze Keyu Jin's perspective, noting that while she lists Confucianism as a key entity, her detailed discussion focuses on China's 'highly socialist social fabric,' 'communalism,' and 'common prosperity' in the economic context, implying a social rather than purely political influence of values that could be rooted in Confucianism.",
+      "Step 4: Formulate a comparative question that highlights the different aspects of Confucianism's influence each guest emphasizes: Wasserstrom on political stability/leadership, and Jin on the social fabric/economic approach.",
+      "Step 5: Construct an answer that directly contrasts these two perspectives, drawing from the key details provided in each summary without introducing external information or episode numbers."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "How do Tim Sweeney and Dan Houser's views diverge regarding the application and limitations of AI in the creative aspects of video game development?",
+    "answer": "Tim Sweeney highlights AI's potential in generating realistic visual content, such as digital humans, noting the technical challenges in achieving lifelike imperfections. Conversely, Dan Houser believes AI, particularly LLMs, can handle low-level writing but struggles with producing novel ideas and the 'magic' crucial for compelling narrative storytelling.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      467,
+      484
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic of 'video game development' and a specific sub-topic where both guests have expressed opinions, which is 'AI's role in creativity'.",
+      "Step 2: Extract Tim Sweeney's perspective on AI: He discusses AI's impact on content creation, specifically mentioning MetaHuman Creator and the challenges of creating realistic digital humans, implying AI assists in generating visual assets.",
+      "Step 3: Extract Dan Houser's perspective on AI: He focuses on AI (LLMs) for writing, stating it can handle low-level tasks but lacks the ability to create novel ideas or the 'magic' in storytelling.",
+      "Step 4: Formulate a question that directly asks for the divergence in their views on AI's creative applications and limitations, referencing both guests by name.",
+      "Step 5: Construct an answer that clearly contrasts Sweeney's focus on AI for visual content generation with Houser's perspective on AI for narrative writing, highlighting their respective perceived strengths and weaknesses of AI in these creative domains."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "When discussing the keys to a successful career, how do Robert Rodriguez's emphasis on creativity and resourcefulness, David Fravor's philosophy of never taking 'no' for an answer, and ThePrimeagen's journey of finding passion and overcoming personal adversity offer distinct perspectives on achieving one's goals?",
+    "answer": "Robert Rodriguez champions creativity and resourcefulness, believing that ingenuity, especially under constraints, is paramount for success in filmmaking. In contrast, David Fravor emphasizes unwavering self-belief and the tenacity to never accept 'no' as a definitive answer, crucial for his career as a Navy pilot. ThePrimeagen's perspective, while also valuing persistence, highlights the importance of finding one's true passion and overcoming significant personal adversity to achieve fulfillment and success in software engineering.",
+    "qa_type": "comparative",
     "reference_episodes": [
       122,
+      461,
       465
     ],
     "reasoning_steps": [
-      "Step 1: Identify David Fravor's core career advice, which centers on believing in one's capabilities and never taking 'no' for an answer within the context of naval aviation.",
-      "Step 2: Identify Robert Rodriguez's core career advice, which emphasizes that creativity is 90% of the job and that resourcefulness (using what is available) is key to independent success.",
-      "Step 3: Compare these two approaches to identify the shift from institutional persistence/willpower to creative autonomy/resourcefulness as the primary driver of success."
-    ]
+      "Step 1: Identify the shared topic of 'career advice' across all three guests' summaries.",
+      "Step 2: Extract the core career philosophy or key advice from each guest: David Fravor emphasizes 'never taking 'no' for an answer and believing in his own capabilities' (persistence, self-belief); Robert Rodriguez stresses 'creativity, resourcefulness,' and that 'creativity is 90% of any job'; Michael Paulson (ThePrimeagen) highlights finding joy/passion in programming and overcoming personal struggles like addiction and academic failure (passion, resilience).",
+      "Step 3: Identify the distinct angles and contrasts in their advice. Fravor focuses on external perseverance and internal confidence, Rodriguez on creative problem-solving and resourcefulness, and ThePrimeagen on internal drive, passion, and overcoming personal hurdles.",
+      "Step 4: Formulate a comparative question that references each guest by name and asks how their distinct perspectives contribute to achieving career goals, ensuring no episode numbers are mentioned.",
+      "Step 5: Construct a concise answer (2-3 sentences) that directly compares and contrasts these identified philosophies, attributing each perspective to the respective guest."
+    ],
+    "era": "mixed"
   },
   {
-    "question": "How has the discussion of leadership evolved from David Fravor's focus on high-performance military environments to Marc Andreessen's analysis of national and institutional success?",
-    "answer": "The treatment of leadership shifted from David Fravor\u2019s emphasis on meritocratic, skill-based hierarchies and individual tenacity within specialized naval units to Marc Andreessen\u2019s focus on leadership as a tool for national revitalization and institutional reform. While Fravor highlights operational excellence and personal accountability, Andreessen views leadership through the lens of steering entire societies away from bureaucratic decay and toward technological and economic growth.",
-    "qa_type": "temporal",
+    "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+    "answer": "Charles Hoskinson prioritizes languages like Haskell for their mathematical rigor and ability to ensure verifiable correctness in critical financial systems like Cardano. ThePrimeagen emphasizes languages as practical tools for problem-solving and building efficient developer infrastructure, valuing the mastery of fundamental concepts. Tim Sweeney focuses on languages that enable high performance, complex real-time simulations, and domain-specific expressiveness, as exemplified by Unreal Engine and the development of Verse for the metaverse.",
+    "qa_type": "comparative",
     "reference_episodes": [
-      122,
-      458
+      192,
+      461,
+      467
     ],
     "reasoning_steps": [
-      "Step 1: Analyze David Fravor's discussion of leadership, which centers on the merit-based hierarchy at Top Gun and the personal drive required to succeed in naval aviation.",
-      "Step 2: Analyze Marc Andreessen's discussion of leadership, which focuses on macro-level institutional shifts, the role of political leadership in national morale, and the movement away from corporate trends like ESG.",
-      "Step 3: Synthesize the evolution from leadership as a localized, skill-dependent military discipline to leadership as a broader mechanism for societal and institutional transformation."
-    ]
+      "Step 1: Identify the shared topic 'programming languages' and how each guest interacts with it.",
+      "Step 2: Analyze Charles Hoskinson's perspective: He uses Haskell for Cardano, valuing its mathematical proximity for rigorous, peer-reviewed development and ensuring correctness in a financial operating system.",
+      "Step 3: Analyze Michael Paulson (ThePrimeagen)'s perspective: He finds joy in fundamental concepts like linked lists and identifies as a tools engineer, indicating a focus on practical problem-solving and building efficient software for developers.",
+      "Step 4: Analyze Tim Sweeney's perspective: His work on Unreal Engine and the metaverse (with Verse) highlights a need for languages that support high performance, complex graphics, and scalability for interactive, real-time environments.",
+      "Step 5: Formulate a question that contrasts these domain-driven perspectives on the purpose and characteristics of programming languages, referencing guests by name.",
+      "Step 6: Construct an answer that directly compares their viewpoints based on their professional domains and specific examples, ensuring it's concise and addresses the core contrasts."
+    ],
+    "era": "mixed"
   },
   {
-    "question": "How has the treatment of personal development evolved between the discussions with Ryan Hall and Michael Paulson?",
-    "answer": "The discourse shifted from Ryan Hall\u2019s philosophical focus on martial arts and the 'warrior mindset' as a path to wisdom toward Michael Paulson\u2019s more visceral account of personal development through addiction recovery and spiritual transformation. This marks an evolution from seeking excellence through external disciplines and historical study to finding growth through internal resilience and overcoming personal crisis.",
-    "qa_type": "temporal",
+    "question": "How do the entrepreneurial philosophies of Travis Oliphant, Tim Sweeney, and Pavel Durov differ regarding the balance between fostering collaborative ecosystems versus maintaining absolute independent control in building their respective tech ventures? While Oliphant championed open-source communities like NumPy and Anaconda, and Sweeney scaled Epic Games through licensing and a developer ecosystem, what unique emphasis does Durov place on absolute ownership and independence for Telegram?",
+    "answer": "Travis Oliphant's entrepreneurship centers on building and sustaining open-source communities through collaboration and a balance of commercial and non-profit support. Tim Sweeney scaled Epic Games by creating powerful tools like Unreal Engine and fostering a developer ecosystem through licensing. In contrast, Pavel Durov's approach with Telegram prioritizes 100% personal ownership and a lean team to ensure unwavering commitment to user privacy and freedom of speech, even resisting significant external pressures.",
+    "qa_type": "comparative",
     "reference_episodes": [
-      125,
-      461
+      224,
+      467,
+      482
     ],
     "reasoning_steps": [
-      "Step 1: Identify Ryan Hall's framing of personal development as a philosophical and intellectual pursuit centered on martial arts, humility, and the study of historical figures like Miyamoto Musashi.",
-      "Step 2: Identify Michael Paulson's framing of personal development as a narrative of recovery, focusing on his struggles with addiction, mental health, and spiritual awakening.",
-      "Step 3: Compare the two approaches to identify the shift from an abstract, discipline-based model of growth to a grounded, experience-based model of resilience."
-    ]
-  },
-  {
-    "question": "Based on the discussions with Brian Keating and Robin Hanson regarding cosmic and terrestrial timelines, what are the specific durations provided for the fusion of light elements in the early universe, the remaining window for complex life on Earth, and the point at which universal expansion will isolate galaxy clusters?",
-    "answer": "Brian Keating notes that the fusion and production of the lightest elements occurred in a timeframe shorter than an episode of the TV show 'The Big Bang Theory.' Robin Hanson provides the future metrics, stating that complex life has roughly 1 billion years left on Earth and that the expansion of the universe will isolate galaxy clusters in approximately 150 billion years.",
-    "qa_type": "aggregation",
-    "reference_episodes": [
-      257,
-      292
+      "Step 1: Identified 'entrepreneurship' as the shared topic across all three guests.",
+      "Step 2: Analyzed each guest's summary to extract their core entrepreneurial approach and philosophy.",
+      "Step 3: Noted Travis Oliphant's focus on open source, community building, and balancing commercial with non-profit interests (Quansight Labs) for shared infrastructure.",
+      "Step 4: Identified Tim Sweeney's strategy of creating powerful technological tools (Unreal Engine), licensing them, and building a developer ecosystem around Epic Games' products.",
+      "Step 5: Recognized Pavel Durov's distinct emphasis on 100% ownership, a lean team, and a mission-driven approach (privacy, freedom of speech) that actively resists external control and traditional profit motives.",
+      "Step 6: Formulated a comparative question highlighting the contrast between collaborative, ecosystem-focused entrepreneurship (Oliphant, Sweeney) and a highly independent, control-oriented approach (Durov).",
+      "Step 7: Constructed a concise answer that directly addresses these contrasting philosophies, referencing each guest's specific ventures and motivations."
     ],
-    "reasoning_steps": [
-      "Step 1: Identify the specific numerical claim made by Brian Keating regarding the duration of light element production in the early universe.",
-      "Step 2: Locate Robin Hanson's prediction for the remaining lifespan of complex life on Earth before it is no longer possible.",
-      "Step 3: Extract the specific timeline provided by Robin Hanson for the isolation of galaxy clusters due to the expansion of the universe.",
-      "Step 4: Aggregate these three distinct temporal metrics into a single comparative summary."
-    ]
+    "era": "mixed"
   },
   {
-    "question": "Based on the discussions with Dylan Patel and Sebastian Raschka regarding the AI race and training infrastructure, what are the specific GPU counts associated with DeepSeek's cluster and pre-training, and what is the specific future year targeted for the analysis of the AI landscape?",
-    "answer": "DeepSeek utilizes a cluster of approximately 50,000 GPUs, with the DeepSeek-V3 model specifically pre-trained on 2,000 H800 GPUs, while the industry analysis with Sebastian Raschka focuses on the state of AI in the year 2026. These figures highlight the current hardware scale of Chinese AI development alongside the projected timeline for global competition.",
-    "qa_type": "aggregation",
-    "reference_episodes": [
-      459,
-      490
-    ],
-    "reasoning_steps": [
-      "Step 1: Identify the specific hardware metrics for DeepSeek mentioned by Dylan Patel, specifically the 2,000 H800 GPUs used for V3 pre-training and the 50,000 GPU total cluster size.",
-      "Step 2: Identify the specific future timeline benchmarked in the discussion with Sebastian Raschka, which is the year 2026.",
-      "Step 3: Aggregate these quantitative data points to answer the query regarding infrastructure scale and industry projections."
-    ]
-  },
-  {
-    "question": "Comparing the perspectives of Ben Goertzel and the duo of Sebastian Raschka and Nathan Lambert, what specific numbers are cited regarding the scale of the AGI conference's origins versus its current state, and what specific year and model versioning milestones are used to frame the future of the AI race?",
-    "answer": "Ben Goertzel states the AGI conference grew from an initial 60 attendees to several hundred today, while Sebastian Raschka and Nathan Lambert frame their future analysis around the year 2026 and the release of Claude Opus 4.5. These metrics track the expansion of the AGI field from a small niche to a landscape defined by rapid model iteration.",
-    "qa_type": "aggregation",
+    "question": "How do Ben Goertzel's direct efforts in developing embodied Artificial General Intelligence for robotics, such as with Sophia and the 'embodied communication prior,' contrast with Sara Walker and Lee Cronin's Assembly Theory on the emergence of complex systems, and Sebastian Raschka and Nathan Lambert's focus on large language models, in shaping our understanding of advanced artificial systems?",
+    "answer": "Ben Goertzel champions embodied AGI, where intelligence controls physical agents in the real world, as seen in his work with Sophia. Sara Walker and Lee Cronin provide a theoretical lens through Assembly Theory, exploring how complexity and novelty emerge in systems, which offers a fundamental understanding applicable to advanced artificial constructs. Sebastian Raschka and Nathan Lambert primarily focus on advancing computational intelligence via large language models and software agents, developing the 'brain' aspect of future AI, distinct from its physical manifestation.",
+    "qa_type": "comparative",
     "reference_episodes": [
       103,
       279,
       490
     ],
     "reasoning_steps": [
-      "Step 1: Identify the initial and current attendee figures for the AGI conference from the Ben Goertzel summary (60 and several hundred).",
-      "Step 2: Identify the specific future year and model version number discussed by Sebastian Raschka and Nathan Lambert (2026 and Claude Opus 4.5).",
-      "Step 3: Aggregate these quantitative markers to show the progression from community growth to specific technological forecasting."
-    ]
+      "Step 1: Identify the direct and indirect connections of each guest to the overarching topic of 'robotics' and advanced artificial systems.",
+      "Step 2: Note Ben Goertzel's explicit focus on embodied AGI and physical robots (e.g., Sophia, Hanson Robotics, embodied communication prior) as the most direct link to 'robotics'.",
+      "Step 3: Recognize Sara Walker and Lee Cronin's Assembly Theory as a fundamental, theoretical perspective on the emergence of complexity and information structuring, which provides a scientific framework for understanding any complex system, including advanced robotics.",
+      "Step 4: Identify Sebastian Raschka and Nathan Lambert's discussion of large language models and software agents as a focus on the computational intelligence aspect of AI, which could power advanced artificial systems but is distinct from their physical embodiment.",
+      "Step 5: Formulate a comparative question that contrasts Goertzel's practical, embodied approach with Walker/Cronin's theoretical understanding of complexity and Raschka/Lambert's focus on disembodied computational intelligence, all within the context of advanced artificial systems that include robotics."
+    ],
+    "era": "mixed"
   },
   {
-    "question": "Based on the interviews with Jared Kushner and Ryan Hall, what are the specific dollar amounts mentioned in relation to the Peace to Prosperity business plan for Gaza and the West Bank, and the individual donation amount contributed to the FIRST robotics organization?",
-    "answer": "The Peace to Prosperity plan is a $27 billion business plan intended for Gaza and the West Bank, while the individual donation amount mentioned for the FIRST robotics and STEM education organization is $10. These figures represent the scale of international economic proposals and grassroots charitable contributions discussed by the guests respectively.",
+    "question": "How do Stephen Wolfram's computational universe model and Janna Levin's discussion of black holes illuminate different aspects or challenges related to quantum mechanics?",
+    "answer": "Stephen Wolfram's work, particularly the Wolfram Physics Project, aims to provide a fundamental theory from which quantum mechanics, including quantum measurement, emerges as a consequence of observers choosing reference frames in branchial space. In contrast, Janna Levin highlights a significant challenge to quantum mechanics through the black hole information paradox, where the principle of unitarity is seemingly violated by black hole evaporation, pointing to a fundamental conflict between quantum theory and general relativity.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      124,
+      468
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'quantum mechanics' in both summaries.",
+      "Step 2: Extract Stephen Wolfram's perspective on quantum mechanics: He proposes a foundational computational model (Wolfram Physics Project) where quantum phenomena, specifically measurement, are explained as emergent properties from discrete space and branchial space reference frames.",
+      "Step 3: Extract Janna Levin's perspective on quantum mechanics: She discusses it in the context of the black hole information paradox, highlighting a conflict between quantum mechanics' unitarity and black hole evaporation, rather than proposing an alternative foundation.",
+      "Step 4: Formulate a comparative question that contrasts Wolfram's attempt to *explain/derive* quantum mechanics from a new foundation with Levin's focus on a *fundamental conflict/paradox* involving quantum mechanics.",
+      "Step 5: Construct an answer that directly addresses this contrast, referencing their specific concepts (Wolfram Physics Project, branchial space, information paradox, unitarity)."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Stephen Wolfram proposes that General Relativity emerges from his Wolfram Physics Project, a model based on simple computational rules on hypergraphs. In contrast, Janna Levin investigates the established framework of General Relativity through phenomena like black holes and gravitational waves. How do their fundamental approaches to understanding General Relativity differ?",
+    "answer": "Stephen Wolfram's approach to General Relativity is to derive it as a consequence of more fundamental computational processes within his hypergraph model, viewing it as an emergent property of a deeper theory. Janna Levin, however, operates within the existing framework of General Relativity, exploring its profound implications and observable phenomena like space-time curvature, black holes, and gravitational waves, rather than seeking to explain its origins from a more fundamental level.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      124,
+      468,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify 'general relativity' as the common topic among the guests.",
+      "Step 2: Extract Stephen Wolfram's perspective on general relativity: he views it as a consequence of causal invariance and his hypergraph model, aiming to derive it from a fundamental computational theory (Wolfram Physics Project).",
+      "Step 3: Extract Janna Levin's perspective on general relativity: she discusses its implications for black holes, spacetime curvature, and gravitational waves, working within its established framework to explore its consequences and mysteries.",
+      "Step 4: Note that Terence Tao's summary does not provide specific details about his views on General Relativity itself, making a direct comparative question on this topic with him less relevant.",
+      "Step 5: Formulate a question that highlights the genuine contrast between Wolfram's foundational/derivational approach and Levin's explorational/consequential approach to General Relativity, referencing their names and key concepts.",
+      "Step 6: Construct a concise answer that directly addresses this contrast, explaining their differing focuses and methodologies regarding General Relativity."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "While both Daniel Schmachtenberger and Robin Hanson discuss the topic of alien civilizations, how do their primary approaches to understanding or detecting them differ, considering Schmachtenberger's interest in phenomena like UFOs and Hanson's 'grabby aliens' model?",
+    "answer": "Daniel Schmachtenberger's approach involves considering potential empirical evidence, such as intriguing UFO sightings and analyzed materials like nanotech alloys, suggesting a re-evaluation of existing models like the Drake equation. In contrast, Robin Hanson primarily uses a theoretical framework, his 'grabby aliens' model, to explain the Fermi Paradox and predict the distribution and behavior of advanced civilizations across the universe.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      191,
+      292,
+      468
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic 'alien civilizations' and the guests who directly discuss it: Daniel Schmachtenberger and Robin Hanson.",
+      "Step 2: Analyze Daniel Schmachtenberger's summary for his perspective on alien civilizations. Note his interest in 'tic tac UFO sighting' and 'nanotech alloy' from an 'Area 51-type area,' and his comment that 'The Drake equation may not be the end story.' This indicates an openness to empirical evidence and a willingness to challenge existing models based on observed phenomena.",
+      "Step 3: Analyze Robin Hanson's summary for his perspective on alien civilizations. Note his work on 'grabby aliens,' a 'theoretical model for understanding the distribution of advanced civilizations,' and its implications for the 'Fermi paradox.' This indicates a primary focus on theoretical modeling and predictive frameworks.",
+      "Step 4: Formulate a question that highlights the contrast between Schmachtenberger's focus on empirical evidence and re-evaluation of models versus Hanson's focus on theoretical modeling, referencing their specific concepts (UFOs/nanotech vs. grabby aliens).",
+      "Step 5: Construct an answer that directly compares these differing approaches, ensuring it is concise and references the guests by name and their key ideas without using episode numbers."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "How do Travis Oliphant's emphasis on collaborative open-source development, Oliver Anthony's focus on shared human experience and rejection of corporate influence, and Peter Steinberger's navigation of a viral AI agent community illustrate distinct philosophies regarding the purpose and challenges of community building?",
+    "answer": "Travis Oliphant builds community through structured open-source collaboration and sustainable ecosystems, often balancing commercial and non-profit interests to advance scientific computing. In contrast, Oliver Anthony fosters community through shared human experiences, authenticity, and a deliberate rejection of corporate influence to maintain integrity and connection. Peter Steinberger's experience with OpenClaw illustrates community forming rapidly around a viral AI project, grappling with challenges of explosive growth and external pressures rather than primarily shared social values or long-term technical governance.",
+    "qa_type": "comparative",
+    "reference_episodes": [
+      224,
+      469,
+      491
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify 'community building' as the common topic across all three guest summaries.",
+      "Step 2: Extract each guest's specific perspective or approach to community: Travis Oliphant (open-source software, technical collaboration, balancing commercial/non-profit), Oliver Anthony (shared human experience, blue-collar struggles, rejection of corporate, authenticity), Peter Steinberger (viral open-source AI agent, rapid growth, external pressures like naming/security).",
+      "Step 3: Formulate a comparative question that highlights these distinct philosophies, referencing each guest by name and their key contributions to the topic.",
+      "Step 4: Construct a concise answer that directly contrasts their approaches to community building, focusing on their underlying values, structures, and the unique challenges each faces."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "How has Stephen Wolfram's conceptualization of the universe's fundamental nature and the role of 'rule space' evolved in his discussions of the Wolfram Physics Project?",
+    "answer": "Initially, Stephen Wolfram primarily focused on explaining the mechanics of the universe\u2014how space, time, and physical laws emerge from simple rules operating on hypergraphs. In later discussions, his views expanded to propose that the universe may exist because it is running all possible rules, with our perception being a specific reference frame within this 'rule space.' This evolution also included the articulation of the 'Rulliad' as a necessary consequence of the formal definition of computation itself.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      124,
+      234
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the core topic of Stephen Wolfram's discussions: the Wolfram Physics Project and the fundamental nature of reality.",
+      "Step 2: Compare the details provided in the summaries regarding the universe's existence and underlying principles.",
+      "Step 3: Note that the first summary details the operational aspects of the universe within the Wolfram Physics Project (space, time, energy, relativity, quantum mechanics).",
+      "Step 4: Observe that the second summary introduces a more fundamental reason for existence: 'the universe may exist because it is running all possible rules, and our perception is based on our reference frame in rule space.' It also introduces 'Rule Space' and 'The Rulliad' as a consequence of computation's formal definition.",
+      "Step 5: Conclude that there is a clear evolution from explaining *how* the universe works to proposing a meta-level explanation for *why* it exists, incorporating the new concepts of 'rule space' and the 'Rulliad' as foundational elements."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "How has the podcast's approach to discussing 'history' evolved, considering Ryan Hall's focus on lessons from historical figures for individual development compared to Saagar Enjeti's analysis of historical ideological movements to understand current political landscapes?",
+    "answer": "The podcast's treatment of history evolved from an emphasis on drawing philosophical lessons from historical figures for personal development, as seen in the discussion with Ryan Hall, to a broader analytical framework. Later, with Saagar Enjeti, the focus shifted to examining historical ideological movements and past political events to explain current political dynamics and societal shifts.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      125,
+      454
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'history' across both summaries.",
+      "Step 2: Analyze Ryan Hall's discussion of history, noting its focus on historical figures (Miyamoto Musashi, Alexander the Great) for philosophical insights, personal development, and understanding concepts like violence and grace within martial arts.",
+      "Step 3: Analyze Saagar Enjeti's discussion of history, noting its focus on ideological movements (Civil Rights Act, New Deal) and past political events to explain current political moments and societal structures.",
+      "Step 4: Identify the shift in the 'treatment' or 'application' of history: from an individual/philosophical lens to a broader societal/political analytical lens.",
+      "Step 5: Formulate a question that highlights this evolution in the podcast's approach to the topic, referencing both guests and the distinct ways they engaged with history.",
+      "Step 6: Construct an answer that directly traces this evolution, contrasting the initial and later approaches to discussing history."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "How has the podcast's exploration of the topic of 'philosophy' evolved in its scope and application, comparing its treatment in discussions on martial arts and personal development with Ryan Hall to its later reflections on nature, conservation, and ecological wisdom with Paul Rosolie?",
+    "answer": "The podcast's treatment of philosophy has evolved from focusing on individual ethics, the mindset of warriors, and the pursuit of personal wisdom to encompassing broader ecological and existential reflections. With Ryan Hall, philosophy centered on the ethics of violence and the journey towards wisdom through humility. Later, with Paul Rosolie, discussions expanded to include philosophical reflections on life, death, the interconnectedness of nature, and the wisdom found within ecosystems, highlighting a shift from individual to systemic philosophical inquiry.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      125,
+      429
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic mentioned across the episodes, which is 'philosophy'.",
+      "Step 2: Analyze how 'philosophy' is discussed in the context of Ryan Hall's appearance. It focuses on martial arts, violence, power, grace, and personal development, with a key detail about wisdom starting with humility.",
+      "Step 3: Analyze how 'philosophy' is discussed in the context of Paul Rosolie's appearance. It focuses on the Amazon rainforest, wildlife, conservation, and includes 'philosophical reflections on life, death, and the interconnectedness of nature' and 'wisdom found within its ecosystems'.",
+      "Step 4: Compare the two treatments of 'philosophy' to identify a genuine shift or evolution in its scope or application. The shift is from individual/personal ethics and development (Ryan Hall) to broader ecological, existential, and systemic wisdom (Paul Rosolie).",
+      "Step 5: Formulate a question that clearly asks about this evolution in the topic's treatment, referencing the guests by name and avoiding episode numbers.",
+      "Step 6: Construct a concise, 2-3 sentence answer that directly traces this evolution, using details from both summaries without mentioning episode numbers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering the discussions on 'neuroscience', how has the focus shifted from understanding the brain's chemical responses and vulnerabilities, as detailed by Matthew Johnson, to the direct technological intervention and augmentation of neural function, as presented by Elon Musk and the Neuralink team?",
+    "answer": "Initially, discussions around neuroscience, particularly with Matthew Johnson, centered on understanding the brain's pharmacological mechanisms, such as receptor-level events and the impact of substances like psychedelics and MDMA on neural systems and addiction. More recently, with Elon Musk and the Neuralink team, the focus has evolved towards active technological intervention, aiming to directly interface with the brain through devices like the N1 implant to restore function, enhance capabilities, and achieve human-AI symbiosis.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      145,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the primary focus of 'neuroscience' in Matthew Johnson's discussion, which revolves around the brain's chemical interactions, drug effects, and vulnerabilities related to addiction.",
+      "Step 2: Identify the primary focus of 'neuroscience' in Elon Musk and the Neuralink team's discussion, which centers on brain-computer interfaces, direct neural augmentation, and human-AI symbiosis.",
+      "Step 3: Formulate a question that highlights this temporal shift from a 'reactive/understanding' approach to a 'proactive/interventional' approach within the field of neuroscience, referencing the key individuals and their respective contributions.",
+      "Step 4: Construct an answer that directly traces this evolution, contrasting Matthew Johnson's emphasis on chemical and pharmacological impacts with Elon Musk's focus on technological integration and enhancement of neural function, without using any episode-specific identifiers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "As discussed by Jennifer Burns, how did Milton Friedman's understanding of the relationship between economic freedom and political freedom evolve over the course of his career?",
+    "answer": "Milton Friedman initially believed that economic freedom would inevitably lead to political freedom. However, he later revised this stance, acknowledging the distinct importance of civic freedom in societies that had not yet achieved full democracy, suggesting a more nuanced relationship between the two.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      192,
+      457
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify a guest or topic with an explicitly stated evolution in views or predictions.",
+      "Step 2: Locate the detail in Jennifer Burns' summary about Milton Friedman's evolving perspective on economic versus political freedom: 'Friedman believed that economic freedom would eventually lead to political freedom, but later recognized the importance of civic freedom in societies without full democracy.'",
+      "Step 3: Formulate a question that directly asks about this evolution, referencing Milton Friedman and Jennifer Burns by name, and avoiding any episode-specific identifiers.",
+      "Step 4: Construct an answer that clearly outlines Friedman's initial view and his subsequent revised understanding, ensuring it is concise (2-3 sentences) and also avoids episode numbers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "How has the podcast's exploration of UFOs and the likelihood of alien civilizations evolved, particularly concerning the types of evidence and approaches considered in discussions with guests like Daniel Schmachtenberger and Adam Frank?",
+    "answer": "Initially, discussions with guests like Daniel Schmachtenberger explored specific UFO sightings, such as the tic tac incident, and anecdotal evidence like recovered nanotech alloys, suggesting an openness to existing unexplained phenomena as potential indicators of alien presence. Later, with guests like Adam Frank, the focus shifted more towards the scientific search for extraterrestrial life, emphasizing the refinement of the Drake Equation through exoplanet discoveries and the pursuit of verifiable biosignatures and technosignatures, rather than evaluating specific UFO claims. This evolution reflects a movement from considering existing anomalous data to a more systematic, scientific methodology for detection.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      191,
+      455
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common overarching topic across both discussions: UFOs and the existence of alien civilizations.",
+      "Step 2: Analyze Daniel Schmachtenberger's contribution: He discusses specific UFO events (tic tac sighting) and alleged recovered materials (nanotech alloy), indicating an engagement with existing, often anecdotal, 'UFO' phenomena and a questioning of the Drake equation's finality.",
+      "Step 3: Analyze Adam Frank's contribution: He focuses on the scientific search for extraterrestrial life, discussing the Drake Equation, exoplanet discoveries, the Fermi Paradox, and the pursuit of verifiable biosignatures and technosignatures, without engaging with specific UFO sightings.",
+      "Step 4: Formulate a question that highlights the evolution in the *treatment* of the topic, contrasting Schmachtenberger's consideration of existing anomalous data with Frank's emphasis on a rigorous scientific search for new evidence."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering the podcast's discussions on 'politics,' how did the focus evolve from Kelsi Sheren's insights on the personal and societal consequences of political decisions related to war and veteran support, to Marc Andreessen's later analysis of macro-level political trends, national future, and technology's role in governance?",
+    "answer": "The podcast's treatment of 'politics' evolved from a micro-level examination of its human impact, as seen in Kelsi Sheren's discussion of war's personal costs and veteran support needs, to a macro-level analysis of national trajectory. Marc Andreessen's later appearance focused on the future of America, the role of technology and leadership, and challenges like government overreach, shifting the political lens from individual experience to broad societal and technological forces.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      230,
+      458
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic mentioned across episodes, which is 'politics'.",
+      "Step 2: Analyze Kelsi Sheren's discussion of 'politics' as presented in her summary. Her focus is on the personal experiences of war, PTSD, veteran support, and preventing future conflicts, which are consequences of political decisions.",
+      "Step 3: Analyze Marc Andreessen's discussion of 'politics' as presented in his summary. His focus is on the future of America, technology's role, leadership, censorship, and government overreach, representing a broader, more systemic analysis.",
+      "Step 4: Identify the shift or evolution in the 'treatment' of the topic. This is a shift from a focus on the human and micro-level impacts and solutions within politics (Kelsi Sheren) to a macro-level, future-oriented, and systemic analysis of political trends and influences (Marc Andreessen).",
+      "Step 5: Formulate a question that explicitly asks about this evolution, referencing both guests and the topic 'politics' by name, without using episode numbers.",
+      "Step 6: Construct an answer that directly addresses the question by detailing the observed evolution in the podcast's treatment of the topic across the two discussions, adhering to the 2-3 sentence limit and avoiding episode numbers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering David Fravor's experiences with unexplained aerial phenomena that posed direct physical national security challenges, how has the US government's understanding and prioritization of national security threats evolved, especially in light of Andrew Bustamante's observation about the military's recent 'awakening' to new geopolitical and economic realities?",
+    "answer": "Initially, national security concerns, as highlighted by David Fravor, heavily involved direct, physical threats from unknown, technologically advanced aerial objects. More recently, as suggested by Andrew Bustamante, the focus has broadened to include complex geopolitical and economic vulnerabilities, with the military 'waking up' to new realities concerning international debt and strategic leverage.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      122,
+      310
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'national security' and each guest's primary contribution to it.",
+      "Step 2: Extract David Fravor's perspective on national security, which centers on direct, physical threats from unexplained aerial phenomena like the Tic Tac, challenging traditional defense capabilities.",
+      "Step 3: Extract Andrew Bustamante's perspective, specifically noting his mention of the US government and military 'waking up' to new geopolitical and economic realities, such as the implications of the Lend Lease Act on Ukraine's debt, indicating a shift in threat perception.",
+      "Step 4: Formulate a question that traces the evolution from Fravor's focus on tangible, physical threats to Bustamante's discussion of more complex, abstract geopolitical and economic vulnerabilities as evolving national security concerns.",
+      "Step 5: Construct an answer that directly addresses this evolution, contrasting the initial focus with the more recent, broadened understanding, referencing both guests' insights without using episode numbers."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "How did the podcast's exploration of the concept of infinity evolve, comparing Terence Tao's discussion on its role in mathematical problem-solving and the nature of reality to Joel David Hamkins' later deep dive into its foundational set-theoretic properties and paradoxes?",
+    "answer": "The discussion of infinity evolved from Terence Tao's broader philosophical consideration of its role in mathematics and the nature of reality, including its relevance to problems like the Navier-Stokes equations, to Joel David Hamkins' more specific and foundational examination. Hamkins' segment delved into the mathematical properties of infinity, such as Cantor's proof of different sizes of infinity, Hilbert's Hotel, and its axiomatic treatment within ZFC, highlighting its foundational challenges and paradoxes.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      472,
+      488
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'infinity' across both summaries.",
+      "Step 2: Analyze Terence Tao's summary for his treatment of 'infinity', noting its mention in the context of the nature of reality, mathematical mysteries, and problems like Navier-Stokes (where 'infinite' fluid velocity is a key question). This suggests a broader, more philosophical or contextual role.",
+      "Step 3: Analyze Joel David Hamkins' summary for his treatment of 'infinity', noting specific mentions of Cantor's Theorem (different sizes of infinity), Hilbert's Hotel, uncountable real numbers, and its axiomatic definition within ZFC. This indicates a deep, foundational, and set-theoretic focus.",
+      "Step 4: Formulate a question that contrasts these two distinct approaches to the topic, highlighting the evolution from a broader, philosophical/problem-solving context to a specific, foundational/set-theoretic one.",
+      "Step 5: Construct an answer that directly addresses this evolution by summarizing the different facets of infinity discussed by each guest, ensuring no episode numbers are mentioned."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Initially, discussions around US export controls on semiconductors, such as those involving Dylan Patel and Nathan Lambert, highlighted China's adaptive strategies like DeepSeek's efficient training and large GPU clusters. How did the perspective on the *ultimate effect* of these US controls on China's domestic technological capacity evolve in later discussions, particularly as articulated by Keyu Jin?",
+    "answer": "The initial discussion with Dylan Patel and Nathan Lambert described China's efforts to adapt to US export controls, such as DeepSeek's innovative training methods and large-scale GPU deployment, indicating resilience in the face of restrictions. Later, Keyu Jin articulated a more defined view, suggesting that these US export controls had an unintended consequence: they actively spurred China's domestic technological capacity and innovation, leading to breakthroughs like DeepSeek and the resurgence of companies like Huawei.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      459,
+      477
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common theme across both discussions: the impact of US export controls on China's technological development.",
+      "Step 2: Analyze the perspective presented by Dylan Patel and Nathan Lambert. Their discussion focuses on China's response to bans (like the H800), highlighting DeepSeek's technical innovations and large-scale GPU deployment as adaptive strategies.",
+      "Step 3: Analyze the perspective presented by Keyu Jin. She explicitly states that US export controls, such as the CHIPS Act, 'unintentionally spurred China's domestic technological capacity and innovation,' citing DeepSeek and Huawei as examples.",
+      "Step 4: Identify the evolution: The shift is from observing China's adaptive measures and resilience in the face of restrictions (Patel/Lambert) to a more direct and strong assertion that these US policies are actively and unintentionally stimulating China's domestic innovation, potentially counter to US objectives (Jin)."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "How has the discussion surrounding the role and limitations of AI in video game development evolved, as reflected in the perspectives shared by Tim Sweeney and Dan Houser?",
+    "answer": "Initially, Tim Sweeney broadly addressed the impact of AI on content creation within gaming. Later, Dan Houser offered a more specific and critical perspective, highlighting that while Large Language Models can handle low-level writing, they struggle with novel ideas and the 'magic' of human creativity.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      467,
+      484
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic of AI and its relevance to video game development discussed by both guests.",
+      "Step 2: Extract Tim Sweeney's general perspective on AI, which focuses on its broad 'impact on content creation' and potential for the metaverse.",
+      "Step 3: Extract Dan Houser's more specific and nuanced view on AI, particularly concerning Large Language Models (LLMs) and their limitations in generating truly novel or 'magical' creative content.",
+      "Step 4: Formulate a question and answer that trace the evolution from a general discussion of AI's impact to a more detailed and critical assessment of specific AI technologies (LLMs) and their creative boundaries over time."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "How has Paul Rosolie's perspective on the most pressing dangers facing the Amazon rainforest and the nature of conservation work evolved between his initial discussions emphasizing the 'natural battlefield' and his later insights shared in connection with his book 'Jungle Keeper'?",
+    "answer": "Initially, Paul Rosolie described the Amazon as a 'natural battlefield' primarily due to intense wildlife competition and highlighted the general need for conservation. However, in his later discussions related to 'Jungle Keeper,' his perspective shifted to emphasize the escalating human-induced threats such as narco-trafficking, illegal logging, and dangerous encounters with uncontacted tribes, indicating a more direct and perilous approach to protection, including active bounties on his team.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      429,
+      489
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify Paul Rosolie's initial characterization of the Amazon's challenges from the first summary, focusing on 'natural battlefield' and wildlife competition.",
+      "Step 2: Identify Paul Rosolie's later characterization of the Amazon's challenges and conservation efforts from the second summary, focusing on 'escalating dangers,' narco-traffickers, uncontacted tribes, and the direct, dangerous work of Jungle Keepers.",
+      "Step 3: Articulate the evolution by contrasting the earlier focus on natural competition and general conservation with the later emphasis on human-driven threats and the increasingly confrontational and high-stakes nature of conservation work."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "How has the understanding of the practical implications and challenges of scaling laws evolved, moving from Dario Amodei's discussion of their role in AGI timelines and general limits, to later considerations of specific trade-offs like intelligence versus speed in advanced models?",
+    "answer": "Initially, Dario Amodei highlighted scaling laws as a primary driver for AGI by 2026 or 2027, while broadly acknowledging 'limits of scaling.' Subsequently, discussions around scaling laws have become more nuanced, focusing on specific practical challenges such as the trade-off between intelligence and speed that models like GPT-5 aim to address, indicating a deeper exploration into the operational complexities beyond just theoretical limits.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      452,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'scaling laws' and the temporal separation of discussions.",
+      "Step 2: Extract Dario Amodei's perspective on scaling laws: they drive AGI timelines (2026/2027) and have 'limits of scaling.'",
+      "Step 3: Extract the later discussion's perspective on scaling laws: they are part of 2026 AI predictions, and there's a specific mention of 'GPT-5 was trying to solve the trade-off between intelligence and speed.'",
+      "Step 4: Identify the evolution: From a general acknowledgment of 'limits' to a more specific focus on practical 'trade-offs' that arise when pushing scaling further.",
+      "Step 5: Formulate a question that traces this evolution, referencing Dario Amodei and 'scaling laws' by name, and highlighting the shift from general limits to specific trade-offs.",
+      "Step 6: Construct an answer that directly addresses the identified evolution within the specified sentence limit and without using episode numbers."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+    "answer": "Ben Goertzel's earlier perspective on AGI emphasized foundational cognitive architectures like OpenCog, decentralized AI through SingularityNet, and addressing philosophical and technical challenges, including the importance of embodied communication. In contrast, Sebastian Raschka and Nathan Lambert's later discussion on AI in 2026 largely centers on Large Language Models (LLMs), scaling laws, and AI agents as the leading indicators and potential pathways for AGI development, reflecting a shift towards emergent capabilities from scaled neural networks.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      103,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common overarching topic discussed across both summaries, which is Artificial General Intelligence (AGI) and its development.",
+      "Step 2: Extract Ben Goertzel's specific views and approaches to AGI, noting his focus on cognitive architectures (OpenCog), decentralized AI (SingularityNet), philosophical challenges, and the role of embodied communication/robotics.",
+      "Step 3: Extract Sebastian Raschka and Nathan Lambert's specific views and predictions regarding the state of AI and potential AGI, noting their emphasis on Large Language Models (LLMs), scaling laws, and AI agents in the context of 2026 trends.",
+      "Step 4: Compare these two perspectives to identify a genuine evolution or shift in the perceived 'primary driver' or 'most promising path' for AGI over time, moving from foundational cognitive architectures to emergent properties of scaled neural networks like LLMs.",
+      "Step 5: Formulate a question that directly asks about this observed evolution, referencing the guests and their key projects/discussions by name without using episode numbers.",
+      "Step 6: Construct a concise answer (2-3 sentences) that factually traces this evolution, drawing directly from the details extracted in steps 2 and 3."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering David Fravor's emphasis on personal agency and persistence as key to his career success, how has his articulation or understanding of this core career advice evolved across his various appearances discussing the topic over time?",
+    "answer": "David Fravor consistently highlights 'never taking no for an answer' and 'believing in his own capabilities' as the foundation of his success. While this statement represents his view on career advice, the provided information does not include details from multiple appearances to demonstrate a temporal evolution or shift in this specific perspective.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      122,
+      492
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the guest (David Fravor) and the topic ('career advice') mentioned in the 'Connection' statement.",
+      "Step 2: Locate the specific 'career advice' given by David Fravor in his summary: 'David Fravor attributes his success to never taking 'no' for an answer and believing in his own capabilities.'",
+      "Step 3: Formulate a question that asks about the evolution of this specific piece of career advice, or his broader perspective on it, across multiple appearances, as suggested by the temporal evolution requirement and the 'Connection' detail.",
+      "Step 4: Draft an answer that directly addresses the question using only the provided summary. Since only one instance of his career advice is detailed, the answer must state his current view and acknowledge the lack of comparative data for demonstrating evolution over time."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering the discussions around General Relativity across different podcast appearances, how has the *scope of methodologies for understanding its fundamental nature* evolved, particularly with the emergence of computational derivation efforts like Stephen Wolfram's Wolfram Physics Project, in contrast to the more axiomatic and problem-solving mathematical perspectives exemplified by Terence Tao?",
+    "answer": "The treatment of General Relativity has evolved to include novel computational methodologies, as seen in Stephen Wolfram's Wolfram Physics Project, which aims to derive GR from fundamental hypergraph rules and causal invariance. This represents a shift from purely mathematical or observational frameworks, offering a new paradigm for its foundational understanding, while mathematicians like Terence Tao continue to explore the consequences and challenges of existing physical models through rigorous mathematical inquiry.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      124,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'General Relativity' as indicated by the connection across episodes.",
+      "Step 2: Analyze Stephen Wolfram's summary to understand his specific, novel approach to General Relativity: he proposes deriving it as a consequence of a more fundamental computational system based on hypergraphs and causal invariance.",
+      "Step 3: Analyze Terence Tao's summary. While it does not explicitly detail his views on General Relativity, it emphasizes his role as a mathematician focused on exploring the consequences of models (axioms) and rigorous problem-solving. This suggests a perspective on existing physical models through a mathematical lens.",
+      "Step 4: Formulate the 'temporal evolution' as a shift in the *methodologies* or *paradigms* for understanding General Relativity. The evolution is the emergence and growing prominence of computational derivation (Wolfram's approach) alongside, or in contrast to, traditional mathematical inquiry into established physical models (Tao's general approach).",
+      "Step 5: Construct the question to highlight this evolution in methodologies, referencing both guests by name and their respective approaches to understanding fundamental physics, with General Relativity as the specific example."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "How has the scientific discussion surrounding the fundamental nature of quantum mechanics and its relationship with general relativity evolved, as reflected in the distinct perspectives offered by Stephen Wolfram's computational universe framework and Janna Levin's exploration of the black hole information paradox?",
+    "answer": "Stephen Wolfram presents quantum mechanics as an emergent phenomenon derivable from a more fundamental computational universe, where quantum measurement relates to observers choosing reference frames in branchial space, suggesting a path to unify it with general relativity. In contrast, Janna Levin discusses quantum mechanics primarily through the lens of the black hole information paradox, highlighting a fundamental conflict between quantum mechanics' principle of unitarity and general relativity's prediction of black hole evaporation, emphasizing an unresolved tension between the two theories.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      124,
+      468
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'quantum mechanics' and its connection to 'general relativity' in both summaries.",
+      "Step 2: Analyze Stephen Wolfram's perspective: He proposes a new foundational theory (Wolfram Physics Project) from which quantum mechanics and general relativity are intended to emerge, effectively offering a unified explanation for both.",
+      "Step 3: Analyze Janna Levin's perspective: She discusses quantum mechanics in the context of the black hole information paradox, which highlights a fundamental conflict or unresolved tension between quantum mechanics and general relativity.",
+      "Step 4: Formulate a question that contrasts these two distinct approaches\u2014one proposing a unified derivation and the other highlighting a critical paradox\u2014as an 'evolution of discussion' or 'different perspectives' on how the scientific community approaches the understanding and reconciliation of quantum mechanics and general relativity over time.",
+      "Step 5: Construct an answer that directly addresses the question by summarizing each guest's distinct treatment of quantum mechanics in relation to general relativity, showcasing the different facets of the ongoing scientific inquiry."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering the discussions with David Fravor and later with Narendra Modi, how has the podcast's exploration of the concept of 'leadership' evolved in its focus?",
+    "answer": "The podcast's exploration of leadership has evolved in its focus. Initially, with David Fravor, the discussion centered on individual attributes like self-belief and specific organizational structures. Later, with Narendra Modi, the perspective broadened to encompass the collective backing of a nation and deep cultural heritage as sources of leadership strength.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      122,
+      460
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the common topic 'leadership' discussed by both guests, David Fravor and Narendra Modi, noting the significant temporal separation of their appearances.",
+      "Step 2: Analyze David Fravor's perspective on leadership, which emphasizes individual success attributes (e.g., never taking 'no' for an answer, self-belief) and specific organizational hierarchies (e.g., Top Gun's structure).",
+      "Step 3: Analyze Narendra Modi's perspective on leadership, which highlights collective strength derived from the backing of 1.4 billion people and thousands of years of cultural heritage.",
+      "Step 4: Formulate a question that tracks the evolution of the *topic's treatment* by comparing these distinct perspectives across the timeline of the podcast, rather than focusing on a single guest's evolving view.",
+      "Step 5: Construct an answer that directly addresses this evolution, showing a shift in the discussion's focus from individual and organizational aspects to broader collective and cultural foundations of leadership."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "How has the discussion around the concept of personal development on the podcast evolved, contrasting the perspectives shared by Ryan Hall with those later articulated by Michael Paulson?",
+    "answer": "When discussing personal development, Ryan Hall emphasized the journey towards wisdom through martial arts, humility, and philosophical understanding. In contrast, Michael Paulson later highlighted personal development as a process of profound transformation, particularly through overcoming addiction, finding spirituality, and navigating recovery. This evolution in discussion shows the podcast exploring personal development from a foundation of disciplined self-mastery to one of radical personal change through adversity and spiritual awakening.",
+    "qa_type": "temporal",
+    "reference_episodes": [
+      125,
+      461
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the shared topic 'personal development' across both distinct podcast appearances.",
+      "Step 2: Analyze Ryan Hall's discussion to extract his perspective on personal development, which centers on martial arts, the pursuit of wisdom, and humility.",
+      "Step 3: Analyze Michael Paulson's discussion to extract his perspective on personal development, which focuses on overcoming addiction, recovery, and the role of spirituality.",
+      "Step 4: Formulate a question that asks how the podcast's treatment or the presented perspectives on 'personal development' have 'evolved' by contrasting these two guests' views, referencing them by name.",
+      "Step 5: Construct an answer that summarizes each guest's distinct approach to personal development and then articulates the 'evolution' as a broadening of the topic's scope from philosophical discipline to profound personal transformation through adversity and spirituality."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "What is the approximate total number of square degrees in the universe, as discussed by Brian Keating, and what are the future cosmological timelines, in years, predicted by Robin Hanson for the isolation of galaxy clusters and the remaining period for complex life on Earth?",
+    "answer": "According to Brian Keating, the universe has approximately 44,000 square degrees. Robin Hanson predicts that galaxy clusters will be isolated in roughly 150 billion years due to expansion, and complex life has approximately one billion years left on Earth.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      257,
+      292
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify numerical claims from Brian Keating's discussion related to the universe's spatial properties.",
+      "Step 2: Identify numerical claims from Robin Hanson's discussion related to future cosmological timelines.",
+      "Step 3: Extract the specific number for the universe's square degrees (44,000) from Brian Keating's summary.",
+      "Step 4: Extract the specific numbers for galaxy cluster isolation (150 billion years) and Earth's habitability timeline for complex life (1 billion years) from Robin Hanson's summary.",
+      "Step 5: Formulate a question that requests these specific numbers, referencing Brian Keating and Robin Hanson by name and the topics they discussed.",
+      "Step 6: Construct an answer that directly states these collected numbers, adhering to the specified length and format constraints."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Across the discussions by David Fravor, Andrew Bustamante, and Jared Kushner, what were the specific durations mentioned for the USS Princeton's tracking of unidentified aerial phenomena and the US government's shift in awareness regarding a specific issue, and what was the monetary value of the 'Peace to Prosperity' plan?",
+    "answer": "The USS Princeton tracked unidentified aerial phenomena for about two weeks before Commander David Fravor's encounter. Andrew Bustamante indicated the US government and military woke up to a specific issue about two years ago. The 'Peace to Prosperity' plan discussed by Jared Kushner was a $27 billion business plan.",
     "qa_type": "aggregation",
     "reference_episodes": [
       122,
@@ -272,25 +1150,332 @@
       399
     ],
     "reasoning_steps": [
-      "Step 1: Identify the financial metric in the Jared Kushner summary related to the Peace to Prosperity plan, which is $27 billion.",
-      "Step 2: Identify the financial metric in the Ryan Hall summary related to the Cash App donation to the FIRST organization, which is $10.",
-      "Step 3: Aggregate these specific numerical claims into a comparative answer regarding organizational and initiative funding."
-    ]
+      "Step 1: Review David Fravor's summary to identify any specific durations related to the USS Nimitz incident.",
+      "Step 2: Locate the detail that 'The USS Princeton tracked the objects for about two weeks before the encounter with Fravor and his team.'",
+      "Step 3: Review Andrew Bustamante's summary to find any specific timelines for government awareness or policy shifts.",
+      "Step 4: Identify the detail that 'The US government, the military, woke up to that exact same thing about two years ago.'",
+      "Step 5: Review Jared Kushner's summary to find any specific monetary values for plans or initiatives.",
+      "Step 6: Locate the detail that 'The Peace to Prosperity plan was a $27 billion business plan for Gaza and the West Bank.'"
+    ],
+    "era": "old"
   },
   {
-    "question": "Identify and compare the specific numerical values associated with the following career-defining metrics and observations mentioned by David Fravor, Michael Paulson, and Robert Rodriguez: the duration of the USS Princeton's radar tracking of the 'Tic Tac' objects, the number of times Paulson failed pre-calculus, and the percentage of any job that Rodriguez attributes to creativity.",
-    "answer": "The USS Princeton tracked the 'Tic Tac' objects for 2 weeks, Michael Paulson failed pre-calculus 2 times, and Robert Rodriguez claims that creativity accounts for 90% of any job. These figures represent the specific observational timeframe, academic persistence, and professional philosophy shared by the guests during their respective interviews.",
+    "question": "What specific numerical values were provided by Ryan Hall regarding donations to FIRST, Matthew Johnson regarding the lethal overdose of classic psychedelics, and Paul Rosolie regarding the maximum measured dimensions of a green anaconda? How do these numbers illustrate distinct scales of measurement discussed across these conversations?",
+    "answer": "Ryan Hall mentioned a $10 donation by Cash App to FIRST. Matthew Johnson stated that classic psychedelics like LSD and psilocybin have no known lethal overdose for healthy individuals. Paul Rosolie noted that the largest scientifically measured green anaconda was 18 feet 6 inches long and weighed 220 pounds. These figures highlight vastly different scales: a specific monetary contribution, an extreme safety threshold, and significant biological dimensions, respectively.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      125,
+      145,
+      429
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify specific numerical claims made by Ryan Hall. The summary states 'Cash App donates $10 to FIRST'.",
+      "Step 2: Identify specific numerical claims made by Matthew Johnson. The summary states 'Classic psychedelics like LSD and psilocybin have no known lethal overdose'. This is a quantitative statement about safety.",
+      "Step 3: Identify specific numerical claims made by Paul Rosolie. The summary states 'The largest scientifically measured green anaconda was 18 feet 6 inches long and weighed 220 pounds'.",
+      "Step 4: Aggregate these distinct numerical facts from each guest and formulate a comparison based on the 'scales of measurement' they represent (monetary, safety threshold, physical dimensions)."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+    "answer": "As discussed by the Neuralink team, two human participants have received implants, with a target of ten by the end of the year. Kelsi Sheren was 18 years old when she served in Afghanistan, a number that is higher than Neuralink's current implant count but lower than their year-end target.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      125,
+      230,
+      438,
+      454
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the current number of human implants discussed by the Neuralink team (two).",
+      "Step 2: Identify the target number of human implants by the end of the year discussed by the Neuralink team (ten).",
+      "Step 3: Identify Kelsi Sheren's age when she served in Afghanistan (18 years old).",
+      "Step 4: Compare Kelsi Sheren's age (18) to Neuralink's current implants (2) and their year-end target (10)."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Across discussions on human potential and technological advancement, what is the maximum information transfer rate achieved by a human with a Neuralink implant, and how does Neuralink's target number of human implants by the end of the year compare to the recommended weekly set volume for hypertrophy training as suggested by Andrew Huberman?",
+    "answer": "Noland Arbaugh achieved a maximum information transfer rate of 8.5 bits per second with the Neuralink implant. Neuralink's target of 10 human participants by the end of the year matches the recommended 10 sets per muscle group per week for hypertrophy training as discussed by Andrew Huberman.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      145,
+      277,
+      438
+    ],
+    "reasoning_steps": [
+      "Step 1: From the discussion with Elon Musk and the Neuralink team, identify the maximum information transfer rate achieved by a human with a Neuralink implant, which is 8.5 bits per second by Noland Arbaugh.",
+      "Step 2: From the same discussion, identify Neuralink's target number of human participants for implants by the end of the year, which is 10.",
+      "Step 3: From Andrew Huberman's summary, identify the recommended weekly set volume for hypertrophy training, which is 10 sets per muscle group per week.",
+      "Step 4: Compare the Neuralink target number of implants (10) with Andrew Huberman's recommended weekly set volume (10) and combine with the Neuralink bit rate for the final answer."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering the discussions on fundamental aspects of reality and complexity, what is the maximum number of steps Lee Cronin suggests natural phenomena can achieve in molecule production, and how does this numerical limit compare to Stephen Wolfram's estimated elementary length in his Wolfram Physics Project?",
+    "answer": "Lee Cronin states that natural phenomena cannot produce molecules that need more than 15 steps to make them. In contrast, Stephen Wolfram estimates the elementary length in his Wolfram Physics Project to be around 10 to the minus 100 meters. These values represent different types of fundamental limits: one a maximum number of assembly steps for molecular complexity, and the other an incredibly small physical dimension.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      145,
+      234,
+      269,
+      279
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify numerical claims from Lee Cronin's summary related to molecular complexity, finding 'natural phenomena cannot produce molecules that need more than 15 steps to make them'.",
+      "Step 2: Identify numerical claims from Stephen Wolfram's summary related to fundamental physics, finding 'The elementary length in the Wolfram Physics Project is estimated to be around 10 to the minus 100 meters'.",
+      "Step 3: Formulate a question that explicitly asks for both these numerical values and prompts a comparison between them, referencing the guests and their respective concepts.",
+      "Step 4: Construct an answer that directly states both numerical claims and briefly explains their context and the nature of their comparison."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "What is the stated monetary value of an M777 Howitzer barrel, as mentioned by Kelsi Sheren, and how does this compare to the current number of human Neuralink implants and their projected number by the end of the year, as discussed by Elon Musk and the Neuralink team?",
+    "answer": "Kelsi Sheren stated that the barrel of an M777 Howitzer is worth a million dollars. In contrast, Elon Musk and the Neuralink team reported having implanted devices in two humans as of the recording date, with an aim to implant a total of ten human participants by the end of the year.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      230,
+      438,
+      458
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify specific numerical claims from Kelsi Sheren's discussion, focusing on monetary values or significant metrics. The detail 'The barrel of an M777 Howitzer is worth a million dollars' is relevant.",
+      "Step 2: Identify specific numerical claims from Elon Musk and the Neuralink team's discussion, focusing on counts, targets, or significant metrics. The details 'Neuralink has implanted devices in two humans' and 'Neuralink aims to implant a total of 10 human participants by the end of the year' are relevant.",
+      "Step 3: Formulate a question that requires collecting these distinct numerical values from both guests and comparing them, ensuring it references guests by name and would be incomplete if any relevant data point was missed.",
+      "Step 4: Construct a concise answer that directly provides the requested numerical information from both discussions, highlighting the comparison between the monetary value and the implant counts/targets."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "According to Robin Hanson, what is the estimated duration Earth has been habitable for life, and how many years remain until complex life is no longer possible on Earth? Additionally, what is the predicted timeline for the expansion of the universe to isolate galaxy clusters, and how does Brian Keating's description of the duration of the universe's light element formation compare to these vast timescales?",
+    "answer": "Robin Hanson states that Earth has been habitable for life for roughly 4.5 billion years, with approximately 1 billion years remaining until complex life is no longer possible. He also predicts that the expansion of the universe will isolate galaxy clusters in roughly 150 billion years. In contrast, Brian Keating notes that the fusion and production of the lightest elements in the early universe occurred in a time period shorter than the TV show, The Big Bang Theory, highlighting an extremely brief initial cosmic event compared to Hanson's vast geological and cosmological timescales.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      234,
+      257,
+      279,
+      292
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify all numerical claims related to cosmic or planetary timescales from the provided summaries.",
+      "Step 2: From Robin Hanson's summary, extract the duration Earth has been habitable for life (4.5 billion years), the remaining time until complex life is no longer possible on Earth (1 billion years), and the timeline for galaxy cluster isolation due to universe expansion (150 billion years).",
+      "Step 3: From Brian Keating's summary, extract the duration of the fusion and production of the lightest elements (shorter than 'The Big Bang Theory' TV show).",
+      "Step 4: Formulate a question that requires collecting these specific numerical values from both guests and explicitly asks for a comparison between the different timescales.",
+      "Step 5: Construct an answer that directly aggregates these numbers from the respective guests and provides a brief comparison of their magnitudes."
+    ],
+    "era": "old"
+  },
+  {
+    "question": "Considering the discussions by Dylan Patel and Nathan Lambert on DeepSeek's infrastructure and the broader 'AI race' between China and the US explored by Sebastian Raschka and Nathan Lambert, what were the specific GPU quantities mentioned for DeepSeek's training and total cluster size, and what was the timeline for the US government's ban on the H800 GPU, a critical component in such large-scale AI development?",
+    "answer": "Dylan Patel and Nathan Lambert specified that DeepSeek-V3 pre-training utilized 2,000 H800 GPUs, and DeepSeek operates a cluster of approximately 50,000 GPUs. They also highlighted that the US government banned the H800 in 2023, a restriction directly relevant to the competitive 'AI race' between China and the US, a theme also discussed by Sebastian Raschka and Nathan Lambert.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      459,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify specific numerical claims about DeepSeek's GPU usage from the discussion involving Dylan Patel and Nathan Lambert (2,000 H800 GPUs for DeepSeek-V3 pre-training, 50,000 GPUs for the total cluster).",
+      "Step 2: Note the timeline provided by Dylan Patel and Nathan Lambert regarding the US government's ban on the H800 GPU (2023).",
+      "Step 3: Connect these hardware and timeline details to the broader geopolitical context of the 'AI race' between China and the US, a topic explicitly discussed in the conversation featuring Sebastian Raschka and Nathan Lambert.",
+      "Step 4: Formulate a question that requires retrieving these specific numbers and the timeline, while also linking them to the overarching theme discussed across the different guest conversations."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering the discussions by Dylan Patel and Nathan Lambert regarding DeepSeek's hardware and the US government's actions, and Keyu Jin's perspective on US export controls, what was the approximate total number of GPUs in DeepSeek's cluster, how many H800 GPUs were used for DeepSeek-V3's pre-training, and in what year did the US government ban the H800?",
+    "answer": "DeepSeek has a cluster of approximately 50,000 GPUs, and its DeepSeek-V3 model was pre-trained using 2,000 H800 GPUs. The US government banned the H800 in 2023, a move that Keyu Jin suggests inadvertently spurred China's domestic technological innovation.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      459,
+      466,
+      477
+    ],
+    "reasoning_steps": [
+      "Step 1: From the discussion with Dylan Patel and Nathan Lambert, identify the approximate total number of GPUs in DeepSeek's cluster.",
+      "Step 2: From the discussion with Dylan Patel and Nathan Lambert, identify the specific number of H800 GPUs used for DeepSeek-V3's pre-training.",
+      "Step 3: From the discussion with Dylan Patel and Nathan Lambert, identify the year the US government banned the H800.",
+      "Step 4: Incorporate Keyu Jin's perspective on how US export controls, such as the H800 ban, influenced China's domestic technological capacity and innovation."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering Douglas Murray's discussion of the October 7th Hamas attack as a 'brigade-sized assault,' what is the estimated timeline, in months, for Iran to develop a crude nuclear device, according to Scott Horton and Mark Dubowitz, and what is their estimate for the number of ballistic missiles Iran possesses that are capable of reaching Israel?",
+    "answer": "According to Scott Horton and Mark Dubowitz, it would take Iran approximately four to six months to develop a crude nuclear device. They also estimate that Iran possesses about 2,000 ballistic missiles capable of reaching Israel.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      460,
+      463,
+      473
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify quantitative claims related to terrorism or state capabilities that could be used for terrorism across the provided summaries.",
+      "Step 2: Note Douglas Murray's description of the October 7th Hamas attack as a 'brigade-sized assault,' which provides a contextual scale for a significant terrorist event.",
+      "Step 3: Extract specific numerical claims from Scott Horton and Mark Dubowitz's discussion on Iran's capabilities: 'four to six months to develop a crude nuclear device' and '2,000 ballistic missiles capable of reaching Israel'.",
+      "Step 4: Formulate a question that references Douglas Murray's discussion to establish context while explicitly asking for the specific numerical estimates from Scott Horton and Mark Dubowitz, ensuring information is drawn from multiple guests.",
+      "Step 5: Construct a direct and factual answer that aggregates the requested numerical estimates from the relevant guests, adhering to the length constraint and avoiding episode numbers."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "Considering the numerical scales discussed by the guests, what is the total number of registered voters in the 2024 Indian general elections, as mentioned by Narendra Modi, and how does this compare to the number of Clay Millennium Prize Problems discussed by Terence Tao?",
+    "answer": "Narendra Modi mentioned that the 2024 Indian general elections involved 980 million registered voters. In contrast, Terence Tao discussed the existence of seven Clay Millennium Prize Problems. The number of registered voters is significantly larger than the number of Millennium Prize Problems.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      460,
+      468,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Locate the numerical claim regarding registered voters in the 2024 Indian general elections from Narendra Modi's summary.",
+      "Step 2: Identify the numerical claim about the Clay Millennium Prize Problems from Terence Tao's summary.",
+      "Step 3: Extract the specific numbers (980 million and 7) and formulate a direct comparison between them."
+    ],
+    "era": "new"
+  },
+  {
+    "question": "What was the specified memory capacity of Dave Plummer's first computer, and what memory capacity is mentioned for John Carmack's initial TRS-80 computer during his early programming experiences?",
+    "answer": "Dave Plummer's first computer, a TRS-80 Model 1, Level 1, had a specified memory capacity of 4K. For John Carmack's initial TRS-80 computer, the provided details do not mention a specific memory capacity.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      309,
+      479
+    ],
+    "reasoning_steps": [
+      "Step 1: Locate information regarding Dave Plummer's first computer and its specifications. The summary states, 'Dave Plummer's first computer experience was with a TRS-80 Model 1, Level 1, 4K machine around 1979-1980.'",
+      "Step 2: Identify the memory capacity for Dave Plummer's first computer, which is 4K.",
+      "Step 3: Locate information regarding John Carmack's initial programming computer and its specifications. The summary states, 'John Carmack's first program was '10 print John Carmack' on a TRS-80 computer.'",
+      "Step 4: Check for any mention of memory capacity for John Carmack's TRS-80. The summary does not provide a specific numerical memory capacity for his machine.",
+      "Step 5: Aggregate and compare the findings, noting the presence of a specific memory capacity for Dave Plummer's machine and the absence of one for John Carmack's."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+    "answer": "Ben Goertzel mentions two primary programming languages for OpenCog: C++ and Scheme. Sebastian Raschka and Nathan Lambert reference five distinct large language models by name: DeepSeek, Claude Opus 4.5, Gemini, ChatGPT, and GPT-5.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      103,
+      279,
+      490
+    ],
+    "reasoning_steps": [
+      "Step 1: Locate the details provided by Ben Goertzel regarding the technical composition of OpenCog.",
+      "Step 2: Identify and count the specific programming languages mentioned for OpenCog, which are C++ and Scheme.",
+      "Step 3: Locate the discussion with Sebastian Raschka and Nathan Lambert concerning the state of AI and large language models.",
+      "Step 4: Identify and count the distinct large language models referenced by name in their conversation, which include DeepSeek, Claude Opus 4.5, Gemini, ChatGPT, and GPT-5."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "What specific numerical insights do Robert Rodriguez and Michael Paulson (ThePrimeagen) provide regarding the composition of success in their respective fields and the academic challenges they faced in their early development?",
+    "answer": "Robert Rodriguez believes that creativity constitutes 90% of any job, with technical skills making up the remaining 10%. Michael Paulson (ThePrimeagen) shared that he failed pre-calculus twice before finally passing and excelling in higher-level math.",
     "qa_type": "aggregation",
     "reference_episodes": [
       122,
       461,
-      465
+      465,
+      492
     ],
     "reasoning_steps": [
-      "Step 1: Locate the specific duration of the USS Princeton's radar tracking mentioned in the David Fravor interview summary.",
-      "Step 2: Identify the specific number of times Michael Paulson (ThePrimeagen) failed pre-calculus as detailed in his career and education history.",
-      "Step 3: Find the specific percentage Robert Rodriguez assigns to creativity versus technical skills in his discussion on filmmaking and professional success.",
-      "Step 4: Aggregate these three distinct numerical metrics into a single comparative response."
-    ]
+      "Step 1: Review summaries to identify guests who provide specific numerical claims related to career advice, success factors, or personal development challenges.",
+      "Step 2: From Robert Rodriguez's summary, extract his numerical breakdown of job success: 'creativity is 90% of any job, with technical skills making up the remaining 10%'.",
+      "Step 3: From Michael Paulson's (ThePrimeagen) summary, identify a numerical challenge he faced: 'failed pre-calculus twice'.",
+      "Step 4: Formulate a question that requires collecting both these distinct numerical insights from the named guests, covering both success composition and early challenges.",
+      "Step 5: Construct a concise answer that directly presents these aggregated numerical facts without mentioning episode numbers."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "What specific numerical estimates or predictions regarding fundamental physical scales, speeds, or phenomena related to the structure of the universe or quantum mechanics were proposed or discussed by Stephen Wolfram and Janna Levin?",
+    "answer": "Stephen Wolfram, in discussions about the Wolfram Physics Project, estimates the elementary length in his model to be around 10 to the minus 100 meters and describes a 'maximum entanglement speed' as an analog to the speed of light. Janna Levin discusses the properties of black holes and gravitational waves, including time dilation effects and the human auditory range for gravitational wave 'ringing', but she does not provide specific numerical estimates for fundamental physical scales or speeds in the context of quantum mechanics or the universe's fundamental structure.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      124,
+      234,
+      468
+    ],
+    "reasoning_steps": [
+      "Step 1: Review Stephen Wolfram's discussions for specific numerical claims or predictions related to fundamental physical scales, speeds, or quantum phenomena.",
+      "Step 2: Identify Wolfram's mention of the elementary length in the Wolfram Physics Project as 'around 10 to the minus 100 meters' and the conceptual 'maximum entanglement speed' as an analog to the speed of light.",
+      "Step 3: Review Janna Levin's discussions for specific numerical claims or predictions related to fundamental physical scales, speeds, or quantum phenomena.",
+      "Step 4: Note that Janna Levin discusses black holes, gravitational waves, time dilation, and the information paradox, but does not provide specific numerical estimates for fundamental constants, lengths, or speeds of the universe's basic structure or quantum mechanics.",
+      "Step 5: Aggregate and compare these findings, highlighting Wolfram's specific numerical prediction and Levin's focus on other quantitative aspects (like auditory range for gravitational waves, qualitative time dilation) without offering fundamental numerical constants for the universe's underlying structure."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering the discussions on fundamental physics and mathematics by Janna Levin, Terence Tao, and Stephen Wolfram, what specific quantitative claims are made regarding: 1) the theoretical frequency range of gravitational wave 'ringing' from cosmic events, and 2) the classification of major unsolved mathematical problems like the Navier-Stokes regularity problem?",
+    "answer": "Janna Levin states that the 'ringing' of colliding black holes, which are sources of gravitational waves, could theoretically be in the human auditory range. Terence Tao discusses the Navier-Stokes regularity problem as one of the seven Clay Millennium Prize Problems. Stephen Wolfram's summary does not provide specific numerical predictions or ranges for phenomena within his Wolfram Physics Project.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      124,
+      468,
+      472
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify specific numerical claims, predictions, or metrics from each guest's summary related to fundamental physics or mathematics.",
+      "Step 2: For Janna Levin, the summary mentions that 'the 'ringing' of colliding black holes could be in the human auditory range,' which is a theoretical frequency range.",
+      "Step 3: For Terence Tao, the summary states that 'The Navier-Stokes regularity problem is one of the seven Clay Millennium Prize Problems,' providing a specific numerical classification (1 out of 7).",
+      "Step 4: For Stephen Wolfram, the summary discusses 'E=mc^2 is a consequence of the interpretation of energy in the Wolfram Physics model,' but this is a statement about a formula's derivation, not a specific numerical prediction, range, or metric provided by Wolfram himself. No other concrete numbers are present in his summary.",
+      "Step 5: Formulate a question that requires collecting these specific quantitative claims from Levin and Tao, and also implicitly checks for such claims from Wolfram, ensuring all relevant data points are considered.",
+      "Step 6: Construct an answer that directly addresses the quantitative claims from Levin and Tao, and notes the absence of such specific claims from Wolfram's summary, adhering to the 2-3 sentence limit."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Considering Daniel Schmachtenberger's discussion of the Drake equation and the likelihood of alien civilizations, and Robin Hanson's work on 'grabby aliens,' what is the total estimated duration of Earth's habitability for complex life, and how does this period compare to the projected timeline for the universe's galaxy clusters to become isolated?",
+    "answer": "Based on Robin Hanson's discussion, Earth has been habitable for complex life for roughly 4.5 billion years and has approximately 1 billion years of habitability remaining, totaling about 5.5 billion years. This total habitability period is significantly shorter than the roughly 150 billion years until the universe's galaxy clusters are projected to become isolated, as also discussed by Robin Hanson.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      191,
+      292,
+      468
+    ],
+    "reasoning_steps": [
+      "Identify Daniel Schmachtenberger's discussion of the Drake equation and alien civilizations to establish the context for the question regarding the search for extraterrestrial intelligence.",
+      "Extract Robin Hanson's claim about Earth's past habitability for life: 'Earth has been habitable for life for roughly 4.5 billion years.'",
+      "Extract Robin Hanson's claim about Earth's future habitability for complex life: 'Humans have roughly a billion years left on Earth until complex life is no longer possible.'",
+      "Calculate the total estimated duration of Earth's habitability for complex life by summing these two figures (4.5 billion + 1 billion).",
+      "Extract Robin Hanson's claim about the universe's future timeline for galaxy cluster isolation: 'In roughly 150 billion years, the expansion of the universe will isolate galaxy clusters.'",
+      "Compare the calculated total habitability duration with the universe's galaxy cluster isolation timeline."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "Peter Steinberger predicted a specific percentage of existing applications that AI agents will replace. What is this percentage, and did Charles Hoskinson, Michael Paulson, or Tim Sweeney provide any comparable quantitative predictions regarding the future impact of new technologies or AI on the landscape of software applications or programming?",
+    "answer": "Peter Steinberger predicts that AI agents will replace approximately 80% of existing apps, transforming them into APIs or rendering them obsolete. Charles Hoskinson, Michael Paulson, and Tim Sweeney did not provide specific numerical predictions regarding the future impact of new technologies or AI on the landscape of software applications or programming in their discussions.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      192,
+      461,
+      467,
+      491
+    ],
+    "reasoning_steps": [
+      "Step 1: Review Peter Steinberger's summary for numerical predictions about the future of applications. Identified the claim that 'AI agents will replace approximately 80% of existing apps'.",
+      "Step 2: Examine Charles Hoskinson's summary for any quantitative predictions related to the future of software, programming, or applications. No such specific numerical predictions were found.",
+      "Step 3: Examine Michael Paulson's summary for any quantitative predictions related to the future of software, programming, or applications. No such specific numerical predictions were found.",
+      "Step 4: Examine Tim Sweeney's summary for any quantitative predictions related to the future of software, programming, or applications. While discussing the future of gaming and the metaverse, no specific numerical predictions about the impact on applications or programming were provided.",
+      "Step 5: Formulate the question to ask for Peter Steinberger's specific percentage prediction and then inquire if the other named guests (Charles Hoskinson, Michael Paulson, Tim Sweeney) offered comparable quantitative predictions on the future impact of technology on software or applications."
+    ],
+    "era": "mixed"
+  },
+  {
+    "question": "What is the total count of distinct programming languages or core development technologies explicitly mentioned as being foundational to or primarily used by Travis Oliphant, John Carmack, and Pieter Levels in their programming careers, and which of these guests utilizes the most such technologies?",
+    "answer": "Travis Oliphant is associated with 2 distinct programming languages/technologies (BASIC, Python). John Carmack is associated with 2 (C++, Python). Pieter Levels is associated with 4 (HTML, jQuery, PHP, SQLite). Therefore, Pieter Levels utilizes the most distinct core development technologies among these guests.",
+    "qa_type": "aggregation",
+    "reference_episodes": [
+      224,
+      309,
+      440,
+      461
+    ],
+    "reasoning_steps": [
+      "Step 1: Identify the programming languages or core technologies mentioned for Travis Oliphant. His first program was in BASIC, and Python is central to his work with NumPy, SciPy, and Anaconda. This gives a count of 2 (BASIC, Python).",
+      "Step 2: Identify the programming languages or core technologies mentioned for John Carmack. C++ is noted for game development (Doom, Quake), and Python is listed among key entities and discussed languages. This gives a count of 2 (C++, Python).",
+      "Step 3: Identify the programming languages or core technologies mentioned for Pieter Levels. His tech stack is explicitly stated as 'vanilla HTML, jQuery, PHP, and SQLite'. This gives a count of 4 (HTML, jQuery, PHP, SQLite).",
+      "Step 4: Compare the counts for each guest (Travis Oliphant: 2, John Carmack: 2, Pieter Levels: 4) to determine which guest utilizes the most distinct technologies."
+    ],
+    "era": "mixed"
   }
 ]

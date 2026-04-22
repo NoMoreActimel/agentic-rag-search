@@ -320,6 +320,7 @@ async def _run_single_qa(
         answer = qa["answer"]
         reference_episodes = qa.get("reference_episodes", [])
         qa_type = qa.get("qa_type", "unknown")
+        era = qa.get("era", "unknown")
         qa_id = f"q{qa_idx:03d}"
 
         if condition.judge_mode == "process":
@@ -374,6 +375,7 @@ async def _run_single_qa(
             "judge_mode": condition.judge_mode,
             "qa_id": qa_id,
             "qa_type": qa_type,
+            "era": era,
             "question": question,
             "ground_truth_answer": answer,
             "predicted_answer": trajectory.final_answer,

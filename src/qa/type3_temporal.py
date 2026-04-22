@@ -1,8 +1,27 @@
 """Type 3: Temporal Evolution questions — track how views change over time."""
 
 import json
+from functools import lru_cache
 
+import pandas as pd
+
+from config.settings import TRANSCRIPTS_PARQUET
 from src.qa.qa_generator import Candidate, QAPair, QATypeGenerator, PROMPT_CONSTRAINTS
+
+
+@lru_cache(maxsize=1)
+def _load_episode_dates() -> dict[int, pd.Timestamp | None]:
+    """Map episode_id -> publication date (UTC timestamp or None if undated)."""
+    df = pd.read_parquet(TRANSCRIPTS_PARQUET)
+    dt = pd.to_datetime(df["date"], errors="coerce", utc=True)
+    return {
+        int(e): (d if pd.notna(d) else None)
+        for e, d in zip(df["episode_id"], dt)
+    }
+
+
+_MIN_DATE_SPREAD = pd.Timedelta(days=180)   # ≥ 6 months of real time
+_MIN_ID_SPREAD_FALLBACK = 50                # used when either endpoint is undated
 
 SYSTEM_INSTRUCTION = """You are a Q&A dataset creator for podcast transcripts.
 Create temporal evolution questions that track how a guest's views or a topic's treatment
@@ -66,31 +85,51 @@ class TemporalGenerator(QATypeGenerator):
                         connection=f"Returning guest: {proper_name} appeared in {len(eps)} episodes",
                     ))
 
-        # Strategy 2: Same topic discussed in episodes far apart (by episode ID as time proxy)
+        # Strategy 2: Same topic discussed in time-separated episodes.
+        # Prefer real publication dates (accurate for scraped eps); fall back to
+        # episode-ID spread when either endpoint is undated (HF archive).
+        ep_dates = _load_episode_dates()
         topic_eps = self._get_episodes_by_topic()
         for topic, ep_ids in topic_eps.items():
             unique_eps = sorted(set(ep_ids))
             if len(unique_eps) < 2:
                 continue
-            spread = unique_eps[-1] - unique_eps[0]
-            if spread < 50:
-                continue  # Too close together
-            selected = [unique_eps[0], unique_eps[-1]]
+            first_ep, last_ep = unique_eps[0], unique_eps[-1]
+            d_first, d_last = ep_dates.get(first_ep), ep_dates.get(last_ep)
+
+            if d_first is not None and d_last is not None:
+                date_spread = d_last - d_first
+                if date_spread < _MIN_DATE_SPREAD:
+                    continue
+                conn = f"Topic '{topic}' discussed ~{date_spread.days} days apart"
+            else:
+                id_spread = last_ep - first_ep
+                if id_spread < _MIN_ID_SPREAD_FALLBACK:
+                    continue
+                conn = f"Topic '{topic}' discussed ~{id_spread} episodes apart"
+
+            selected = [first_ep, last_ep]
             key = tuple(selected)
             if key not in seen:
                 seen.add(key)
                 candidates.append(Candidate(
                     qa_type=self.qa_type,
                     episode_ids=selected,
-                    connection=f"Topic '{topic}' discussed ~{spread} episodes apart",
+                    connection=conn,
                 ))
 
-        # Prioritize returning guests, then topics with largest time spread
-        candidates.sort(key=lambda c: (
-            "Returning guest" in c.connection,  # True sorts after False
-            c.episode_ids[-1] - c.episode_ids[0],  # Larger spread better
-        ), reverse=True)
+        # Prioritize returning guests, then topics with largest real time spread.
+        def _rank(c: Candidate) -> tuple[bool, float]:
+            is_returning = "Returning guest" in c.connection
+            d_min = ep_dates.get(c.episode_ids[0])
+            d_max = ep_dates.get(c.episode_ids[-1])
+            if d_min is not None and d_max is not None:
+                spread_score = (d_max - d_min).days
+            else:
+                spread_score = c.episode_ids[-1] - c.episode_ids[0]
+            return (is_returning, spread_score)
 
+        candidates.sort(key=_rank, reverse=True)
         return candidates[:count]
 
     async def generate_from_candidate(self, candidate: Candidate) -> QAPair | None:
