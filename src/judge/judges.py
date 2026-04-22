@@ -76,7 +76,7 @@ class ProcessJudge(BaseJudge):
             return "No chunks were retrieved. Try a different or broader search query."
 
         chunks_text = "\n\n".join(
-            f"Chunk {i+1} [Ep#{r.episode_id}, Guest: {r.guest}, Score: {r.score:.3f}]:\n{r.text[:500]}"
+            f"Chunk {i+1} [Ep#{r.episode_id}, Guest: {r.guest}, Score: {r.score:.3f}]:\n{r.text}"
             for i, r in enumerate(retrieved_chunks)
         )
 
@@ -145,7 +145,7 @@ class OracleJudge(BaseJudge):
             return "No chunks were retrieved. Try a different or broader search query."
 
         chunks_text = "\n\n".join(
-            f"Chunk {i+1} [Ep#{r.episode_id}, Guest: {r.guest}, Score: {r.score:.3f}]:\n{r.text[:500]}"
+            f"Chunk {i+1} [Ep#{r.episode_id}, Guest: {r.guest}, Score: {r.score:.3f}]:\n{r.text}"
             for i, r in enumerate(retrieved_chunks)
         )
 

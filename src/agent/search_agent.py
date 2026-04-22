@@ -94,12 +94,8 @@ GUIDELINES:
 
 AGENT_STEP_PROMPT = """QUESTION: {question}
 
-RETRIEVED CONTEXT SO FAR:
-{context}
-
-{feedback_section}
-
-Step {step_number} of {max_steps}. What is your next action?
+{history}=== STEP {step_number} of {max_steps} (current) ===
+What is your next action?
 
 Respond in JSON:
 {{
@@ -166,22 +162,13 @@ class SearchAgent:
         seen_chunk_ids: set[int] = set()
 
         for step_num in range(1, self.max_steps + 1):
-            # Build context string from all retrieved chunks so far
-            context_str = self._build_context_string(all_retrieved)
-
-            # Build feedback section
-            feedback_section = ""
-            if trajectory.steps and trajectory.steps[-1].judge_feedback:
-                feedback_section = (
-                    f"JUDGE FEEDBACK FROM PREVIOUS STEP:\n"
-                    f"{trajectory.steps[-1].judge_feedback}\n"
-                )
+            # Per-step history: chunks + judge feedback grouped by the step that produced them.
+            history_str = self._build_history_string(trajectory.steps)
 
             # Ask agent for next action
             step_prompt = AGENT_STEP_PROMPT.format(
                 question=question,
-                context=context_str if context_str else "(No chunks retrieved yet)",
-                feedback_section=feedback_section,
+                history=history_str,
                 step_number=step_num,
                 max_steps=self.max_steps,
             )
@@ -288,6 +275,39 @@ class SearchAgent:
         parts = []
         for i, r in enumerate(results, 1):
             parts.append(f"--- Retrieved Chunk {i} ---\n{r.to_context_string()}")
+        return "\n\n".join(parts)
+
+    def _build_history_string(self, steps: list[AgentStep]) -> str:
+        """Render prior steps as labeled blocks: query + new chunks + judge feedback per step."""
+        blocks: list[str] = []
+        for s in steps:
+            if s.tool_used == "none":
+                continue
+            chunks_block = self._render_step_chunks(s.results)
+            block = (
+                f"=== STEP {s.step_number} ===\n"
+                f"Query: {s.query}\n"
+                f"Retrieved chunks:\n{chunks_block}"
+            )
+            if s.judge_feedback:
+                block += f"\n\nJudge feedback (step {s.step_number}): {s.judge_feedback}"
+            blocks.append(block)
+        if not blocks:
+            return ""
+        return "\n\n".join(blocks) + "\n\n"
+
+    @staticmethod
+    def _render_step_chunks(chunk_dicts: list[dict]) -> str:
+        if not chunk_dicts:
+            return "(no new chunks retrieved)"
+        parts: list[str] = []
+        for i, c in enumerate(chunk_dicts, 1):
+            meta = (
+                f"[Chunk {c.get('chunk_id')} | Episode #{c.get('episode_id')} | "
+                f"Guest: {c.get('guest')} | Score: {float(c.get('score', 0.0)):.3f} | "
+                f"Via: {c.get('source')}]"
+            )
+            parts.append(f"--- Chunk {i} ---\n{meta}\n{c.get('text', '')}")
         return "\n\n".join(parts)
 
     async def _force_answer(self, question: str, context: str) -> str:

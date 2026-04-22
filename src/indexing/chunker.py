@@ -22,6 +22,35 @@ def _split_into_sentences(text: str) -> list[str]:
     return [s.strip() for s in sentences if s.strip()]
 
 
+def _hard_split_long_sentence(sentence: str, max_len: int) -> list[str]:
+    """Split a sentence that exceeds max_len at word boundaries (fallback to char-level)."""
+    if len(sentence) <= max_len:
+        return [sentence]
+    pieces: list[str] = []
+    words = sentence.split(" ")
+    buf: list[str] = []
+    buf_len = 0
+    for w in words:
+        add_len = len(w) + (1 if buf else 0)
+        if buf and buf_len + add_len > max_len:
+            pieces.append(" ".join(buf))
+            buf, buf_len = [w], len(w)
+        else:
+            buf.append(w)
+            buf_len += add_len
+    if buf:
+        pieces.append(" ".join(buf))
+    # If a single word was longer than max_len, char-split the oversized pieces.
+    final: list[str] = []
+    for p in pieces:
+        if len(p) <= max_len:
+            final.append(p)
+        else:
+            for i in range(0, len(p), max_len):
+                final.append(p[i : i + max_len])
+    return final
+
+
 def chunk_transcript(
     text: str,
     chunk_size: int = CHUNK_SIZE,
@@ -34,9 +63,16 @@ def chunk_transcript(
     characters of overlap between consecutive chunks. Splits happen
     at sentence boundaries to preserve readability.
     """
-    sentences = _split_into_sentences(text)
-    if not sentences:
-        return [text] if text.strip() else []
+    raw_sentences = _split_into_sentences(text)
+    if not raw_sentences:
+        return [text[:chunk_size]] if text.strip() else []
+
+    # Guarantee no single sentence exceeds chunk_size; this defends against transcripts
+    # that lack ". Uppercase" boundaries (e.g. all-lowercase or missing punctuation) —
+    # otherwise one pathological input produces a chunk many times larger than chunk_size.
+    sentences: list[str] = []
+    for s in raw_sentences:
+        sentences.extend(_hard_split_long_sentence(s, chunk_size))
 
     chunks = []
     current_chunk: list[str] = []

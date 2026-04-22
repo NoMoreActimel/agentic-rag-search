@@ -112,24 +112,18 @@ def _reference_episode_recall(reference_episodes: list[int], found_episodes: lis
     return len(ref.intersection(found)) / len(ref)
 
 
-def _format_retrieved_chunks(trajectory: dict, max_chunks: int = 15, max_chars_per_chunk: int = 260) -> str:
+def _format_retrieved_chunks(trajectory: dict) -> str:
     entries: list[str] = []
-    chunk_counter = 0
     for step in trajectory.get("steps", []):
         for chunk in step.get("results", []):
-            if chunk_counter >= max_chunks:
-                break
-            text = str(chunk.get("text", ""))[:max_chars_per_chunk]
+            text = str(chunk.get("text", ""))
             entries.append(
                 f"- chunk_id={chunk.get('chunk_id')} ep={chunk.get('episode_id')} "
-                f"score={chunk.get('score')}: {text}"
+                f"score={chunk.get('score')}:\n{text}"
             )
-            chunk_counter += 1
-        if chunk_counter >= max_chunks:
-            break
     if not entries:
         return "(no chunks retrieved)"
-    return "\n".join(entries)
+    return "\n\n".join(entries)
 
 
 async def evaluate_example_metrics(
