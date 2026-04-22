@@ -102,6 +102,11 @@ async def score_single_chunk(
             temperature=0.2,
         )
         data = json.loads(response)
+        # gemini-2.0-flash sometimes wraps the single object in a list.
+        if isinstance(data, list) and data:
+            data = data[0]
+        if not isinstance(data, dict):
+            raise ValueError(f"Expected JSON object, got {type(data).__name__}: {response[:200]}")
         data["chunk_id"] = chunk_id
         # Normalize types (model may return numeric fields as strings).
         data["integrity"] = _rating_1_to_5(data.get("integrity", 3))
@@ -110,23 +115,24 @@ async def score_single_chunk(
         data["is_ad_or_filler"] = _truthy_ad(data.get("is_ad_or_filler", False))
         return data
     except Exception as e:
-        return {
-            "chunk_id": chunk_id,
-            "integrity": 3,
-            "information_density": 3,
-            "retrieval_signal": 3,
-            "is_ad_or_filler": False,
-            "brief_reason": f"Scoring failed: {e}",
-        }
+        # Return None so the caller can skip saving and retry on the next run.
+        # Previously returned a default {3,3,3} dict that silently poisoned the
+        # checkpoint file on rate-limit or parse errors.
+        print(f"  chunk {chunk_id}: {e}")
+        return None
 
 
 async def score_all_chunks(
     chunks_path: str | None = None,
     output_path: str | None = None,
-    batch_size: int = 10,
+    checkpoint_every: int = 300,
 ) -> dict[int, dict]:
     """
     Score all chunks for quality. Implements checkpointing.
+
+    Streams requests: keeps up to GEMINI_QUALITY_CONCURRENT_LIMIT tasks in
+    flight continuously via asyncio.wait(FIRST_COMPLETED) — avoids the
+    slowest-in-batch stall of asyncio.gather.
 
     Returns dict mapping chunk_id -> quality scores.
     """
@@ -150,33 +156,45 @@ async def score_all_chunks(
 
     # Find unscored chunks
     unscored = df[~df["chunk_id"].isin(scores.keys())]
-    print(f"Scoring {len(unscored)} chunks ({len(scores)} already done)...")
+    rows = unscored.to_dict("records")
+    total = len(rows)
+    print(f"Scoring {total} chunks ({len(scores)} already done)...")
 
-    for i in tqdm(range(0, len(unscored), batch_size), desc="Scoring chunks"):
-        batch = unscored.iloc[i : i + batch_size]
-        tasks = [
-            score_single_chunk(
+    pbar = tqdm(total=total, desc="Scoring chunks")
+    row_iter = iter(rows)
+    in_flight: set[asyncio.Task] = set()
+    since_ckpt = 0
+
+    def fill():
+        while len(in_flight) < GEMINI_QUALITY_CONCURRENT_LIMIT:
+            try:
+                row = next(row_iter)
+            except StopIteration:
+                return
+            in_flight.add(asyncio.create_task(score_single_chunk(
                 client=client,
                 chunk_id=int(row["chunk_id"]),
                 episode_id=int(row["episode_id"]),
                 guest=str(row["guest"]),
                 text=str(row["text"]),
-            )
-            for _, row in batch.iterrows()
-        ]
-        results = await asyncio.gather(*tasks)
+            )))
 
-        for result in results:
+    fill()
+    while in_flight:
+        done, _ = await asyncio.wait(in_flight, return_when=asyncio.FIRST_COMPLETED)
+        for t in done:
+            in_flight.discard(t)
+            result = t.result()
+            pbar.update(1)
             if result:
                 scores[result["chunk_id"]] = result
-
-        # Checkpoint every 100 chunks
-        if (i // batch_size) % 10 == 0 and scores:
-            with open(output_path, "w") as f:
-                json.dump(scores, f)
-
-        # No manual sleep here: the GeminiClient rate limiter enforces
-        # GEMINI_QUALITY_RPM_LIMIT and handles pacing for us.
+                since_ckpt += 1
+                if since_ckpt >= checkpoint_every:
+                    with open(output_path, "w") as f:
+                        json.dump(scores, f)
+                    since_ckpt = 0
+        fill()
+    pbar.close()
 
     # Final save
     with open(output_path, "w") as f:

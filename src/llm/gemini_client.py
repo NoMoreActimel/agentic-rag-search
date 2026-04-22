@@ -159,8 +159,9 @@ class GeminiClient:
                 if response_mime_type:
                     config.response_mime_type = response_mime_type
 
-                response = await asyncio.to_thread(
-                    self.client.models.generate_content,
+                # Native async path — avoids thread-pool saturation that caps
+                # concurrent HTTP calls at the default ThreadPoolExecutor size.
+                response = await self.client.aio.models.generate_content(
                     model=self.model,
                     contents=prompt,
                     config=config,
