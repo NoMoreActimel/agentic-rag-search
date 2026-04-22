@@ -85,8 +85,11 @@ class GeminiClient:
                     "gcloud auth application-default login"
                 )
             location = GOOGLE_CLOUD_LOCATION or "us-central1"
+            # Vertex AI uses "v1" as its stable path for both generate_content and
+            # embed_content (gemini-embedding-001 is served there). The Developer
+            # API path below needs "v1beta" for embed_content to resolve.
             self._http_options = types.HttpOptions(
-                api_version="v1beta",
+                api_version="v1",
                 timeout=GEMINI_HTTP_TIMEOUT_MS,
             )
             self.client = genai.Client(
