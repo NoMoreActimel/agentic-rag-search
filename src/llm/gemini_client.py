@@ -68,7 +68,12 @@ class UsageStats:
 class GeminiClient:
     """Async Gemini client with rate limiting, retry, and cost tracking."""
 
-    def __init__(self, model: str = GEMINI_MODEL):
+    def __init__(
+        self,
+        model: str = GEMINI_MODEL,
+        rpm_limit: int | None = None,
+        concurrent_limit: int | None = None,
+    ):
         # Vertex AI (GCP / trial credits): Application Default Credentials + project/location.
         # See https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview
         if GEMINI_USE_VERTEX_AI:
@@ -81,7 +86,7 @@ class GeminiClient:
                 )
             location = GOOGLE_CLOUD_LOCATION or "us-central1"
             self._http_options = types.HttpOptions(
-                api_version="v1",
+                api_version="v1beta",
                 timeout=GEMINI_HTTP_TIMEOUT_MS,
             )
             self.client = genai.Client(
@@ -99,7 +104,7 @@ class GeminiClient:
                     "or enable Vertex with GOOGLE_GENAI_USE_VERTEXAI=true and GOOGLE_CLOUD_PROJECT."
                 )
             self._http_options = types.HttpOptions(
-                api_version="v1",
+                api_version="v1beta",
                 timeout=GEMINI_HTTP_TIMEOUT_MS,
             )
             self.client = genai.Client(api_key=api_key, http_options=self._http_options)
@@ -110,8 +115,10 @@ class GeminiClient:
         self.stats = UsageStats()
 
         # Rate limiting: token bucket for RPM
-        self._semaphore = asyncio.Semaphore(GEMINI_CONCURRENT_LIMIT)
-        self._rpm_interval = 60.0 / GEMINI_RPM_LIMIT
+        effective_concurrent = concurrent_limit or GEMINI_CONCURRENT_LIMIT
+        effective_rpm = rpm_limit or GEMINI_RPM_LIMIT
+        self._semaphore = asyncio.Semaphore(effective_concurrent)
+        self._rpm_interval = 60.0 / effective_rpm
         self._last_request_time = 0.0
         self._rate_lock = asyncio.Lock()
 

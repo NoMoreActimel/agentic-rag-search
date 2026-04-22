@@ -43,10 +43,15 @@ SCRAPE_MAX_RETRIES = 3
 
 # ── Gemini LLM ────────────────────────────────────────────────────────────────
 GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_QUALITY_MODEL = "gemini-2.0-flash"  # Cheaper model for offline chunk quality scoring
 GEMINI_EMBEDDING_MODEL = "gemini-embedding-001"
 GEMINI_EMBEDDING_DIMS = 768
 GEMINI_RPM_LIMIT = 140
 GEMINI_CONCURRENT_LIMIT = 5
+# Higher limits for offline chunk quality scoring on 2.0 Flash Tier 1 (AI Studio).
+# Tier 1 cap is 2000 RPM; leave ~10% headroom.
+GEMINI_QUALITY_RPM_LIMIT = 1800
+GEMINI_QUALITY_CONCURRENT_LIMIT = 30
 GEMINI_MAX_RETRIES = 3
 # Per-request HTTP timeout for google-genai (milliseconds). Prevents hung calls from blocking the full grid.
 GEMINI_HTTP_TIMEOUT_MS = int(os.getenv("GEMINI_HTTP_TIMEOUT_MS", "600000"))  # default 10 minutes

@@ -12,15 +12,28 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 
-from config.settings import CHUNKS_PARQUET, PROCESSED_DIR
+from config.settings import (
+    CHUNKS_PARQUET,
+    GEMINI_QUALITY_CONCURRENT_LIMIT,
+    GEMINI_QUALITY_MODEL,
+    GEMINI_QUALITY_RPM_LIMIT,
+    PROCESSED_DIR,
+)
 from src.llm.gemini_client import GeminiClient
 
 QUALITY_SCORES_PATH = PROCESSED_DIR / "chunk_quality_scores.json"
 
 SCORING_SYSTEM = """You are a content quality evaluator for podcast transcript chunks.
-Score each chunk on two dimensions. Return ONLY valid JSON."""
+Score each chunk on three dimensions. Return ONLY valid JSON."""
 
-SCORING_PROMPT = """Rate the following podcast transcript chunk on two quality dimensions.
+SCORING_PROMPT = """Rate the following podcast transcript chunk on three quality dimensions.
+
+This chunk is part of a retrieval index for a cross-episode Q&A benchmark. Questions in the
+benchmark ask about: (a) specific named entities (people, projects, technologies) and their
+attributes, (b) guest opinions and contrasting stances on shared topics, (c) how a guest's
+predictions or claims changed over time, and (d) concrete numerical claims (probabilities,
+years, amounts, counts). A chunk is useful if it contains evidence for SOME such question —
+not a specific one.
 
 Chunk (Episode #{episode_id}, Guest: {guest}):
 ---
@@ -39,12 +52,32 @@ Score on a scale of 1-5 for each:
    - 3: Mix of substantive and filler content
    - 1: Mostly ads, sponsors, intros, outros, or small talk with no substance
 
+3. **Retrieval Signal** (1-5): Does this chunk contain evidence that could answer SOME
+   factual question about this corpus? Consider whether ANY of these are present:
+     (a) a named entity (person, project, paper, organization, technology) discussed with
+         enough context to say what it is or what the speaker thinks of it,
+     (b) an explicit opinion, prediction, or stance the guest holds on an identifiable topic,
+     (c) a concrete number, date, probability, timeline, or dollar amount tied to a topic,
+     (d) a comparative claim ("X is better than Y", "unlike Z, we…").
+   - 5: Two or more of (a)-(d) clearly present and attributable to the speaker.
+   - 3: Exactly one of (a)-(d), or one present but weakly attributable.
+   - 1: None of (a)-(d). Chunk is conversational filler, pleasantries, anecdote without
+        a claim, intro/outro, or sponsor read.
+
+For **is_ad_or_filler**, flag true when the chunk is predominantly ONE of:
+  - a sponsor/ad read (product pitch, promo code, "this episode is brought to you by…"),
+  - an intro or outro (guest announcement, sign-off, "subscribe on YouTube", podcast plug),
+  - small talk / pleasantries with no substantive claim (greetings, "how are you", laughter),
+  - a cross-reference to another podcast episode or an unrelated recommendation.
+Do not flag chunks that contain a substantive claim mixed with some filler.
+
 Return JSON:
 {{
   "integrity": <1-5>,
   "information_density": <1-5>,
+  "retrieval_signal": <1-5>,
   "is_ad_or_filler": <true/false>,
-  "brief_reason": "one sentence explanation"
+  "brief_reason": "one sentence citing the specific feature that drove the score"
 }}"""
 
 
@@ -73,6 +106,7 @@ async def score_single_chunk(
         # Normalize types (model may return numeric fields as strings).
         data["integrity"] = _rating_1_to_5(data.get("integrity", 3))
         data["information_density"] = _rating_1_to_5(data.get("information_density", 3))
+        data["retrieval_signal"] = _rating_1_to_5(data.get("retrieval_signal", 3))
         data["is_ad_or_filler"] = _truthy_ad(data.get("is_ad_or_filler", False))
         return data
     except Exception as e:
@@ -80,6 +114,7 @@ async def score_single_chunk(
             "chunk_id": chunk_id,
             "integrity": 3,
             "information_density": 3,
+            "retrieval_signal": 3,
             "is_ad_or_filler": False,
             "brief_reason": f"Scoring failed: {e}",
         }
@@ -99,7 +134,11 @@ async def score_all_chunks(
     output_path = Path(output_path or QUALITY_SCORES_PATH)
 
     df = pd.read_parquet(chunks_path)
-    client = GeminiClient()
+    client = GeminiClient(
+        model=GEMINI_QUALITY_MODEL,
+        rpm_limit=GEMINI_QUALITY_RPM_LIMIT,
+        concurrent_limit=GEMINI_QUALITY_CONCURRENT_LIMIT,
+    )
 
     # Load checkpoint if exists
     scores: dict[int, dict] = {}
@@ -136,7 +175,8 @@ async def score_all_chunks(
             with open(output_path, "w") as f:
                 json.dump(scores, f)
 
-        await asyncio.sleep(0.5)  # Rate limiting
+        # No manual sleep here: the GeminiClient rate limiter enforces
+        # GEMINI_QUALITY_RPM_LIMIT and handles pacing for us.
 
     # Final save
     with open(output_path, "w") as f:
@@ -184,9 +224,10 @@ def _truthy_ad(value) -> bool:
 
 def compute_chunk_quality(score: dict) -> float:
     """
-    Compute a single quality score from integrity and density ratings.
+    Compute a single quality score from integrity, density, and retrieval-signal ratings.
 
-    Returns a value between 0 and 1.
+    Returns a value between 0 and 1. Falls back to the 2-dimension blend if
+    retrieval_signal is missing (e.g. scores produced before the field was added).
     """
     integrity = _rating_1_to_5(score.get("integrity", 3))
     density = _rating_1_to_5(score.get("information_density", 3))
@@ -195,8 +236,11 @@ def compute_chunk_quality(score: dict) -> float:
     if is_ad:
         return 0.1  # Heavily penalize ads/filler
 
-    # Weighted combination: density matters more for RAG
-    combined = (0.4 * integrity + 0.6 * density) / 5.0
+    if "retrieval_signal" in score:
+        retrieval = _rating_1_to_5(score["retrieval_signal"])
+        combined = (0.2 * integrity + 0.3 * density + 0.5 * retrieval) / 5.0
+    else:
+        combined = (0.4 * integrity + 0.6 * density) / 5.0
     return round(combined, 3)
 
 
