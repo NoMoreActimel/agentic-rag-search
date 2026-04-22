@@ -1,0 +1,146 @@
+{
+  "question": "What is the total count of distinct programming languages or core development technologies explicitly mentioned as being foundational to or primarily used by Travis Oliphant, John Carmack, and Pieter Levels in their programming careers, and which of these guests utilizes the most such technologies?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Travis Oliphant programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 27967,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27968,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 1,
+          "text": "To support this podcast, please check out our sponsors in the description. This is the Lex Friedman Podcast, and here is my conversation with Travis Oliphant. What was the first computer program you've ever written? Do you remember? Whoa, that's a good question. I think it was in fourth grade. Just a simple loop in BASIC. BASIC. BASIC, yeah, on an Atari 800, Atari 400, I think, or maybe it was an Atari 800. It was a part of a class, and we just were just BASIC loops to print things out. Did you use go to statements? Yes, yes, we used go to statements. I remember in the early days, that's when I first realized there's like principles to programming, when I was told that don't use go to statements. Those are bad software engineering principles, like it goes against what great, beautiful code is. I was like, oh, okay, there's rules to this game. I didn't see that until high school when I took an AP computer science course.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 28175,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 208,
+          "text": "Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description. And now, let me leave you with something that in the programming world is called Hodgson's Law. Every sufficiently advanced Lisp application will eventually be re implemented in Python. Thank you for listening and hope to see you next time. this proprietary software. Right, and there's also culture around MATLAB as much, because I've talked to a few folks in, MathWorks creates MATLAB? Yeah. I mean, there's just a culture, they try really hard, but it just, there's this corporate IBM style culture that's like, or whatever. I don't want to say negative things about IBM or whatever, but there's a... No, it's really that connection. It's something I'm in the middle of right now is the business of open source. And how do you connect the ethos of cooperative development with the necessity of creating profits, right?",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 301,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 21,
+          "text": "Oh, interesting. So you basically, exactly, you first observe what you like. Yeah, and so that's why if you're 17 years old and you want to sort of create a programming language, you're not going to be very successful at it because you have no experience with other languages, whereas I was in my, let's say mid 30s, I had written parsers before, so I had worked on the implementation of ABC, I had spent years debating the design of ABC with its authors, with its designers, I had nothing to do with the design, it was designed fully as it ended up being implemented when I joined the team. But so you borrow ideas and concepts and very concrete sort of local rules from different languages like the indentation and certain other syntactic features from ABC, but I chose to borrow string literals and how numbers work from C and various other things.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.261379957199097
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41374,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 5,
+          "text": "So print John Carmack, when is the first time, if we could talk about love, that you fell in love with programming? You said like, this is really something special. It really was something that was one of those love at first sight things where just really from the time that I understood what a computer was even, I mean, I remember looking through old encyclopedias of the black and white photos of the IBM mainframes at the reel to reel tape decks. And for people nowadays, it can be a little hard to understand what the world was like then from information gathering where I would go to the libraries and there would be a couple books on the shelf about computers and they would be very out of date even at that point, just not a lot of information, but I would grab everything that I could find and devour everything. Whenever Time or Newsweek had some article about computers, I would like cut it out with scissors and put it somewhere.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41731,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 362,
+          "text": "I don't think it's a 0% chance that we will address some of that before it becomes a problem for me. I think exciting medical stuff in the next couple decades. But I do have this kind of vague plan that when I'm not at the top of my game and I don't feel that I'm in a position to put a dent in the world some way, that I'll probably wind up doing some kind of recreational retro programming or I'll work on something that I would not devote my life to now, but I can while away my time as the old man gardening in the code worlds. And then to step back even bigger, let me ask you about why we're here, we human beings. What's the meaning of it all? What's the meaning of life, John Carmack? So very similar with that last question. I know a lot of people fret about this question a lot, and I just really don't. I really don't give a damn. We are biological creatures that happenstance of evolution. We have innate drives that evolution crafted for survival and passing on of genetic codes.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 9.469789743423462
+    }
+  ],
+  "final_answer": "The provided context mentions Travis Oliphant and John Carmack, but Pieter Levels is not mentioned. For Travis Oliphant, the technologies mentioned are NumPy, SciPy, Anaconda, Conda, Python, BASIC, Lisp, and MATLAB, totaling eight distinct technologies. For John Carmack, only BASIC is explicitly mentioned.\n\nSince Pieter Levels is not mentioned in the retrieved chunks, the context is insufficient to provide a total count for all three individuals or to determine which of the three utilizes the most technologies.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    224,
+    6,
+    7,
+    48,
+    309
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 12.368612289428711
+}

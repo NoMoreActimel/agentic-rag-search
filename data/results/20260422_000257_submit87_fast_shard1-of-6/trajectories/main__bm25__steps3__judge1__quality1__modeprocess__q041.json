@@ -1,0 +1,212 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson views on programming languages blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64134,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 189,
+          "text": "But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here. We want people to succeed in building these tools for our users. We understand that mini apps bring us users. The more users we have, the more successful and relevant Telegram becomes. We need third-party developers. I think at this point, Telegram gives developers by far the most powerful tools to create.\n\n\n## TON\n\nLex Fridman: Plus there\u2019s a bot API. And I mean you have to tell me about the TON blockchain and the crypto ecosystem available through Telegram. So what is TON aka The Open Network blockchain? Pavel Durov: TON is a blockchain technology that we initially developed in 2018 and 2019, and we started to develop it because we needed a blockchain platform to be integrated deeply into Telegram because we believe in blockchain. We think it\u2019s one of the technologies that enable freedom.",
+          "score": 0.3826494887669881,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 4.313549518585205
+        },
+        {
+          "chunk_id": 22104,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 105,
+          "text": "So does that mean that the blockchain would be taking a position in this big mega political debate? So I think like for just those kinds of reasons, I would personally like prefer Ethereum itself to be more of this sort of pure platform that just analyzes transactions just mathematically using deterministic consensus rules. And then if you need the oracles, that can be layer twos. Like I think Ethereum like benefits from not trying to do everything at layer one and having this like very robust layer two ecosystem where you have all these projects doing interesting things. Yeah, focus on the basic technology avoid the politics. Gotcha. Let me ask a bit of a human question. Charles Hoskinson, someone you've worked with in the early days of Ethereum, there appears to my outsider view to have been a bit of a falling out. Is there positive inspiring human story to be told about why you two parted ways?",
+          "score": 0.38252194595336914,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.59379768371582
+        },
+        {
+          "chunk_id": 8705,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 130,
+          "text": "And the setup of those channels uses the Ethereum blockchain. Once the channels are set up, then data flows along those channels without having to be on the blockchain. All that goes on the blockchain is the fact that some data went along that channel. So you can do... So there's not a shared knowledge. Well, the identity of each agent is on the blockchain, on the Ethereum blockchain. If one agent rates the reputation of another agent, that goes on the blockchain. And agents can publish what APIs they will fulfill on the blockchain. But the actual data for AI and the results for AI is not on the blockchain. Do you think it could be? Do you think it should be? In some cases, it should be. In some cases, maybe it shouldn't be. But I mean, I think that... So I'll give you an example. Using Ethereum, you can't do it. Using now, there's more modern and faster blockchains where you could start to do that in some cases. Two years ago, that was less so. It's a very rapidly evolving ecosystem.",
+          "score": 0.3631876694361369,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.765185832977295
+        },
+        {
+          "chunk_id": 29723,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 208,
+          "text": "As we realized, people were using Wolfram Alpha as the oracle for smart contracts, so to speak. And so that got us interested in blockchains in general. And what was ended up happening is Wolfram Language is, with its symbolic representation of things, is really very good at representing things like blockchains. And so I think we now have, and we don't really know all the comparisons, but we now have a really nice environment within Wolfram Language for dealing with the sort of, for representing what happens in blockchains, for analyzing what happens in blockchains. We have a whole effort in blockchain analytics. And we've sort of published some samples of how that works. But it's because our technology stack, Wolfram Language and Mathematica, are very widely used in the quant finance world. There's a sort of immediate coevolution there of the quant finance kind of thing and blockchain analytics. So it's kind of the representation of blockchain in computational language.",
+          "score": 0.3593097213109334,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.598988056182861
+        },
+        {
+          "chunk_id": 23160,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 373,
+          "text": "Who knows? It's an undiscovered country. I just had the image of Charles Hoskinson alone on a bison farm trying to raise a woolly mammoth. Just start wearing a white suit and say welcome to Hoskinson's ranch. I'll have a cane with amber on it. Yeah, with a chalkboard that you keep scrambling on like the beautiful mind in the movie and you'll have voices. All the schizophrenia's already come. You guys are all figments of my imagination anyway. Now one of my goals though, I love catfish and they live a long time. They get really damn big if you see those guys. I'd love to catch one now and be in my 60s and catch the same fish twice and recognize it. Maybe I'll lift a scar or something. That'd be really cool, going back to the fish thing. Because both the fish has gone through a lot, I've gone through a lot. We can just be like old friends. Reminisce. Exactly, exactly. About a life well lived. Then I'll die of a heart attack and my mammoths will eat me.",
+          "score": 0.1384212064743042,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 4.646623134613037
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. They either feature different guests (Pavel Durov, Vitalik Buterin, Ben Goertzel, Stephen Wolfram) or, in the case of Charles Hoskinson, discuss unrelated personal anecdotes. None of the chunks contain information about Charles Hoskinson's views on programming languages or how his blockchain focus shapes them.\n\nThe agent should refine the search for Charles Hoskinson to be more specific about programming languages, perhaps including terms like \"Haskell,\" \"Plutus,\" or \"smart contract languages.\" Separate searches will also be needed for ThePrimeagen and Tim Sweeney.",
+      "timestamp": 7.031365156173706
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming languages Haskell Plutus blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22991,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 204,
+          "text": "But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it. So it's entirely possible to write a Scala to Plutus core compiler or TypeScript compiler or something like that. But I'm a big believer of separation of concerns and we don't live in a single chain model anymore. So you have a situation where you probably wanna have different execution environments and different chains. So you have different virtual machines there. And that's why we work so closely with the University of Illinois, Urbana Champaign, Kagori Roshu's team at runtime verification. What they did is they said, let's start with something very familiar, LLVM, which has been around for a really long time and they happened to have created it there with Apple. And let's take that and translate that into the blockchain space.",
+          "score": 0.4480744698842366,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.403191566467285
+        },
+        {
+          "chunk_id": 23075,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 288,
+          "text": "And what we've done now is added a blockchain layer and the blockchain handles the accounting of that asset and the spending policy of that stuff. So that is a much smaller program than what Blizzard is doing with World of Warcraft. So the point of Plutus was let's create a language where you can write these small to midsize programs and have a high degree of confidence that they behave with correctness and also they give you deterministic results on the consumption of resources. You can run things locally and you actually understand what it costs to run and that doesn't change when you deploy it on the system. If you dial up the expressiveness of the system and like Ethereum does and these big mutable account systems, the problem is you have to have global state. So whatever you test locally doesn't actually necessarily translate to what you've deployed, okay? So we spent a long time asking like where's the Goldilocks zone?",
+          "score": 0.40766531181335447,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.671370506286621
+        },
+        {
+          "chunk_id": 23079,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 292,
+          "text": "That would probably be the best thing to do and we'll have something like that by August. It's pretty easy to build this stuff. So what kind of off chain interactions are supported with Plutus? What are the limits you want to put on the thing so it doesn't get chaotic? That's the beautiful thing. When you have a less expressive model on chain, it means you can do anything you want off chain. So you started talking about smart contracts, but let's zoom back out and ask the big question here is what is a blockchain and what is a cryptocurrency? So a blockchain is just a ledger and really it has three nice properties. You're timestamped, you're immutable and auditable, either in a global or a local sense. And so there's all kinds of things mankind has invented where it's really important that when you put some information down, it doesn't change and other people can see it and that you know when it was put down. For example, a property ledger.",
+          "score": 0.372343983968099,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.4433135986328125
+        },
+        {
+          "chunk_id": 22990,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 203,
+          "text": "Any other language, I guess this is the key question I wanna ask. Any other language support other than Haskell? The example this person gives is TypeScript, Go, Java, Python, et cetera. Also, have you considered a yearly conference focused around developers? Ha ha, yeah, we saw the Plutus Fest. And we did the first one in 2018, 2019, I can't remember. And we were gonna do one last year, but then COVID hit. So we'll bring it back and we'll probably do it annually at the University of Wyoming for their hackathon there. In fact, it just so happens that coincides with the Goguen Summit. So we're doing that, I think the third week of September. But yeah, it's great to do an annual conference. You can bring a lot of cool people together and you can do hackathons and awards and so forth. But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it.",
+          "score": 0.3558578367233276,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.736764430999756
+        },
+        {
+          "chunk_id": 22992,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 205,
+          "text": "And let's take that and translate that into the blockchain space. Okay, then once you have it, then it's very easy to modify compilers of standard languages like the C's and C++'s and other things that do compile to LLVM already and have them run there. So that's a different execution model than what we tried to build for Plutus, which focuses on correctness, okay? So then all you have to really do is say, can both of these models coexist within the same ecosystem? Because then you kind of, and I did a video, it was called like the island, the ocean, the pond. And the basic idea was say, you have an island where everything's perfect. Calypso lives there, life is great. People feed you grapes every day, but maybe you can't do everything on the island. And the ocean's big, it has everything, but the ocean's got sea monsters and sharks and Boaty McBoatface and all kinds of crazy stuff, right? So that's what Yella is about. It's basically this bring LLVM into our world.",
+          "score": 0.35377764892578123,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.647613525390625
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are highly relevant to Charles Hoskinson's views on programming languages, specifically Plutus and Haskell, and how his blockchain focus shapes them (e.g., correctness, determinism, resource predictability). They provide excellent detail on his perspective.\n\nThe current information only covers Charles Hoskinson. The next search should focus on ThePrimeagen and Tim Sweeney.\n\nSearch for:\n1.  `ThePrimeagen programming language views \"software engineering\" performance Rust C++`\n2.  `Tim Sweeney programming language views \"game development\" metaverse Unreal Engine C++`",
+      "timestamp": 27.00977849960327
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen programming language views \"software engineering\" performance Rust C++",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59322,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 206,
+          "text": "And I made it faster than the C version. So it just means that it\u2019s just not correctly specified is all that means. Lex Fridman: Yeah, but it\u2019s still exciting. To me, the competition between Zig, Rust, and C++ is really interesting. Part of it\u2019s for speed. Part of it\u2019s how easy it is to write performant code. ThePrimeagen: I\u2019ll say something. That\u2019s the reason why I think Zig is so interesting comparatively to say C or Rust. C is the ultimate language. It can do anything, have pre-process or macros. You can do quite a bit with it, but it\u2019s also really difficult. ThePrimeagen: So macros, you can do quite a bit with it, but it\u2019s also really difficult and it\u2019s also really simple and you can learn it. So it\u2019s kind of its own unique beast. And when you get really good at C, C is a magical language and people are really great at it and people speak very highly of it. Rust is like this ultra safe language. What you can do in C, you just can\u2019t even express in Rust.",
+          "score": 0.4754156195322672,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 8.289240837097168
+        },
+        {
+          "chunk_id": 59324,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 208,
+          "text": "But for the most part, Zig will give you safety for the most part. So it\u2019s like a little bit of safety, but more like C. So it kind of gives you everything you want in that region where you can express safe code and unsafe code. It\u2019s very easy to write. It\u2019s very pretty. Or at least the idea behind it is very pretty. The language itself is bland, but. Lex Fridman: Wow, there\u2019s beauty in everything, Prime. ThePrimeagen: Yeah.\n\n\n## Rust\n\nLex Fridman: You\u2019ve programmed in Rust a lot. What do you love about Rust? What are the strengths? What are the weaknesses? Maybe you can speak about memory management that you already mentioned, the challenge of memory management that several of these languages address, but yeah, what do you love about Rust? ThePrimeagen: What I love about Rust, I love the ability to free the memory that you\u2019re using is directly tied to the stack.",
+          "score": 0.45506619644165036,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.702836990356445
+        },
+        {
+          "chunk_id": 59316,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 200,
+          "text": "I think you should explore a loosey language, so Python slash JavaScript, where there is truly only one type, which is a boxed value, which is a multivariate, different types underneath the hood. Lex Fridman: What did you call it? A loosey language? ThePrimeagen: A loosey-goosey language. It\u2019s a dynamic language, and so I think it\u2019s really good to explore one of those too. So I\u2019d put Python or JavaScript right there. Even Lua, throw Lua in the bunch. I think you should explore a strict language, so I\u2019d do something like Rust, Go. I think those are both really, really great. Lex Fridman: C++? ThePrimeagen: You can do C++. You can do some type erasure in C++. You can do it with Go as well, but for the most part it\u2019s a great language to do that in. It can get a little wild. New C++ seems great. Everyone keeps telling me new C++ is great. It has every feature you\u2019ve ever wanted and all the features you don\u2019t want. Lex Fridman: Yeah, exactly.",
+          "score": 0.41519623947143547,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 5.708410263061523
+        },
+        {
+          "chunk_id": 59326,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 210,
+          "text": "I\u2019m just not even mentioning it, but it just makes it a lot easier. But Rust does that really beautifully and it\u2019s just like a really cool idea about it and I really like that. And the second thing that I think Rust does really, is such a good thing is that mutability of something is you have to specify it. So you don\u2019t just create a variable and then mutate it. You have to say this is not only a variable, it\u2019s a mutable variable. And I think that just makes code really readable and really understandable. Because anything that does not have the word mute next to it, you know for a fact it cannot change. There\u2019s some rules around that, but you get the general idea. Lex Fridman: Unlike most programming languages, you have to explicitly state that this is going to be changed. ThePrimeagen: Yeah. Lex Fridman: Yeah. That\u2019s really interesting. I mean it\u2019s safe, it\u2019s trying to be, and the safety might be, create limitations. Let us consult the AI overlords.",
+          "score": 0.40201572767893473,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.429245471954346
+        },
+        {
+          "chunk_id": 59327,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 211,
+          "text": "That\u2019s really interesting. I mean it\u2019s safe, it\u2019s trying to be, and the safety might be, create limitations. Let us consult the AI overlords. Rust is a blazing fast memory efficient systems programming language that emphasizes performance, type safety and concurrency. The language enforces memory safety without using a garbage collector, as you said, instead utilizing the unique, quote, \u201cborrow checker\u201d that tracks object lifetimes at compile time. This prevents common programming errors like null point or dereferencing and memory leaks and so on. Yeah. So you\u2019ve also spoken about metaprogramming. Which of these languages do you like for the metaprogramming? I love metaprogramming in C++, but it\u2019s a giant mess. At least when I program C++ 17 standard, I believe, it\u2019s just a mess, especially a mess to debug. ThePrimeagen: Yeah, I would consider myself kind of a metaprogramming newbie. I have only solved some amount of problems with it.",
+          "score": 0.37421938610076905,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.237973690032959
+        }
+      ],
+      "judge_feedback": "These chunks are highly relevant and provide excellent insight into ThePrimeagen's views on programming languages, emphasizing performance, safety, and readability for software engineering. To further refine this, search for ThePrimeagen's general philosophy on programming languages or \"software engineering principles\" to explicitly connect his views to his professional focus. Also, remember to search for Charles Hoskinson and Tim Sweeney.",
+      "timestamp": 50.36000609397888
+    }
+  ],
+  "final_answer": "The provided context details Charles Hoskinson's focus on blockchain infrastructure, particularly the Plutus language for Cardano, which prioritizes correctness, deterministic resource consumption, and a less expressive on-chain model for high confidence in small to mid-sized programs. ThePrimeagen, a general software engineer, discusses languages like C, Rust, and Zig, valuing speed, performance, and safety features like Rust's explicit mutability and memory management. However, the provided text does not contain any information about Tim Sweeney or his views on programming languages, making it impossible to address his perspective.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    192,
+    482,
+    103,
+    234,
+    461,
+    188
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 58.46247935295105
+}

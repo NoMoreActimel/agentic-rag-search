@@ -1,0 +1,154 @@
+{
+  "question": "How has the understanding of the practical implications and challenges of scaling laws evolved, moving from Dario Amodei's discussion of their role in AGI timelines and general limits, to later considerations of specific trade-offs like intelligence versus speed in advanced models?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Dario Amodei scaling laws AGI timelines limits",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 56997,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 158,
+          "text": "So there are all-\n\nDario Amodei: Then we can\u2019t produce as many GPUs as we want. So there are all kinds of things that could derail the whole process. So I don\u2019t fully believe the straight line extrapolation, but if you believe the straight line extrapolation, we\u2019ll get there in 2026 or 2027. I think the most likely is that there are some mild delay relative to that. I don\u2019t know what that delay is, but I think it could happen on schedule. I think there could be a mild delay. I think there are still worlds where it doesn\u2019t happen in a hundred years. The number of those worlds is rapidly decreasing. We are rapidly running out of truly convincing blockers, truly compelling reasons why this will not happen in the next few years. There were a lot more in 2020, although my guess, my hunch at that time was that we\u2019ll make it through all those blockers.",
+          "score": 0.8481493897438048,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.8087848424911499
+        },
+        {
+          "chunk_id": 56839,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nDario Amodei: If you extrapolate the curves that we\u2019ve had so far, right? If you say, \u201cWell, I don\u2019t know, we\u2019re starting to get to PhD level, and last year we were at undergraduate level, and the year before we were at the level of a high school student,\u201d again, you can quibble with what tasks and for what. \u201cWe\u2019re still missing modalities, but those are being added,\u201d like computer use was added, like image generation has been added. If you just kind of eyeball the rate at which these capabilities are increasing, it does make you think that we\u2019ll get there by 2026 or 2027. I think there are still worlds where it doesn\u2019t happen in 100 years. The number of those worlds is rapidly decreasing. We are rapidly running out of truly convincing blockers, truly compelling reasons why this will not happen in the next few years. The scale-up is very quick. We do this today, we make a model, and then we deploy thousands, maybe tens of thousands of instances of it.",
+          "score": 0.8474663801193236,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.8078091144561768
+        },
+        {
+          "chunk_id": 56860,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 21,
+          "text": "Lex Fridman: What about the limits of compute, meaning the expensive nature of building bigger and bigger data centers? Dario Amodei: So right now, I think most of the frontier model companies, I would guess, are operating in roughly 1 billion scale, plus or minus a factor of three. Those are the models that exist now or are being trained now. I think next year we\u2019re going to go to a few billion, and then 2026, we may go to above 10 billion. And probably by 2027, their ambitions to build hundred billion dollar clusters. And I think all of that actually will happen. There\u2019s a lot of determination to build the compute, to do it within this country, and I would guess that it actually does happen. Now, if we get to a hundred billion, that\u2019s still not enough compute, that\u2019s still not enough scale, then either we need even more scale, or we need to develop some way of doing it more efficiently of shifting the curve.",
+          "score": 0.8289672083854676,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7813817262649536
+        },
+        {
+          "chunk_id": 56857,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 18,
+          "text": "I strongly suspect that balance is kind of more on the side of wishing to make things happen faster, but there is a balance. Lex Fridman: If we do hit a limit, if we do hit a slowdown in the scaling laws, what do you think would be the reason? Is it compute-limited, data-limited? Is it something else? Idea limited? Dario Amodei: So a few things, now we\u2019re talking about hitting the limit before we get to the level of humans and the skill of humans. So I think one that\u2019s popular today, and I think could be a limit that we run into, like most of the limits, I would bet against it, but it\u2019s definitely possible, is we simply run out of data. There\u2019s only so much data on the internet, and there\u2019s issues with the quality of the data. You can get hundreds of trillions of words on the internet, but a lot of it is repetitive or it\u2019s search engine optimization drivel, or maybe in the future it\u2019ll even be text generated by AIs itself.",
+          "score": 0.8140055615901947,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8028650879859924
+        },
+        {
+          "chunk_id": 56996,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 157,
+          "text": "Dario Amodei: So if you extrapolate the curves that we\u2019ve had so far. Right? If you say, \u201cWell, I don\u2019t know. We\u2019re starting to get to PhD level, and last year we were at undergraduate level and the year before we were at the level of a high school student.\u201d Again, you can quibble with at what tasks and for what we\u2019re still missing modalities, but those are being added. Computer use was added, like ImageEn was added, image generation has been added. And this is totally unscientific, but if you just eyeball the rate at which these capabilities are increasing, it does make you think that we\u2019ll get there by 2026 or 2027. Again, lots of things could derail it. We could run out of data. We might not be able to scale clusters as much as we want. Maybe Taiwan gets blown up or something, and then we can\u2019t produce as many GPUs as we want. So there are all-\n\nDario Amodei: Then we can\u2019t produce as many GPUs as we want. So there are all kinds of things that could derail the whole process.",
+          "score": 0.8108218688964843,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7983169555664062
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 13.177679777145386
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "scaling laws intelligence speed trade-offs advanced models",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61594,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 38,
+          "text": "So I do think scaling laws are working, but it\u2019s tough to get, at any given time, the models we all use the most, this maybe a few months behind the maximum capability we can deliver because that won\u2019t be the fastest, easiest to use, et cetera. Lex Fridman: Also, that\u2019s in terms of intelligence, it becomes harder and harder to measure \u201d performance\u201d because you could argue Gemini Flash is much more impactful than Pro just because of the latency, it\u2019s super intelligent already. I mean sometimes latency is maybe more important than intelligence, especially when the intelligence is just a little bit less and Flash not, it\u2019s still incredibly smart model. And so you have to now start measuring impact and then it feels like benchmarks are less and less capable of capturing the intelligence of models, the effectiveness of models, the usefulness, the real world usefulness, of models.\n\n\n## AGI and ASI\n\nAnother kitchen question.",
+          "score": 0.776312025308609,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7490171790122986
+        },
+        {
+          "chunk_id": 56980,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 141,
+          "text": "You\u2019ve only made one. But the truth is that the scale up is very quick. We do this today,. We make a model, and then we deploy thousands, maybe tens of thousands of instances of it. I think by the time, certainly within two to three years, whether we have these super powerful AIs or not, clusters are going to get to the size where you\u2019ll be able to deploy millions of these. And they\u2019ll be faster than humans. And so, if your picture is, \u201cOh, we\u2019ll have one and it\u2019ll take a while to make them,\u201d my point there was, no. Actually you have millions of them right away. Lex Fridman: And in general they can learn and act 10 to 100 times faster than humans. So that\u2019s a really nice definition of powerful AI. Okay, so that. But, you also write that, \u201cClearly such an entity would be capable of solving very difficult problems very fast, but it is not trivial to figure out how fast.",
+          "score": 0.7611672360897064,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7273817658424377
+        },
+        {
+          "chunk_id": 56196,
+          "episode_id": 447,
+          "guest": "Cursor Team",
+          "chunk_index": 124,
+          "text": "Traditionally, we just had to literally train a bigger model that always used that many more flops, but now, we could perhaps use the same size model and run it for longer to be able to get an answer at the quality of a much larger model. So the really interesting thing I like about this is there are some problems that perhaps require 100 trillion parameter model intelligence trained on 100 trillion tokens. But that\u2019s maybe 1%, maybe 0.1% of all queries. So are you going to spend all of this effort, all of this compute training a model that costs that much and then run it so infrequently? It feels completely wasteful when instead you get the model that can\u2026 You train the model that is capable of doing the 99.9% of queries, then you have a way of inference time running it longer for those few people that really, really want max intelligence. Lex: How do you figure out which problem requires what level of intelligence?",
+          "score": 0.760981317281723,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7271161675453186
+        },
+        {
+          "chunk_id": 6600,
+          "episode_id": 83,
+          "guest": "Nick Bostrom",
+          "chunk_index": 107,
+          "text": "A simple one is just speed. Like if you can solve the same challenge faster in some sense, you're like smarter. So there I think we have very strong evidence for thinking that you could have a computer in this universe that would be much faster than the human brain and therefore have speed super intelligence, like be completely superior, maybe a million times faster. Then maybe there are other ways in which you could be smarter as well, maybe more qualitative ways, right? And the concepts are a little bit less clear cut. So it's harder to make a very crisp, neat, firmly logical argument for why that could be qualitative super intelligence as opposed to just things that were faster. Although I still think it's very plausible and for various reasons that are less than watertight arguments.",
+          "score": 0.7223665506839752,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7148093581199646
+        },
+        {
+          "chunk_id": 56218,
+          "episode_id": 447,
+          "guest": "Cursor Team",
+          "chunk_index": 146,
+          "text": "Because people start now optimizing more so for making the thing work really well given an inference budget. And I think there are a lot more dimensions to these curves than what we originally used, of just compute number of parameters and data. Like inference compute is the obvious one. I think context length is another obvious one. So let\u2019s say you care about the two things of inference compute and then context window, maybe the thing you want to train, is some kind of SSM. Because they\u2019re much, much cheaper and faster at super, super long context. And even if, maybe it was 10 X more scaling properties during training, meaning you spend 10 X more compute to train the thing to get the same level of capabilities, it\u2019s worth it. Because you care most about that inference budget for really long context windows. So it\u2019ll be interesting to see how people play with all these dimensions. Lex: So yeah, I mean you speak to the multiple dimensions, obviously.",
+          "score": 0.7223078877925873,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7147255539894104
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 24.94234538078308
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 49.70872402191162
+    }
+  ],
+  "final_answer": "Dario Amodei's discussions primarily focused on the potential for AGI by 2026-2027 through straight-line extrapolation of scaling laws, while also identifying general limits such as data scarcity, compute availability (GPUs), and the cost of building large data centers. The understanding has since evolved to include more practical considerations and trade-offs in advanced models. For instance, later discussions highlight that while scaling laws continue to work, there's a growing emphasis on balancing intelligence with speed and efficiency, with models like Gemini Flash prioritizing latency for broader impact. This involves optimizing for inference budgets, considering multiple dimensions beyond just raw parameters and data, and recognizing that extreme intelligence isn't always necessary for the majority of real-world queries.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    447,
+    83,
+    452,
+    471
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 49.70872640609741
+}

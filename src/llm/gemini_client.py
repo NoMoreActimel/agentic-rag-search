@@ -3,6 +3,7 @@
 import asyncio
 import os
 import time
+from collections import deque
 from dataclasses import dataclass, field
 
 from dotenv import load_dotenv
@@ -29,6 +30,16 @@ from config.settings import (
 load_dotenv()
 
 
+def _tenacity_bump_retry(retry_state) -> None:
+    """Increment retry counter on GeminiClient instances (best-effort)."""
+    try:
+        obj = retry_state.args[0]
+        if hasattr(obj, "stats"):
+            obj.stats.retries_after_error += 1
+    except Exception:
+        pass
+
+
 @dataclass
 class UsageStats:
     """Track token usage and estimated costs."""
@@ -38,6 +49,7 @@ class UsageStats:
     embedding_tokens: int = 0
     requests: int = 0
     errors: int = 0
+    retries_after_error: int = 0  # incremented by tenacity before_sleep (best-effort)
     _start_time: float = field(default_factory=time.time)
 
     # Gemini 2.0 Flash pricing (per 1M tokens)
@@ -60,11 +72,32 @@ class UsageStats:
     def __str__(self) -> str:
         return (
             f"Requests: {self.requests} | Errors: {self.errors} | "
+            f"Retries(log): {self.retries_after_error} | "
             f"Input: {self.input_tokens:,} | Output: {self.output_tokens:,} | "
             f"Embedding: {self.embedding_tokens:,} | "
             f"Cost: ${self.estimated_cost:.4f} | "
             f"Time: {self.elapsed_seconds:.1f}s"
         )
+
+
+def _latency_summary(samples: deque[float]) -> str:
+    if not samples:
+        return "n=0"
+    arr = sorted(samples)
+    n = len(arr)
+
+    def pct(p: float) -> float:
+        idx = int(p * (n - 1))
+        return arr[idx]
+
+    b1 = sum(1 for x in arr if x < 2.0)
+    b2 = sum(1 for x in arr if 2.0 <= x < 10.0)
+    b3 = sum(1 for x in arr if 10.0 <= x < 60.0)
+    b4 = sum(1 for x in arr if x >= 60.0)
+    return (
+        f"n={n} p50={pct(0.5):.2f}s p95={pct(0.95):.2f}s "
+        f"buckets[<2s,{b1}][2-10s,{b2}][10-60s,{b3}][>=60s,{b4}]"
+    )
 
 
 class GeminiClient:
@@ -118,6 +151,9 @@ class GeminiClient:
         self.model = model
         self.embedding_model = GEMINI_EMBEDDING_MODEL
         self.stats = UsageStats()
+        # Recent wall-clock latencies (seconds) for successful SDK calls (bounded).
+        self._latency_generate: deque[float] = deque(maxlen=5000)
+        self._latency_embed: deque[float] = deque(maxlen=2000)
 
         # Concurrency: max in-flight SDK calls. RPM: token bucket (burst + sustained average).
         # Constructor params override the module-level defaults so chunk_quality.py
@@ -152,6 +188,7 @@ class GeminiClient:
     @retry(
         stop=stop_after_attempt(GEMINI_MAX_RETRIES),
         wait=wait_exponential(multiplier=1, min=2, max=30),
+        before_sleep=_tenacity_bump_retry,
         reraise=True,
     )
     async def generate(
@@ -162,6 +199,7 @@ class GeminiClient:
         response_mime_type: str | None = None,
     ) -> str:
         """Generate text with Gemini, with rate limiting and retry."""
+        t0 = time.monotonic()
         async with self._semaphore:
             await self._acquire_rpm_slot()
 
@@ -188,6 +226,8 @@ class GeminiClient:
                     self.stats.input_tokens += response.usage_metadata.prompt_token_count or 0
                     self.stats.output_tokens += response.usage_metadata.candidates_token_count or 0
 
+                dt = time.monotonic() - t0
+                self._latency_generate.append(dt)
                 return response.text
 
             except Exception as e:
@@ -231,10 +271,12 @@ class GeminiClient:
         stop=stop_after_attempt(GEMINI_EMBED_MAX_RETRIES),
         wait=wait_exponential(multiplier=2, min=2, max=45),
         retry=retry_if_exception_type((ClientError, OSError, TimeoutError)),
+        before_sleep=_tenacity_bump_retry,
         reraise=True,
     )
     async def embed(self, texts: list[str]) -> list[list[float]]:
         """Generate embeddings for a batch of texts."""
+        t0 = time.monotonic()
         async with self._semaphore:
             await self._acquire_rpm_slot()
 
@@ -252,6 +294,8 @@ class GeminiClient:
                 # Approximate token count for embeddings
                 self.stats.embedding_tokens += sum(len(t.split()) for t in texts)
 
+                dt = time.monotonic() - t0
+                self._latency_embed.append(dt)
                 return [e.values for e in response.embeddings]
 
             except Exception as e:
@@ -262,3 +306,5 @@ class GeminiClient:
         """Print current usage statistics."""
         mode = getattr(self, "_auth_mode", "unknown")
         print(f"\nGemini backend: {mode} | Usage: {self.stats}")
+        print(f"Latency generate: {_latency_summary(self._latency_generate)}")
+        print(f"Latency embed: {_latency_summary(self._latency_embed)}")

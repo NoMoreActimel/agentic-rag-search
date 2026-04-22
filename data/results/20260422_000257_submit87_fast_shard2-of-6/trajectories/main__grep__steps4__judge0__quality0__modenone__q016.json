@@ -1,0 +1,87 @@
+{
+  "question": "Ben Goertzel, in his discussion of Artificial General Intelligence, mentions Demis Hassabis as another prominent figure in the field. What is Demis Hassabis's estimate for the probability of achieving AGI by 2030, and how does he define AGI in his own discussion?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel Demis Hassabis AGI 2030",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 62728,
+          "episode_id": 475,
+          "guest": "Demis Hassabis",
+          "chunk_index": 62,
+          "text": "Demis Hassabis: Yeah. Lex Fridman: It is a beautiful balance of being in it as living organisms and the cutting edge of science. They actually might be using DeepMind systems. Demis Hassabis: Yeah. But hopefully they are. And I\u2019d love to join them in one of those checks. They look amazing. Right. That\u2019s great to actually experience it one time.\n\n\n## Path to AGI\n\nLex Fridman: Exactly. And then also to experience the correct prediction where something will come and how it\u2019s going to evolve. It\u2019s incredible. You\u2019ve estimated that we\u2019ll have AGI by 2030, so there\u2019s interesting questions around that. How will we actually know that we got there and what may be the move quote, \u201cMove 37\u201d of AGI. Demis Hassabis: My estimate is sort of 50% chance by in the next five years, so by 2030 let\u2019s say. So I think there\u2019s a good chance that that could happen. Part of it is what is your definition of AGI?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62775,
+          "episode_id": 475,
+          "guest": "Demis Hassabis",
+          "chunk_index": 109,
+          "text": "Demis Hassabis: Yes, precisely. Lex Fridman: It\u2019s very unclear, but you also get super excited because it\u2019s super cool. How does even look at VLs? Very cool. How does it fit into the bigger Thing? Demis Hassabis: Yes, exactly. Exactly. And then you\u2019re constantly this process of converging upstream, we call it ideas from the product surfaces or from the post-training and even further downstream and that, you upstream that into the core model training for the next run. So then the main model, the main Gemini track becomes more and more general and eventually, AGI. Lex Fridman: One hero run. Demis Hassabis: Yes, exactly. A few hero runs later. Lex Fridman: Yeah. So sometimes when you release these new versions or every version, really, are benchmarks productive or counterproductive for showing the performance of a model? Demis Hassabis: You need them, but it\u2019s important that you don\u2019t overfit to them. So they shouldn\u2019t be the be all and end all.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62780,
+          "episode_id": 475,
+          "guest": "Demis Hassabis",
+          "chunk_index": 114,
+          "text": "Demis Hassabis: Yeah, exactly.\n\n\n## Competition and AI talent\n\nLex Fridman: So what\u2019s the probability of Google DeepMind winning? Demis Hassabis: Well, I see it as winning. I think winning is the wrong way to look at it given how important and consequential what it is we\u2019re building. So funny enough, I try not to view it like a game or competition even though that\u2019s a lot of my mindset. It\u2019s about in my view, all of us or those of us at the leading edge or have a responsibility to steward this unbelievable technology that could be used for incredible good but also has risks, steward it safely into the world for the benefit of humanity. That\u2019s always what I\u2019ve dreamed about and what we\u2019ve always tried to do. And I hope that\u2019s what eventually the community, maybe the international community will rally around when it becomes obvious that as we get closer and closer to AGI, that\u2019s what\u2019s needed. Lex Fridman: I agree with you. I think that\u2019s beautifully put.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62808,
+          "episode_id": 475,
+          "guest": "Demis Hassabis",
+          "chunk_index": 142,
+          "text": "On the other hand, is these P-Doom scenarios. So given the uncertainty around it and the importance of it, it\u2019s clear to me the only rational, sensible approach is to proceed with cautious optimism. So we want the benefits of course, and all of the amazing things that AI can bring. And actually, I would be really worried for humanity given the other challenges that we have, climate, aging, resources, all of that if I didn\u2019t know something like AI was coming down the line. How would we solve all those other problems? I think it\u2019s hard. So I think it could be amazingly transformative for good. But on the other hand, there are these risks that we know are there. Demis Hassabis: But on the other hand, there are these risks that we know are there, but we can\u2019t quite quantify. So the best thing to do is to use the scientific method to do more research to try and more precisely define those risks and of course address them. And I think that\u2019s what we\u2019re doing.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 839,
+          "episode_id": 13,
+          "guest": "Tomaso Poggio",
+          "chunk_index": 65,
+          "text": "Because in terms of priority, we should still be more worried about nuclear weapons and what people are doing about it and so on than AI. And you've spoken about Demis Hassabis and yourself saying that you think you'll be about 100 years out before we have a general intelligence system that's on par with a human being. Do you have any updates for those predictions? Well, I think he said. He said 20, I think. He said 20, right. This was a couple of years ago. I have not asked him again. So should I have? Your own prediction, what's your prediction about when you'll be truly surprised? And what's the confidence interval on that? It's so difficult to predict the future and even the present sometimes. It's pretty hard to predict. But I would be, as I said, this is completely, I would be more like Rod Brooks. I think he's about 200 years. 200 years. When we have this kind of AGI system, artificial general intelligence system, you're sitting in a room with her, him, it.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.4376912117004395
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 17.03968119621277
+    }
+  ],
+  "final_answer": "Demis Hassabis estimates a 50% chance of achieving Artificial General Intelligence (AGI) by 2030, or within the next five years from the time of the discussion. The provided context does not explicitly state his definition of AGI, though he mentions that part of the discussion around AGI involves what one's definition of it is. He also refers to the Gemini model becoming \"more and more general and eventually, AGI.\"",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    475,
+    13
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 17.039684295654297
+}

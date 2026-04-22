@@ -1,0 +1,288 @@
+{
+  "question": "Considering Robin Hanson's theoretical work on advanced civilizations, John Carmack's focus on building artificial general intelligence, and Elon Musk's vision for human-AI symbiosis through Neuralink, how do their perspectives diverge regarding the primary challenges or opportunities presented by artificial intelligence?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Robin Hanson advanced civilizations AI",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1958,
+          "episode_id": 26,
+          "guest": "Sean Carroll",
+          "chunk_index": 22,
+          "text": "If you thought that there were other solar systems with planets around them, where maybe intelligent life didn't yet exist, but might someday, you wouldn't try to talk to it with radio waves, you would send a spacecraft out there and you would park it around there and it would be like, from our point of view, it'd be like 2001, where there was a monolith. Monolith. There could be an artifact, in fact, the other way works also, right? There could be artifacts in our solar system that have been put there by other technologically advanced civilizations and that's how we will eventually contact them. We just haven't explored the solar system well enough yet to find them. The reason why we don't think about that is because we're young and impatient, right? Like, it would take more than my lifetime to actually send something to another star system and wait for it and then come back.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3459,
+          "episode_id": 45,
+          "guest": "Michio Kaku",
+          "chunk_index": 3,
+          "text": "First, to reach out through communication and connect. Well, first of all, we have to understand the level of sophistication of an alien life form if we make contact with them. I think in this century, we'll probably pick up signals, signals from an extraterrestrial civilization. We'll pick up there, I love Lucy, and there, leave it to Beaver. Just ordinary day to day transmissions that they emit. And the first thing we wanna do is to A, decipher their language, of course, but B, figure out at what level they are advanced on the Kardashev scale. I'm a physicist. We rank things by two parameters, energy and information. That's how we rank black holes. That's how we rank stars. That's how we rank civilizations in outer space. So a type one civilization is capable of harnessing planetary power. They control the weather, for example, earthquakes, volcanoes. They can modify the course of geological events, sort of like Flash Gordon or Buck Rogers. Type two would be stellar.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4451,
+          "episode_id": 58,
+          "guest": "Michael Stevens",
+          "chunk_index": 31,
+          "text": "The problem is that instinct can get us in trouble because then robots can manipulate that. And there's different kinds of robots. There's robots like the Facebook and the YouTube algorithm that recommends the video, and they can manipulate in the same kind of way. Well, let me ask you just to stick on artificial intelligence for a second. Do you have worries about existential threats from AI or existential threats from other technologies like nuclear weapons that could potentially destroy life on earth or damage it to a very significant degree? Yeah, of course I do. Especially the weapons that we create. There's all kinds of famous ways to think about this. And one is that, wow, what if we don't see advanced alien civilizations because of the danger of technology?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 4452,
+          "episode_id": 58,
+          "guest": "Michael Stevens",
+          "chunk_index": 32,
+          "text": "And one is that, wow, what if we don't see advanced alien civilizations because of the danger of technology? What if we reach a point, and I think there's a channel, Thoughty2, geez, I wish I remembered the name of the channel, but he delves into this kind of limit of maybe once you discover radioactivity and its power, you've reached this important hurdle. And the reason that the skies are so empty is that no one's ever managed to survive as a civilization once they have that destructive power. And when it comes to AI, I'm not really very worried because I think that there are plenty of other people that are already worried enough. And oftentimes these worries are just, they just get in the way of progress. And they're questions that we should address later. And I think I talk about this in my interview with the self driving autonomous vehicle guy, as I think it was a bonus scene from the trolley problem episode.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8721,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 146,
+          "text": "And now most people in my kid's generation, they're baffled by the idea of paying for music, right? I mean, my dad pays for music. I mean, but that because these decentralized mechanisms happened and then the regulations followed, right? And the regulations would be very different if they'd been put into place before there was Napster and BitTorrent and so forth. So in the same way, we gotta put AI out there in a decentralized vein and big data out there in a decentralized vein now, so that the most advanced AI in the world is fundamentally decentralized. And if that's the case, that's just the reality the regulators have to deal with. And then as in the music case, they're gonna come up with regulations that sort of work with the decentralized reality. Beautiful. You are the chief scientist of Hanson Robotics. You're still involved with Hanson Robotics, doing a lot of really interesting stuff there. This is for people who don't know the company that created Sophia the Robot.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.87614107131958
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Robin Hanson AI challenges opportunities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1472,
+          "episode_id": 20,
+          "guest": "Oriol Vinyals",
+          "chunk_index": 113,
+          "text": "Out of this. So I think that as a domain, it still has a lot of opportunities, not only because of course we wanna learn with less experience, we would like to, I mean, if I learned to play Protoss, I can play Terran and learn it much quicker than Alpha Star can, right? So there are obvious interesting research challenges as well, but even as the raw performance goes, really the claim here can be we are at pro level or at high grandmaster level, but obviously the players also did not know what to expect, right? Their prior distribution was a bit off because they played this kind of new like alien brain as they like to say it, right? And that's what makes it exciting for them. But also I think if you look at the games closely, you see there were weaknesses in some points, maybe Alpha Star did not scout, or if it had invisible units going against at certain points, it wouldn't have known and it would have been bad.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2486,
+          "episode_id": 33,
+          "guest": "Keoki Jackson",
+          "chunk_index": 13,
+          "text": "And that was what led to what we call the pogo stick collection, right? Where basically a thing comes down, it's only there for seconds, does that collection, grabs the, essentially blows the regolith material into the collection hopper and off it goes. It doesn't really land almost. It's a very short landing. Wow, that's incredible. So what is, in those, we talked a little bit more about space, what's the role of the human in all of this? What are the challenges? What are the opportunities for humans as they pilot these vehicles in space? And for humans that may step foot on either the moon or Mars? Yeah, it's a great question because, you know, I just have been extolling the virtues of robotic and, you know, rovers, autonomous systems, and those absolutely have a role. I think the thing that we don't know how to replace today is the ability to adapt on the fly to new information. And I believe that will come, but we're not there yet. There's a ways to go.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3407,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 107,
+          "text": "But not several hundred years. No, I don't think it's several hundred years. I don't think it's several hundred years. But again, so much depends on how committed we are to investing and incentivizing this type of work. And it's sort of interesting. Like, I don't think it's obvious how incentivized we are. I think from a task perspective, if we see business opportunities to take this technique or that technique to solve that problem, I think that's the main driver for many of these things. From a general intelligence, it's kind of an interesting question. Are we really motivated to do that? And like, we just struggled ourselves right now to even define what it is. So it's hard to incentivize when we don't even know what it is we're incentivized to create. And if you said mimic a human intelligence, I just think there are so many challenges with the significance and meaning of that. That there's not a clear directive. There's no clear directive to do precisely that thing.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5776,
+          "episode_id": 73,
+          "guest": "Andrew Ng",
+          "chunk_index": 24,
+          "text": "AI is a general purpose technology and I think it will transform every industry our community has already transformed to a large extent the software internet sector most software internet companies outside the top right five or six or three or four already have reasonable machine learning capabilities or or getting there it's still room for improvement but when I look outside the software internet sector everything from manufacturing agriculture, healthcare logistics transportation there's so many opportunities that very few people are working on so I think the next wave of AI is for us to also transform all of those other industries there was a McKinsey study estimating 13 trillion dollars of global economic growth US GDP is 19 trillion dollars so 13 trillion is a big number or PwC estimates 16 trillion dollars so whatever number is is large but the interesting thing to me was a lot of that impact will be outside the software internet sector so we need more teams to work with these companies to help them adopt AI and I think this is one thing so make you know help drive global economic growth and make humanity more powerful and like you said the impact is there so what are the best industries the biggest industries where AI can help perhaps outside the software tech sector frankly I think it's all of them some of the ones I'm spending a lot of time on are manufacturing agriculture look into healthcare for example in manufacturing we do a lot of work in visual inspection where today there are people standing around using the eye human eye to check if you know this plastic part or the smartphone or this thing has a scratch or a dent or something in it we can use a camera to take a picture use a algorithm deep learning and other things to check if it's defective or not and thus help factories improve yield and improve quality and improve throughput it turns out the practical problems we run into are very different than the ones you might read about in in most research papers the data sets are really small so we face small data problems you know the factories keep on changing the environment so it works well on your test set but guess what something changes in the factory the lights go on or off recently there was a factory in which a bird threw through the factory and pooped on something and so that changed stuff and so increasing our algorithm makes robustness so all the changes happen in the factory I find that we run a lot of practical problems that are not as widely discussed in academia and it's really fun kind of being on the cutting edge solving these problems before maybe before many people are even aware that there is a problem there and that's such a fascinating space you're absolutely right but what is the first step that a company should take it's just scary leap into this new world of going from the human eye inspecting to digitizing that process having a camera having an algorithm what's the first step like what's the early journey that you recommend that you see these companies taking I published a document called the AI Transformation Playbook that's online and taught briefly in the AI for Everyone course on Coursera about the long term journey that companies should take but the first step is actually to start small I've seen a lot more companies fail by starting too big than by starting too small take even Google you know most people don't realize how hard it was and how controversial it was in the early days so when I started Google Brain it was controversial you know people thought deep learning near nest tried it didn't work why would you want to do deep learning so my first internal customer within Google was the Google speech team which is not the most lucrative project in Google not the most important it's not web search or advertising but by starting small my team helped the speech team build a more accurate speech recognition system and this caused their peers other teams to start to have more faith in deep learning my second internal customer was the Google Maps team where we used computer vision to read house numbers from basic street view images to more accurately locate houses within Google Maps so improve the quality of geodata and it was only after those two successes that I then started a more serious conversation with the Google Ads team and so there's a ripple effect that you showed that it works in these cases and then it just propagates through the entire company that this thing has a lot of value and use for us I think the early small scale projects it helps the teams gain faith but also helps the teams learn what these technologies do I still remember when our first GPU server it was a server under some guy's desk and you know and then that taught us early important lessons about how do you have multiple users share a set of GPUs which is really not obvious at the time but those early lessons were important we learned a lot from that first GPU server that later helped the teams think through how to scale it up to much larger deployments Are there concrete challenges that companies face that you see is important for them to solve?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 13148,
+          "episode_id": 133,
+          "guest": "Manolis Kellis",
+          "chunk_index": 59,
+          "text": "The reason why CRISPR is amazingly, awesomely revolutionary is because instead of having this team of engineers design a new set of proteins for every locus that you want to target, you just type it in your computer and you just synthesize an RNA guide. The beauty of CRISPR is not the cutting, it's not the fixing. All of that was there before. It's the guiding, and the only thing that changes is that it makes the guiding easier by sort of just typing in the RNA sequence, which then allows the system to sort of scan the DNA to find that. So the coding, the engineering of the cutter is easier in terms of SP. That's kind of similar to the story of deep learning versus old school machine learning. Some of the challenging parts are automated. But CRISPR is just one cutting technology, and then that's part of the challenges and exciting opportunities of the field is to design different cutting technologies.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.996968746185303
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "John Carmack artificial general intelligence challenges opportunities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 44,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 44,
+          "text": "And if we want life to flourish throughout the cosmos, AI is the key to it. As I mentioned in a lot of detail in my book right there, even many of the most inspired sci fi writers, I feel have totally underestimated the opportunities for space travel, especially at the other galaxies, because they weren't thinking about the possibility of AGI, which just makes it so much easier. Right, yeah. So that goes to your view of AGI that enables our progress, that enables a better life. So that's a beautiful way to put it and then something to strive for. So Max, thank you so much. Thank you for your time today. It's been awesome. Thank you so much. Thanks. Have a great day. got cleaned out of the gene pool, right? But if you build an artificial general intelligence the mind space that you can design is much, much larger than just a specific subset of minds that can evolve. So an AGI mind doesn't necessarily have to have any self preservation instinct.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1066,
+          "episode_id": 16,
+          "guest": "Eric Weinstein",
+          "chunk_index": 10,
+          "text": "You mentioned the idea of out, outtelligence. Artificial outtelligence. Artificial outtelligence. Yes. This is the only essay that John Brockman ever invited me to write that he refused to publish in Edge. Why? Well, maybe it wasn't, it wasn't well written, um, but I don't know. The idea is quite compelling is quite unique and new and at least from my view of a stance point, maybe you can explain it. Sure. What I was thinking about is why it is that we're waiting to be terrified by artificial general intelligence when in fact, artificial life, uh, is terrifying in and of itself and it's already here. So in order to have a system of selective pressures, you need three distinct elements. You need variation within a population. You need heritability and you need differential success. So what's really unique and I've made this point, I think elsewhere about software is that if you think about what humans know how to build, that's impressive.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2787,
+          "episode_id": 37,
+          "guest": "Vijay Kumar",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Vijay Kumar. He's one of the top roboticists in the world, a professor at the University of Pennsylvania, a dean of pen engineering, former director of Grasp Lab, or the General Robotics Automation Sensing and Perception Laboratory at Penn, that was established back in 1979, that's 40 years ago. Vijay is perhaps best known for his work in multi robot systems, robot swarms, and micro aerial vehicles, robots that elegantly cooperate in flight under all the uncertainty and challenges that the real world conditions present. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it five stars on iTunes, support on Patreon, or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N. And now, here's my conversation with Vijay Kumar. What is the first robot you've ever built or were a part of building?",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3197,
+          "episode_id": 43,
+          "guest": "Gary Marcus",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Gary Marcus. He's a professor emeritus at NYU, founder of Robust AI and Geometric Intelligence. The latter is a machine learning company that was acquired by Uber in 2016. He's the author of several books, Unnatural and Artificial Intelligence, including his new book, Rebooting AI, Building Machines We Can Trust. Gary has been a critical voice, highlighting the limits of deep learning and AI in general and discussing the challenges before our AI community that must be solved in order to achieve artificial general intelligence. As I'm having these conversations, I try to find paths toward insight, towards new ideas. I try to have no ego in the process. It gets in the way. I'll often continuously try on several hats, several roles. One, for example, is the role of a three year old who understands very little about anything and asks big what and why questions.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 11.866945266723633
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Elon Musk Neuralink AI challenges opportunities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 43,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 43,
+          "text": "That is exactly why Elon Musk is so misunderstood, right? Misconstrued him as some kind of pessimistic doomsayer. The reason he cares so much about AI safety is because he more than almost anyone else appreciates these amazing opportunities that we'll squander if we wipe out here on Earth. We're not just going to wipe out the next generation, all generations, and this incredible opportunity that's out there, and that would really be a waste. And AI, for people who think that it would be better to do without technology, let me just mention that if we don't improve our technology, the question isn't whether humanity is going to go extinct. The question is just whether we're going to get taken out by the next big asteroid or the next super volcano or something else dumb that we could easily prevent with more tech, right? And if we want life to flourish throughout the cosmos, AI is the key to it.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1246,
+          "episode_id": 18,
+          "guest": "Elon Musk",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Elon Musk. He's the CEO of Tesla, SpaceX, Neuralink, and a cofounder of several other companies. This conversation is part of the Artificial Intelligence podcast. The series includes leading researchers in academia and industry, including CEOs and CTOs of automotive, robotics, AI, and technology companies. This conversation happened after the release of the paper from our group at MIT on Driver Functional Vigilance, during use of Tesla's Autopilot. The Tesla team reached out to me offering a podcast conversation with Mr. Musk. I accepted, with full control of questions I could ask and the choice of what is released publicly. I ended up editing out nothing of substance. I've never spoken with Elon before this conversation, publicly or privately. Neither he nor his companies have any influence on my opinion, nor on the rigor and integrity of the scientific method that I practice in my position at MIT.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2985,
+          "episode_id": 39,
+          "guest": "Colin Angle",
+          "chunk_index": 20,
+          "text": "What the vision you just described of using computer vision and using cheap camera sensors, there's a debate on that of LIDAR versus computer vision. And the Elon Musk famously said that LIDAR is a crutch that really in the long term, camera only is the right solution, which echoes some of the ideas you're expressing. Of course, the domain in terms of its safety criticality is different. But what do you think about that approach in the autonomous vehicle space? And in general, do you see a connection between the incredible real world challenges you have to solve in the home with Roomba? And I saw a demonstration of some of them, corner cases literally, and autonomous vehicles. So there's absolutely a tremendous overlap between both the problems a robot vacuum and an autonomous vehicle are trying to solve and the tools and the types of sensors that are being applied in the pursuit of the solutions.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3048,
+          "episode_id": 40,
+          "guest": "Regina Barzilay",
+          "chunk_index": 51,
+          "text": "It's sad because unfortunately, and I need to research why that happened, but I'm pretty sure Google Health and Microsoft Health Vault or whatever it's called both closed down, which means that there was either regulatory pressure or there's not a business case or there's challenges from hospitals, which is very disappointing. So when you say you don't know what the biggest players are, the two biggest that I was aware of closed their doors. So I'm hoping, I'd love to see why and I'd love to see who else can come up. It seems like one of those Elon Musk style problems that are obvious needs to be solved and somebody needs to step up and actually do this large scale data collection. So I know there is an initiative in Massachusetts, I think, which you led by the governor to try to create this kind of health exchange system where at least to help people who kind of when you show up in emergency room and there is no information about what are your allergies and other things.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3413,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 113,
+          "text": "In other words, I could realize the implications of that, implications again, on my mind body complex, I then process that, and the implications again, our internal features are generated, I learn from them, they have an effect on my mind body complex. So it's interesting when we think, do we want a human intelligence? Well, if we want a human compatible intelligence, probably the best thing to do is to embed it in a human body. Just to clarify, and both concepts are beautiful, is humanoid robots, so robots that look like humans is one, or did you mean actually sort of what Elon Musk was working with Neuralink, really embedding intelligence systems to ride along human bodies? No, I mean riding along is different. I meant like if you want to create an intelligence that is human compatible, meaning that it can learn and develop a shared understanding of the world around it, you have to give it a lot of the same substrate.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.56301498413086
+    }
+  ],
+  "final_answer": "The provided context indicates that John Carmack has shifted his attention to the \"problem of artificial general intelligence.\" Elon Musk, through his work with Neuralink, is associated with embedding intelligence systems to ride along human bodies, suggesting a focus on human-AI symbiosis, and he emphasizes AI safety to ensure humanity can seize the \"amazing opportunities\" AI presents for flourishing. The provided text does not contain information about Robin Hanson's theoretical work or his perspective on AI challenges and opportunities.",
+  "total_chunks_retrieved": 20,
+  "unique_episodes_found": [
+    33,
+    1,
+    58,
+    133,
+    37,
+    103,
+    39,
+    73,
+    40,
+    43,
+    44,
+    45,
+    16,
+    18,
+    20,
+    309,
+    26
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 22.344751834869385
+}

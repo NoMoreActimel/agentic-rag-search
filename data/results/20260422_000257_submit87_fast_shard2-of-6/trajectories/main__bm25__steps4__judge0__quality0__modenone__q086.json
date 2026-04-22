@@ -1,0 +1,166 @@
+{
+  "question": "What is the total count of distinct programming languages or core development technologies explicitly mentioned as being foundational to or primarily used by Travis Oliphant, John Carmack, and Pieter Levels in their programming careers, and which of these guests utilizes the most such technologies?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming languages technologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 66339,
+          "episode_id": 492,
+          "guest": "Rick Beato",
+          "chunk_index": 174,
+          "text": "Thank you for being who you are and thank you for talking to me. Rick Beato: Thanks, I appreciate it. Lex Fridman: Thanks for listening to this conversation with Rick Beato. To support this podcast, please check out our sponsors in the description where you can also find links to contact me, ask questions, give feedback, and so on. And now, let me leave you with some words from Friedrich Nietzsche, as I often do. \u201cWithout music, life would be a mistake.\u201d Thank you for listening, and I hope to see you next time.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22113,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 114,
+          "text": "And some people are really worried about the existential risks of artificial intelligence. Is there something you could say that's hopeful about how we avoid in the same kind of line of reasoning about creating formal models versus kind of looking outside the model into what the real world actually is like? Is there some lessons from that we can take and map onto the AI safety world where the potentials of the technology, whether it's in autonomous weapon systems or just the paperclip problem that we can avoid AI destroying the world? So my impression is actually that, like, this is more of a kind of far away impression and it could be wrong, that it might even be that one of the challenges is that AI is not formal enough. Like, because AI is very practitioner oriented, right? Like, it's all about like, hey, I found a couple of hacks and look, I ran them and look, they seem to improve classification accuracy from 0.684 to 0.773.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22114,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 115,
+          "text": "So a lot of the time there just isn't actual science behind why this hack works and why this other hack doesn't work. You just sort of like trial and error your way into it. And I could see how that approach works, but at the same time, like, that approach is not good for eligibility, for example. Like, it's not good for like understanding what the heck is actually going on, like how these kinds of systems conceivably might fail. Like, there's even, you know, a debate on like, can you take GPT3 like things and just scale them up and their intelligence will continue to improve or is there just like some types of reasoning that they're fundamentally bad at and like they're not gonna get good at it no matter how much you like scale this exact same approach and add more hardware to it. So having like thinking about what's going on more explicitly, I mean, my understanding is that a big part of AI safety research is trying to do that sort of stuff, right? Formalize.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22109,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 110,
+          "text": "And then once you go out of the model, those other issues do exist, right? So, but then at the same time, there definitely are protocols that turn out to be, that do have failures inside the model. Like this reminds me of the time when I think I found a bug in a proposed consensus implementation from either BitShares or EOS. This happened around the end of 2017. So that was definitely inside the model because like they had a very clear idea of what they were trying to achieve. They had a very clear description and like there's a very clear mathematical argument for why the description doesn't lead to what they're trying to achieve. But ultimately what you're trying to achieve can never be fully described in formal language, right? Like I think this is the big discovery of, the AI safety people, for example, right? Like just having a specification of what you want is an insanely hard problem.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22110,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 111,
+          "text": "Like just having a specification of what you want is an insanely hard problem. And like the more powerful the optimizer that you're giving the instructions to, the more you have to be careful. And so, I think there are the kind of these two sides. And then the other thing is that a lot of the academic approach ends up basically optimizing for other people inside of the academic system. And it doesn't really optimize for like curious outsiders. Whereas like I personally totally optimize for curious outsiders, or at least I feel like I strive to. So I guess like that's my case for why I like tends to behave in ways that, you know, occasionally traditional academic types criticize as being reckless. But I mean, on the other hand, you know, there's definitely real benefits that come from like just taking a rigorous approach, especially when, you know, you know what the thing, like, you know what the specification is of what you're trying to get.",
+          "score": 0.0,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.5849647521972656
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming languages used",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 6.633839130401611
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant foundational work programming",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 4094,
+          "episode_id": 54,
+          "guest": "Ray Dalio",
+          "chunk_index": 42,
+          "text": "And what do you think about this modern idea of kind of separating work and work life balance? I have a principle that I believe in is, make your work and your passion the same thing. Okay. Okay. So that's a similar view. In other words, if you can make your work and your passion, it's just gonna work out great. And then of course, people have different purposes of work. And I don't wanna be theoretical about that. People have to take care of their family. So money at a certain point is the base, is an important component of that work. So you look beyond that, what is the money gonna get you and what are you trying to achieve? But the most important thing, I agree, is meaningful work and meaningful relationships. Like if you can get into the thing that you're at, your mission that you're on, and you are excited about that mission that you're on. And then you can do that with people who you have the meaningful relationships with. You have meaningful work and meaningful relationships.",
+          "score": 1.3086450099945068,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41635,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 266,
+          "text": "I mean, that's something that a lot of people don't really get in their gut where there are people that work on four hours of sleep and are smart and can continue to do good work but then there's a lot of people that just fall apart. So I do tell people that I always try to get eight hours of sleep. It's not this, you know, push yourself harder, get up earlier, I just do worse work where, you know, you can work a hundred hours a week and still get eight hours of sleep if you just kind of prioritize things correctly but I do believe in working hard, working a lot.",
+          "score": 1.2963725328445435,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41175,
+          "episode_id": 307,
+          "guest": "Brian Armstrong",
+          "chunk_index": 165,
+          "text": "But the reality is it's people that haven't actually ever done anything that say work smart. They're like, they haven't really struggled because my general belief at the time was in order to discover what it means to work smart, to be efficient, to, you have to work your ass off. So you have to really fail a lot and failure feels like hard work. And so I was always suspicious of people that would say work smart. I would want to interrogate that question. But then I also, you know, have learned that there is people that are just exceptionally, exceptionally efficient. They really do know what it means to work smart, even at a young age. And so like, you can't just disqualify based on that. You have to dig in deeper. But some of the most interesting people I've ever worked with would say work hard unapologetically. And they're usually the ones that know how to be efficient, which is, it's just an interesting thing like that.",
+          "score": 1.2956819534301758,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3270,
+          "episode_id": 43,
+          "guest": "Gary Marcus",
+          "chunk_index": 73,
+          "text": "It would be a whole lot nice, and I'm a coauthor on the paper, I made it a little bit better, but Ernie did the hard work for that particular paper. And it took him like three months to get the logical statements correct. And maybe that's not the right way to do it, it's a way to do it. But on that way of doing it, it's really hard work to do something as simple as understanding containers. And nobody wants to do that hard work, even Ernie didn't want to do that hard work. Everybody would rather just like feed their system in with a bunch of videos with a bunch of containers and have the systems infer how containers work. It would be like so much less effort, let the machine do the work. And so I understand the impulse, I understand why people want to do that. I just don't think that it works.",
+          "score": 1.2951780557632446,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 15696,
+          "episode_id": 148,
+          "guest": "Charles Isbell and Michael Littman",
+          "chunk_index": 109,
+          "text": "But do you find that resonates with you at all in how you think about talks and so on? I would say it differently. It's not that. No, not really. That's such an MIT view of the world though. So I remember talking about this when, as a student, you were basically told I will clean it up for the purpose of the podcast. My work is crap. My work is crap. My work is crap. Then you go to a conference or something. You're like, everybody else's work is crap. Everybody else's work is crap. And you feel better and better about it, relatively speaking. And then you sort of keep working on it. I don't hate my work. That resonates with me. Yes, I've never hated my work, but I have been dissatisfied with it. And I think being dissatisfied, being okay with the fact that you've taken a positive step, the derivative's positive, maybe even the second derivative's positive, that's important because that's a part of the hope, right? But you have to, but I haven't gotten there yet.",
+          "score": 1.2928884029388428,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.662384510040283
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant contributions programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.762593984603882
+    }
+  ],
+  "final_answer": "The provided context does not contain information about the programming languages or core development technologies used by Travis Oliphant, John Carmack, or Pieter Levels. Therefore, it is not possible to determine the total count of such technologies or which guest utilizes the most. The context is insufficient to answer the question.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    43,
+    492,
+    307,
+    148,
+    309,
+    54,
+    188
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 13.587230443954468
+}

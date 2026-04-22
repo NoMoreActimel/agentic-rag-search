@@ -1,0 +1,90 @@
+{
+  "question": "How do David Fravor, Ryan Hall, and Andrew Bustamante's discussions on personal success, wisdom, and institutional structures offer different perspectives on the essential qualities or challenges of effective leadership?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "David Fravor leadership success wisdom institutional structures",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 3300,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 0,
+          "text": "The following is a conversation with David Feroci. He led the team that built Watson, the IBM question answering system that beat the top humans in the world at the game of Jeopardy. For spending a couple hours with David, I saw a genuine passion, not only for abstract understanding of intelligence, but for engineering it to solve real world problems under real world deadlines and resource constraints. Where science meets engineering is where brilliant, simple ingenuity emerges. People who work adjoining it to have a lot of wisdom earned through failures and eventual success. David is also the founder, CEO, and chief scientist of Elemental Cognition, a company working to engineer AI systems that understand the world the way people do. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it five stars on iTunes, support it on Patreon, or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N.",
+          "score": 0.504,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 45602,
+          "episode_id": 390,
+          "guest": "Yuval Noah Harari",
+          "chunk_index": 143,
+          "text": "That applies in more ways than one. What advice would you give to young people today in high school and college, how to have a successful life, how to have a successful career? Yuval Noah Harari: What they should know, it\u2019s the first time in history nobody has any idea how the world would look like in 10 years. Nobody has any idea how the world would look like when you grow up. Throughout history, it was never possible to predict the future. You live in the Middle Ages, nobody knows. Maybe in 10 years the Vikings will invade, the Mongols will invade, there\u2019ll be an epidemic, there\u2019ll be an earthquake, who knows? But the basic structures of life will not change. Most people will still be peasants. Armies would fight on horseback with swords and bows and arrows and things like that. So you could learn a lot from the wisdom of your elders. They\u2019ve been there before and they knew what kind of basic skills you need to learn.",
+          "score": 0.504,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 193,
+          "episode_id": 3,
+          "guest": "Steven Pinker",
+          "chunk_index": 38,
+          "text": "So I think there is that asymmetry. So you've written some of my favorite books all over the place. So starting from Enlightenment Now to The Better Ages of Our Nature, Blank Slate, How the Mind Works, the one about language, Language Instinct. Bill Gates, big fan too, said of your most recent book that it's my new favorite book of all time. So for you as an author, what was a book early on in your life that had a profound impact on the way you saw the world? Certainly this book, Enlightenment Now, was influenced by David Deutsch's The Beginning of Infinity, a rather deep reflection on knowledge and the power of knowledge to improve the human condition. And with bits of wisdom such as that problems are inevitable but problems are solvable given the right knowledge and that solutions create new problems that have to be solved in their turn. That's I think a kind of wisdom about the human condition that influenced the writing of this book.",
+          "score": 0.45199999999999996,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.2857142857142857
+        },
+        {
+          "chunk_id": 482,
+          "episode_id": 8,
+          "guest": "Eric Schmidt",
+          "chunk_index": 15,
+          "text": "And so we have enough cash generation that we can make bets, and indeed, Google has become alphabet, so the corporation is organized around these bets, and these bets are in areas of fundamental importance to the world, whether it's artificial intelligence, medical technology, self driving cars, connectivity through balloons, on and on and on. And there's more coming and more coming. So one way you could express this is that the current business is successful enough that we have the luxury of making bets. And another one that you could say is that we have the wisdom of being able to see that a corporate structure needs to be created to enhance the likelihood of the success of those bets. So we essentially turned ourselves into a conglomerate of bets and then this underlying corporation, Google, which is itself innovative. So in order to pull this off, you have to have a bunch of belief systems, and one of them is that you have to have bottoms up and tops down.",
+          "score": 0.45199999999999996,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.2857142857142857
+        },
+        {
+          "chunk_id": 824,
+          "episode_id": 13,
+          "guest": "Tomaso Poggio",
+          "chunk_index": 50,
+          "text": "The stochastic gradient descent, as you said, is a very simple technique. It seems pretty unlikely that biology could do that from what we know right now about cortex and neurons and synapses. So it's a big question open whether there are other optimization learning algorithms that can replace stochastic gradient descent. And my guess is yes, but nobody has found yet a real answer. I mean, people are trying, still trying, and there are some interesting ideas. The fact that stochastic gradient descent is so successful, this has become clearly not so mysterious. And the reason is that it's an interesting fact. It's a change, in a sense, in how people think about statistics. And this is the following, is that typically when you had data and you had, say, a model with parameters, you are trying to fit the model to the data, to fit the parameter. Typically, the kind of crowd wisdom type idea was you should have at least twice the number of data than the number of parameters.",
+          "score": 0.45199999999999996,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.2857142857142857
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.1217401027679443
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "David Fravor leadership success wisdom institutional structures",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 8.08360242843628
+    }
+  ],
+  "final_answer": "The provided text does not contain discussions from David Fravor, Ryan Hall, or Andrew Bustamante. Therefore, it is not possible to describe their perspectives on personal success, wisdom, or institutional structures based on the given information. The context is insufficient to answer the question.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    3,
+    390,
+    8,
+    44,
+    13
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 14.106946229934692
+}

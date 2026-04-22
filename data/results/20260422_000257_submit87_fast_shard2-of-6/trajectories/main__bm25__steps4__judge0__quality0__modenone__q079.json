@@ -1,0 +1,166 @@
+{
+  "question": "What was the specified memory capacity of Dave Plummer's first computer, and what memory capacity is mentioned for John Carmack's initial TRS-80 computer during his early programming experiences?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Dave Plummer first computer memory capacity",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63235,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 7,
+          "text": "Do you remember, of, of just doing something if I may say so, like stupid, you know? Which is a part of the programming experience. Dave Plummer: Yeah, there was a huge amount of guilt because, right, you destroyed several weeks- \u2026 of work and you know it was because you rushed- or you did something stupid or you made an unwise choice. Lex Fridman: What can you tell me about the programming involved in that game? Dave Plummer: So it\u2019s literally machine language. Lex Fridman: So machine\u2026 So it\u2019s not-\n\nDave Plummer: Yeah, 65 with-\n\nLex Fridman: \u2026 even assembly. Dave Plummer: Not assembly yet because there was no assembler built in, so I should have written an assembler as my first task, but I wasn\u2019t that clever. Lex Fridman: How hard is that to do? Dave Plummer: Trivial, and it\u2019s one of those things that sticks, I think. You do it so many times. You know, if I give you a C issue, there are certain syntactic issues in C that you\u2019re never going to forget and get wrong.",
+          "score": 8.799219131469727,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63232,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 4,
+          "text": "Dave Plummer: Probably in retrospect. Well, I would probably give that to the Commodore 64. Lex Fridman: Yeah. You and I agree on this, that that was my first computer probably many years after it was released, but yeah, Commodore 64\u2019s incredible. But yes, Apple II had a huge impact on the history of personal computers. Dave Plummer: Right. It\u2019s hard to gauge the long-term impact, but I think the 64 itself probably influenced more people, so that\u2019s my reason for picking that one. Lex Fridman: You think so? Dave Plummer: The sales were certainly higher. Lex Fridman: So Commodore 64 sold a lot? Dave Plummer: Yeah. I mean, the numbers are hard to believe. It depends which numbers you believe, but even the medium estimates were pretty high. Lex Fridman: All right, cool. So you eventually graduated to the Commodore 64. Tell me about that machine. What did you do on the Commodore 64?",
+          "score": 8.500643730163574,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63334,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 106,
+          "text": "The different versions? Dave Plummer: I\u2019m a fan of Windows 2000 server. That\u2019s\n\nLex Fridman: Really? Okay. \u2026 Wait, wait, pl-\n\nDave Plummer: That\u2019s what I ran my business on and I ran my brother\u2019s business. We set up multiple salons all VPNed to one another and using the SQL Server and\u2026\n\nLex Fridman: I don\u2019t know if I ever got to experience Windows 2000 server, so when was XP out? Dave Plummer: 2001. Lex Fridman: What was before XP? Dave Plummer: 2000. Lex Fridman: 2000. Was that good? Dave Plummer: Yeah, I liked it. I mean, it doesn\u2019t have the visual flash that came with XP, but as a system, and especially as a server operating system, it was great for the day. Lex Fridman: But then XP was, hmm, I would say probably from a completeness perspective and impact and how long it lasted, it was probably the greatest Windows for consumers, the operating system. Dave Plummer: I would think so. It\u2019s certainly got the longevity for it. There are people who still run it.",
+          "score": 8.498705863952637,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63248,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 20,
+          "text": "Dave Plummer: Yeah, it made decent money. I mean, I sold a couple thousand copies. At 20 bucks a copy or 40 bucks a copy, depending on the rules. Lex Fridman: What program, what language was it written in? Dave Plummer: C. So there were some assemblers. The actual really tight code to do the real work of transferring data to and from the cache was 68,000 assembly. Everything else was C. Lex Fridman: Okay. This is like file system I/O? Dave Plummer: Device block I/O. So any block that gets serviced from the drive would go through my cache first, and it was an N-way associative cache, and so it would try to match the geometry of the drive and do pre-fetch based on you\u2019re trying to read a whole track at one time, that kind of thing. Lex Fridman: What was it like trying to get your software out there at that time? How were you able to find customers? Dave Plummer: Yeah, it\u2019s interesting.",
+          "score": 8.483253479003906,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63370,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 142,
+          "text": "So what have you learned about which languages? Which language usually wins? Dave Plummer: Zig, I think right now. Lex Fridman: Zig. Dave Plummer: It does, it varies. People will make an improvement to the C++ then it\u2019ll pass for a while, and then the Zig guys will get angry and come back and make it faster. Lex Fridman: So Zig, Rust, C++, C? And what kind of code is being run? What\u2019s the piece of code that they\u2019re trying to run to measure the performance? Dave Plummer: So what they\u2019re doing is they\u2019re solving the primes up to 100 million as many times per second as they can in a five-second loop. Lex Fridman: And so it\u2019s a loop, got it. Over and over and over and over and over again. Dave Plummer: Yeah, on all cores. Lex Fridman: So what-\n\nDave Plummer: Across all CPUs. Lex Fridman: What about, like, how the program is written? Does that vary? Dave Plummer: No. So you can do anything you want, but it has to be a prime sieve.",
+          "score": 8.407426834106445,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 0.9089288711547852
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Commodore 64 memory capacity",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 62247,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 3,
+          "text": "Was Commodore 64 involved? DHH: Commodore 64 was the inspiration. I really wanted a Commodore 64. That was the first computer I ever sat down in front. And the way I sat down in front of it was I was five years old and there was this one kid on my street who had a Commodore 64. No one else had a computer, so we were all the kids just getting over there and we were all playing Yie Ar Kung-Fu. I don\u2019t know if you\u2019ve ever seen that game. It was one of the original fighting games. It\u2019s really a great game and I was playing that for the first time at five years old, and we were like seven kids sitting up in this one kid\u2019s bedroom all taking our turn to play the game. And I just found that unbelievably interesting. And I begged and I begged and I begged my dad, \u201cCould I get a computer?\u201d And he finally comes home. He\u2019s like, \u201cI got you a computer.\u201d I was like, yes, my own Commodore 64. And he pulls out this black, green and blue keyboard that\u2019s an Amstrad 464.",
+          "score": 5.343033313751221,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 48904,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 104,
+          "text": "Because of that, the leadership post \u201967, and really, starting in \u201964, the Palestine Liberation Organization was founded in \u201964, and it called for the liberation of the land in \u201964. They had the West Bank and they had the Gaza Strip. So they\u2019re talking about Tel Aviv. When it was founded in \u201964, the basic idea, as kind of indicated by that, was Israel will not exist, and that was a promise that\u2019s been made by pretty much every Palestinian leader in Arabic to the people that they are talking to. Yasser Arafat famously would do this sort of thing. He\u2019d speak in English and talk about how he wanted a two-state solution, and then he\u2019d go back to his own people and say, \u201cThis is a Trojan Horse and we\u2019re going to\u2026\u201d If Israel could, if you think that Israeli parents want to send their kids at the age of 18 to go and monitor Jenin and Nablus and be in Khan Yunis, you\u2019re out of your mind. You\u2019re out of your mind. Israelis do not want that.",
+          "score": 5.181922912597656,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27728,
+          "episode_id": 222,
+          "guest": "Jay McClelland",
+          "chunk_index": 114,
+          "text": "But we still don't know the answer, right? It seems like connectionism is really powerful, but it also seems like there's this building of knowledge. And so how do we, how do you square those two? Like, do you think the connections can contain the depth of human knowledge and the depth of what Dave Romahart was thinking about of understanding? Well, that remains the $64 question. And I... With inflation, that number is higher. Okay, $64,000. Maybe it's the $64 billion question now. You know, I think that from the emergentist side, which, you know, I placed myself on. So I used to sometimes tell people I was a radical, eliminative connectionist because I didn't want them to think that I wanted to build like anything into the machine. But I don't like the word eliminative anymore because it makes it seem like it's wrong to think that there is this emergent level of understanding. And I disagree with that.",
+          "score": 4.819403648376465,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 30334,
+          "episode_id": 238,
+          "guest": "Francis Collins",
+          "chunk_index": 76,
+          "text": "But I don't want to have to do that. There will be people's lives at risk in the meantime. And what's the best way to keep that from happening? Well, try to cut down the number of infections because you don't get variants unless the virus is replicating in a person. So how do we solve this thing? How do we get out of this pandemic? What's like, if you had a, like a wand or something, or you could really implement policies, what's the full cocktail of solutions here? It's a full cocktail. It's not just one thing. In our own country here in the US, it would be getting those 64 million reluctant people to actually go ahead and get vaccinated. There's 64 million people who didn't get vaccinated? Adults. Yes. Not even counting the kids. 64 million. Isn't that astounding? Get the kids vaccinated. Hopefully their parents will see that as a good thing too.",
+          "score": 4.786066055297852,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.43430233001709
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Commodore 64 memory capacity",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 5.359047889709473
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "Commodore 64 RAM capacity",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 24577,
+          "episode_id": 202,
+          "guest": "Rick Doblin",
+          "chunk_index": 30,
+          "text": "So he started hanging out with all sorts of famous people or creative people and he stopped going to classes a lot. And Ram Dass, Richard Alpert had given LSD to a student that Ram Dass was courageous enough to admit that he had a sexual interest in. They weren't supposed to give it undergraduates. That was about the only time that they ever did it. And psychedelics just getting more and more controversial even in the early 60s, eventually got kicked out of Harvard and then he became kind of a cultural icon for the counterculture and was hounded by the police and Nixon and spent a lot of time in jail. I mean, he's an incredible person. One thing that Ram Dass said is that Richard Alpert, Ram Dass said, I'm a rascal, but Leary's a scoundrel. What's the distinction? Rascals like in good fun. A scoundrel is like, you can't quite trust them, I think. I think that. It's a spectrum of sorts. Yeah, I think that Leary was someone who a little bit got addicted to media attention.",
+          "score": 5.193763256072998,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.386565923690796
+    }
+  ],
+  "final_answer": "The provided context does not specify the memory capacity of Dave Plummer's first computer. Additionally, John Carmack and his initial TRS-80 computer are not mentioned in the retrieved transcript chunks. Therefore, the context is insufficient to answer the question.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    202,
+    238,
+    410,
+    474,
+    222,
+    479
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 10.6421377658844
+}

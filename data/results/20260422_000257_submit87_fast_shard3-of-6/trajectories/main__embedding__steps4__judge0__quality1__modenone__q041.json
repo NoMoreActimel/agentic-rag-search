@@ -1,0 +1,218 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Charles Hoskinson views on programming languages for blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22901,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 114,
+          "text": "So before we go into this fascinating Darwinian evolution of cryptocurrencies, let me ask you sort of a basic programming question. There's a fascinating aspect to your work with Cardano that use Haskell to build the infrastructure, but even stepping back more, looking at this landscape, another place where Darwinian evolution operates, looking at this landscape of programming languages, you as an engineer, you as a philosopher, both, what programming languages do you think are interesting and more practically, what programming languages, if you were to advise like students today, should they learn? Yeah, so there's the pedagogy of learning how to program and to express the theory of computer science.",
+          "score": 0.7991277785301207,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.8244682550430298
+        },
+        {
+          "chunk_id": 22983,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 196,
+          "text": "So it's really a question of okay, what are you designing for for version one? Are you designing for performance and are you designing for developer accessibility or are you designing for correctness and are you designing for a high fidelity representation of the protocol? Okay, so Haskell was chosen as kind of the version one because we knew that the kinds of people who think about that are also the kinds of people that would have an easy time reading a paper like Ouroboros and working their way through all of this and they would do a pretty good job running a formal specification and then translating that into running code. Then once you have that, you have a blueprint that you can actually reason about, maintain and if you really wanted to, you could then turn that into a Rust code base or into a Java code base. Going the other way around would be kind of pointless and counterproductive.",
+          "score": 0.7909428257942199,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7699183225631714
+        },
+        {
+          "chunk_id": 22994,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 207,
+          "text": "And so your main chain will always stay somewhat conservative and have the minimum viable amount of expressiveness required on it to do all kinds of interesting things. And also for interoperability, be able to talk to all kinds of interesting things, but it's not trying to be everything to everyone. There's never gonna be an ice cream store in the island. You'll have the grapes and the beautiful women, but no ice cream. Now you're just like distracting me with the ice cream. So just for, because we'll throw around a bunch of terms, for the record, what is Plutus? So Plutus is a programming language. It's kind of a DSL that we built on top of Haskell. And basically we wrote it after spending about three years thinking about all smart contracts. We were trying to figure out like, what is the ideal language to express a smart contract? And then we started thinking, well, what is a smart contract? Is it the whole application, or is it just like a sub module within an application?",
+          "score": 0.7899760563373566,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7685372233390808
+        },
+        {
+          "chunk_id": 22991,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 204,
+          "text": "But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it. So it's entirely possible to write a Scala to Plutus core compiler or TypeScript compiler or something like that. But I'm a big believer of separation of concerns and we don't live in a single chain model anymore. So you have a situation where you probably wanna have different execution environments and different chains. So you have different virtual machines there. And that's why we work so closely with the University of Illinois, Urbana Champaign, Kagori Roshu's team at runtime verification. What they did is they said, let's start with something very familiar, LLVM, which has been around for a really long time and they happened to have created it there with Apple. And let's take that and translate that into the blockchain space.",
+          "score": 0.7877635557651519,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7653765082359314
+        },
+        {
+          "chunk_id": 22990,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 203,
+          "text": "Any other language, I guess this is the key question I wanna ask. Any other language support other than Haskell? The example this person gives is TypeScript, Go, Java, Python, et cetera. Also, have you considered a yearly conference focused around developers? Ha ha, yeah, we saw the Plutus Fest. And we did the first one in 2018, 2019, I can't remember. And we were gonna do one last year, but then COVID hit. So we'll bring it back and we'll probably do it annually at the University of Wyoming for their hackathon there. In fact, it just so happens that coincides with the Goguen Summit. So we're doing that, I think the third week of September. But yeah, it's great to do an annual conference. You can bring a lot of cool people together and you can do hackathons and awards and so forth. But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it.",
+          "score": 0.7607305378913879,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7696150541305542
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.804985761642456
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen Michael Paulson views on programming languages general software engineering",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59316,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 200,
+          "text": "I think you should explore a loosey language, so Python slash JavaScript, where there is truly only one type, which is a boxed value, which is a multivariate, different types underneath the hood. Lex Fridman: What did you call it? A loosey language? ThePrimeagen: A loosey-goosey language. It\u2019s a dynamic language, and so I think it\u2019s really good to explore one of those too. So I\u2019d put Python or JavaScript right there. Even Lua, throw Lua in the bunch. I think you should explore a strict language, so I\u2019d do something like Rust, Go. I think those are both really, really great. Lex Fridman: C++? ThePrimeagen: You can do C++. You can do some type erasure in C++. You can do it with Go as well, but for the most part it\u2019s a great language to do that in. It can get a little wild. New C++ seems great. Everyone keeps telling me new C++ is great. It has every feature you\u2019ve ever wanted and all the features you don\u2019t want. Lex Fridman: Yeah, exactly.",
+          "score": 0.7781802899837493,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7088289856910706
+        },
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7518653709888459,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7140933871269226
+        },
+        {
+          "chunk_id": 59311,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 195,
+          "text": "But I mean for practical purposes, no. HTML is not a language. For me, yes, the Turing test is a good one, but for those that are just not wanting to be as academic, if I can\u2019t write a function and an if statement, I don\u2019t feel like that\u2019s\u2026 If I can\u2019t loop, if, and function, I don\u2019t feel like that\u2019s a good, that\u2019s a programming language. Lex Fridman: Although modern HTML has a lot of features. ThePrimeagen: It\u2019s crazy how much it has, but it\u2019s more of a specification than anything else. I specify it to be a pop-up. I specify it to have this kind of accessibility, this kind of look. Under these conditions look like this, transform like this, move down here.\n\n\n## Bash\n\nLex Fridman: I don\u2019t know. I kind of like these popular programming languages in this list. I like JavaScript. ThePrimeagen: You like Bash? Lex Fridman: Oh, yeah. I like Bash a lot. Yeah. Why? ThePrimeagen: Okay. Bash is kind of one of those ones where it\u2019s like, do you really like it? I like it up until I need an array.",
+          "score": 0.7485784549713135,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7093977928161621
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7189926834106445,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7099895477294922
+        },
+        {
+          "chunk_id": 59116,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Michael Paulson, better known online as ThePrimeagen. He is a programmer who has entertained and inspired millions of people to have fun building stuff with software, whether you\u2019re a newbie or a seasoned developer who has been battling it out in the software engineering trenches for decades. In short, ThePrimeagen is a legendary programmer and a great human being with an inspiring roller coaster of a life story. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s ThePrimeagen.\n\n\n## Love for programming\n\nLex Fridman: What do you love most about programming? What brings you joy when you program? ThePrimeagen: I can tell you the first time that I ever felt love in programming, or felt that joy or that excitement-\n\nLex Fridman: Sure. ThePrimeagen: Which was in college.",
+          "score": 0.5990114378929138,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.8128734827041626
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 6.315855264663696
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Tim Sweeney views on programming languages for game metaverse development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 60851,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 205,
+          "text": "So if you could speak to some of the technologies that can enable that. You mentioned the Verse programming language. First of all, also, how legit is it for you, CEO of Epic Games to be a co-author? The programming language theorists are losing their mind. So a co-author on a paper that\u2019s describing some of the nuanced details of a programming language. So maybe you could speak to this programming language called Verse. It\u2019s a functional logic language. What are some cool features of Verse? Tim Sweeney: Verse is a programming language that we\u2019re building for large scale simulation programming. It\u2019s designed to make it easy to write code that can scale up to not only you building a Fortnite island, but you building modules or components that can be used by millions of other programmers and co-exist in a huge environment, and also can scale up to a huge scale simulation. Some games will be small. Battle Royale might find that a hundred players is actually optimal.",
+          "score": 0.8159937162399291,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8057053089141846
+        },
+        {
+          "chunk_id": 60862,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 216,
+          "text": "So being able to prove the correctness of a code, it\u2019s basically easier to write bug free code. Can you just speak to that and the importance of that when you\u2019re building the metaverse? Tim Sweeney: Yeah, right. So the challenge with the metaverse is first of all that it\u2019s a huge base of code that\u2019s evolving over time and written by many authors. So you might see every second a new module is updated somewhere. And you expect in this live ever running simulation that never shuts down for everything to upgrade live in place. And so, one critical component that is the ability to release an update to something you\u2019ve already published and be sure that it\u2019s backwards compatible with the one that you\u2019ve already released. And that\u2019s essentially a type checking problem, checking that your new interface is backwards compatible with your old one. And that comes down to the type system of the language.",
+          "score": 0.7981088132858276,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.8230125904083252
+        },
+        {
+          "chunk_id": 60705,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 59,
+          "text": "Lex Fridman: What programming language are we talking about? C? You mentioned there\u2019s this pile of assembly. What was your decision in choosing the programming language that Unreal Engine would be written in? Tim Sweeney: I\u2019d grown up learning with Pascal as my favorite language. Lex Fridman: Nice. Tim Sweeney: In order to just get maximum performance and get the latest operating system features, I had to move to C for my second game, Jill of the Jungle, little Nintendo-style platformer. And so when I started Unreal Engine, it was on 16-bit windows using the C programming language. And over the course of the first year moved to 32-bit, using these DOS extenders and then using Windows NT, and I moved to the C++ language and just because it simplified the code so much went from a really complicated pile of code to a much simpler one making that transition.",
+          "score": 0.7935091395378112,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7735844850540161
+        },
+        {
+          "chunk_id": 60887,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 241,
+          "text": "So what\u2019s the timeline? Where do we stand today? Tim Sweeney: Well, there\u2019s a lot going on in parallel. The key thing with Verse is that we have been specifying what we think is the ultimate version of the language with all of the features we want, whereas we\u2019ve been shipping more modest versions of language over time, and we\u2019ve released dozens of updates to it over the past year and a half. And the idea is that the shipping version that gains more and more features over time, but each maintaining backwards compatibility with old versions, and each continuing to improve and approach the ultimate version of it as we go. And we\u2019ve been doing this experiment entirely within the world of Unreal Editor for Fortnite for now. We want to test this and iterate with Fortnite creators in just the metaverse usage case before we make it available to all of our partners using Unreal Engine for all of their projects. And the idea is to iteratively improve it and build it out.",
+          "score": 0.7656710715293884,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7766729593276978
+        },
+        {
+          "chunk_id": 60854,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 208,
+          "text": "Lex Fridman: That\u2019s really cool though. Just sort of the possibility, the vision of that is really cool. Even a hundred thousand people or like 10,000 together just, I mean, there\u2019s a reason in the physical world when you go to a concert and you have all those people around you, that energy, or you go to a football game, that energy is unlike anything else. And if you can bring that energy to the digital world, that\u2019s amazing. But anyway, sorry, what, on the technology side of bringing that to life on the programming language side, can you continue, as I rudely interrupt you, talking about Verse? Tim Sweeney: Verse is a functional logic language because we think that that\u2019s the way to make the most simple and powerful language simultaneously.",
+          "score": 0.7432591297626494,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7703701853752136
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1181.4214656352997
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 1184.7782456874847
+    }
+  ],
+  "final_answer": "Charles Hoskinson, focused on blockchain infrastructure, prioritizes correctness, formal specification, and high fidelity representation of protocols in programming languages. He chose Haskell for Cardano's core due to its suitability for these aspects and developed Plutus, a domain-specific language on Haskell, for smart contracts, emphasizing separation of concerns and interoperability. ThePrimeagen, from a general software engineering perspective, advocates for learning both dynamic, 'loosey-goosey' languages like Python and JavaScript, and strict, static-typed languages such as Rust and Go, valuing languages that broaden one's understanding of types and practical application. Tim Sweeney, leading game and metaverse development, created Verse, a functional logic language designed for large-scale simulation programming, emphasizing scalability for many users and components, live upgrades, and robust type systems to ensure correctness and backward compatibility in a continuously evolving, multi-authored environment.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    192,
+    467,
+    461
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 1184.778249502182
+}

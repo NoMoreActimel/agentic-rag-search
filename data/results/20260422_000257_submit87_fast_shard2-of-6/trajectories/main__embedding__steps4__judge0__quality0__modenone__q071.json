@@ -1,0 +1,210 @@
+{
+  "question": "Across discussions on human potential and technological advancement, what is the maximum information transfer rate achieved by a human with a Neuralink implant, and how does Neuralink's target number of human implants by the end of the year compare to the recommended weekly set volume for hypertrophy training as suggested by Andrew Huberman?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Neuralink information transfer rate human",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8263,
+          "episode_id": 99,
+          "guest": "Karl Friston",
+          "chunk_index": 67,
+          "text": "So I don't want to be deflationary because much of my deflationary comments is probably large out of ignorance than anything else. But generally speaking, the bandwidth and the bit rates that you get from brain computer interfaces as we currently know them, we're talking about bits per second. So that would be like me only being able to communicate with any world or with you using very, very, very slow Morse code. And it is not even within an order of magnitude near what we actually need for an inactive realization of what people aspire to when they think about sort of curing people with paraplegia or replacing sight despite heroic efforts. So one has to ask, is there a lower bound on the kinds of recurrent information exchange between a brain and some augmented or artificial interface?",
+          "score": 0.767316460609436,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53838,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 4,
+          "text": "So, start getting to, I don\u2019t know, 100 bits per second, thousand. Maybe if five years from now, we might be at a megabit, faster than any human could possibly communicate by typing, or speaking.\n\n\n## Telepathy\n\nLex Fridman: Yeah. That BPS is an interesting metric to measure. There might be a big leap in the experience once you reach a certain level of BPS. Elon Musk: Yeah. Lex Fridman: Like entire new ways of interacting with a computer might be unlocked. Elon Musk: And with humans. Lex Fridman: With other humans. Elon Musk: Provided they have want a Neuralink, too. Lex Fridman: Right. Elon Musk: Otherwise they wont be able to absorb the signals fast enough. Lex Fridman: Do you think they\u2019ll improve the quality of intellectual discourse? Elon Musk: Well, I think you could think of it, if you were to slow down communication, how do you feel about that? If you\u2019d only talk at, let\u2019s say one-tenth of normal speed, you\u2019d be like, \u201cWow, that\u2019s agonizingly slow.\u201d\n\nLex Fridman: Yeah.",
+          "score": 0.7632690668106079,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53844,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 10,
+          "text": "So that is perhaps helpful. I think we\u2019ll probably get\u2026 If our data rate increases, it\u2019s highly probable it will become far more verbose. Just like your computer, when computers had\u2026 My first computer had 8K of RAM, so you really thought about every byte. And now you\u2019ve got computers with many gigabytes of RAM. So, if you want to do an iPhone app that just says, \u201cHello world,\u201d it\u2019s probably, I don\u2019t know, several megabytes minimum, a bunch of fluff. But nonetheless, we still prefer to have the computer with the more memory and more compute. So, the long-term aspiration of Neuralink is to improve the AI human symbiosis by increasing the bandwidth of the communication. Because even if\u2026 In the most benign scenario of AI, you have to consider that the AI is simply going to get bored waiting for you to spit out a few words.",
+          "score": 0.7476053237915039,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53961,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 127,
+          "text": "Lex Fridman: So there\u2019s onboard signal processing already just to decide whether this is an interesting event or not. So there is some computational power on board in addition to the human brain? DJ Seo: Yeah. So it does the signal processing to really compress the amount of signal that you\u2019re recording. So we have a total of thousand electrodes sampling at just under 20 kilohertz with 10 bit each. So that\u2019s 200 megabits that\u2019s coming through to the chip from thousand channel simultaneous neural recording. And that\u2019s quite a bit of data, and there are technology available to send that off wirelessly. But being able to do that in a very, very thermally-constrained environment that is a brain. So there has to be some amount of compression that happens to send off only the interesting data that you need, which in this particular case for motor decoding is, occurrence of a spike or not. And then being able to use that to decode the intended cursor movement.",
+          "score": 0.737339198589325,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53837,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 3,
+          "text": "The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah. I think it\u2019s obviously going to get better with each one. I don\u2019t want to jinx it, but it seems to have gone extremely well with the second implant. So, there\u2019s a lot of signal, a lot of electrodes. It\u2019s working very well. Lex Fridman: What improvements do you think we\u2019ll see in Neuralink in the coming, let\u2019s say, let\u2019s get crazy, the coming years. Elon Musk: In years, it\u2019s going to be gigantic, because we\u2019ll increase the number of electrodes dramatically. We\u2019ll improve the signal processing. So, even with only roughly, I don\u2019t know, 10, 15% of the electrodes working with Noland, with our first patient, we were able to get to achieve a bit per second. That\u2019s twice the world record. So, I think we\u2019ll start vastly exceeding the world record by orders of magnitude in the years to come. So, start getting to, I don\u2019t know, 100 bits per second, thousand.",
+          "score": 0.7358563542366028,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 31.539077281951904
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Neuralink target human implants by end of year",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.7702306509017944,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3787,
+          "episode_id": 49,
+          "guest": "Elon Musk",
+          "chunk_index": 20,
+          "text": "Depends on the rate of improvement of Neuralink and how fast we're able to do make progress. Well, I've talked to a few folks here that are quite brilliant engineers, so I'm excited. Yeah, I think it's like fundamentally good, you know, giving somebody back full motor control after they've had a spinal cord injury. You know, restoring brain functionality after a stroke, solving debilitating genetically oriented brain diseases. These are all incredibly great, I think. And in order to do these, you have to be able to interface with neurons at a detailed level and you need to be able to fire the right neurons, read the right neurons, and and then effectively you can create a circuit, replace what's broken with with silicon and essentially fill in the missing functionality. And then over time, we can develop a tertiary layer. So if like the limbic system is the primary layer, then the cortex is like the second layer.",
+          "score": 0.7105732560157776,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53958,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 124,
+          "text": "And all of this, I\u2019m asking in the context of, there\u2019s a gigantic historic milestone that Neuralink just accomplished in January of this year. Putting a Neuralink implant in the first human being, Noland. And there\u2019s been a lot to talk about there about his experience because he\u2019s able to describe all the nuance and the beauty and the fascinating complexity of that experience of everything involved. But on the technical level, how does Neuralink work? DJ Seo: So there are three major components to the technology that we\u2019re building. One is the device, the thing that\u2019s actually recording these neural chatters. We call it N1 Implant or The Link. And we have a surgical robot that\u2019s actually doing an implantation of these tiny, tiny wires that we call threads that are smaller than human hair.",
+          "score": 0.7080097794532776,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 10651,
+          "episode_id": 119,
+          "guest": "David Eagleman",
+          "chunk_index": 81,
+          "text": "Now, whether or not that's true or whatever, who cares? But it's a big deal to do an open head surgery. So what I'm interested in is how can we get information in and out of the brain without having to crack the skull open? Without messing with the biological part, directly connecting or messing with the intricate biological thing that we got going on and it seems to be working. Yeah, exactly. And by the way, where Neuralink is going, which is wonderful, is going to be in patient cases. It really matters for all kinds of surgeries that a person needs, whether for Parkinson's or epilepsy or whatever. It's a terrific new technology for essentially sewing electrodes in there and getting more higher density of electrodes. So that's great. I just don't think as far as the future of BCI goes, I don't suspect that people will go in and say, yeah, drill a hole in my head and do this.",
+          "score": 0.7059797048568726,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 45.58232140541077
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Andrew Huberman recommended weekly set volume hypertrophy training",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 36609,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 154,
+          "text": "For hypertrophy, I learned from Andy that the repetition range can be pretty broad. You're thinking anywhere from six to 30 repetitions. You should do 10 sets per muscle group per week, maybe even a bit more. So high volume. High volume, but you have to go to failure or beyond in order to stimulate growth. Why does it work at such a great range of repetitions? Well, there apparently are three ways that you stimulate hypertrophy and maybe more. One is tissue micro damage to the tissue. The other is through some sort of tension based changes in the molecular gene programs of cells that lead to protein synthesis that are distinct from damage. And the other are metabolic effects of like high repetition work of super fusion of the muscle with blood. We know that third category exists because people are now doing this blood restriction training where they cuff off a muscle and they'll use a really lightweight. I've done these before.",
+          "score": 0.7421938180923462,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36608,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 153,
+          "text": "And for details, you can, again, look to the episode. It's timestamped. But what's interesting about this is three to five times a week is a lot for a muscle group. Squatting five times a week for five reps, meaning you're working pretty heavy, meaning you're close to failure, but not failure for strength generally. What Andy taught me is that people who are training mostly for strength can do these low rep type regimens frequently because most of the adaptation is neural. And because you're not pushing to failure, in most cases, you don't get that sore. And so it's the motor neurons getting the muscle fibers to contract more intensely or with more efficiency in other ways that's leading to these strength gains. And this is why power lifters can train every day or five days a week or four days a week. For hypertrophy, I learned from Andy that the repetition range can be pretty broad. You're thinking anywhere from six to 30 repetitions.",
+          "score": 0.7106012105941772,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 46038,
+          "episode_id": 393,
+          "guest": "Andrew Huberman",
+          "chunk_index": 79,
+          "text": "Andrew Huberman: Well, the degree of change between years 35 and 40, is not going to be the degree of change between 40 and 45. But I will say this, I\u2019m 48 and I feel better in every aspect of my psychology and biology now, than I did when I was in my twenties. Yeah, quality of thought, time spent, physically, I can do what I did then, which probably says more about what I could do then than what I can do now. But if you keep training, you can continue to get better. The key is to not get injured, and I\u2019ve never trained super hard. I\u2019ve trained hard, but I\u2019ve been cautious to not, for instance, weight train more than two days in a row. I do a split which is basically three days a week, and the other day\u2019s a run, take one full day off, take a week off every 12 to 16 weeks.",
+          "score": 0.6851850748062134,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36603,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 148,
+          "text": "I'm gonna ask you about, you had awesome podcasts. I mean, I can ask you questions about basically all your podcasts. People should definitely listen to the Huberman Lab, but with Andy Gap and the conversation, you talked about strength and muscle building and all that kind of stuff. He's an encyclopedia. Yeah. And he also works with a lot of UFC fighters and he works with, he has a lab that includes a gym. And so he works on endurance and powerlifting and also hypertrophy training, et cetera. But he also does muscle biopsy. So he runs the full spectrum and he's a full tenured professor and he does all this stuff. So he's a really unique person in this whole fitness landscape because there are a lot of PTs out there. There are a lot of kinesiologists. There are a lot of people studying nutrition and sports training.",
+          "score": 0.6822330951690674,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36607,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 152,
+          "text": "Like skill development or something. Skill development, or you're an athlete in season. So you have to, what's so great about Andy is he really points out the specific ways to train given your specific goals. So if we're getting swole, stay out of the ice bath after a workout, there you go. Lex is always making fun of the meatheads. I love it. I put myself in the meathead category only because I don't do a real sport now. I work out and I run, which is working out. I'm an aspiring meathead, okay, so. One of these days I'm going to get back to Jiu Jitsu, or I'm going to get to Jiu Jitsu. Now, in terms of training, he has this beautiful three by five concept for strength. Pick three exercises, compound exercises, multi joint movements, do them for, do three to five exercises for three to five repetitions per set, rest three to five minutes, and do that three to five times per week. And for details, you can, again, look to the episode. It's timestamped.",
+          "score": 0.6775668263435364,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 48.67685031890869
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 51.75820994377136
+    }
+  ],
+  "final_answer": "With the first Neuralink patient, Noland, an information transfer rate of \"a bit per second\" was achieved, which was twice the previous world record. Neuralink aims to complete a total of 10 human implants by the end of the year. In comparison, Andrew Huberman suggests a weekly set volume of 10 sets per muscle group, or potentially more, for hypertrophy training.",
+  "total_chunks_retrieved": 14,
+  "unique_episodes_found": [
+    99,
+    393,
+    49,
+    277,
+    438,
+    119
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 51.7582151889801
+}

@@ -1,0 +1,145 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language views blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64134,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 189,
+          "text": "But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here. We want people to succeed in building these tools for our users. We understand that mini apps bring us users. The more users we have, the more successful and relevant Telegram becomes. We need third-party developers. I think at this point, Telegram gives developers by far the most powerful tools to create.\n\n\n## TON\n\nLex Fridman: Plus there\u2019s a bot API. And I mean you have to tell me about the TON blockchain and the crypto ecosystem available through Telegram. So what is TON aka The Open Network blockchain? Pavel Durov: TON is a blockchain technology that we initially developed in 2018 and 2019, and we started to develop it because we needed a blockchain platform to be integrated deeply into Telegram because we believe in blockchain. We think it\u2019s one of the technologies that enable freedom.",
+          "score": 0.3826494887669881,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 4.313549518585205
+        },
+        {
+          "chunk_id": 22104,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 105,
+          "text": "So does that mean that the blockchain would be taking a position in this big mega political debate? So I think like for just those kinds of reasons, I would personally like prefer Ethereum itself to be more of this sort of pure platform that just analyzes transactions just mathematically using deterministic consensus rules. And then if you need the oracles, that can be layer twos. Like I think Ethereum like benefits from not trying to do everything at layer one and having this like very robust layer two ecosystem where you have all these projects doing interesting things. Yeah, focus on the basic technology avoid the politics. Gotcha. Let me ask a bit of a human question. Charles Hoskinson, someone you've worked with in the early days of Ethereum, there appears to my outsider view to have been a bit of a falling out. Is there positive inspiring human story to be told about why you two parted ways?",
+          "score": 0.38252194595336914,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.59379768371582
+        },
+        {
+          "chunk_id": 8705,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 130,
+          "text": "And the setup of those channels uses the Ethereum blockchain. Once the channels are set up, then data flows along those channels without having to be on the blockchain. All that goes on the blockchain is the fact that some data went along that channel. So you can do... So there's not a shared knowledge. Well, the identity of each agent is on the blockchain, on the Ethereum blockchain. If one agent rates the reputation of another agent, that goes on the blockchain. And agents can publish what APIs they will fulfill on the blockchain. But the actual data for AI and the results for AI is not on the blockchain. Do you think it could be? Do you think it should be? In some cases, it should be. In some cases, maybe it shouldn't be. But I mean, I think that... So I'll give you an example. Using Ethereum, you can't do it. Using now, there's more modern and faster blockchains where you could start to do that in some cases. Two years ago, that was less so. It's a very rapidly evolving ecosystem.",
+          "score": 0.3631876694361369,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.765185832977295
+        },
+        {
+          "chunk_id": 29723,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 208,
+          "text": "As we realized, people were using Wolfram Alpha as the oracle for smart contracts, so to speak. And so that got us interested in blockchains in general. And what was ended up happening is Wolfram Language is, with its symbolic representation of things, is really very good at representing things like blockchains. And so I think we now have, and we don't really know all the comparisons, but we now have a really nice environment within Wolfram Language for dealing with the sort of, for representing what happens in blockchains, for analyzing what happens in blockchains. We have a whole effort in blockchain analytics. And we've sort of published some samples of how that works. But it's because our technology stack, Wolfram Language and Mathematica, are very widely used in the quant finance world. There's a sort of immediate coevolution there of the quant finance kind of thing and blockchain analytics. So it's kind of the representation of blockchain in computational language.",
+          "score": 0.3593097213109334,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.598988056182861
+        },
+        {
+          "chunk_id": 23160,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 373,
+          "text": "Who knows? It's an undiscovered country. I just had the image of Charles Hoskinson alone on a bison farm trying to raise a woolly mammoth. Just start wearing a white suit and say welcome to Hoskinson's ranch. I'll have a cane with amber on it. Yeah, with a chalkboard that you keep scrambling on like the beautiful mind in the movie and you'll have voices. All the schizophrenia's already come. You guys are all figments of my imagination anyway. Now one of my goals though, I love catfish and they live a long time. They get really damn big if you see those guys. I'd love to catch one now and be in my 60s and catch the same fish twice and recognize it. Maybe I'll lift a scar or something. That'd be really cool, going back to the fish thing. Because both the fish has gone through a lot, I've gone through a lot. We can just be like old friends. Reminisce. Exactly, exactly. About a life well lived. Then I'll die of a heart attack and my mammoths will eat me.",
+          "score": 0.1384212064743042,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 4.646623134613037
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.6806058883666992
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language philosophy characteristics",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 22106,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 107,
+          "text": "I think such things are possible. I think people definitely absolutely have a right to, and I think should strive to just constantly change and reinvent themselves. Is there something you could say about your thoughts about the Cardano project that Charles Hoskinson leads? They've worked on some interesting ideas that mirror some of the ideas in Ethereum, proof of stake, working on smart contracts and all those kinds of things. Is there something, again, positive, inspiring that you could say? Are they a competitor? Is it complimentary technology? There's definitely interesting ideas in there. I do think Cardano takes a bit of a different approach than Ethereum in that they really emphasize having these big academic proofs for everything, whereas Ethereum tends to be more okay with heuristic arguments in part because it's just trying to do more faster. But there's definitely very interesting things that come out of IOHK research. Can you comment on that kind of idea?",
+          "score": 0.3331869327227275,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 3.4794399738311768
+        },
+        {
+          "chunk_id": 19136,
+          "episode_id": 171,
+          "guest": "Anthony Pompliano",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Anthony Pompliano, entrepreneur, technology investor, prolific writer, podcaster, and Twitter user on topics of finance, cryptocurrency, technology, and economics. I highly recommend his popular podcast and daily letter called The Pump Podcast and The Pump Letter. Quick thank you to our sponsors, Theragun Muscle Recovery Device, Sun Basket Meal Delivery Service, ExpressVPN, and Indeed Hiring website. Click their links to support this podcast. As a side note, let me say that I'll be having many conversations in the coming months about cryptocurrency with people of all kinds of backgrounds and worldviews. Those who are proponents of Bitcoin, like Anthony, Nick Carter, Robert Breedlove, Alex Glastine, and many others. And those who are proponents of other cryptocurrency technologies, like Vitalik Buterin, Charles Hoskinson, Richard Hart, Sergey Nazarov, Silvia Macaulay, and many others as well. I'm not framing this as a debate.",
+          "score": 0.28484711074829105,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 3.464876174926758
+        },
+        {
+          "chunk_id": 22788,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 1,
+          "text": "I do want to say in terms of ideas that, at least to me, cryptocurrency is much bigger than just a way for a few Americans to make a quick buck through meme driven speculation. It is technology that enables freedom from oppression, from suffering in the world, because money is power. Mongolia, for example, was a reminder of that for me. Next day, after talking with Charles, I spoke with Wyoming Park, who is a North Korean defector, and who spent time in Mongolia, as many defectors do, in her and their escape from North Korea. Her story, the story of North Korea, the story of atrocities throughout the 20th century committed by Hitler, Stalin, and others, is a reminder that the world is full of darkness, but it is also full of beauty and love, and it is a world worth fighting for, in every way we know how. This is the Lux Friedman podcast, and here is my conversation with Charles Hoskinson. If you self evolve, almost like gnomic.",
+          "score": 0.28484711074829105,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 3.464876174926758
+        },
+        {
+          "chunk_id": 29690,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 175,
+          "text": "You know, is it important that there's a bromine atom here, et cetera, et cetera, et cetera. This is all chemistry that I don't know much about. And, you know, that's a sort of, you know, unfortunately that's down at the level, you know, I would like to be at the software level, not at the level of the transistors, so to speak. But in chemistry, you know, there's a certain amount we have to do, I think, at the level of transistors before we get up to being able to do it. Although, you know, the automated labs certainly help in setting that up. I talked to a guy named Charles Hoskinson. He mentioned that he's collaborating with you. He's an interesting guy. He sends me papers on speaking of automated theorem proving a lot. He's exceptionally well read on that area as well. So what's the nature of your collaboration with him? He's the creator of Cardano.",
+          "score": 0.2745752822558085,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 3.538940668106079
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.2969560623168945
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language design philosophy",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 5.631140232086182
+    }
+  ],
+  "final_answer": "The provided context mentions Charles Hoskinson as the creator of Cardano, a blockchain project, and notes his emphasis on \"big academic proofs for everything\" in its development, as well as his collaboration with Stephen Wolfram on automated theorem proving. However, the retrieved information does not detail his specific views on the primary purpose and desired characteristics of programming languages in general. The context does not contain any information about ThePrimeagen (Michael Paulson) or Tim Sweeney, making it impossible to address their perspectives.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    192,
+    482,
+    103,
+    234,
+    171,
+    188
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 8.405894756317139
+}

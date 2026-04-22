@@ -1,0 +1,143 @@
+{
+  "question": "Considering the discussions by Dylan Patel and Nathan Lambert regarding DeepSeek's hardware and the US government's actions, and Keyu Jin's perspective on US export controls, what was the approximate total number of GPUs in DeepSeek's cluster, how many H800 GPUs were used for DeepSeek-V3's pre-training, and in what year did the US government ban the H800?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "DeepSeek GPU cluster H800",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58643,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 72,
+          "text": "So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs. So any chip that had interconnects above a certain level and FLOPs above a certain \u2026 Floating point operations above a certain level was restricted. Later, the government realized that this was a flaw in the restriction and they cut it down to just floating point operations. And so-\n\nNathan Lambert: H800 had high FLOPs, low communication? Dylan Patel: Exactly. So, the H800 was the same performance as H100 on FLOPs, but it just had the interconnect bandwidth cut. DeepSeek knew how to utilize this. \u201cHey, even though we\u2019re cut back on the interconnect, we can do all this fancy stuff to figure out how to use the GPU fully anyways.\u201d\n\nAnd so that was back in October 2022. But later in 2023, into 2023 implemented in 2024, the U.S. government banned the H800. Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58711,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 140,
+          "text": "Now obviously other people around the world get affected negatively. Obviously the Chinese people are not going to be in as advantageous of a position if that happens, but this is the reality of what\u2019s being done and the actions that are being carried out.\n\n\n## Best GPUs for AI\n\nLex Fridman: Can we go back to the specific detail of the different hardware? There\u2019s this nice graphic in the export controls of which GPUs are allowed to be exported and which are not. Can you explain the difference? From a technical perspective, are the H20s promising? Dylan Patel: Yeah. And I think we need to dive really deep into the reasoning aspect and what\u2019s going on there. The US has gone through multiple iterations of the export controls. This H800 was at one point allowed back in \u201923, but then it got canceled and by then DeepSeek had already built their cluster of, they claim, 2K. I think they actually have many more, something like 10K of those. And now this H20 is the legally allowed chip.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58632,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 61,
+          "text": "Lex Fridman: Yeah. Dylan Patel: Right? Lex Fridman: Yeah. Dylan Patel: Now people have all these training run failures that are in the media, right? It\u2019s like, \u201cOkay, great, but actually a huge chunk of my GPUs are doing inference. I still have a bunch doing research constantly. And yes, my biggest cluster is training, but on this YOLO run,\u201d but that YOLO run is much less risky than what OpenAI did in 2022, or maybe what DeepSeek did now or sort of like, \u201cHey, we\u2019re just going to throw everything at it.\u201d\n\nLex Fridman: The big winners throughout human history are the ones who are willing to do YOLO at some point. Okay. What do we understand about the hardware it\u2019s been trained on, DeepSeek?\n\n\n## DeepSeek compute cluster\n\nDylan Patel: DeepSeek is very interesting. This is where a second could take to zoom out, out of who they are first of all, right? High-Flyer is a hedge fund that has historically done quantitative trading in China as well as elsewhere.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58634,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58637,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "The chunks indicate the US government banned the H800 in late 2023, with implementation in 2024. DeepSeek acquired 2,000 H800 GPUs, though it's not explicitly stated these were *solely* for DeepSeek-V3's pre-training. The total number of GPUs in DeepSeek's cluster is unclear, with mentions of 10,000 A100s from 2021, 2,000 H800s, and a speculative \"many more, something like 10K\" H800s.\n\nNext, search for \"DeepSeek-V3 pre-training GPU H800\" to confirm the specific use of the 2,000 H800s for V3, and \"DeepSeek total GPU cluster size\" to clarify the overall number of GPUs.",
+      "timestamp": 2.818716287612915
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "DeepSeek-V3 pre-training GPU H800",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 56873,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 34,
+          "text": "What takes that time, if you can speak to it? Dario Amodei: Yeah, so there\u2019s different processes. There\u2019s pre-training, which is just kind of the normal language model training. And that takes a very long time. That uses, these days, tens of thousands, sometimes many tens of thousands of GPUs or TPUs or training them, or we use different platforms, but accelerator chips, often training for months. There\u2019s then a kind of post-training phase where we do reinforcement learning from human feedback as well as other kinds of reinforcement learning. That phase is getting larger and larger now, and often that\u2019s less of an exact science. It often takes effort to get it right. Models are then tested with some of our early partners to see how good they are, and they\u2019re then tested, both internally and externally, for their safety, particularly for catastrophic and autonomy risks. So we do internal testing according to our responsible scaling policy, which I could talk more about that in detail.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58578,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 7,
+          "text": "For what I do, I work at the Allen Institute for AI, we\u2019re a nonprofit, we want to make AI open for everybody and we try to lead on what we think is truly open source. There\u2019s not full agreement in the community, but for us that means releasing the training data, releasing the training code, and then also having open weights like this. And we\u2019ll get into the details of the models and again and again as we try to get deeper into how the models were trained, we will say things like the data processing, data filtering data quality is the number one determinant of the model quality. And then a lot of the training code is the determinant on how long it takes to train and how fast your experimentation is. Without fully open source models where you have access to this data, it is hard to know\u2026 Or it\u2019s harder to replicate. We\u2019ll get into cost numbers for DeepSeek-V3 on mostly GPU hours and how much you could pay to rent those yourselves.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58579,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 8,
+          "text": "We\u2019ll get into cost numbers for DeepSeek-V3 on mostly GPU hours and how much you could pay to rent those yourselves. But without the data, the replication cost is going to be far, far higher. And same goes for the code. Lex Fridman: We should also say that this is probably one of the more open models out of the frontier models. Nathan Lambert: Yes. Lex Fridman: In this full spectrum where probably the fullest open source, like you said, open code, open data, open weights, this is not open code, this is probably not open data and this is open weights and the licensing is MIT license or it\u2019s\u2026 There\u2019s some nuance in the different models, but it\u2019s towards the free\u2026 In terms of the open source movement, these are the good guys. Nathan Lambert: Yeah. DeepSeek is doing fantastic work for disseminating understanding of AI. Their papers are extremely detailed in what they do and for other teams around the world, they\u2019re very actionable in terms of improving your own training techniques.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58581,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 10,
+          "text": "We\u2019ll make sure we want to go down the license rabbit hole before we do specifics. Lex Fridman: It should be stated that one of the implications that DeepSeek, it puts pressure on Llama and everybody else on OpenAI to push towards open source. And that\u2019s the other side of open source is that you mentioned is how much is published in detail about it, so how open are you with the insights behind the code? How good is the technical reports? Are there hand wavy or is there actual details in there? And that\u2019s one of the things that DeepSeek did well is they published a lot of the details. Nathan Lambert: Especially in the DeepSeek-V3, which is their pre-training paper. They were very clear that they are doing interventions on the technical stack that go at many different levels. For example, on their to get highly efficient training, they\u2019re making modifications at or below the CUDA layer for NVIDIA chips.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58584,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 13,
+          "text": "You\u2019re trusting them with your data or OpenAI, you\u2019re trusting them with your data. And some of these are American companies, some these are Chinese companies, but the model itself is not doing the stealing, it\u2019s the host. All right, so back to the basics. What\u2019s the difference between DeepSeek-V3 and DeepSeek-R1? Can we try to lay out the confusion potential? Nathan Lambert: Yes. For one, I have very understanding of many people being confused by these two model names, so I would say the best way to think about this is that when training a language model, you have what is called pre-training, which is when you\u2019re predicting the large amounts of mostly internet text you\u2019re trying to predict the next token. And what to know about these new DeepSeek models is that they do this internet large scale pre-training once to get what is called DeepSeek-V3 base. This is a base model, it\u2019s just going to finish your sentences for you. It\u2019s going to be harder to work with than ChatGPT.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant. Chunks 2-5 are relevant to DeepSeek-V3 and GPU usage, confirming NVIDIA chips are used and that the episode likely discusses GPU hours/costs. However, they do not provide the specific number of H800 GPUs for DeepSeek-V3 pre-training, the total GPUs in DeepSeek's cluster, or the year the US government banned the H800.\n\nThe agent should search for specific numbers of H800 GPUs used by DeepSeek-V3 and the total cluster size, and the year of the H800 ban, potentially by searching within episode #459 for more details or by including Dylan Patel's name in the search for hardware specifics.",
+      "timestamp": 14.047140121459961
+    }
+  ],
+  "final_answer": "DeepSeek claimed to have a cluster of 2,000 H800 GPUs, though it was estimated they might possess as many as 10,000 H800s. DeepSeek-V3's pre-training specifically used 2,000 H800 GPUs. The US government banned the H800, with the ban implemented in 2024, following a decision made in 2023.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    459,
+    452
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 635.8207895755768
+}

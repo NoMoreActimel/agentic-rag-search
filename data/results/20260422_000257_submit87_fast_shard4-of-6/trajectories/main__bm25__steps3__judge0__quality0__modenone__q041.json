@@ -1,0 +1,155 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming languages blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22104,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 105,
+          "text": "So does that mean that the blockchain would be taking a position in this big mega political debate? So I think like for just those kinds of reasons, I would personally like prefer Ethereum itself to be more of this sort of pure platform that just analyzes transactions just mathematically using deterministic consensus rules. And then if you need the oracles, that can be layer twos. Like I think Ethereum like benefits from not trying to do everything at layer one and having this like very robust layer two ecosystem where you have all these projects doing interesting things. Yeah, focus on the basic technology avoid the politics. Gotcha. Let me ask a bit of a human question. Charles Hoskinson, someone you've worked with in the early days of Ethereum, there appears to my outsider view to have been a bit of a falling out. Is there positive inspiring human story to be told about why you two parted ways?",
+          "score": 5.59379768371582,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8705,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 130,
+          "text": "And the setup of those channels uses the Ethereum blockchain. Once the channels are set up, then data flows along those channels without having to be on the blockchain. All that goes on the blockchain is the fact that some data went along that channel. So you can do... So there's not a shared knowledge. Well, the identity of each agent is on the blockchain, on the Ethereum blockchain. If one agent rates the reputation of another agent, that goes on the blockchain. And agents can publish what APIs they will fulfill on the blockchain. But the actual data for AI and the results for AI is not on the blockchain. Do you think it could be? Do you think it should be? In some cases, it should be. In some cases, maybe it shouldn't be. But I mean, I think that... So I'll give you an example. Using Ethereum, you can't do it. Using now, there's more modern and faster blockchains where you could start to do that in some cases. Two years ago, that was less so. It's a very rapidly evolving ecosystem.",
+          "score": 4.765185832977295,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 23160,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 373,
+          "text": "Who knows? It's an undiscovered country. I just had the image of Charles Hoskinson alone on a bison farm trying to raise a woolly mammoth. Just start wearing a white suit and say welcome to Hoskinson's ranch. I'll have a cane with amber on it. Yeah, with a chalkboard that you keep scrambling on like the beautiful mind in the movie and you'll have voices. All the schizophrenia's already come. You guys are all figments of my imagination anyway. Now one of my goals though, I love catfish and they live a long time. They get really damn big if you see those guys. I'd love to catch one now and be in my 60s and catch the same fish twice and recognize it. Maybe I'll lift a scar or something. That'd be really cool, going back to the fish thing. Because both the fish has gone through a lot, I've gone through a lot. We can just be like old friends. Reminisce. Exactly, exactly. About a life well lived. Then I'll die of a heart attack and my mammoths will eat me.",
+          "score": 4.646623134613037,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 29723,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 208,
+          "text": "As we realized, people were using Wolfram Alpha as the oracle for smart contracts, so to speak. And so that got us interested in blockchains in general. And what was ended up happening is Wolfram Language is, with its symbolic representation of things, is really very good at representing things like blockchains. And so I think we now have, and we don't really know all the comparisons, but we now have a really nice environment within Wolfram Language for dealing with the sort of, for representing what happens in blockchains, for analyzing what happens in blockchains. We have a whole effort in blockchain analytics. And we've sort of published some samples of how that works. But it's because our technology stack, Wolfram Language and Mathematica, are very widely used in the quant finance world. There's a sort of immediate coevolution there of the quant finance kind of thing and blockchain analytics. So it's kind of the representation of blockchain in computational language.",
+          "score": 4.598988056182861,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64134,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 189,
+          "text": "But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here. We want people to succeed in building these tools for our users. We understand that mini apps bring us users. The more users we have, the more successful and relevant Telegram becomes. We need third-party developers. I think at this point, Telegram gives developers by far the most powerful tools to create.\n\n\n## TON\n\nLex Fridman: Plus there\u2019s a bot API. And I mean you have to tell me about the TON blockchain and the crypto ecosystem available through Telegram. So what is TON aka The Open Network blockchain? Pavel Durov: TON is a blockchain technology that we initially developed in 2018 and 2019, and we started to develop it because we needed a blockchain platform to be integrated deeply into Telegram because we believe in blockchain. We think it\u2019s one of the technologies that enable freedom.",
+          "score": 4.313549518585205,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.2491729259490967
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson views on programming languages for blockchain",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 4.644549131393433
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language design principles Cardano Haskell",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22106,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 107,
+          "text": "I think such things are possible. I think people definitely absolutely have a right to, and I think should strive to just constantly change and reinvent themselves. Is there something you could say about your thoughts about the Cardano project that Charles Hoskinson leads? They've worked on some interesting ideas that mirror some of the ideas in Ethereum, proof of stake, working on smart contracts and all those kinds of things. Is there something, again, positive, inspiring that you could say? Are they a competitor? Is it complimentary technology? There's definitely interesting ideas in there. I do think Cardano takes a bit of a different approach than Ethereum in that they really emphasize having these big academic proofs for everything, whereas Ethereum tends to be more okay with heuristic arguments in part because it's just trying to do more faster. But there's definitely very interesting things that come out of IOHK research. Can you comment on that kind of idea?",
+          "score": 7.417084693908691,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 29690,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 175,
+          "text": "You know, is it important that there's a bromine atom here, et cetera, et cetera, et cetera. This is all chemistry that I don't know much about. And, you know, that's a sort of, you know, unfortunately that's down at the level, you know, I would like to be at the software level, not at the level of the transistors, so to speak. But in chemistry, you know, there's a certain amount we have to do, I think, at the level of transistors before we get up to being able to do it. Although, you know, the automated labs certainly help in setting that up. I talked to a guy named Charles Hoskinson. He mentioned that he's collaborating with you. He's an interesting guy. He sends me papers on speaking of automated theorem proving a lot. He's exceptionally well read on that area as well. So what's the nature of your collaboration with him? He's the creator of Cardano.",
+          "score": 6.361154556274414,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22787,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Charles Hoskinson, founder of Cardano, co founder of Ethereum, and a mathematician who is one of the most well read and knowledgeable people on the technical side of cryptocurrency that I've ever spoken to. Quick mention of our sponsors, Galila Games, Allform, Indeed, ExpressVPN, and Asleep. Check them out in the description to support this podcast. As a side note, let me say that Charles is not just a mathematician or cryptocurrency innovator, but also a Colorado based farmer of bison and mushrooms, a gamer, a fisherman, and a world traveler. When I asked him if he has a nice professional picture of himself, he sent me a picture of him in Mongolia with a hawk on his shoulder, meeting the Mongolian president. That to me pretty much says it all, speaking to the humor and the intelligence of a man who is bold, innovative, and does not shy away from a bit of fun and a bit of controversy, which makes him a fascinating human being to explore ideas with.",
+          "score": 6.150789737701416,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 23013,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 226,
+          "text": "I think the context of the question was more, what is Cardano specific over Ethereum or Bitcoin or any of these other things? And yeah, okay, existential lurking bug could happen. It's lower probability for us than the other systems because we use formal methods and we use peer review inside the protocol design. So there's been more eyeballs and tools and techniques used to check things. And we actually have discovered a lot of weird wonky bugs before production and resolve those bugs. So it shows you the system works. It's a lot of fun. What about close kind of competitors? I don't know if you would put it that way, but if you look in the space of ideas, competitor cryptocurrencies like Polkadot, what are some interesting difference between Cardano and Polkadot? Technically, philosophically, historically, is that something you think about when you think about the future of Cardano? Yeah, I mean, we do.",
+          "score": 5.918123722076416,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22830,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 43,
+          "text": "And I don't have to pay them. That's the beautiful thing. It's fun. Yeah. It's fun to try to destroy and that's how we grow stronger. And it's how you build your career too. There's plenty of people that they've gotten tenure just kicking the hell out of Intel SGX. You go to CCS every year, there's some guy there and he's having a hell of a time making Intel cry. Can we pull back historically speaking and in terms of the big picture of cryptocurrency real quick and ask the question, what is Cardano? We started talking about already the consensus algorithm Cardano takes. But maybe when you look at the history books, you know, sort of a Hitchhiker's Guide to the Galaxy and Cardano will have one sentence. What's that one sentence going to be? And in general, what's like the vision in the context of the history of cryptocurrency? You have like this whiteboard overview video that you talk about the three generations of cryptocurrency where Cardano is the third.",
+          "score": 4.8983306884765625,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.129878997802734
+    }
+  ],
+  "final_answer": "The provided context indicates that Charles Hoskinson, as the founder of Cardano and co-founder of Ethereum, emphasizes formal methods, peer review, and academic proofs in protocol design, suggesting a preference for programming languages that support rigorous verification and security for blockchain infrastructure. However, the provided text does not contain information about ThePrimeagen (Michael Paulson) or Tim Sweeney, nor their views on programming languages. Therefore, the context is insufficient to fully answer the question.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    192,
+    482,
+    103,
+    234,
+    188
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 10.836349964141846
+}

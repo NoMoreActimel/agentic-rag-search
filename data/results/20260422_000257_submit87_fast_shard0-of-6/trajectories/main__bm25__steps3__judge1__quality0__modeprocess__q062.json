@@ -1,0 +1,98 @@
+{
+  "question": "Considering David Fravor's emphasis on personal agency and persistence as key to his career success, how has his articulation or understanding of this core career advice evolved across his various appearances discussing the topic over time?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "David Fravor career advice personal agency persistence evolution",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 12198,
+          "episode_id": 127,
+          "guest": "Joe Rogan",
+          "chunk_index": 64,
+          "text": "Is there, I mean, he is over the top offensive, just that's who he is to the core. Is there some sense where you wondered like whether it's right to have the Spotify episode number one with Duncan Dressel for five hours? No, I wanted to do it that way. That's why we wore NASA suits and we got high as fuck. It's like, that's the whole idea behind it. I mean, can you introspect that a little bit? Like, can you think, like, what is that? Cause that's rare. It's such a rare thing to do because you're not supposed to talk to Duncan Dressel with a huge platform that you have five hours. Why not? Because Donald Trump apparently watches your podcast. So just the idea that there's these, I mean, that's what I think about, these CEOs write to me that they listen to the podcast that I do and I have somebody like a David Fravor and I was nervous about it. I was nervous to have a conversation. For me, David Fravor is a Duncan Dressel, which is like. Just because of his experiences with UFOs.",
+          "score": 7.026945114135742,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 12163,
+          "episode_id": 127,
+          "guest": "Joe Rogan",
+          "chunk_index": 29,
+          "text": "I'm not going through executive producers who tell me, don't have this guest on, don't talk about that. We looked at focus groups and they don't seem to like when you do this, like there's none of that. And I just do it. So I have a whole podcast where I just talk about cars and people are like, I don't want to hear you talk about cars. Well, good, congratulations. You found what you like. Here's good news, there's 1500 other ones. Go listen to the other episodes where I don't talk about cars. You don't have to listen. And it's not like your brand, you just are who you are and that's what you do. But it's like, it's authentically what I'm interested in. All the podcasts, whether I'm talking to David Fravor about his experience with UFOs, whether I'm talking to David Sinclair about life extension, whether I'm talking to you about artificial intelligence or what, it's because I want to talk to these people. And that resonates. I like when people are into shit.",
+          "score": 5.53793478012085,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14276,
+          "episode_id": 139,
+          "guest": "Andrew Huberman",
+          "chunk_index": 106,
+          "text": "It's not all RAM, it's not all working memory. And then in biology, and physicists tend to have very active careers into their 30s and 40s and 50s and so forth, sometimes later. And then in biology, you see careers that have a much longer arc, these protracted careers often, people still in their 60s and 70s doing really terrific work, not always doing it with their own hands because that's, that's what we were all trying to do. That's what we were trying to do. So yeah. Yeah. So from the highest possible topic of consciousness to the, to the lowest level, uh, topic of David Goggins, uh, let's go. I don't know if it's low, low level. He's high performance. High performance, but like low, like there's no, I don't think David has any time for philosophy. Let's just put it this way.",
+          "score": 5.404204368591309,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11297,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 273,
+          "text": "So I, I mean, I'm, I'm a loss of words. One of my favorite conversations. Thank you so much for talking to me, Dave. You're welcome. Thanks for listening to this conversation with David Fravor. And thank you to our sponsors, Athletic Greens, ExpressVPN, and BetterHelp. Please check out the sponsors in the description to get a discount and to support this podcast. If you enjoy this thing, subscribe on YouTube, review it with five stars and app a podcast, follow on Spotify, support on Patreon, or connect with me on Twitter at Lex Friedman. And now let me leave you with some words from Carl Sagan, somewhere, something incredible is waiting to be known. Thank you for listening and hope to see you next time. inside the airplane, you're just like, wow, I cannot believe it just did that.",
+          "score": 5.362090587615967,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41243,
+          "episode_id": 308,
+          "guest": "Ryan Graves",
+          "chunk_index": 53,
+          "text": "And then the Nimitz is from what the David Fravor has witnessed directly and spoken about. We'll talk about that as well. I'd just love to get your sort of interpretation of those incidents. But yeah, so in this particular case, natural phenomena could be a part of the picture, but you're saying not the whole picture. Yes, yes, and we can't discount it. Oh, the other thing is what about the failure of pilot eyesight? Like sort of some deep mixture of actual direct vision, human vision system failure, and like psychology. Like seeing something weird and then filling in the gaps. Because in order to make sense of the weird. I've tried to expose myself to scenarios like that that I don't necessarily think are right, but I've explored them to see if they could have some truth.",
+          "score": 5.362090587615967,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. They either discuss David Fravor's UFO experiences, podcast logistics, or general career topics unrelated to Fravor's personal philosophy. None contain Fravor's articulation of personal agency or persistence as key to his career success.\n\nThe agent should search for direct statements or discussions from David Fravor about his career philosophy, personal agency, or persistence. A more targeted search query would be: `David Fravor \"career advice\" OR \"personal agency\" OR \"persistence\" \"my philosophy\" \"my success\" \"lessons learned\"`",
+      "timestamp": 1.9799394607543945
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "David Fravor \"career advice\" OR \"personal agency\" OR \"persistence\" evolution OR change",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 12.464580535888672
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "David Fravor \"personal agency\" OR \"persistence\" OR \"career success\" \"advice\" \"lessons\" \"philosophy\"",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 17.8946475982666
+    }
+  ],
+  "final_answer": "The provided context does not contain information about David Fravor's articulation or understanding of personal agency and persistence as key to his career success, nor does it describe how this understanding has evolved over time. The retrieved chunks primarily mention Fravor in the context of his UFO experiences and appearances on the podcast.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    122,
+    139,
+    308,
+    127
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 19.96971869468689
+}

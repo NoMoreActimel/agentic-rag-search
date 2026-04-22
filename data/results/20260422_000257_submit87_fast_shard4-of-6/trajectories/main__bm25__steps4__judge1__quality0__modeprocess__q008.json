@@ -1,0 +1,206 @@
+{
+  "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Dylan Patel Nathan Lambert Sundar Pichai Google AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58891,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 320,
+          "text": "So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are. Lex Fridman: But it\u2019s such a cutting edge. I mean-\n\nNathan Lambert: It depends on where you think AI capabilities are going. Lex Fridman: You have to keep winning. Dylan Patel: Yes. Lex Fridman: You have to keep winning as you climb, even if the AI capabilities are going super rapidly awesome into the direction of AGI, there\u2019s still a boost for X in terms of data, Google in terms of data, Meta in terms of data, in terms of other products and the money and there\u2019s just huge amounts of money. Dylan Patel: The whole idea is human data is kind of tapped out. We don\u2019t care. We all care about self-play, verifiable task. Nathan Lambert: Think about AWS. Lex Fridman: Yes, self-play, which is an RNG problem. Nathan Lambert: AWS does not make a lot of money on each individual machine.",
+          "score": 16.96236801147461,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58884,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 313,
+          "text": "Lex Fridman: Let\u2019s talk about the broad AI race. Who do you think wins? We talked about Google, Meta. Nathan Lambert: The default leader has been Google because of their infrastructure advantage. Lex Fridman: Well, in the news, OpenAI is the leader. Nathan Lambert: They\u2019re the leading in the narrative. Dylan Patel: They have the best model. Nathan Lambert: They have the best model that people can use and they\u2019re experts-Experts. Dylan Patel: And they have the most AI revenue. Nathan Lambert: Yeah. OpenAI is winning. Lex Fridman: So who\u2019s making money on AI right now? Is anyone making money? Dylan Patel: So accounting profit-wise, Microsoft is making money, but they\u2019re spending a lot of CapEx and that gets depreciated over years. Meta\u2019s making tons of money with recommendation systems, which is AI, but not with Llama, right? Llama\u2019s losing money for sure. I think Anthropic and OpenAI are obviously not making money otherwise they wouldn\u2019t be raising money.",
+          "score": 16.614704132080078,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58876,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 305,
+          "text": "Dylan Patel: Google Cloud is third. Yeah. Microsoft is the second biggest, but Amazon is the biggest, right? Lex Fridman: Yeah. Dylan Patel: And Microsoft deceptively sort of includes Microsoft Office 365 and things like that, some of these enterprise-wide licenses. So in reality, the gulf is even larger. Microsoft is still second though, right? Amazon is way bigger. Why? Because using AWS is better and easier. And in many cases, it\u2019s cheaper-\n\nNathan Lambert: It was first. Dylan Patel: And it\u2019s first. It was first. Lex Fridman: Yeah. But there\u2019s a lot of things that are first that lose the-\n\nNathan Lambert: Well, it\u2019s harder to switch than it is to-\n\nLex Fridman: Yeah, okay. Dylan Patel: AWS is-\n\nLex Fridman: Because there\u2019s large-\n\nNathan Lambert: There\u2019s big fees for switching too. Dylan Patel: AWS generates over 80% of Amazon\u2019s profit. I think over 90%. Lex Fridman: That\u2019s insane.",
+          "score": 15.647368431091309,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58803,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 232,
+          "text": "And then OpenAI has o1-pro, and what they did with o3, which is also very unique, is that they stacked search on top of chain of thought. And so chain of thought is one thing where it\u2019s one chain, it backtracks, goes back and forth, but how they solved the ARC-AGI challenge was not just the chain of thought, it was also sampling many times, i.e., running them in parallel and then selecting. Nathan Lambert: Is running in parallel actually search? Because I don\u2019t know if we have the full information on how o1-pro works. So, I don\u2019t have enough information-\n\nDylan Patel: Agreed. Nathan Lambert: \u2026 to confidently say that it is search. Dylan Patel: It is parallel samples. Nathan Lambert: Yeah. And then what. Dylan Patel: And then it selects something. Nathan Lambert: And we don\u2019t know what the selection function is.",
+          "score": 15.398194313049316,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58710,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 139,
+          "text": "And obviously there\u2019s butting of heads here, in the most simple terms. Lex Fridman: And that could take shape in all kinds of ways, including proxy wars. And now-\n\nNathan Lambert: Yeah, it seems like it\u2019s already happening. As much as I want there to be centuries of prolonged peace, it looks like further instability internationally is ahead. Dylan Patel: And the US\u2019 current task is, \u201cHey, if we control AI, if we\u2019re the leader in AI and AI significantly accelerates progress, then we can maintain the global hegemony position.\u201d And therefore-\n\nNathan Lambert: I hope that works. Dylan Patel: And as an American, like, okay, I guess that\u2019s going to lead to peace for us. Now obviously other people around the world get affected negatively.",
+          "score": 15.223135948181152,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "None of the chunks contain information about Sundar Pichai, a specific Google AI product, or its scaling metric. The chunks discuss the general AI race, Google's infrastructure, and other companies, but not the specific details requested.\n\nThe agent should search for direct statements or discussions by Sundar Pichai regarding Google's AI-first strategy, specific AI products, and any mentioned scaling metrics. Consider searching for \"Sundar Pichai Google AI strategy product scaling\" or \"Sundar Pichai Google AI product metric\".",
+      "timestamp": 19.46071219444275
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Sundar Pichai Google AI product scaling metric strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61623,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 67,
+          "text": "Of course once you show up to a page, you can use a basic translate, but that process of figuring it out, if you empathize with a large part of the world that doesn\u2019t speak English, their web is much smaller in that original language. And so it, again, unlocks that huge cognitive capacity there. You take for granted here with all the bloggers and the journalists writing about AI mode, you forget that this now unlocks because Gemini is really good at translation. Sundar Pichai: Oh it is. I mean the multimodality, the translation, it\u2019s ability to reason, we\u2019re dramatically improving tool use, and putting that power in the flow of Search, look, I\u2019m super excited with AI overviews. We\u2019ve seen the product has gotten much better, we measured using all kinds of user metrics. It\u2019s obviously driven strong growth of the product, and we\u2019ve been testing AI mode. It\u2019s now in the hands of millions of people and the early metrics are very encouraging.",
+          "score": 12.050549507141113,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61625,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 69,
+          "text": "So ads fuel a lot of really powerful services. And at its best it\u2019s showing you relevant ads, but also very importantly in a way that\u2019s not super annoying, in a classy way. So when do you think it\u2019s possible to add ads into AI mode and what does that look like from a classy, non-annoying perspective? Sundar Pichai: Two things. Early part of AI mode, we\u2019ll obviously focus more on the organic experience to make sure we are getting it right. I think the fundamental value of ads are-\n\nSundar Pichai: I think the fundamental value of ads are it enables access to deploy the services to billions of people. Second is ads are the reason we\u2019ve always taken ads seriously is we view ads as commercial information, but it\u2019s still information. So we bring the same quality metrics to it. I think with AI mode, to our earlier conversation about\u2026 I think AI itself will help us, over time, figure out the best way to do it.",
+          "score": 11.424020767211914,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61649,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 93,
+          "text": "Sundar Pichai: I think a few things. Looking at Google, we\u2019ve given various stats around 30% of code now uses AI- generated suggestions or whatever it is. But the most important metric, and we carefully measure it is, like, how much has our engineering velocity increased as a company due to AI, right? It\u2019s tough measure, and we rigorously try to measure it, and our estimates are that number is now at 10%, right? Like, now, across the company, we\u2019ve accomplished a 10% engineering velocity increase using AI, but we plan to hire more engineers next year, right? Because the opportunity space of what we can do is expanding too, right? Lex Fridman: Mm-hmm. Sundar Pichai: So I think, hopefully, at least in the near to midterm, for many engineers, it frees up more and more of the\u2026 Even in engineering and coding, there are aspects which are so much fun. You\u2019re designing. You\u2019re architecting. You\u2019re solving a problem.",
+          "score": 11.21773910522461,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61652,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 96,
+          "text": "I think that\u2019s what unlocks that next big wave. I think the 10% is a massive number. Like, if tomorrow, I showed up and said, \u201cYou can improve a large organization\u2019s productivity by 10%,\u201d when you have tens of thousands of engineers, that\u2019s a phenomenal number, and that\u2019s different than what other site or statistic saying like, \u201cThis percentage of code is now written by AI.\u201d\n\nI\u2019m talking more about, like, overall-\n\nLex Fridman: The actual productivity. Sundar Pichai: The actual productivity. Right? Engineering productivity, which is two different things, which is the more important metric, but I think it\u2019ll get better, right? I think there\u2019s no engineer who, tomorrow, if you magically became 2x more productive, it\u2019s just going to create more things. You\u2019re going to create more value-added things, and so I think you\u2019ll find more satisfaction in your job, right? Lex Fridman: There\u2019s a lot of aspects.",
+          "score": 11.10600471496582,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61628,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 72,
+          "text": "As you move to AI mode, I mean, it\u2019s just a different experience. I think Liz was talking about it. I think you\u2019ve mentioned that you ask more questions. You ask longer questions. Sundar Pichai: Dramatically different types of questions. Lex Fridman: Yeah, it actually fuels curiosity. I think, for me, I\u2019ve been asking just a much larger number of questions of this black box machine, let\u2019s say, whatever it is, and with the AI overview, it\u2019s interesting because I still value the human\u2026 I still ultimately want to end up on the human created web, but like you said, the context really helps. Sundar Pichai: It helps us deliver higher-quality referrals, right? Where people, they have much higher likelihood of finding what they\u2019re looking for. They\u2019re exploring. They\u2019re curious. Their intent is getting satisfied more. So that\u2019s what all our metrics show. Lex Fridman: It makes the humans that create the web nervous. The journalists are getting nervous. They\u2019ve already been nervous.",
+          "score": 10.880919456481934,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1, 2, and 5 indicate that \"AI Overviews\" or \"AI mode\" in Google Search, powered by Gemini, is a central AI product. However, the retrieved chunks do not contain a specific impressive scaling metric about the *processing capabilities* of this product. Chunks 3 and 4 discuss an internal engineering productivity metric, which is not what the question is asking for.\n\nThe agent should search for specific processing or infrastructure scaling metrics related to Google's AI Overviews or Gemini, perhaps using terms like \"Gemini processing scale,\" \"AI Overviews infrastructure metrics,\" or \"Google AI search processing capabilities.\"",
+      "timestamp": 37.87234044075012
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Sundar Pichai Google AI Overviews Gemini processing scale metric",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 61643,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 87,
+          "text": "Sundar Pichai: Mm-hmm. Lex Fridman: It just happens to be on four wheels. So you said that the next big thing, we can also throw that into AI package. The big aha moment might be in the space of robotics. What do you think that would look like? Sundar Pichai: Demis and the Google DeepMind team is very focused on Gemini robotics, right? Lex Fridman: Yeah. Sundar Pichai: So we are definitely building the underlying model as well. So we have a lot of investments there, and I think we are also pretty cutting-edge in our research there. So we are definitely driving that direction. We obviously are thinking about applications in robotics. We\u2019ll kind of work CSD. We are partnering with a few companies today, but it\u2019s an area I would say stay tuned. We are yet to fully articulate our plans outside, but it\u2019s an area we are definitely committed to driving a lot of progress. But I think AI ends up driving that massive progress on robotics. The field has been held back for a while.",
+          "score": 12.555731773376465,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61630,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 74,
+          "text": "But I find that if you\u2019re looking for really strong criticism of things, that Gemini is very good at providing that. Sundar Pichai: Oh, absolutely. I. Lex Fridman: T\u2019s better than anything they\u2026 For now, I mean. People are concerned that there would be bias that\u2019s introduced that as the AI systems become more and more powerful, there\u2019s incentive from sponsors to roll in and try to control the output of the AI models. But for now, the objective criticism that\u2019s provided is way better than journalism. Of course, the argument is the journalists are still valuable, but then, I don\u2019t know, the crowdsourced journalism that we get on the open internet is also very, very powerful. Sundar Pichai: I feel like they\u2019re all super important things. I think it\u2019s good that you get a lot of crowdsourced information coming in, but I feel like there is real value for high-quality journalism, right? I think these are all complimentary, I think.",
+          "score": 12.32542610168457,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61648,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 92,
+          "text": "I\u2019m sure there\u2019s answers, and it\u2019s the old question of the meaning of existence. As you have to try to figure that out, that might be ultimately parenting, or being creative in some domains of art or writing, and it challenges to\u2026\n\nIt\u2019s a good question of to ask yourself like, \u201cIn my life, what is the thing that brings me most joy and fulfillment?\u201d If I\u2019m able to actually focus more time on that, that\u2019s really powerful. Sundar Pichai: I think that\u2019s the holy grail. If you get this right, I think it allows more people to find that.\n\n\n## Programming\n\nLex Fridman: I have to ask you, on the programming front, AI is getting really good at programming. Gemini, both the agentic and just the LLM has been incredible, so a lot of programmers are really worried that they will lose their jobs. How worried should they be, and how should they adjust so they can be thriving in this new world, or more and more code is written by AI? Sundar Pichai: I think a few things.",
+          "score": 12.043817520141602,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61653,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 97,
+          "text": "Lex Fridman: There\u2019s a lot of aspects. I mean, the actual Google code base might just improve because it\u2019ll become more standardized, more easier for people to move about the code base because AI will help with that, and therefore, that will also allow the AI to understand the entire code base better, which makes the engineering aspect. So I\u2019ve been using Cursor a lot as a way to program with Gemini and other models. One of its powerful things is it\u2019s aware of the entire code base, and that allows you to ask questions of it. It allows the agents to move about that code base in a really powerful way. I mean, that\u2019s a huge unlock. Sundar Pichai: Think about, like, migrations, refactoring old code bases. Lex Fridman: Refactoring, yeah. Sundar Pichai: Yeah. I mean, think about once we can do all this in a much better, more robust way than where we are today. Lex Fridman: I think in the end, everything will be written in JavaScript and run in Chrome.",
+          "score": 11.518348693847656,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks discuss Gemini's capabilities in robotics and programming but do not identify a specific AI product highlighted by Sundar Pichai as central to Google's AI-first strategy, nor do they provide any scaling metrics.\n\nThe agent should search for Sundar Pichai's announcements or keynotes regarding Google's AI-first strategy, focusing on specific product highlights and any mentioned performance or scaling metrics for Gemini or other core AI offerings.",
+      "timestamp": 47.24514126777649
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "Sundar Pichai Google AI Overviews Gemini processing capabilities metric scale",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 54.433311223983765
+    }
+  ],
+  "final_answer": "Sundar Pichai highlighted AI overviews and AI mode within Search as central to Google's AI strategy. He mentioned that AI mode is currently in the hands of millions of people, with encouraging early metrics. However, the provided context does not include a specific scaling metric about its processing capabilities.",
+  "total_chunks_retrieved": 14,
+  "unique_episodes_found": [
+    459,
+    471
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 64.77644419670105
+}

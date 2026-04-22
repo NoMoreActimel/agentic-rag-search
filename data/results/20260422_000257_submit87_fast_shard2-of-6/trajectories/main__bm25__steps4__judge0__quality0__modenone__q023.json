@@ -1,0 +1,152 @@
+{
+  "question": "Considering the discussion where Michael Paulson mentions Pieter Levels, what is Pieter Levels' preferred approach to funding his startups, as detailed in his own interview?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Michael Paulson mentions Pieter Levels funding",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59116,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Michael Paulson, better known online as ThePrimeagen. He is a programmer who has entertained and inspired millions of people to have fun building stuff with software, whether you\u2019re a newbie or a seasoned developer who has been battling it out in the software engineering trenches for decades. In short, ThePrimeagen is a legendary programmer and a great human being with an inspiring roller coaster of a life story. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s ThePrimeagen.\n\n\n## Love for programming\n\nLex Fridman: What do you love most about programming? What brings you joy when you program? ThePrimeagen: I can tell you the first time that I ever felt love in programming, or felt that joy or that excitement-\n\nLex Fridman: Sure. ThePrimeagen: Which was in college.",
+          "score": 5.679920673370361,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59285,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 169,
+          "text": "And I beat it. And it was such an incredible, great experience. And the last leader of Turok II is called the Primeagen. And so when I was a kid, when you\u2019re in fifth grade, that\u2019s super cool, named after the bad guy. And so for a long time on any internet thing, like Grail Online that I mentioned earlier, the name was ThePrimeagen. It was great. And then I became an adult eventually, and it\u2019s just like, okay, I\u2019m an adult. My name\u2019s Michael Paulson underscore. And that\u2019s what I was on the internet for a long time was that. And I remember it was like 2017, 2018, somewhere in there. I remember just how bad the tech world had kind of become. It was just like this super pretentious place, tons of dick measuring, just everything that just was the worst. Ken Wheeler got canceled over playing the Circle game. It was just like, it is so hard to describe to people that weren\u2019t there, but it was just the worst place to be. Tech was extremely unfun. It was extremely awful.",
+          "score": 5.679920673370361,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59515,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 399,
+          "text": "And so it\u2019s one of the best parts about doing this side is that you get a chance to potentially improve somebody\u2019s life. And you getting to interview a lot of people, there\u2019s a lot of people that listened to Chris Latner and saw his excitement for Swift and probably went and learned Swift and then got really amazing jobs and it can be all origined back to back to you in that interview. And so those are amazing things. And so same goes back to you, you\u2019ve done a lot of good stuff. Lex Fridman: Right back at you brother. Thank you for talking today. Thanks for listening to this conversation with Michael Paulson, aka ThePrimeagen. To support this podcast, please check out our sponsors in the description. And now let me leave you with some words from Paulo Coelho. \u201cWhen we strive to become better than we are, everything around us becomes better too.\u201d Thank you for listening and hope to see you next time.",
+          "score": 5.427896499633789,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54614,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 55,
+          "text": "Do you think it\u2019ll know-\n\nPieter Levels: Yeah, Austin-\n\nLex Fridman: \u2026 in Texas? In Austin, Texas? Pieter Levels: With cowboy hat? Lex Fridman: In Texas, yeah. Pieter Levels: As a cowboy. Lex Fridman: As a cowboy. It\u2019s going to go so towards the porn direction. It\u2019s [inaudible 00:40:25]-\n\nPieter Levels: Man, I hope not. It\u2019s the end of my career. Lex Fridman: Or the beginning, it depends. \u201d We can send you a push notification when your photos are done.\u201d All right, cool. Pieter Levels: Yeah, let\u2019s see. Lex Fridman: Oh, wow, so this whole interface you\u2019ve built? Pieter Levels: Yeah. Lex Fridman: This is really well done. Pieter Levels: It\u2019s all jQuery. So, I still use jQuery? Lex Fridman: Yes-\n\nPieter Levels: The only one? Lex Fridman: \u2026 still-\n\nPieter Levels: After 10 years? Lex Fridman: \u2026 to this day. You\u2019re not the only one. The web is PHP, the stack-\n\nPieter Levels: It\u2019s PHP and jQuery, yes, and SQLite.",
+          "score": 4.6864423751831055,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54806,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 247,
+          "text": "Lex Fridman: It\u2019s like, \u201cShh.\u201d\n\nPieter Levels: Yeah. Lex Fridman: White noise, I think it\u2019s the same. It\u2019s like big noise, white noise. Brown noise, I think it\u2019s like bassier. Pieter Levels: Yeah. It\u2019s more diffused. More dampened. Lex Fridman: Dampened. Pieter Levels: Yeah, I can see that. Lex Fridman: No sharpness. Pieter Levels: Yeah, sharp brightness. Lex Fridman: Yeah, brightness. Pieter Levels: Yeah, yeah. I can see that. And you use a headphone, right? Lex Fridman: Yeah, headphones. Pieter Levels: Yeah. Lex Fridman: I actually walk around in life often with brown noise. Pieter Levels: Dude, that\u2019s like psychopath shit, but it\u2019s cool. Lex Fridman: Yeah, yeah, yeah. When I murder people, it helps. It drowns out their screams. Pieter Levels: Jesus Christ. Lex Fridman: I said too much. Pieter Levels: Man, I\u2019m going to try brown noise. Lex Fridman: With the murder or for the coding? Yeah. Pieter Levels: For the coding, yeah. Lex Fridman: Okay, good. Try it. Try it.",
+          "score": 4.678194999694824,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.319401741027832
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Pieter Levels startup funding approach interview",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54710,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 151,
+          "text": "Pieter Levels: They don\u2019t anymore. Lex Fridman: There\u2019s a bunch of bureaucracy, yeah. Pieter Levels: At Google. Lex Fridman: There\u2019s so many brilliant, brilliant people there, but it just moves slowly. Pieter Levels: Yeah. Lex Fridman: I wonder why that is and maybe that\u2019s the natural way of a company, but you have people like Elon who rolls in and just fires most of the folks and always push the company to operate as a startup even when it\u2019s already big. Pieter Levels: But Apple does this. I started in business school. Apple does competing product teams that operate as startups. So it\u2019s three to five people, they make something, they have multiple teams make the same thing. The best team wins. So I think you need to emulate a free market inside a company to make it entrepreneurial.",
+          "score": 7.149537086486816,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54561,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 2,
+          "text": "This was an honor and a pleasure for me. This is the Lex Friedman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s Pieter Levels.\n\n\n## Startup philosophy\n\nLex Fridman: You\u2019ve launched a lot of companies and built a lot of products. As you say, most failed, but some succeeded. What\u2019s your philosophy behind building the startups that you did? Pieter Levels: I think my philosophy is very different than most people in startups, because most people in startups, they build a company and they raise money and they hire people and then they build a product and they find something that makes money. And I don\u2019t really raise money. I don\u2019t use VC funding, I do everything myself. I\u2019m a designer, I\u2019m the developer, I make everything, I make the logo. So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works.",
+          "score": 6.841087341308594,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54613,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 54,
+          "text": "That\u2019s what I\u2019m talking about. This is with cats, but look at the cat face. It\u2019s also kind of mangled. Lex Fridman: I\u2019m a little bit disturbed. Pieter Levels: You can zoom in on the cat if you want. This is a very sad cat. It doesn\u2019t have a nose. Lex Fridman: It doesn\u2019t have a nose, wow. Pieter Levels: Man, but this is the problem with AI startups, because they all act like it\u2019s perfect, like this is groundbreaking, but it\u2019s not perfect. It\u2019s really bad half the time. Lex Fridman: So, if I wanted to sort of update model as-\n\nPieter Levels: Yeah, so you remove this stuff, and you write whatever you want, like in Thailand or something, or in Tokyo. Lex Fridman: In Tokyo? Pieter Levels: Yeah. Lex Fridman: And-\n\nPieter Levels: You could say like at night with neon lights. You can add more detail to [inaudible 00:40:11]-\n\nLex Fridman: I\u2019ll go in Austin. Do you think it\u2019ll know-\n\nPieter Levels: Yeah, Austin-\n\nLex Fridman: \u2026 in Texas? In Austin, Texas? Pieter Levels: With cowboy hat?",
+          "score": 6.325125694274902,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54715,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 156,
+          "text": "Pieter Levels: No, you can get pretty far, I think. Lex Fridman: You get pretty far. Pieter Levels: Website builders are pretty advanced. All you need is a grid of images that are clickable that open another page. Lex Fridman: Yeah. Pieter Levels: You can get quite far. Lex Fridman: How do I learn to program? Choose a programming language to start with. Pieter Levels: FreeCodeCamp is good. Lex Fridman: Work through resources thematically. Practice coding regularly for 30, 60 minutes a day. Consistency is key. Join programming communities like Reddit\u2019s\u2026 Yeah. Yeah, it\u2019s pretty good. Pieter Levels: Yeah. Lex Fridman: It\u2019s pretty good. Pieter Levels: So I think it\u2019s a very good starting ground because imagine you know nothing and you want to make a website, you want to make a startup. That\u2019s why, man, the power of AI for education is going to be insane. People anywhere can ask this question and start building stuff. Lex Fridman: Yeah, it clarifies it for sure.",
+          "score": 6.18859338760376,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54843,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 284,
+          "text": "All the projects that you\u2019ve tried and the ones that succeeded. Pieter Levels: There\u2019s very few. Lex Fridman: Mute life. Pieter Levels: This was for Twitter to mute, to share the mute list. Lex Fridman: Yeah. Fire calculator, no more Google, maker rank, how much is my side project worth, climate finder, ideasai, airlinelist-\n\nPieter Levels: Airlinelist still runs, but it doesn\u2019t make money. Airlinelist compares the safety of airlines. Because I was nervous to fly, so I was like, \u201cLet\u2019s collect all the data on the crashes for all the airplanes.\u201d\n\nLex Fridman: Bali sea cable. Nice. That\u2019s awesome. Make village, nomad gear, 3D and virtual reality dev, play my inbox, like you mentioned. There\u2019s a lot of stuff. Pieter Levels: Yeah, man. Lex Fridman: I\u2019m trying to find some embarrassing tweets of yours. Pieter Levels: You can go to the highlights tab. It has all the good shit. Lex Fridman: There you go. Pieter Levels: This was Dubai. Lex Fridman: POV, building an AI startup. Wow.",
+          "score": 6.18859338760376,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.340853214263916
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 8.072001695632935
+    }
+  ],
+  "final_answer": "Pieter Levels' preferred approach to funding his startups is to avoid raising money or using VC funding. He operates as a solo founder, handling all aspects of design and development himself. This 'scrappy' method necessitates moving quickly to test ideas and determine their viability without external financial backing.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    440,
+    461
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 8.072004079818726
+}

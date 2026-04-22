@@ -1,0 +1,140 @@
+{
+  "question": "Considering the discussions by Dylan Patel and Nathan Lambert regarding DeepSeek's hardware and the US government's actions, and Keyu Jin's perspective on US export controls, what was the approximate total number of GPUs in DeepSeek's cluster, how many H800 GPUs were used for DeepSeek-V3's pre-training, and in what year did the US government ban the H800?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dylan Patel Nathan Lambert DeepSeek GPU cluster",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58634,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.982,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 1.0
+        },
+        {
+          "chunk_id": 58641,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 70,
+          "text": "Again, the fund, research and ablations. Nathan Lambert: For ballpark, how much would OpenAI or Anthropic had. I think the clearest example we have, because Meta is also open, they talk about order of 60k to 100k H100 equivalent GPUs in their training clusters. Dylan Patel: Right. So Llama 3, they trained on 16,000 H100s, but the company of Meta last year publicly disclosed they bought 400 something thousand GPUs. Nathan Lambert: Yeah. Dylan Patel: Right? So of course, tiny percentage on the training. Again, most of it is serving me the best Instagram Reels or whatever. Nathan Lambert: I mean, we could get into a cost of, what is the cost of ownership for a 2,000 GPU cluster, 10,000? There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big.",
+          "score": 0.982,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 1.0
+        },
+        {
+          "chunk_id": 58643,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 72,
+          "text": "So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs. So any chip that had interconnects above a certain level and FLOPs above a certain \u2026 Floating point operations above a certain level was restricted. Later, the government realized that this was a flaw in the restriction and they cut it down to just floating point operations. And so-\n\nNathan Lambert: H800 had high FLOPs, low communication? Dylan Patel: Exactly. So, the H800 was the same performance as H100 on FLOPs, but it just had the interconnect bandwidth cut. DeepSeek knew how to utilize this. \u201cHey, even though we\u2019re cut back on the interconnect, we can do all this fancy stuff to figure out how to use the GPU fully anyways.\u201d\n\nAnd so that was back in October 2022. But later in 2023, into 2023 implemented in 2024, the U.S. government banned the H800. Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023.",
+          "score": 0.982,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 1.0
+        },
+        {
+          "chunk_id": 58620,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 49,
+          "text": "Nathan Lambert: I\u2019m sure DeepSeek definitely has code bases that are extremely messy, where they\u2019re testing these new ideas. Multi-head latent attention probably could start in something like a Jupyter Notebook, or somebody tries something on a few GPUs and that is really messy. But the stuff that trains the DeepSeek V3 and DeepSeek-R1, those libraries, if you were to present them to us, I would guess are extremely high-quality code. Lex Fridman: So, high-quality, readable code. Yeah. Dylan Patel: I think there is one aspect to note though is that there is the general ability for that to transfer across different types of runs. You may make really, really high-quality code for one specific model architecture at one size, and then that is not transferable to, \u201d Hey, when I make this architecture tweak, everything\u2019s broken again,\u201d right? That\u2019s something that could be with their specific low-level coding of scheduling SMs is specific to this model architecture and size.",
+          "score": 0.852,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.8571428571428571
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.804,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.8571428571428571
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.2596919536590576
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "DeepSeek-V3 H800 GPUs",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 58644,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 73,
+          "text": "Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023. And they\u2019re just getting the model out now because it takes a lot of research, et cetera. H800 was banned and now there\u2019s a new chip called the H20. The H20 is cut back on only FLOPs, but the interconnect bandwidth is the same. And in fact, in some ways it\u2019s better than the H100 because it has better memory bandwidth and memory capacity. So Nvidia is working within the constraints of what the government sets and then builds the best possible GPU for China. Lex Fridman: Can we take this actual tangent and we\u2019ll return back to the hardware, is the philosophy, the motivation, the case for export controls? What is it? Dario Amodei just published a blog post about export controls.",
+          "score": 0.7486666666666666,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 58637,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 58642,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 71,
+          "text": "There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big. Their compute allocation is one of the top few in the world that\u2019s not OpenAI, Anthropic, et cetera, but they have a lot of compute.\n\n\n## Export controls on GPUs to China\n\nLex Fridman: Can you in gentlemen actually just zoom out and also talk about the Hopper architecture, the Nvidia Hopper GPU architecture and the difference between H100 and H800, like you mentioned, the interconnects? Dylan Patel: Yeah. So there\u2019s, Ampere was the A100 and then H100 Hopper, right? People use them synonymously in the U.S. because really there\u2019s just H100 and now there\u2019s H200, right, but same thing mostly? In China, there\u2019ve been different salvos of expert restrictions. So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 58711,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 140,
+          "text": "Now obviously other people around the world get affected negatively. Obviously the Chinese people are not going to be in as advantageous of a position if that happens, but this is the reality of what\u2019s being done and the actions that are being carried out.\n\n\n## Best GPUs for AI\n\nLex Fridman: Can we go back to the specific detail of the different hardware? There\u2019s this nice graphic in the export controls of which GPUs are allowed to be exported and which are not. Can you explain the difference? From a technical perspective, are the H20s promising? Dylan Patel: Yeah. And I think we need to dive really deep into the reasoning aspect and what\u2019s going on there. The US has gone through multiple iterations of the export controls. This H800 was at one point allowed back in \u201923, but then it got canceled and by then DeepSeek had already built their cluster of, they claim, 2K. I think they actually have many more, something like 10K of those. And now this H20 is the legally allowed chip.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.1155104637146
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.73054814338684
+    }
+  ],
+  "final_answer": "DeepSeek built a cluster of 10,000 A100 GPUs in 2021. For DeepSeek-V3's pre-training, they claimed to use 2,000 H800 GPUs, which were purchased in late 2023. The US government banned the H800 in 2023, with the ban implemented in 2024.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    459
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 9.730550527572632
+}

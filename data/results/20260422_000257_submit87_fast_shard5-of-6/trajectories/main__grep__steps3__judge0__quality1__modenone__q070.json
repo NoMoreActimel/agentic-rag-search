@@ -1,0 +1,196 @@
+{
+  "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Neuralink human implants number target",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 5111,
+          "episode_id": 66,
+          "guest": "Ayanna Howard",
+          "chunk_index": 7,
+          "text": "There's a lot of folks in the automotive industry, they're very confident from Elon Musk to Waymo to all these companies. How hard is it to solve that last piece? The last mile. The gap between the perfection and the human definition of how you actually function in this world. Yeah, so this is a moving target. So I remember when all the big companies started to heavily invest in this and there was a number of even roboticists as well as folks who were putting in the VCs and corporations, Elon Musk being one of them that said, self driving cars on the road with people within five years, that was a little while ago. And now people are saying five years, 10 years, 20 years, some are saying never, right? I think if you look at some of the things that are being successful is these basically fixed environments where you still have some anomalies, right? You still have people walking, you still have stores, but you don't have other drivers, right?",
+          "score": 0.702,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 13150,
+          "episode_id": 133,
+          "guest": "Manolis Kellis",
+          "chunk_index": 61,
+          "text": "So you basically use the dead Cas9 to bring in an activator or to bring in a repressor. So you can now ask, is this enhancer changing that gene by taking this modified CRISPR, which is already modified from the bacteria to be used in humans, that you can now modify the Cas9 to be dead Cas9, and you can now further modify to bring in a regulator, and you can basically turn on or turn off that enhancer and then see what is the impact on that gene. So these are the four ways of linking the locus to the target gene, and that's step number five. Step number five is find the target gene, and step number six is what the heck does that gene do? You basically now go and manipulate that gene to basically see what are the processes that change, and you can basically ask, well, in this particular case, in the FTO locus, we found mesenchymal stem cells that are the progenitors of white fat and brown fat or beige fat. We found the RS1421085 nucleotide variant as the causal variant.",
+          "score": 0.702,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 19666,
+          "episode_id": 174,
+          "guest": "Tyler Cowen",
+          "chunk_index": 103,
+          "text": "They have a one or two sentence description of the human, of what goes on on Earth. It's kind of interesting to think if there's a lot of intelligent civilizations out there that in the big encyclopedia that describes the universe, humans will only have one sentence, maybe two. Probably true. Yeah. But it's the only one I can read and understand, right? And it may be hard to understand the human one past a number of centuries. Yeah, with AI, yes. Like how many years from now will reading Wikipedia be like trying to read Chaucer, which I almost can do, but I actually can't. I need a translation. Probably you can't do it at all. Yeah. I mean, maybe reading will be outdated. It might be a very silly notion. Maybe we're fundamentally, like we think language is fundamental to cognition, but it could be something visual or something totally different that we'll plug in. Neuralink or, yeah. But in that story, that Wikipedia article, do you think there'll be a section on the meaning of it?",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 23561,
+          "episode_id": 194,
+          "guest": "Bret Weinstein",
+          "chunk_index": 191,
+          "text": "And we just stop thinking about it because it's there. Some years you get the flu, most years you don't. Maybe you get the vaccine to prevent it. Maybe the vaccine isn't particularly well targeted. But imagine just simply doubling that cost. Imagine we get stuck with SARS CoV2 and its descendants going forward and that it just settles in and becomes a fact of modern human life. That would be a disaster, right? The number of people we will ultimately lose is incalculable. The amount of suffering that will be caused is incalculable. The loss of wellbeing and wealth, incalculable. So that ought to be a very high priority, driving this extinct before it becomes permanent. And the ability to drive extinct goes down the longer we delay effective responses.",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 9787,
+          "episode_id": 113,
+          "guest": "Manolis Kellis",
+          "chunk_index": 104,
+          "text": "Well, so to push back on that, do you think it's possible that without understanding the functionally about the brain or from the neuroscience or the cognitive science or psychology, whichever level of the brain we'll look at, do you think if we just connect them, just like per your previous point, if we just have a high enough resolution between connection between a Wikipedia and your brain, the brain will just figure it out with us understanding because that's one of the innovations of Neuralink is they're increasing the number of connections to the brain to like several thousand, which before was in the dozens or whatever. You're still off by a few orders of magnitude on the order of seven. Right, but the thing is, the hope is if you increase that number more and more and more, maybe you don't need to understand anything about the actual how human thought is represented in the brain. You can just let it figure it out by itself. Keanu Reeves waking up and saying, I know cook food.",
+          "score": 0.63,
+          "source": "grep",
+          "quality_score": 0.7,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.753488540649414
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Neuralink human implants current number",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 53867,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 33,
+          "text": "Let\u2019s say you look at this plant or whatever, and hey, I\u2019d really like to make that plant happy, but it\u2019s not saying a lot. Lex Fridman: So the more we increase the data rate that humans can intake and output, then that means the better, the higher the chance we have in a world full of AGI\u2019s. Elon Musk: Yeah. We could better align collective human will with AI if the output rate especially was dramatically increased. And I think there\u2019s potential to increase the output rate by, I don\u2019t know, three, maybe six, maybe more orders of magnitude. So, it\u2019s better than the current situation. Lex Fridman: And that output rate would be by increasing the number of electrodes, number of channels, and also maybe implanting multiple Neuralinks? Elon Musk: Yeah. Lex Fridman: Do you think there\u2019ll be a world in the next couple of decades where it\u2019s hundreds of millions of people have Neuralinks? Elon Musk: Yeah, I do.",
+          "score": 0.8419999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.8
+        },
+        {
+          "chunk_id": 3776,
+          "episode_id": 49,
+          "guest": "Elon Musk",
+          "chunk_index": 9,
+          "text": "That's part of why I helped make that movie. Thank you for smoking. You can sort of see just how pernicious it can be when you have these companies effectively achieve regulatory capture of government. The bad people in the community refer to the advent of digital super intelligence as a singularity. That is not to say that it is good or bad, but that it is very difficult to predict what will happen after that point. And then there's some probability it will be bad, some probably it'll be it will be good. We obviously want to affect that probability and have it be more good than bad. Well, let me on the merger with AI question and the incredible work that's being done at Neuralink. There's a lot of fascinating innovation here across different disciplines going on. So the flexible wires, the robotic sewing machine, that responsive brain movement, everything around ensuring safety and so on. So we currently understand very little about the human brain.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 2968,
+          "episode_id": 39,
+          "guest": "Colin Angle",
+          "chunk_index": 3,
+          "text": "It's not through any AI or intent on the robot's part. It's because following the three laws is aligned with being a good robot product. So I guess it does, but not by explicit design. So then the bigger picture, what role do you hope to see robotics, robots take in what's currently mostly a world of humans? We need robots to help us continue to improve our standard of living. We need robots because the average age of humanity is increasing very quickly, and simply the number of people young enough and spry enough to care for the elder growing demographic is inadequate. And so what is the role of robots? Today, the role is to make our lives a little easier, a little cleaner, maybe a little healthier.",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3777,
+          "episode_id": 49,
+          "guest": "Elon Musk",
+          "chunk_index": 10,
+          "text": "So we currently understand very little about the human brain. Do you also hope that the work at Neuralink will help us understand more about our about our human brain? Yeah, I think the work in Neuralink will definitely shed a lot of insight into how the brain, the mind works. Right now, just the data we have regarding how the brain works is very limited. You know, we've got fMRI, which is that that's kind of like putting us, you know, stethoscope on the outside of a factory wall and then putting it like all over the factory wall and you can sort of hear the sounds, but you don't know what the machines are doing, really. It's hard. You can infer a few things, but it's very broad brushstroke. In order to really know what's going on in the brain, you really need you have to have high precision sensors. And then you want to have stimulus and response. Like if you trigger a neuron, what, how do you feel? What do you see? How does it change your perception of the world?",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 161,
+          "episode_id": 3,
+          "guest": "Steven Pinker",
+          "chunk_index": 6,
+          "text": "That is, they are very good at extracting high order statistical regularities, but most of the systems don't have a semantic level, a level of actual understanding of who did what to whom, why, where, how things work, what causes what else. Do you think that kind of thing can emerge as it does? So artificial neural networks are much smaller, the number of connections and so on than the current human biological networks, but do you think sort of to go to consciousness or to go to this higher level semantic reasoning about things, do you think that can emerge with just a larger network with a more richly weirdly interconnected network? Separate it in consciousness because consciousness is even a matter of complexity. A really weird one. Yeah, you could sensibly ask the question of whether shrimp are conscious, for example, they're not terribly complex, but maybe they feel pain. So let's just put that part of it aside.",
+          "score": 0.63,
+          "source": "grep",
+          "quality_score": 0.7,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 26.98261570930481
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Neuralink current human implants",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 46319,
+          "episode_id": 395,
+          "guest": "Walter Isaacson",
+          "chunk_index": 76,
+          "text": "What can you say about these people in terms of time management? Walter Isaacson: Well, Musk is in a league of his own in the way he does it. First of all, Steve Jobs had to run Pixar and Apple for a while, but Musk every couple of hours is switching his mindset from how to implant the Neuralink chip and what will the robot that implants it in the brain look like and how fast can we make it move? Then the heat shield on the Raptor or switching to human imitation, machine learning, full self-drive. On the night that the Twitter board agreed to the deal, this is huge around the world. I\u2019m sure you remember like, \u201cMusk buys Twitter.\u201d It wasn\u2019t when the deal closed, it was when Twitter accepted his offer. I thought, \u201cOkay,\u201d but then he went to Boca Chica, to South Texas and spent time fixating on, if I remember correctly, a valve in the Raptor engine that had a methane leak issue and what were the possible ways to fix it.",
+          "score": 0.8069999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 21171,
+          "episode_id": 182,
+          "guest": "John Danaher",
+          "chunk_index": 135,
+          "text": "But if it is cyborg Gordon Ryan, where he's part Gordon Ryan with heuristics and part machine, then, and now that's where I throw the question back at you, young man, what do you think? Well, I'm fascinated to hear your answer. That's very interesting because there's a lot of different ways you can build a cyborg Gordon Ryan. So one is there's the Neuralink way, which is basically doing what you're suggesting, which is expanding the computational capabilities of Gordon Ryan's brain, like directly being able to communicate between a computer and the brain. So you preserve most of what there is in the human body, including the nervous system and the computing system we currently have that's biological and expanding over the computer. There's also on the cyborg chess front, like Magnus Carlsen, the current world champion in chess, he studies AlphaZero games. Like it's not a regular thing for high level grandmasters.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 34742,
+          "episode_id": 265,
+          "guest": "Devon Larratt",
+          "chunk_index": 88,
+          "text": "You have robot friends. You have human friends, and the robots make your human to human relationships much more meaningful and richer. They bring more love to the world, but it's integrated. It's not like they'll be developing smarter and smarter as, like, sentient beings by themselves. I think that's very difficult to do. You have to be doing that together with humans, and so we'll come for the ride. There's technical things, like, we might merge, like, cyborgs more and more. Well, we already saw our cyborgs, right? With the phones and so on, but more and more. So with Elon and Neuralink, deeper integration of robots and AI into, like, increasing the bandwidth at which they can communicate. So if we do implants in the brain, I think, again, a lot of people are really nervous about this, as am I, but I think there's a lot of trajectories that are positive there. That, to me, is exciting, and also, I just don't think it's possible to stop this development, so we should steer it.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 32.28574013710022
+    }
+  ],
+  "final_answer": "The provided text does not state how many human participants have received Neuralink implants as of the recording, nor does it mention a target number of implants by the end of the year. Additionally, there is no information in the provided context about Kelsi Sheren's age when she served in Afghanistan.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    194,
+    66,
+    3,
+    133,
+    39,
+    265,
+    395,
+    174,
+    113,
+    49,
+    438,
+    182
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 41.198002576828
+}

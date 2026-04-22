@@ -1,0 +1,118 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 0.39784329128265383,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.250426769256592
+        },
+        {
+          "chunk_id": 8633,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 58,
+          "text": "So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah. Yeah, maybe talk through the history of OpenCog and your thinking about these ideas. I would say OpenCog 2.0 is a term we're throwing around sort of tongue in cheek because the existing OpenCog system that we're working on now is not remotely close to what we'd consider a 1.0, right? I mean, it's an early... It's been around, what, 13 years or something, but it's still an early stage research system, right? And actually, we are going back to the beginning in terms of theory and implementation because we feel like that's the right thing to do, but I'm sure what we end up with is gonna have a huge amount in common with the current system. I mean, we all still like the general approach. So first of all, what is OpenCog?",
+          "score": 0.3951588951746623,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.13538122177124
+        },
+        {
+          "chunk_id": 8635,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 60,
+          "text": "No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code. And you can use SingularityNet as part of the infrastructure for a distributed OpenCog system, but there are different layers. Yeah, got it. So OpenCog on the one hand as a software framework could be used to implement a variety of different AI architectures and algorithms, but in practice, there's been a group of developers which I've been leading together with Linus Vepstas, Neil Geisweiler, and a few others, which have been using the OpenCog platform and infrastructure to implement certain ideas about how to make an AGI. So there's been a little bit of ambiguity about OpenCog, the software platform versus OpenCog, the AGI design, because in theory, you could use that software to do, you could use it to make a neural net. You could use it to make a lot of different AGI.",
+          "score": 0.3908910182317098,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.95247220993042
+        },
+        {
+          "chunk_id": 8717,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 142,
+          "text": "Then your body interacts even more loosely with the other people that you talk to. So you often have networks within networks within networks with progressively looser coupling as you get higher up in that hierarchy. I mean, you have that in biology, you have that in the internet as a just networking medium. And I think that's what we're gonna have in the network of software processes leading to AGI. That's a beautiful way to see the world. Again, the same similar question is with OpenCog. If somebody wanted to build an AI system and plug into the SingularityNet, what would you recommend? Yeah, so that's much easier. I mean, OpenCog is still a research system. So it takes some expertise to, and sometimes, we have tutorials, but it's somewhat cognitively labor intensive to get up to speed on OpenCog. And I mean, what's one of the things we hope to change with the true AGI OpenCog 2.0 version is just make the learning curve more similar to TensorFlow or Torch or something.",
+          "score": 0.3805067907969157,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.507433891296387
+        },
+        {
+          "chunk_id": 8676,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 101,
+          "text": "I mean, Hugo Latapie from Cisco gave a talk touching on that at last year's AGI conference, it was in Shenzhen. On the other hand, we learned from there, it was kind of clunky to get the deep neural models to work well with the symbolic system because we were using torch. And torch keeps a sort of state computation graph, but you needed like real time access to that computation graph within our hypergraph. And we certainly did it, Alexey Polopov who leads our St. Petersburg team wrote a great paper on cognitive modules in OpenCog explaining sort of how do you deal with the torch compute graph inside OpenCog. But in the end we realized like, that just hadn't been one of our design thoughts when we built OpenCog, right?",
+          "score": 0.3749187790552775,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.267947673797607
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.3256690502166748
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "OpenCog core programming languages",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 8677,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 102,
+          "text": "But in the end we realized like, that just hadn't been one of our design thoughts when we built OpenCog, right? So between wanting really fast dependent type checking and wanting much more efficient interoperation between the computation graphs of deep neural net frameworks and OpenCog's hypergraph and adding on top of that, wanting to more effectively run an OpenCog hypergraph distributed across RAM in 10,000 machines, which is we're doing dozens of machines now, but it's just not, we didn't architect it with that sort of modern scalability in mind. So these performance requirements are what have driven us to want to rearchitect the base, but the core AGI paradigm doesn't really change. Like the mathematics is the same. It's just, we can't scale to the level that we want in terms of distributed processing or speed of various kinds of processing with the current infrastructure that was built in the phase 2001 to 2008, which is hardly shocking.",
+          "score": 0.41063231341044104,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.798527717590332
+        },
+        {
+          "chunk_id": 8636,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 61,
+          "text": "You could use it to make a lot of different AGI. What kind of stuff does the software platform provide, like in terms of utilities, tools, like what? Yeah, let me first tell about OpenCog as a software platform, and then I'll tell you the specific AGI R&D we've been building on top of it. So the core component of OpenCog as a software platform is what we call the atom space, which is a weighted labeled hypergraph. ATOM, atom space. Atom space, yeah, yeah, not atom, like Adam and Eve, although that would be cool too. Yeah, so you have a hypergraph, which is like, so a graph in this sense is a bunch of nodes with links between them. A hypergraph is like a graph, but links can go between more than two nodes. So you have a link between three nodes. And in fact, OpenCog's atom space would properly be called a metagraph because you can have links pointing to links, or you could have links pointing to whole subgraphs, right? So it's an extended hypergraph or a metagraph.",
+          "score": 0.40240784835815424,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.446050643920898
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.8849213123321533
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "OpenCog programming language",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 6.5838329792022705
+    }
+  ],
+  "final_answer": "The retrieved context explicitly mentions Torch as a framework that was used with OpenCog, and TensorFlow is referenced as a comparison for making OpenCog's learning curve more accessible. However, the provided text does not mention any distinct large language models by name, nor does it include discussions with Sebastian Raschka or Nathan Lambert. Therefore, the context is insufficient to answer the second part of the question.",
+  "total_chunks_retrieved": 7,
+  "unique_episodes_found": [
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 11.972837448120117
+}

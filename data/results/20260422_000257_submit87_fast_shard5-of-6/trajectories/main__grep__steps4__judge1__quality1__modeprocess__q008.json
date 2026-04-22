@@ -1,0 +1,265 @@
+{
+  "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dylan Patel Nathan Lambert Google Sundar Pichai AI product",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58675,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 104,
+          "text": "And then it\u2019s the ASML deep UV. What is that\u2026 Extreme ultraviolet lithography. Dylan Patel: Just set context on the chips. What Nathan\u2019s referring to is in 2020, Huawei released their Ascend 910 chip, which was an AI chip, first one on seven nanometer before Google did, before NVIDIA did. And they submitted it to the MLPerf benchmark, which is sort of a industry standard for machine learning performance benchmark, and it did quite well, and it was the best chip at the submission. This was a huge deal. The Trump admin, of course, banned, it was 2019, banned the Huawei from getting seven nanometer chips from TSMC. And so then they had to switch to using internal, domestically produced chips, which was a multi-year setback. Nathan Lambert: Many companies have done seven nanometer chips. And the question is we don\u2019t know how much Huawei was subsidizing production of that chip. Intel has made seven nanometer chips that are not profitable and things like this.",
+          "score": 0.8069999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 58890,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 319,
+          "text": "Dylan Patel: The chat application clearly does not have tons of room to continue. The standard chat where you\u2019re just using it for a random question and stuff. The cost continues to collapse. V3 is the latest one. Nathan Lambert: It\u2019ll go down with the ads. Dylan Patel: But it\u2019s going to get supported by ads. Meta already serves 405B and probably loses the money, but at some point the models are going to get so cheap that they can just serve them for free with ad supported and that\u2019s what Google is going to be able to do. And obviously they\u2019ve got a bigger reach. Chat is not going to be the only use case. It\u2019s like these reasoning, code, agents, computer use, all this stuff is where OpenAI has to actually go to make money in the future otherwise they\u2019re kaputs. Lex Fridman: But X, Google, and Meta have these other products. So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 58888,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 317,
+          "text": "Meta has so many avenues to benefit from AI and all of their services. People are there. People spend time on that as platforms, and it\u2019s a way to make more money per user per hour. Lex Fridman: It seems like Google X/X AI/ Tesla important to say. And then Meta will benefit not directly from the AI like the LLMs, but from the intelligence, like the additional boost of intelligence to the products they already sell. So whether that\u2019s the recommendation system or for Elon who\u2019s been talking about Optimus, the robot, potentially the intelligence of the robot, and then you have personalized robots in the home, that kind of thing. He thinks it\u2019s a 10 plus trillion dollars business, which\u2026\n\nNathan Lambert: At some point, maybe. Not soon, but who knows when robotics will use for-\n\nDylan Patel: Let\u2019s do a TAM analysis, 8 billion humans and let\u2019s get 8 billion robots and let\u2019s pay them the average salary. And there we go. 10 trillion. More than 10 trillions.",
+          "score": 0.7169999999999999,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 58891,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 320,
+          "text": "So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are. Lex Fridman: But it\u2019s such a cutting edge. I mean-\n\nNathan Lambert: It depends on where you think AI capabilities are going. Lex Fridman: You have to keep winning. Dylan Patel: Yes. Lex Fridman: You have to keep winning as you climb, even if the AI capabilities are going super rapidly awesome into the direction of AGI, there\u2019s still a boost for X in terms of data, Google in terms of data, Meta in terms of data, in terms of other products and the money and there\u2019s just huge amounts of money. Dylan Patel: The whole idea is human data is kind of tapped out. We don\u2019t care. We all care about self-play, verifiable task. Nathan Lambert: Think about AWS. Lex Fridman: Yes, self-play, which is an RNG problem. Nathan Lambert: AWS does not make a lot of money on each individual machine.",
+          "score": 0.7169999999999999,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.6415,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.625
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. They discuss general AI industry trends, chip manufacturing, and the competitive landscape, but none mention Sundar Pichai, a specific Google AI product he highlighted, or any scaling metrics.\n\nThe agent should search for \"Sundar Pichai Google AI strategy product scaling metric\" or \"Sundar Pichai Google AI product processing capabilities\" to find the specific information.",
+      "timestamp": 2.710113286972046
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Google AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61610,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 54,
+          "text": "And now a year later, it\u2019s crazy. You showed this plot of all the things that were shipped over the past year. It\u2019s incredible. And Gemini Pro is winning across many benchmarks and products as we sit here today. So take me through that experience when there\u2019s all these articles saying you\u2019re the wrong guy to lead Google through this. Google is lost, is done, it\u2019s over, to today where Google is winning again. What were some low points during that time? Sundar Pichai: Look, lots to unpack. Obviously, the main bet I made as a CEO was to really make sure the company was approaching everything in a AI-first way, really setting ourselves up to develop AGI responsibly, and make sure we are putting out products which embodies that, things that are very, very useful for people. So look, I knew even through moments like that last year, I had a good sense of what we were building internally.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 61611,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 55,
+          "text": "So look, I knew even through moments like that last year, I had a good sense of what we were building internally. So I\u2019d already made many important decisions bringing together teams of the caliber of Brain and DeepMind and setting up Google DeepMind. There were things like we made the decision to invest in TPUs 10 years ago, so we knew we were scaling up and building big models. Anytime you\u2019re in a situation like that, a few aspects. I\u2019m good at tuning out noise, separating signal from noise. Do you scuba dive? Have you\u2026? Lex Fridman: No. Sundar Pichai: It\u2019s amazing. I\u2019m not good at it, but I\u2019ve done it a few times. But sometimes you jump in the ocean, it\u2019s so choppy, but you go down one feet under, it\u2019s the calmest thing in the entire universe. So there\u2019s a version of that. Running Google, you may as well be coaching Barcelona or Real Madrid. You have a bad season. So there are aspects to that. But look, I\u2019m good at tuning out the noise. I do watch out for signals.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 61623,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 67,
+          "text": "Of course once you show up to a page, you can use a basic translate, but that process of figuring it out, if you empathize with a large part of the world that doesn\u2019t speak English, their web is much smaller in that original language. And so it, again, unlocks that huge cognitive capacity there. You take for granted here with all the bloggers and the journalists writing about AI mode, you forget that this now unlocks because Gemini is really good at translation. Sundar Pichai: Oh it is. I mean the multimodality, the translation, it\u2019s ability to reason, we\u2019re dramatically improving tool use, and putting that power in the flow of Search, look, I\u2019m super excited with AI overviews. We\u2019ve seen the product has gotten much better, we measured using all kinds of user metrics. It\u2019s obviously driven strong growth of the product, and we\u2019ve been testing AI mode. It\u2019s now in the hands of millions of people and the early metrics are very encouraging.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 61649,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 93,
+          "text": "Sundar Pichai: I think a few things. Looking at Google, we\u2019ve given various stats around 30% of code now uses AI- generated suggestions or whatever it is. But the most important metric, and we carefully measure it is, like, how much has our engineering velocity increased as a company due to AI, right? It\u2019s tough measure, and we rigorously try to measure it, and our estimates are that number is now at 10%, right? Like, now, across the company, we\u2019ve accomplished a 10% engineering velocity increase using AI, but we plan to hire more engineers next year, right? Because the opportunity space of what we can do is expanding too, right? Lex Fridman: Mm-hmm. Sundar Pichai: So I think, hopefully, at least in the near to midterm, for many engineers, it frees up more and more of the\u2026 Even in engineering and coding, there are aspects which are so much fun. You\u2019re designing. You\u2019re architecting. You\u2019re solving a problem.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 61645,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 89,
+          "text": "So everything\u2019s aligned. Sundar Pichai: That is what makes this moment so unique because running, a company for the first time, you can do one investment in a very deep horizontal way. On top of it, you can drive multiple businesses forward, right? That\u2019s effectively what we are doing in Google and Alphabet, right? Lex Fridman: Yeah, it\u2019s all coming together. Like, it was planned ahead of time, but it\u2019s not, of course. It\u2019s all distributed. I mean, if Gmail, and Sheets, and all these other incredible services, I can sing Gmail praises for years. I mean, just this revolutionized email. But the moment you start to integrate AI Gemini into Gmail, I mean that\u2019s the other thing, speaking of productivity multiplier, people complain about email, but that changed everything. Email, like the invention of email changed everything, and it has been ripe. There\u2019s been a few folks trying to revolutionize email.",
+          "score": 0.6586666666666666,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": "Chunk 4 discusses an internal engineering velocity metric, not a product's processing capabilities, so it's less relevant. The other chunks strongly suggest Gemini as the central AI product. However, a specific impressive scaling metric related to Gemini's processing capabilities is missing.\n\nSearch for \"Sundar Pichai Gemini processing capabilities scaling metric\" or \"Sundar Pichai Gemini performance statistics\" to find the missing information.",
+      "timestamp": 93.64847493171692
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Gemini processing capabilities scaling metric",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 61581,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 25,
+          "text": "But then it\u2019ll be just nice to hear humans struggle with the information, contend with the information, try to internalize it, combine it with the complexity of our own emotions and consciousness and all that kind of stuff. But if you actually want to find out about a piece of history, you go to Gemini. If you want to see Lex struggle with that history, or other humans, you look at that. The point is, it\u2019s going to continue to change the nature of how we discover information, how we consume the information, how we create that information, the same way that YouTube changed everything completely. It changed the news. And that\u2019s something our society\u2019s struggling with. Sundar Pichai: YouTube enabled\u2026 You know this better than anyone else. It\u2019s enabled so many creators. There is no doubt in me that we will enable more filmmakers than have ever been. You\u2019re going to empower a lot more people. So I think there is an expansionary aspect of this, which is underestimated, I think.",
+          "score": 0.552,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 61586,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 30,
+          "text": "Lex Fridman: It\u2019s a paintbrush. Sundar Pichai: Yeah. So, I think that\u2019s how. Obviously, there have to be some things. And society needs to decide at a fundamental level what\u2019s okay, what\u2019s not, will be responsible with it. But I do think when it comes to artistic free expression, I think that\u2019s one of those values we should work hard to defend. Lex Fridman: I wonder if you can comment on maybe earlier versions of Gemini were a little bit careful on the kind of things it\u2019d be willing to answer. I just want to comment on I was really surprised, and pleasantly surprised, and enjoy the fact that Gemini 2.5 Pro is a lot less careful, in a good sense. Don\u2019t ask me why, but I\u2019ve been doing a lot of research on Genghis Khan and the Aztecs, so there\u2019s a lot of violence there in that history. It\u2019s a very violent history. I\u2019ve also been doing a lot of research on World War I and World War II. Earlier versions of Gemini were very\u2026 Basically this sense, are you sure you want to learn about this.",
+          "score": 0.552,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 61587,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 31,
+          "text": "Earlier versions of Gemini were very\u2026 Basically this sense, are you sure you want to learn about this. And now, it\u2019s actually very factual, objective, talks about very difficult parts of human history, and does so with nuance and depth. It\u2019s been really nice. But there\u2019s a line there that I guess Google has to walk. And it\u2019s also an engineering challenge how to do that at scale across all the weird queries that people ask. Can you just speak to that challenge? How do you allow Gemini to say\u2026 Again, forgive, pardon my French\u2026 crazy shit, but not too crazy? Sundar Pichai: I think one of the good insights here has been as the models are getting more capable, the models are really good at this stuff. And so I think in some ways, maybe a year ago, the models weren\u2019t fully there, so they would also do stupid things more often. So you\u2019re trying to handle those edge cases, but then you make a mistake in how you handle those edge cases and it compounds.",
+          "score": 0.552,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 61577,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 21,
+          "text": "Maybe not fully today, we are at the early stages of vibe coding. I\u2019ve been amazed at what people have put out online with Veo 3. But it takes a bit of work, you have to stitch together a set of prompts. But all this is going to get better. The thing I always think: this is the worst it\u2019ll ever be, at any given moment in time. Lex Fridman: It\u2019s interesting you went there as a first thought: an exponential increase of access to creativity. Sundar Pichai: Software, creation\u2026 Are you creating a program, a piece of content to be shared with others, games down the line? All of that just becomes infinitely more possible. Lex Fridman: I think the big thing is that it makes it accessible. It unlocks the cognitive capabilities of the entire 8 billion. Sundar Pichai: I agree. Think about 40 years ago, maybe in the US there were five people who could do what you were doing. Lex Fridman: Mm-hmm.",
+          "score": 0.522,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.42857142857142855
+        }
+      ],
+      "judge_feedback": "Chunk 4 is irrelevant as it does not mention Gemini or Google's AI strategy. Chunks 1, 2, and 3 confirm Gemini as the AI product discussed by Sundar Pichai, but they do not explicitly state its centrality to Google's \"AI-first strategy\" nor provide any specific processing scaling metrics.\n\nThe next search should focus on finding information about Gemini's role in Google's \"AI-first strategy\" and specific scaling metrics.\n**Next Search Query:** Sundar Pichai Gemini AI-first strategy processing scaling metric",
+      "timestamp": 101.77060413360596
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Gemini trillions operations tokens parameters performance",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 3708,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 32,
+          "text": "Didn't serve implicit conversions very well. It didn't serve mixed type arithmetic, mixed type computations very well. A lot of stuff came out of the functional community and that community didn't deal with multiple types in the same way as C++ does, had more constraints on what you could express and didn't have the draconian performance requirements. And basically we tried. We tried very hard. We had some successes, but it just in the end wasn't, didn't compile fast enough, was too hard to use and didn't run fast enough unless you had optimizers that was beyond the state of the art. They still are. So we had to do something else. Basically it was the idea that a set of parameters has defined a set of operations and you go through an interaction table just like for virtual functions and then you try to optimize the interaction away to get performance. And we just couldn't do all of that. But get back to the standardization.",
+          "score": 0.5145,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.375
+        },
+        {
+          "chunk_id": 53207,
+          "episode_id": 434,
+          "guest": "Aravind Srinivas",
+          "chunk_index": 78,
+          "text": "You take common crawl and instead of one billion go all the way to 175 billion. But that was done through analysis called a scaling loss, which is, for a bigger model, you need to keep scaling the amount of tokens and you train on 300 billion tokens. Now it feels small. These models are being trained on tens of trillions of tokens and trillions of parameters. But this is literally the evolution. Then the focus went more into pieces outside the architecture on data, what data you\u2019re training on, what are the tokens, how dedupe they are, and then the chinchilla inside. It\u2019s not just about making the model bigger, but you want to also make the data set bigger. You want to make sure the tokens are also big enough in quantity and high quality and do the right evals on a lot of reasoning benchmarks. So I think that ended up being the breakthrough. It\u2019s not like a attention alone was important.",
+          "score": 0.5145,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.375
+        },
+        {
+          "chunk_id": 56219,
+          "episode_id": 447,
+          "guest": "Cursor Team",
+          "chunk_index": 147,
+          "text": "So it\u2019ll be interesting to see how people play with all these dimensions. Lex: So yeah, I mean you speak to the multiple dimensions, obviously. The original conception was just looking at the variables of the size of the model as measured by parameters, and the size of the data as measured by the number of tokens, and looking at the ratio of the two. Aman: Yeah. Lex: And it\u2019s kind of a compelling notion that there is a number, or at least a minimum. And it seems like one was emerging. Do you still believe that there is a kind of bigger is better? Aman: I mean I think bigger is certainly better for just raw performance. Sualeh: And raw intelligence. Aman: And raw intelligence. I think the path that people might take, is\u2026 I\u2019m particularly bullish on distillation. And how many knobs can you turn to, if we spend a ton, ton of money on training, get the most capable cheap model. Really, really caring as much as you can.",
+          "score": 0.5145,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.375
+        },
+        {
+          "chunk_id": 58721,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 150,
+          "text": "Nathan Lambert: They help with memory constraint and performance. Gemini is the model that has the longest context length that people are using. Gemini is known for one million and now two million context length. You put a whole book into Gemini and sometimes it\u2019ll draw facts out of it. It\u2019s not perfect, they\u2019re getting better. So there\u2019s two things. It\u2019s, one, to be able to serve this on the memory level. Google has magic with their TPU stack where they can serve really long contexts. And then there\u2019s also many decisions along the way to actually make long context performance work that supplies the data. There\u2019s subtle changes to these computations in attention and it changes the architecture. But serving long context is extremely memory constrained, especially when you\u2019re making a lot of predictions. I actually don\u2019t know why input and output tokens are more expensive, but I think essentially output tokens, you have to do more computation because you have to sample from the model.",
+          "score": 0.5145,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.375
+        },
+        {
+          "chunk_id": 61573,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 17,
+          "text": "It\u2019s recursively self-improving, it\u2019s capable of that. The fact it is the first technology will dramatically accelerate creation itself, like creating things, building new things, can improve and achieve things on its own, I think puts it in a different. So, I think the impact it\u2019ll end up having will far surpass everything we\u2019ve seen before. Obviously, with that comes a lot of important things to think and wrestle with, but I definitely think that\u2019ll end up being the case. Lex Fridman: Especially if it gets to the point of where we can achieve superhuman performance on the AI research itself. So, it\u2019s a technology that may\u2026 It\u2019s an open question, but it may be able to achieve a level to where the technology itself can create itself better than it could yesterday. Sundar Pichai: It\u2019s like the move 37 of Alpha research or whatever it is. Lex Fridman: Yeah. Sundar Pichai: You\u2019re right, when it can do novel, self-directed research.",
+          "score": 0.5025,
+          "source": "grep",
+          "quality_score": 0.8,
+          "original_score": 0.375
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant. Chunks 2, 3, and 5 discuss general AI scaling or Sundar Pichai's high-level views, but do not link a specific product to a scaling metric from Pichai. Chunk 4 mentions Gemini and Google's TPU stack but doesn't attribute a specific scaling metric to Sundar Pichai.\n\nTo fill the gaps, search for direct statements from Sundar Pichai specifically about Gemini's processing capabilities or performance metrics, such as \"trillions of operations.\"",
+      "timestamp": 114.58842396736145
+    }
+  ],
+  "final_answer": "Sundar Pichai highlighted AI overviews in Search as a central product embodying Google's AI-first strategy, expressing excitement about its integration into Search. While he mentioned Google's focus on scaling up and building big models, the provided context does not include a specific impressive scaling metric about a product's processing capabilities that he shared.",
+  "total_chunks_retrieved": 19,
+  "unique_episodes_found": [
+    459,
+    48,
+    434,
+    471,
+    447
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 130.97208380699158
+}

@@ -134,6 +134,116 @@ python scripts/05_run_experiments.py \
   --top-k 5
 ```
 
+**Throughput presets (`--profile`)** — applies when `--qa-concurrency` / `--eval-concurrency` / `--max-in-flight-llm` are omitted:
+
+| Profile | `qa_concurrency` | `eval_concurrency` | `max_in_flight_llm` |
+|---------|------------------|--------------------|---------------------|
+| `stable` | 2 | 2 | 4 |
+| `balanced` | from `GEMINI_QA_CONCURRENCY_DEFAULT` | from `GEMINI_EVAL_CONCURRENCY` | (unset) |
+| `aggressive` | 8 | 4 | 12 |
+
+Tune RPM / burst / SDK concurrency via `.env` (see `.env.example`). `qa_concurrency` is capped at `2 * GEMINI_CONCURRENT_LIMIT` for stability.
+
+**Resume after a crash** — reuse the same output directory and append only missing rows:
+
+```bash
+python scripts/05_run_experiments.py \
+  --resume \
+  --output-dir data/results/<your_run_dir> \
+  --run-main-grid \
+  --mode full \
+  --max-steps-values 2,3,4 \
+  --top-k 5
+```
+
+Re-run only rows that previously ended with `status=error` in `runs.jsonl`:
+
+```bash
+python scripts/05_run_experiments.py \
+  --resume --retry-errors \
+  --output-dir data/results/<your_run_dir> \
+  --run-main-grid --mode full --max-steps-values 2,3,4 --top-k 5
+```
+
+**Multi-process sharding** (best wall-clock for large QA sets):
+
+```bash
+python scripts/05b_launch_shards.py --shards 3 -- \
+  --run-main-grid --mode full --max-steps-values 2,3,4 --top-k 5 --output-tag myrun
+```
+
+Merge disjoint shard directories into one folder for analysis:
+
+```bash
+python scripts/05c_merge_shards.py data/results/merged_myrun \
+  data/results/<timestamp>_myrun_shard0-of-3 \
+  data/results/<timestamp>_myrun_shard1-of-3 \
+  data/results/<timestamp>_myrun_shard2-of-3
+```
+
+**Exact high-throughput recipe used for 87-QA full-grid runs**
+
+1. (Optional) clean cancelled shard folders from prior attempts:
+
+```bash
+rm -rf data/results/submit87_shard0 data/results/submit87_shard1 \
+       data/results/submit87_shard2 data/results/submit87_shard3
+```
+
+2. Launch aggressive 6-shard run (uses `.env` throughput settings):
+
+```bash
+/usr/bin/time -v .venv-linux/bin/python scripts/05b_launch_shards.py --shards 6 -- \
+  --run-main-grid \
+  --mode full \
+  --limit 87 \
+  --max-steps-values 2,3,4 \
+  --top-k 5 \
+  --profile aggressive \
+  --max-in-flight-llm 16 \
+  --output-tag submit87_fast
+```
+
+3. Monitor progress:
+
+```bash
+wc -l data/results/*submit87_fast*shard*-of-6*/runs.jsonl
+```
+
+4. If one shard stalls or crashes, resume only that shard:
+
+```bash
+.venv-linux/bin/python scripts/05_run_experiments.py \
+  --resume --retry-errors \
+  --run-main-grid --mode full --limit 87 --max-steps-values 2,3,4 --top-k 5 \
+  --profile aggressive --max-in-flight-llm 16 \
+  --shard 3/6 \
+  --output-dir data/results/<timestamp>_submit87_fast_shard3-of-6
+```
+
+5. Merge completed shards:
+
+```bash
+.venv-linux/bin/python scripts/05c_merge_shards.py data/results/submit87_fast_merged \
+  data/results/<timestamp>_submit87_fast_shard0-of-6 \
+  data/results/<timestamp>_submit87_fast_shard1-of-6 \
+  data/results/<timestamp>_submit87_fast_shard2-of-6 \
+  data/results/<timestamp>_submit87_fast_shard3-of-6 \
+  data/results/<timestamp>_submit87_fast_shard4-of-6 \
+  data/results/<timestamp>_submit87_fast_shard5-of-6
+```
+
+6. Final sanity check (expect `3132` rows = `36*87`):
+
+```bash
+python3 - << 'PY'
+import pandas as pd
+p='data/results/submit87_fast_merged/per_example_metrics.csv'
+df=pd.read_csv(p)
+print('rows=',len(df),'conditions=',df['condition_id'].nunique())
+PY
+```
+
 Run only the quality-off arm (18 conditions) while chunk quality scoring is still in progress:
 
 ```bash
@@ -171,9 +281,10 @@ python scripts/05_run_experiments.py \
 
 Each run creates `data/results/<timestamp>[_tag]/` with:
 
-- `manifest.json`: run configuration and dataset references
+- `manifest.json`: run configuration and dataset references (includes `resume_events` when using `--resume`)
+- `progress.json`: lightweight checkpoint for operators (updated after each condition)
 - `conditions_main.json` / `conditions_oracle_mini.json`: executed condition definitions
-- `runs.jsonl`: per-example records (config, answers, metrics, usage deltas)
+- `runs.jsonl`: per-example records (config, answers, metrics, usage deltas; `status` is `ok` or `error`)
 - `trajectories/*.json`: full trajectory per example-condition pair
 - `per_example_metrics.csv`: flattened table for analysis
 - `summary_by_condition.csv`: aggregate metrics by condition

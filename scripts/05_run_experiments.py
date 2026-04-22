@@ -8,9 +8,11 @@ import asyncio
 import json
 import random
 import sys
+import traceback
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 from tqdm import tqdm
@@ -29,11 +31,21 @@ from config.settings import (
     ensure_dirs,
 )
 from src.agent.search_agent import SearchAgent
-from src.evaluation.metrics import evaluate_example_metrics
+from src.evaluation.metrics import ExampleMetrics, evaluate_example_metrics, _token_f1
 from src.judge.judges import OracleJudge, ProcessJudge
 from src.llm.gemini_client import GeminiClient
 from src.tools.chunk_quality import QUALITY_SCORES_PATH
 from src.tools.retrieval_tools import ToolRegistry
+
+
+class _AsyncNullContext:
+    """Async context manager that does nothing (for optional global concurrency caps)."""
+
+    async def __aenter__(self) -> None:
+        return None
+
+    async def __aexit__(self, exc_type, exc, tb) -> bool:
+        return False
 
 
 @dataclass
@@ -124,23 +136,47 @@ def parse_args() -> argparse.Namespace:
         help="Optional output directory path. Defaults to data/results/<timestamp>_<tag>.",
     )
     parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Continue a prior run: requires --output-dir pointing at an existing results folder. "
+             "Skips (condition_id, qa_id) pairs already present in runs.jsonl (see --retry-errors).",
+    )
+    parser.add_argument(
+        "--retry-errors",
+        action="store_true",
+        help="With --resume, only skip pairs whose latest runs.jsonl row has status=ok (re-run failures).",
+    )
+    parser.add_argument(
+        "--profile",
+        choices=["stable", "balanced", "aggressive"],
+        default=None,
+        help="Preset for --qa-concurrency / --eval-concurrency / --max-in-flight-llm when those flags "
+             "are omitted (balanced matches previous defaults).",
+    )
+    parser.add_argument(
+        "--max-in-flight-llm",
+        type=int,
+        default=None,
+        help="Optional global cap on concurrent end-to-end QA pipelines (agent+eval+IO). "
+             "Reduces correlated retry storms when credits are high but APIs are sensitive.",
+    )
+    parser.add_argument(
         "--qa-concurrency",
         type=int,
-        default=GEMINI_QA_CONCURRENCY_DEFAULT,
+        default=None,
         help=(
-            "Max concurrent QA trajectories within a single condition (default from "
-            "GEMINI_QA_CONCURRENCY_DEFAULT). Higher overlaps local retrieval work; "
-            "very high values vs GEMINI_CONCURRENT_LIMIT increase API contention tails."
+            "Max concurrent QA trajectories within a single condition (default: GEMINI_QA_CONCURRENCY_DEFAULT "
+            "or --profile). Higher overlaps local retrieval work; very high vs GEMINI_CONCURRENT_LIMIT "
+            "increases API contention tails."
         ),
     )
     parser.add_argument(
         "--eval-concurrency",
         type=int,
-        default=GEMINI_EVAL_CONCURRENCY,
+        default=None,
         help=(
             "Max concurrent post-hoc LLM evaluator calls (global within this process). "
-            "Caps 'thundering herd' when many agents finish together (default from "
-            "GEMINI_EVAL_CONCURRENCY)."
+            "Default: GEMINI_EVAL_CONCURRENCY or --profile."
         ),
     )
     parser.add_argument(
@@ -157,7 +193,143 @@ def parse_args() -> argparse.Namespace:
         help="Shard selector 'i/N' — run only conditions where index %% N == i. "
              "Use to split the grid across multiple processes with separate quotas.",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    _apply_profile_and_defaults(args)
+    return args
+
+
+def _apply_profile_and_defaults(args: argparse.Namespace) -> None:
+    """Resolve --profile defaults then fill None concurrency fields."""
+    if args.profile == "stable":
+        qa_d, ev_d, inf_d = 2, 2, 4
+    elif args.profile == "balanced":
+        qa_d, ev_d, inf_d = GEMINI_QA_CONCURRENCY_DEFAULT, GEMINI_EVAL_CONCURRENCY, None
+    elif args.profile == "aggressive":
+        qa_d, ev_d, inf_d = 8, 4, 12
+    else:
+        qa_d, ev_d, inf_d = GEMINI_QA_CONCURRENCY_DEFAULT, GEMINI_EVAL_CONCURRENCY, None
+
+    if args.qa_concurrency is None:
+        args.qa_concurrency = qa_d
+    if args.eval_concurrency is None:
+        args.eval_concurrency = ev_d
+    if args.max_in_flight_llm is None and args.profile is not None:
+        args.max_in_flight_llm = inf_d
+
+    if args.resume and args.output_dir is None:
+        raise ValueError("--resume requires --output-dir pointing to an existing run directory.")
+
+    cap = max(1, GEMINI_CONCURRENT_LIMIT * 2)
+    if args.qa_concurrency > cap:
+        print(
+            f"INFO: capping --qa-concurrency from {args.qa_concurrency} to {cap} "
+            f"(<= 2 * GEMINI_CONCURRENT_LIMIT={GEMINI_CONCURRENT_LIMIT})."
+        )
+        args.qa_concurrency = cap
+
+
+def _jsonl_line_count(path: Path) -> int:
+    if not path.exists():
+        return 0
+    n = 0
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                n += 1
+    return n
+
+
+def load_skip_pairs(runs_jsonl: Path, retry_errors: bool) -> set[tuple[str, str]]:
+    """Pairs to skip on resume. If retry_errors, only skip latest rows with status ok (or missing)."""
+    if not runs_jsonl.exists():
+        return set()
+    last: dict[tuple[str, str], dict[str, Any]] = {}
+    with open(runs_jsonl, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            key = (rec.get("condition_id", ""), rec.get("qa_id", ""))
+            if key[0] and key[1]:
+                last[key] = rec
+    if not retry_errors:
+        return set(last.keys())
+    skip: set[tuple[str, str]] = set()
+    for key, rec in last.items():
+        if rec.get("status", "ok") != "error":
+            skip.add(key)
+    return skip
+
+
+def write_progress_json(output_dir: Path, extra: dict[str, Any]) -> None:
+    """Small checkpoint file for operators (safe to read mid-run)."""
+    payload = {"updated_at": datetime.now().isoformat(), **extra}
+    tmp = output_dir / "progress.json.tmp"
+    out = output_dir / "progress.json"
+    tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=True), encoding="utf-8")
+    tmp.replace(out)
+
+
+def finalize_experiment_outputs(output_dir: Path, client: GeminiClient) -> None:
+    """Rebuild CSV + summaries from runs.jsonl (supports resume append)."""
+    runs_path = output_dir / "runs.jsonl"
+    if not runs_path.exists():
+        df = pd.DataFrame()
+    else:
+        df = pd.read_json(runs_path, lines=True)
+    if df.empty:
+        print("WARNING: runs.jsonl is empty; skipping CSV/summary generation.")
+        return
+
+    df.to_csv(output_dir / "per_example_metrics.csv", index=False)
+    summary = aggregate_results(df)
+    summary.to_csv(output_dir / "summary_by_condition.csv", index=False)
+
+    overview = {
+        "rows": len(df),
+        "conditions": int(df["condition_id"].nunique()),
+        "qa_count_per_condition": int(df["qa_count"].max()),
+        "overall_success_rate": float(df["success"].astype(float).mean()),
+        "overall_judge_score": float(df["judge_score"].mean()),
+        "overall_retrieval_precision": float(df["retrieval_precision"].mean()),
+        "overall_hallucination_rate": float(df["hallucination_rate"].mean()),
+        "overall_cost_usd": float(df["cost_usd"].sum()),
+    }
+    if "status" in df.columns:
+        overview["rows_status_error"] = int((df["status"] == "error").sum())
+    with open(output_dir / "summary_overview.json", "w", encoding="utf-8") as f:
+        json.dump(overview, f, indent=2, ensure_ascii=True)
+
+
+def ensure_output_dir(args: argparse.Namespace) -> Path:
+    """Create or reuse a results directory (resume requires existing --output-dir)."""
+    if args.resume:
+        out_dir = Path(args.output_dir).resolve()
+        if not out_dir.is_dir():
+            raise ValueError(f"--resume: output directory does not exist: {out_dir}")
+        (out_dir / "trajectories").mkdir(parents=True, exist_ok=True)
+        return out_dir
+
+    if args.output_dir is not None:
+        out_dir = Path(args.output_dir).resolve()
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "trajectories").mkdir(parents=True, exist_ok=True)
+        return out_dir
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    suffix_parts = []
+    if args.output_tag:
+        suffix_parts.append(args.output_tag)
+    if args.shard:
+        suffix_parts.append(f"shard{args.shard.replace('/', '-of-')}")
+    suffix = ("_" + "_".join(suffix_parts)) if suffix_parts else ""
+    out_dir = RESULTS_DIR / f"{timestamp}{suffix}"
+    (out_dir / "trajectories").mkdir(parents=True, exist_ok=True)
+    return out_dir
 
 
 def usage_snapshot(client: GeminiClient) -> dict:
@@ -267,23 +439,6 @@ def load_qa_subset(mode: str, num_questions: int, seed: int, limit: int | None) 
     return qa_pairs
 
 
-def create_output_dir(args: argparse.Namespace) -> Path:
-    if args.output_dir:
-        out_dir = args.output_dir
-    else:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        suffix_parts = []
-        if args.output_tag:
-            suffix_parts.append(args.output_tag)
-        if args.shard:
-            # Make shard directories distinct so parallel processes don't collide.
-            suffix_parts.append(f"shard{args.shard.replace('/', '-of-')}")
-        suffix = ("_" + "_".join(suffix_parts)) if suffix_parts else ""
-        out_dir = RESULTS_DIR / f"{timestamp}{suffix}"
-    (out_dir / "trajectories").mkdir(parents=True, exist_ok=True)
-    return out_dir
-
-
 async def append_jsonl(path: Path, payload: dict, lock: asyncio.Lock) -> None:
     """Append to JSONL with an async lock so concurrent writers don't interleave lines."""
     line = json.dumps(payload, ensure_ascii=True) + "\n"
@@ -295,26 +450,34 @@ async def append_jsonl(path: Path, payload: dict, lock: asyncio.Lock) -> None:
 
 def aggregate_results(df: pd.DataFrame) -> pd.DataFrame:
     numeric_cols = [
-        "success",
-        "judge_score",
-        "retrieval_precision",
-        "hallucination_rate",
-        "lexical_f1",
-        "exact_match",
-        "reference_episode_recall",
-        "trajectory_length",
-        "elapsed_seconds",
-        "cost_usd",
+        c
+        for c in [
+            "success",
+            "judge_score",
+            "retrieval_precision",
+            "hallucination_rate",
+            "lexical_f1",
+            "exact_match",
+            "reference_episode_recall",
+            "trajectory_length",
+            "elapsed_seconds",
+            "cost_usd",
+        ]
+        if c in df.columns
     ]
     group_cols = [
-        "suite",
-        "condition_id",
-        "retriever",
-        "max_steps",
-        "process_feedback",
-        "quality_reweight",
-        "judge_mode",
-        "qa_count",
+        c
+        for c in [
+            "suite",
+            "condition_id",
+            "retriever",
+            "max_steps",
+            "process_feedback",
+            "quality_reweight",
+            "judge_mode",
+            "qa_count",
+        ]
+        if c in df.columns
     ]
     summary = (
         df.groupby(group_cols, as_index=False)[numeric_cols]
@@ -336,86 +499,181 @@ async def _run_single_qa(
     runs_jsonl_lock: asyncio.Lock,
     sem: asyncio.Semaphore,
     eval_sem: asyncio.Semaphore,
+    pipeline_sem: asyncio.Semaphore | None,
 ) -> dict:
-    """Run one (condition, question) trajectory end-to-end. Safe to run concurrently."""
-    async with sem:
-        question = qa["question"]
-        answer = qa["answer"]
-        reference_episodes = qa.get("reference_episodes", [])
-        qa_type = qa.get("qa_type", "unknown")
-        era = qa.get("era", "unknown")
-        qa_id = f"q{qa_idx:03d}"
-
-        if condition.judge_mode == "process":
-            judge = ProcessJudge(client=client)
-        elif condition.judge_mode == "oracle":
-            judge = OracleJudge(client=client, ground_truth=answer)
-        else:
-            judge = None
-
-        agent = SearchAgent(
+    """Run one (condition, question) trajectory end-to-end. Never raises: failures become rows."""
+    outer = pipeline_sem if pipeline_sem is not None else _AsyncNullContext()
+    async with outer:
+        return await _run_single_qa_body(
+            qa_idx=qa_idx,
+            qa=qa,
+            condition=condition,
             client=client,
-            tool_registry=registry,
-            tool_name=condition.retriever,
-            max_steps=condition.max_steps,
-            top_k_per_step=top_k,
-            judge=judge,
+            registry=registry,
+            output_dir=output_dir,
+            top_k=top_k,
+            qa_count=qa_count,
+            runs_jsonl_lock=runs_jsonl_lock,
+            sem=sem,
+            eval_sem=eval_sem,
         )
 
-        # Note: usage_snapshot/delta is best-effort under concurrency — GeminiClient
-        # stats are process-global, so deltas around concurrent trajectories will
-        # include other in-flight work. The aggregate totals at end-of-run are exact.
-        before = usage_snapshot(client)
-        trajectory = await agent.run(question)
-        after = usage_snapshot(client)
-        delta = usage_delta(before, after)
 
-        trajectory_dict = trajectory.to_dict()
+async def _run_single_qa_body(
+    qa_idx: int,
+    qa: dict,
+    condition: ExperimentCondition,
+    client: GeminiClient,
+    registry: ToolRegistry,
+    output_dir: Path,
+    top_k: int,
+    qa_count: int,
+    runs_jsonl_lock: asyncio.Lock,
+    sem: asyncio.Semaphore,
+    eval_sem: asyncio.Semaphore,
+) -> dict:
+    question = qa["question"]
+    answer = qa["answer"]
+    reference_episodes = qa.get("reference_episodes", [])
+    qa_type = qa.get("qa_type", "unknown")
+    era = qa.get("era", "unknown")
+    qa_id = f"q{qa_idx:03d}"
+    trajectory_path = output_dir / "trajectories" / f"{condition.condition_id}__{qa_id}.json"
 
-    trajectory_path = (
-        output_dir
-        / "trajectories"
-        / f"{condition.condition_id}__{qa_id}.json"
-    )
-    with open(trajectory_path, "w", encoding="utf-8") as f:
-        json.dump(trajectory_dict, f, indent=2, ensure_ascii=True)
+    try:
+        async with sem:
+            if condition.judge_mode == "process":
+                judge = ProcessJudge(client=client)
+            elif condition.judge_mode == "oracle":
+                judge = OracleJudge(client=client, ground_truth=answer)
+            else:
+                judge = None
 
-    async with eval_sem:
-        metrics = await evaluate_example_metrics(
-            client=client,
-            question=question,
-            ground_truth=answer,
-            predicted_answer=trajectory.final_answer,
-            reference_episodes=reference_episodes,
-            trajectory=trajectory_dict,
+            agent = SearchAgent(
+                client=client,
+                tool_registry=registry,
+                tool_name=condition.retriever,
+                max_steps=condition.max_steps,
+                top_k_per_step=top_k,
+                judge=judge,
+            )
+
+            # usage_snapshot/delta is best-effort under concurrency (shared client stats).
+            before = usage_snapshot(client)
+            trajectory = await agent.run(question)
+            after = usage_snapshot(client)
+            delta = usage_delta(before, after)
+            trajectory_dict = trajectory.to_dict()
+
+        with open(trajectory_path, "w", encoding="utf-8") as f:
+            json.dump(trajectory_dict, f, indent=2, ensure_ascii=True)
+
+        async with eval_sem:
+            metrics = await evaluate_example_metrics(
+                client=client,
+                question=question,
+                ground_truth=answer,
+                predicted_answer=trajectory.final_answer,
+                reference_episodes=reference_episodes,
+                trajectory=trajectory_dict,
+            )
+
+        record = {
+            "status": "ok",
+            "suite": condition.suite,
+            "condition_id": condition.condition_id,
+            "retriever": condition.retriever,
+            "max_steps": condition.max_steps,
+            "process_feedback": condition.process_feedback,
+            "quality_reweight": condition.quality_reweight,
+            "judge_mode": condition.judge_mode,
+            "qa_id": qa_id,
+            "qa_type": qa_type,
+            "era": era,
+            "question": question,
+            "ground_truth_answer": answer,
+            "predicted_answer": trajectory.final_answer,
+            "reference_episodes": reference_episodes,
+            "trajectory_path": str(trajectory_path),
+            "qa_count": qa_count,
+            "trajectory_length": len(trajectory.steps),
+            "elapsed_seconds": trajectory.elapsed_seconds,
+            "total_chunks_retrieved": trajectory.total_chunks_retrieved,
+            "usage_delta": delta,
+            "cost_usd": delta["estimated_cost"],
+            **metrics.to_dict(),
+        }
+        await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
+        return record
+
+    except Exception as exc:
+        tb = traceback.format_exc()
+        err_msg = f"{type(exc).__name__}: {exc}"
+        trajectory_dict = {
+            "question": question,
+            "steps": [],
+            "final_answer": "",
+            "total_chunks_retrieved": 0,
+            "unique_episodes_found": [],
+            "num_steps": 0,
+            "elapsed_seconds": 0.0,
+            "runner_error": err_msg,
+        }
+        try:
+            with open(trajectory_path, "w", encoding="utf-8") as f:
+                json.dump(trajectory_dict, f, indent=2, ensure_ascii=True)
+        except OSError:
+            trajectory_path = output_dir / "trajectories" / f"{condition.condition_id}__{qa_id}__FAILED.json"
+
+        metrics = ExampleMetrics(
+            judge_score=1,
+            is_correct=False,
+            retrieval_precision=0.0,
+            hallucination_rate=1.0,
+            lexical_f1=_token_f1(answer, ""),
+            exact_match=False,
+            success=False,
+            reason=f"Run failed before metrics: {err_msg}",
+            reference_episode_recall=0.0,
         )
-
-    record = {
-        "suite": condition.suite,
-        "condition_id": condition.condition_id,
-        "retriever": condition.retriever,
-        "max_steps": condition.max_steps,
-        "process_feedback": condition.process_feedback,
-        "quality_reweight": condition.quality_reweight,
-        "judge_mode": condition.judge_mode,
-        "qa_id": qa_id,
-        "qa_type": qa_type,
-        "era": era,
-        "question": question,
-        "ground_truth_answer": answer,
-        "predicted_answer": trajectory.final_answer,
-        "reference_episodes": reference_episodes,
-        "trajectory_path": str(trajectory_path),
-        "qa_count": qa_count,
-        "trajectory_length": len(trajectory.steps),
-        "elapsed_seconds": trajectory.elapsed_seconds,
-        "total_chunks_retrieved": trajectory.total_chunks_retrieved,
-        "usage_delta": delta,
-        "cost_usd": delta["estimated_cost"],
-        **metrics.to_dict(),
-    }
-    await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
-    return record
+        record = {
+            "status": "error",
+            "error_type": type(exc).__name__,
+            "error_message": str(exc),
+            "error_traceback": tb[-8000:],  # cap size
+            "suite": condition.suite,
+            "condition_id": condition.condition_id,
+            "retriever": condition.retriever,
+            "max_steps": condition.max_steps,
+            "process_feedback": condition.process_feedback,
+            "quality_reweight": condition.quality_reweight,
+            "judge_mode": condition.judge_mode,
+            "qa_id": qa_id,
+            "qa_type": qa_type,
+            "era": era,
+            "question": question,
+            "ground_truth_answer": answer,
+            "predicted_answer": "",
+            "reference_episodes": reference_episodes,
+            "trajectory_path": str(trajectory_path),
+            "qa_count": qa_count,
+            "trajectory_length": 0,
+            "elapsed_seconds": 0.0,
+            "total_chunks_retrieved": 0,
+            "usage_delta": {
+                "requests": 0,
+                "errors": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "embedding_tokens": 0,
+                "estimated_cost": 0.0,
+            },
+            "cost_usd": 0.0,
+            **metrics.to_dict(),
+        }
+        print(f"ERROR QA failed ({condition.condition_id}, {qa_id}): {err_msg}")
+        await append_jsonl(output_dir / "runs.jsonl", record, runs_jsonl_lock)
+        return record
 
 
 async def run_single_condition(
@@ -427,11 +685,24 @@ async def run_single_condition(
     qa_concurrency: int,
     runs_jsonl_lock: asyncio.Lock,
     eval_sem: asyncio.Semaphore,
+    skip_pairs: set[tuple[str, str]],
+    pipeline_sem: asyncio.Semaphore | None,
 ) -> list[dict]:
+    pending: list[tuple[int, dict]] = []
+    for qa_idx, qa in enumerate(qa_items):
+        qa_id = f"q{qa_idx:03d}"
+        key = (condition.condition_id, qa_id)
+        if key in skip_pairs:
+            continue
+        pending.append((qa_idx, qa))
+
     print(
-        f"\n=== Running {condition.condition_id} on {len(qa_items)} questions "
+        f"\n=== Running {condition.condition_id} on {len(pending)}/{len(qa_items)} questions "
         f"(qa_concurrency={qa_concurrency}) ==="
     )
+    if not pending:
+        print("(all questions already completed for this condition — skipping)")
+        return []
 
     if condition.quality_reweight and not QUALITY_SCORES_PATH.exists():
         print(
@@ -463,15 +734,22 @@ async def run_single_condition(
             runs_jsonl_lock=runs_jsonl_lock,
             sem=sem,
             eval_sem=eval_sem,
+            pipeline_sem=pipeline_sem,
         )
-        for qa_idx, qa in enumerate(qa_items)
+        for qa_idx, qa in pending
     ]
 
-    # tqdm_asyncio.gather preserves submission order in the returned list.
     records: list[dict] = await tqdm_asyncio.gather(
         *tasks,
         desc=progress_desc,
         leave=False,
+    )
+    write_progress_json(
+        output_dir,
+        {
+            "last_condition_id": condition.condition_id,
+            "rows_in_runs_jsonl": _jsonl_line_count(output_dir / "runs.jsonl"),
+        },
     )
     return records
 
@@ -486,6 +764,8 @@ async def run_condition_group(
     condition_concurrency: int,
     runs_jsonl_lock: asyncio.Lock,
     eval_sem: asyncio.Semaphore,
+    skip_pairs: set[tuple[str, str]],
+    pipeline_sem: asyncio.Semaphore | None,
     group_desc: str,
 ) -> list[dict]:
     """Run a list of conditions, optionally with N conditions in flight at once."""
@@ -503,6 +783,8 @@ async def run_condition_group(
                     qa_concurrency=qa_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
                     eval_sem=eval_sem,
+                    skip_pairs=skip_pairs,
+                    pipeline_sem=pipeline_sem,
                 )
             )
         return all_records
@@ -520,6 +802,8 @@ async def run_condition_group(
                 qa_concurrency=qa_concurrency,
                 runs_jsonl_lock=runs_jsonl_lock,
                 eval_sem=eval_sem,
+                skip_pairs=skip_pairs,
+                pipeline_sem=pipeline_sem,
             )
 
     nested: list[list[dict]] = await tqdm_asyncio.gather(
@@ -563,51 +847,72 @@ async def main() -> None:
             "consider lowering eval concurrency or sharding across processes."
         )
 
+    inflight = getattr(args, "max_in_flight_llm", None)
     print(
         f"Tuning: RPM={GEMINI_RPM_LIMIT} (burst cap={GEMINI_RPM_BURST_CAPACITY}), "
         f"concurrent_sdk={GEMINI_CONCURRENT_LIMIT}, "
         f"qa_concurrency={args.qa_concurrency}, eval_concurrency={args.eval_concurrency}, "
-        f"condition_concurrency={args.condition_concurrency}"
+        f"max_in_flight_llm={inflight}, condition_concurrency={args.condition_concurrency}"
     )
 
-    output_dir = create_output_dir(args)
+    output_dir = ensure_output_dir(args)
+    runs_path = output_dir / "runs.jsonl"
+    skip_pairs = load_skip_pairs(runs_path, args.retry_errors) if args.resume else set()
+    if args.resume:
+        print(f"Resume: skipping {len(skip_pairs)} (condition_id, qa_id) pairs from {runs_path}")
+
     print(f"Writing outputs to: {output_dir}")
     if args.shard:
         print(f"Running shard {args.shard}")
 
+    manifest_path = output_dir / "manifest.json"
+    created_at = datetime.now().isoformat()
+    resume_events: list[dict[str, Any]] = []
+    if args.resume and manifest_path.exists():
+        prior = json.loads(manifest_path.read_text(encoding="utf-8"))
+        created_at = prior.get("created_at", created_at)
+        resume_events = list(prior.get("resume_events", []))
+        resume_events.append(
+            {
+                "resumed_at": datetime.now().isoformat(),
+                "args": {k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()},
+            }
+        )
+
     manifest = {
-        "created_at": datetime.now().isoformat(),
-        "args": vars(args),
+        "created_at": created_at,
+        "args": {k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()},
         "qa_count": len(qa_items),
         "qa_file": str(QA_PAIRS_JSON),
         "quality_scores_path": str(QUALITY_SCORES_PATH),
+        "resume_events": resume_events,
     }
-    # vars(args) contains a Path; make it JSON-serializable.
-    manifest["args"] = {k: (str(v) if isinstance(v, Path) else v) for k, v in manifest["args"].items()}
-    with open(output_dir / "manifest.json", "w", encoding="utf-8") as f:
+    with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=True)
 
     client = GeminiClient()
     runs_jsonl_lock = asyncio.Lock()
     eval_sem = asyncio.Semaphore(args.eval_concurrency)
-    all_records: list[dict] = []
+    pipeline_sem = (
+        asyncio.Semaphore(args.max_in_flight_llm) if args.max_in_flight_llm else None
+    )
 
-    if args.run_main_grid:
-        main_conditions = build_main_conditions(
-            max_steps_values=max_steps_values,
-            only_quality_off=args.only_quality_off,
-        )
-        main_conditions = apply_shard(main_conditions, args.shard)
-        if not main_conditions:
-            print("Main grid has no conditions after shard filter; skipping.")
-        else:
-            with open(output_dir / "conditions_main.json", "w", encoding="utf-8") as f:
-                json.dump(
-                    [asdict(c) | {"condition_id": c.condition_id} for c in main_conditions],
-                    f,
-                    indent=2,
-                )
-            all_records.extend(
+    try:
+        if args.run_main_grid:
+            main_conditions = build_main_conditions(
+                max_steps_values=max_steps_values,
+                only_quality_off=args.only_quality_off,
+            )
+            main_conditions = apply_shard(main_conditions, args.shard)
+            if not main_conditions:
+                print("Main grid has no conditions after shard filter; skipping.")
+            else:
+                with open(output_dir / "conditions_main.json", "w", encoding="utf-8") as f:
+                    json.dump(
+                        [asdict(c) | {"condition_id": c.condition_id} for c in main_conditions],
+                        f,
+                        indent=2,
+                    )
                 await run_condition_group(
                     conditions=main_conditions,
                     qa_items=qa_items,
@@ -618,23 +923,23 @@ async def main() -> None:
                     condition_concurrency=args.condition_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
                     eval_sem=eval_sem,
+                    skip_pairs=skip_pairs,
+                    pipeline_sem=pipeline_sem,
                     group_desc="Main grid conditions",
                 )
-            )
 
-    if args.run_oracle_mini_study:
-        oracle_conditions = build_oracle_conditions()
-        oracle_conditions = apply_shard(oracle_conditions, args.shard)
-        if not oracle_conditions:
-            print("Oracle mini study has no conditions after shard filter; skipping.")
-        else:
-            with open(output_dir / "conditions_oracle_mini.json", "w", encoding="utf-8") as f:
-                json.dump(
-                    [asdict(c) | {"condition_id": c.condition_id} for c in oracle_conditions],
-                    f,
-                    indent=2,
-                )
-            all_records.extend(
+        if args.run_oracle_mini_study:
+            oracle_conditions = build_oracle_conditions()
+            oracle_conditions = apply_shard(oracle_conditions, args.shard)
+            if not oracle_conditions:
+                print("Oracle mini study has no conditions after shard filter; skipping.")
+            else:
+                with open(output_dir / "conditions_oracle_mini.json", "w", encoding="utf-8") as f:
+                    json.dump(
+                        [asdict(c) | {"condition_id": c.condition_id} for c in oracle_conditions],
+                        f,
+                        indent=2,
+                    )
                 await run_condition_group(
                     conditions=oracle_conditions,
                     qa_items=qa_items,
@@ -645,33 +950,24 @@ async def main() -> None:
                     condition_concurrency=args.condition_concurrency,
                     runs_jsonl_lock=runs_jsonl_lock,
                     eval_sem=eval_sem,
+                    skip_pairs=skip_pairs,
+                    pipeline_sem=pipeline_sem,
                     group_desc="Oracle mini conditions",
                 )
-            )
 
-    if all_records:
-        df = pd.DataFrame(all_records)
-        df.to_csv(output_dir / "per_example_metrics.csv", index=False)
-        summary = aggregate_results(df)
-        summary.to_csv(output_dir / "summary_by_condition.csv", index=False)
-
-        overview = {
-            "rows": len(df),
-            "conditions": int(df["condition_id"].nunique()),
-            "qa_count_per_condition": int(df["qa_count"].max()),
-            "overall_success_rate": float(df["success"].mean()),
-            "overall_judge_score": float(df["judge_score"].mean()),
-            "overall_retrieval_precision": float(df["retrieval_precision"].mean()),
-            "overall_hallucination_rate": float(df["hallucination_rate"].mean()),
-            "overall_cost_usd": float(df["cost_usd"].sum()),
-        }
-        with open(output_dir / "summary_overview.json", "w", encoding="utf-8") as f:
-            json.dump(overview, f, indent=2, ensure_ascii=True)
-
-    with open(output_dir / "gemini_usage_final.json", "w", encoding="utf-8") as f:
-        json.dump(usage_snapshot(client), f, indent=2, ensure_ascii=True)
-    client.print_stats()
-    print("Experiment run complete.")
+        finalize_experiment_outputs(output_dir, client)
+        write_progress_json(
+            output_dir,
+            {
+                "phase": "complete",
+                "rows_in_runs_jsonl": _jsonl_line_count(output_dir / "runs.jsonl"),
+            },
+        )
+    finally:
+        with open(output_dir / "gemini_usage_final.json", "w", encoding="utf-8") as f:
+            json.dump(usage_snapshot(client), f, indent=2, ensure_ascii=True)
+        client.print_stats()
+        print("Experiment run complete.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,176 @@
+{
+  "question": "How has the understanding of the practical implications and challenges of scaling laws evolved, moving from Dario Amodei's discussion of their role in AGI timelines and general limits, to later considerations of specific trade-offs like intelligence versus speed in advanced models?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Dario Amodei scaling laws AGI timelines limits",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 56999,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 160,
+          "text": "What are the early steps it might do? And by the way, I asked Claude good questions to ask you and Claude told me to ask, what do you think is a typical day for a biologist working on AGI look like in this future? Dario Amodei: Yeah, yeah. Lex Fridman: Claude is curious. Dario Amodei: Well, let me start with your first questions and then I\u2019ll answer that. Claude wants to know what\u2019s in his future, right? Lex Fridman: Exactly. Dario Amodei: Who am I going to be working with? Lex Fridman: Exactly. Dario Amodei: So I think one of the things when I went hard on in the essay is let me go back to this idea of, because it\u2019s really had an impact on me, this idea that within large organizations and systems, there end up being a few people or a few new ideas who cause things to go in a different direction than they would\u2019ve before who kind of disproportionately affect the trajectory. There\u2019s a bunch of the same thing going on, right?",
+          "score": 0.46124754333496093,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 11.024894714355469
+        },
+        {
+          "chunk_id": 56914,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 75,
+          "text": "Lex Fridman: So for ASL-3, the bad actor will be the humans. Dario Amodei: Humans, yes. Lex Fridman: And so there\u2019s a little bit more\u2026\n\nDario Amodei: For ASL- 4, it\u2019s both, I think. Lex Fridman: It\u2019s both. And so deception, and that\u2019s where mechanistic interpretability comes into play, and hopefully the techniques used for that are not made accessible to the model. Dario Amodei: Yeah. Of course, you can hook up the mechanistic interpretability to the model itself, but then you\u2019ve lost it as a reliable indicator of the model state. There are a bunch of exotic ways you can think of that it might also not be reliable, like if the model gets smart enough that it can jump computers and read the code where you\u2019re looking at its internal state. We\u2019ve thought about some of those. I think they\u2019re exotic enough. There are ways to render them unlikely.",
+          "score": 0.4588158372243245,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.86353588104248
+        },
+        {
+          "chunk_id": 56976,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 137,
+          "text": "But, you also get very serious about anything that could derail them. Lex Fridman: So I think the starting point is to talk about what this Powerful AI, which is the term you like to use, most of the world uses AGI, but you don\u2019t like the term, because it\u2019s basically has too much baggage, it\u2019s become meaningless. It\u2019s like we\u2019re stuck with the terms whether we like them or not. Dario Amodei: Maybe we\u2019re stuck with the terms and my efforts to change them are futile. Lex Fridman: It\u2019s admirable. Dario Amodei: I\u2019ll tell you what else I don\u2019t \u2026 This is a pointless semantic point, but I keep talking about it-\n\nLex Fridman: It\u2019s back to naming again. Dario Amodei: I\u2019m just going to do it once more. I think it\u2019s a little like, let\u2019s say it was like 1995 and Moore\u2019s law is making the computers faster. And for some reason there had been this verbal tick that everyone was like, \u201cWell, someday we\u2019re going to have supercomputers.",
+          "score": 0.44254460080464686,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 10.223340034484863
+        },
+        {
+          "chunk_id": 56924,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 85,
+          "text": "Dario Amodei: It\u2019s like a thing as old, people scamming each other, it\u2019s this thing as old as time. And it\u2019s just every time, you got to deal with it. Lex Fridman: It\u2019s almost silly to say, but it\u2019s true, sort of bots and spam in general is a thing as it gets more and more intelligent-\n\nDario Amodei: Yeah, yeah. Lex Fridman: \u2026 it\u2019s harder and harder to fight it. Dario Amodei: Like I said, there are a lot of petty criminals in the world and it\u2019s like every new technology is a new way for petty criminals to do something stupid and malicious. Lex Fridman: Is there any ideas about sandboxing it? How difficult is the sandboxing task? Dario Amodei: Yeah, we sandbox during training. So for example, during training we didn\u2019t expose the model to the internet. I think that\u2019s probably a bad idea during training because the model can be changing its policy, it can be changing what it\u2019s doing and it\u2019s having an effect in the real world.",
+          "score": 0.4417910563151042,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 9.41961669921875
+        },
+        {
+          "chunk_id": 56881,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 42,
+          "text": "Lex Fridman: Are we going to get it before GTA 6 or no? Dario Amodei: Like Duke Nukem Forever? Lex Fridman: Duke Nukem. Right. Dario Amodei: What was that game? There was some game that was delayed 15 years. Lex Fridman: That\u2019s right. Dario Amodei: Was that Duke Nukem Forever? Lex Fridman: Yeah. And I think GTA is now just releasing trailers. Dario Amodei: It\u2019s only been three months since we released the first Sonnet. Lex Fridman: Yeah, it\u2019s the incredible pace of release. Dario Amodei: It just tells you about the pace, the expectations for when things are going to come out.\n\n\n## Claude 4.0\n\nLex Fridman: So what about 4.0? So how do you think, as these models get bigger and bigger, about versioning and also just versioning in general, why Sonnet 3.5 updated with the date? Why not Sonnet 3.6, which a lot of people are calling it? Dario Amodei: Naming is actually an interesting challenge here, right? Because I think a year ago, most of the model was pre-training.",
+          "score": 0.44134833399454754,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 10.17207145690918
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.035607814788818
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Dario Amodei scaling laws practical implications challenges AGI timelines",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 24.686981201171875
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Dario Amodei scaling laws practical implications challenges",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 56891,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 52,
+          "text": "Lex Fridman: I think there is a psychological effect. You just start getting used to it, the baseline raises. When people who have first gotten Wi-Fi on airplanes, it\u2019s amazing, magic. Dario Amodei: It\u2019s amazing. Yeah. Lex Fridman: And then you start-\n\nDario Amodei: And now I\u2019m like, \u201cI can\u2019t get this thing to work. This is such a piece of crap.\u201d\n\nLex Fridman: Exactly. So it\u2019s easy to have the conspiracy theory of, \u201cThey\u2019re making Wi-Fi slower and slower.\u201d This is probably something I\u2019ll talk to Amanda much more about, but another Reddit question, \u201cWhen will Claude stop trying to be my pure tentacle grandmother imposing its moral worldview on me as a paying customer? And also, what is the psychology behind making Claude overly apologetic?\u201d So this reports about the experience, a different angle on the frustration. It has to do with the character [inaudible 00:47:06]. Dario Amodei: Yeah, so a couple points on this first.",
+          "score": 0.3926870587666829,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 8.600873947143555
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 30.591330766677856
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "scaling laws intelligence speed trade-offs advanced models",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 12968,
+          "episode_id": 132,
+          "guest": "George Hotz",
+          "chunk_index": 82,
+          "text": "It's not even about speed. It's the thing you said. It's about the experience of being stuck at a stop sign because pedestrians are crossing nonstop. I like when my Uber driver doesn't come to a full stop at the stop sign. Yeah. You know? And so let's say the Waymo's are 20% slower than an Uber. Right? You can argue that they're going to be cheaper. And I argue that users already have the choice to trade off money for speed. It's called UberPool. I think it's like 15% of rides are UberPools. Right? Users are not willing to trade off money for speed. So the whole product that they're building is not going to be competitive with traditional ride sharing networks. Right. And also, whether there's profit to be made depends entirely on one company having a monopoly. I think that the level four autonomous ride sharing vehicles market is going to look a lot like the scooter market if even the technology does come to exist, which I question. Who's doing well in that market?",
+          "score": 0.4075710872014363,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 5.381618022918701
+        },
+        {
+          "chunk_id": 29193,
+          "episode_id": 231,
+          "guest": "Alex Gladstein",
+          "chunk_index": 41,
+          "text": "Well, they can't turn off Bitcoin because it doesn't live on AWS, it lives with us. We are Bitcoin. And I think that that's very, very powerful. And then you can have something like a lightning network where you can escape some of the constraints of the blockchain, depending on your needs of the privacy and all those kinds of things. Everything's an engineering trade off, but yeah, you can trade off some of the assurances of the base layer to go into lightning, for example, and there you can get more speed and more privacy. And the things that Bitcoin lacks, speed and privacy, for example, you can get on these second layers. So there's all kinds of cool engineering things that people are coming up with. But I also want to say anyone who says the blockchain, like that's a red flag for that person doesn't really know what they're talking about. Like Satoshi didn't use the blockchain in the white paper.",
+          "score": 0.370455704053243,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.0766730308532715
+        },
+        {
+          "chunk_id": 36366,
+          "episode_id": 276,
+          "guest": "Michael Saylor",
+          "chunk_index": 143,
+          "text": "So you can create things that are beautiful and lasting and what\u2019s the difference in speed? Well, so I can either trade with everybody in the world at the speed of light, friction-free in 24 hours writing a Python script, or I can spend $100 billion to trade with a few million people in the world after it takes them six months of application. The impedance is like a 10,000,000 to one difference, and the metaphors are literally like launching something in orbit versus almost orbit or vacuum sealing something. Does it last forever and does it orbit forever or does it go up and come down and burn up? Right? And I think Jack is interested in putting freedom in orbit, right? Lex Fridman: Putting freedom-\n\nMichael Saylor: Putting freedom in orbit. And he said it many times, he said, \u201cThe internet needs a native currency.\u201d Right? And no political construct or security can be a native currency. You need a property and you need a property that can be moved 1,000,000 times a second.",
+          "score": 0.36639781188964843,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.902763366699219
+        },
+        {
+          "chunk_id": 29304,
+          "episode_id": 231,
+          "guest": "Alex Gladstein",
+          "chunk_index": 152,
+          "text": "And look, people are, it's all about the trade offs you make in your daily life. Like living more privately with more freedom is less convenient. You trade freedom and privacy for convenience and comfort and speed. Absolutely. And the engineering decision and everything that you do. In the West, in advanced democracies, we have not necessarily personally seen the results of that trade off because we live in these free societies that have these checks and balances and freedoms. But as soon as you step into an authoritarian state and you make those trade offs, your life immediately becomes more restrictive. And what people are worried about is that even in advanced economies, market democracies, etc., people are worried that they might not survive the great social digital transformation. You know, look at what the NSA is capable of doing. I mean, for now, it's not that big of a problem because we still have free speech. But it's deeply concerning what Snowden revealed.",
+          "score": 0.3385411186218262,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.994619369506836
+        },
+        {
+          "chunk_id": 11052,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 28,
+          "text": "Because what I did before here and I do this, I'm going to end up over here and he's going to be above me. And then, you know, I have to get that energy back to get up to him. And when you're doing a max performance, it's a trade. So you have, this is, this is really important when you're, when you're fighting airplanes and you're really max performing. So when you go to an air show and you see the air demo, he's literally playing with it. He's got a finite amount of energy, right? He can add some with the motors and stuff, but you're, what you're really doing is it's a trade off and you can trade off kinetic energy, speed for altitude, which gives you potential energy. The other piece is, is I can trade some of that kinetic energy for performance. Because I know if I do a nice, easy turn, the airplane will make it at what doesn't bleed energy. But I know if I do a real tight, that 2,500 foot split S, that it's going to cost me energy.",
+          "score": 0.27294887892405195,
+          "source": "bm25",
+          "quality_score": 0.54,
+          "original_score": 4.7549519538879395
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 40.43233847618103
+    }
+  ],
+  "final_answer": "The provided context does not contain information about Dario Amodei's discussion of scaling laws in relation to AGI timelines or general limits. While some retrieved chunks discuss trade-offs between speed, money, privacy, and performance in various contexts, they do not link these considerations to the evolution of understanding scaling laws in advanced AI models or to Dario Amodei's initial discussions on the topic. Therefore, the context is insufficient to answer the question.",
+  "total_chunks_retrieved": 11,
+  "unique_episodes_found": [
+    132,
+    452,
+    231,
+    276,
+    122
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 78.3900671005249
+}

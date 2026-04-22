@@ -1,0 +1,153 @@
+{
+  "question": "Considering the discussions by Dylan Patel and Nathan Lambert regarding DeepSeek's hardware and the US government's actions, and Keyu Jin's perspective on US export controls, what was the approximate total number of GPUs in DeepSeek's cluster, how many H800 GPUs were used for DeepSeek-V3's pre-training, and in what year did the US government ban the H800?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "DeepSeek GPUs",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58583,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 12,
+          "text": "Nathan Lambert: These weights that you can download from Hugging Face or other platforms are very big matrices of numbers. You can download them to a computer in your own house that has no internet and you can run this model and you\u2019re totally in control of your data. That is something that is different than how a lot of language model usage is actually done today, which is mostly through APIs where you send your prompt to GPUs run by certain companies. And these companies will have different distributions and policies on how your data is stored, if it is used to train future models, where it is stored, if it is encrypted, and so on. The open weights are you have your fate of data in your own hands, and that is something that is deeply connected to the soul of open source. Lex Fridman: It\u2019s not the model that steals your data, it\u2019s whoever is hosting the model, which could be China if you\u2019re using the DeepSeek app or it could be Perplexity.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58588,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 17,
+          "text": "This is a crawler that is maintained publicly. Yes, other tech companies eventually shift to their own crawler and DeepSeek likely has done this as well as most frontier labs do. But this sort of data is something that people can get started with and you\u2019re just predicting text in a series of documents. This can be scaled to be very efficient and there\u2019s a lot of numbers that are thrown around in AI training like how many floating-point operations or flops are used. And then you can also look at how many hours of these GPUs that are used. And it\u2019s largely one loss function taken to a very large amount of compute usage. You set up really efficient systems and then at the end of that you have the base model and pre-training is where there is a lot more of complexity in terms of how the process is emerging or evolving and the different types of training losses that you\u2019ll use. I think this is a lot of techniques grounded in the natural language processing literature.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58605,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 34,
+          "text": "And mixture of experts is one of the ones at training time even if you don\u2019t consider the inference benefits, which are also big. At training time, your efficiency with your GPUs is dramatically improved by using this architecture if it is well implemented. You can get effectively the same performance model and evaluation scores with numbers like 30% less compute, I think. There\u2019s going to be a wide variation depending on your implementation details and stuff. But it is just important to realize that this type of technical innovation is something that gives huge gains. And I expect most companies that are serving their models to move to this mixture of experts implementation. Historically, the reason why not everyone might do it is because it\u2019s an implementation complexity, especially when doing these big models. This is one of the things that DeepSeek gets credit for is they do this extremely well. They do a mixture of experts extremely well.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58607,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 36,
+          "text": "And if you want to use RoPE with a normal MoE, it\u2019s a sequential thing, you take two of the attention matrices and you rotate them by a complex value rotation, which is a matrix multiplication. With DeepSeek\u2019s MLA, with this new attention architecture, they need to do some clever things because they\u2019re not set up the same and it just makes the implementation complexity much higher. They\u2019re managing all of these things, and these are probably the sort of things that OpenAI these closed labs are doing. We don\u2019t know if they\u2019re doing the exact same techniques, but they actually shared them with the world, which is really nice to be like, this is the cutting edge of efficient language model training. Lex Fridman: And some of this requires low level engineering, just it is a giant mess in trickery. As I understand they went below CUDA, so they go super low programming of GPUs.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.8530340194702148
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "DeepSeek-V3 H800 GPUs total cluster",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 34954,
+          "episode_id": 267,
+          "guest": "Mark Zuckerberg",
+          "chunk_index": 57,
+          "text": "It's a really difficult problem. So like any of the critics, if you just hand them the helm for a week, let's see how well you can do. Like that, to me, that's definitely something that would wake people up to how difficult this problem is if there's more transparency of saying how difficult this problem is. Let me ask you about, on the AI front, just because you mentioned language and my ineloquence. Translation is something I wanted to ask you about. And first, just to give a shout out to the supercomputer. You've recently announced the AI research supercluster, RSC. Obviously, I'm somebody who loves the GPUs. It currently has 6,000 GPUs. NVIDIA DGX A100 is the systems that have in total 6,000 GPUs. And it will eventually, maybe this year, maybe soon, will have 16,000 GPUs. So it can do a bunch of different kinds of machine learning applications. There's a cool thing on the distributed storage aspect and all that kind of stuff.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56996,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 157,
+          "text": "Dario Amodei: So if you extrapolate the curves that we\u2019ve had so far. Right? If you say, \u201cWell, I don\u2019t know. We\u2019re starting to get to PhD level, and last year we were at undergraduate level and the year before we were at the level of a high school student.\u201d Again, you can quibble with at what tasks and for what we\u2019re still missing modalities, but those are being added. Computer use was added, like ImageEn was added, image generation has been added. And this is totally unscientific, but if you just eyeball the rate at which these capabilities are increasing, it does make you think that we\u2019ll get there by 2026 or 2027. Again, lots of things could derail it. We could run out of data. We might not be able to scale clusters as much as we want. Maybe Taiwan gets blown up or something, and then we can\u2019t produce as many GPUs as we want. So there are all-\n\nDario Amodei: Then we can\u2019t produce as many GPUs as we want. So there are all kinds of things that could derail the whole process.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58643,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 72,
+          "text": "So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs. So any chip that had interconnects above a certain level and FLOPs above a certain \u2026 Floating point operations above a certain level was restricted. Later, the government realized that this was a flaw in the restriction and they cut it down to just floating point operations. And so-\n\nNathan Lambert: H800 had high FLOPs, low communication? Dylan Patel: Exactly. So, the H800 was the same performance as H100 on FLOPs, but it just had the interconnect bandwidth cut. DeepSeek knew how to utilize this. \u201cHey, even though we\u2019re cut back on the interconnect, we can do all this fancy stuff to figure out how to use the GPU fully anyways.\u201d\n\nAnd so that was back in October 2022. But later in 2023, into 2023 implemented in 2024, the U.S. government banned the H800. Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58644,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 73,
+          "text": "Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023. And they\u2019re just getting the model out now because it takes a lot of research, et cetera. H800 was banned and now there\u2019s a new chip called the H20. The H20 is cut back on only FLOPs, but the interconnect bandwidth is the same. And in fact, in some ways it\u2019s better than the H100 because it has better memory bandwidth and memory capacity. So Nvidia is working within the constraints of what the government sets and then builds the best possible GPU for China. Lex Fridman: Can we take this actual tangent and we\u2019ll return back to the hardware, is the philosophy, the motivation, the case for export controls? What is it? Dario Amodei just published a blog post about export controls.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58711,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 140,
+          "text": "Now obviously other people around the world get affected negatively. Obviously the Chinese people are not going to be in as advantageous of a position if that happens, but this is the reality of what\u2019s being done and the actions that are being carried out.\n\n\n## Best GPUs for AI\n\nLex Fridman: Can we go back to the specific detail of the different hardware? There\u2019s this nice graphic in the export controls of which GPUs are allowed to be exported and which are not. Can you explain the difference? From a technical perspective, are the H20s promising? Dylan Patel: Yeah. And I think we need to dive really deep into the reasoning aspect and what\u2019s going on there. The US has gone through multiple iterations of the export controls. This H800 was at one point allowed back in \u201923, but then it got canceled and by then DeepSeek had already built their cluster of, they claim, 2K. I think they actually have many more, something like 10K of those. And now this H20 is the legally allowed chip.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 19.96215033531189
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 23.926037788391113
+    }
+  ],
+  "final_answer": "DeepSeek claimed to have a cluster of 2,000 GPUs, though Dylan Patel estimated they might have as many as 10,000. For DeepSeek-V3's pre-training, 2,000 H800 GPUs were used. The U.S. government banned the H800 in 2023, with the ban implemented in 2024.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    267,
+    459,
+    452
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 23.926039218902588
+}

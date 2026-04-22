@@ -1,0 +1,86 @@
+{
+  "question": "Janna Levin, while discussing the profound mysteries of black holes and spacetime, mentions the mathematician Terence Tao. What specific approach does Terence Tao, in his own discussions, describe for tackling difficult mathematical problems, and how does he envision AI contributing to mathematical discovery, particularly through formal proof languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Terence Tao approach to difficult mathematical problems AI formal proof languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61790,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 95,
+          "text": "And now I can do it in 10, 15 minutes as much. I\u2019m using more and more computers to do simple explorations.\n\n\n## AI-assisted theorem proving\n\nLex Fridman: Let\u2019s talk about AI a little bit if we could. So maybe a good entry point is just talking about computer-assisted proofs in general. Can you describe the Lean formal proof programming language and how it can help as a proof assistant and maybe how you started using it and how it has helped you? Terence Tao: So Lean is a computer language, much like standard languages like Python and C and so forth, except that in most languages the focus is on using executable code. Lines of code do things, they flip bits or they make a robot move or they deliver your text on the internet or something. So lean is a language that can also do that. It can also be run as a standard traditional language, but it can also produce certificates. So a software language like Python might do a computation and give you that the answer is seven.",
+          "score": 0.7895365018844605,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7679092884063721
+        },
+        {
+          "chunk_id": 61820,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 125,
+          "text": "Terence Tao: Oh yeah. It\u2019s extremely hard, actually. Natural language, it\u2019s very fault-tolerant. You can make a few minor grammatical errors and speak in the second language, can get some idea of what you\u2019re saying. But formal language, if you get one little thing wrong, then the whole thing is nonsense. Even formal to formal is very hard. There are different incompatible prefaces and languages. There\u2019s Lean, but also Cox and Isabelle and so forth. And even converting from a formal action to formal language is an unsolved problem. Lex Fridman: That is fascinating. Okay. But once you have an informal language, they\u2019re using their RL trained model, something akin to AlphaZero that they used to go to then try to come up with tools, also have a model. I believe it\u2019s a separate model for geometric problems. Terence Tao: Yes. Lex Fridman: So what impresses you about the system, and what do you think is the gap?",
+          "score": 0.7809561343193053,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7985087633132935
+        },
+        {
+          "chunk_id": 61786,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 91,
+          "text": "Terence Tao: \u201cYeah, yeah. And okay, fine. You are a young man. I don\u2019t ask questions.\u201d\n\n\n## Solving difficult problems\n\nLex Fridman: I have to ask about how do you approach solving difficult problems if it\u2019s possible to go inside your mind when you\u2019re thinking, are you visualizing in your mind the mathematical objects, symbols, maybe what are you visualizing in your mind? Usually when you\u2019re thinking? Terence Tao: A lot of pen and paper. One thing you pick up as a mathematician is I call it cheating strategically. So the beauty of mathematics is that you get to change the problem and change the rules as you wish. You don\u2019t get to do this by any other field. If you\u2019re an engineer and someone says, \u201cBuild a bridge over this river,\u201d you can\u2019t say, \u201cI want to build this bridge over here instead,\u201d or, \u201cI want to put it out of paper instead of steel,\u201d but a mathematician, you can do whatever you want on. It\u2019s like trying to solve a computer game where there\u2019s unlimited cheat codes available.",
+          "score": 0.7659886689186095,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.777126669883728
+        },
+        {
+          "chunk_id": 61852,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 157,
+          "text": "But you\u2019d only find out after months of work, he must have had some sense that this was the right track to pursue. It takes years to get from A to B. Lex Fridman: So you\u2019ve done, like you said, actually, you see even strictly mathematically, but more broadly in terms of the process, you\u2019ve done similar-\n\nLex Fridman: In terms of the process, you\u2019ve done similarly difficult things. What can you infer from the process he was going through because he was doing it alone? What are some low points in a process like that when you start to, you\u2019ve mentioned hardship, AI doesn\u2019t know when it\u2019s failing. What happens to you, you\u2019re sitting in your office when you realize the thing you did for the last few days, maybe weeks is a failure? Terence Tao: Well, for me, I switch to a different problem. So I\u2019m a fox, I\u2019m not a hedgehog. Lex Fridman: But you\u2019re generally, that is a break that you can take, is to step away and look at a different problem? Terence Tao: Yeah, yeah.",
+          "score": 0.7526569166183472,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7837955951690674
+        },
+        {
+          "chunk_id": 61819,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 124,
+          "text": "So this is sort of high-level high school? Terence Tao: Oh, very high-level, yes. Lex Fridman: Very high-level, high-school level mathematics problems. What do you think about the system and maybe what is the gap between this system that is able to prove the high-school level problems versus gradual-level problems? Terence Tao: Yeah, the difficulty increases exponentially with the number of steps involved in the proof. It\u2019s a commentarial explosion. So the thing of large language models is that they make mistakes and so if a proof has got 20 steps and your [inaudible 01:44:01] has a 10% failure rate at each step of going the wrong direction, it\u2019s extremely unlikely to actually reach the end. Lex Fridman: Actually, just to take a small tangent here, how hard is the problem of mapping from natural language to the formal program? Terence Tao: Oh yeah. It\u2019s extremely hard, actually. Natural language, it\u2019s very fault-tolerant.",
+          "score": 0.7347555799484253,
+          "source": "embedding",
+          "quality_score": 0.64,
+          "original_score": 0.7753651142120361
+        }
+      ],
+      "judge_feedback": "All chunks are relevant and contain useful information.\n\nChunks 3 and 4 directly address Terence Tao's approach to difficult mathematical problems, highlighting \"cheating strategically\" and switching problems. Chunks 1, 2, and 5 discuss AI's role in formal proof languages like Lean, including its potential and current limitations.\n\nTo further refine the answer, the agent should search for more specific details on how Terence Tao envisions AI contributing to *mathematical discovery* beyond just formal proof assistance, and if he elaborates on the \"simple explorations\" mentioned in Chunk 1.",
+      "timestamp": 1.7576415538787842
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 10.202490091323853
+    }
+  ],
+  "final_answer": "Terence Tao approaches difficult mathematical problems by what he calls \"cheating strategically,\" meaning he allows himself to change the problem or its rules, unlike in other fields. He also uses pen and paper extensively and switches to different problems if he gets stuck, describing himself as a \"fox\" rather than a \"hedgehog.\" He envisions AI contributing to mathematical discovery by assisting with \"simple explorations\" and through formal proof languages like Lean, which can produce verifiable \"certificates\" for proofs. However, he notes the significant challenge of mapping natural language to formal language and the \"combinatorial explosion\" problem, where AI's error rates in multi-step proofs make it difficult for current systems to reach complex conclusions.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    472
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 10.202492952346802
+}

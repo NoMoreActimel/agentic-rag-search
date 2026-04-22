@@ -1,0 +1,152 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8634,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 0.8024811215400696,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7435444593429565
+        },
+        {
+          "chunk_id": 8633,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 58,
+          "text": "So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah. Yeah, maybe talk through the history of OpenCog and your thinking about these ideas. I would say OpenCog 2.0 is a term we're throwing around sort of tongue in cheek because the existing OpenCog system that we're working on now is not remotely close to what we'd consider a 1.0, right? I mean, it's an early... It's been around, what, 13 years or something, but it's still an early stage research system, right? And actually, we are going back to the beginning in terms of theory and implementation because we feel like that's the right thing to do, but I'm sure what we end up with is gonna have a huge amount in common with the current system. I mean, we all still like the general approach. So first of all, what is OpenCog?",
+          "score": 0.7491372544765472,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7101960778236389
+        },
+        {
+          "chunk_id": 8636,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 61,
+          "text": "You could use it to make a lot of different AGI. What kind of stuff does the software platform provide, like in terms of utilities, tools, like what? Yeah, let me first tell about OpenCog as a software platform, and then I'll tell you the specific AGI R&D we've been building on top of it. So the core component of OpenCog as a software platform is what we call the atom space, which is a weighted labeled hypergraph. ATOM, atom space. Atom space, yeah, yeah, not atom, like Adam and Eve, although that would be cool too. Yeah, so you have a hypergraph, which is like, so a graph in this sense is a bunch of nodes with links between them. A hypergraph is like a graph, but links can go between more than two nodes. So you have a link between three nodes. And in fact, OpenCog's atom space would properly be called a metagraph because you can have links pointing to links, or you could have links pointing to whole subgraphs, right? So it's an extended hypergraph or a metagraph.",
+          "score": 0.7378025074005127,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6940035820007324
+        },
+        {
+          "chunk_id": 8650,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 75,
+          "text": "You can also have procedure like nodes and links as in say a combinatorial logic or Lambda calculus representing programs. So you can have nodes and links representing many different types of semantics, which means you could make a horrible ugly mess or you could make a system where these different types of knowledge all interpenetrate and synergize with each other beautifully, right? So the hypergraph can contain programs. Yeah, it can contain programs, although in the current version, it is a very inefficient way to guide the execution of programs, which is one thing that we are aiming to resolve with our rewrite of the system now. So what to you is the most beautiful aspect of OpenCog? Just to you personally, some aspect that captivates your imagination from beauty or power?",
+          "score": 0.7377678127288818,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7368111610412598
+        },
+        {
+          "chunk_id": 8669,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 94,
+          "text": "So on the procedural side, there's some different and sort of interesting voodoo there. I mean, if you're familiar in computer science, there's something called the Curry Howard correspondence, which is a one to one mapping between proofs and programs. So every program can be mapped into a proof. Every proof can be mapped into a program. You can model this using category theory and a bunch of nice math, but we wanna make that practical, right? So that if you have an executable program that like moves the robot's arm or figures out in what order to say things in a dialogue, that's a procedure represented in OpenCog's hypergraph. But if you wanna reason on how to improve that procedure, you need to map that procedure into logic using Curry Howard isomorphism. So then the logic engine can reason about how to improve that procedure and then map that back into the procedural representation that is efficient for execution.",
+          "score": 0.723280915737152,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7161155939102173
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.095640182495117
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "large language models mentioned by name Sebastian Raschka Nathan Lambert",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65675,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 35,
+          "text": "Qwen might be the one\u2014\n\nNathan Lambert: Oh, yeah. Qwen was the obvious name I was gonna say. I was trying to get through\u2026 you can get at least 10 Chinese and at least 10 Western. I mean, OpenAI released their first open model\u2014\n\nSebastian Raschka: A long time ago. Nathan Lambert: \u2026since GPT-2. When I was writing about OpenAI\u2019s open model release, people were like, \u201cDon\u2019t forget about GPT-2,\u201d which I thought was really funny because it\u2019s just such a different time. But gpt-oss is actually a very strong model and does some things that the other models don\u2019t do very well. Selfishly, I\u2019ll promote a bunch of Western companies; both in the US and Europe have these fully open models. I work at the Allen Institute for AI where we\u2019ve been building OLMo, which releases data and code and all of this. And now we have actual competition for people that are trying to release everything so that other people can train these models.",
+          "score": 0.8029162306785583,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7870231866836548
+        },
+        {
+          "chunk_id": 65723,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 83,
+          "text": "Sebastian Raschka: So, you teach it something, it forgets other things. It\u2019s not 100% forgetting, but there\u2019s no free lunch. It\u2019s also the same with humans. If you ask me some math I learned 10 years ago, I wouldn\u2019t know; I would have to look at it again. Lex Fridman: Nathan was actually saying that he\u2019s consuming so much content that there\u2019s a catastrophic forgetting issue. Nathan Lambert: Yeah, I\u2019m trying to learn so much about AI, and it\u2019s like when I was learning about pre-training parallelism, I\u2019m like, \u201cI lost something and I don\u2019t know what it was.\u201d\n\nSebastian Raschka: I don\u2019t want to anthropomorphize LLMs, but I think it\u2019s the same in terms of how humans learn. Quantity is not always better because it\u2019s about being selective. Mid-training is being selective in terms of quality content at the end, so the last thing the LLM has seen is the quality stuff. And then post-training is all the fine-tuning: supervised fine-tuning, DPO, RLVR with human feedback and so forth.",
+          "score": 0.778000940799713,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7514299154281616
+        },
+        {
+          "chunk_id": 65732,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 92,
+          "text": "Nathan Lambert: \u2026 \u201cI\u2019m gonna make the data better,\u201d or, \u201cI\u2019m gonna make the infrastructure better so that everybody on my team can run experiments 5% faster.\u201d\n\nSebastian Raschka: At the same time, I think it\u2019s also one of the closest guarded secrets\u2014what your training data is\u2014for legal reasons. And so there\u2019s also a lot of work that goes into hiding what your training data was, essentially, trying to get the model to not give away the sources because of those legal reasons. Nathan Lambert: The other thing, to be complete, is that some people are trying to train on only licensed data, whereas Common Crawl is a scrape of the whole internet. If I host multiple websites, I\u2019m happy to have them train language models, but I\u2019m not explicitly licensing what governs it. Therefore, Common Crawl is largely unlicensed, which means your consent really hasn\u2019t been provided for how to use the data.",
+          "score": 0.7564811916351317,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7635445594787598
+        },
+        {
+          "chunk_id": 65641,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 1,
+          "text": "First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch. I truly believe in the machine learning and computer science world, the best way to learn and understand something is to build it yourself from scratch. Nathan is the post-training lead at the Allen Institute for AI, and author of the definitive book on reinforcement learning from human feedback. Both of them have great X accounts, great Substacks. Sebastian has courses on YouTube, Nathan has a podcast. And everyone should absolutely follow all of those. This is the Lex Fridman podcast. Lex Fridman: To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, get feedback, and so on. And now, dear friends, here\u2019s Sebastian Raschka and Nathan Lambert.\n\n\n## China vs US: Who wins the AI race? Lex Fridman: So I think one useful lens to look at all this through is the so-called DeepSeek moment.",
+          "score": 0.7328284838199615,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7554692625999451
+        },
+        {
+          "chunk_id": 65640,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.7053261575698853,
+          "source": "embedding",
+          "quality_score": 0.52,
+          "original_score": 0.7847516536712646
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 198.61048316955566
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 201.9060001373291
+    }
+  ],
+  "final_answer": "For cognitive architectures like OpenCog, two primary programming languages are explicitly mentioned: C++ and Scheme. When discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert, four distinct large language models are referenced by name: Qwen, GPT-2, gpt-oss, and OLMo.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 201.90600395202637
+}

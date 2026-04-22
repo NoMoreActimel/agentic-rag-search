@@ -1,0 +1,122 @@
+{
+  "question": "Initially, discussions around US export controls on semiconductors, such as those involving Dylan Patel and Nathan Lambert, highlighted China's adaptive strategies like DeepSeek's efficient training and large GPU clusters. How did the perspective on the *ultimate effect* of these US controls on China's domestic technological capacity evolve in later discussions, particularly as articulated by Keyu Jin?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Keyu Jin US export controls China semiconductors",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63186,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 71,
+          "text": "Same thing with the US, right? So I think this is all the old thinking of who wins, who dominates. I think we need a new playbook.\n\n\n## CHIPS Act\n\nLex Fridman: So to you, maybe when you refer to Biden and Trump, if you go back to Biden, it would be the CHIPS Act. So the export controls created unintended, unexpected effect where it had the reverse geopolitical effect. Keyu Jin: I hope it was unintentional. Otherwise, you\u2019d be questioning the level of intelligence of the US administration. But I think that the things they laid out did the opposite of what was intended. It sped up domestic capacity. It motivated the whole country to do this whole of a nation program to go after technologies, kind of like the way they go after Olympics, Olympic gold medals. They wanted to maximize Olympic gold medals, and they put the whole nation at work and all the resources, and that\u2019s what China did. Huawei, another example, they were sanctioned. Guess what?",
+          "score": 0.8353333333333334,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.8333333333333334
+        },
+        {
+          "chunk_id": 58676,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 105,
+          "text": "Intel has made seven nanometer chips that are not profitable and things like this. So this is how it all feeds back into the economic engine of export controls.\n\n\n## Cold war with China\n\nLex Fridman: Well, so you\u2019re saying that for now, Xi Jinping has not felt the AGI, but it feels like the DeepSeek moment, there might be meetings going on now where he\u2019s going to start wearing the same t-shirt and things are going to escalate. Dylan Patel: I mean, he may have woken up last week. Liang Feng met the second command guy, and they had a meeting, and then the next day, they announced the AI subsidies, which are a trillion RMB. Lex Fridman: So it\u2019s possible that this DeepSeek moment is truly the beginning of a cold war. Nathan Lambert: That\u2019s what a lot of people are worried about. People in AI have been worried that this is going towards a cold war or already is.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 63144,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 29,
+          "text": "It\u2019s all in the data. But the downside is that a lot of the capital is wasted. And this is what I also discussed in my book is that it is inefficient, although maybe it\u2019s necessary. The amount of waste of investment plowed into these companies that will ultimately just go under, but also the misallocation-\n\nKeyu Jin: \u2026 Ultimately, just go under, but also the misallocation of resources, because it\u2019s led by the state, are some of the downsides, but I guess on balance, it\u2019s been positive, because look at China\u2019s internal combustion engine effort. Nothing, right? Semiconductors. Thanks to Biden, thanks to Trump, it\u2019s improved dramatically, but all these things that they tried to do before, they couldn\u2019t do, but when it\u2019s a new thing, like something that there\u2019s no incumbent, no particular advantage in any country. Actually, China\u2019s really spearheading these sectors. Lex Fridman: Can we linger a little bit more on this mayor economy?",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 63169,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 54,
+          "text": "What is important to understand about the whole situation? To what degree is it reflective of the issues entrepreneurs face in China? Keyu Jin: In the US, capital controls politics, one could argue. In China, it has to be the other way around. Capital must be reigned in by politics. As part of the capitalist class, do not have the ambition to exceed the powers of the political class, is really at the core of it, I\u2019d say, is the biggest difference between US and China. There are important details that I think the West has not fully provided to the public. For instance, and financial, as innovative as it was, was doing banking jobs without being regulated like a bank, right? So that, obviously, poses a host of financial stability questions and rules and regulations and so forth, so the fact that IPO was halted, you could say that there were strong, economic, regulatory grounds for that.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 34828,
+          "episode_id": 266,
+          "guest": "Nicole Perlroth",
+          "chunk_index": 49,
+          "text": "Uyghurs are their Petri dish, and eventually they will export that level of surveillance overseas. I mean, in 2015, Obama and Xi Jinping reached a deal where basically the White House said, you better cut it out on intellectual property theft. And so they made this agreement that they would not hack each other for commercial benefit. And for a period of about 18 months, we saw this huge drop off in Chinese cyber attacks on American companies. But some of them continued. Where did they continue? They continued on aviation companies, on hospitality companies like Marriott. Why? Because that was still considered fair game to China. It wasn't IP theft they were after. They wanted to know who was staying in this city at this time when Chinese citizens were staying there so they could cross match for counterintelligence who might be a likely Chinese spy. I'm sure we're doing some of that too. Counterintelligence is counterintelligence. It's considered fair game.",
+          "score": 0.6319999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": "1.  Ignore Chunk 4 and Chunk 5 as they are off-topic, discussing capital controls/politics in China and cyber security/IP theft, respectively, not the effect of US export controls on China's technological capacity.\n2.  Chunks 1 and 3 contain highly useful information from Keyu Jin, directly stating that US export controls had the \"opposite of what was intended\" effect, \"sped up domestic capacity,\" and \"improved dramatically\" China's semiconductor efforts. Chunk 2 provides relevant initial context from Dylan Patel and Nathan Lambert.\n3.  To further address the \"evolution\" and link to the initial context, search for Keyu Jin specifically discussing China's *adaptive strategies* (e.g., DeepSeek, efficient training, large GPU clusters) in response to US export controls.",
+      "timestamp": 4.473741054534912
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Keyu Jin China adaptive strategies semiconductors DeepSeek",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 63182,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 67,
+          "text": "Lex Fridman: Sure. Keyu Jin: And ultimately, again, we\u2019re still in the short, flat, fast stage. When we graduate from that stage, you\u2019re going to have very different views about these things and you\u2019re going to try to diversify and do different things. But again, it\u2019s a stage. Chinese people were hungry. They\u2019re still a little bit hungry. They\u2019re not going to be as hungry in the future.\n\n\n## DeepSeek moment\n\nLex Fridman: So can you describe the DeepSeek moment and DeepSeek as it represents what China\u2019s thinking about in the space of AI? And does China have a chance at outrunning US in the AI race? Keyu Jin: DeepSeek was a surprise to the world, but I don\u2019t think it was that much of a surprise to the same degree to the Chinese. And remember that DeepSeek happened in times of crisis, urgency, not in times of comfort. A lot of these technological breakthroughs and leapfrogging happens in times of crisis. This is called crisis innovation. And you got to thank the US for that.",
+          "score": 0.6819999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.504,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 63115,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Keyu Jin, an economist at the London School of Economics, specializing in China\u2019s economy, international macroeconomics, global trade imbalances, and financial policy. She wrote the highly lauded book on China titled The New China Playbook: Beyond Socialism and Capitalism that details China\u2019s economic transformation since 1978 to today. And it dispels a lot of misconceptions about China\u2019s economy that people in the West have. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description and consider subscribing to this channel. And now, dear friends, here\u2019s Keyu Jin.\n\n\n## Misconceptions about China\n\nLex Fridman: What is the single biggest misconception the West has about China\u2019s economy today? Keyu Jin: The biggest misunderstanding is somehow that a group of people or even just one person runs the entire Chinese economy. It is far from the reality.",
+          "score": 0.504,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.42857142857142855
+        }
+      ],
+      "judge_feedback": "Chunk 1 is highly relevant, directly addressing Keyu Jin's perspective on DeepSeek as \"crisis innovation\" spurred by US actions, and hinting at long-term diversification. Chunk 3 is largely irrelevant as it's an introduction. Chunk 2 provides context on the initial discussions but not Keyu Jin's view.\n\nTo fill gaps, search for Keyu Jin's more detailed discussions on the *long-term impact* or *ultimate consequences* of US export controls on China's technological capacity, specifically looking for her views on China's path to self-sufficiency or indigenization.",
+      "timestamp": 15.280028581619263
+    }
+  ],
+  "final_answer": "Keyu Jin articulated that the US export controls had the opposite of their intended effect, dramatically speeding up China's domestic technological capacity, particularly in semiconductors. She stated that these controls motivated China to pursue a \"whole of a nation program\" to develop technologies, likening it to their pursuit of Olympic gold medals. Jin also suggested that these actions spurred \"crisis innovation\" in China, leading to breakthroughs.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    266,
+    459,
+    477
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 24.24053382873535
+}

@@ -1,0 +1,139 @@
+{
+  "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI OpenCog",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.952,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 1.0
+        },
+        {
+          "chunk_id": 0,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 0,
+          "text": "As part of MIT course 6S099, Artificial General Intelligence, I've gotten the chance to sit down with Max Tegmark. He is a professor here at MIT. He's a physicist, spent a large part of his career studying the mysteries of our cosmological universe. But he's also studied and delved into the beneficial possibilities and the existential risks of artificial intelligence. Amongst many other things, he is the cofounder of the Future of Life Institute, author of two books, both of which I highly recommend. First, Our Mathematical Universe. Second is Life 3.0. He's truly an out of the box thinker and a fun personality, so I really enjoy talking to him. If you'd like to see more of these videos in the future, please subscribe and also click the little bell icon to make sure you don't miss any videos. Also, Twitter, LinkedIn, agi.mit.edu if you wanna watch other lectures or conversations like this one. Better yet, go read Max's book, Life 3.0. Chapter seven on goals is my favorite.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 486,
+          "episode_id": 8,
+          "guest": "Eric Schmidt",
+          "chunk_index": 19,
+          "text": "So I'm not concerned about that. And much of this has to do with the timeframe of conversation. So you can imagine a situation 100 years from now when the human brain is fully understood and the next generation and next generation of brilliant MIT scientists have figured all this out, we're gonna have a large number of ethics questions, right? Around science and thinking and robots and computers and so forth and so on. So it depends on the question of the timeframe. In the next five to 10 years, we're not facing those questions. What we're facing in the next five to 10 years is how do we spread this disruptive technology as broadly as possible to gain the maximum benefit of it? The primary benefits should be in healthcare and in education. Healthcare because it's obvious. We're all the same even though we somehow believe we're not.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 163,
+          "episode_id": 3,
+          "guest": "Steven Pinker",
+          "chunk_index": 8,
+          "text": "There's no reason that humans should be our benchmark. They're tools that might be better in some ways. It may be that we can't duplicate a natural system because at some point it's so much cheaper to use a natural system that we're not going to invest more brainpower and resources. So for example, we don't really have an exact substitute for wood. We still build houses out of wood. We still build furniture out of wood. We like the look. We like the feel. It has certain properties that synthetics don't. It's not that there's anything magical or mysterious about wood. It's just that the extra steps of duplicating everything about wood is something we just haven't bothered because we have wood. Likewise, say cotton. I'm wearing cotton clothing now. It feels much better than polyester. It's not that cotton has something magic in it. It's not that we couldn't ever synthesize something exactly like cotton, but at some point it's just not worth it. We've got cotton.",
+          "score": 0.572,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 600,
+          "episode_id": 10,
+          "guest": "Pieter Abbeel",
+          "chunk_index": 16,
+          "text": "Neural network learns to tile the space and say linear controller here, another linear controller here, but it's more subtle than that. And so it's benefiting from this linear control aspect, it's benefiting from the tiling, but it's somehow tiling it one dimension at a time. Because if let's say you have a two layer network, if in that hidden layer, you make a transition from active to inactive or the other way around, that is essentially one axis, but not axis aligned, but one direction that you change. And so you have this kind of very gradual tiling of the space where you have a lot of sharing between the linear controllers that tile the space. And that was always my intuition as to why to expect that this might work pretty well. It's essentially leveraging the fact that linear feedback control is so good, but of course not enough. And this is a gradual tiling of the space with linear feedback controls that share a lot of expertise across them.",
+          "score": 0.572,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": "Chunk 1 is relevant as it introduces Ben Goertzel and his work with OpenCog. Chunks 2, 3, 4, and 5 are irrelevant and should be ignored.\n\nThe relevant chunk confirms Goertzel's involvement but does not detail his perceived primary driver or most promising path towards AGI.\n\nThe agent should search for Ben Goertzel's specific methodologies or proposed paths for achieving AGI, particularly in relation to OpenCog, and also search for Sebastian Raschka and Nathan Lambert's analysis of the state of AI in 2026.",
+      "timestamp": 3.5535380840301514
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Ben Goertzel AGI approach OpenCog",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 5963,
+          "episode_id": 75,
+          "guest": "Marcus Hutter",
+          "chunk_index": 1,
+          "text": "The intention of this prize is to encourage the development of intelligent compressors as a path to AGI. In conjunction with his podcast release just a few days ago, Marcus announced a 10x increase in several aspects of this prize, including the money, to 500,000 Euros. The better your compressor works relative to the previous winners, the higher fraction of that prize money is awarded to you. You can learn more about it if you Google simply Hutter Prize. I'm a big fan of benchmarks for developing AI systems, and the Hutter Prize may indeed be one that will spark some good ideas for approaches that will make progress on the path of developing AGI systems. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it five stars on Apple Podcast, support it on Patreon, or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 2920,
+          "episode_id": 38,
+          "guest": "Fran\u00e7ois Chollet",
+          "chunk_index": 76,
+          "text": "So the question is about, because you've been such a good, you have a good radar for crank papers, how do we know they're not onto something? How do I, so when you start to talk about AGI or anything like the reasoning benchmarks and so on, so something that doesn't have a benchmark, it's really difficult to know. I mean, I talked to Jeff Hawkins, who's really looking at neuroscience approaches to how, and there's some, there's echoes of really interesting ideas in at least Jeff's case, which he's showing. How do you usually think about this? Like preventing yourself from being too narrow minded and elitist about deep learning, it has to work on these particular benchmarks, otherwise it's trash. Well, you know, the thing is, intelligence does not exist in the abstract. Intelligence has to be applied. So if you don't have a benchmark, if you have an improvement in some benchmark, maybe it's a new benchmark, right?",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 2703,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 107,
+          "text": "You don't play with that as much as I would hope people would. But I mean, you can still do it even with one. Like again, not much work's been done in this area. So we're actually gonna be releasing an audio library soon, which hopefully will encourage development of this because it's so underused. The basic approach we used for our super resolution and which Jason uses for dealtify of generating high quality images, the exact same approach would work for audio. No one's done it yet, but it would be a couple of months work. Okay, also learning rate in terms of Dawn Bench. There's some magic on learning rate that you played around with that's kind of interesting. Yeah, so this is all work that came from a guy called Leslie Smith. Leslie's a researcher who, like us, cares a lot about just the practicalities of training neural networks quickly and accurately, which I think is what everybody should care about, but almost nobody does.",
+          "score": 0.612,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 6632,
+          "episode_id": 84,
+          "guest": "William MacAskill",
+          "chunk_index": 17,
+          "text": "So someone might approach you on the street asking you to give to charity. And if you're feeling altruistic, you'll give to the person on the street. Or if you think, oh, I wanna do some good in my life, you might volunteer at a local place. Or perhaps you'll decide, pursue a career where you're working in a field that's kind of more obviously beneficial like being a doctor or a nurse or a healthcare professional. But it's very rare that people apply the same level of rigor and analytical thinking to lots of other areas we think about. So take the case of someone approaching you on the street. Imagine if that person instead was saying, hey, I've got this amazing company. Do you want to invest in it? It would be insane. No one would ever think, oh, of course, I'm just a company like you'd think it was a scam.",
+          "score": 0.564,
+          "source": "grep",
+          "quality_score": 0.48,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. They discuss general AI benchmarks, neural network training, or unrelated topics, without mentioning Ben Goertzel, OpenCog, or his specific AGI approach.\n\nThe agent needs to find information directly detailing Ben Goertzel's AGI philosophy and OpenCog's methodology. Then, it needs to search for the analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026.\n\nNext search query: \"Ben Goertzel AGI philosophy OpenCog methodology\" AND \"Sebastian Raschka Nathan Lambert AI 2026 analysis\"",
+      "timestamp": 14.968165397644043
+    }
+  ],
+  "final_answer": "The provided context introduces Ben Goertzel as a central figure in the AGI community, known for SingularityNet and OpenCog, and mentions his involvement in AGI conferences. However, the retrieved information does not detail his specific views on the primary driver or most promising path towards achieving AGI. Furthermore, there is no mention of Sebastian Raschka or Nathan Lambert, nor any analysis by them regarding the state of AI in 2026. Therefore, the context is insufficient to compare their perspectives.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    1,
+    3,
+    35,
+    38,
+    103,
+    8,
+    10,
+    75,
+    84
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 22.36196208000183
+}

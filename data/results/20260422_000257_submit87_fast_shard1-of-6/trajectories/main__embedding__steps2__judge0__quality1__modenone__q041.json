@@ -1,0 +1,143 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Charles Hoskinson views on programming languages blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22901,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 114,
+          "text": "So before we go into this fascinating Darwinian evolution of cryptocurrencies, let me ask you sort of a basic programming question. There's a fascinating aspect to your work with Cardano that use Haskell to build the infrastructure, but even stepping back more, looking at this landscape, another place where Darwinian evolution operates, looking at this landscape of programming languages, you as an engineer, you as a philosopher, both, what programming languages do you think are interesting and more practically, what programming languages, if you were to advise like students today, should they learn? Yeah, so there's the pedagogy of learning how to program and to express the theory of computer science.",
+          "score": 0.8048287184238433,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.8326124548912048
+        },
+        {
+          "chunk_id": 22983,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 196,
+          "text": "So it's really a question of okay, what are you designing for for version one? Are you designing for performance and are you designing for developer accessibility or are you designing for correctness and are you designing for a high fidelity representation of the protocol? Okay, so Haskell was chosen as kind of the version one because we knew that the kinds of people who think about that are also the kinds of people that would have an easy time reading a paper like Ouroboros and working their way through all of this and they would do a pretty good job running a formal specification and then translating that into running code. Then once you have that, you have a blueprint that you can actually reason about, maintain and if you really wanted to, you could then turn that into a Rust code base or into a Java code base. Going the other way around would be kind of pointless and counterproductive.",
+          "score": 0.7924369354248046,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7720527648925781
+        },
+        {
+          "chunk_id": 22994,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 207,
+          "text": "And so your main chain will always stay somewhat conservative and have the minimum viable amount of expressiveness required on it to do all kinds of interesting things. And also for interoperability, be able to talk to all kinds of interesting things, but it's not trying to be everything to everyone. There's never gonna be an ice cream store in the island. You'll have the grapes and the beautiful women, but no ice cream. Now you're just like distracting me with the ice cream. So just for, because we'll throw around a bunch of terms, for the record, what is Plutus? So Plutus is a programming language. It's kind of a DSL that we built on top of Haskell. And basically we wrote it after spending about three years thinking about all smart contracts. We were trying to figure out like, what is the ideal language to express a smart contract? And then we started thinking, well, what is a smart contract? Is it the whole application, or is it just like a sub module within an application?",
+          "score": 0.7898175497055053,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7683107852935791
+        },
+        {
+          "chunk_id": 22991,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 204,
+          "text": "But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it. So it's entirely possible to write a Scala to Plutus core compiler or TypeScript compiler or something like that. But I'm a big believer of separation of concerns and we don't live in a single chain model anymore. So you have a situation where you probably wanna have different execution environments and different chains. So you have different virtual machines there. And that's why we work so closely with the University of Illinois, Urbana Champaign, Kagori Roshu's team at runtime verification. What they did is they said, let's start with something very familiar, LLVM, which has been around for a really long time and they happened to have created it there with Apple. And let's take that and translate that into the blockchain space.",
+          "score": 0.7888808627128601,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7669726610183716
+        },
+        {
+          "chunk_id": 22990,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 203,
+          "text": "Any other language, I guess this is the key question I wanna ask. Any other language support other than Haskell? The example this person gives is TypeScript, Go, Java, Python, et cetera. Also, have you considered a yearly conference focused around developers? Ha ha, yeah, we saw the Plutus Fest. And we did the first one in 2018, 2019, I can't remember. And we were gonna do one last year, but then COVID hit. So we'll bring it back and we'll probably do it annually at the University of Wyoming for their hackathon there. In fact, it just so happens that coincides with the Goguen Summit. So we're doing that, I think the third week of September. But yeah, it's great to do an annual conference. You can bring a lot of cool people together and you can do hackathons and awards and so forth. But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it.",
+          "score": 0.7620781154632568,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7715401649475098
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 34.57450294494629
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen Michael Paulson views on programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59311,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 195,
+          "text": "But I mean for practical purposes, no. HTML is not a language. For me, yes, the Turing test is a good one, but for those that are just not wanting to be as academic, if I can\u2019t write a function and an if statement, I don\u2019t feel like that\u2019s\u2026 If I can\u2019t loop, if, and function, I don\u2019t feel like that\u2019s a good, that\u2019s a programming language. Lex Fridman: Although modern HTML has a lot of features. ThePrimeagen: It\u2019s crazy how much it has, but it\u2019s more of a specification than anything else. I specify it to be a pop-up. I specify it to have this kind of accessibility, this kind of look. Under these conditions look like this, transform like this, move down here.\n\n\n## Bash\n\nLex Fridman: I don\u2019t know. I kind of like these popular programming languages in this list. I like JavaScript. ThePrimeagen: You like Bash? Lex Fridman: Oh, yeah. I like Bash a lot. Yeah. Why? ThePrimeagen: Okay. Bash is kind of one of those ones where it\u2019s like, do you really like it? I like it up until I need an array.",
+          "score": 0.7710261483192443,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7414659261703491
+        },
+        {
+          "chunk_id": 59310,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 194,
+          "text": "Lex Fridman: Okay, so JavaScript. I\u2019ll say Python. ThePrimeagen: Python\u2019s a great one too. You can get quite far with it, but you can\u2019t write the front end. What happened if you love the front end? What happened if you really just want to design things and you just didn\u2019t know that? Lex Fridman: Well, it\u2019s okay. So for that, JavaScript. ThePrimeagen: But Python\u2019s a good choice because you can\u2019t do the ML stuff in JavaScript nearly as easy.\n\n\n## HTML & CSS\n\nLex Fridman: Do we count HTML and CSS as programming languages? ThePrimeagen: I think there\u2019s some technical definition that it is. If you use this certain amalgamation of CSS plus HTML, it actually has, it can be a Turing complete language. But I mean for practical purposes, no. HTML is not a language.",
+          "score": 0.7666492958068848,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7352132797241211
+        },
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7663169701099396,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7347385287284851
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.729830798625946,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7254725694656372
+        },
+        {
+          "chunk_id": 59116,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Michael Paulson, better known online as ThePrimeagen. He is a programmer who has entertained and inspired millions of people to have fun building stuff with software, whether you\u2019re a newbie or a seasoned developer who has been battling it out in the software engineering trenches for decades. In short, ThePrimeagen is a legendary programmer and a great human being with an inspiring roller coaster of a life story. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s ThePrimeagen.\n\n\n## Love for programming\n\nLex Fridman: What do you love most about programming? What brings you joy when you program? ThePrimeagen: I can tell you the first time that I ever felt love in programming, or felt that joy or that excitement-\n\nLex Fridman: Sure. ThePrimeagen: Which was in college.",
+          "score": 0.5995722818374634,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.8136746883392334
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 35.862839698791504
+    }
+  ],
+  "final_answer": "Charles Hoskinson, from his focus on blockchain infrastructure, emphasizes languages like Haskell for their correctness, formal specification, and high-fidelity representation of protocols, also developing domain-specific languages like Plutus for smart contracts. ThePrimeagen, a general software engineer, defines programming languages by their practical ability to implement functions, if statements, and loops, and recommends learning strict static typed languages to deepen understanding. The provided context does not contain information regarding Tim Sweeney's views on programming languages.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    192,
+    461
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 67.99482750892639
+}

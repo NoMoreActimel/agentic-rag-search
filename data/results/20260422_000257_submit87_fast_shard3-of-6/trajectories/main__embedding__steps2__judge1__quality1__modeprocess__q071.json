@@ -1,0 +1,133 @@
+{
+  "question": "Across discussions on human potential and technological advancement, what is the maximum information transfer rate achieved by a human with a Neuralink implant, and how does Neuralink's target number of human implants by the end of the year compare to the recommended weekly set volume for hypertrophy training as suggested by Andrew Huberman?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Neuralink information transfer rate human implant",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 53960,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 126,
+          "text": "So our implant is actually a two-part. The link has these flexible tiny wires called threads that have multiple electrodes along its length. And they\u2019re only inserted into the cortical layer, which is about three to five millimeters in a human brain, in the motor cortex region. That\u2019s where the intention for movement lies in. And we have 64 of these threads, each thread having 16 electrodes along the span of three to four millimeters, separated by 200 microns. So you can actually record along the depth of the insertion. And based on that signal, there\u2019s custom integrated circuit or ASIC that we built that amplifies the neural signals that you\u2019re recording and then digitizing it and then has some mechanism for detecting whether there was an interesting event that is a spiking event, and decide to send that or not send that through Bluetooth to an external device, whether it\u2019s a phone or a computer that\u2019s running this Neuralink application.",
+          "score": 0.8180250406265259,
+          "source": "embedding",
+          "quality_score": 1.0,
+          "original_score": 0.7400357723236084
+        },
+        {
+          "chunk_id": 53837,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 3,
+          "text": "The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah. I think it\u2019s obviously going to get better with each one. I don\u2019t want to jinx it, but it seems to have gone extremely well with the second implant. So, there\u2019s a lot of signal, a lot of electrodes. It\u2019s working very well. Lex Fridman: What improvements do you think we\u2019ll see in Neuralink in the coming, let\u2019s say, let\u2019s get crazy, the coming years. Elon Musk: In years, it\u2019s going to be gigantic, because we\u2019ll increase the number of electrodes dramatically. We\u2019ll improve the signal processing. So, even with only roughly, I don\u2019t know, 10, 15% of the electrodes working with Noland, with our first patient, we were able to get to achieve a bit per second. That\u2019s twice the world record. So, I think we\u2019ll start vastly exceeding the world record by orders of magnitude in the years to come. So, start getting to, I don\u2019t know, 100 bits per second, thousand.",
+          "score": 0.7999511904716492,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.739930272102356
+        },
+        {
+          "chunk_id": 53838,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 4,
+          "text": "So, start getting to, I don\u2019t know, 100 bits per second, thousand. Maybe if five years from now, we might be at a megabit, faster than any human could possibly communicate by typing, or speaking.\n\n\n## Telepathy\n\nLex Fridman: Yeah. That BPS is an interesting metric to measure. There might be a big leap in the experience once you reach a certain level of BPS. Elon Musk: Yeah. Lex Fridman: Like entire new ways of interacting with a computer might be unlocked. Elon Musk: And with humans. Lex Fridman: With other humans. Elon Musk: Provided they have want a Neuralink, too. Lex Fridman: Right. Elon Musk: Otherwise they wont be able to absorb the signals fast enough. Lex Fridman: Do you think they\u2019ll improve the quality of intellectual discourse? Elon Musk: Well, I think you could think of it, if you were to slow down communication, how do you feel about that? If you\u2019d only talk at, let\u2019s say one-tenth of normal speed, you\u2019d be like, \u201cWow, that\u2019s agonizingly slow.\u201d\n\nLex Fridman: Yeah.",
+          "score": 0.7758357543945312,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7483367919921875
+        },
+        {
+          "chunk_id": 8263,
+          "episode_id": 99,
+          "guest": "Karl Friston",
+          "chunk_index": 67,
+          "text": "So I don't want to be deflationary because much of my deflationary comments is probably large out of ignorance than anything else. But generally speaking, the bandwidth and the bit rates that you get from brain computer interfaces as we currently know them, we're talking about bits per second. So that would be like me only being able to communicate with any world or with you using very, very, very slow Morse code. And it is not even within an order of magnitude near what we actually need for an inactive realization of what people aspire to when they think about sort of curing people with paraplegia or replacing sight despite heroic efforts. So one has to ask, is there a lower bound on the kinds of recurrent information exchange between a brain and some augmented or artificial interface?",
+          "score": 0.7553467781543731,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7619239687919617
+        },
+        {
+          "chunk_id": 53844,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 10,
+          "text": "So that is perhaps helpful. I think we\u2019ll probably get\u2026 If our data rate increases, it\u2019s highly probable it will become far more verbose. Just like your computer, when computers had\u2026 My first computer had 8K of RAM, so you really thought about every byte. And now you\u2019ve got computers with many gigabytes of RAM. So, if you want to do an iPhone app that just says, \u201cHello world,\u201d it\u2019s probably, I don\u2019t know, several megabytes minimum, a bunch of fluff. But nonetheless, we still prefer to have the computer with the more memory and more compute. So, the long-term aspiration of Neuralink is to improve the AI human symbiosis by increasing the bandwidth of the communication. Because even if\u2026 In the most benign scenario of AI, you have to consider that the AI is simply going to get bored waiting for you to spit out a few words.",
+          "score": 0.7404099793434142,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7405856847763062
+        }
+      ],
+      "judge_feedback": "Chunks 2 and 3 are highly relevant, stating Neuralink achieved \"a bit per second\" with its first patient, which was \"twice the world record,\" and projecting future rates. The other chunks provide useful context on Neuralink's technology and general BCI bandwidth.\n\nHowever, the retrieved chunks contain no information about Neuralink's target number of human implants or Andrew Huberman's hypertrophy recommendations. The agent should search for these two distinct pieces of information next.\n\n**Next search queries:**\n1. \"Neuralink human implant target number end of year\"\n2. \"Andrew Huberman hypertrophy training weekly set volume\"",
+      "timestamp": 9.057380676269531
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Neuralink human implant target number end of year OR Andrew Huberman hypertrophy training weekly set volume",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.7901700921058654,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7259572744369507
+        },
+        {
+          "chunk_id": 53958,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 124,
+          "text": "And all of this, I\u2019m asking in the context of, there\u2019s a gigantic historic milestone that Neuralink just accomplished in January of this year. Putting a Neuralink implant in the first human being, Noland. And there\u2019s been a lot to talk about there about his experience because he\u2019s able to describe all the nuance and the beauty and the fascinating complexity of that experience of everything involved. But on the technical level, how does Neuralink work? DJ Seo: So there are three major components to the technology that we\u2019re building. One is the device, the thing that\u2019s actually recording these neural chatters. We call it N1 Implant or The Link. And we have a surgical robot that\u2019s actually doing an implantation of these tiny, tiny wires that we call threads that are smaller than human hair.",
+          "score": 0.748349709033966,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.666213870048523
+        },
+        {
+          "chunk_id": 36609,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 154,
+          "text": "For hypertrophy, I learned from Andy that the repetition range can be pretty broad. You're thinking anywhere from six to 30 repetitions. You should do 10 sets per muscle group per week, maybe even a bit more. So high volume. High volume, but you have to go to failure or beyond in order to stimulate growth. Why does it work at such a great range of repetitions? Well, there apparently are three ways that you stimulate hypertrophy and maybe more. One is tissue micro damage to the tissue. The other is through some sort of tension based changes in the molecular gene programs of cells that lead to protein synthesis that are distinct from damage. And the other are metabolic effects of like high repetition work of super fusion of the muscle with blood. We know that third category exists because people are now doing this blood restriction training where they cuff off a muscle and they'll use a really lightweight. I've done these before.",
+          "score": 0.7218959350585937,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6712799072265625
+        },
+        {
+          "chunk_id": 54029,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 195,
+          "text": "Lex Fridman: So you\u2019re doing a lot of iteration here in every aspect of this. The materials, the software, all. DJ Seo: The whole shebang.\n\n\n## Future capabilities\n\nLex Fridman: Okay. So you mentioned scaling. Is it possible to have multiple Neuralink devices as one of the ways of scaling? To have multiple Neuralink devices implanted? DJ Seo: That\u2019s the goal. That\u2019s the goal. Yeah. I mean, our monkeys have had two neural links, one in each hemisphere. And then we\u2019re also looking at potential of having one in motor cortex, one in visual cortex and one in wherever other cortex. Lex Fridman: So focusing on the particular function one Neuralink device. DJ Seo: Correct. Lex Fridman: I mean, I wonder if there\u2019s some level of customization that can be done on the compute side. So for the motor cortex-\n\nDJ Seo: Absolutely. That\u2019s the goal. And we talk about at Neuralink building a generalized neural interface to the brain.",
+          "score": 0.7188223917484283,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6668891310691833
+        }
+      ],
+      "judge_feedback": "All chunks are relevant. Chunks 1 and 3 provide direct answers for Neuralink's target implants (10 by end of year) and Huberman's hypertrophy sets (10 sets per muscle group per week).\n\nThe primary gap is the \"maximum information transfer rate achieved by a human with a Neuralink implant.\" The agent should search for \"Neuralink human information transfer rate\" or \"Neuralink data transfer speed\" to find this specific metric.",
+      "timestamp": 23.23355484008789
+    }
+  ],
+  "final_answer": "A human with a Neuralink implant has achieved an information transfer rate of \"a bit per second,\" which is twice the world record. Neuralink is hoping to complete a total of 10 human implants by the end of the year. This number is numerically the same as Andrew Huberman's recommendation of 10 sets per muscle group per week for hypertrophy training.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    99,
+    277,
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 205.39445066452026
+}

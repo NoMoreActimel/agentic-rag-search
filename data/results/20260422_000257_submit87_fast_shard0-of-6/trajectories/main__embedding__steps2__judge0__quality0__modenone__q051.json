@@ -1,0 +1,89 @@
+{
+  "question": "Considering the discussions on 'neuroscience', how has the focus shifted from understanding the brain's chemical responses and vulnerabilities, as detailed by Matthew Johnson, to the direct technological intervention and augmentation of neural function, as presented by Elon Musk and the Neuralink team?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Matthew Johnson neuroscience chemical responses vulnerabilities brain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54065,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 231,
+          "text": "Matthew MacDougall: Basically, the moment I got to college, I started looking around for labs that I could do neuroscience work in. I originally approached that from the angle of looking at interactions between the brain and the immune system, which isn\u2019t the most obvious place to start, but I had this idea at the time that the contents of your thoughts would have a direct impact, maybe a powerful one, on non-conscious systems in your body. The systems we think of as homeostatic automatic mechanisms, like fighting off a virus, like repairing a wound. And sure enough, there are big crossovers between the two. I mean, it gets to kind of a key point that I think goes under-recognized. One of the things people don\u2019t recognize or appreciate about the human brain enough, and that is that it basically controls or has a huge role in almost everything that your body does.",
+          "score": 0.6602697372436523,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 18013,
+          "episode_id": 164,
+          "guest": "Andrew Huberman",
+          "chunk_index": 74,
+          "text": "Well, that's very subjective. So you need, we need, can you build a tool for that? Can you build an AI tool for that? Yeah, deeper, yeah, well. Maybe that's the eye, maybe that's our, that's what the eyes could reveal. So language is not just words, it's everything together. And that's one of the fascinating things about the eyes and the window to the soul. I mean, they express so much, the face, the eyes, the body, I mean, Lisa talks about that, the communication of emotions, it's a super complex. Perhaps it's a bit of a side fun tangent, but Matt, Matthew Johnson brings up DMT and the experience of DMT is from a scientific perspective, just a mystery in itself over its intensity of what happens to the brain. And of course, Joe Rogan and others bring it up as a very different special kind of experience and elves seem to come up often. I've never tried DMT, what allows for hallucinogenic states? And it, I mean, DMT is a really interesting molecule.",
+          "score": 0.6598509550094604,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54059,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 225,
+          "text": "Matthew MacDougall: Since forever. As far back as I can remember, I\u2019ve been interested in the human brain. I mean, I was a thoughtful kid and a bit of an outsider, and you sit there thinking about what the most important things in the world are in your little tiny adolescent brain. And the answer that I came to, that I converged on was that all of the things you can possibly conceive of as things that are important for human beings to care about are literally contained in the skull. Both the perception of them and their relative values and the solutions to all our problems, and all of our problems, are all contained in the skull. And if we knew more about how that worked, how the brain encodes information and generates desires and generates agony and suffering, we could do more about it. You think about all the really great triumphs in human history. You think about all the really horrific tragedies.",
+          "score": 0.6584435701370239,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 29501,
+          "episode_id": 233,
+          "guest": "Carl Hart",
+          "chunk_index": 57,
+          "text": "So we certainly say cocaine is an upper or stimulant. But it depends on the activity of the person before they take the drug. Say like if you're like really active before taking a drug like cocaine, it might actually calm you. So it all depends on the activity of the person before they take the drug. I remember, I don't know if you know Matthew Johnson is. Of course. He did all these studies on, or I remember just reading a paper, I didn't get a chance to talk with him much about it, but it was about condom use and cocaine. And then like the doses and whether people are more or less likely. Like the unsafe thing there is the using or not using, or not using, I guess, condoms during sexual intercourse. I don't know, I just, I love that these drugs that have connotation probably because of Hollywood, negative connotations are actually being studied by science. And then the actual impact they have, and what are the negative effects.",
+          "score": 0.6583080291748047,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 15051,
+          "episode_id": 145,
+          "guest": "Matthew Johnson",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Matthew Johnson, a professor of psychiatry and behavioral science at John Hopkins, and is one of the top scientists in the world conducting seminal research on psychedelics. This was one of the most eye opening and fascinating conversations I've ever had on this podcast. I'm sure I'll talk with Matt many more times. Quick mention of a sponsor followed by some thoughts related to the episode. Thank you to a new sponsor, Brave, a fast browser that feels like Chrome but has more privacy preserving features. Neuro, the maker of functional sugar free gum and mints that I use to give my brain a quick caffeine boost. Four Sigmatic, the maker of delicious mushroom coffee, I'm just now realizing how ironic the set of sponsors are. And Cash App, the app I use to send money to friends. Please check out these sponsors in the description to get a discount and support this podcast.",
+          "score": 0.6527665853500366,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.769280910491943
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 25.215255975723267
+    }
+  ],
+  "final_answer": "The provided context details Matthew Johnson's research on chemical responses and vulnerabilities, specifically his work on psychedelics like DMT and the effects of drugs like cocaine on the brain. However, the retrieved chunks related to Elon Musk and the Neuralink team, through Matthew MacDougall, primarily discuss the importance of understanding the brain's fundamental control over body functions and its role in encoding information, desires, and suffering to address human problems. The context does not explicitly detail a shift to \"direct technological intervention and augmentation of neural function\" by Musk or Neuralink, but rather emphasizes understanding the brain's mechanisms.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    233,
+    145,
+    164,
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 25.215258598327637
+}

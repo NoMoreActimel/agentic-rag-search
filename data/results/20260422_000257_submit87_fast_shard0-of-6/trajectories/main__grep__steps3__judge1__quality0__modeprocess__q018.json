@@ -1,0 +1,86 @@
+{
+  "question": "If Saagar Enjeti refers to the work of Jack Weatherford, the guest who discussed Genghis Khan, what specific event involving Genghis Khan's wife, B\u00f6rte, motivated him to build a military force, according to Jack Weatherford?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Jack Weatherford Genghis Khan B\u00f6rte military motivation",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 62860,
+          "episode_id": 476,
+          "guest": "Jack Weatherford",
+          "chunk_index": 21,
+          "text": "And I do think this is the defining moment of his life. The story began back when his mother was kidnapped, but now the kidnapping of his wife and [inaudible 00:21:46] what will he do? What should he do? What can he do? Is he going to just resign himself to it? Is he going to go out and look for another wife? And he decides that life is not worth living without B\u00f6rte. He has found something good in this life. And if he has to die trying to get her back, he will die trying to get her back. Lex Fridman: And this is the early steps of the military genius born, because in order to get her back requires an actual organization of troops. Jack Weatherford: He needs allies. Lex Fridman: Allies. Jack Weatherford: He goes to a man who ruled the Khiyad people in Central Mongolia, the Tuul River, about where the capital Ulaanbaatar is today. He goes there because that Wang Khan is his name or Toghrul khan.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62938,
+          "episode_id": 476,
+          "guest": "Jack Weatherford",
+          "chunk_index": 99,
+          "text": "Over and over, the Mongols were excellent at putting together new things and new ways and using them against their enemies. Lex Fridman: So, rapid, extreme, continued innovation. So, you couple that with a, you have to say, a revolutionary idea that promotion should be based on merit. That idea combined with the innovative approach to military it just feeds on itself because the people who are learning from their mistakes and constantly improving are the ones that get promoted in the positions of power and then they inspire everybody else to do the same. And so, if every action is judged based on the excellence of that action, then over time, repeated iteration in war creates a more and more powerful army. Jack Weatherford: Yes, yes. And they were able to do that for three generations to create an army that was ever expanding, ever changing its tactics and its technology and they got worse at it over time but Genghis Khan was the one who innovated it.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62944,
+          "episode_id": 476,
+          "guest": "Jack Weatherford",
+          "chunk_index": 105,
+          "text": "Jack Weatherford: He really was a military genius. But there were other things too. They didn\u2019t like roads. They just didn\u2019t like roads. So they would often be coming from some direction that nobody ever came from, and the people would be unprepared for that. The most famous example is probably in Bukhara. This is a beautiful, wonderful old city, a great place in the world to this day. And they came across the desert. Well, nobody had ever attacked across the desert, so people see dust coming. They think, well, caravan. They don\u2019t even know what\u2019s going on. But it was the direction that was a surprise element in that particular case. So he was able to think in ways that the other people were not thinking yet, and to be able to surprise them. Lex Fridman: What do you think it again, felt like to have this Mongol armada, the horses? The ground must shake when you have that many horses. What do you think it feels like to be in a town when Genghis Khan\u2019s approaching?",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63043,
+          "episode_id": 476,
+          "guest": "Jack Weatherford",
+          "chunk_index": 204,
+          "text": "Jack Weatherford: Yeah, well, it was actually very difficult because they were a little bit lazy and they weren\u2019t so good with doing the task. And so it became difficult, actually, to support so many people coming home and eating up all the animals. The Mongols in China had been used to just eating. They hadn\u2019t been producing much for 150 years. Lex Fridman: So just to return to Genghis Khan, and we talked about Dan Carlin, and Dan Carlin said that Genghis Khan\u2019s army was the greatest military force in history. And many other historians agree that before rifles came into popular use, Genghis Khan would basically beat every single army, including Napoleon. And you mentioned the Samurai, the whole formal setup, same with Napoleon. There\u2019s a whole several hours to set up the chess pieces on the military board. I mean, you could just imagine what Genghis Khan and the dynamism, the speed of everything, what that would do to Napoleon.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63044,
+          "episode_id": 476,
+          "guest": "Jack Weatherford",
+          "chunk_index": 205,
+          "text": "I mean, you could just imagine what Genghis Khan and the dynamism, the speed of everything, what that would do to Napoleon. So, I guess the question is, do you agree with that notion that Genghis Khan\u2019s army is the greatest military force in history? Jack Weatherford: Short answer is yes, absolutely. No other power in the history of the world has conquered Russia and China and Persia and Central Asia and Turkey and Korea. No power in the world has done that. Not Alexander, not the Romans. Nobody will ever do it again. Nobody\u2019s going to conquer China and Russia again and rule both countries. It\u2019s just not gonna happen. Lex Fridman: What lessons can you take from that\u2019s applicable to modern warfare? Jack Weatherford: Oh, I think there\u2019s a very good lesson. The Mongols took Iraq. They took Baghdad, they held it. The Americans, we followed the exact opposite strategy of the Mongols. The Mongol strategy is first you take the countryside. They\u2019re country people.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 directly answers the question, stating that the kidnapping of his wife, B\u00f6rte, was the defining moment that motivated Genghis Khan to organize troops to get her back. Chunks 2, 3, 4, and 5 are irrelevant as they discuss the general characteristics, tactics, and historical significance of Genghis Khan's military, not the specific event that motivated its formation. No further search is needed for this specific question.",
+      "timestamp": 3.5040252208709717
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 11.296334505081177
+    }
+  ],
+  "final_answer": "According to Jack Weatherford, the kidnapping of Genghis Khan's wife, B\u00f6rte, was the defining moment that motivated him to build a military force. He decided that life was not worth living without her and that he would die trying to get her back, which led to the early steps of organizing troops.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    476
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 11.296337366104126
+}

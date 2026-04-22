@@ -1,0 +1,220 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 301,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 21,
+          "text": "Oh, interesting. So you basically, exactly, you first observe what you like. Yeah, and so that's why if you're 17 years old and you want to sort of create a programming language, you're not going to be very successful at it because you have no experience with other languages, whereas I was in my, let's say mid 30s, I had written parsers before, so I had worked on the implementation of ABC, I had spent years debating the design of ABC with its authors, with its designers, I had nothing to do with the design, it was designed fully as it ended up being implemented when I joined the team. But so you borrow ideas and concepts and very concrete sort of local rules from different languages like the indentation and certain other syntactic features from ABC, but I chose to borrow string literals and how numbers work from C and various other things.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 326,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 46,
+          "text": "So I think it's consciousness and intelligence are not all or nothing. The spectrum is really interesting. But in returning to programming languages and the way we think about building these kinds of things, about building intelligence, building consciousness, building artificial beings. So I think one of the exciting ideas came in the 17th century and with Leibniz, Hobbes, Descartes, where there's this feeling that you can convert all thought, all reasoning, all the thing that we find very special in our brains, you can convert all of that into logic. So you can formalize it, formal reasoning, and then once you formalize everything, all of knowledge, then you can just calculate and that's what we're doing with our brains is we're calculating. So there's this whole idea that this is possible, that this we can actually program. But they weren't aware of the concept of pattern matching in the sense that we are aware of it now.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 346,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 66,
+          "text": "Everything they've learned in college was almost always about a much smaller scale and somehow that difference in scale makes a qualitative difference in how you do things and how you think about it. If you then take a few steps back into decades, 70s and 80s, when you were first thinking about Python or just that world of programming languages, did you ever think that there would be systems as large as underlying Google, Facebook, and Dropbox? Did you, when you were thinking about Python? I was actually always caught by surprise by sort of this, yeah, pretty much every stage of computing. So maybe just because you've spoken in other interviews, but I think the evolution of programming languages are fascinating and it's especially because it leads from my perspective towards greater and greater degrees of intelligence. I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 347,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 67,
+          "text": "I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah. And if you look, I just have a list of programming languages, all of which I've now played with a little bit. I mean, they're all beautiful in different ways from Fortran, Cobalt, Lisp, Algol 60, Basic, Logo again, C, as a few, the object oriented came along in the 60s, Simula, Pascal, Smalltalk. All of that leads. They're all the classics. The classics. Yeah. The classic hits, right? Steam, that's built on top of Lisp. On the database side, SQL, C++, and all of that leads up to Python, Pascal too, and that's before Python, MATLAB, these kind of different communities, different languages. So can you talk about that world? I know that sort of Python came out of ABC, which I actually never knew that language.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks are irrelevant to both parts of the question. They discuss programming languages in general with Guido van Rossum, not OpenCog or specific LLMs with Sebastian Raschka and Nathan Lambert.\n\nTo answer the first part, search for \"OpenCog programming languages\" again, but ensure the results are directly about OpenCog.\nTo answer the second part, search for \"Sebastian Raschka Nathan Lambert LLMs\" or \"Sebastian Raschka Nathan Lambert large language models\".",
+      "timestamp": 2.0165297985076904
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 8.039166688919067
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "OpenCog developed in",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8634,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8718,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 143,
+          "text": "Right now, OpenCog is amazingly powerful, but not simple to deal with. On the other hand, SingularityNet, as an open platform was developed a little more with usability in mind over the blockchain, it's still kind of a pain. So I mean, if you're a command line guy, there's a command line interface. It's quite easy to take any AI that has an API and lives in a Docker container and put it online anywhere. And then it joins the global SingularityNet. And anyone who puts a request for services out into the SingularityNet, the peer to peer discovery mechanism will find your AI and if it does what was asked, it can then start a conversation with your AI about whether it wants to ask your AI to do something for it, how much it would cost and so on. So that's fairly simple.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 128,
+          "episode_id": 2,
+          "guest": "Christof Koch",
+          "chunk_index": 42,
+          "text": "So can you describe the way Buddhism sees the world a little bit? Well so they talk about, so when I spent several meetings with the Dalai Lama and what always impressed me about him, he really, unlike for example let's say the Pope or some Cardinal, he always emphasized minimizing the suffering of all creatures. So they have this, from the early beginning they look at suffering in all creatures, not just in people, but in everybody, this universal and of course by degrees, an animal in general is less capable of suffering than a well developed, normally developed human and they think consciousness pervades in this universe and they have these techniques, you can think of them like mindfulness etc. and meditation that tries to access what they claim of this more fundamental aspect of reality.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 272,
+          "episode_id": 5,
+          "guest": "Vladimir Vapnik",
+          "chunk_index": 34,
+          "text": "In learning. Yeah. You will know it when we see it? So for example, in my talk, the last slide was a challenge. So you have say NIST digit recognition problem and deep learning claims that they did it very well, say 99.5% of correct answers. But they use 60,000 observations. Can you do the same using hundred times less? But incorporating invariants, what it means, you know, digit one, two, three. But looking on that, explain to me which invariant I should keep to use hundred examples or say hundred times less examples to do the same job. Yeah, that last slide, unfortunately your talk ended quickly, but that last slide was a powerful open challenge and a formulation of the essence here. What is the exact problem of intelligence? Because everybody, when machine learning started and it was developed by mathematicians, they immediately recognized that we use much more training data than humans needed. But now again, we came to the same story, have to decrease.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 277,
+          "episode_id": 5,
+          "guest": "Vladimir Vapnik",
+          "chunk_index": 39,
+          "text": "But the ground truth I see in music. Music is the ground truth? Yeah. And in poetry, many poets, they believe, they take dictation. So what piece of music as a piece of empirical evidence gave you a sense that they are touching something in the ground truth? It is structure. The structure of the math of music. Yeah, because when you're listening to Bach, you see the structure. Very clear, very classic, very simple, and the same in math when you have axioms in geometry, you have the same feeling. And in poetry, sometimes you see the same. And if you look back at your childhood, you grew up in Russia, you maybe were born as a researcher in Russia, you've developed as a researcher in Russia, you've came to United States and a few places. If you look back, what was some of your happiest moments as a researcher, some of the most profound moments, not in terms of their impact on society, but in terms of their impact on how damn good you feel that day and you remember that moment?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 3, 4, and 5 are irrelevant. Chunk 1 provides useful information, stating OpenCog is primarily written in C++ and Scheme.\n\nThe current search query only addresses the first part of the question. The agent needs to search for discussions with Sebastian Raschka and Nathan Lambert about LLMs.\n\n**Next search query:** \"Sebastian Raschka Nathan Lambert large language models\" or \"Sebastian Raschka Nathan Lambert LLM names\"",
+      "timestamp": 13.664249181747437
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Sebastian Raschka Nathan Lambert large language models",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65732,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 92,
+          "text": "Nathan Lambert: \u2026 \u201cI\u2019m gonna make the data better,\u201d or, \u201cI\u2019m gonna make the infrastructure better so that everybody on my team can run experiments 5% faster.\u201d\n\nSebastian Raschka: At the same time, I think it\u2019s also one of the closest guarded secrets\u2014what your training data is\u2014for legal reasons. And so there\u2019s also a lot of work that goes into hiding what your training data was, essentially, trying to get the model to not give away the sources because of those legal reasons. Nathan Lambert: The other thing, to be complete, is that some people are trying to train on only licensed data, whereas Common Crawl is a scrape of the whole internet. If I host multiple websites, I\u2019m happy to have them train language models, but I\u2019m not explicitly licensing what governs it. Therefore, Common Crawl is largely unlicensed, which means your consent really hasn\u2019t been provided for how to use the data.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65781,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 141,
+          "text": "Sebastian Raschka: Well, first they had developed models that grade themselves as a separate model. I think that will be one aspect. And the other, like Nathan mentioned, will be RLVR branching into other domains. Nathan Lambert: The place where people are excited is value functions\u2014 \u2014which is pretty similar. Process reward models assign how good something is to each intermediate step in a reasoning process, whereas value functions apply value to every token the language model generates. Both of these have been largely unproven in the language modeling and reasoning model era. People are more optimistic about value functions for whatever reason now. I think process reward models were tried a lot more in the pre-o1 era, and a lot of people had headaches with them. Value models have a very deep history in reinforcement learning. Nathan Lambert: They\u2019re one of the first things that were core to deep reinforcement learning existing\u2014training value models.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65640,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.8571428571428571,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65641,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 1,
+          "text": "First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch. I truly believe in the machine learning and computer science world, the best way to learn and understand something is to build it yourself from scratch. Nathan is the post-training lead at the Allen Institute for AI, and author of the definitive book on reinforcement learning from human feedback. Both of them have great X accounts, great Substacks. Sebastian has courses on YouTube, Nathan has a podcast. And everyone should absolutely follow all of those. This is the Lex Fridman podcast. Lex Fridman: To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, get feedback, and so on. And now, dear friends, here\u2019s Sebastian Raschka and Nathan Lambert.\n\n\n## China vs US: Who wins the AI race? Lex Fridman: So I think one useful lens to look at all this through is the so-called DeepSeek moment.",
+          "score": 0.8571428571428571,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65696,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 56,
+          "text": "And then you can find better configurations faster by doing this. So you can look at the tokens per second per GPU as a metric that you look at when you\u2019re doing large-scale training. And you can go from, like, 10K to 13K by turning on FP8 training, which means you\u2019re using less memory per parameter in the model. And by saving less information, you do less communication and you can train faster. Nathan Lambert: So all of these system things underpin way faster experimentation on data and algorithms. It\u2019s this kind of loop that keeps going where it\u2019s kinda hard to describe when you look at the architecture and they\u2019re exactly the same. But the code base used to train these models is gonna be vastly different\u2014 \u2026and you could probably\u2026 the GPUs are different, but you probably train gpt-oss-20b way faster in wall clock time than GPT-2\u2014 \u2026was trained at the time. Sebastian Raschka: Yeah.",
+          "score": 0.8571428571428571,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks provide useful information for the second part of the question, explicitly naming three distinct LLMs: DeepSeek, gpt-oss-20b, and GPT-2. However, they contain no information regarding programming languages for cognitive architectures like OpenCog. The agent should search for \"OpenCog programming languages\" or \"cognitive architectures programming languages\" to address the first part of the question.",
+      "timestamp": 18.803427934646606
+    }
+  ],
+  "final_answer": "For cognitive architectures like OpenCog, two primary programming languages are explicitly mentioned: C++ and Scheme. When discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert, two distinct large language models are referenced by name: gpt-oss-20b and GPT-2.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    2,
+    5,
+    6,
+    103,
+    490
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 26.58457612991333
+}

@@ -1,0 +1,158 @@
+{
+  "question": "Stephen Wolfram proposes that General Relativity emerges from his Wolfram Physics Project, a model based on simple computational rules on hypergraphs. In contrast, Janna Levin investigates the established framework of General Relativity through phenomena like black holes and gravitational waves. How do their fundamental approaches to understanding General Relativity differ?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Stephen Wolfram General Relativity Wolfram Physics Project hypergraphs",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 10505,
+          "episode_id": 118,
+          "guest": "Grant Sanderson",
+          "chunk_index": 95,
+          "text": "So we don't have much time, but I want to ask just cause it's some beautiful mathematics involved. 2020 brought us a couple of in the physics world theories of everything, Eric Weinstein kind of, I mean, it's been working for probably decades, but he put out this idea of geometric unity or started sort of publicly thinking and talking about it more, Steven Wolfram put out his physics project, which is kind of this hypergraph view of a theory of everything. Do you find interesting, beautiful things to these theories of everything? What do you think about the physics world and sort of the beautiful, interesting, insightful mathematics in that world, whether we're talking about quantum mechanics, which you touched on in a bunch of your videos a little bit, quaternions, like just the mathematics involved or the general relativity, which is more about surfaces and topology, all that stuff.",
+          "score": 0.8069999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 11461,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Stephen Wolfram, his second time on the podcast. He's a computer scientist, mathematician, theoretical physicist, and the founder and CEO of Wolfram Research, a company behind Mathematica, Wolfram Alpha, Wolfram Language, and the new Wolfram Physics Project. He's the author of several books, including A New Kind of Science, and the new book, A Project to Find the Fundamental Theory of Physics. This second round of our conversation is primarily focused on this latter endeavor of searching for the physics of our universe in simple rules that do their work on hypergraphs and eventually generate the infrastructure from which space, time, and all of modern physics can emerge. Quick summary of the sponsors, SimpliSafe, Sunbasket, and Masterclass. Please check out these sponsors in the description to get a discount and to support this podcast.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 23964,
+          "episode_id": 198,
+          "guest": "Sara Walker",
+          "chunk_index": 32,
+          "text": "And some of those problems become very evident when you try to patch quantum mechanics and general relativity together. So there is this kind of interesting feature that some of the ways of patching that might actually closely resemble the physics of life. And so the place where that actually comes up most, and actually we just had a workshop in the Beyond Center where I work at Arizona State University, and Lee Smolin made this point that he thinks that the theory of quantum gravity when we solve it is gonna be the same theory that gives rise to life. And I think that I agree with him on some levels because there's something very interesting where, if you look at these sort of causal set theories of gravity where they're looking for space as being emergent. And so space time is an emergent concept from a causal set, which is also sort of related, I think, to what Wolfram's doing with his physics project.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 8639,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 64,
+          "text": "There are ways to spread it among multiple different machines. Then there are various utilities for dealing with that. So there's a pattern matcher, which lets you specify a sort of abstract pattern and then search through a whole atom space with labeled hypergraph to see what subhypergraphs may match that pattern, for an example. So that's, then there's something called the COG server in OpenCOG, which lets you run a bunch of different agents or processes in a scheduler. And each of these agents, basically it reads stuff from the atom space and it writes stuff to the atom space. So this is sort of the basic operational model. That's the software framework. And of course that's, there's a lot there just from a scalable software engineering standpoint. So you could use this, I don't know if you've, have you looked into the Stephen Wolfram's physics project recently with the hypergraphs and stuff? Could you theoretically use like the software framework to play with it?",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 11592,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 131,
+          "text": "Is it useful for us to maybe first talk about how quantum mechanics fits into the Wolfram physics model? Yes. Let's go there. So we talked about general relativity. Now, what have you found from quantum mechanics within and outside of the Wolfram physics? Right, so I mean, the key idea of quantum mechanics that sort of the typical interpretation is classical physics says a definite thing happens. Quantum physics says there's this whole set of paths of things that might happen. And we are just observing some overall probability of how those paths work. Okay, so when you think about our hypergraphs and all these little updates that are going on, there's a very remarkable thing to realize, which is if you say, well, which particular sequence of updates should you do? Say, well, it's not really defined. You can do any of a whole collection of possible sequences of updates. Okay, that set of possible sequences of updates defines yet another kind of graph that we call a multiway graph.",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.557667016983032
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Janna Levin General Relativity black holes gravitational waves",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 6774,
+          "episode_id": 85,
+          "guest": "Roger Penrose",
+          "chunk_index": 67,
+          "text": "It's not altogether clear, I have to say, but you can get close enough. And I went to this course by Bondi on general relativity, and I thought, well, you can put that on a computer, because that was a long time before people, and I've sort of grown up with this, how people have done better and better calculations, and they could work out about black holes, and they can then work out how black holes can interact with each other, spiral around, and what kind of gravitational waves can out. And it's a very impressive piece of computational work, how you can actually work out the shapes of those signals. And now we have LIGO seeing these signals, and they say, yeah, those black holes spiral into each other. This is just a vindication of the power of computation in describing Einstein's general relativity. So in that case, we can get close, but with computation, we can get close to our understanding of the physics. You can get very, very close. Now, is that close enough, you see?",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 11765,
+          "episode_id": 124,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 304,
+          "text": "And, you know, it turns out it was expanding and he should have just trusted the equations. And that's a lesson for those of us interested in making fundamental theories of physics is you should trust your theory and not try and patch it because of something that you think might be the case that might turn out not to be the case. Even if the theory says something crazy is happening. Yeah, right. Like the universe is expanding. Like the universe is expanding, right, which is, but, you know, then it took until the 1940s, probably even really until the 1960s, until people understood that black holes were a consequence of general relativity and so on. But that's, you know, the big surprise has been that so far this theory of gravity has perfectly agreed with, you know, these collisions of black holes seen by their gravitational waves, you know, it all just works. So that's been kind of one pillar of the story of physics it's mathematically complicated to work out",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 52159,
+          "episode_id": 428,
+          "guest": "Sean Carroll",
+          "chunk_index": 175,
+          "text": "Sean Carroll: So far. Lex Fridman: What do you find beautiful about it? Sean Carroll: Let\u2019s put it this way. When I teach courses, there\u2019s no more satisfying subject to teach than general relativity and the reason why is because it starts from very clear, precisely articulated assumptions and it goes so far. And when I give my talk, you can find it online, I\u2019m probably not going to give it again, the book one of the Biggest Ideas talk was building up from you don\u2019t know any math or physics, an hour later, you know Einstein\u2019s equation for general relativity. And the punchline is the equation is much smarter than Albert Einstein because Albert Einstein did not know about the Big Bang, he didn\u2019t know about gravitational waves, he didn\u2019t know about black holes but his equation did. And that\u2019s a miraculous aspect of science more generally but general relativity is where it manifests itself in the most absolutely obvious way.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 26333,
+          "episode_id": 213,
+          "guest": "Barry Barish",
+          "chunk_index": 64,
+          "text": "So that's not the way it's supposed to be. We're trying to create a theory of physics, not two theories of physics. So we have an embarrassment that we have two different theories of physics. People have tried to make a unified theory, what they call a unified theory. You've heard those words for decades. They still haven't. That's been primarily done theoretically or tried. People actively do that. My personal belief is that like much of physics, we need some clues. So we need some experimental evidence. So where is there a place? If we go to CERN and do those experiments, gravitational waves or general relativity don't matter. If we go to study our black holes, elementary particle physics doesn't matter. We're studying these huge objects. So where might we have a place where both phenomena have to be satisfied? An example is black holes. Inside black holes. Yeah. So we can't do that today.",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 60961,
+          "episode_id": 468,
+          "guest": "Janna Levin",
+          "chunk_index": 1,
+          "text": "I have two event horizons, and in the simulations you can see a bobble and they merge together and they make one bigger black hole. And then it radiates in the gravitational waves. It radiates away all those imperfections and it settles down to one quiescent, perfectly silent black hole that\u2019s spinning. Beautiful stuff. And it emits E equals MC squared energy. So the mass of the final black hole will be less than the sum of the two starter black holes. And that energy is radiated away in this ringing of spacetime. It\u2019s really important to emphasize that it\u2019s not light. None of this has to do literally with light that we can detect with normal things that detect light. X-rays, form of light, gamma rays are a form of light, infrared, optical. This whole electromagnetic spectrum, none of it is emitted as light. It\u2019s completely dark. Lex Fridman: Mm-hmm. Janna Levin: It\u2019s only emitted in the rippling of the shape of space. A lot of times it\u2019s likened closer to sound.",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 11.996797561645508
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 16.60627293586731
+    }
+  ],
+  "final_answer": "Stephen Wolfram's approach to General Relativity is foundational and emergent, proposing that it arises from his Wolfram Physics Project, which models the universe using simple computational rules on hypergraphs. He seeks to derive space, time, and all of modern physics, including General Relativity, from these more fundamental principles. In contrast, Janna Levin investigates General Relativity through its established framework, focusing on observable phenomena like black holes and gravitational waves. Her work involves understanding and detecting the predictions and consequences of Einstein's theory, such as the gravitational wave signals emitted during black hole mergers.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    198,
+    103,
+    428,
+    468,
+    85,
+    118,
+    213,
+    124
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 16.6062753200531
+}

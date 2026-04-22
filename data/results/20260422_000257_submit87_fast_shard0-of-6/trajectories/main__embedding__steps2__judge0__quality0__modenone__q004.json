@@ -1,0 +1,89 @@
+{
+  "question": "Considering Matthew Johnson's deep dive into the brain's mechanisms and the impact of various substances on its receptors, what is the ultimate goal of the Neuralink project, which Elon Musk, a figure mentioned in Matthew Johnson's discussion, leads, concerning the relationship between humans and artificial intelligence, and what specific communication aspect does it aim to enhance to achieve this?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Neuralink ultimate goal human-AI relationship communication enhancement",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 53844,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 10,
+          "text": "So that is perhaps helpful. I think we\u2019ll probably get\u2026 If our data rate increases, it\u2019s highly probable it will become far more verbose. Just like your computer, when computers had\u2026 My first computer had 8K of RAM, so you really thought about every byte. And now you\u2019ve got computers with many gigabytes of RAM. So, if you want to do an iPhone app that just says, \u201cHello world,\u201d it\u2019s probably, I don\u2019t know, several megabytes minimum, a bunch of fluff. But nonetheless, we still prefer to have the computer with the more memory and more compute. So, the long-term aspiration of Neuralink is to improve the AI human symbiosis by increasing the bandwidth of the communication. Because even if\u2026 In the most benign scenario of AI, you have to consider that the AI is simply going to get bored waiting for you to spit out a few words.",
+          "score": 0.7540870904922485,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53866,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 32,
+          "text": "Elon Musk: Yeah.\n\n\n## Merging with AI\n\nLex Fridman: You\u2019ve talked about the threats, the safety concerns of AI. Let\u2019s look at long-term visions. Do you think Neuralink is, in your view, the best current approach we have for AI safety? Elon Musk: It\u2019s an idea that may help with AI safety. Certainly, I wouldn\u2019t want to claim it\u2019s some panacea, or that it\u2019s a sure thing, but I mean, many years ago I was thinking like, \u201cWell, what would inhibit alignment of collective human will with artificial intelligence?\u201d And the low data rate of humans, especially our slow output rate would necessarily, just because the communication is so slow, would diminish the link between humans and computers. The more you are a tree, the less you know what the tree is. Let\u2019s say you look at this plant or whatever, and hey, I\u2019d really like to make that plant happy, but it\u2019s not saying a lot.",
+          "score": 0.7301819324493408,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3787,
+          "episode_id": 49,
+          "guest": "Elon Musk",
+          "chunk_index": 20,
+          "text": "Depends on the rate of improvement of Neuralink and how fast we're able to do make progress. Well, I've talked to a few folks here that are quite brilliant engineers, so I'm excited. Yeah, I think it's like fundamentally good, you know, giving somebody back full motor control after they've had a spinal cord injury. You know, restoring brain functionality after a stroke, solving debilitating genetically oriented brain diseases. These are all incredibly great, I think. And in order to do these, you have to be able to interface with neurons at a detailed level and you need to be able to fire the right neurons, read the right neurons, and and then effectively you can create a circuit, replace what's broken with with silicon and essentially fill in the missing functionality. And then over time, we can develop a tertiary layer. So if like the limbic system is the primary layer, then the cortex is like the second layer.",
+          "score": 0.7179933190345764,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 16639,
+          "episode_id": 155,
+          "guest": "Max Tegmark",
+          "chunk_index": 75,
+          "text": "And I was little and that was fine because their goals were actually aligned with mine quite well. But we've seen today many examples of where the goals of our powerful systems are not so aligned. So those click through optimization algorithms that are polarized social media, right? They were actually pretty poorly aligned with what was good for democracy, it turned out. And again, almost all problems we've had in the machine learning again came so far, not from malice, but from poor alignment. And that's exactly why that's why we should be concerned about it in the future. Do you think it's possible that with systems like Neuralink and brain computer interfaces, you know, again, thinking of the cosmic scale, Elon's talked about this, but others have as well throughout history of figuring out how the exact mechanism of how to achieve that kind of alignment.",
+          "score": 0.7148963809013367,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 14662,
+          "episode_id": 142,
+          "guest": "Manolis Kellis",
+          "chunk_index": 65,
+          "text": "And there's no way that I can take my encoding and put it into your brain, because it'll A, mess things up, and B, be incompatible with your own unique experiences. So that's telepathic communication from human to human. It's fascinating, you're reminding us that there's two biological systems on both ends of that communication. The easier, I guess, maybe half as difficult thing to do in the hope with Neuralink is that we can communicate with an AI system, so where one side of that is a little bit more controllable, but even just that is exceptionally difficult. Let's talk about two neuronal systems talking to each other. Suppose that GPT4 tells GPT3, hey, give me all your knowledge, right? It's ready, I have 10 times more hardware, I'm ready, just feed me. What's GPT3 gonna do? Is it gonna say, oh, here's my 10 billion parameters? No. No way.",
+          "score": 0.714828372001648,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.560908079147339
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 14.669870853424072
+    }
+  ],
+  "final_answer": "The ultimate goal of the Neuralink project, led by Elon Musk, is to improve human-AI symbiosis and potentially enhance AI safety by increasing the bandwidth of communication between humans and artificial intelligence. This aims to overcome the current low data rate of human communication, which Musk believes could diminish the link between humans and computers, and ensure better alignment of human will with AI.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    142,
+    49,
+    155,
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 14.669872999191284
+}

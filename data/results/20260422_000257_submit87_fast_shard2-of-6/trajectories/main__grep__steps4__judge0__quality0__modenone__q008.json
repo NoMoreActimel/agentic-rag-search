@@ -1,0 +1,217 @@
+{
+  "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dylan Patel Nathan Lambert DeepSeek Google AI Sundar Pichai",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58574,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 3,
+          "text": "They\u2019ll continue to shift the cost curve, but the quote \u201cDeepSeek moment\u201d is indeed real. I think it will still be remembered five years from now as a pivotal event in tech history due in part to the geopolitical implications, but for other reasons to, as we discuss in detail from many perspectives in this conversation. This is the Lex Fridman podcast, to support it please check out our sponsors in the description. And now, dear friends, here\u2019s Dylan Patel and Nathan Lambert.\n\n\n## DeepSeek-R1 and DeepSeek-V3\n\nLex Fridman: A lot of people are curious to understand China\u2019s DeepSeek AI models, so let\u2019s lay it out. Nathan, can you describe what DeepSeek-V3 and DeepSeek-R1 are, how they work, how they\u2019re trained? Let\u2019s look at the big picture and then we\u2019ll zoom in on the details. Nathan Lambert: DeepSeek-V3 is a new mixture of experts, transformer language model from DeepSeek who is based in China. They have some new specifics in the model that we\u2019ll get into.",
+          "score": 0.625,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58620,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 49,
+          "text": "Nathan Lambert: I\u2019m sure DeepSeek definitely has code bases that are extremely messy, where they\u2019re testing these new ideas. Multi-head latent attention probably could start in something like a Jupyter Notebook, or somebody tries something on a few GPUs and that is really messy. But the stuff that trains the DeepSeek V3 and DeepSeek-R1, those libraries, if you were to present them to us, I would guess are extremely high-quality code. Lex Fridman: So, high-quality, readable code. Yeah. Dylan Patel: I think there is one aspect to note though is that there is the general ability for that to transfer across different types of runs. You may make really, really high-quality code for one specific model architecture at one size, and then that is not transferable to, \u201d Hey, when I make this architecture tweak, everything\u2019s broken again,\u201d right? That\u2019s something that could be with their specific low-level coding of scheduling SMs is specific to this model architecture and size.",
+          "score": 0.625,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58634,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.625,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58637,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 0.625,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.7360594272613525
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Google AI product scaling metric Dylan Patel Nathan Lambert",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58675,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 104,
+          "text": "And then it\u2019s the ASML deep UV. What is that\u2026 Extreme ultraviolet lithography. Dylan Patel: Just set context on the chips. What Nathan\u2019s referring to is in 2020, Huawei released their Ascend 910 chip, which was an AI chip, first one on seven nanometer before Google did, before NVIDIA did. And they submitted it to the MLPerf benchmark, which is sort of a industry standard for machine learning performance benchmark, and it did quite well, and it was the best chip at the submission. This was a huge deal. The Trump admin, of course, banned, it was 2019, banned the Huawei from getting seven nanometer chips from TSMC. And so then they had to switch to using internal, domestically produced chips, which was a multi-year setback. Nathan Lambert: Many companies have done seven nanometer chips. And the question is we don\u2019t know how much Huawei was subsidizing production of that chip. Intel has made seven nanometer chips that are not profitable and things like this.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58686,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 115,
+          "text": "Why are they going with-\n\nNathan Lambert: Economies of scale. Lex Fridman: Scale? Dylan Patel: Yeah. So I mean, like I mentioned, the cost of building a fab is so high, the R&D is so difficult. And when you look at these companies that had their own vertical stack, there was an antiquated process of like, okay, I\u2019m so hyper customized to each specific chip, but as we\u2019ve gone through the history of the last 50 years of electronics and semiconductors, A, you need more and more specialization because Moore\u2019s law has died, Dennard Scaling has died, IE, Chips are not getting better just for free from manufacturing. You have to make real architectural innovations. Google is not just running on Intel CPUs for web serving. They have a YouTube chip, they have TPUs, they have Pixel chips, they have a wide diversity of chips that generate all the economic value of Google. It\u2019s running all the services and stuff. And this is just Google.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58888,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 317,
+          "text": "Meta has so many avenues to benefit from AI and all of their services. People are there. People spend time on that as platforms, and it\u2019s a way to make more money per user per hour. Lex Fridman: It seems like Google X/X AI/ Tesla important to say. And then Meta will benefit not directly from the AI like the LLMs, but from the intelligence, like the additional boost of intelligence to the products they already sell. So whether that\u2019s the recommendation system or for Elon who\u2019s been talking about Optimus, the robot, potentially the intelligence of the robot, and then you have personalized robots in the home, that kind of thing. He thinks it\u2019s a 10 plus trillion dollars business, which\u2026\n\nNathan Lambert: At some point, maybe. Not soon, but who knows when robotics will use for-\n\nDylan Patel: Let\u2019s do a TAM analysis, 8 billion humans and let\u2019s get 8 billion robots and let\u2019s pay them the average salary. And there we go. 10 trillion. More than 10 trillions.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58890,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 319,
+          "text": "Dylan Patel: The chat application clearly does not have tons of room to continue. The standard chat where you\u2019re just using it for a random question and stuff. The cost continues to collapse. V3 is the latest one. Nathan Lambert: It\u2019ll go down with the ads. Dylan Patel: But it\u2019s going to get supported by ads. Meta already serves 405B and probably loses the money, but at some point the models are going to get so cheap that they can just serve them for free with ad supported and that\u2019s what Google is going to be able to do. And obviously they\u2019ve got a bigger reach. Chat is not going to be the only use case. It\u2019s like these reasoning, code, agents, computer use, all this stuff is where OpenAI has to actually go to make money in the future otherwise they\u2019re kaputs. Lex Fridman: But X, Google, and Meta have these other products. So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58891,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 320,
+          "text": "So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are. Lex Fridman: But it\u2019s such a cutting edge. I mean-\n\nNathan Lambert: It depends on where you think AI capabilities are going. Lex Fridman: You have to keep winning. Dylan Patel: Yes. Lex Fridman: You have to keep winning as you climb, even if the AI capabilities are going super rapidly awesome into the direction of AGI, there\u2019s still a boost for X in terms of data, Google in terms of data, Meta in terms of data, in terms of other products and the money and there\u2019s just huge amounts of money. Dylan Patel: The whole idea is human data is kind of tapped out. We don\u2019t care. We all care about self-play, verifiable task. Nathan Lambert: Think about AWS. Lex Fridman: Yes, self-play, which is an RNG problem. Nathan Lambert: AWS does not make a lot of money on each individual machine.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.099055290222168
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Google AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61610,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 54,
+          "text": "And now a year later, it\u2019s crazy. You showed this plot of all the things that were shipped over the past year. It\u2019s incredible. And Gemini Pro is winning across many benchmarks and products as we sit here today. So take me through that experience when there\u2019s all these articles saying you\u2019re the wrong guy to lead Google through this. Google is lost, is done, it\u2019s over, to today where Google is winning again. What were some low points during that time? Sundar Pichai: Look, lots to unpack. Obviously, the main bet I made as a CEO was to really make sure the company was approaching everything in a AI-first way, really setting ourselves up to develop AGI responsibly, and make sure we are putting out products which embodies that, things that are very, very useful for people. So look, I knew even through moments like that last year, I had a good sense of what we were building internally.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61611,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 55,
+          "text": "So look, I knew even through moments like that last year, I had a good sense of what we were building internally. So I\u2019d already made many important decisions bringing together teams of the caliber of Brain and DeepMind and setting up Google DeepMind. There were things like we made the decision to invest in TPUs 10 years ago, so we knew we were scaling up and building big models. Anytime you\u2019re in a situation like that, a few aspects. I\u2019m good at tuning out noise, separating signal from noise. Do you scuba dive? Have you\u2026? Lex Fridman: No. Sundar Pichai: It\u2019s amazing. I\u2019m not good at it, but I\u2019ve done it a few times. But sometimes you jump in the ocean, it\u2019s so choppy, but you go down one feet under, it\u2019s the calmest thing in the entire universe. So there\u2019s a version of that. Running Google, you may as well be coaching Barcelona or Real Madrid. You have a bad season. So there are aspects to that. But look, I\u2019m good at tuning out the noise. I do watch out for signals.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61623,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 67,
+          "text": "Of course once you show up to a page, you can use a basic translate, but that process of figuring it out, if you empathize with a large part of the world that doesn\u2019t speak English, their web is much smaller in that original language. And so it, again, unlocks that huge cognitive capacity there. You take for granted here with all the bloggers and the journalists writing about AI mode, you forget that this now unlocks because Gemini is really good at translation. Sundar Pichai: Oh it is. I mean the multimodality, the translation, it\u2019s ability to reason, we\u2019re dramatically improving tool use, and putting that power in the flow of Search, look, I\u2019m super excited with AI overviews. We\u2019ve seen the product has gotten much better, we measured using all kinds of user metrics. It\u2019s obviously driven strong growth of the product, and we\u2019ve been testing AI mode. It\u2019s now in the hands of millions of people and the early metrics are very encouraging.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61645,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 89,
+          "text": "So everything\u2019s aligned. Sundar Pichai: That is what makes this moment so unique because running, a company for the first time, you can do one investment in a very deep horizontal way. On top of it, you can drive multiple businesses forward, right? That\u2019s effectively what we are doing in Google and Alphabet, right? Lex Fridman: Yeah, it\u2019s all coming together. Like, it was planned ahead of time, but it\u2019s not, of course. It\u2019s all distributed. I mean, if Gmail, and Sheets, and all these other incredible services, I can sing Gmail praises for years. I mean, just this revolutionized email. But the moment you start to integrate AI Gemini into Gmail, I mean that\u2019s the other thing, speaking of productivity multiplier, people complain about email, but that changed everything. Email, like the invention of email changed everything, and it has been ripe. There\u2019s been a few folks trying to revolutionize email.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61649,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 93,
+          "text": "Sundar Pichai: I think a few things. Looking at Google, we\u2019ve given various stats around 30% of code now uses AI- generated suggestions or whatever it is. But the most important metric, and we carefully measure it is, like, how much has our engineering velocity increased as a company due to AI, right? It\u2019s tough measure, and we rigorously try to measure it, and our estimates are that number is now at 10%, right? Like, now, across the company, we\u2019ve accomplished a 10% engineering velocity increase using AI, but we plan to hire more engineers next year, right? Because the opportunity space of what we can do is expanding too, right? Lex Fridman: Mm-hmm. Sundar Pichai: So I think, hopefully, at least in the near to midterm, for many engineers, it frees up more and more of the\u2026 Even in engineering and coding, there are aspects which are so much fun. You\u2019re designing. You\u2019re architecting. You\u2019re solving a problem.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 10.011693716049194
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 18.60409641265869
+    }
+  ],
+  "final_answer": "Sundar Pichai highlighted 'AI overviews' in Search as a product central to Google's AI-first strategy, noting its significant improvement and deployment to millions of users. However, the provided information does not include a specific scaling metric about the processing capabilities of this or any other AI product.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    459,
+    471
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 18.604097843170166
+}

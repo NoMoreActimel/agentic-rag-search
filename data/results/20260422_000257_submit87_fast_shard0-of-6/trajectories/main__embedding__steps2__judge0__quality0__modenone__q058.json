@@ -1,0 +1,87 @@
+{
+  "question": "How has the discussion surrounding the role and limitations of AI in video game development evolved, as reflected in the perspectives shared by Tim Sweeney and Dan Houser?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Tim Sweeney AI in video game development, Dan Houser AI in video game development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64428,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 46,
+          "text": "Dan Houser: And so this, I finally felt we found an interesting hypothesis. The AI is more intelligent than us, but he\u2019s also as broken as we are. That was an interesting hypothesis to explore. You know, what happens when AI runs rampant in its own fake digital world? I felt that we had a hypothesis that was worth exploring and could give us some really interesting visuals and give us a really interesting story to tell. Lex Fridman: And it would be incredible to create a sort of AI video game as the world is developing smarter and smarter AIs. It allows us as humans to play the game and to reflect on the thing that we humans are creating. It\u2019s a real commentary as the thing is happening. So I have to ask, as a person\u2026 you, as a person who loves literature, and one of the, if not the greatest writer in video game history. Kurt in the book\u2026\n\n\n## Can LLMs write video games?",
+          "score": 0.7693142890930176,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64582,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 200,
+          "text": "But if you want to make something that\u2019s cinematic, you need resources. You can still make something that\u2019s really interesting that isn\u2019t super cinematic, but it\u2019s an interesting experience in some ways. But the second you\u2019re involving actors and motion capture and one of those big experiences, it\u2019s going to cost some money. So therefore, if you want to do that, you\u2019ve got to figure out what companies you want to work at and figure out how you get to work there. Lex Fridman: Do you have hope for AI helping with some of the video generation, some of the world generation, or some of the open-world assistance in generating the world? Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff.",
+          "score": 0.7603355646133423,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60782,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 136,
+          "text": "What do you think is the future of the interplay between what a human artist creates and what an AI system can create in Unreal Engine? Tim Sweeney: I think a lot of people in the industry are overly optimistic about the rate of progress of AI for video and other things like that. The real problem is consistency, like spurting out an image is really high quality, but with video over the course of seeing all the AI approaches have consistency issues going from one place to another. I don\u2019t think that those will just be remedied easily. Fundamentally, AI just doesn\u2019t have anything resembling an understanding of the entire scene they\u2019re in, the entire arc of the movie or plot they\u2019re in and the entirety of the world around them and how it might affect the scene. Whereas game engines have that exactly where they need to be.",
+          "score": 0.7589625120162964,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64583,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 201,
+          "text": "Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff. You know, I\u2019ve been in games for 29 years, and all the time, the piece of tech that\u2019s going to make making games much easier and much cheaper is about to turn up, and all that\u2019s happened is the games have got much better and way more expensive. So I\u2019m always nervous about saying, \u201cFinally, we have that bit of tech that makes our lives easier,\u201d but it looks as if it might be able to do that when you use it in the right way. If you use it to try and substitute for creativity, it\u2019s going to be really generic. Lex Fridman: A big, ridiculous question: What\u2019s the meaning of this whole thing we have going on here, of life, of existence? Why are we here? Dan Houser: To watch the universe. The easiest plausible answer is we are designed by the universe to watch itself and to comment on it in interesting ways.",
+          "score": 0.7453636527061462,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60799,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 153,
+          "text": "Lex Fridman: The realistic humans, that\u2019s going to be the bottom line. Visual and behavior too, so everything? Tim Sweeney: Yeah, I was asked about this about 10 years ago, and I said that even if you gave us an infinite amount of computing power, we couldn\u2019t simulate realistic humans because we simply don\u2019t have the algorithms. We have no idea how to simulate human intelligence. That was absolutely the case then, but it\u2019s not really true anymore. What we\u2019re seeing with generative text AI is not only at a level that you could say that it\u2019s actually doing a pretty good job of simulating a human, at least humans at the text level, not at the emotional level yet, but at least at the level of words spoken and find more and more ways of training on more and more scenarios that you might have a very, very compelling human simulation going on in the next five years even.",
+          "score": 0.7337477803230286,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.892744541168213
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 10.381880760192871
+    }
+  ],
+  "final_answer": "Tim Sweeney's perspective on AI in video game development has evolved significantly, particularly regarding the simulation of realistic humans. He previously believed it impossible due to a lack of algorithms, but now sees generative text AI as capable of simulating humans at the text level, anticipating compelling human simulations within five years. However, he remains cautious about AI's current limitations in video generation, citing consistency issues and a lack of understanding of entire scenes or plots.\n\nDan Houser views AI as a potentially \"great tool\" if used correctly, but emphasizes its limitations, warning that incorrect use will lead to \"loads of generic stuff.\" He is skeptical of new tech promising to make game development easier or cheaper, noting that games have only become more complex and expensive. Houser stresses that AI should not substitute for creativity, but rather augment it, and explored the concept of intelligent yet flawed AI within a game's narrative.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    467,
+    484
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 10.381883144378662
+}

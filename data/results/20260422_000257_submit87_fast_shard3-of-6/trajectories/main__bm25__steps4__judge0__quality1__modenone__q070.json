@@ -1,0 +1,162 @@
+{
+  "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Neuralink human implants number target year end",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.4500865907669067,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 7.203711032867432
+        },
+        {
+          "chunk_id": 54214,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 380,
+          "text": "Yeah, so for Noland, and for me playing this task, there\u2019s also different modes that you can configure this task. So the Webgrid task can be presented as just sort of a left click on the screen, or you could have targets that you just dwell over, or you could have targets that you left, right click on, you could have targets that are left, right click, middle click, scrolling, clicking and dragging. You can do all sorts of things within this general framework, but the simplest, purest form is just blue targets show up on the screen, blue means left click. That\u2019s the simplest form of the game. And the sort of prior records here in academic work and at Neuralink internally with NHPs have all been matched or beaten by Noland with his Neuralink device. So prior to Neuralink, the world record for a human using device is somewhere between 4.2 to 4.6 BPS, depending on exactly what paper you read and how you interpret it.",
+          "score": 0.4375631367365519,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 7.9527058601379395
+        },
+        {
+          "chunk_id": 54215,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 381,
+          "text": "Noland\u2019s current record is 8.5 BPS. and again, this sort of median Neuralinker performance is 10 BPS. So you can think of it roughly as, he\u2019s 85% the level of control of a median Neuralinker using their cursor to select blue targets on the screen. I think there\u2019s a very interesting journey ahead to get us to that same level of 10 BPS performance. It\u2019s not the case that the tricks that got us from 4 to 6 BPS, and then 6 to 8 BPS are going to be the ones that get us from 8 to 10. And in my view, the core challenge here is really the labeling problem. It\u2019s how do you understand, at a very, very fine resolution, what the user\u2019s attempting to do? And I highly encourage folks in academia to work on this problem. Lex Fridman: What\u2019s the journey with Noland on that quest of increasing the BPS on Webgrid? In March, you said that he selected 89,285 targets in Webgrid. So he loves this game, he\u2019s really serious about improving his performance in this game.",
+          "score": 0.42369686794281003,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 6.072722911834717
+        },
+        {
+          "chunk_id": 54250,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 416,
+          "text": "It also matters how difficult the task is. You can imagine some people might be able to do 10,000 targets on the screen, and maybe they can do better that way. So there\u2019s some task optimizations you could do to try to boost your performance as well. Lex Fridman: What do you think it takes for Noland to be able to do above 8.5, to keep increasing that number? You said every increase in the number\u2026\n\nLex Fridman: \u2026 to keep increasing that number. You said every increase in the number might require different improvements in the system. Bliss Chapman: Yeah. The first answer that\u2019s important to say is, I don\u2019t know. This is edge of the research so, again, nobody\u2019s gotten to that number before, so what\u2019s next is going to be a heuristic guess from my part. What we\u2019ve seen historically is that different parts of the stack can compile next to different time points. So when I first joined Neuralink, three years ago or so, one of the major problems was just the latency of the Bluetooth connection.",
+          "score": 0.4084556614557902,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.70524263381958
+        },
+        {
+          "chunk_id": 54102,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 268,
+          "text": "The modern version of that is to use a robot. Just like a little Kuka arm you might see building cars at the Tesla factory, this small robot arm can show you the trajectory that you intended from the pre-op MRI and establish a very rigid holder through which you can drill a small hole in the skull and pass a small rigid wire deep into that area of the brain that\u2019s hollow, and put your electrode through that hollow wire and then remove all of that except the electrode. So you end up with the electrode very, very precisely placed far from the skull surface. Now, that\u2019s standard technology that\u2019s already been out in the world for a while. Neuralink right now is focused entirely on cortical targets, surface targets because there\u2019s no trivial way to get, say, hundreds of wires deep inside the brain without doing a lot of damage. So your question, what do you see? Well, I see an MRI on a screen. I can\u2019t see everything that DBS electrode is passing through on its way to that deep target.",
+          "score": 0.39736036968231203,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.229730129241943
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.991706371307373
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Kelsi Sheren age served Afghanistan",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 48851,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 51,
+          "text": "I\u2019m proud that Biden said, \u201cHey, listen, we are going to delay some of these attacks. Hey, listen, we are going to allow humanitarian aid here. Hey, listen, we are going to try to not kill as many Palestinian people down there\u201d while still signaling that he would be a staunch supporter of Israel in the conflict, assuming the civilian casualties don\u2019t go too high. For foreign policy, I mean, blemishes, I mean, the biggest one you can give to Biden is Afghanistan and the pull-out there. But man, are we going to talk about the Inspector General report that says that one of the biggest reasons why the Afghanistan pull-out was so disastrous was because of the Doha Accords where Donald Trump headed talks that didn\u2019t even include the Afghanistan army. I mean, these were disasters. When Biden took office, we had 2,500 troops left in Afghanistan. What was the options even afforded to Biden at that point?",
+          "score": 0.34889367294311524,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.152585983276367
+        },
+        {
+          "chunk_id": 31345,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 105,
+          "text": "I mean, living in the Americas. I mean, look at, you know, we're all on stolen land. We're all in the sense living with the fruits of genocide and slavery and all those things that are hard to come to terms with, right? But the last few months in Afghanistan and thinking about empire, I think, made me more humble when I read people who say, to put it simply, have taken some joy in this moment, saying like, well, the Americans got kicked out of Afghanistan. You know, if you're against empire, this is a good thing. This is a kind of victory of anti colonial. You could see from the perspective of Afghanistan that America is not some kind of place that has an ideal of freedom and all the kind of things that we Americans tell ourselves, but it's more America has the ideal of empire, that there's one place that has the truth and everybody else must follow this truth. And so from a perspective of Afghanistan, it could be a victory against this idea of centralized truth of empire.",
+          "score": 0.31746371142069496,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.091301918029785
+        },
+        {
+          "chunk_id": 31304,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 64,
+          "text": "Where exactly in the South. What are the other parts in the South of Afghanistan? Yeah, it's mostly Pashtun, not exclusively, but mostly Pashtun, mostly rural. What is Pashtun? That's the other group that the Taliban claim to represent, right? So they are this group. What other groups are there? Okay, sorry, yeah, sorry. So in cities, you'll find everything, right? That is in Afghanistan. You'll find Uzbeks, Tajiks, Hazaras. These are people who, Uzbek is a Turkic language, right? Most Uzbeks live in what is now Uzbekistan, but they form majorities in some Northern parts of the city. I'm sorry, of the country of Afghanistan. But what I emphasize is that, and you can find online an ethnographic map of Afghanistan and you'll see green where Pashtuns live, red where Hazaras live, orange where Uzbeks live, purple where Tajiks live. Then there are a bunch of other smaller groups of different kinds.",
+          "score": 0.3079945770899455,
+          "source": "bm25",
+          "quality_score": 0.7,
+          "original_score": 4.199767589569092
+        },
+        {
+          "chunk_id": 31394,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 154,
+          "text": "Great. I mean, let me offer some observations. I think there are others who know more about bin Laden and have far more expertise in Al Qaeda. So I'm coming at this in an adjacent way, kind of from Afghanistan and from my historical training. So this is my two cents, so bear with me. I don't have the authoritative account for this. Which in itself is fascinating because you're a historian of Afghanistan, and the fact that bin Laden isn't a huge part of your focus of study just means that bin Laden is not a key part of the history of Afghanistan except that America made him a key part of the history of Afghanistan. I would endorse that. Definitely, that's it. I mean, you've put it in a very pithy, pithy way. Yeah, so listen, so he was an engineer. He was said to be a playboy who spent a lot of cash from his family. Like many young Saudis and from some other countries, he was inspired by this idea that there was jihad in Afghanistan.",
+          "score": 0.3051560424168905,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 4.335258960723877
+        },
+        {
+          "chunk_id": 31252,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 12,
+          "text": "Can I ask a quick question that's a little bit of a tangent? Yep. What is the correct or the respectful way to pronounce Afghanistan, Afghanistan, Iran, Iran? So as a Russian speaker, Afghanistan. Yeah. The an versus the an. Yeah. Is it a different country by country? As an English speaker in America, is it pretentious and disrespectful to say Afghanistan? Or is it the opposite, respectful to say it that way? What are your thoughts on this? That's a fascinating question. I defer to the people from those countries to, of course, sort out those politics. I think one of the fascinating things about the region broadly is that it is a place of so many cultures and it's really quite cosmopolitan. So I think people are mostly quite forgiving about how you say Afghanistan, Afghanistan. It's not like Paris. Yeah, right, right. The French are not forgiving. No, no, no. Exactly. I think people are very, very forgiving.",
+          "score": 0.1388903538386027,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 4.66672945022583
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 27.100449562072754
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Kelsi Sheren age Afghanistan service",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 37.926196336746216
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 40.44629406929016
+    }
+  ],
+  "final_answer": "As of the recording, Neuralink had performed two human implants. Their target is to have a total of 10 human participants by the end of the year. Information regarding Kelsi Sheren's age when she served in Afghanistan was not found in the provided search results.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    410,
+    244,
+    438
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 40.44629645347595
+}

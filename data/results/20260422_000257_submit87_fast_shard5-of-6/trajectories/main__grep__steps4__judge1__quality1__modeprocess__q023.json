@@ -1,0 +1,86 @@
+{
+  "question": "Considering the discussion where Michael Paulson mentions Pieter Levels, what is Pieter Levels' preferred approach to funding his startups, as detailed in his own interview?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Pieter Levels funding approach",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54562,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 3,
+          "text": "So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works. I have an idea in my mind and I build it like a mini startup, and I launch it very quickly, within two weeks or something, of building it. And I check if there\u2019s demand and if people actually sign up and not just sign up, but if people actually pay money. They need to take out their credit cards, pay me money, and then I can see if the idea is validated. And most ideas don\u2019t work, as you say, most fail. Lex Fridman: So there\u2019s this rapid iterative phase where you just build a prototype that works, launch it, see if people like it, improving it really, really quickly to see if people like it a little bit more enough to pay and all that. That whole rapid process is how you think of-\n\nPieter Levels: Yeah. I think it\u2019s very rapid. If I compare it to, for example, Google or big tech companies, especially Google right now is struggling.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 54622,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 63,
+          "text": "Pieter Levels: It could be true. Lex Fridman: Is it just overrepresented? Same with WordPress. Pieter Levels: Yeah. Lex Fridman: Yes, there\u2019s a reputation that WordPress has a gigantic number of security holes. I don\u2019t know if that\u2019s true. I know it gets attacked a lot, because it\u2019s so popular. It definitely does have security holes, but maybe a lot of other systems have security holes as well. Anyway, I just sort of questioning the conventional wisdom that keeps wanting to push software engineers towards frameworks, towards complex, like super complicated software engineering approaches that stretch out the time it takes to actually build a thing. Pieter Levels: Man, 100%, and it\u2019s the same thing with big corporations\u2026 80% of the people don\u2019t do anything. It\u2019s not efficient, and if your benchmark is people building stuff that actually gets done.",
+          "score": 0.7769999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 54561,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 2,
+          "text": "This was an honor and a pleasure for me. This is the Lex Friedman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s Pieter Levels.\n\n\n## Startup philosophy\n\nLex Fridman: You\u2019ve launched a lot of companies and built a lot of products. As you say, most failed, but some succeeded. What\u2019s your philosophy behind building the startups that you did? Pieter Levels: I think my philosophy is very different than most people in startups, because most people in startups, they build a company and they raise money and they hire people and then they build a product and they find something that makes money. And I don\u2019t really raise money. I don\u2019t use VC funding, I do everything myself. I\u2019m a designer, I\u2019m the developer, I make everything, I make the logo. So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works.",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 54568,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 9,
+          "text": "Pieter Levels: It\u2019s really about fun, because I was doing it when I didn\u2019t make money. That\u2019s the point. So I was always coding, I was making music. I made electronic music, drum and bass music 20 years ago, and I was always making stuff. So I think creative expression is a meaningful work that\u2019s so important, it\u2019s so fun. It\u2019s so fun to have a daily challenge where you try to figure stuff out. Lex Fridman: But the interesting thing is you built a lot of successful products and you never really wanted to take it to that level where you scale real big and sell it to a company or something like this. Pieter Levels: Yeah. The problem is I don\u2019t dictate that. If more people start using, if millions of people suddenly start using it and it becomes big, I\u2019m not going to say, \u201cOh, stop signing up to my website and paying me money.\u201d But I never raised funding for it. And I think because I don\u2019t like the stressful life that comes with it.",
+          "score": 0.7469999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.75
+        },
+        {
+          "chunk_id": 54650,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 91,
+          "text": "And there\u2019s so many parameters you can tweak. So, you\u2019re testing everything to improve things. Lex Fridman: I mean there\u2019s a whole field now of mechanistic interpretability that studies that tries to figure out, tries to break things apart and understand how it works. But there\u2019s also the data side and the actual consumer-facing product side of figuring out how you get it to generate a thing that\u2019s beautiful or interesting or naturalistic, all that kind of stuff. And you\u2019re at the forefront of figuring that out about the human face. And humans really care about the human face. Pieter Levels: In very vain. Like me, I want to look good in your podcast, for example. Yeah, for sure. Lex Fridman: And then one of the things actually would love to rigorously use photo AI, because for the thumbnails, I take portraits of people. I don\u2019t know shit about photography. I basically used your approach for photography like Googled, \u201cHow do you take photographs?",
+          "score": 0.7289999999999999,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.75
+        }
+      ],
+      "judge_feedback": "Chunk 2 and Chunk 5 are irrelevant. The remaining chunks contain useful information directly addressing Pieter Levels' preferred approach to funding, which is to avoid external funding (especially VC) and instead be \"scrappy,\" build quickly, and validate ideas by getting customers to pay. No further search is needed as the question is sufficiently answered.",
+      "timestamp": 6.698767900466919
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 15.559898138046265
+    }
+  ],
+  "final_answer": "Pieter Levels' preferred approach to funding his startups is to avoid external investment, particularly VC funding. Instead, he adopts a 'scrappy' method where he rapidly builds and launches products, often within two weeks, to quickly test demand and validate ideas by getting customers to pay for them. This allows him to move fast and determine if an idea is viable without the need for outside capital.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    440
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 15.559900760650635
+}

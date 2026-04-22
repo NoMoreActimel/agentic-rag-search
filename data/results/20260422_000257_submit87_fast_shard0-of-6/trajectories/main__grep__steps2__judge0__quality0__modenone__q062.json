@@ -1,0 +1,139 @@
+{
+  "question": "Considering David Fravor's emphasis on personal agency and persistence as key to his career success, how has his articulation or understanding of this core career advice evolved across his various appearances discussing the topic over time?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "David Fravor career advice personal agency persistence",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 5775,
+          "episode_id": 73,
+          "guest": "Andrew Ng",
+          "chunk_index": 23,
+          "text": "So if you flip over, that didn't work because the downward facing one couldn't synchronize if you're flipping quickly. Morgan Quigley was exploring this crazy, complicated configuration of specialized hardware like Google, Facebook, Baidu all these large sort of companies that already have huge teams of machine learning engineers you can also do with an industry sort of more research groups that kind of like Google Research, Google Brain then you can also do like we said a professor in academia and what else oh you can build your own company you can do a startup is there anything that stands out between those options or are they all beautiful different journeys that people should consider I think the thing that affects your experience more is less are you in this company versus that company or academia versus industry I think the thing that affects your experience most is who are the people you're interacting with in a daily basis so even if you look at some of the large companies the experience of individuals in different teams is very different and what matters most is not the logo above the door when you walk into the giant building every day what matters the most is who are the 10 people who are the 30 people you interact with every day so I actually tend to advise people if you get a job from a company ask who is your manager who are your peers who are you actually going to talk to we're all social creatures we tend to become more like the people around us and if you're working with great people you will learn faster or if you get admitted if you get a job at a great company or a great university maybe the logo you walk in is great but you're actually stuck on some team doing really work that doesn't excite you and then that's actually a really bad experience so this is true both for universities and for large companies for small companies you can kind of figure out who you'll be working with quite quickly and I tend to advise people if a company refuses to tell you who you will work with someone say oh join us the rotation system will figure it out I think that that's a worrying answer because it because it means you may not get sent to you may not actually get to a team with great peers and great people to work with it's actually a really profound advice that we kind of sometimes sweep we don't consider too rigorously or carefully the people around you are really often especially when you accomplish great things it seems the great things are accomplished because of the people around you so that's a it's not about the the where whether you learn this thing or that thing or like you said the logo that hangs up top it's the people that's a fascinating and it's such a hard search process of finding just like finding the right friends and somebody to get married with and that kind of thing it's a very hard search it's a people search problem yeah but I think when someone interviews you know at a university or the research lab or the large corporation it's good to insist on just asking who are the people who is my manager and if you refuse to tell me I'm gonna think well maybe that's because you don't have a good answer it may not be someone I like and if you don't particularly connect if something feels off with the people then don't stick to it you know that's a really important signal to consider yeah yeah and actually I actually in my standard class CS230 as well as an ACM talk I think I gave like a hour long talk on career advice including on the job search process and then some of these so you can find those videos online awesome and I'll point them I'll point people to them beautiful so the AI fund helps AI startups get off the ground or perhaps you can elaborate on all the fun things it's involved with what's your advice and how does one build a successful AI startup you know in Silicon Valley a lot of startup failures come from building other products that no one wanted so when you know cool technology but who's going to use it so I think I tend to be very outcome driven and customer obsessed ultimately we don't get to vote if we succeed or fail it's only the customer that they're the only one that gets a thumbs up or thumbs down vote in the long term in the short term you know there are various people that get various votes but in the long term that's what really matters so as you build the startup you have to constantly ask the question will the customer give a thumbs up on this I think so I think startups that are very customer focused customer obsessed deeply understand the customer and are oriented to serve the customer are more likely to succeed with the provisional I think all of us should only do things that we think create social good and moves the world forward so I personally don't want to build addictive digital products just to sell a lot of ads or you know there are things that could be lucrative that I won't do but if we can find ways to serve people in meaningful ways I think those can be great things to do either in the academic setting or in a corporate setting or a startup setting so can you give me the idea of why you started the AI fund I remember when I was leading the AI group at Baidu I had two jobs two parts of my job one was to build an AI engine to support the existing businesses and that was running just ran just performed by itself there was a second part of my job at the time which was to try to systematically initiate new lines of businesses using the company's AI capabilities so you know the self driving car team came out of my group the smart speaker team similar to what is Amazon Echo Alexa in the US but we actually announced it before Amazon did so Baidu wasn't following Amazon that came out of my group and I found that to be actually the most fun part of my job so what I wanted to do was to build AI fund as a startup studio to systematically create new startups from scratch with all the things we can now do with AI I think the ability to build new teams to go after this rich space of opportunities is a very important way to very important mechanism to get these projects done that I think will move the world forward so I've been fortunate to build a few teams that had a meaningful positive impact and I felt that we might be able to do this in a more systematic repeatable way so a startup studio is a relatively new concept there are maybe dozens of startup studios you know right now but I feel like all of us many teams are still trying to figure out how do you systematically build companies with a high success rate so I think even a lot of my you know venture capital friends are seem to be more and more building companies rather than investing in companies but I find a fascinating thing to do to figure out the mechanisms by which we could systematically build successful teams, successful businesses in areas that we find meaningful so a startup studio is something is a place and a mechanism for startups to go from zero to success to try to develop a blueprint it's actually a place for us to build startups from scratch so we often bring in founders and work with them or maybe even have existing ideas that we match founders with and then this launches you know hopefully into successful companies so how close are you to figuring out a way to automate the process of starting from scratch and building a successful AI startup yeah I think we've been constantly improving and iterating on our processes how we do that so things like you know how many customer calls do we need to make in order to get customer validation how do we make sure this technology can be built quite a lot of our businesses need cutting edge machine learning algorithms so you know kind of algorithms have developed in the last one or two years and even if it works in a research paper it turns out taking the production is really hard there are a lot of issues for making these things work in the real life that are not widely addressed in academia so how do we validate that this is actually doable how do you build a team get the specialized domain knowledge be it in education or health care whatever sector we're focusing on so I think we've actually getting we've been getting much better at giving the entrepreneurs a high success rate but I think we're still I think the whole world is still in the early phases of figuring this out but do you think there is some aspects of that process that are transferable from one startup to another to another to another yeah very much so you know starting from scratch you know starting a company to most entrepreneurs is a really lonely thing and I've seen so many entrepreneurs not know how to make certain decisions like when do you need to how do you do B2B sales right if you don't know that it's really hard or how do you market this efficiently other than you know buying ads which is really expensive are there more efficient tactics for that or for a machine learning project you know basic decisions can change the course of whether machine learning product works or not and so there are so many hundreds of decisions that entrepreneurs need to make and making a mistake and a couple key decisions can have a huge impact on the fate of the company so I think a startup studio provides a support structure that makes starting a company much less of a lonely experience and also when facing with these key decisions like trying to hire your first uh the VP of engineering what's a good selection criteria how do you solve should I hire this person or not by helping by having a ecosystem around the entrepreneurs the founders to help I think we help them at the key moments and hopefully significantly make them more enjoyable and then higher success rate so there's somebody to brainstorm with in these very difficult decision points and also to help them recognize what they may not even realize is a key decision point that's that's the first and probably the most important part yeah actually I can say one other thing um you know I think building companies is one thing but I feel like it's really important that we build companies that move the world forward for example within the AI Fund team there was once an idea for a new company that if it had succeeded would have resulted in people watching a lot more videos in a certain narrow vertical type of video um I looked at it the business case was fine the revenue case was fine but I looked and just said I don't want to do this like you know I don't actually just want to have a lot more people watch this type of video wasn't educational it's an educational baby and so and so I I I I code the idea on the basis that I didn't think it would actually help people so um whether building companies or working enterprises or doing personal projects I think um it's up to each of us to figure out what's the difference we want to make in the world With landing AI you help already established companies grow their AI and machine learning efforts how does a large company integrate machine learning into their efforts?",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11039,
+          "episode_id": 122,
+          "guest": "David Fravor",
+          "chunk_index": 15,
+          "text": "So it was my house right down the street. It was my cousin, Chad. And then right around the corner is my cousin Ray and my aunts and uncles and stuff. The guy two doors down from my house, the paper boy in the neighborhood, so they all knew me. And I went to my cousin's wedding and Mr. Race looks at me and he says, David Fravor. I go, Mr. Race, how you doing? He goes, you fly jets, Top Gun and all that. I go, yes, sir. He goes, man, I figured you'd be in jail by now. And it was kind of a, to me, it was a little bit of a badge of honor going on and I kind of overcame that. But... What do you attribute that to? So you, I've heard you before and just now say that it's better to be lucky than good and you talk modestly about just being lucky, but if you were to describe your trajectory maybe in a way of advice, like retrospectively, how'd you pull it off to be like, to be truly a special person? The easiest way is one, never, never take no.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 11902,
+          "episode_id": 125,
+          "guest": "Ryan Hall",
+          "chunk_index": 136,
+          "text": "And I think that that I would just say that persistence to say I'll just put one foot in front of the other. And sometimes I can see the path ahead and sometimes it's beyond my vision, but I will not stop. I may even slow down, but I won't stop. And that's the only thing that I can say that I've seen tie everyone together because there's so many ways to the top of any mountain and there's so many different personalities and skills and backgrounds involved. But everyone, everyone carries on. So at the core, the foundational advice is just don't quit. Just keep going. That's the lesson of martial arts. I think, you know, we think it's like how to be strong or how to be how to win. But in reality, it's like how to persist, how to endure, because it's all of us have been beaten so many times and gotten beaten up so many times and thought about quitting. Have I ever thought about quitting? Absolutely. Have I ever quit? Never. I will never, ever quit ever.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 20054,
+          "episode_id": 176,
+          "guest": "Robert Breedlove",
+          "chunk_index": 219,
+          "text": "And alcohol was just an easy one. It's you spend, even if you just drink socially on the weekends, you're probably spending five to 10 hours drinking and then maybe another, what? Five to 10 hours recovering perhaps on the day after. So it was a difficult transition initially, but once you get through a couple of months, I feel amazing without it. I sleep better than ever. My workouts are better than ever. I'm sharper than ever. I'm more lucid. So I'm not trying to be a proponent for not drinking, but I just want to say. But you're a proponent for sacrifice. I am a big proponent for sacrifice, yes. Is there advice you would give to a young person today curious about Bitcoin, curious about how they succeed in the world or both career wise and just in life in general? I mean, the strongest piece of advice I have for, this is beyond just Bitcoin. This is you managing your own personal and financial affairs is that you need to invest in knowledge first.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 21361,
+          "episode_id": 183,
+          "guest": "Po-Shen Loh",
+          "chunk_index": 113,
+          "text": "Yeah, it starts with a single person. That's the interesting thing. I've obviously been, don't shut up about it recently about World War II, especially on the Hitler side and the Stalin side. Some of that has really affected my own family. The roots of my family very much. But it's interesting to think that it was just an idea and one person decided to do stuff and it just builds and builds and builds. And you can truly have an impact on the world, both horrendous and exceptionally positive and inspiring. So yeah, it's like it's a agency of us individuals. Sometimes we think we're just reacting to the world, but we have the full power to actually change the world. Is there advice you can give to young folks? We talked, we gave a bunch of advice on middle school, high school mathematics. Is there more general advice you would give about how to succeed in life, how to learn for high school students, for college students, career or life in general?",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.845137596130371
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "David Fravor career advice",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 40842,
+          "episode_id": 305,
+          "guest": "Martin Rees",
+          "chunk_index": 97,
+          "text": "But he also has led to a lot of division, but we need more David Edinburgh. Yeah, no, no. I mean, I'm a fan. Definitely. I mean, I've heard him described as a 21st century Brunel for his innovation and that's true. But whether he's an ethical inspiration, I don't know. Yeah, he has a lot of fun on Twitter. Well, let me ask you to put on your wise sage hat. What advice would you give to young people today? Maybe they're teenagers in high school, maybe early college. What advice would you give to a career or have a life they can be proud of? Yes. Well, I'd be very diffident, really, about offering any wisdom. But I think they should realise that the choices they make at that time are important. And from the experience I've had with many friends, many people don't realise that opportunities open until it's too late. They somehow think that some opportunities are only open to a few privileged people and they don't even try and that they could succeed.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 36,
+          "text": "What are the shared goals that we can really aspire towards? And then let's think really hard about how we can actually get there. So start with, don't start thinking about the risks, start thinking about the goals. And then when you do that, then you can think about the obstacles you want to avoid. I often get students coming in right here into my office for career advice. I always ask them this very question, where do you want to be in the future? If all she can say is, oh, maybe I'll have cancer, maybe I'll get run over by a truck. Yeah, focus on the obstacles instead of the goals. She's just going to end up a hypochondriac paranoid. Whereas if she comes in and fire in her eyes and is like, I want to be there. And then we can talk about the obstacles and see how we can circumvent them. That's, I think, a much, much healthier attitude. And I feel it's very challenging to come up with a vision for the future, which we are unequivocally excited about.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 801,
+          "episode_id": 13,
+          "guest": "Tomaso Poggio",
+          "chunk_index": 27,
+          "text": "So we may have to solve the hard problem of consciousness to solve it. On their way, yes. It's quite a moonshine. So you've been an advisor to some incredible minds, including Demis Hassabis, Krzysztof Koch, Amna Shashua, like you said. All went on to become seminal figures in their respective fields. From your own success as a researcher and from perspective as a mentor of these researchers, having guided them in the way of advice, what does it take to be successful in science and engineering careers? Whether you're talking to somebody in their teens, 20s, and 30s, what does that path look like? It's curiosity and having fun. And I think it's important also having fun with other curious minds. It's the people you surround with too, so fun and curiosity. Is there, you mentioned Steve Jobs, is there also an underlying ambition that's unique that you saw? Or does it really does boil down to insatiable curiosity and fun?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2014,
+          "episode_id": 27,
+          "guest": "Kai-Fu Lee",
+          "chunk_index": 38,
+          "text": "So it's unclear that it would take more time. And if it did, I'd be willing to take that reduction. And it's not a dramatic number, but it's a number that I think would give me a greater degree of happiness and knowing that I've done the right thing and still have plenty of hours to get the success that I want to get. So given the many successful companies that you've launched and much success throughout your career, what advice would you give to young people today looking, or it doesn't have to be young, but people today looking to launch and to create the next $1 billion tech startup or even AI based startup? I would suggest that people understand technology waves move quickly. What worked two years ago may not work today. And that is very much case in point for AI.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 9.86594271659851
+    }
+  ],
+  "final_answer": "The provided context includes David Fravor's advice to \"never, never take no\" as a key to his success, alongside his modest view of being lucky. However, the retrieved information does not offer multiple instances or discussions from him over time to show an evolution in his articulation or understanding of this core career advice. Therefore, the context is insufficient to answer how his advice has evolved.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    1,
+    73,
+    13,
+    176,
+    305,
+    183,
+    122,
+    27,
+    125
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 15.399718999862671
+}

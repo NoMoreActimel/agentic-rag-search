@@ -1,0 +1,224 @@
+{
+  "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming languages development methodologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 25342,
+          "episode_id": 207,
+          "guest": "nan",
+          "chunk_index": 3,
+          "text": "And I didn't even say what the goal was upfront, because it was so far out there, I would have been laughed at. And that's, I think big goals should be kept pretty damn close to start with for that reason too. But and then the second piece was to walk the walk to show like the principles of what I believed in around human movement, the ability to manage and control the spinal mechanics and the output that can have on the body. And so I wanted to take the two most basic movements that every able bodied person should be able to do. So fundamental movement patterns, the squat, which is like, in the developmental approach is around nine months as a baby from a developmental kinesiology standpoint, and a really basic pattern that every able bodied person should be able to master the other one being the hip hinge, being able to pick something up off the ground, a deadlift.",
+          "score": 0.31714786084493,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.077765464782715
+        },
+        {
+          "chunk_id": 10693,
+          "episode_id": 120,
+          "guest": "Fran\u00e7ois Chollet",
+          "chunk_index": 6,
+          "text": "And now here's my conversation with Francois Chalet. What philosophers, thinkers, or ideas had a big impact on you growing up and today? So one author that had a big impact on me when I read his books as a teenager was Jean Piaget, who is a Swiss psychologist, is considered to be the father of developmental psychology. And he has a large body of work about basically how intelligence develops in children. And so it's very old work, like most of it is from the 1930s, 1940s. So it's not quite up to date. It's actually superseded by many newer developments in developmental psychology. But to me, it was very interesting, very striking, and actually shaped the early ways in which I started thinking about the mind and the development of intelligence as a teenager. His actual ideas or the way he thought about it or just the fact that you could think about the developing mind at all? I guess both.",
+          "score": 0.31601277701059977,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.02911901473999
+        },
+        {
+          "chunk_id": 45760,
+          "episode_id": 392,
+          "guest": "Joscha Bach",
+          "chunk_index": 2,
+          "text": "Stage four is rational agency (self-direction). Stage five is self-authoring, that\u2019s full adult. You\u2019ve achieved wisdom, but there\u2019s two more stages. Stage six is enlightenment, stage seven is transcendence. Can you explain each, or the interesting parts of each of these stages, and what\u2019s your sense why there are stages of this, of lucidity as we progress through life in this too short life? Joscha Bach: This model is derived from concept by the psychologist Robert Kegan, and he talks about the development of the self as a process that happens in principle by some kind of reverse engineering of the mind, where you gradually become aware of yourself, and thereby build structure that allows you to interact deeper with the world and yourself. I found myself using this model not so much as a developmental model. I\u2019m not even sure if it\u2019s a very good developmental model, because I saw my children not progressing exactly like that.",
+          "score": 0.31601277701059977,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.02911901473999
+        },
+        {
+          "chunk_id": 36530,
+          "episode_id": 277,
+          "guest": "Andrew Huberman",
+          "chunk_index": 75,
+          "text": "And you like the stages. Oh yeah, if you read Erickson's stages of development, you realize that every stage of life is a set of neural circuits trying to resolve a problem. And if you're gonna try and avoid that progression sure, you might live longer, but you know, it's sort of like saying like, do you wanna go win the high school jujitsu championship? No, you graduated high school a long time ago, right? So I actually look forward to the future, even if it means that I'm starting to shift. I think that my biology will shift. Oh, you know, I'll fight that. I try and take good care of myself, but I don't wanna get sick. I don't wanna suffer, who does? But I'm embracing this whole developmental arc. I mean, we're not children and then adults. Our entire life is one long developmental arc. And if you fail to embrace that, you fail to extract the richness of what it is to be a human being. So in any event, I record Rob is in the room.",
+          "score": 0.31198708963394167,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 3.8565895557403564
+        },
+        {
+          "chunk_id": 56279,
+          "episode_id": 448,
+          "guest": "Jordan Peterson",
+          "chunk_index": 38,
+          "text": "Well, that\u2019s a conversation that has flow and that\u2019s engaging and that other people will listen to as well. See, I think that one of the things that we can conclude now, and we can do this even from a neuroscientific basis, is that that sense of engaged meaning is a marker not only for the emergence of harmony between you and your environment, but for the emergence of that harmony in a way that is developmentally rich, that moves you upward towards\u2026\n\nWhat would you say? Well, I think towards a more effective entropic state. That\u2019s actually the technical answer to that. But it makes you more than you are, and there\u2019s a directionality in that.\n\n\n## Communism\n\nLex Fridman: The reason I like talking about communism because it has clearly been shown as a set of ideas to be destructive to humanity.",
+          "score": 0.27733858331044514,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 3.1430821418762207
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. They discuss human and psychological development, not software development or programming languages.\n\nThe agent should refine the search to specifically target Travis Oliphant's involvement with *software* development, programming languages, and methodologies, avoiding terms that could be misinterpreted as human development. Follow up with similar specific searches for John Carmack and Pieter Levels.",
+      "timestamp": 605.0561618804932
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant Python NumPy Anaconda software development methodology",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 27967,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.4545307512283325,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 7.394175052642822
+        },
+        {
+          "chunk_id": 28086,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 119,
+          "text": "So Anaconda is yet another. So there's a company, but there's also a project. Correct. That is exceptionally impactful in terms of, for many reasons, but one of which is bringing a lot more people into the community of folks who use Python. So what is Anaconda? What is its goals? Maybe what is Conda versus Anaconda? Yeah, I'll tell you a little bit of the history of that. Cause Anaconda, we wanted to do, we wanted to scale Python. Cause we, you know, that was the goal. Peter and I had the goal of when we started Anaconda, we actually started as Continuum Analytics was the name of the company that started. It got renamed Anaconda in 2015. But we said, we want to scale analytics. NumPy is great, Pandas is emerging, but these need to run at scale with lots of machines. The other thing we wanted to do was make user interfaces that were web. We wanted to make sure the web did not pass by the Python community. That we had ways to translate your data science to the web.",
+          "score": 0.45219714991251625,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.579877853393555
+        },
+        {
+          "chunk_id": 28092,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 125,
+          "text": "And one of the first things he did at Conda Analytics became Anaconda was organize the Pi data ecosystem in conjunction with NumFocus. We actually started NumFocus with some other folks in the community the same year we started Anaconda. I said, we're gonna build a corporation, but we're also gonna reify the community aspect and build a nonprofit. So we did both of those. Can we pause real quick and can you say what is PyPy, the Python package index, like this whole story of packaging in Python? Yeah, that's what I'm gonna get to actually. This is exactly the journey I'm on. It's to sort of explain packaging in Python. I think it's best expressed to the conversation I had with Guido at a conference, where I said, so packaging is kind of a problem. And Guido said, I don't ever care about packaging. I don't use it. I don't install new libraries.",
+          "score": 0.4226857935587565,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 7.315105438232422
+        },
+        {
+          "chunk_id": 315,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 35,
+          "text": "It's a really tough problem because the OS and the platform want to own packaging, but their packaging solution is not specific to a language. If you take Linux, there are two competing packaging solutions for Linux or for Unix in general, but they all work across all languages. Several languages like Node, JavaScript, Ruby, and Python all have their own packaging solutions that only work within the ecosystem of that language. What should you use? That is a tough problem. My own approach is I use the system packaging system to install Python, and I use the Python packaging system then to install third party Python packages. That's what most people do. Ten years ago, Python packaging was really a terrible situation. Nowadays, pip is the future, there is a separate ecosystem for numerical and scientific Python based on Anaconda. Those two can live together. I don't think there is a need for more than that. That's packaging. Well, at least for me, that's where I've been extremely happy.",
+          "score": 0.40891890080769855,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.725095748901367
+        },
+        {
+          "chunk_id": 28077,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 110,
+          "text": "It's compiled, ready to install, just, you know. So in fact, a lot of the journey from 98, even through 2012 when I started Anaconda was about that. Like it's why, you know, it's really the key as to why a scientist with dreams of doing MRI research ended up starting a software company that installs software. I work with a few folks now that don't program like on the creative side and the video side, the audio side. And because my whole life is running on scripts, I have to try to get them, I'm having all the task of teaching them how to do Python enough to run the scripts. And so I've been actually facing this, whether it's Anaconda or some with the task of how do I minimally explain basically to my mom how to write a Python script. And it's an interesting challenge. I have to, it's a to do item for me to figure out like, what is the minimal amount of information I have to teach?",
+          "score": 0.3795958188374837,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.754106521606445
+        }
+      ],
+      "judge_feedback": "Chunk 4 is less directly relevant as it focuses on Guido van Rossum's perspective on packaging, not Travis Oliphant's specific methodology. Chunks 1, 2, 3, and 5 provide useful information on Travis Oliphant's priorities, such as scalability, accessibility, community building, and empowering scientists through Python.\n\nThe primary gap is the complete lack of information on John Carmack and Pieter Levels. The agent should now search for John Carmack's approach to programming languages, development methodologies, and his priorities, and then do the same for Pieter Levels.",
+      "timestamp": 611.8563139438629
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "John Carmack programming languages development methodologies priorities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 60743,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 97,
+          "text": "It\u2019s so inspiring to hear these kinds of stories when there\u2019s so much uncertainty and you figure out and so many constraints and you figure out how to bring it to life in real time and create this world that Unreal did. Maybe if we could just pause, since you mentioned John Carmack a few times, as a fellow pioneer in the game industry at that time, what do you admire about John?\n\n\n## John Carmack\n\nTim Sweeney: John singularly has this intense dedication to getting the best result from his code and having absolutely no attachment to passcode and some of the legendary things he did. The end result was an absolute breakthrough in real-time computer graphics, weren\u2019t his first try. They were like his seventh or eighth try after he\u2019d done something time and time again, tried it, found a better approach, thrown out the old one, built it again, and continually rewrite his code until he found the absolute best solution to a problem.",
+          "score": 0.4270549634297689,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 7.502355575561523
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.38362136713663736,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.926630020141602
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.3788960590362549,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 7.495545387268066
+        },
+        {
+          "chunk_id": 41606,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 237,
+          "text": "I am constantly kind of crying out for it's like, we can do better than this. And you wonder what the mechanisms to unlock that efficiency are. I don't, there is some sense in a large company that like an individual engineer might not believe that they can change the world. Maybe you delegate a little bit of the responsibility to be the one who changes the world in a big company, I think, but the reality is like the world will get changed by a single engineer anyway. So if whether inside Google or inside a startup, it doesn't matter, it's just like Google and Meta needs to help those engineers believe they're the ones that are gonna decrease that latency. It'll take one John Carmack, the 20 year old Carmack that's inside Meta right now to change everything. And I try to point that out and push people. It's like, try to go ahead.",
+          "score": 0.3555224822362264,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 6.493820667266846
+        },
+        {
+          "chunk_id": 41735,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 366,
+          "text": "You're an incredible human being. I can't wait what you do next, but you've already changed the world. You're an inspiration to so many people. And again, we haven't covered like most of what I was planning to talk about, so I hope we get a chance to talk someday in the future. I can't wait to see what you do next. Thank you so much again for talking to me. Thank you very much. Thanks for listening to this conversation with John Carmack. To support this podcast, please check out our sponsors in the description. And now, let me leave you with some words from John Carmack himself. Focused hard work is the real key to success. Keep your eyes on the goal, and just keep taking the next step towards completing it. If you aren't sure which way to do something, do it both ways and see which works better. Thank you for listening and hope to see you next time.",
+          "score": 0.18795125643412272,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 6.769339561462402
+        }
+      ],
+      "judge_feedback": "Chunk 1 and Chunk 5 offer good insights into John Carmack's development methodologies and priorities (iterative refinement, performance, focused hard work, experimentation). Chunks 2, 3, and 4 are less directly useful, providing biographical context or very basic programming anecdotes rather than deep dives into his professional language choices or methodologies.\n\nThe current results lack specific information about John Carmack's preferred programming languages beyond early BASIC. More importantly, there is no information at all about Travis Oliphant or Pieter Levels.\n\nThe agent should next search for \"John Carmack preferred programming languages\" and then begin searching for \"Travis Oliphant programming languages development methodologies priorities\" and \"Pieter Levels programming languages development methodologies priorities\".",
+      "timestamp": 622.3292844295502
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "John Carmack preferred programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 633.6988213062286
+    }
+  ],
+  "final_answer": "Travis Oliphant prioritizes making powerful scientific computing tools accessible and scalable, as evidenced by his work on NumPy, SciPy, and Anaconda, which aimed to empower scientists and engineers and improve Python packaging. John Carmack, on the other hand, is admired for his intense dedication to achieving the absolute best result from his code, continually rewriting and iterating until he finds the optimal solution. He emphasizes focused hard work and the belief that individual engineers can drive significant technological change.\n\nThe provided context does not contain information about Pieter Levels' approaches to programming languages and development methodologies.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    448,
+    224,
+    6,
+    392,
+    207,
+    467,
+    277,
+    309,
+    120
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 637.3356080055237
+}

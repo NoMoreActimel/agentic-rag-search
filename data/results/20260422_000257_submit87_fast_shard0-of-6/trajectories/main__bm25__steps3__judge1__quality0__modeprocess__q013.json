@@ -1,0 +1,151 @@
+{
+  "question": "Janna Levin, while discussing the profound mysteries of black holes and spacetime, mentions the mathematician Terence Tao. What specific approach does Terence Tao, in his own discussions, describe for tackling difficult mathematical problems, and how does he envision AI contributing to mathematical discovery, particularly through formal proof languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Terence Tao approach to mathematical problems AI formal proof languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61796,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 101,
+          "text": "And then half the time it gives me complete rubbish. But people are beginning to use AIs a little bit on top, mostly on the level of basically fancy auto-complete that you can type half of one line of a proof and it will find, it\u2019ll tell you. Lex Fridman: Yeah, but a fancy, especially fancy with the sort of capital letter F, remove some of the friction mathematician might feel when they move from pen and paper to formalizing. Terence Tao: Yes. Yeah. So right now I estimate that the time and effort taken to formalize it, proof is about 10 times the amount taken to write it out. So it\u2019s doable, but it\u2019s annoying. Lex Fridman: But doesn\u2019t it kill the whole vibe of being a mathematician? Having a pedantic coworker? Terence Tao: Right? Yeah, if that was the only aspect of it, but there\u2019s some cases was actually more pleasant to do things formally. So there\u2019s a theorem I formalized, and there was a certain constant 12 that came out in the final statement.",
+          "score": 10.792945861816406,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61812,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 117,
+          "text": "Terence Tao: So it would not have been feasible. The state of the art in the literature was like 15 equations and sort of how they applied, that\u2019s at the limit of what a human with pen and paper can do. So you need to scale that up. So you need to crowdsource, but you also need to trust all the, no one person can check 22 million of these proofs. You need it to be computerized. And so it only became possible with Lean. We were hoping to use a lot of AI as well. So the project is almost complete. So at these 22 million, all but two had been settled. Lex Fridman: Wow. Terence Tao: Well, actually, and of those two, we have a pen and paper proof of the two, and we\u2019re formalizing it. In fact, this morning I was working on finishing it, so we\u2019re almost done on this. Lex Fridman: It\u2019s incredible. Terence Tao: Yeah. Fantastic. Lex Fridman: How many people were you able to get? Terence Tao: About 50, which in mathematics is considered a huge number. Lex Fridman: It\u2019s a huge number.",
+          "score": 9.641976356506348,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61900,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 205,
+          "text": "In fact, there\u2019s an ongoing project to formalize it in Lean. Kevin Buzzard is actually-\n\nLex Fridman: Yeah. Can we take that small tangent? How difficult is that \u2019cause as I understand the proof for Fermat\u2019s Last Theorem has super complicated objects? Terence Tao: Yeah. Lex Fridman: It\u2019s really difficult to formalize now. Terence Tao: Yeah, I guess. Yeah, you\u2019re right. The objects that they use, you can define them. So they\u2019ve been defined in Lean, so just defining what they are can be done. That\u2019s really not trivial, but it\u2019s been done. But there\u2019s a lot of really basic facts about these objects that have taken decades to prove in all these different math papers. And so lots of these have to formalized as well.",
+          "score": 9.241708755493164,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61833,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 138,
+          "text": "And maybe you\u2019ll surprise us how quickly that comes. Terence Tao: I believe so. In formalization, I mentioned before that it takes 10 times longer to formalize a proof than to write it by hand. With these modern AI tools and also just better tooling, the Lean developers are doing a great job adding more and more features and making it user-friendly going from nine to eight to seven\u2026 Okay, no big deal, but one day it\u2019ll drop a little one. And that\u2019s a phase shift, because suddenly it makes sense when you write a paper to write it in Lean first, or through a conversation with AI, which is generally on the fly with you, and it becomes natural for journals to accept. Maybe they\u2019ll offer expedite refereeing. If a paper has already been formalized in Lean, they\u2019ll just ask the referee to comment on the significance of the results and how it connects to literature and not worry so much about the correctness, because that\u2019s been certified.",
+          "score": 9.12016487121582,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61818,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 123,
+          "text": "Lex Fridman: Oh, yeah. Terence Tao: So we\u2019re trying something different this time around where we have, everyone\u2019s an author, but we will have an appendix with this matrix, and we\u2019ll see how that works.\n\n\n## DeepMind\u2019s AlphaProof\n\nLex Fridman: So both projects are incredible, just the fact that you\u2019re involved in such huge collaborations. But I think I saw a talk from Kevin Buzzard about the Lean Programming Language just a few years ago, and you\u2019re saying that this might be the future of mathematics. And so it\u2019s also exciting that you\u2019re embracing one of the greatest mathematicians in the world embracing this, what seems like the paving of the future of mathematics. So I have to ask you here about the integration of AI into this whole process. So DeepMind\u2019s alpha proof was trained using reinforcement learning on both failed and successful formal lean proofs of IMO problems. So this is sort of high-level high school? Terence Tao: Oh, very high-level, yes.",
+          "score": 8.890857696533203,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All chunks are relevant and contain useful information regarding Terence Tao's views on AI and formal proof languages, including specific examples like Lean and AlphaProof.\n\nThe main gap is information on Terence Tao's general approach to tackling difficult mathematical problems, which is not covered in these chunks.\n\nSearch for: \"Terence Tao mathematical problem-solving approach\" or \"Terence Tao philosophy of mathematics discovery\".",
+      "timestamp": 2.5989537239074707
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Terence Tao approach to solving mathematical problems",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61821,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 126,
+          "text": "Terence Tao: Yes. Lex Fridman: So what impresses you about the system, and what do you think is the gap? Terence Tao: Yeah, we talked earlier about things that are amazing over time become kind of normalized. So now somehow, it\u2019s of course geometry is a silver bullet problem. Lex Fridman: Right. That\u2019s true, that\u2019s true. I mean, it\u2019s still beautiful to\u2026\n\nTerence Tao: Yeah, these are great work that shows what\u2019s possible. The approach doesn\u2019t scale currently. Three days of Google\u2019s server time can solve one high school math format there. This is not a scalable prospect, especially with the exponential increase as the complexity increases. Lex Fridman: We should mention that they got a silver medal performance. The equivalent of the silver medal performance.",
+          "score": 5.856114387512207,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61903,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 208,
+          "text": "We need people like that. Lex Fridman: Can you speak to it, like in terms of you like the collaborative? Terence Tao: I like moving on from a problem if it\u2019s giving too much difficulty. Lex Fridman: Got it. Terence Tao: But you need the people who have the tenacity and the fearlessness. I\u2019ve collaborated with people like that where I want to give up \u2019cause the first approach that we tried didn\u2019t work and the second one didn\u2019t work. But they\u2019re convinced and they have third, fourth, and the fifth, which works. And I\u2019d have to eat my words, \u201cOkay. I didn\u2019t think this was going to work, but yes, you were right all along.\u201d\n\n\n## Productivity\n\nLex Fridman: And we should say for people who don\u2019t know, not only are you known for the brilliance of your work, but the incredible productivity, just the number of papers, which are all very high quality. So there\u2019s something to be said about being able to jump from topic to topic. Terence Tao: Yeah, it works for me.",
+          "score": 5.39566707611084,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61918,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 223,
+          "text": "I think there\u2019s a quote from the Simpsons, \u201cI\u2019ve tried nothing and I\u2019m all out of ideas.\u201d So the next step then is to try anything no matter how stupid and in fact almost the stupider, the better, which technically is almost guaranteed to fail, but the way it fails is going to be instructive. It fails \u2019cause you are not at all taking into account this hypothesis. Oh, this hypothesis must be useful. That\u2019s a clue. Lex Fridman: I think you also suggested somewhere this fascinating approach, which really stuck with me as they\u2019re using it, and it really works, I think you said it\u2019s called structured procrastination. Terence Tao: No, yes. Lex Fridman: It\u2019s when you really don\u2019t want to do a thing that you imagine a thing you don\u2019t want to do more that\u2019s worse than that and then in that way, you procrastinate by not doing the thing that\u2019s worse. It\u2019s a nice hack, it actually works. Terence Tao: Yeah, yeah. With anything, psychology is really important.",
+          "score": 5.0180768966674805,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61853,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 158,
+          "text": "Lex Fridman: But you\u2019re generally, that is a break that you can take, is to step away and look at a different problem? Terence Tao: Yeah, yeah. You can modify the problem too. I mean, you can ask some cheater if there\u2019s a specific thing that\u2019s blocking you that some bad case keeps showing up, that for which your tool doesn\u2019t work. You can just assume by fiat this bad case doesn\u2019t occur. So you do some magical thinking, but strategically okay for the point to see if the rest of the argument goes through. If there\u2019s multiple problems with your approach, then maybe you just give up. But if this is the only problem but everything else checks out, then it\u2019s still worth fighting. So yeah, you have to do some forward reconnaissance sometimes too. Lex Fridman: And that is sometimes productive to assume like, \u201cOkay, we\u2019ll figure it out eventually\u201d? Terence Tao: Oh, yeah, yeah. Sometimes actually it\u2019s even productive to make mistakes.",
+          "score": 4.825531005859375,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61786,
+          "episode_id": 472,
+          "guest": "Terence Tao",
+          "chunk_index": 91,
+          "text": "Terence Tao: \u201cYeah, yeah. And okay, fine. You are a young man. I don\u2019t ask questions.\u201d\n\n\n## Solving difficult problems\n\nLex Fridman: I have to ask about how do you approach solving difficult problems if it\u2019s possible to go inside your mind when you\u2019re thinking, are you visualizing in your mind the mathematical objects, symbols, maybe what are you visualizing in your mind? Usually when you\u2019re thinking? Terence Tao: A lot of pen and paper. One thing you pick up as a mathematician is I call it cheating strategically. So the beauty of mathematics is that you get to change the problem and change the rules as you wish. You don\u2019t get to do this by any other field. If you\u2019re an engineer and someone says, \u201cBuild a bridge over this river,\u201d you can\u2019t say, \u201cI want to build this bridge over here instead,\u201d or, \u201cI want to put it out of paper instead of steel,\u201d but a mathematician, you can do whatever you want on. It\u2019s like trying to solve a computer game where there\u2019s unlimited cheat codes available.",
+          "score": 4.690771579742432,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All chunks are relevant, providing good insight into Terence Tao's approach to solving mathematical problems (e.g., strategic cheating, collaboration, tenacity, modifying problems). Chunk 1 also touches on AI's current capabilities in math.\n\nHowever, the chunks lack specific details on *how he envisions AI contributing to mathematical discovery, particularly through formal proof languages*. The next search query should target this specific gap.\n\nNext search query: \"Terence Tao AI mathematical discovery formal proof languages\"",
+      "timestamp": 9.926433324813843
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Terence Tao AI mathematical discovery formal proof languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 18.81259846687317
+    }
+  ],
+  "final_answer": "Terence Tao describes tackling difficult mathematical problems by \"cheating strategically,\" which involves changing the problem or its rules, modifying the problem, or making strategic assumptions to see if the rest of an argument holds. He also suggests trying \"anything no matter how stupid\" as failures can be instructive, and moving on from problems that are too difficult.\n\nHe envisions AI contributing to mathematical discovery by acting as \"fancy auto-complete\" for proofs and significantly reducing the time and effort required to formalize proofs in languages like Lean. This would make it more feasible for mathematicians to write papers in formal languages, potentially expediting peer review by certifying correctness and allowing human referees to focus on significance.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    472
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 26.008880138397217
+}

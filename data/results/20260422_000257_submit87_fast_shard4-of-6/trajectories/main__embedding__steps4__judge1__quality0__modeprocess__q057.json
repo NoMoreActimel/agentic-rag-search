@@ -1,0 +1,173 @@
+{
+  "question": "Initially, discussions around US export controls on semiconductors, such as those involving Dylan Patel and Nathan Lambert, highlighted China's adaptive strategies like DeepSeek's efficient training and large GPU clusters. How did the perspective on the *ultimate effect* of these US controls on China's domestic technological capacity evolve in later discussions, particularly as articulated by Keyu Jin?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Dylan Patel Nathan Lambert China semiconductor export controls adaptive strategies DeepSeek GPU clusters",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58643,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 72,
+          "text": "So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs. So any chip that had interconnects above a certain level and FLOPs above a certain \u2026 Floating point operations above a certain level was restricted. Later, the government realized that this was a flaw in the restriction and they cut it down to just floating point operations. And so-\n\nNathan Lambert: H800 had high FLOPs, low communication? Dylan Patel: Exactly. So, the H800 was the same performance as H100 on FLOPs, but it just had the interconnect bandwidth cut. DeepSeek knew how to utilize this. \u201cHey, even though we\u2019re cut back on the interconnect, we can do all this fancy stuff to figure out how to use the GPU fully anyways.\u201d\n\nAnd so that was back in October 2022. But later in 2023, into 2023 implemented in 2024, the U.S. government banned the H800. Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023.",
+          "score": 0.8090595602989197,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58634,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 63,
+          "text": "And so DeepSeek has always been really good at this. And even as far back as 2021, they have press releases and papers saying, \u201cHey, we\u2019re the first company in China with an A100 cluster this large.\u201d It was 10,000 A100 GPUs, right? This is in 2021. Now, this wasn\u2019t all for training large language models. This was mostly for training models for their quantitative aspects, quantitative trading as well as a lot of that was natural language processing, to be clear. Right? And so this is the sort of history, right? So verifiable fact is that in 2021, they built the largest cluster, at least they claim it was the largest cluster in China, 10,000 GPUs. Nathan Lambert: Before export controls started. Dylan Patel: Yeah. Nathan Lambert: It\u2019s like they\u2019ve had a huge cluster before any conversation of export controls. Dylan Patel: So then you step it forward to, what have they done over the last four years since then?",
+          "score": 0.8085861206054688,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58642,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 71,
+          "text": "There\u2019s just different sizes of companies that can afford these things and DeepSeek is reasonably big. Their compute allocation is one of the top few in the world that\u2019s not OpenAI, Anthropic, et cetera, but they have a lot of compute.\n\n\n## Export controls on GPUs to China\n\nLex Fridman: Can you in gentlemen actually just zoom out and also talk about the Hopper architecture, the Nvidia Hopper GPU architecture and the difference between H100 and H800, like you mentioned, the interconnects? Dylan Patel: Yeah. So there\u2019s, Ampere was the A100 and then H100 Hopper, right? People use them synonymously in the U.S. because really there\u2019s just H100 and now there\u2019s H200, right, but same thing mostly? In China, there\u2019ve been different salvos of expert restrictions. So initially, the U.S. government limited on a two-factor scale, which is chip interconnect versus FLOPs.",
+          "score": 0.7988943457603455,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.7953345775604248,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58637,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 66,
+          "text": "Nathan Lambert: Very direct quotes. \u201cWe will not switch to closed source,\u201d when asked about this stuff. Very long-term motivated in how the ecosystem of AI should work. And I think from a Chinese perspective, he wants a Chinese company to build this vision. Dylan Patel: And so this is sort of like the \u201cvisionary behind the company.\u201d This hedge fund still exists, this quantitative firm. And so DeepSeek is the sort of \u2026 Slowly, he got turned to this full view of AI, everything about this, but at some point it slowly maneuvered and he made DeepSeek. And DeepSeek has done multiple models since then. They\u2019ve acquired more and more GPUs. They share infrastructure with the fund. Right? And so there is no exact number of public GPU resources that they have. But besides this 10,000 GPUs that they bought in 2021, and they were fantastically profitable, and then this paper claims they did only 2,000 H800 GPUs, which are a restricted GPU that was previously allowed in China, but no longer allowed.",
+          "score": 0.7953152656555176,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks confirm the initial discussions by Dylan Patel and Nathan Lambert about China's adaptive strategies (DeepSeek's efficient training, large GPU clusters) in response to US export controls. However, they do not mention Keyu Jin or her perspective on the *ultimate effect* of these controls.\n\nThe agent should search for discussions by Keyu Jin specifically addressing the long-term impact or ultimate effect of US semiconductor export controls on China's domestic technological capacity.",
+      "timestamp": 13.795414686203003
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Keyu Jin US semiconductor export controls China ultimate effect long-term impact domestic technological capacity",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63186,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 71,
+          "text": "Same thing with the US, right? So I think this is all the old thinking of who wins, who dominates. I think we need a new playbook.\n\n\n## CHIPS Act\n\nLex Fridman: So to you, maybe when you refer to Biden and Trump, if you go back to Biden, it would be the CHIPS Act. So the export controls created unintended, unexpected effect where it had the reverse geopolitical effect. Keyu Jin: I hope it was unintentional. Otherwise, you\u2019d be questioning the level of intelligence of the US administration. But I think that the things they laid out did the opposite of what was intended. It sped up domestic capacity. It motivated the whole country to do this whole of a nation program to go after technologies, kind of like the way they go after Olympics, Olympic gold medals. They wanted to maximize Olympic gold medals, and they put the whole nation at work and all the resources, and that\u2019s what China did. Huawei, another example, they were sanctioned. Guess what?",
+          "score": 0.7547618746757507,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63210,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 95,
+          "text": "And it seems like there\u2019s increasing urgency on that. And I think if we look out in the next a hundred years, the urgency is good because it\u2019s probably good for each individual country to be manufacturing majority of their chips. It\u2019s less likely to lead to conflict. Keyu Jin: Well, this is the trend that you need to manufacturing things that are important for national security. It\u2019s not efficient, but it\u2019s so-called strategically safer.\n\n\n## One-child policy\n\nLex Fridman: You mentioned one-child policy, so can we speak a little bit more to that? What broadly, what impact has it had on the Chinese society? On culture, you already mentioned some of it, some of the impact on the economics, on the culture, on the demographics of China. Keyu Jin: It\u2019s probably one of the most radical policies that China has enacted in its history. And the enforcement was very strict. In my class, nobody had a sibling except my friend who was a Uyghur. 98% of urban households had only one.",
+          "score": 0.7316964268684387,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63205,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 90,
+          "text": "But the US is the technological leadership and it is able to stomach that volatility and clash without breaking apart. And other countries don\u2019t have the capacity of the institutions, the culture to be able to tolerate and still maintain to keep the society together. So I think it is very interesting. But yeah, it\u2019s a puzzle.\n\n\n## Taiwan\n\nLex Fridman: So we talked about the economic side of tariffs, and you mentioned the other red line and the three T\u2019s. Can we talk about Taiwan? So how important is Taiwan to the Chinese economy and the global economy? Keyu Jin: Taiwan has among other things, TSMC, which is vitally important for the global economy. It\u2019s also very important for the Chinese leadership and the Chinese people. You don\u2019t want to ask what I think, ask the Chinese young generation. They would one day like to see unification. It\u2019s part of the patriotic, the dream, if you will. And it\u2019s a chip between the US and China. So everybody is watching Taiwan.",
+          "score": 0.708974301815033,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63183,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 68,
+          "text": "This is called crisis innovation. And you got to thank the US for that. When the Chinese were comfortably importing chips from the US, the whole industry stalled for 20 years. I mean, why would you plow in billions, tens and billions and even more when you can just import the best? You don\u2019t want to do your own innovation. It\u2019s because of these export controls, these sanctions on these companies, that Chinese companies in the Chinese state felt an existential crisis a few years ago by being cut off from these critical components. And guess what happened? In a short amount of time, a degree of domestic capacity ramping up and catch up has been nothing short of remarkable. Again, thanks to US truculence on technology. Now, I\u2019m sure there are many aspects of hyperbole related to DeepSeek, but it just shows you that the gap is much smaller between the China and the US on leading edge technologies than what was expected that these export controls were not effective.",
+          "score": 0.7040989398956299,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58701,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 130,
+          "text": "So all these different power ICs and battery management controllers and all these things, they\u2019re insourcing. And this is something that China has been doing since 2015. Now, as far as the trailing edge, they\u2019re getting so much capacity there. As far as the leading edge, i.e. this five nanometer and so on and so forth, where GPUs, they are still behind. The US restrictions are trying to stop them in the latter, but all that\u2019s happened is yes, they\u2019ve slowed down their five nanometer, three nanometer, et cetera, but they\u2019ve accelerated their, hey, 45 nanometer, 90 nanometer power IC or analog IC or random chip in my keyboard, that kind of stuff. So there is an angle of, the US\u2019 actions, from the angle of the expert controls, have been so inflammatory at slowing down China\u2019s progress on the leading edge that they\u2019ve turned around and have accelerated their progress elsewhere because they know that this is so important.",
+          "score": 0.7012096643447876,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Chunk 2 (second half, about the one-child policy) and Chunk 3 are clearly irrelevant. Chunk 5 is relevant to the topic but does not articulate Keyu Jin's perspective.\n2.  Chunks 1, 4, and the first half of Chunk 2 contain highly useful information. Keyu Jin articulates that US controls had the opposite of their intended effect, accelerating China's domestic technological capacity through \"crisis innovation\" and a \"whole of a nation program,\" citing Huawei and DeepSeek as examples.\n3.  To further elaborate on the \"evolution\" of the perspective, search for Keyu Jin's discussions explicitly contrasting the *initial expectations* of the US controls with their *observed effects* on China's technological capacity.",
+      "timestamp": 25.306577682495117
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Keyu Jin US export controls China semiconductor initial expectations vs observed effects domestic capacity",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 63188,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 73,
+          "text": "From your perspective as an economist, to what degree was it justified? To what degree was it effective? To what degree is it bad policy for US, for the west, for the world, also for China? Keyu Jin: China has been preparing for this for the last five years, and for the return of Trump and for Trump\u2019s maniac trade policies. You\u2019d think that Trump also had five years to prepare for this battle with China. It didn\u2019t show. You can say that the Chinese, at least this time around, have played their hand pretty well when dealing with Trump\u2019s tariff threats and the trade war with a level of calibrated assertiveness. They have really thought through everything very elaborately. And look, this is not good for either country. Let\u2019s just be clear. It\u2019s bad for US and China and it\u2019s bad for the world. And every country has a stake in the US-China trade war because whether you trade directly or indirectly with China, you\u2019re going to be affected.",
+          "score": 0.6864433884620667,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1. This chunk is not clearly irrelevant but is too general.\n2. The chunk discusses Keyu Jin's perspective on China's preparedness for trade policies and the general negative impact of the trade war, but it does not specifically address the *ultimate effect of semiconductor export controls on China's domestic technological capacity*.\n3. Search for Keyu Jin's specific views on the *impact of US semiconductor export controls* on China's *domestic technological capacity* and whether she discusses an *evolution* of these effects over time.",
+      "timestamp": 154.27977967262268
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 162.2666003704071
+    }
+  ],
+  "final_answer": "While initial discussions with Dylan Patel and Nathan Lambert highlighted China's adaptive strategies, such as DeepSeek's efficient training and large GPU clusters, Keyu Jin articulated that the ultimate effect of US export controls on semiconductors was the opposite of what was intended. She stated that these controls inadvertently accelerated China's domestic technological capacity, fostering 'crisis innovation' and a 'whole of a nation program' to develop indigenous technology. Jin suggested that the US actions, by creating an 'existential crisis,' spurred a remarkable ramp-up in China's domestic capacity, making the gap in leading-edge technologies much smaller than expected and rendering the controls ineffective in their goal of slowing China down.",
+  "total_chunks_retrieved": 11,
+  "unique_episodes_found": [
+    459,
+    477
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 162.26660299301147
+}

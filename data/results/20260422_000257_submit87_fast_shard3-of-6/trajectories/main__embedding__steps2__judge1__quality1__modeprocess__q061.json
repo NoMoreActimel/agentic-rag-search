@@ -1,0 +1,143 @@
+{
+  "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI primary drivers OpenCog",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.7772384066581726,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7503405809402466
+        },
+        {
+          "chunk_id": 8677,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 102,
+          "text": "But in the end we realized like, that just hadn't been one of our design thoughts when we built OpenCog, right? So between wanting really fast dependent type checking and wanting much more efficient interoperation between the computation graphs of deep neural net frameworks and OpenCog's hypergraph and adding on top of that, wanting to more effectively run an OpenCog hypergraph distributed across RAM in 10,000 machines, which is we're doing dozens of machines now, but it's just not, we didn't architect it with that sort of modern scalability in mind. So these performance requirements are what have driven us to want to rearchitect the base, but the core AGI paradigm doesn't really change. Like the mathematics is the same. It's just, we can't scale to the level that we want in terms of distributed processing or speed of various kinds of processing with the current infrastructure that was built in the phase 2001 to 2008, which is hardly shocking.",
+          "score": 0.7617996354103088,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7282851934432983
+        },
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 0.7617713470458984,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7282447814941406
+        },
+        {
+          "chunk_id": 8651,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 76,
+          "text": "So what to you is the most beautiful aspect of OpenCog? Just to you personally, some aspect that captivates your imagination from beauty or power? What fascinates me is finding a common representation that underlies abstract, declarative knowledge and sensory knowledge and movement knowledge and procedural knowledge and episodic knowledge, finding the right level of representation where all these types of knowledge are stored in a sort of universal and interconvertible yet practically manipulable way, right? So to me, that's the core, because once you've done that, then the different learning algorithms can help each other out.",
+          "score": 0.7287696094512939,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7239565849304199
+        },
+        {
+          "chunk_id": 8607,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 0.7052851958274842,
+          "source": "embedding",
+          "quality_score": 0.64,
+          "original_score": 0.7332645654678345
+        }
+      ],
+      "judge_feedback": "Chunk 1 contains irrelevant ad mentions.\n\nChunks 2, 4, and 5 are highly useful as they describe Ben Goertzel's core AGI paradigm, the importance of unified knowledge representation in OpenCog, and his view on necessary components like logic-based systems. Chunk 3 provides context on OpenCog's ongoing development.\n\nThe current chunks lack information on Sebastian Raschka and Nathan Lambert's analysis of AI in 2026. The next search should focus on their perspectives to enable a comparison.",
+      "timestamp": 3.6664373874664307
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Sebastian Raschka Nathan Lambert AI 2026 analysis",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65643,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 3,
+          "text": "Sebastian, Nathan, it\u2019s good to see you guys. So Sebastian, who do you think is winning? Sebastian Raschka: So winning is a very broad term. I would say you mentioned the DeepSeek moment, and I do think DeepSeek is definitely winning the hearts of the people who work on open weight models because they share these as open models. Winning, I think, has multiple timescales to it. We have today, we have next year, we have in ten years. One thing I know for sure is that I don\u2019t think nowadays, in 2026, that there will be any company having access to a technology that no other company has access to. And that is mainly because researchers are frequently changing jobs, changing labs. They rotate. So I don\u2019t think there will be a clear winner in terms of technology access. Sebastian Raschka: However, I do think the differentiating factor will be budget and hardware constraints. I don\u2019t think the ideas will be proprietary, but rather the resources that are needed to implement them.",
+          "score": 0.75807750415802,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7229678630828857
+        },
+        {
+          "chunk_id": 65917,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 277,
+          "text": "I\u2019m not saying the Adam Project is the only thing moving the ecosystem, but it\u2019s people like me doing this sort of thing to get the word out.\n\n\n## Manhattan Project for AI\n\nSebastian Raschka: Do you like the 2025 America\u2019s AI Action Plan? That includes open source stuff. The White House AI Action Plan includes a dedicated section titled \u201cEncourage Open-Source and Open-Weight AI,\u201d defining such models and arguing they have unique value for innovation and startups. Nathan Lambert: Yeah. I mean, the AI Action Plan is just a plan, but I think it\u2019s maybe the most coherent policy document that has come out of the administration, and I hope that it largely succeeds. I know people that have worked on it. The challenge is taking policy and making it real, and I have no idea how to do this as an AI researcher, but largely a lot of things in that were very real.",
+          "score": 0.7555138607025146,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7193055152893066
+        },
+        {
+          "chunk_id": 65950,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 310,
+          "text": "Nathan Lambert: But it is something that is probably doable. It just will take longer than people want. And we have to go through that long period of hard, distraught AI discussions if we want to have the lasting benefits. Lex Fridman: Yeah. Through that process, I\u2019m especially excited that we get a chance to better understand ourselves at the individual level as humans and at the civilization level, and answer some of the big mysteries, like what is this whole consciousness thing going on here? It seems to be truly special. Like, there\u2019s a real miracle in our mind. And AI puts a mirror to ourselves and we get to answer some of the big questions about what is this whole thing going on here. Sebastian Raschka: Well, one thing about that is also what I do think makes us very different from AI and why I don\u2019t worry about AI taking over is, like you said, consciousness. We humans, we decide what we want to do. AI in its current implementation, I can\u2019t see it changing.",
+          "score": 0.7268877656459808,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7212682366371155
+        },
+        {
+          "chunk_id": 65641,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 1,
+          "text": "First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch. I truly believe in the machine learning and computer science world, the best way to learn and understand something is to build it yourself from scratch. Nathan is the post-training lead at the Allen Institute for AI, and author of the definitive book on reinforcement learning from human feedback. Both of them have great X accounts, great Substacks. Sebastian has courses on YouTube, Nathan has a podcast. And everyone should absolutely follow all of those. This is the Lex Fridman podcast. Lex Fridman: To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, get feedback, and so on. And now, dear friends, here\u2019s Sebastian Raschka and Nathan Lambert.\n\n\n## China vs US: Who wins the AI race? Lex Fridman: So I think one useful lens to look at all this through is the so-called DeepSeek moment.",
+          "score": 0.7086537399291992,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7209339141845703
+        },
+        {
+          "chunk_id": 65640,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.6838799474239349,
+          "source": "embedding",
+          "quality_score": 0.52,
+          "original_score": 0.7541142106056213
+        }
+      ],
+      "judge_feedback": "1.  **Ignore:** Chunk 5 (introduction) and the second half of Chunk 4 (book recommendations, podcast plugs) are largely filler. The \"Manhattan Project for AI\" and \"China vs US\" sections in Chunks 2 and 4 are less directly relevant to *AGI drivers* compared to the core question.\n2.  **Useful:** Chunk 1 provides Sebastian Raschka's view that budget and hardware, not proprietary ideas, will be the differentiating factor in AI by 2026. Chunk 3 touches on consciousness as a human differentiator, implying current AI limitations, which is relevant to the AGI discussion.\n3.  **Next Search:** The current chunks provide some insight into Raschka and Lambert's general AI outlook but lack specific discussion on their perceived \"most promising path towards achieving AGI.\" Crucially, there is no information about Ben Goertzel's views on AGI. The agent should search for \"Ben Goertzel AGI primary driver\" or \"Ben Goertzel OpenCog AGI path\" to gather his perspective.",
+      "timestamp": 11.797390222549438
+    }
+  ],
+  "final_answer": "Ben Goertzel's discussions on AGI, particularly with OpenCog, focus on architectural challenges like finding a common representation for diverse knowledge types and scaling infrastructure for distributed processing, while acknowledging many paths to human-level AI. In contrast, Sebastian Raschka and Nathan Lambert's analysis of AI in 2026 emphasizes that technological ideas will likely not be proprietary, with budget and hardware constraints becoming the primary differentiating factors in the AI landscape. The provided context does not explicitly detail Raschka and Lambert's views on the \"most promising path towards achieving AGI\" to directly compare with Goertzel's technical drivers.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 28.29286527633667
+}

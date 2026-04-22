@@ -1,0 +1,218 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 301,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 21,
+          "text": "Oh, interesting. So you basically, exactly, you first observe what you like. Yeah, and so that's why if you're 17 years old and you want to sort of create a programming language, you're not going to be very successful at it because you have no experience with other languages, whereas I was in my, let's say mid 30s, I had written parsers before, so I had worked on the implementation of ABC, I had spent years debating the design of ABC with its authors, with its designers, I had nothing to do with the design, it was designed fully as it ended up being implemented when I joined the team. But so you borrow ideas and concepts and very concrete sort of local rules from different languages like the indentation and certain other syntactic features from ABC, but I chose to borrow string literals and how numbers work from C and various other things.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 326,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 46,
+          "text": "So I think it's consciousness and intelligence are not all or nothing. The spectrum is really interesting. But in returning to programming languages and the way we think about building these kinds of things, about building intelligence, building consciousness, building artificial beings. So I think one of the exciting ideas came in the 17th century and with Leibniz, Hobbes, Descartes, where there's this feeling that you can convert all thought, all reasoning, all the thing that we find very special in our brains, you can convert all of that into logic. So you can formalize it, formal reasoning, and then once you formalize everything, all of knowledge, then you can just calculate and that's what we're doing with our brains is we're calculating. So there's this whole idea that this is possible, that this we can actually program. But they weren't aware of the concept of pattern matching in the sense that we are aware of it now.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 346,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 66,
+          "text": "Everything they've learned in college was almost always about a much smaller scale and somehow that difference in scale makes a qualitative difference in how you do things and how you think about it. If you then take a few steps back into decades, 70s and 80s, when you were first thinking about Python or just that world of programming languages, did you ever think that there would be systems as large as underlying Google, Facebook, and Dropbox? Did you, when you were thinking about Python? I was actually always caught by surprise by sort of this, yeah, pretty much every stage of computing. So maybe just because you've spoken in other interviews, but I think the evolution of programming languages are fascinating and it's especially because it leads from my perspective towards greater and greater degrees of intelligence. I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 347,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 67,
+          "text": "I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah. And if you look, I just have a list of programming languages, all of which I've now played with a little bit. I mean, they're all beautiful in different ways from Fortran, Cobalt, Lisp, Algol 60, Basic, Logo again, C, as a few, the object oriented came along in the 60s, Simula, Pascal, Smalltalk. All of that leads. They're all the classics. The classics. Yeah. The classic hits, right? Steam, that's built on top of Lisp. On the database side, SQL, C++, and all of that leads up to Python, Pascal too, and that's before Python, MATLAB, these kind of different communities, different languages. So can you talk about that world? I know that sort of Python came out of ABC, which I actually never knew that language.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.008068084716797
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.37476921081543
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "OpenCog",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8606,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 31,
+          "text": "But now, Google had Project Calico, Craig Venter had Human Longevity Incorporated. And then once the suits come marching in, right? I mean, once there's big money in it, then people are forced to take it seriously because that's the way modern society works. So it's still not as mainstream as cancer research, just as AGI is not as mainstream as automated driving or something. But the degree of mainstreaming that's happened in the last 10 to 15 years is astounding to those of us who've been at it for a while. Yeah, but there's a marketing aspect to the term, but in terms of actual full force research that's going on under the header of AGI, it's currently, I would say dominated, maybe you can disagree, dominated by neural networks research, that the nonlinear regression, as you mentioned. Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8607,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8631,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 56,
+          "text": "The other part is that the world doesn't want you to. Like the people who have followed your ideas get mad at you if you change your mind. And the media wants to pigeonhole you as an avatar of a certain idea. But yeah, I've changed my mind on a bunch of things. I mean, when I started my career, I really thought quantum computing would be necessary for AGI. And I doubt it's necessary now, although I think it will be a super major enhancement. But I mean, I'm now in the middle of embarking on the complete rethink and rewrite from scratch of our OpenCog AGI system together with Alexey Potapov and his team in St. Petersburg, who's working with me in SingularityNet. So now we're trying to like go back to basics, take everything we learned from working with the current OpenCog system, take everything everybody else has learned from working with their proto AGI systems and design the best framework for the next stage.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8632,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 16.290929555892944
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "OpenCog language",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8634,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8673,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 98,
+          "text": "We've been prototyping and experimenting with this within OpenCog and before that WebMind since the mid 1990s. Now, disappointingly to all of us, this has not yet been cashed out in an AGI system, right? I mean, we've used this system within our consulting business. So we've built natural language processing and robot control and financial analysis. We've built a bunch of sort of vertical market specific proprietary AI projects. They use OpenCog on the backend, but we haven't, that's not the AGI goal, right? It's interesting, but it's not the AGI goal. So now what we're looking at with our rebuild of the system. 2.0. Yeah, we're also calling it True AGI. So we're not quite sure what the name is yet. We made a website for trueagi.io, but we haven't put anything on there yet. We may come up with an even better name. It's kind of like the real AI starting point for your AGI book. Yeah, but I like True better because True has like, you can be true hearted, right?",
+          "score": 1.0,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 75,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 75,
+          "text": "So if you give me this chance to try to at least form a question out of this is, I think it's an interesting idea to think that we can have intelligent systems, but we don't know how to describe something to them and they can't communicate with us. I know you're doing a little bit of work in explainable AI, trying to get AI to explain itself. So what are your thoughts of natural language processing or some kind of other communication? How does the AI explain something to us? How do we explain something to it, to machines? Or you think of it differently? So there are two separate parts to your question there. One of them has to do with communication, which is super interesting, I'll get to that in a sec. The other is whether we already have AGI but we just haven't noticed it there. Right. There I beg to differ.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 80,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 80,
+          "text": "And if it can only reply, I was trained on five terabytes of data and this is my diagnosis, boop, boop, beep, beep. It doesn't really instill a lot of confidence, right? So I think we have a lot of work to do on communication there. So what kind of, I think you're doing a little bit of work in explainable AI. What do you think are the most promising avenues? Is it mostly about sort of the Alexa problem of natural language processing of being able to actually use human interpretable methods of communication? So being able to talk to a system and it talk back to you, or is there some more fundamental problems to be solved? I think it's all of the above. The natural language processing is obviously important, but there are also more nerdy fundamental problems. Like if you take, you play chess? Of course, I'm Russian. I have to. You speak Russian? Yes, I speak Russian. Excellent, I didn't know. When did you learn Russian?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 81,
+          "episode_id": 1,
+          "guest": "Max Tegmark",
+          "chunk_index": 81,
+          "text": "Of course, I'm Russian. I have to. You speak Russian? Yes, I speak Russian. Excellent, I didn't know. When did you learn Russian? I speak very bad Russian, I'm only an autodidact, but I bought a book, Teach Yourself Russian, read a lot, but it was very difficult. Wow. That's why I speak so bad. How many languages do you know? Wow, that's really impressive. I don't know, my wife has some calculation, but my point was, if you play chess, have you looked at the AlphaZero games? The actual games, no. Check it out, some of them are just mind blowing, really beautiful. And if you ask, how did it do that? You go talk to Demis Hassabis, I know others from DeepMind, all they'll ultimately be able to give you is big tables of numbers, matrices, that define the neural network. And you can stare at these tables of numbers till your face turn blue, and you're not gonna understand much about why it made that move.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 20.289674997329712
+    }
+  ],
+  "final_answer": "For cognitive architectures like OpenCog, two primary programming languages are explicitly mentioned: C++ and Scheme. The provided context does not mention Sebastian Raschka or Nathan Lambert, nor does it reference any distinct large language models by name in discussions with them. Therefore, the information to answer the second part of the question is insufficient.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    1,
+    6,
+    103
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 22.780173301696777
+}

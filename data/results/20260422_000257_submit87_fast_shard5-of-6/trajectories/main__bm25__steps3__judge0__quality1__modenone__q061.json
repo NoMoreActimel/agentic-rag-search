@@ -1,0 +1,152 @@
+{
+  "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI OpenCog primary driver path",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5225122661590575,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 11.593382835388184
+        },
+        {
+          "chunk_id": 8632,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.49110903294881186,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 10.247529983520508
+        },
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 0.4698052520751953,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.334510803222656
+        },
+        {
+          "chunk_id": 8635,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 60,
+          "text": "No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code. And you can use SingularityNet as part of the infrastructure for a distributed OpenCog system, but there are different layers. Yeah, got it. So OpenCog on the one hand as a software framework could be used to implement a variety of different AI architectures and algorithms, but in practice, there's been a group of developers which I've been leading together with Linus Vepstas, Neil Geisweiler, and a few others, which have been using the OpenCog platform and infrastructure to implement certain ideas about how to make an AGI. So there's been a little bit of ambiguity about OpenCog, the software platform versus OpenCog, the AGI design, because in theory, you could use that software to do, you could use it to make a neural net. You could use it to make a lot of different AGI.",
+          "score": 0.4650352274576823,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.130081176757812
+        },
+        {
+          "chunk_id": 8717,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 142,
+          "text": "Then your body interacts even more loosely with the other people that you talk to. So you often have networks within networks within networks with progressively looser coupling as you get higher up in that hierarchy. I mean, you have that in biology, you have that in the internet as a just networking medium. And I think that's what we're gonna have in the network of software processes leading to AGI. That's a beautiful way to see the world. Again, the same similar question is with OpenCog. If somebody wanted to build an AI system and plug into the SingularityNet, what would you recommend? Yeah, so that's much easier. I mean, OpenCog is still a research system. So it takes some expertise to, and sometimes, we have tutorials, but it's somewhat cognitively labor intensive to get up to speed on OpenCog. And I mean, what's one of the things we hope to change with the true AGI OpenCog 2.0 version is just make the learning curve more similar to TensorFlow or Torch or something.",
+          "score": 0.44205161285400385,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.145069122314453
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.837541103363037
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Sebastian Raschka Nathan Lambert AGI 2026 primary driver path",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65678,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 38,
+          "text": "Did you actually name LLaMA? Nathan Lambert: No. Lex Fridman: I feel like \u2026\n\nNathan Lambert: RIP. Sebastian Raschka: This was not on purpose. Lex Fridman: RIP LLaMA. All right. Can you mention what are some interesting models that stand out? You mentioned Qwen 3 is obviously a standout. Sebastian Raschka: So I would say the year\u2019s almost book-ended by DeepSeek-V3 and DeepSeek R1. And then on the other hand, in December, DeepSeek-V3.2. Because what I like about those is they always have an interesting architecture tweak- \u2026 that others don\u2019t have. But otherwise, if you want to go with the familiar but really good performance, Qwen 3 and, like Nathan said, also gpt-oss. And I think with gpt-oss, what\u2019s interesting about it is it\u2019s kind of the first open-weight model that was really trained with tool use in mind, which I do think is a bit of a paradigm shift where the ecosystem was not quite ready for it.",
+          "score": 0.5875268859863281,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 13.094009399414062
+        },
+        {
+          "chunk_id": 65933,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 293,
+          "text": "Nathan Lambert: I don\u2019t think it would be a company that exists. Sebastian Raschka: A new company. Nathan Lambert: I think it would be a different company that would rise. Sebastian Raschka: Like Silicon Graphics or something. Nathan Lambert: So yeah, some company that has died would have done it. Lex Fridman: But looking at it, it seems like these singular figures, these leaders, have a huge impact on the trajectory of the world. Obviously, incredible teams are behind them. But, you know, having that kind of very singular, almost dogmatic focus- \u2026is necessary to make progress. Sebastian Raschka: Yeah, I mean, even with GPT, it wouldn\u2019t exist if there wasn\u2019t a person, Ilya, who pushed for this scaling, right? Nathan Lambert: Yeah, Dario was also deeply involved in that.",
+          "score": 0.5779204851786295,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 16.025163650512695
+        },
+        {
+          "chunk_id": 65880,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 240,
+          "text": "So there\u2019s a lot of things coming. Sebastian Raschka: I used that feature before, and I always feel bad because it does that every day, and I rarely check it out. How much compute is burned on something I don\u2019t even look at, you know? Nathan Lambert: There\u2019s also a lot of idle compute in the world, so don\u2019t feel too bad. Lex Fridman: Okay. Do you think new ideas might be needed? Is it possible that the path to AGI\u2014whatever that is, however we define that\u2014to solve computer use more generally, to solve biology and chemistry and physics, sort of the Dario definition of AGI or powerful AI? Do you think it\u2019s possible that totally new ideas are needed? Non-LLM, non-RL ideas. What might they look like? We\u2019re now going into philosophy land a little bit. Nathan Lambert: For something like a singularity to happen, I would say yes. And the new ideas could be architectures or training algorithms, which are fundamental deep learning things. But they\u2019re, in that nature, pretty hard to predict.",
+          "score": 0.5533443883260091,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 14.20047378540039
+        },
+        {
+          "chunk_id": 65643,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 3,
+          "text": "Sebastian, Nathan, it\u2019s good to see you guys. So Sebastian, who do you think is winning? Sebastian Raschka: So winning is a very broad term. I would say you mentioned the DeepSeek moment, and I do think DeepSeek is definitely winning the hearts of the people who work on open weight models because they share these as open models. Winning, I think, has multiple timescales to it. We have today, we have next year, we have in ten years. One thing I know for sure is that I don\u2019t think nowadays, in 2026, that there will be any company having access to a technology that no other company has access to. And that is mainly because researchers are frequently changing jobs, changing labs. They rotate. So I don\u2019t think there will be a clear winner in terms of technology access. Sebastian Raschka: However, I do think the differentiating factor will be budget and hardware constraints. I don\u2019t think the ideas will be proprietary, but rather the resources that are needed to implement them.",
+          "score": 0.5519941603342692,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 12.856892585754395
+        },
+        {
+          "chunk_id": 65865,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 225,
+          "text": "But will it do things independently where\u2026\n\nSebastian Raschka: Will you still have humans asking the AI to do something? Like will there be a person to say, \u201cBuild that website?\u201d Or will there be AI that just builds websites or something, or whatever? Lex Fridman: I think talking about building websites is the\u2014\n\nNathan Lambert: Too simple. Sebastian Raschka: Yeah. Sure. Lex Fridman: It\u2019s just that the problem with websites and the problem with the web, you know, HTML and all that kind of stuff, it\u2019s very resilient to just\u2014 slop. It will show you slop. It\u2019s good at showing slop. I would rather think of safety-critical systems, like asking AI to end-to-end generate something that manages logistics\u2014 or manages cars\u2014 a fleet of cars, all that kind of stuff. So it end-to-end generates that for you. Nathan Lambert: I think a more intermediate example is take something like Slack or Microsoft Word.",
+          "score": 0.5225505148569742,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 12.880736351013184
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.5304481983184814
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.772237539291382
+    }
+  ],
+  "final_answer": "Ben Goertzel, working with OpenCog, views the path to AGI as a hybrid approach. While acknowledging lessons from deep neural nets, he states they alone will \"never get you anywhere near AGI,\" advocating for incorporating their strengths into more comprehensive frameworks like OpenCog 2.0, rather than considering them the \"golden path.\" In contrast, Sebastian Raschka and Nathan Lambert, discussing the state of AI in 2026, question whether current LLM and reinforcement learning ideas are sufficient for AGI, suggesting that \"totally new ideas\" in architectures or training algorithms might be necessary, especially for a singularity. They also highlight that by 2026, the primary differentiating factor for progress will likely be budget and hardware constraints, rather than proprietary ideas.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 9.772241830825806
+}

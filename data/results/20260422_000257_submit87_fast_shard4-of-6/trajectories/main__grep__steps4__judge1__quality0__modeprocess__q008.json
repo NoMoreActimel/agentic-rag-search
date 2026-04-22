@@ -1,0 +1,220 @@
+{
+  "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Google AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61610,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 54,
+          "text": "And now a year later, it\u2019s crazy. You showed this plot of all the things that were shipped over the past year. It\u2019s incredible. And Gemini Pro is winning across many benchmarks and products as we sit here today. So take me through that experience when there\u2019s all these articles saying you\u2019re the wrong guy to lead Google through this. Google is lost, is done, it\u2019s over, to today where Google is winning again. What were some low points during that time? Sundar Pichai: Look, lots to unpack. Obviously, the main bet I made as a CEO was to really make sure the company was approaching everything in a AI-first way, really setting ourselves up to develop AGI responsibly, and make sure we are putting out products which embodies that, things that are very, very useful for people. So look, I knew even through moments like that last year, I had a good sense of what we were building internally.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61611,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 55,
+          "text": "So look, I knew even through moments like that last year, I had a good sense of what we were building internally. So I\u2019d already made many important decisions bringing together teams of the caliber of Brain and DeepMind and setting up Google DeepMind. There were things like we made the decision to invest in TPUs 10 years ago, so we knew we were scaling up and building big models. Anytime you\u2019re in a situation like that, a few aspects. I\u2019m good at tuning out noise, separating signal from noise. Do you scuba dive? Have you\u2026? Lex Fridman: No. Sundar Pichai: It\u2019s amazing. I\u2019m not good at it, but I\u2019ve done it a few times. But sometimes you jump in the ocean, it\u2019s so choppy, but you go down one feet under, it\u2019s the calmest thing in the entire universe. So there\u2019s a version of that. Running Google, you may as well be coaching Barcelona or Real Madrid. You have a bad season. So there are aspects to that. But look, I\u2019m good at tuning out the noise. I do watch out for signals.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61623,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 67,
+          "text": "Of course once you show up to a page, you can use a basic translate, but that process of figuring it out, if you empathize with a large part of the world that doesn\u2019t speak English, their web is much smaller in that original language. And so it, again, unlocks that huge cognitive capacity there. You take for granted here with all the bloggers and the journalists writing about AI mode, you forget that this now unlocks because Gemini is really good at translation. Sundar Pichai: Oh it is. I mean the multimodality, the translation, it\u2019s ability to reason, we\u2019re dramatically improving tool use, and putting that power in the flow of Search, look, I\u2019m super excited with AI overviews. We\u2019ve seen the product has gotten much better, we measured using all kinds of user metrics. It\u2019s obviously driven strong growth of the product, and we\u2019ve been testing AI mode. It\u2019s now in the hands of millions of people and the early metrics are very encouraging.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61645,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 89,
+          "text": "So everything\u2019s aligned. Sundar Pichai: That is what makes this moment so unique because running, a company for the first time, you can do one investment in a very deep horizontal way. On top of it, you can drive multiple businesses forward, right? That\u2019s effectively what we are doing in Google and Alphabet, right? Lex Fridman: Yeah, it\u2019s all coming together. Like, it was planned ahead of time, but it\u2019s not, of course. It\u2019s all distributed. I mean, if Gmail, and Sheets, and all these other incredible services, I can sing Gmail praises for years. I mean, just this revolutionized email. But the moment you start to integrate AI Gemini into Gmail, I mean that\u2019s the other thing, speaking of productivity multiplier, people complain about email, but that changed everything. Email, like the invention of email changed everything, and it has been ripe. There\u2019s been a few folks trying to revolutionize email.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61649,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 93,
+          "text": "Sundar Pichai: I think a few things. Looking at Google, we\u2019ve given various stats around 30% of code now uses AI- generated suggestions or whatever it is. But the most important metric, and we carefully measure it is, like, how much has our engineering velocity increased as a company due to AI, right? It\u2019s tough measure, and we rigorously try to measure it, and our estimates are that number is now at 10%, right? Like, now, across the company, we\u2019ve accomplished a 10% engineering velocity increase using AI, but we plan to hire more engineers next year, right? Because the opportunity space of what we can do is expanding too, right? Lex Fridman: Mm-hmm. Sundar Pichai: So I think, hopefully, at least in the near to midterm, for many engineers, it frees up more and more of the\u2026 Even in engineering and coding, there are aspects which are so much fun. You\u2019re designing. You\u2019re architecting. You\u2019re solving a problem.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "The chunks confirm Gemini as a central AI product for Google's strategy and mention the long-term investment in TPUs for scaling models. However, they lack a specific, impressive scaling metric directly tied to a product's processing capabilities.\n\nThe agent should search for specific processing or usage metrics related to Gemini or other key Google AI products, potentially including terms like \"Gemini scale,\" \"Google AI processing metric,\" or \"Sundar Pichai Gemini usage statistics.\"",
+      "timestamp": 2.573347806930542
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Gemini processing capabilities Sundar Pichai scale",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61587,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 31,
+          "text": "Earlier versions of Gemini were very\u2026 Basically this sense, are you sure you want to learn about this. And now, it\u2019s actually very factual, objective, talks about very difficult parts of human history, and does so with nuance and depth. It\u2019s been really nice. But there\u2019s a line there that I guess Google has to walk. And it\u2019s also an engineering challenge how to do that at scale across all the weird queries that people ask. Can you just speak to that challenge? How do you allow Gemini to say\u2026 Again, forgive, pardon my French\u2026 crazy shit, but not too crazy? Sundar Pichai: I think one of the good insights here has been as the models are getting more capable, the models are really good at this stuff. And so I think in some ways, maybe a year ago, the models weren\u2019t fully there, so they would also do stupid things more often. So you\u2019re trying to handle those edge cases, but then you make a mistake in how you handle those edge cases and it compounds.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2538,
+          "episode_id": 33,
+          "guest": "Keoki Jackson",
+          "chunk_index": 65,
+          "text": "So now let me give just a couple of hypotheticals. So people react sort of in the second timeframe, right? Photon hitting your eye to movement is on the order of a few tenths of a second kinds of processing time. Roughly speaking, computers are operating in the nanosecond timescale, right? So just to bring home what that means, a nanosecond to a second is like a second to 32 years. So seconds on the battlefield, in that sense, literally are lifetimes. And so if you can bring an autonomous or AI enabled capability that will enable the human to shrink, maybe you've heard the term the OODA loop. So this whole idea that a typical battlefield decision is characterized by observe. So information comes in, orient. How does that, what does that mean in the context? Decide, what do I do about it? And then act, take that action. If you can use these capabilities to compress that OODA loop to stay inside what your adversary is doing, that's an incredible powerful force on the battlefield.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2848,
+          "episode_id": 38,
+          "guest": "Fran\u00e7ois Chollet",
+          "chunk_index": 4,
+          "text": "So first of all, you're crushing the dreams of many people, right? So there's a, let's look at like Sam Harris. Actually, a lot of physicists, Max Tegmark, people who think the universe is an information processing system, our brain is kind of an information processing system. So what's the theoretical limit? Like, it doesn't make sense that there should be some, it seems naive to think that our own brain is somehow the limit of the capabilities of this information system. I'm playing devil's advocate here. This information processing system. And then if you just scale it, if you're able to build something that's on par with the brain, you just, the process that builds it just continues and it'll improve exponentially. So that's the logic that's used actually by almost everybody that is worried about super human intelligence. So you're trying to make, so most people who are skeptical of that are kind of like, this doesn't, their thought process, this doesn't feel right.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61577,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 21,
+          "text": "Maybe not fully today, we are at the early stages of vibe coding. I\u2019ve been amazed at what people have put out online with Veo 3. But it takes a bit of work, you have to stitch together a set of prompts. But all this is going to get better. The thing I always think: this is the worst it\u2019ll ever be, at any given moment in time. Lex Fridman: It\u2019s interesting you went there as a first thought: an exponential increase of access to creativity. Sundar Pichai: Software, creation\u2026 Are you creating a program, a piece of content to be shared with others, games down the line? All of that just becomes infinitely more possible. Lex Fridman: I think the big thing is that it makes it accessible. It unlocks the cognitive capabilities of the entire 8 billion. Sundar Pichai: I agree. Think about 40 years ago, maybe in the US there were five people who could do what you were doing. Lex Fridman: Mm-hmm.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61581,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 25,
+          "text": "But then it\u2019ll be just nice to hear humans struggle with the information, contend with the information, try to internalize it, combine it with the complexity of our own emotions and consciousness and all that kind of stuff. But if you actually want to find out about a piece of history, you go to Gemini. If you want to see Lex struggle with that history, or other humans, you look at that. The point is, it\u2019s going to continue to change the nature of how we discover information, how we consume the information, how we create that information, the same way that YouTube changed everything completely. It changed the news. And that\u2019s something our society\u2019s struggling with. Sundar Pichai: YouTube enabled\u2026 You know this better than anyone else. It\u2019s enabled so many creators. There is no doubt in me that we will enable more filmmakers than have ever been. You\u2019re going to empower a lot more people. So I think there is an expansionary aspect of this, which is underestimated, I think.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 2 and Chunk 3 are irrelevant as they feature different guests and discuss unrelated topics. Chunk 1, Chunk 4, and Chunk 5 confirm Sundar Pichai discusses Gemini and its capabilities, including scaling challenges and enabling creativity, but they do not explicitly state which product is central to Google's AI-first strategy nor provide a specific impressive scaling metric for processing capabilities.\n\nTo fill these gaps, the agent should search for \"Sundar Pichai Google AI-first strategy Gemini central product\" to confirm the product's strategic importance, and \"Sundar Pichai Gemini processing capabilities specific scaling metric\" to find the quantitative detail.",
+      "timestamp": 9.874361991882324
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Google AI-first strategy central product",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 61651,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 95,
+          "text": "So it feels positive that way, to me, at least, speaking from within a Google context, is how I would talk to them about it. Lex Fridman: Still. I just know anecdotally, a lot of great programmers are generating a lot of code, so their productivity, they\u2019re not always using all the code. There\u2019s still a lot of editing, but even for me, still programming as a side thing, I think I\u2019m like 5x more productive. I think even for a large code base that\u2019s touching a lot of users like Google\u2019s does, I\u2019m imagining, very soon, that productivity should be going up even more. Sundar Pichai: No. The big unlock will be as we make the agentic capabilities much more robust, right? I think that\u2019s what unlocks that next big wave. I think the 10% is a massive number.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61661,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 105,
+          "text": "So another pothead/ [inaudible 01:42:53] question. If you build AGI, what kind of question would you ask it? What would you want to talk about? Definitively, Google has created AGI that can basically answer any question. What topic are you going to? Where are you going?\n\n\n## Questions for AGI\n\nSundar Pichai: It\u2019s a great question. Maybe it\u2019s proactive by then and should tell me a few things I should know. But I think if I were to ask it, I think it\u2019ll help us understand ourselves much better in a way that\u2019ll surprise us, I think. And so maybe that, you already see people do it with the products, but in a AGI context, I think that\u2019ll be pretty powerful. Lex Fridman: On a personal level, or a general human nature? Sundar Pichai: At a personal level. Lex Fridman: Okay. Sundar Pichai: So you talking to AGI, I think there is some chance it\u2019ll understand you in a very deep way, I think in a profound way, that\u2019s a possibility.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61664,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 108,
+          "text": "I\u2019m realizing now with your answer is a more productive answer, because I\u2019m not sure what I\u2019m going to do with that information. But maybe it speaks to the general human curiosity that Liz talked about, that we\u2019re all just really curious, and making the world\u2019s information accessible allows our curiosity to be satiated some with AI even more, we can be more and more curious and learn more about the world, about ourselves. And in so doing, I always wonder, I don\u2019t know if you can comment on, is it possible to measure the, not the GDP productivity increase like we talked about, but maybe whatever that increases, the breadth and depth of human knowledge that Google has unlocked with Google Search, and now with AI mode with Gemini, it\u2019s a difficult thing to measure. Sundar Pichai: Many years ago there was, I think it was a MIT study, they just estimated the impact of Google Search.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 3 is partially relevant as it mentions \"AI mode with Gemini\" in the context of Google's AI efforts. Chunks 1 and 2 are largely irrelevant, discussing general AI capabilities and AGI.\n\nThe chunks do not specify if Gemini is the *central* product of Google's AI-first strategy, nor do they provide any impressive scaling metrics about its processing capabilities.\n\nThe agent should search for \"Sundar Pichai Gemini central AI strategy\" and \"Gemini processing capabilities scaling metric\" to fill these gaps.",
+      "timestamp": 24.800822973251343
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Sundar Pichai Gemini processing metric scale",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 19201,
+          "episode_id": 171,
+          "guest": "Anthony Pompliano",
+          "chunk_index": 65,
+          "text": "Yeah I do find it kind of interesting it is NFT based but I don't think it has to be this this idea of I think big clout it's called or whatever the idea of sort of investing in individuals it makes me immediately think about investing in ideas so even just the words you speak having value and sort of if you have a frictionless like automated financial system then you could do a bunch of interesting things about what it means to add value to the world I mean I don't know if big cloud is currently an efficient representation of that but I am truly happy that however that thing works I'm just one notch above Vladimir Putin which is one of the that's like one of the bucket list items for me to to have a list where I'm one notch above Putin well what I think you're talking about here is important because there's historical examples you could invest in a patent in some situations you could invest in an organization that has an idea right so these are super inefficient given kind of the vision that you're painting in terms of like investing directly in an idea in a super efficient automated fashion yeah but that's how the technology evolution works right is it's really hard to do at first and then slowly kind of becomes easier and easier as technology is more prevalent the other thing that I think is interesting is this whole idea of investing in people if you really think about the origination of that is I would hire somebody right I pay you money and then you're going to create production but I take the lion's share and you don't now there's things like these ISAs these income sharing agreements where basically I will educate you on something train you on something I'll put up capital right and then over time you'll pay me back plus profits as some version eventually I don't know what it looks like but being able to get upside in somebody's success for having risk capital early on doesn't seem that far off see it in professional sports you see it in you know a lot of these things and so I just think that a lot of the focus right now is on the technology but ultimately these are ideas that are very old and have had lots of success and traction and we're just merely standing in the way of the evolution of these ideas with new technology and so it's easy to get caught up in the technology but when you really zoom out and look at it from the ideological standpoint and kind of the progress of humanity it's a foregone conclusion this stuff's going to happen it's just how I think the world is waiting and some of us are trying to create that future world which is like what are the applications of this technology that will transform the world and then you know I hate the term but killer apps like cool ideas that are implemented effectively at scale that transform the world and there's been a there's been a lot of different ideas popping up like the there's a lot of ideas about social networks that are built on top of the technology and all that kind of stuff so but let me actually drag this back down to something basic if a person wanted to buy Bitcoin store Bitcoin how do they actually do it yeah so there's a couple of different ways to kind of acquire Bitcoin and in every way you've got to exchange some form of value for Bitcoin right which is part of why it has values because you're giving up value so in one way is to exchange energy and computational power for Bitcoin so you can mine it you can literally take computer power that you have you can rent it to the network and run that software and then it will pay you a portion of the kind of daily revenue off that system and you can acquire Bitcoin in exchange for your power and your computational kind of contribution and that's the fundamental principle behind Bitcoin is the proof of work so I got a hundred bucks like I use cash app the you know they there's Coinbase there's all these exchanges like how do I convert my $100 to Bitcoin is there something disclaimer this is not financial advice and this is just us talking and just your opinions this do not use this to invest or take as financial expertise that said like is there something you recommend that's an easy entry point for somebody that's like hmm I wonder if I can convert this hundred dollars into whatever amount of Bitcoin what do you recommend what are the options so there's a lot of options I'm heavily biased I went out and I scoured the market looked at all of them I've invested a lot of money in a company called BlockFi that basically basically has financial products for crypto investors so you can go you can take dollars or other currency you have you can convert it through an exchange you can leave it on these interest bearing accounts you can earn interest just like you would earn in a traditional account but higher levels of interest because it's this new thing or you can withdraw it and you can put it into cold storage on a hardware device you can leave it in a software wallet there's kind of all these storage options so BlockFi is you know kind of the one that I'm biased towards because I'm sorry to interrupt so BlockFi is Bitcoin only or is it an exchange with other crypto it's got a bunch of different ones yeah they basically are agnostic to what it is but they provide kind of financial you know products to crypto investors okay so you mentioned a few interesting ideas that'd be nice for people who would not be familiar with it cold storage hot storage what does that mean so like I go to a website and I convert dollars to Bitcoin that's a kind of storage that's like online banking right what else is there so there's a couple of different things that you can do right and let's use the legacy system as kind of an example so if I want to get currency and I put in my bank account it sits there I have to trust that the bank doesn't go under nobody steals it all this kind of stuff there's insurance for it right there's all these kind of benefits in the legacy system to make sure that as long as I don't have you know millions and millions of dollars there I'm going to be protected pretty much if anything happens through FDIC insurance if I want to do that I'm taking that counterparty risk though so it's mitigated but there's still counterparty risk I'm counting on that bank but it is easier to move it around right if all of a sudden you call me up and say hey send me some money I can press a couple buttons on my computer and it'll send it to you if I want deeper level of security I can go and I can get the physical dollars and I can go and I can you know put under my mattress right and I can say you know what it's not gonna be as easy to send it to you immediately but if I really want to I can go underneath my mattress pretty quickly I can grab it I can get it back to the bank and then I can send you the money the third thing I could do is I could basically take those physical dollars out of the bank and I could go and I could go put it literally you know in a vault somewhere that I don't have control over that's behind 10 passwords and biometric scanning and like it's really difficult to even get to it right so if you can almost look at it it's like there's three stages of security that you could have in the traditional world the same thing is true in Bitcoin so you could buy Bitcoin on any exchange you can do it on BlockFi but you also can do it on places like Coinbase, Gemini, Kraken, etc.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61586,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 30,
+          "text": "Lex Fridman: It\u2019s a paintbrush. Sundar Pichai: Yeah. So, I think that\u2019s how. Obviously, there have to be some things. And society needs to decide at a fundamental level what\u2019s okay, what\u2019s not, will be responsible with it. But I do think when it comes to artistic free expression, I think that\u2019s one of those values we should work hard to defend. Lex Fridman: I wonder if you can comment on maybe earlier versions of Gemini were a little bit careful on the kind of things it\u2019d be willing to answer. I just want to comment on I was really surprised, and pleasantly surprised, and enjoy the fact that Gemini 2.5 Pro is a lot less careful, in a good sense. Don\u2019t ask me why, but I\u2019ve been doing a lot of research on Genghis Khan and the Aztecs, so there\u2019s a lot of violence there in that history. It\u2019s a very violent history. I\u2019ve also been doing a lot of research on World War I and World War II. Earlier versions of Gemini were very\u2026 Basically this sense, are you sure you want to learn about this.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant. Chunk 2 mentions Sundar Pichai and Gemini, but does not discuss Google's AI-first strategy or any processing metrics.\n\nThe agent should search for Sundar Pichai's statements on Google's AI strategy, specifically mentioning a core AI product and any associated scaling or processing metrics.",
+      "timestamp": 33.8641619682312
+    }
+  ],
+  "final_answer": "Sundar Pichai highlighted Gemini as central to Google's AI-first strategy, noting its capabilities in areas like translation and reasoning, and its integration into products such as Search and Gmail. While he mentioned Google's investment in TPUs to scale up and build big models, the provided context does not include a specific scaling metric about Gemini's processing capabilities. He did share that AI has led to a 10% increase in Google's overall engineering velocity.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    33,
+    171,
+    38,
+    471
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 42.413268089294434
+}

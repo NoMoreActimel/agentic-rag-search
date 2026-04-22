@@ -1,0 +1,265 @@
+{
+  "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Neuralink human implants number target",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 5111,
+          "episode_id": 66,
+          "guest": "Ayanna Howard",
+          "chunk_index": 7,
+          "text": "There's a lot of folks in the automotive industry, they're very confident from Elon Musk to Waymo to all these companies. How hard is it to solve that last piece? The last mile. The gap between the perfection and the human definition of how you actually function in this world. Yeah, so this is a moving target. So I remember when all the big companies started to heavily invest in this and there was a number of even roboticists as well as folks who were putting in the VCs and corporations, Elon Musk being one of them that said, self driving cars on the road with people within five years, that was a little while ago. And now people are saying five years, 10 years, 20 years, some are saying never, right? I think if you look at some of the things that are being successful is these basically fixed environments where you still have some anomalies, right? You still have people walking, you still have stores, but you don't have other drivers, right?",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 9787,
+          "episode_id": 113,
+          "guest": "Manolis Kellis",
+          "chunk_index": 104,
+          "text": "Well, so to push back on that, do you think it's possible that without understanding the functionally about the brain or from the neuroscience or the cognitive science or psychology, whichever level of the brain we'll look at, do you think if we just connect them, just like per your previous point, if we just have a high enough resolution between connection between a Wikipedia and your brain, the brain will just figure it out with us understanding because that's one of the innovations of Neuralink is they're increasing the number of connections to the brain to like several thousand, which before was in the dozens or whatever. You're still off by a few orders of magnitude on the order of seven. Right, but the thing is, the hope is if you increase that number more and more and more, maybe you don't need to understand anything about the actual how human thought is represented in the brain. You can just let it figure it out by itself. Keanu Reeves waking up and saying, I know cook food.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 13150,
+          "episode_id": 133,
+          "guest": "Manolis Kellis",
+          "chunk_index": 61,
+          "text": "So you basically use the dead Cas9 to bring in an activator or to bring in a repressor. So you can now ask, is this enhancer changing that gene by taking this modified CRISPR, which is already modified from the bacteria to be used in humans, that you can now modify the Cas9 to be dead Cas9, and you can now further modify to bring in a regulator, and you can basically turn on or turn off that enhancer and then see what is the impact on that gene. So these are the four ways of linking the locus to the target gene, and that's step number five. Step number five is find the target gene, and step number six is what the heck does that gene do? You basically now go and manipulate that gene to basically see what are the processes that change, and you can basically ask, well, in this particular case, in the FTO locus, we found mesenchymal stem cells that are the progenitors of white fat and brown fat or beige fat. We found the RS1421085 nucleotide variant as the causal variant.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 19666,
+          "episode_id": 174,
+          "guest": "Tyler Cowen",
+          "chunk_index": 103,
+          "text": "They have a one or two sentence description of the human, of what goes on on Earth. It's kind of interesting to think if there's a lot of intelligent civilizations out there that in the big encyclopedia that describes the universe, humans will only have one sentence, maybe two. Probably true. Yeah. But it's the only one I can read and understand, right? And it may be hard to understand the human one past a number of centuries. Yeah, with AI, yes. Like how many years from now will reading Wikipedia be like trying to read Chaucer, which I almost can do, but I actually can't. I need a translation. Probably you can't do it at all. Yeah. I mean, maybe reading will be outdated. It might be a very silly notion. Maybe we're fundamentally, like we think language is fundamental to cognition, but it could be something visual or something totally different that we'll plug in. Neuralink or, yeah. But in that story, that Wikipedia article, do you think there'll be a section on the meaning of it?",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 23561,
+          "episode_id": 194,
+          "guest": "Bret Weinstein",
+          "chunk_index": 191,
+          "text": "And we just stop thinking about it because it's there. Some years you get the flu, most years you don't. Maybe you get the vaccine to prevent it. Maybe the vaccine isn't particularly well targeted. But imagine just simply doubling that cost. Imagine we get stuck with SARS CoV2 and its descendants going forward and that it just settles in and becomes a fact of modern human life. That would be a disaster, right? The number of people we will ultimately lose is incalculable. The amount of suffering that will be caused is incalculable. The loss of wellbeing and wealth, incalculable. So that ought to be a very high priority, driving this extinct before it becomes permanent. And the ability to drive extinct goes down the longer we delay effective responses.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant. None of them contain information about the number of Neuralink human participants, their target number of implants, or Kelsi Sheren's age.\n\nThe agent should search for specific numbers regarding Neuralink human implants and Kelsi Sheren's age and military service. A good next search query would be: \"Neuralink number of human implants\" and \"Kelsi Sheren age Afghanistan service\".",
+      "timestamp": 2.125213861465454
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Neuralink number of human implants",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 34742,
+          "episode_id": 265,
+          "guest": "Devon Larratt",
+          "chunk_index": 88,
+          "text": "You have robot friends. You have human friends, and the robots make your human to human relationships much more meaningful and richer. They bring more love to the world, but it's integrated. It's not like they'll be developing smarter and smarter as, like, sentient beings by themselves. I think that's very difficult to do. You have to be doing that together with humans, and so we'll come for the ride. There's technical things, like, we might merge, like, cyborgs more and more. Well, we already saw our cyborgs, right? With the phones and so on, but more and more. So with Elon and Neuralink, deeper integration of robots and AI into, like, increasing the bandwidth at which they can communicate. So if we do implants in the brain, I think, again, a lot of people are really nervous about this, as am I, but I think there's a lot of trajectories that are positive there. That, to me, is exciting, and also, I just don't think it's possible to stop this development, so we should steer it.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 46319,
+          "episode_id": 395,
+          "guest": "Walter Isaacson",
+          "chunk_index": 76,
+          "text": "What can you say about these people in terms of time management? Walter Isaacson: Well, Musk is in a league of his own in the way he does it. First of all, Steve Jobs had to run Pixar and Apple for a while, but Musk every couple of hours is switching his mindset from how to implant the Neuralink chip and what will the robot that implants it in the brain look like and how fast can we make it move? Then the heat shield on the Raptor or switching to human imitation, machine learning, full self-drive. On the night that the Twitter board agreed to the deal, this is huge around the world. I\u2019m sure you remember like, \u201cMusk buys Twitter.\u201d It wasn\u2019t when the deal closed, it was when Twitter accepted his offer. I thought, \u201cOkay,\u201d but then he went to Boca Chica, to South Texas and spent time fixating on, if I remember correctly, a valve in the Raptor engine that had a methane leak issue and what were the possible ways to fix it.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.75,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 3 is highly relevant and directly answers the first two parts of the question regarding the number of human implants and the target for the end of the year. Chunks 1 and 2 are irrelevant as they do not provide specific numbers or targets for Neuralink human implants.\n\nThe current search query did not address Kelsi Sheren. The agent should now search for \"Kelsi Sheren age Afghanistan service\" to find information about her.",
+      "timestamp": 12.116467714309692
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren age Afghanistan service",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1110,
+          "episode_id": 16,
+          "guest": "Eric Weinstein",
+          "chunk_index": 54,
+          "text": "This is where I do my army service. This is where I have a vote. This is where I have a passport. Who the hell are you to tell me that because you've moved into someplace that you can make money globally, that you've chosen to abandon other people to whom you have a special and elevated duty. And I think that these competing narratives have been pushing towards the global perspective, uh, from the elite and a larger and larger number of disenfranchised people are saying, hey, I actually live in a, in a place and I have laws and I speak a language, I have a culture. And who are you to tell me that because you can profit in some far away land that my obligations to my fellow countrymen are so, so much diminished. So these tensions between nations and so on, ultimately you see being proud of your country and so on, which creates potentially the kind of things that led to wars and so on. They, they ultimately, it is human nature and it is good for us for wake up calls of different kinds.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1588,
+          "episode_id": 22,
+          "guest": "Rajat Monga",
+          "chunk_index": 28,
+          "text": "If you don't have an ad that hits that quality, but it will not be shown even if we have it and okay, maybe we lose some money there, that's fine. That is really, really important. And I think that that is something I really liked about being there. Advertising is a key part. I mean, as a model, it's been around for ages, right? It's not a new model, it's been adapted to the web and became a core part of search and many other search engines across the world. And I do hope, like you said, there are aspects of ads that are annoying and I go to a website and if it just keeps popping an ad in my face not to let me read, that's gonna be annoying clearly. So I hope we can strike that balance between showing a good ad where it's valuable to the user and provides the monetization to the service. And this might be search, this might be a website, all of these, they do need the monetization for them to provide that service.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2001,
+          "episode_id": 27,
+          "guest": "Kai-Fu Lee",
+          "chunk_index": 25,
+          "text": "On the point of privacy to me, it's really interesting. So AI needs data to create a personalized awesome experience, right? I'm just speaking generally in terms of products. And then we have currently, depending on the age and depending on the demographics of who we're talking about, some people are more or less concerned about the amount of data they hand over. So in your view, how do we get this balance right that we provide an amazing experience to people that use products? You look at Facebook, the more Facebook knows about you, yes, it's scary to say, the better it can probably, better experience it can probably create. So in your view, how do we get that balance right? Yes, I think a lot of people have a misunderstanding that it's okay and possible to just rip all the data out from a provider and give it back to you. So you can deny them access to further data and still enjoy the services we have. If we take back all the data, all the services will give us nonsense.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2040,
+          "episode_id": 27,
+          "guest": "Kai-Fu Lee",
+          "chunk_index": 64,
+          "text": "So if we were to categorize the most dangerous white collar jobs, they would be things like back office, people who copy and paste and deal with simple computer programs and data and maybe paper and OCR, and they don't make strategic decisions. They basically facilitate the process. These softwares and paper systems don't work. So you have people dealing with new employee orientation, searching for past lawsuits and financial documents, and doing reference check. So basic searching and management of data. That's the most endangered being lost. In addition to the white collar repetitive work, a lot of simple interaction work can also be taken care of such as telesales, telemarketing, customer service, as well as many physical jobs that are in the same location and don't require a high degree of dexterity. So fruit picking, dishwashing, assembly line inspection are jobs in that category. So altogether, back office is a big part.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2049,
+          "episode_id": 27,
+          "guest": "Kai-Fu Lee",
+          "chunk_index": 73,
+          "text": "There's going to be 2 million new jobs, not counting replacement, just brand new incremental jobs in the next six years in healthcare services. That includes nurses, orderly in the hospital, elderly care and also at home care is particularly lacking. And those jobs are not likely to be filled. So there's likely to be a shortage. And the reason they're not filled is simply because they don't pay very well and that the social status of these jobs are not very good. So they pay about half as much as a heavy equipment operator, which will be replaced a lot sooner. And they pay probably comparably to someone on the assembly line. And so if we ignoring all the other issues and just think about satisfaction from one's job, someone repetitively doing the same manual action at an assembly line, that can't create a lot of job satisfaction, but someone taking care of a sick person and getting a hug and thank you from that person and the family, I think is quite satisfying.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant and do not contain information about Kelsi Sheren or her service. They discuss unrelated topics like national identity, advertising, and AI.\n\nThe agent should search for \"Kelsi Sheren age Afghanistan\" or \"Kelsi Sheren biography\" to find her service details. Additionally, a separate search for \"Neuralink human participants\" and \"Neuralink target implants\" is needed to address the first part of the question.",
+      "timestamp": 18.592302322387695
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren age Afghanistan",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 18536,
+          "episode_id": 167,
+          "guest": "Saagar Enjeti",
+          "chunk_index": 30,
+          "text": "Wait, what's wrong with that prediction? It's wrong, man. And the reason I know this is that it sounds right. I wish it, I honestly wish it was true, but here's the truth. Trump actually governed largely as a neoliberal Republican who was meaner online and who departed from orthodoxy in some very important ways. Don't get me wrong. I will always support the trade war with China. I will always support not expanding the wars in Afghanistan and in Iraq. I will support him moving the Overton window on a million different things and revealing once and for all that GOP voters don't care about economic orthodoxy necessarily. But here's what they do care about. Trump got more votes in 2020 than he did in 2016, despite not delivering largely for all the Trump people out there on that agenda. He wasn't more pro union, but he won more union votes. He wasn't necessarily more pro worker, but he actually won more votes in Ohio than he did in 2016.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 20719,
+          "episode_id": 180,
+          "guest": "Jeremi Suri",
+          "chunk_index": 22,
+          "text": "I think there's a lot to be learned about the office and about human nature. Some people criticize Barack Obama for sort of expanding the military industrial complex, engaging in more and more wars, as opposed to sort of the initial rhetoric was such that we would pull back from sort of be more skeptical in our decisions to wage wars. So from the lens of the power of the presidency, as the modern presidency, the fact that we continued the war in Afghanistan and different engagements in military conflicts, do you think Barack Obama could have stopped that? Do you put the responsibility on that expansion on him because of the implied power that the presidency has? Or is this power just sits there by alienating an isolationist public. That was the reality. We talked about political manipulation. He had to be conscious of that. He had to know his audience. And second, there were no allies willing to invest in this either. The British were as committed to appeasement, as you know.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22077,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 78,
+          "text": "Yeah, so I do think that there's a lot more wrong with the world than just money, right? Like I'm not one of these people who thinks that if you get rid of fiat currency and you replace it with cryptocurrency, then suddenly wars are gonna go away, right? Because like, first of all, like say your average revenue is only a small portion of government revenue, right? It's like what, 5%, 10%, something like that. Second of all, like if you are the sort of, this is one of the things I don't even get about their philosophy. Like, let's say you're the sort of person who is an extreme and very distrusting libertarian and you think that these governments are terrible, right? Like we know today that governments find a combination of things like welfare and things like the military that goes and like bombs people in Afghanistan, right?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27388,
+          "episode_id": 220,
+          "guest": "Niels Jorgensen",
+          "chunk_index": 117,
+          "text": "My Irish mother probably wouldn't agree either because you're not supposed to, right? Well, I'm the same with you. The more money you have, the more you're able to help. Yeah, you can put smiles on people's faces. I have to ask you, the US invaded Afghanistan in October, 2001 in response to terror attacks. Now 20 years later, we still had a presence and abruptly withdrew all troops. What do you think about this war across the world that was sparked by this tragedy? Whenever you do something quickly without thinking it out, thinking it through and planning, it doesn't succeed. I understand that we needed to exit. I mean, how long were you gonna stay over there? And we've lost over 7,000 of our young souls over there. For sometimes people, I don't know if they're grateful for it or not, right? I mean, I don't know. So there's the other element, and sorry to interrupt.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 28878,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Kelsey Sharon, Canadian Forces veteran, artillery gunner who served in Afghanistan at 18 years old and came home with severe PTSD. She went on to found Brass in Unity which creates unique jewellery, large part of the proceeds from which go to help rehabilitate the lives, limbs and mental health of veterans and first responders. She has a big personality, big heart and an intense passion for life. So when our paths happened to cross, I knew we needed to talk. This is the Lex Friedman Podcast, to support it please check out our sponsors in the description. And now here's my conversation with Kelsey Sharon. You mentioned that studying history had a big impact on you and that your grandfather was a World War II vet. So people that have gone through World War II, in my family too, they don't seem to talk about it much. Like the worse the tragedy, the less they talk about it.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, 3, and 4 are irrelevant. Chunk 5 is highly useful as it states Kelsi Sheren served in Afghanistan at 18 years old.\n\nThe next step should focus on finding the Neuralink figures. Search for \"Neuralink human implants number\" or \"Neuralink target implants year end\".",
+      "timestamp": 25.711488485336304
+    }
+  ],
+  "final_answer": "As of the recording, Neuralink had completed its second human implant. The team is hoping to achieve a total of 10 implants by the end of the year. Kelsi Sheren served in Afghanistan at 18 years old, which is a higher number than both the two implants completed and the target of ten implants by year-end.",
+  "total_chunks_retrieved": 18,
+  "unique_episodes_found": [
+    66,
+    194,
+    133,
+    230,
+    167,
+    265,
+    395,
+    174,
+    16,
+    113,
+    220,
+    180,
+    438,
+    22,
+    27,
+    188
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 32.25643301010132
+}

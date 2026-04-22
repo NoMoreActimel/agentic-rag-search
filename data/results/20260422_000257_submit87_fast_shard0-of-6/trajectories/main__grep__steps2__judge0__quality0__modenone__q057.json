@@ -1,0 +1,87 @@
+{
+  "question": "Initially, discussions around US export controls on semiconductors, such as those involving Dylan Patel and Nathan Lambert, highlighted China's adaptive strategies like DeepSeek's efficient training and large GPU clusters. How did the perspective on the *ultimate effect* of these US controls on China's domestic technological capacity evolve in later discussions, particularly as articulated by Keyu Jin?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Keyu Jin US export controls China technological capacity",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63186,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 71,
+          "text": "Same thing with the US, right? So I think this is all the old thinking of who wins, who dominates. I think we need a new playbook.\n\n\n## CHIPS Act\n\nLex Fridman: So to you, maybe when you refer to Biden and Trump, if you go back to Biden, it would be the CHIPS Act. So the export controls created unintended, unexpected effect where it had the reverse geopolitical effect. Keyu Jin: I hope it was unintentional. Otherwise, you\u2019d be questioning the level of intelligence of the US administration. But I think that the things they laid out did the opposite of what was intended. It sped up domestic capacity. It motivated the whole country to do this whole of a nation program to go after technologies, kind of like the way they go after Olympics, Olympic gold medals. They wanted to maximize Olympic gold medals, and they put the whole nation at work and all the resources, and that\u2019s what China did. Huawei, another example, they were sanctioned. Guess what?",
+          "score": 0.8571428571428571,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63205,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 90,
+          "text": "But the US is the technological leadership and it is able to stomach that volatility and clash without breaking apart. And other countries don\u2019t have the capacity of the institutions, the culture to be able to tolerate and still maintain to keep the society together. So I think it is very interesting. But yeah, it\u2019s a puzzle.\n\n\n## Taiwan\n\nLex Fridman: So we talked about the economic side of tariffs, and you mentioned the other red line and the three T\u2019s. Can we talk about Taiwan? So how important is Taiwan to the Chinese economy and the global economy? Keyu Jin: Taiwan has among other things, TSMC, which is vitally important for the global economy. It\u2019s also very important for the Chinese leadership and the Chinese people. You don\u2019t want to ask what I think, ask the Chinese young generation. They would one day like to see unification. It\u2019s part of the patriotic, the dream, if you will. And it\u2019s a chip between the US and China. So everybody is watching Taiwan.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58644,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 73,
+          "text": "Right? And so by the way, this H800 cluster, these 2,000 GPUs was not even purchased in 2024. It was purchased in late 2023. And they\u2019re just getting the model out now because it takes a lot of research, et cetera. H800 was banned and now there\u2019s a new chip called the H20. The H20 is cut back on only FLOPs, but the interconnect bandwidth is the same. And in fact, in some ways it\u2019s better than the H100 because it has better memory bandwidth and memory capacity. So Nvidia is working within the constraints of what the government sets and then builds the best possible GPU for China. Lex Fridman: Can we take this actual tangent and we\u2019ll return back to the hardware, is the philosophy, the motivation, the case for export controls? What is it? Dario Amodei just published a blog post about export controls.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58666,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 95,
+          "text": "So that\u2019s the thing I\u2019m really worried about. But there could be cyber war, cyber war type of technologies that from social engineering to actually just swarms of robots that find attack vectors in our code bases and shut down power grids, that kind of stuff. And it could be one of those things like on any given weekend or something, power goes out, nobody knows why, and the world changes forever. Just power going out for two days in all of the United States, that will lead to murder, to chaos. But going back to export controls, do you see that as a useful way to control the balance of power geopolitically in the context of AI?\n\n\n## China\u2019s manufacturing capacity\n\nDylan Patel: And I think going back to my viewpoint is if you believe we\u2019re in this sort of stage of economic growth and change that we\u2019ve been in for the last 20 years, the export controls are absolutely guaranteeing that China will win long-term.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58670,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 99,
+          "text": "Now, it could be power generation, power transmission, substations, and all these sorts of transformers and all these things building the data center. These are all constraints on the US industry\u2019s ability to build larger and larger training systems, as well as deploying more and more inference compute. Nathan Lambert: I think we need to make a point clear on why the time is now for people that don\u2019t think about this, because essentially, with export controls, you\u2019re making it so China cannot make or get cutting edge chips. And the idea is that if you time this wrong, China is pouring a ton of money into their chip production, and if you time it wrong, they are going to have more capacity for production, more capacity for energy, and figure out how to make the chips and have more capacity than the rest of the world to make the chips. Because everybody can buy\u2026 They\u2019re going to sell their Chinese chips to everybody, they might subsidize them.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 3.699769973754883
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 14.808405876159668
+    }
+  ],
+  "final_answer": "Initially, discussions with experts like Dylan Patel and Nathan Lambert highlighted concerns that US export controls, while intended to limit China's access to cutting-edge chips, could inadvertently lead to China accelerating its domestic production and potentially winning long-term by developing its own capacity. Keyu Jin later articulated a perspective that these US controls, such as the CHIPS Act, had the opposite of their intended effect. She stated that they \"sped up domestic capacity\" and motivated China to pursue a \"whole of a nation program\" to develop its own technologies, essentially confirming the earlier concerns about China's adaptive strategies leading to increased self-sufficiency.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    459,
+    477
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 14.808407545089722
+}

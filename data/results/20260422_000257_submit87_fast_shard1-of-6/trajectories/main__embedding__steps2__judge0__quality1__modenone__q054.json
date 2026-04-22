@@ -1,0 +1,89 @@
+{
+  "question": "Considering the podcast's discussions on 'politics,' how did the focus evolve from Kelsi Sheren's insights on the personal and societal consequences of political decisions related to war and veteran support, to Marc Andreessen's later analysis of macro-level political trends, national future, and technology's role in governance?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren insights on politics, war, and veteran support",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28878,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Kelsey Sharon, Canadian Forces veteran, artillery gunner who served in Afghanistan at 18 years old and came home with severe PTSD. She went on to found Brass in Unity which creates unique jewellery, large part of the proceeds from which go to help rehabilitate the lives, limbs and mental health of veterans and first responders. She has a big personality, big heart and an intense passion for life. So when our paths happened to cross, I knew we needed to talk. This is the Lex Friedman Podcast, to support it please check out our sponsors in the description. And now here's my conversation with Kelsey Sharon. You mentioned that studying history had a big impact on you and that your grandfather was a World War II vet. So people that have gone through World War II, in my family too, they don't seem to talk about it much. Like the worse the tragedy, the less they talk about it.",
+          "score": 0.7013593108654022,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6847990155220032
+        },
+        {
+          "chunk_id": 51123,
+          "episode_id": 423,
+          "guest": "Tulsi Gabbard",
+          "chunk_index": 1,
+          "text": "This is a Lex Fridman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s Tulsi Gabbard.\n\n\n## War in Iraq\n\nYou\u2019ve served in the US military for many years, achieving rank of Lieutenant Colonel. You were deployed in Iraq in 2004 and \u201905, Kuwait in \u201908 and \u201909. What lessons about life and about country have you learned from that experience of war? Tulsi Gabbard: So many. Central to those lessons learned was having my eyes open to the very real cost of war. Of course, I served in a medical unit during that first deployment to Iraq. It was 2005 during the height of that war, and unfortunately we took a lot of casualties. We, across the entire US military, my brigade that I deployed with was from the Hawaii National Guard. We had approximately 3000 soldiers who were operating in four different areas of Iraq. And my first task every day was to go through a list of every combat related injury that had occurred the day before in the country.",
+          "score": 0.7010729033946991,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6415327191352844
+        },
+        {
+          "chunk_id": 13691,
+          "episode_id": 136,
+          "guest": "Dan Carlin",
+          "chunk_index": 87,
+          "text": "The greatest victims in our society of war are often the warriors. So in my mind, when we see these people coming home from places like Iraq, a place where I would have made the argument and did at the time that we didn't belong. To me, those people are victims and I know they don't like to think about themselves that way because it runs totally counter to the ethos. But if you're sending people to protect this country's shores, those are heroes. If you're sending people to go do something that they otherwise probably don't need to do but they're there for political reasons or anything else you wanna put in that's not defense related, well then you've made victims of our heroes. And so I feel like we do a lot of talk about our troops and our soldiers and stuff but we don't treat them as valuable as the rhetoric makes them sound. Otherwise, we would be much more careful about where we put them.",
+          "score": 0.6688032419681549,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6382903456687927
+        },
+        {
+          "chunk_id": 19156,
+          "episode_id": 171,
+          "guest": "Anthony Pompliano",
+          "chunk_index": 20,
+          "text": "Right. And so you just start to understand, like we look at war very black and white. We look at it very much from a clinical perspective. We're going to go, we're going to go kind of invade somewhere. We are the most dominant military in the world. We're very good at invading. And we will crush wherever we invade, but when you're actually on the ground, what you understand is the humanity of it all. Right. And so what becomes very interesting is pretty much every veteran I know that comes back, they're some of the largest pacifists in the world. And I always revert back to Marcus Luttrell, who was a famous Navy SEAL, and there's a movie made about him and his story. He gave a speech one time that I saw and he basically said, listen, if you're a politician, your job is to be the diplomat, do everything you possibly can, not to send me and my friends anywhere, because when you send us, we're going to bring hell with us, right.",
+          "score": 0.6682015457153321,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6631450653076172
+        },
+        {
+          "chunk_id": 29139,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 261,
+          "text": "That's why I feel really fortunate to be getting this feat of happiness all the time. Well to be or not to be, that's a good place to end it. Kelsey, you're an amazing human being. I'm really fortunate that you would spend your valuable time with me. As I said, you're so good at not just talking, but listening. So I definitely will listen to your podcast because I can tell you're an incredible person as an interviewer and as a storyteller. So again, thank you for talking today. Thank you so much, bye. Thanks for listening to this conversation with Kelsey Sharon. To support this podcast, please check out our sponsors in the description. And now let me leave you with some words from Herbert Hoover. Older men declare war, but it is the youth that must fight and die. Thank you for listening and hope to see you next time. There's the spoon and the pin.",
+          "score": 0.48708322525024406,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.6529760360717773
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 12.334464073181152
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 642.2726485729218
+    }
+  ],
+  "final_answer": "The provided context includes discussions with Kelsi Sheren, a veteran who served in Afghanistan, focusing on the personal and societal consequences of war, PTSD, and supporting veterans. Other guests like Tulsi Gabbard, Dan Carlin, and Anthony Pompliano also discuss the human cost of war and the impact of political decisions on soldiers. However, there is no information provided about Marc Andreessen's analysis of macro-level political trends, national future, or technology's role in governance. Therefore, the context is insufficient to describe the evolution of the focus to Marc Andreessen's insights.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    136,
+    171,
+    230,
+    423
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 642.2726511955261
+}

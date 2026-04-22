@@ -1,0 +1,152 @@
+{
+  "question": "How do the entrepreneurial philosophies of Travis Oliphant, Tim Sweeney, and Pavel Durov differ regarding the balance between fostering collaborative ecosystems versus maintaining absolute independent control in building their respective tech ventures? While Oliphant championed open-source communities like NumPy and Anaconda, and Sweeney scaled Epic Games through licensing and a developer ecosystem, what unique emphasis does Durov place on absolute ownership and independence for Telegram?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Pavel Durov Telegram independence ownership",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 55190,
+          "episode_id": 442,
+          "guest": "Donald Trump Interview",
+          "chunk_index": 58,
+          "text": "I was asked by a few people to comment on Pavel Durov\u2019s arrest and on X being banned in Brazil. Let me first briefly comment on the Durov arrest. Basic facts, Pavel Durov is CEO of Telegram, which is a messenger app that has end-to-end encryption mode. It\u2019s not on by default, and most people don\u2019t use the end-to-end encryption, but some do. Pavel was arrested in France on a long list of charges related to \u201ccriminal activity\u201d carried out on the Telegram platform, and for \u201cproviding unlicensed cryptology services.\u201d I think Telegram is indeed used for criminal activity by a small minority of its users, for example, by terrorist groups to communicate. And I think we all agree that terrorism is bad. But here\u2019s the problem. As the old saying goes, one man\u2019s terrorist is another man\u2019s freedom fighter.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 63983,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 38,
+          "text": "So, why would I exchange the mid and long term for the short term? It doesn\u2019t make any sense. Lex Fridman: Quick pause, bathroom break. Pavel Durov: Yeah, let\u2019s take a break.\n\n\n## Telegram: Lean philosophy, privacy, and geopolitics\n\nLex Fridman: All right. We took a break and now we\u2019re back. I got to ask you about Telegram, the company. I got to meet some of the brilliant engineers that worked there. Telegram runs lean relative to other technology companies that achieve the scale that Telegram does. It has very few employees. So, how many people are on the core team? Let\u2019s say the core engineering team. Pavel Durov: The core engineering team is about 40 people. This includes back-end, front-end, designers, system administrators. Lex Fridman: Can you speak to the philosophy behind running a company with so few employees? Pavel Durov: Well, what we realized really early is that quantity of employees doesn\u2019t translate the quality of the product they produce.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 63986,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 41,
+          "text": "I suppose if you have people managing all of it, it becomes stale quickly. Pavel Durov: Yes, humans are attack vectors, and if you have a distributed system that runs itself automatically, you have a chance at increasing the security of speed and speed of your service, this is what we did with Telegram, while also making it much more reliable. Because if some part of the network goes down, you can still switch to the other parts of it. Lex Fridman: Yeah. One of the big ways you protect user privacy is that you store the data. The infrastructure side of Telegram is distributed across many legal jurisdictions with the decryption keys. So, it\u2019s encrypted in cloud. The decryption keys are split and kept in different locations so that no single government or entity can access the data. Can you explain the strength of this approach? Pavel Durov: The way we designed Telegram is we never wanted to have any humans, any employees have any access to private messaging data.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 63958,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 13,
+          "text": "And it\u2019s not that difficult to do that. You have to just remain consistent because nobody else is trying to do that. Everybody else is just reading the same news and discussing the same news every day. But this way they don\u2019t get to have a competitive advantage.\n\n\n## No phone\n\nLex Fridman: Yeah, majority of the population becomes slaves to the AI-driven recommender systems, and so the content everybody\u2019s fed is the same thing and we all become the same. On that point, one of the different things you do is, you don\u2019t use a phone except occasionally to test Telegram features, but I\u2019ve been with you for two weeks, I haven\u2019t seen you use a phone at all in the way that most people use a phone, like for their social media. So can you describe your philosophy behind that? Pavel Durov: I don\u2019t think a phone is a necessary device. I remember growing up, I didn\u2019t have a mobile phone. When I was a student at the university, I didn\u2019t have a mobile phone.",
+          "score": 0.642,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 63945,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Pavel Durov, Founder and CEO of Telegram, a messaging platform actively used by over 1 billion people. Pavel has spent his life fighting for freedom of speech, building tools that protect human communication from surveillance and censorship. For this, he has faced pressure from some of the most powerful governments and organizations on earth. In the face of this immense pressure, he has always held his ground, continuously fighting to protect user privacy and the freedom of all of us humans to communicate with each other. I got the chance to spend a few weeks with him and can definitively say that he\u2019s one of the most principled and fearless humans I\u2019ve ever met. Plus, when I posted that I\u2019m hanging out with Pavel, a lot of people, fans of his, wrote to me asking if he does, in fact, privately live the disciplined ascetic life he\u2019s known for.",
+          "score": 0.624,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": "Chunks 2, 3, and 5 are highly useful, directly addressing Pavel Durov's philosophy of lean operations, strict data control, and independence from external influence for Telegram. Chunk 1 provides some context on external pressures but is less focused on his internal entrepreneurial philosophy. Chunk 4 is largely irrelevant, discussing his personal phone usage.\n\nThe current chunks strongly establish Durov's emphasis on independent control. However, they lack information on his stance regarding *fostering collaborative ecosystems* for Telegram's development or platform, which is crucial for the comparison with Oliphant and Sweeney.\n\nNext, search for: **Pavel Durov Telegram developer ecosystem third-party collaboration**",
+      "timestamp": 521.5521309375763
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Pavel Durov Telegram developer ecosystem third-party collaboration",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64133,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 188,
+          "text": "So for example, Telegram cannot confiscate your username from you. It\u2019s impossible. We do a lot of things related to the ecosystem of Telegram. We have a thriving mini app platform, millions of mini app developers launching their own bots and applications. Lex Fridman: So a lot of people are making millions of dollars on the Telegram platform. Pavel Durov: Yes. We enabled them to receive payments from the users through in-app purchase mechanism provided by Apple and Google, which I think was the first attempt of this kind, to allow that both on iOS and Android on a big platform so that third-party developers of mini apps, which are basically websites so deeply integrated into Telegram that you can\u2019t tell whether they\u2019re standalone or they\u2019re part of the overall experience. And by providing this payment option, we\u2019re able to extract a commission from these transactions. But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here.",
+          "score": 0.8819999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.8571428571428571
+        },
+        {
+          "chunk_id": 64134,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 189,
+          "text": "But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here. We want people to succeed in building these tools for our users. We understand that mini apps bring us users. The more users we have, the more successful and relevant Telegram becomes. We need third-party developers. I think at this point, Telegram gives developers by far the most powerful tools to create.\n\n\n## TON\n\nLex Fridman: Plus there\u2019s a bot API. And I mean you have to tell me about the TON blockchain and the crypto ecosystem available through Telegram. So what is TON aka The Open Network blockchain? Pavel Durov: TON is a blockchain technology that we initially developed in 2018 and 2019, and we started to develop it because we needed a blockchain platform to be integrated deeply into Telegram because we believe in blockchain. We think it\u2019s one of the technologies that enable freedom.",
+          "score": 0.8819999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.8571428571428571
+        },
+        {
+          "chunk_id": 64142,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 197,
+          "text": "And I know several people saying, \u201cTotally, I earned $10 million.\u201d \u201cI earned $3 million in just a matter of months single-handedly.\u201d Sometimes they would have a team of two, three people. So whenever I hear stories from people who were able to build businesses on top of Telegram, this makes me incredibly proud.\n\n\n## Bitcoin\n\nLex Fridman: And mini apps include games, they include tools, services of any kind. It\u2019s an app within the ecosystem of Telegram. Let me ask you about crypto in general. So you\u2019ve been an early supporter of cryptocurrencies, Bitcoin. You\u2019ve bought in into Bitcoin early on. You kept buying. Maybe you could speak to the reasoning why you kept buying Bitcoin. Do you think Bitcoin will go to a million dollars? Do you think it\u2019ll keep increasing, Bitcoin and all the other cryptocurrencies? Pavel Durov: I was a big believer in Bitcoins since more or less the start of it. I got to buy my first few thousands of Bitcoin in 2013, and I didn\u2019t care much.",
+          "score": 0.6819999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 64087,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 142,
+          "text": "All of those features, quality of life features, there\u2019s a trade-off between those and end-to-end encryption. You lean towards letting users enable end-to-end encryption for cases when they want to be super secure. Pavel Durov: Yes. Secret Chats are not just end-to-end encrypted. There are certain limitations that are both a feature and a bug. For example, you can\u2019t screenshot them. You can\u2019t forward any document, any message from them, which is not necessarily something you need when you are trying to get some work done and you are just communicating with your team on a project. It became very clear to us that there are different needs here and if you try to combine both in one type of chat, you will end up losing a lot of utility. We at Telegram, we don\u2019t use any collaboration tool for teamwork. We use Telegram to build Telegram. We felt instantly when we were trying to switch to say Secret Chats, to share large documents and tried to get work done, it was just not adapted for it.",
+          "score": 0.6519999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 64059,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 114,
+          "text": "The code doesn\u2019t scream at you saying, \u201cThis could be much faster.\u201d So you have to actually, as a craftsman, be very careful when you\u2019re writing a code and always thinking, \u201cCan this be done much more efficiently?\u201d And it can be tiny things because they all propagate throughout the code, and so there\u2019s a real cost in having a careless developer anywhere in the company because they can introduce that inefficiency and all the other developers won\u2019t know. They\u2019ll just assume it kind of has to be that way. So there\u2019s a real responsibility for every single individual developer that\u2019s building any component of an app like Telegram to just always ask, \u201cOkay, can this be done more efficiently? Can this be done more simply?\u201d And that\u2019s one of the most beautiful aspects, the art forms of programming, right? Pavel Durov: Oh, yes, because when you manage to discover a way to simplify things, make them more efficient, you feel incredibly happy and proud and accomplished.",
+          "score": 0.622,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5714285714285714
+        }
+      ],
+      "judge_feedback": "1.  Chunk 3's section on Bitcoin is off-topic. Chunk 5 is about internal coding practices, not directly about the balance of collaboration vs. control in the entrepreneurial philosophy.\n2.  Chunks 1, 2, and 3 (first part) provide strong evidence of Durov fostering a collaborative developer ecosystem (mini-apps, TON, third-party developers). Chunk 4 provides key insight into Telegram's internal independent control (\"We use Telegram to build Telegram. We felt instantly when we were trying to switch to say Secret Chats... it was just not adapted for it.\").\n3.  The agent should now search for Pavel Durov's explicit statements or philosophy on \"absolute ownership,\" \"independent control,\" or \"autonomy\" regarding Telegram's core development and how he balances this with the external developer ecosystem.",
+      "timestamp": 536.3574786186218
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 552.5437726974487
+    }
+  ],
+  "final_answer": "Pavel Durov places a unique emphasis on maintaining absolute independent control over Telegram's core development and infrastructure. He runs Telegram with a remarkably lean core engineering team (around 40 people), believing that a smaller team enhances quality and security by minimizing human attack vectors and ensuring direct control. He explicitly states that Telegram uses Telegram to build Telegram, avoiding external collaboration tools for internal work. However, Durov also actively fosters a collaborative ecosystem for external developers, providing powerful tools like mini-apps, a bot API, and the TON blockchain, with a low 5% commission, recognizing the need for third-party developers to bring users and enhance the platform's relevance.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    442,
+    482
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 552.5437750816345
+}

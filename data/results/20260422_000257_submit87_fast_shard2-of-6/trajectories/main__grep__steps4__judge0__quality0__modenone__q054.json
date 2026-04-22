@@ -1,0 +1,288 @@
+{
+  "question": "Considering the podcast's discussions on 'politics,' how did the focus evolve from Kelsi Sheren's insights on the personal and societal consequences of political decisions related to war and veteran support, to Marc Andreessen's later analysis of macro-level political trends, national future, and technology's role in governance?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren politics war veterans",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 31359,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 119,
+          "text": "All those kinds of things. And that hopefully motivates young leaders to fix things. Definitely, I mean, if there's one theme that jumps out to me and thinking about this moment, I mean, if we recognize that we live in a kind of crisis of democracy in the United States and in other countries that have long been proud of their democratic traditions, if we see them being under assault from certain quarters, I think military defeat is yet another addition to all the aspects of this that you mentioned. I mean, the fact that military defeat is a giant match that you're throwing on this fire potentially, if we think of its legacies and other postwar environments, when the veteran angle is one, when you have people who feel betrayed, I mean, they have been fodder for the far right in other settings. I mean, interwar Europe is very much about mobilizing dissolution veterans in the name of right wing fascist politics.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 31360,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 120,
+          "text": "I mean, interwar Europe is very much about mobilizing dissolution veterans in the name of right wing fascist politics. If one thinks too of this moment of really increasing xenophobia, our immigration debate is now talking about whether or not Afghans should be permitted at all in the United States after 20 years. And I think immediately the response in Europe, which I followed to some extent, focusing on Germany, because it was really ramping up deportations of Afghans leading up to this collapse. And now they have been, a lot of right wing center right politicians in Germany have been watching all this with an eye to, using it to their advantage for a domestic German audience to say, in the context of recent elections, that we are the party who will defend you against these Afghans who are gonna be coming from this. So what I've tried to emphasize in talking to different groups about this moment is that it won't be confined to Afghanistan or even the region.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 476,
+          "episode_id": 8,
+          "guest": "Eric Schmidt",
+          "chunk_index": 9,
+          "text": "So I used NCP, which is a predecessor to TCPIP. It just made sense to connect things. We didn't think of it in terms of the internet and then companies and then Facebook and then Twitter and then politics and so forth. We never did that build. We didn't have that vision. And I think most people, it's a rare person who can see compounding at scale. Most people can see, if you ask people to predict the future, they'll give you an answer of six to nine months or 12 months, because that's about as far as people can imagine. But there's an old saying, which actually was attributed to a professor at MIT a long time ago, that we overestimate what can be done in one year and we underestimate what can be done in a decade. And there's a great deal of evidence that these core platforms at hardware and software take a decade, right? So think about self driving cars. Self driving cars were thought about in the 90s. There were projects around them. The first DARPA Grand Challenge was roughly 2004.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 758,
+          "episode_id": 12,
+          "guest": "Tuomas Sandholm",
+          "chunk_index": 55,
+          "text": "Depending how you design the game. And of course, it doesn't in any way contradict the impossibility result. The impossibility result is still there, but it just finds spots within this impossible class where in those spots, you don't have the impossibility. Sorry if I'm going a bit philosophical, but what lessons do you draw towards, like I mentioned, politics or human interaction and designing mechanisms for outside of just these kinds of trading or auctioning or purely formal games or human interaction, like a political system? How, do you think it's applicable to, yeah, politics or to business, to negotiations, these kinds of things, designing rules that have certain outcomes? Yeah, yeah, I do think so. Have you seen that successfully done? They haven't really, oh, you mean mechanism design or automated mechanism design? Automated mechanism design. So mechanism design itself has had fairly limited success so far.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1998,
+          "episode_id": 27,
+          "guest": "Kai-Fu Lee",
+          "chunk_index": 22,
+          "text": "So the individual citizen may be a net liability, I mean, financially speaking to a poorer country and not an asset to claw itself out of poverty. So in that kind of situation, these large countries with not much tech are going to be facing a downward spiral and it's unclear what could be done. And then when we look back and say there's $16 trillion being created and it's all being kept by US, China and other developed countries, it just doesn't feel right. So I hope people who know about geopolitics can find solutions that's beyond my expertise. So different countries that we've talked about have different value systems. If you look at the United States, to an almost extreme degree, there is an absolute desire for freedom of speech. If you look at a country where I was raised, that desire just amongst the people is not as elevated as it is to basically fundamental level to the essence of what it means to be America, right?",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.782070159912109
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren podcast topics",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 990,
+          "episode_id": 15,
+          "guest": "Leslie Kaelbling",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Leslie Kaelbling. She is a roboticist and professor at MIT. She is recognized for her work in reinforcement learning, planning, robot navigation, and several other topics in AI. She won the IJCAI Computers and Thought Award and was the editor in chief of the prestigious Journal of Machine Learning Research. This conversation is part of the Artificial Intelligence podcast at MIT and beyond. If you enjoy it, subscribe on YouTube, iTunes, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Leslie Kaelbling. What made me get excited about AI, I can say that, is I read G\u00f6del Escher Bach when I was in high school. That was pretty formative for me because it exposed the interestingness of primitives and combination and how you can make complex things out of simple parts and ideas of AI and what kinds of programs might generate intelligent behavior. So...",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1713,
+          "episode_id": 24,
+          "guest": "Rosalind Picard",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Rosalind Picard. She's a professor at MIT, director of the Effective Computing Research Group at the MIT Media Lab, and cofounder of two companies, Affectiva and Empatica. Over two decades ago, she launched a field of effective computing with her book of the same name. This book described the importance of emotion in artificial and natural intelligence. The vital role of emotional communication has to the relationship between people in general and human robot interaction. I really enjoy talking with Ros over so many topics, including emotion, ethics, privacy, wearable computing, and her recent research in epilepsy, and even love and meaning. This conversation is part of the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, iTunes, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Rosalind Picard.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2102,
+          "episode_id": 29,
+          "guest": "Gustav Soderstrom",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Gustav Sorenstrom. He's the chief research and development officer at Spotify, leading their product design, data technology and engineering teams. As I've said before, in my research and in life in general, I love music, listening to it and creating it. And using technology, especially personalization through machine learning, to enrich the music discovery and listening experience. That is what Spotify has been doing for years, continually innovating, defining how we experience music as a society in the digital age. That's what Gustav and I talk about, among many other topics, including our shared appreciation of the movie True Romance, in my view, one of the great movies of all time. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it five stars on iTunes, support on Patreon or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N. And now, here's my conversation with Gustav Sorenstrom.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2220,
+          "episode_id": 29,
+          "guest": "Gustav Soderstrom",
+          "chunk_index": 118,
+          "text": "Some podcasts are sequential. They're supposed to be listened to in, in order. It's actually, it's actually telling a narrative. Some podcasts are one topic, uh, kind of like yours, but different guests. So you could jump in anywhere. Some podcasts actually have completely different topics. And for those podcasts, it might be that I want, you know, we should recommend one episode because it's about AI from someone, but then they talk about something that you're not interested in the rest of the episodes. So I think our, what we're spending a lot of time on now is just first understanding the domain and creating kind of the knowledge graph of how do these objects relate and how do people consume. And I think we'll find that it's going to be, it's going to be different. I'm excited because you're the, uh, Spotify is the first people I'm aware of that are trying to do this for podcasting. Podcasting has been like a wild west up until now.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2474,
+          "episode_id": 33,
+          "guest": "Keoki Jackson",
+          "chunk_index": 1,
+          "text": "I hope one day this world will rid itself of war in all its forms. But the path to achieving that in a world that does have evil is not obvious. What is obvious is good engineering and artificial intelligence research has a role to play on the side of good. Lockheed Martin and the rest of our community are hard at work at exactly this task. We talk about these and other important topics in this conversation. Also, most certainly, both Keoki and I have a passion for space, us humans venturing out toward the stars. We talk about this exciting future as well. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it five stars on iTunes, support it on Patreon, or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N. And now, here's my conversation with Keoki Jackson. I read several books on Lockheed Martin recently. My favorite in particular is by Ben Rich, Carlos Concord's personal memoir. It gets a little edgy at times.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.6201012134552
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren guest",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 539,
+          "episode_id": 9,
+          "guest": "Stuart Russell",
+          "chunk_index": 36,
+          "text": "We would gradually turn over more and more of the management of our civilization to machines as we are already doing. And this, you know, if this if this process continues, you know, we sort of gradually switch from sort of being the masters of technology to just being the guests. Right. So we become guests on a cruise ship, you know, which is fine for a week, but not not for the rest of eternity. You know, and it's almost irreversible. Right. Once you once you lose the incentive to, for example, you know, learn to be an engineer or a doctor or a sanitation operative or any other of the infinitely many ways that we maintain and propagate our civilization. You know, if you if you don't have the incentive to do any of that, you won't. And then it's really hard to recover. And of course, as just one of the technologies that could that third failure mode result in that there's probably other technology in general detaches us from it does a bit.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1086,
+          "episode_id": 16,
+          "guest": "Eric Weinstein",
+          "chunk_index": 30,
+          "text": "You think that there is some deliberate choices being made here. There's emergence and there is intention. There are two dimensions. The vector does not collapse onto either axis, but the idea that anybody who suggests that intention is completely absent is a child. That's really beautifully put and uh, like many things you've said is going to make me can I turn this around slightly? Yeah. I sit down with you and you say that you're obsessed with my feed. I don't even know what my feed is. What are you seeing that I'm not? I was obsessively looking through your feed on Twitter because it was really enjoyable because there's the Tom layer element is the humor in it. By the way, that feed is Eric R. Weinstein on Twitter at Eric R. Weinstein. No, but seriously, why? Why did I find it enjoyable or what was I seeing? What are you looking for? Why are we doing this? What is this podcast about? I know you've got all these interesting people. I'm just some guy who's sort of a podcast guest.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1087,
+          "episode_id": 16,
+          "guest": "Eric Weinstein",
+          "chunk_index": 31,
+          "text": "Why are we doing this? What is this podcast about? I know you've got all these interesting people. I'm just some guy who's sort of a podcast guest. Sort of a podcast. You're not even wearing a tie. I mean, it's not even a serious interview. I'm searching for meaning, for happiness, for a dopamine rush, so short term, long term. And how are you finding your way to me? I don't honestly know what I'm doing to reach you. The representing ideas which feel common sense to me and not many people are speaking. So it's kind of like the intellectual dark web folks, right? These folks from Sam Harris to Jordan Peterson to yourself are saying things where you're like saying, look, there's an elephant and he's not wearing any clothes. And I say, yeah, yeah, let's have more of that conversation. That's how I'm finding you. I'm desperate to try to change the conversation we're having. I'm very worried we've got an election in 2020.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1247,
+          "episode_id": 18,
+          "guest": "Elon Musk",
+          "chunk_index": 1,
+          "text": "Tesla has never financially supported my research, and I've never owned a Tesla vehicle, and I've never owned Tesla stock. This podcast is not a scientific paper. It is a conversation. I respect Elon as I do all other leaders and engineers I've spoken with. We agree on some things and disagree on others. My goal is always with these conversations is to understand the way the guest sees the world. One particular point of disagreement in this conversation was the extent to which camera based driver monitoring will improve outcomes and for how long it will remain relevant for AI assisted driving. As someone who works on and is fascinated by human centered artificial intelligence, I believe that if implemented and integrated effectively, camera based driver monitoring is likely to be of benefit in both the short term and the long term.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1507,
+          "episode_id": 21,
+          "guest": "Chris Lattner",
+          "chunk_index": 32,
+          "text": "So you spoke in a collected and kind way about your time at Tesla, but it was ultimately not a good fit. Elon Musk, we've talked on this podcast, several guests to the course, Elon Musk continues to do some of the most bold and innovative engineering work in the world, at times at the cost some of the members of the Tesla team. What did you learn about working in this chaotic world with Elon? Yeah, so I guess I would say that when I was at Tesla, I experienced and saw the highest degree of turnover I'd ever seen in a company, which was a bit of a shock. But one of the things I learned and I came to respect is that Elon's able to attract amazing talent because he has a very clear vision of the future, and he can get people to buy into it because they want that future to happen. And the power of vision is something that I have a tremendous amount of respect for. And I think that Elon is fairly singular in the world in terms of the things he's able to get people to believe in.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 12.091226816177368
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Kelsi Sheren guest Lex Fridman Podcast",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 44592,
+          "episode_id": 336,
+          "guest": "Ben Shapiro",
+          "chunk_index": 1,
+          "text": "Lex Fridman: Do you ever sit back in the quiet of your mind and think, Am I participating in evil? Lex Fridman: The following is a conversation with Ben Shapiro, a conservative political commentator, host of the Ben Shapiro show, co-founder of The Daily Wire, and author of several books, including The Authoritarian Moment, The Right Side of History and Facts Don\u2019t Care About Your Feelings. Whatever Your political leanings, I humbly asked that you tried to put those aside and listen with an open mind trying to give the most charitable interpretation of the words we say. This is true in general for this podcast, whether the guest is Ben Shapiro or Alexandria Ocasio-Cortez, Donald Trump, or Barack Obama, I will talk to everyone from every side, from the far left to the far right, from presidents to prisoners, from artists to scientists, from the powerful to the powerless, because we are all human, all capable of good and evil, all with fascinating stories and ideas to explore.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 47508,
+          "episode_id": 402,
+          "guest": "Michael Malice",
+          "chunk_index": 38,
+          "text": "It\u2019s such, everything sucks, this sucks, this sucks. Most things suck. Most stand up comedians suck. Most movies suck. All podcasts suck. But it doesn\u2019t matter. Lex Fridman: Especially yours. Michael Malice: Especially mine. It\u2019s unwatchable. Lex Fridman: You\u2019re welcome. You can\u2019t even spell it correctly. Michael Malice: But the stuff that\u2019s good is what matters. Who cares if 90% of movies are terrible? They\u2019re the ones that change your life, the books, the people, the comedians, the shows, the music. Lex Fridman: And even the terrible things have good moments, beautiful moments. Michael Malice: Some, not all. Lex Fridman: Your podcast being an example of not all. I keep listening for something good, something good. Michael Malice: In all fairness, none of my guests have anything to offer.so that\u2019s not on me. I try. Lex Fridman: Yeah. Well, I wish you\u2019d talk a little less in your podcast. It\u2019s a little excessive. I only listen for the underwear commercials.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 52149,
+          "episode_id": 428,
+          "guest": "Sean Carroll",
+          "chunk_index": 165,
+          "text": "I\u2019m helped by the fact that it is not my day job so I strictly limit myself to one day of my life per podcast episode on average, some days take more. And that includes, not just doing the research, but inviting the guest, recording it, editing it, publishing it. So, I need to be very, very efficient at that, yeah. Lex Fridman: You enforce constraints for yourself in which creativity can emerge. Sean Carroll: That\u2019s right, that\u2019s right. And look, sometimes, if I\u2019m interviewing a theoretical physicist, I can just go in. And where I\u2019m interviewing an economist or a historian, I have to do a lot of work. Lex Fridman: Do you ever find yourself getting lost in rabbit holes that serve no purpose except satisfying your own curiosity and then potentially expanding the range of things you know that can help your actual work and research and writing? Sean Carroll: Yes, on both counts.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53308,
+          "episode_id": 434,
+          "guest": "Aravind Srinivas",
+          "chunk_index": 179,
+          "text": "Aravind Srinivas: Yeah, and I\u2019m not saying this is the final solution. It\u2019s just a start. Lex Fridman: By the way, in terms of guests for podcasts and all that kind of stuff, I do also look for the crazy wild card type of thing. So it might be nice to have in related even wilder sort of directions, because right now it\u2019s kind of on topic. Aravind Srinivas: Yeah, that\u2019s a good idea. That\u2019s sort of the RL equivalent of the Epsilon-Greedy. Lex Fridman: Yeah, exactly. Aravind Srinivas: Or you want to increase the-\n\nLex Fridman: Oh, that\u2019d be cool if you could actually control that parameter literally, just kind of like how wild I want to get because maybe you can go real wild real quick. Aravind Srinivas: Yeah. Lex Fridman: One of the things that I read on the [inaudible 02:44:48] page for Perplexity is if you want to learn about nuclear fission and you have a PhD in math, it can be explained. If you want to learn about nuclear fission and you are in middle school, it can be explained.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54653,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 94,
+          "text": "One light. It\u2019s great. Pieter Levels: Yeah. And look at you, you\u2019re one of the top podcasts in the world, and you get millions of views, and it works. And the people that spend so much money on optimizing for the best sound, for the best studio, they get 300 views. So, what is this about? This is about that. Either you do it really well or also that a lot of these things don\u2019t matter. What matters is probably the content of the podcast. You get the interesting guest. Lex Fridman: Focus on the stuff that matters. Pieter Levels: Yeah. And I think that\u2019s very common. They call it gear acquisition syndrome, like GAS, people in any industry do this. They just buy all the stuff. There was a meme recently. What\u2019s the name for the guy that buys all the stuff before you even started doing the hobby, right? Marketing. Marketing does that to people. They want you to buy this stuff. But man, you can make a Hollywood movie on an iPhone if the content is good enough.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 19.03644108772278
+    }
+  ],
+  "final_answer": "The provided context does not include discussions featuring Kelsi Sheren or Marc Andreessen. Therefore, it is not possible to describe how the podcast's focus on politics evolved from their specific insights based solely on the given information. The available chunks discuss political themes like military defeat, veteran issues, and the role of technology in society with other guests, but not the individuals mentioned in the question.",
+  "total_chunks_retrieved": 20,
+  "unique_episodes_found": [
+    33,
+    440,
+    8,
+    9,
+    12,
+    428,
+    15,
+    16,
+    336,
+    18,
+    402,
+    244,
+    21,
+    434,
+    24,
+    27,
+    29
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 28.18784236907959
+}

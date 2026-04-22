@@ -1,0 +1,143 @@
+{
+  "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Neuralink human implants number target end of year",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 0.8520104594230651,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.8143006563186646
+        },
+        {
+          "chunk_id": 53837,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 3,
+          "text": "The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah. I think it\u2019s obviously going to get better with each one. I don\u2019t want to jinx it, but it seems to have gone extremely well with the second implant. So, there\u2019s a lot of signal, a lot of electrodes. It\u2019s working very well. Lex Fridman: What improvements do you think we\u2019ll see in Neuralink in the coming, let\u2019s say, let\u2019s get crazy, the coming years. Elon Musk: In years, it\u2019s going to be gigantic, because we\u2019ll increase the number of electrodes dramatically. We\u2019ll improve the signal processing. So, even with only roughly, I don\u2019t know, 10, 15% of the electrodes working with Noland, with our first patient, we were able to get to achieve a bit per second. That\u2019s twice the world record. So, I think we\u2019ll start vastly exceeding the world record by orders of magnitude in the years to come. So, start getting to, I don\u2019t know, 100 bits per second, thousand.",
+          "score": 0.796164763689041,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7345210909843445
+        },
+        {
+          "chunk_id": 53958,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 124,
+          "text": "And all of this, I\u2019m asking in the context of, there\u2019s a gigantic historic milestone that Neuralink just accomplished in January of this year. Putting a Neuralink implant in the first human being, Noland. And there\u2019s been a lot to talk about there about his experience because he\u2019s able to describe all the nuance and the beauty and the fascinating complexity of that experience of everything involved. But on the technical level, how does Neuralink work? DJ Seo: So there are three major components to the technology that we\u2019re building. One is the device, the thing that\u2019s actually recording these neural chatters. We call it N1 Implant or The Link. And we have a surgical robot that\u2019s actually doing an implantation of these tiny, tiny wires that we call threads that are smaller than human hair.",
+          "score": 0.7906053490638731,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7265790700912476
+        },
+        {
+          "chunk_id": 54103,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 269,
+          "text": "Well, I see an MRI on a screen. I can\u2019t see everything that DBS electrode is passing through on its way to that deep target. And so it\u2019s accepted with this approach that there\u2019s going to be about one in a hundred patients who have a bleed somewhere in the brain as a result of passing that wire blindly into the deep part of the brain. That\u2019s not an acceptable safety profile for Neuralink. We start from the position that we want this to be dramatically maybe two or three orders of magnitude safer than that, safe enough, really, that you or I, without a profound medical problem, might on our lunch break someday say, \u201cYeah, sure, I\u2019ll get that. I\u2019d been meaning to upgrade to the latest version.\u201d And so the safety constraints given that are high, and so we haven\u2019t settled on a final solution for arbitrarily approaching deep targets in the brain.",
+          "score": 0.7589551110267639,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7242215871810913
+        },
+        {
+          "chunk_id": 54043,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 209,
+          "text": "So yes, it\u2019s a nice way to think about it. You\u2019re swapping out different experiences and with Neuralink being able to control that, primarily at first to improve function, not for entertainment purposes or enjoyment purposes, but-\n\nDJ Seo: Yeah, giving back loss functions. Lex Fridman: Giving back loss functions. And there, especially when the function is completely lost, anything is a huge help. Would you implant a Neuralink device in your own brain? DJ Seo: Absolutely. I mean, maybe not right now, but absolutely. Lex Fridman: What kind of capability once reached you start getting real curious and almost get a little antsy, jealous of people as you watch them get implanted? DJ Seo: Yeah, I think even with our early participants, if they start to do things that I can\u2019t do, which I think is in the realm of possibility for them to be able to get 15, 20 if not like a hundred BPS. There\u2019s nothing that fundamentally stops us from being able to achieve that type of performance.",
+          "score": 0.7558148522377014,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7197355031967163
+        }
+      ],
+      "judge_feedback": "1.  Chunks 4 and 5 are irrelevant.\n2.  Chunks 1, 2, and 3 provide the number of human participants (2) and the target number of implants by the end of the year (10).\n3.  Search for \"Kelsi Sheren age Afghanistan service\" to find her age during her service.",
+      "timestamp": 13.119301557540894
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren age Afghanistan service",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28878,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Kelsey Sharon, Canadian Forces veteran, artillery gunner who served in Afghanistan at 18 years old and came home with severe PTSD. She went on to found Brass in Unity which creates unique jewellery, large part of the proceeds from which go to help rehabilitate the lives, limbs and mental health of veterans and first responders. She has a big personality, big heart and an intense passion for life. So when our paths happened to cross, I knew we needed to talk. This is the Lex Friedman Podcast, to support it please check out our sponsors in the description. And now here's my conversation with Kelsey Sharon. You mentioned that studying history had a big impact on you and that your grandfather was a World War II vet. So people that have gone through World War II, in my family too, they don't seem to talk about it much. Like the worse the tragedy, the less they talk about it.",
+          "score": 0.6614943714141845,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6278491020202637
+        },
+        {
+          "chunk_id": 28928,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 50,
+          "text": "I was aware. I knew what I was going to do. I knew my job, but once we actually stepped onto that Herc to leave, to get into the Afghan airspace, I think that's when it hit me. I think it smacked me in the face so hard. And that's when the overwhelming just reality was that, oh fuck, oh, oh, oh. When they said, make weapons ready, put the barrel to the ground, put your helmets on. That's when they start flying tactically, which means they're going between the mountains. That means we're going to land soon. Which means if you're flying like this, it's because RPGs can hit you. So that was my first moment of, oh, I could like just be shot down right now. Like I, I couldn't, I didn't grasp it. I was, how old was I? 19. 19. Yeah. Wow. Okay. So I'm trying to explain to you cause it's hard because I don't know that I actually did grasp it until I was in the air getting ready to land in Kandahar. When was the first time you heard bullets, enemy, enemy bullets or enemy explosions?",
+          "score": 0.6563524813652039,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6205035448074341
+        },
+        {
+          "chunk_id": 28901,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 23,
+          "text": "That's because you don't understand love, Kelsey. I don't. We'll talk about that. Okay. How many people does it take to move the M777? It depends. If you're moving it by ground, you're moving it on a truck and when you're moving it on a truck, you're hooking the back of it onto, you're hooking the front of the barrel onto one of those big transport looking trucks that has those cargo tents that's got soldiers in it. You don't want to ever move an M777 by that way, if you don't have to. The barrel is worth a million dollars. Wow. Okay. So this is like a serious piece of equipment. You don't want to move them. Okay. When we got to Kandahar, we were there for a couple of days. We got flown out to the FOB we were going to be at, forward observation base. Kandahar is the safe space or was the major base in Afghanistan that we were at. There's things like Tim Hortons there. There's Canada house.",
+          "score": 0.6223276896476746,
+          "source": "embedding",
+          "quality_score": 0.64,
+          "original_score": 0.6147538423538208
+        },
+        {
+          "chunk_id": 28938,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 60,
+          "text": "It wasn't a lot to look at. There was a long road that you knew that got hit all the time. There wasn't a lot to look at. Such a strange place to be the center of superpowers over the decades. It really is. And the fact that the populace, the civilians are almost completely clueless to the full history of things in terms of globally, the geopolitics of it all. Yeah. Well, if you look at the location of it, right, on a map, it makes more sense. Right. You can wrap your brain around it. But I met plenty of people who had never even seen a picture of themselves when I was in that country. I mean, how much more are they going to understand if they don't know what even exists outside? You tell a small story of taking a picture of a girl and showing it to her, an Afghani girl. Yeah. We were, I was with the British at that time, and we were on that operation that gets highlighted quite a bit. And we had stopped and the ICOM radios were pinging.",
+          "score": 0.59414315700531,
+          "source": "embedding",
+          "quality_score": 0.6,
+          "original_score": 0.5916330814361572
+        },
+        {
+          "chunk_id": 28978,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 100,
+          "text": "We went to school that day and they had talked about it briefly. You could hear the teachers kind of reminiscing about it. There was a point that week that all of a sudden all of the children who were from a Middle Eastern family were not at school. I just remember them saying like a lot of people aren't coming to school, but it was in particular. I think parents were afraid once it got out that it was of a certain group. They were afraid for their own kids and fair enough, I mean, you never know. You don't know and I knew it impacted me enough that I did write. I remember the school was doing a memorial for it and I remember they asked, I wrote a poem and a reporter was there and I read it on air. I remember it was a very short one, but I remember I wanted to do something, but I didn't know why or for what reason. I knew I wanted to do something to honor it, but I couldn't grasp why. You eventually went to Afghanistan.",
+          "score": 0.5798176403045654,
+          "source": "embedding",
+          "quality_score": 0.54,
+          "original_score": 0.5968823432922363
+        }
+      ],
+      "judge_feedback": "All chunks are relevant to Kelsi Sheren's service. Chunks 1 and 2 provide conflicting information about Kelsi Sheren's age when she served in Afghanistan (18 vs. 19).\n\nThe chunks do not contain any information about Neuralink. The agent should search for the Neuralink-related details next, specifically \"Neuralink human participants implants target number\".",
+      "timestamp": 22.352295398712158
+    }
+  ],
+  "final_answer": "As of the recording, Neuralink has completed two human implants, and their target is to have a total of 10 implants by the end of the year. Kelsi Sheren served in Afghanistan at 18 years old, and she recalled being 19 when she was getting ready to land in Kandahar. The provided context does not offer a basis for comparing Kelsi Sheren's age to these Neuralink implant figures.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    438,
+    230
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 37.545543909072876
+}

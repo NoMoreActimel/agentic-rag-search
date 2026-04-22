@@ -1,0 +1,226 @@
+{
+  "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Travis Oliphant programming languages development methodologies priorities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28175,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 208,
+          "text": "Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description. And now, let me leave you with something that in the programming world is called Hodgson's Law. Every sufficiently advanced Lisp application will eventually be re implemented in Python. Thank you for listening and hope to see you next time. this proprietary software. Right, and there's also culture around MATLAB as much, because I've talked to a few folks in, MathWorks creates MATLAB? Yeah. I mean, there's just a culture, they try really hard, but it just, there's this corporate IBM style culture that's like, or whatever. I don't want to say negative things about IBM or whatever, but there's a... No, it's really that connection. It's something I'm in the middle of right now is the business of open source. And how do you connect the ethos of cooperative development with the necessity of creating profits, right?",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2603,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 7,
+          "text": "So it's kind of nice being able to get the computer and computers to talk to each other and to do things for you. And then I think that one, the programming language I most loved then would have been Delphi, which was Object Pascal, created by Anders Heilsberg, who previously did Turbo Pascal and then went on to create.NET and then went on to create TypeScript. Delphi was amazing because it was like a compiled, fast language that was as easy to use as Visual Basic. Delphi, what is it similar to in more modern languages? Visual Basic. Visual Basic. Yeah, but a compiled, fast version. So I'm not sure there's anything quite like it anymore. If you took like C Sharp or Java and got rid of the virtual machine and replaced it with something, you could compile a small type binary. I feel like it's where Swift could get to with the new Swift UI and the cross platform development going on. Like that's one of my dreams is that we'll hopefully get back to where Delphi was.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2605,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 9,
+          "text": "So there was a couple of major directions. One was the kind of Lambda Calculus Alonzo Church direction, which I guess kind of lisp and scheme and whatever, which has a history going back to the early days of computing. The second was the kind of imperative slash OO, algo similar going on to C, C++ and so forth. There was a third, which are called array oriented languages, which started with a paper by a guy called Ken Iverson, which was actually a math theory paper, not a programming paper. It was called Notation as a Tool for Thought. And it was the development of a new way, a new type of math notation. And the idea is that this math notation was much more flexible, expressive, and also well defined than traditional math notation, which is none of those things. Math notation is awful. And so he actually turned that into a programming language and cause this was the early 50s or the sorry, late 50s, all the names were available. So he called his language a programming language or APL.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27542,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 97,
+          "text": "Like, what's your sense? How much of the value is in the silly software engineering aspect, and how much of the value is in the knowledge? So development of programs in Lisp proceeds, I think, somewhere between a thousand and fifty thousand times faster than development in any of what you're calling modern or improved computer languages. Well, there's other functional languages like, you know, Clojure and all that. But I mean, I'm with you. I like Lisp. I just wonder how many great programmers there are. There's still like... Yes. So it is true when a new inference programmer comes on board, they need to learn some of Lisp. And in fact, we have a subset of Lisp, which we call cleverly Sub L, which is really all they need to learn. And so the programming actually goes on in Sub L, not in full Lisp. And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1. Chunks 2, 3, 4, and 5 are irrelevant as they discuss other guests (Guido van Rossum, Jeremy Howard, Douglas Lenat) and their views, not the individuals specified in the question.\n2. Chunk 1 contains useful, albeit limited, information about Travis Oliphant's views on Python, Lisp, MATLAB, and the business/ethos of open source development.\n3. The agent should now search for John Carmack and Pieter Levels' approaches to programming languages, development methodologies, and their priorities for successful software creation. Also, refine the search for Travis Oliphant to explicitly find his *priorities*.",
+      "timestamp": 2.2977523803710938
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack programming languages development methodologies priorities",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  Chunk 2 is irrelevant as it discusses John McCarthy, not John Carmack.\n2.  Chunk 1 provides minimal context about John Carmack's early development environment but lacks specific details on his programming language choices, methodologies, or explicit priorities.\n3.  Search for John Carmack's specific programming language preferences (e.g., C, assembly), his coding philosophy, and what he prioritizes in software development. Then, create separate queries for Travis Oliphant and Pieter Levels.",
+      "timestamp": 618.2386937141418
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "John Carmack programming language C++ assembly performance optimization development methodology",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 60705,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 59,
+          "text": "Lex Fridman: What programming language are we talking about? C? You mentioned there\u2019s this pile of assembly. What was your decision in choosing the programming language that Unreal Engine would be written in? Tim Sweeney: I\u2019d grown up learning with Pascal as my favorite language. Lex Fridman: Nice. Tim Sweeney: In order to just get maximum performance and get the latest operating system features, I had to move to C for my second game, Jill of the Jungle, little Nintendo-style platformer. And so when I started Unreal Engine, it was on 16-bit windows using the C programming language. And over the course of the first year moved to 32-bit, using these DOS extenders and then using Windows NT, and I moved to the C++ language and just because it simplified the code so much went from a really complicated pile of code to a much simpler one making that transition.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1477,
+          "episode_id": 21,
+          "guest": "Chris Lattner",
+          "chunk_index": 2,
+          "text": "So BASIC, what was the first language that you remember yourself maybe falling in love with, like really connecting with? I don't know. I mean, I feel like I've learned a lot along the way, and each of them have a different special thing about them. So I started in BASIC, and then went like GW BASIC, which was the thing back in the DOS days, and then upgraded to QBASIC, and eventually QuickBASIC, which are all slightly more fancy versions of Microsoft BASIC. Made the jump to Pascal, and started doing machine language programming and assembly in Pascal, which was really cool. Turbo Pascal was amazing for its day. Eventually got into C, C++, and then kind of did lots of other weird things. I feel like you took the dark path, which is the, you could have gone Lisp. Yeah. You could have gone higher level sort of functional philosophical hippie route. Instead, you went into like the dark arts of the C. It was straight into the machine. Straight to the machine.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 1483,
+          "episode_id": 21,
+          "guest": "Chris Lattner",
+          "chunk_index": 8,
+          "text": "And what LLVM is trying to do is trying to standardize that middle and last part. And so one of the cool things about LLVM is that there are a lot of different languages that compile through to it. And so things like Swift, but also Julia, Rust, Clang for C, C++, Subjective C, like these are all very different languages and they can all use the same optimization infrastructure, which gets better performance, and the same code generation infrastructure for hardware support. And so LLVM is really that layer that is common, that all these different specific compilers can use. And is it a standard, like a specification, or is it literally an implementation? It's an implementation. And so I think there's a couple of different ways of looking at it, right? Because it depends on which angle you're looking at it from. LLVM ends up being a bunch of code, okay? So it's a bunch of code that people reuse and they build compilers with.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3677,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 1,
+          "text": "Of course, lines of source code don't mean much, but they do give hints of my personal journey through the world of software. I've enjoyed watching the development of C++ as a programming language, leading up to the big update in the standard in 2011 and those that followed in 14, 17, and toward the new C++20 standard hopefully coming out next year. TITLE This is the Artificial Intelligence podcast. If you enjoy it, subscribe on YouTube, give it five stars on iTunes, support it on Patreon, or simply connect with me on Twitter at Lex Friedman, spelled F R I D M A N. And now, here's my conversation with Bj\u00f6rn Stroustrup. What was the first program you've ever written? Do you remember? BJ\u00d6RN It was my second year in university, first year of computer science, and it was an Alco 60. I calculated the shape of a super ellipse and then connected points on the perimeter, creating star patterns. It was with a wet ink on a paper printer. TITLE And that was in college, university?",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks are irrelevant as they discuss Tim Sweeney, Chris Lattner, and Bjarne Stroustrup, not John Carmack, Travis Oliphant, or Pieter Levels. They contain no useful information for answering the question about the specified individuals.\n\nThe agent should search for each individual separately, focusing on their specific programming language choices, development methodologies, and priorities. For example, \"John Carmack programming language philosophy\" or \"Travis Oliphant programming language Python scientific computing\" or \"Pieter Levels programming language stack methodology.\"",
+      "timestamp": 1230.5357146263123
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "John Carmack programming language choice development methodology priorities performance optimization",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 1541,
+          "episode_id": 21,
+          "guest": "Chris Lattner",
+          "chunk_index": 66,
+          "text": "How do we think about this? And what do we like? And what are we looking for? And that was a very different phase of it. So what are some design choices early on in Swift? Like we're talking about braces, are you making a typed language or not, all those kinds of things. Yeah, so some of those were obvious given the context. So a typed language, for example, Objective C is a typed language. And going with an untyped language wasn't really seriously considered. We wanted the performance, and we wanted refactoring tools and other things like that that go with typed languages. Quick, dumb question. Was it obvious, I think this would be a dumb question, but was it obvious that the language has to be a compiled language? Yes, that's not a dumb question. Earlier, I think late 90s, Apple had seriously considered moving its development experience to Java. But Swift started in 2010, which was several years after the iPhone. It was when the iPhone was definitely on an upward trajectory.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 17627,
+          "episode_id": 162,
+          "guest": "Jim Keller",
+          "chunk_index": 30,
+          "text": "He's at SciFive, I think. What's really impressive to you about the things that Chris has worked on? Because we mentioned the optimization, the compiler design stuff, the LLVM, then there's, he's also at Google worked at the TPU stuff. He's obviously worked on Swift, so the programming language side. Talking about people that work in the entirety of the stack. What, from your time interacting with Chris and knowing the guy, what's really impressive to you that just inspires you? Well, like LLVM became the defacto platform for the defacto platform for compilers. It's amazing. And it was good code quality, good design choices. He hit the right level of abstraction. There's a little bit of the right time, the right place. And then he built a new programming language called Swift, which after, let's say some adoption resistance became very successful. I don't know that much about his work at Google, although I know that that was a typical, they started TensorFlow stuff and it was new.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 349,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 69,
+          "text": "Well, I'm glad I wasn't aware of all the itches because I would probably not have been able to do anything. I mean, if you're trying to solve every problem at once, you'll solve nothing. Well, yeah, it's too overwhelming. And so I had a very, very focused problem. I wanted a programming language that sat somewhere in between shell scripting and C. And now, arguably, there is like, one is higher level, one is lower level. And Python is sort of a language of an intermediate level, although it's still pretty much at the high level end. I was thinking about much more about, I want a tool that I can use to be more productive as a programmer in a very specific environment. And I also had given myself a time budget for the development of the tool. And that was sort of about three months for both the design, like thinking through what are all the features of the language syntactically and semantically, and how do I implement the whole pipeline from parsing the source code to executing it.",
+          "score": 0.3,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, and 4 are irrelevant as they discuss Chris Lattner and Guido van Rossum, not the individuals in the question. Chunk 3 provides a brief anecdote about John Carmack's early programming but lacks specific details on his language choices, development methodologies, or priorities for successful software creation.\n\nTo fill the gaps, the agent should search for John Carmack's specific programming language preferences (e.g., C/C++), his development methodologies (e.g., iterative, low-level optimization), and explicit statements about his priorities (e.g., performance, control, simplicity). Additionally, new searches are needed for Travis Oliphant and Pieter Levels, focusing on their programming language choices, development methodologies, and stated priorities.",
+      "timestamp": 1240.1704778671265
+    }
+  ],
+  "final_answer": "The provided context does not contain information about Pieter Levels' approaches to programming languages or development methodologies. While Travis Oliphant is mentioned in relation to Python and the business of open source, and John Carmack is noted for early programming without modern resources, there is insufficient detail to compare their specific priorities for successful software creation or how their approaches diverge.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    224,
+    162,
+    35,
+    6,
+    7,
+    48,
+    467,
+    21,
+    309,
+    221
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 1251.1993498802185
+}

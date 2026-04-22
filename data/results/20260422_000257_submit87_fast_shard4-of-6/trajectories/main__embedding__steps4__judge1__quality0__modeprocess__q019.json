@@ -1,0 +1,162 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Dario Amodei Anthropic AI safety strategy \"Dylan Patel\" \"Nathan Lambert\"",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58741,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 170,
+          "text": "There\u2019s been news of how Anthropic has done pre-release testing with the UK AI Safety Institute. All of these things add inertia to the process of getting things out. And we\u2019re on this trend line where the progress is very high. So if you reduce the time from when your model is done training, you run the vals, it\u2019s good. You want to get it out as soon as possible to maximize the perceived quality of your outputs. DeepSeek does this so well. Dylan Patel: Dario explicitly said Claude 3.5 Sonnet was trained like nine months or a year-\n\nNathan Lambert: Nine to 10 months ago [inaudible 02:18:42]. Dylan Patel: Nine to 10 months ago. And I think it took them another handful of months to release it. So it\u2019s like, there is a significant gap here. And especially with reasoning models, the word in the San Francisco street is that Anthropic has a better model than o3 and they won\u2019t release it. Why? Because chains-of-thought are scary, and they are legitimately scary.",
+          "score": 0.7540290951728821,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58752,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 181,
+          "text": "Nathan Lambert: Anthropic has research on this where they show that if you put certain phrases in at pre-training, you can then elicit different behavior when you\u2019re actually using the model because they\u2019ve poisoned the pre-training data, as of now, I don\u2019t think anybody in a production system is trying to do anything like this. I think it\u2019s Anthropic is doing very direct work and mostly just subtle things. We don\u2019t know how they\u2019re going to generate tokens, what information they\u2019re going to represent, and what the complex representations they have are. Lex Fridman: Well, we\u2019re talking about an Anthropic, which is generally just is permeated with good humans trying to do good in the world. We just don\u2019t know of any labs\u2026 This would be done in a military context that are explicitly trained to\u2026 Okay.",
+          "score": 0.752933919429779,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56946,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 107,
+          "text": "We think that\u2019s good. We should adopt it too.\u201d The only difference is I think we try to be more forward leaning. We try and adopt more of these practices first and adopt them more quickly when others invent them. But I think this dynamic is what we should be pointing at and that I think it abstracts away the question of which company\u2019s winning, who trusts who. I think all these questions of drama are profoundly uninteresting and the thing that matters is the ecosystem that we all operate in and how to make that ecosystem better because that constrains all the players. Lex Fridman: And so Anthropic is this kind of clean experiment built on a foundation of what concretely AI safety should look like? Dario Amodei: Well, look, I\u2019m sure we\u2019ve made plenty of mistakes along the way. The perfect organization doesn\u2019t exist. It has to deal with the imperfection of a thousand employees. It has to deal with the imperfection of our leaders, including me.",
+          "score": 0.7435219287872314,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58661,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 90,
+          "text": "I think that\u2026 You\u2019re asking about the AGI thing. If you\u2019re making me give a year, I\u2019m going to be like, \u201cOkay, I have AI CEOs saying this. They\u2019ve been saying two years for a while. I think that there are people like Dario at Anthropic, the CEO, has thought about this so deeply. I need to take their word seriously, but also understand that they have different incentives.\u201d So I would be like, \u201cAdd a few years to that.\u201d Which is how you get something similar to 2030 or a little after 2030. Dylan Patel: I think to some extent, we have capabilities that hit a certain point where any one person could say, \u201cOh, okay, if I can leverage those capabilities for X amount of time, this is AGI, call it \u201927, \u201928.\u201d But then the cost of actually operating that capability-\n\nNathan Lambert: Yeah, this was going to be my point. Dylan Patel: \u2026 is so, so extreme that no one can actually deploy it at scale en masse to actually completely revolutionize the economy on a snap of a finger.",
+          "score": 0.7420467138290405,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58744,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 173,
+          "text": "Lex Fridman: Yeah. So, the bar for safety is probably lowered a bit because of DeepSeek. There\u2019s parallels here to the space race. The reason the Soviets probably put a man in space first is because their approach to safety, the bar for safety, was lowered\n\nDylan Patel: And they killed that dog, and all these things, so it\u2019s like\u2026\n\nLex Fridman: Less risk averse than the US Space Program. And there\u2019s parallels here, but there\u2019s probably going to be downward pressure on that safety bar for the US companies. Nathan Lambert: This is something that Dario talks about. That\u2019s the situation that Dario wants to avoid is, Dario talks too about the difference between race to the bottom and race to the top. And the race to the top is where there\u2019s a very high standard on safety. There\u2019s a very high standard on your model forms and certain crucial evaluations. And when certain companies are really good to it, they will converge. This is the idea.",
+          "score": 0.7390198111534119,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 3 and 5 are highly relevant, directly addressing Dario Amodei's strategy of fostering a \"race to the top\" by setting high safety standards, with the intended outcome of other companies converging to these standards to improve the overall ecosystem. Chunk 1 provides a concrete example of this strategy in practice (delayed release due to safety concerns).\n\nTo further refine the answer, the agent should search for more specific examples of Anthropic's safety practices or initiatives that embody this \"race to the top\" strategy. A good next search would be: `Anthropic specific AI safety practices \"race to the top\"`.",
+      "timestamp": 8.41947889328003
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Anthropic specific AI safety practices \"race to the top\"",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 56970,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 131,
+          "text": "He\u2019s now at Anthropic. Do you think this is a useful direction? Might Anthropic release a model spec as well? Dario Amodei: Yeah. So I think that\u2019s a pretty useful direction. Again, it has a lot in common with constitutional AI. So again, another example of a race to the top. We have something that we think a better and more responsible way of doing things. It\u2019s also a competitive advantage. Then others discover that it has advantages and then start to do that thing. We then no longer have the competitive advantage, but it\u2019s good from the perspective that now everyone has adopted a positive practice that others were not adopting. And so our response to that is, \u201cWell, looks like we need a new competitive advantage in order to keep driving this race upwards.\u201d So that\u2019s how I generally feel about that. I also think every implementation of these things is different.",
+          "score": 0.8128141164779663,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56863,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 24,
+          "text": "Anthropic\u2019s mission is to kind of try to make this all go well. And we have a theory of change called Race to the Top. Race to the Top is about trying to push the other players to do the right thing by setting an example. It\u2019s not about being the good guy, it\u2019s about setting things up so that all of us can be the good guy. I\u2019ll give a few examples of this. Early in the history of Anthropic, one of our co-founders, Chris Olah, who I believe you\u2019re interviewing soon, he\u2019s the co-founder of the field of mechanistic interpretability, which is an attempt to understand what\u2019s going on inside AI models. So we had him and one of our early teams focus on this area of interpretability, which we think is good for making models safe and transparent. For three or four years that had no commercial application whatsoever. It still doesn\u2019t.",
+          "score": 0.8028673529624939,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56928,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 89,
+          "text": "And I can talk through why I think that\u2019s so important. So I feel good about our RSP. It\u2019s not perfect. It needs to be iterated on a lot. But it\u2019s been a good forcing function for getting the company to take these risks seriously, to put them into product planning, to really make them a central part of work at Anthropic and to make sure that all of a thousand people, and it\u2019s almost a thousand people now at Anthropic, understand that this is one of the highest priorities of the company, if not the highest priority. But one, there are still some companies that don\u2019t have RSP like mechanisms, like OpenAI, Google did adopt these mechanisms a couple months after Anthropic did, but there are other companies out there that don\u2019t have these mechanisms at all.",
+          "score": 0.7544955015182495,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56862,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 23,
+          "text": "We\u2019ve seen similar things in graduate-level math, physics, and biology from models like OpenAi\u2019s o1. So if we just continue to extrapolate this in terms of skill that we have, I think if we extrapolate the straight curve, within a few years, we will get to these models being above the highest professional level in terms of humans. Now, will that curve continue? You\u2019ve pointed to, and I\u2019ve pointed to a lot of possible reasons why that might not happen. But if the extrapolation curve continues, that is the trajectory we\u2019re on.\n\n\n## Competition with OpenAI, Google, xAI, Meta\n\nLex Fridman: So Anthropic has several competitors. It\u2019d be interesting to get your sort of view of it all. OpenAI, Google, XAI, Meta. What does it take to win in the broad sense of win in this space? Dario Amodei: Yeah, so I want to separate out a couple things, right? Anthropic\u2019s mission is to kind of try to make this all go well. And we have a theory of change called Race to the Top.",
+          "score": 0.7398397326469421,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 4's discussion of model capabilities is largely irrelevant. The other chunks are highly useful, clearly defining Anthropic's \"Race to the Top\" strategy as setting a safety example for others to follow, with the intended outcome of encouraging widespread adoption of positive AI safety practices. To further elaborate, search for specific details on how \"Constitutional AI\" or \"Responsible Scaling Policy (RSP)\" exemplify this \"Race to the Top\" strategy.",
+      "timestamp": 16.603618144989014
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Constitutional AI Responsible Scaling Policy Anthropic \"race to the top\" safety strategy",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 56965,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 126,
+          "text": "Dario Amodei: I don\u2019t think you can scale up humans enough to get high quality. Any kind of method that relies on humans and uses a large amount of compute, it\u2019s going to have to rely on some scaled supervision method, like debate or iterated amplification or something like that.\n\n\n## Constitutional AI\n\nLex Fridman: So on that super interesting set of ideas around constitutional AI, can you describe what it is as first detailed in December 2022 paper and beyond that. What is it? Dario Amodei: Yes. So this was from two years ago. The basic idea is, so we describe what RLHF is. You have a model and you just sample from it twice. It spits out two possible responses, and you\u2019re like, \u201cHuman, which responses do you like better?\u201d Or another variant of it is, \u201cRate this response on a scale of one to seven.\u201d So that\u2019s hard because you need to scale up human interaction and it\u2019s very implicit. I don\u2019t have a sense of what I want the model to do.",
+          "score": 0.7271157503128052,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is somewhat relevant as it discusses Constitutional AI, a key safety method from Anthropic, and features Dario Amodei. However, it does not explain how Anthropic uses this or any other strategy to encourage *other* AI companies to prioritize safety, nor the intended outcome of such an inter-company strategy.\n\nThe agent should search for Anthropic's \"Responsible Scaling Policy\" or \"RSP\" and its connection to encouraging industry-wide safety, specifically looking for mentions of a \"race to the top\" or similar competitive safety strategies.",
+      "timestamp": 85.992342710495
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 148.34443593025208
+    }
+  ],
+  "final_answer": "Dario Amodei's company, Anthropic, employs a strategy called \"Race to the Top\" to encourage other AI companies to prioritize safety. This involves setting a high standard for safety and model evaluations, adopting responsible practices first, and even delaying model releases (like Claude 3.5 Sonnet) due to safety concerns. The intended outcome is that other companies will converge to these high safety standards, thereby improving the overall AI ecosystem and fostering a collective commitment to responsible AI development.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    459,
+    452
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 148.34443831443787
+}

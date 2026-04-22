@@ -1,0 +1,201 @@
+{
+  "question": "Considering the podcast's discussions on 'politics,' how did the focus evolve from Kelsi Sheren's insights on the personal and societal consequences of political decisions related to war and veteran support, to Marc Andreessen's later analysis of macro-level political trends, national future, and technology's role in governance?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren politics war veteran support",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 29065,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 187,
+          "text": "Okay. So psilocybin is I use for microdosing, uh, for depression. I did ayahuasca in January of this year. Um, and I've at that point, that was the last time I was on a pharmaceutical drug. I've been off everything ever since 10 different ones. So if you backtrack a little bit, just to, so you'll understand my doctor gave me the opportunity, Dr. Greg Passi. He is a veteran himself, served in Bosnia and Rwanda. He's a medic. He's a Colonel. I think Colonel Lieutenant, he's going to fucking punch me right in the face for that. He's high up officer. Um, he is one of my saviors. He's like my old, I call him my old man. He's my favorite and, um, rides a Harley, like that kind of guy. Nice. Yeah. And, um, he said, you know, Kels, this is, I just don't, I was hitting a wall. I wasn't getting any better. And he goes, what, how do you feel about cannabis?",
+          "score": 0.6792511005401611,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.610358715057373
+        },
+        {
+          "chunk_id": 28878,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Kelsey Sharon, Canadian Forces veteran, artillery gunner who served in Afghanistan at 18 years old and came home with severe PTSD. She went on to found Brass in Unity which creates unique jewellery, large part of the proceeds from which go to help rehabilitate the lives, limbs and mental health of veterans and first responders. She has a big personality, big heart and an intense passion for life. So when our paths happened to cross, I knew we needed to talk. This is the Lex Friedman Podcast, to support it please check out our sponsors in the description. And now here's my conversation with Kelsey Sharon. You mentioned that studying history had a big impact on you and that your grandfather was a World War II vet. So people that have gone through World War II, in my family too, they don't seem to talk about it much. Like the worse the tragedy, the less they talk about it.",
+          "score": 0.6727157564163208,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6438796520233154
+        },
+        {
+          "chunk_id": 13691,
+          "episode_id": 136,
+          "guest": "Dan Carlin",
+          "chunk_index": 87,
+          "text": "The greatest victims in our society of war are often the warriors. So in my mind, when we see these people coming home from places like Iraq, a place where I would have made the argument and did at the time that we didn't belong. To me, those people are victims and I know they don't like to think about themselves that way because it runs totally counter to the ethos. But if you're sending people to protect this country's shores, those are heroes. If you're sending people to go do something that they otherwise probably don't need to do but they're there for political reasons or anything else you wanna put in that's not defense related, well then you've made victims of our heroes. And so I feel like we do a lot of talk about our troops and our soldiers and stuff but we don't treat them as valuable as the rhetoric makes them sound. Otherwise, we would be much more careful about where we put them.",
+          "score": 0.6447040588855744,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6038629412651062
+        },
+        {
+          "chunk_id": 19156,
+          "episode_id": 171,
+          "guest": "Anthony Pompliano",
+          "chunk_index": 20,
+          "text": "Right. And so you just start to understand, like we look at war very black and white. We look at it very much from a clinical perspective. We're going to go, we're going to go kind of invade somewhere. We are the most dominant military in the world. We're very good at invading. And we will crush wherever we invade, but when you're actually on the ground, what you understand is the humanity of it all. Right. And so what becomes very interesting is pretty much every veteran I know that comes back, they're some of the largest pacifists in the world. And I always revert back to Marcus Luttrell, who was a famous Navy SEAL, and there's a movie made about him and his story. He gave a speech one time that I saw and he basically said, listen, if you're a politician, your job is to be the diplomat, do everything you possibly can, not to send me and my friends anywhere, because when you send us, we're going to bring hell with us, right.",
+          "score": 0.6264886417388915,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6035552024841309
+        },
+        {
+          "chunk_id": 29139,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 261,
+          "text": "That's why I feel really fortunate to be getting this feat of happiness all the time. Well to be or not to be, that's a good place to end it. Kelsey, you're an amazing human being. I'm really fortunate that you would spend your valuable time with me. As I said, you're so good at not just talking, but listening. So I definitely will listen to your podcast because I can tell you're an incredible person as an interviewer and as a storyteller. So again, thank you for talking today. Thank you so much, bye. Thanks for listening to this conversation with Kelsey Sharon. To support this podcast, please check out our sponsors in the description. And now let me leave you with some words from Herbert Hoover. Older men declare war, but it is the youth that must fight and die. Thank you for listening and hope to see you next time. There's the spoon and the pin.",
+          "score": 0.46996455073356624,
+          "source": "embedding",
+          "quality_score": 0.1,
+          "original_score": 0.6285207867622375
+        }
+      ],
+      "judge_feedback": "Chunks 3, 4, and 5 are irrelevant; 3 and 4 are from other guests, and 5 is an episode outro. Chunks 1 and 2 provide Kelsi Sheren's personal experiences with war and veteran support, but lack her broader insights on political decisions and societal consequences.\n\nTo fill these gaps, the agent should search for Kelsi Sheren's explicit discussions on the political decisions related to war and their wider societal impact. Then, a separate search will be needed for Marc Andreessen's views on macro-level political trends and technology's role.",
+      "timestamp": 2.7525954246520996
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren political decisions war societal consequences",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 35897,
+          "episode_id": 273,
+          "guest": "Chris Blattman",
+          "chunk_index": 94,
+          "text": "It's basically saying that there's times when this is like the optimal choice because of circumstances. And one of them is when the people who are deciding don't bear those costs. So that's, or maybe even have a private incentive that's gonna, that's, if they don't, if they're ignoring the cost, then maybe the costs of war are not so material. That's a contributing factor. Another is just, there's uncertainty, and we could talk about that, but there's just the absence of information means that it actually, there's circumstances where it's your best choice to attack. There's this thing that political economists call commitment problems, which are basically saying there's some big power shift that you can avoid by attacking now. So it's like a dynamic incentive. It's sort of saying, well, in order to keep something from happening in the future, I can attack now.",
+          "score": 0.674960467338562,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6470863819122314
+        },
+        {
+          "chunk_id": 37610,
+          "episode_id": 284,
+          "guest": "Saifedean Ammous",
+          "chunk_index": 274,
+          "text": "Like it's not just housing units that are going up. It's an entire attempt to build, to basically suffocate Palestinian areas and force Palestinians to leave or keep them living in horrific conditions. And if I may, just because I have family in Ukraine, I have family in Russia, since this war, echoes of similar things are happening in that part of the world too. And I shudder to think about the decades to come of the hate that is brewing, the suffering that is brewing based on decisions and pressures and from not always people directly impacted by this. So again, it feels like that military conflict is not just a creation of like people on the ground. It's a creation of leaders, power centers. And perhaps, again, I'm not smart enough, but even the monetary system probably has a role to play. I absolutely think it does. Monetary system is what allows people to just continue to treat war as a spectator sport. That's really what it comes down to.",
+          "score": 0.6646438093185425,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6323482990264893
+        },
+        {
+          "chunk_id": 13623,
+          "episode_id": 136,
+          "guest": "Dan Carlin",
+          "chunk_index": 19,
+          "text": "That's where we start to talk about the interactivity of all these different elements of society upon one another. So when we talk about governments and war, well, you need to take into account the various things those governments have put into place in terms of systems and armies and things like that to protect themselves, right? For reasons we can all understand, but they exert a force on your range of choices, don't they? It's true. You're making me realize that in my upbringing and I think upbringing of many, warriors are heroes. To me, I don't know where that feeling comes from, but to sort of die fighting is an honorable way to die, it feels like that. I've always had a problem with this because as a person interested in military history, the distinction is important and I try to make it at different levels.",
+          "score": 0.6513879098892212,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6391255855560303
+        },
+        {
+          "chunk_id": 43688,
+          "episode_id": 320,
+          "guest": "Christopher Capozzola",
+          "chunk_index": 35,
+          "text": "I feel like there was not a plot in a chart. It was more about short term effects. Yes, it's again, it's the idea of using military force to solve political problems. And I think there's a squandering of goodwill that people have around the world toward the United States. That's a respect for its economy, for its consumer products, and so forth. And I think that's been lost, a lot of that. Do you think leaders can stop war? I have perhaps a romantic notion, perhaps because I do these podcasts in person and so on, that leaders that get in a room together and can talk, they can stop war. I mean, that's the power of a leader, especially one in an authoritarian regime that they can, through camaraderie, alleviate some of the emotions associated with ego. Yes, leaders can stop war if they get into the room when they understand from the masses in their countries that war is something that they want stopped. So the people ultimately have a really big say.",
+          "score": 0.6492417492866516,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6360596418380737
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant as none mention Kelsi Sheren or her insights. They discuss war and political decisions generally, but not the personal and societal consequences from her perspective, nor veteran support.\n\nThe agent should search specifically for \"Kelsi Sheren political decisions war veteran support personal societal consequences\" to find relevant discussions.",
+      "timestamp": 14.367373943328857
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren political decisions war veteran support personal societal consequences",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 13690,
+          "episode_id": 136,
+          "guest": "Dan Carlin",
+          "chunk_index": 86,
+          "text": "I feel a lot less moral attachment to them and I'm much harsher about how I feel about them. I do not consider the military itself to be heroic and I do not consider the military industrial complex to be heroic. I do think that is a tail wagging the dog situation. I do think that draws us into looking at military endeavors as a solution to the problem much more quickly than we otherwise might. And to be honest, to tie it all together, I actually look at the victims of this as the soldiers we were talking about. If you set a fire to send firemen into to fight, then I feel bad for the firemen. I feel like you've abused the trust that you give those people, right? So when people talk about war, I always think that the people that we have to make sure that a war is really necessary in order to protect are the people that you're gonna send over there to fight that. The greatest victims in our society of war are often the warriors.",
+          "score": 0.6660825104713439,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6344035863876343
+        },
+        {
+          "chunk_id": 31355,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 115,
+          "text": "Oh, we lost. You should say we lost. It wasn't just, you know... The American military lost. Yeah, and I feel I have very mixed feelings and it's, I don't know, a ton of veterans, but Mitch and I have topped my share and have a student now and they're suffering because they look at the sacrifices that they made that I didn't make. I mean, American society didn't make the sacrifices. I mean, men and women lost limbs, they lost eyes, they lost lives. There's been this, of course, quiet epidemic of suicide among veterans. And I've heard some stories the fact that the State Department is seeing a similar surge of suicides because they see their adult life's work collapse. They've seen their relationships. I mean, they've seen phone calls in the middle of the night from people who they entrusted with their lives who they know are gonna be targeted. I mean, some of them have already been killed.",
+          "score": 0.6537170565128326,
+          "source": "embedding",
+          "quality_score": 0.7,
+          "original_score": 0.6338815093040466
+        }
+      ],
+      "judge_feedback": "The retrieved chunks discuss the consequences of war and veteran suffering, which is relevant to the *topic* of the first part of the question. However, neither chunk is from Kelsi Sheren, which is a critical component of the query.\n\nThe agent should now specifically search for discussions by Kelsi Sheren related to political decisions, war, and veteran support to address the first part of the question. After that, it needs to search for Marc Andreessen's insights on macro-level political trends and technology's role in governance.",
+      "timestamp": 21.692888021469116
+    },
+    {
+      "step_number": 4,
+      "tool_used": "embedding",
+      "query": "Kelsi Sheren political decisions impact on veterans and society",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 29002,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 124,
+          "text": "Like, I refuse to believe Trudeau is somehow a bad person. You haven't met him though, have you? I don't, actually. I'm speaking about Trudeau without knowing, but I mean, in general, think that way about leaders. Like, they surround themselves by people who delude them, who like, they're yes people, yes people that lead them into a kind of reality that becomes detached from actual reality. And so they misunderstand the priorities of this world. They think maybe some kind of special interest, they focus on that versus like the humans. If you look back, was there a way we could have done something better in Afghanistan, assuming we do the invasion? Also, is it ultimately about taking care of the veterans, like, investing more money in the education of women and liberating people who are suffering injustice in those parts of the world? Like, what's a better way to do it?",
+          "score": 0.6551129252910614,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.618732750415802
+        },
+        {
+          "chunk_id": 31357,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 117,
+          "text": "But we don't want a generation of disillusioned veterans if we look at the other postwar moments. And this is kind of a postwar moment where, I think we need a conversation with American veterans about what they've gone through and what they're feeling. And they still have skin in the game because their personal connections and the end of their histories. And they're also gonna be future leaders. I mean, veterans. People who have served are often great men and women. That's true. And throughout history, whether you sacrifice you served in fighting World War II, in fighting Vietnam, that's going to mold you in different ways. That's going to mold how you are as a leader that leads this country forward. And so you have to have an honest conversation about what was the role of the war in Afghanistan, the war in the Middle East, the war on terror in the history of America.",
+          "score": 0.6543468446731567,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.617638349533081
+        }
+      ],
+      "judge_feedback": "1.  Chunk 2 is irrelevant as it features Robert Crews, not Kelsi Sheren, and the question specifically asks about Kelsi Sheren's insights.\n2.  Chunk 1 is useful as it provides Kelsi Sheren's perspective on political decisions, war (Afghanistan), and the importance of veteran care.\n3.  The agent should now search for more specific discussions from Kelsi Sheren regarding the *personal and societal consequences* of political decisions on veterans. Additionally, the agent needs to search for Marc Andreessen's analysis of *macro-level political trends, national future, and technology's role in governance*.",
+      "timestamp": 30.734825611114502
+    }
+  ],
+  "final_answer": "Kelsi Sheren's insights focused on the personal and societal consequences of political decisions related to war, particularly from the perspective of a veteran. She questioned leaders' detachment from reality and their understanding of priorities, emphasizing the human impact of conflicts like Afghanistan and the importance of veteran support.\n\nThe provided context does not contain any information about Marc Andreessen's analysis of macro-level political trends, national future, or technology's role in governance. Therefore, it is not possible to describe how the focus evolved to his discussions.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    320,
+    230,
+    136,
+    171,
+    273,
+    244,
+    284
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 37.60577058792114
+}

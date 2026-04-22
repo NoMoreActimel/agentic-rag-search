@@ -1,0 +1,153 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language id Software Oculus VR",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.7433596849441528,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7040195465087891,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.7030207514762878,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59369,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 253,
+          "text": "What can you say to the skill of achieving focus in programming? Do you have a process of how you sit down and try to sort of approach a problem? So, all the different, not just distractions but the challenges of starting a project, of thinking through the design, how to maintain real focus, because it\u2019s really difficult intellectual endeavor. ThePrimeagen: At this point I\u2019m lucky, but when I first started I can remember that every last part of programming. I had to go look up, I had to go read, I had side quests at all time. Every step was a side quest. Why is my screen blinking when I\u2019m trying to render this thing out? Oh, I didn\u2019t know about double buffering. Why is this happening? How do I even write to the screen? How do I\u2026 Everything was a question. I had more questions than answers. And so I constantly had the problem of side quests, and I find that to be a very exhausting thing. But as I learned my instrument very, very well, I don\u2019t have as many side quests.",
+          "score": 0.7030030488967896,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7013857364654541,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  **Irrelevant chunks:** Chunks 2, 4, and 5 are largely irrelevant. Chunks 2 and 4 discuss ThePrimeagen's general views on learning/focus in programming, not Carmack's. Chunk 5 covers Carmack's very early programming experiences, not his pragmatic view on the 'best' language for professional work.\n2.  **Useful information:** Chunk 1 provides excellent context about John Carmack's work at id Software and Oculus VR. Chunk 3 is the most useful, as Carmack discusses building and then *switching from* his custom language (Quake C), hinting at a pragmatic approach to language choice.\n3.  **Next search query:** The current chunks do not contain ThePrimeagen's discussion of John Carmack's pragmatic view on programming languages. The next search should focus on finding ThePrimeagen's specific commentary on Carmack's philosophy or choice of programming languages.\n    **Next Search Query:** `ThePrimeagen John Carmack \"programming language philosophy\"`",
+      "timestamp": 2.1739659309387207
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack \"programming language philosophy\"",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.7476694583892822,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59324,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 208,
+          "text": "But for the most part, Zig will give you safety for the most part. So it\u2019s like a little bit of safety, but more like C. So it kind of gives you everything you want in that region where you can express safe code and unsafe code. It\u2019s very easy to write. It\u2019s very pretty. Or at least the idea behind it is very pretty. The language itself is bland, but. Lex Fridman: Wow, there\u2019s beauty in everything, Prime. ThePrimeagen: Yeah.\n\n\n## Rust\n\nLex Fridman: You\u2019ve programmed in Rust a lot. What do you love about Rust? What are the strengths? What are the weaknesses? Maybe you can speak about memory management that you already mentioned, the challenge of memory management that several of these languages address, but yeah, what do you love about Rust? ThePrimeagen: What I love about Rust, I love the ability to free the memory that you\u2019re using is directly tied to the stack.",
+          "score": 0.7379679083824158,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 2 is irrelevant as it discusses ThePrimeagen's views on Zig and Rust, not John Carmack. Chunk 1 contains John Carmack's pragmatic view on programming languages (focusing on what they *enable*), which is useful, but it's Carmack speaking directly, not ThePrimeagen discussing Carmack.\n\nThe agent needs to find instances where ThePrimeagen specifically talks about John Carmack's programming language philosophy or choices.\n\nNext search query: `ThePrimeagen \"John Carmack\" \"programming language choice\" OR \"programming language philosophy\"`",
+      "timestamp": 88.03517460823059
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen discusses John Carmack programming language pragmatism",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7574139833450317,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59311,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 195,
+          "text": "But I mean for practical purposes, no. HTML is not a language. For me, yes, the Turing test is a good one, but for those that are just not wanting to be as academic, if I can\u2019t write a function and an if statement, I don\u2019t feel like that\u2019s\u2026 If I can\u2019t loop, if, and function, I don\u2019t feel like that\u2019s a good, that\u2019s a programming language. Lex Fridman: Although modern HTML has a lot of features. ThePrimeagen: It\u2019s crazy how much it has, but it\u2019s more of a specification than anything else. I specify it to be a pop-up. I specify it to have this kind of accessibility, this kind of look. Under these conditions look like this, transform like this, move down here.\n\n\n## Bash\n\nLex Fridman: I don\u2019t know. I kind of like these popular programming languages in this list. I like JavaScript. ThePrimeagen: You like Bash? Lex Fridman: Oh, yeah. I like Bash a lot. Yeah. Why? ThePrimeagen: Okay. Bash is kind of one of those ones where it\u2019s like, do you really like it? I like it up until I need an array.",
+          "score": 0.7542628645896912,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59327,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 211,
+          "text": "That\u2019s really interesting. I mean it\u2019s safe, it\u2019s trying to be, and the safety might be, create limitations. Let us consult the AI overlords. Rust is a blazing fast memory efficient systems programming language that emphasizes performance, type safety and concurrency. The language enforces memory safety without using a garbage collector, as you said, instead utilizing the unique, quote, \u201cborrow checker\u201d that tracks object lifetimes at compile time. This prevents common programming errors like null point or dereferencing and memory leaks and so on. Yeah. So you\u2019ve also spoken about metaprogramming. Which of these languages do you like for the metaprogramming? I love metaprogramming in C++, but it\u2019s a giant mess. At least when I program C++ 17 standard, I believe, it\u2019s just a mess, especially a mess to debug. ThePrimeagen: Yeah, I would consider myself kind of a metaprogramming newbie. I have only solved some amount of problems with it.",
+          "score": 0.7483557462692261,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "These chunks are irrelevant. They discuss ThePrimeagen's general views on programming languages, but none mention John Carmack or his perspective.\n\nThe agent should search for discussions where ThePrimeagen specifically talks about John Carmack's views on programming languages, perhaps by including \"John Carmack\" and \"programming language\" in the next query.",
+      "timestamp": 93.83904910087585
+    }
+  ],
+  "final_answer": "John Carmack's pragmatic view was that the \"best\" programming language is one that allows you to accomplish what you care about. He initially created his own language, Quake C, for Quake, but later switched to using DLLs with C for Quake 2 and implemented a C interpreter for Quake 3, which he considered a smarter approach. He stated that people are drawn to programming because \"the language lets you do something that you cared about.\"",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    461,
+    309
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 100.87850975990295
+}

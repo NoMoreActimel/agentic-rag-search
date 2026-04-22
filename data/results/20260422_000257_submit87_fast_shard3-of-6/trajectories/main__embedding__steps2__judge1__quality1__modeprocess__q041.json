@@ -1,0 +1,143 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Charles Hoskinson programming language views blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22989,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 202,
+          "text": "When you're getting started. It's the getting started. That'll get you everything. You can do web scrapers and anything. It's just fun. All this experiment with drugs in undergrad, this was where Scala 3 comes in, it's a gateway drug to then potentially more hardcore functional languages like Haskell. Do you think C and C++, C++ still has a role? No, I think Rust is completely replaced, a need for them. Go and Rust, those are the two twins of doom. I mean, Google created Go just to get rid of C. They hated C that much. And then Rust is just a phenomenal language as well. Hate can be a great motivator. Let me ask a question from Reddit on this topic. We're going depth first today. Sure. As a developer, why should I be incentivized to create Cardano based applications? What is on the Cardano developer roadmap? Any other language, I guess this is the key question I wanna ask. Any other language support other than Haskell?",
+          "score": 0.7970132894515991,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7357332706451416
+        },
+        {
+          "chunk_id": 22901,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 114,
+          "text": "So before we go into this fascinating Darwinian evolution of cryptocurrencies, let me ask you sort of a basic programming question. There's a fascinating aspect to your work with Cardano that use Haskell to build the infrastructure, but even stepping back more, looking at this landscape, another place where Darwinian evolution operates, looking at this landscape of programming languages, you as an engineer, you as a philosopher, both, what programming languages do you think are interesting and more practically, what programming languages, if you were to advise like students today, should they learn? Yeah, so there's the pedagogy of learning how to program and to express the theory of computer science.",
+          "score": 0.7892378242015838,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.8103397488594055
+        },
+        {
+          "chunk_id": 22994,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 207,
+          "text": "And so your main chain will always stay somewhat conservative and have the minimum viable amount of expressiveness required on it to do all kinds of interesting things. And also for interoperability, be able to talk to all kinds of interesting things, but it's not trying to be everything to everyone. There's never gonna be an ice cream store in the island. You'll have the grapes and the beautiful women, but no ice cream. Now you're just like distracting me with the ice cream. So just for, because we'll throw around a bunch of terms, for the record, what is Plutus? So Plutus is a programming language. It's kind of a DSL that we built on top of Haskell. And basically we wrote it after spending about three years thinking about all smart contracts. We were trying to figure out like, what is the ideal language to express a smart contract? And then we started thinking, well, what is a smart contract? Is it the whole application, or is it just like a sub module within an application?",
+          "score": 0.7791170377731322,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7530243396759033
+        },
+        {
+          "chunk_id": 22903,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 116,
+          "text": "How would I interact with that? What does this need to look like? Functional programming is what we've chosen to use for Cardano mostly because we're living in the academic world, we've written 105 papers and the problem is you have to translate that work into code and the gap between an imperative language like a C++ or C and these academic rigorous papers is extremely large and so there's gonna be a lot of semantical ambiguity between those two and what I mean by that is that you might end up implementing a wrong thing. You might think that what you've built is the paper but the computer's not going to tell you that because the paper's written in prose and maybe typed up in LaTeX or something but there's no proof chain, evidence chain that you can show that there's no ambiguity.",
+          "score": 0.7679445524215698,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7370636463165283
+        },
+        {
+          "chunk_id": 22983,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 196,
+          "text": "So it's really a question of okay, what are you designing for for version one? Are you designing for performance and are you designing for developer accessibility or are you designing for correctness and are you designing for a high fidelity representation of the protocol? Okay, so Haskell was chosen as kind of the version one because we knew that the kinds of people who think about that are also the kinds of people that would have an easy time reading a paper like Ouroboros and working their way through all of this and they would do a pretty good job running a formal specification and then translating that into running code. Then once you have that, you have a blueprint that you can actually reason about, maintain and if you really wanted to, you could then turn that into a Rust code base or into a Java code base. Going the other way around would be kind of pointless and counterproductive.",
+          "score": 0.7649948854446411,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7328498363494873
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are highly relevant and provide excellent insight into Charles Hoskinson's views on programming languages, particularly Haskell, Rust, and Plutus, and their application in blockchain for correctness and formal verification.\n\nTo address the full question, the agent should now search for the programming language views of ThePrimeagen (Michael Paulson) and Tim Sweeney.\n\n**Next search query:** `ThePrimeagen programming language views`",
+      "timestamp": 45.41934657096863
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen programming language views",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59311,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 195,
+          "text": "But I mean for practical purposes, no. HTML is not a language. For me, yes, the Turing test is a good one, but for those that are just not wanting to be as academic, if I can\u2019t write a function and an if statement, I don\u2019t feel like that\u2019s\u2026 If I can\u2019t loop, if, and function, I don\u2019t feel like that\u2019s a good, that\u2019s a programming language. Lex Fridman: Although modern HTML has a lot of features. ThePrimeagen: It\u2019s crazy how much it has, but it\u2019s more of a specification than anything else. I specify it to be a pop-up. I specify it to have this kind of accessibility, this kind of look. Under these conditions look like this, transform like this, move down here.\n\n\n## Bash\n\nLex Fridman: I don\u2019t know. I kind of like these popular programming languages in this list. I like JavaScript. ThePrimeagen: You like Bash? Lex Fridman: Oh, yeah. I like Bash a lot. Yeah. Why? ThePrimeagen: Okay. Bash is kind of one of those ones where it\u2019s like, do you really like it? I like it up until I need an array.",
+          "score": 0.7408992488384247,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6984274983406067
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7089557797908783,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.695651113986969
+        },
+        {
+          "chunk_id": 59132,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 16,
+          "text": "Let\u2019s go. Thank you Dillon Mulroy [inaudible 00:13:08]\n\nLex Fridman: Okay, wow. ThePrimeagen: Yeah. Lex Fridman: I did not expect that. That escalated quickly. Anyway, what do you identify as? ThePrimeagen: Okay, so first let\u2019s do the previous or the in-between question first, which is the different archetypes. I think that\u2019s a really interesting question, because if you go on Twitter or you\u2019re new, your thoughts are probably that there is just web programming, and maybe there\u2019s some other stuff, yeah, like game programming, but you\u2019d be like, game programming in JavaScript and on the web. There\u2019s this very myopic view of the programming world, and I bet if you ask a lot of people these days what is the most popular form of programming, they\u2019d probably say web. If you said what contains the most amount of repos, how many percentage of repos on GitHub are web-based, they probably say 90% or some huge number. But the reality is that there\u2019s an entire embedded robotics world.",
+          "score": 0.6766753120422363,
+          "source": "embedding",
+          "quality_score": 0.64,
+          "original_score": 0.6923933029174805
+        },
+        {
+          "chunk_id": 59131,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 15,
+          "text": "ThePrimeagen: I\u2019m more than just good looks. I want you to know that. Lex Fridman: It\u2019s a low bar. What do you identify as? I\u2019m enjoying asking the general question. ThePrimeagen: 38, male. Lex Fridman: Male. ThePrimeagen: Husband of beautiful wife.\n\n\n## Types of programming\n\nLex Fridman: Okay. You stream about all kinds of programming, but what kind of programmer are you? Are you full-stack developer, web programming? And maybe can you lay out all the different kinds of programming and then place yourself in that, in terms of your identity. Sexual identity as well. ThePrimeagen: Yeah, we can put it all in there. Lex Fridman: Okay. ThePrimeagen: Plus, obviously those two are very, very tightly coupled. Lex Fridman: I have seen you on the border of sexually aroused by certain languages. I think you got real excited about OCaml, or\u2026\n\nThePrimeagen: OCaml. Let\u2019s go. Thank you Dillon Mulroy [inaudible 00:13:08]\n\nLex Fridman: Okay, wow. ThePrimeagen: Yeah. Lex Fridman: I did not expect that.",
+          "score": 0.6360830249786377,
+          "source": "embedding",
+          "quality_score": 0.48,
+          "original_score": 0.7029757499694824
+        },
+        {
+          "chunk_id": 59136,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 20,
+          "text": "I know what you want. Let\u2019s figure it out together.\u201d\n\nLex Fridman: Actually that gives you a really nice big-picture view of programming in general. So I love the idea of just starting at the interface, like you need to pinch and all that kind of stuff, and then figure out the entire thing that requires to make that happen, including maybe the side quest tooling, how to make it more productive and efficient, all that kind of stuff. So the entirety of the thing. That\u2019s really cool. ThePrimeagen: Yeah. Lex Fridman: Okay, so that would be full stack? By that general definition of full stack, meaning\u2026\n\nThePrimeagen: Perhaps, yeah. Lex Fridman: Versus systems starting at the bottom and trying to optimize a certain kind of specific thing without seeing the big picture of what the resulting interface would look like. ThePrimeagen: Yeah. Lex Fridman: And a lot of people in web programming, they never go beyond the front end of how a thing looks.",
+          "score": 0.6334753217697143,
+          "source": "embedding",
+          "quality_score": 0.48,
+          "original_score": 0.6992504596710205
+        }
+      ],
+      "judge_feedback": "1. All chunks are relevant and contain useful information.\n2. The chunks provide good insight into ThePrimeagen's definition of a programming language (functional capabilities like loops, if statements, functions), his broad perspective on programming beyond web development, and his appreciation for languages like Rust and OCaml. This helps establish his desired characteristics and purpose from a general software engineering standpoint.\n3. The agent should now search for similar information regarding Charles Hoskinson's and Tim Sweeney's views on programming languages, explicitly linking their professional focuses to their perspectives on language purpose and characteristics.",
+      "timestamp": 52.54763126373291
+    }
+  ],
+  "final_answer": "The provided context does not contain information about Tim Sweeney's views on the primary purpose and desired characteristics of programming languages. Charles Hoskinson, focused on blockchain infrastructure for Cardano, emphasizes languages like Haskell for their academic rigor, correctness, and ability to translate formal specifications into code, also noting Rust and Go as replacements for C/C++. ThePrimeagen, a general software engineer and full-stack developer, defines a programming language by its ability to implement functions, if statements, and loops, and advocates for learning by building, while acknowledging a broad range of programming beyond just web development.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    192,
+    461
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 88.69440388679504
+}

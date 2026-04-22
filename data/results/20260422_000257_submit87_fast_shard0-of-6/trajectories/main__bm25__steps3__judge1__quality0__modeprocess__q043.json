@@ -1,0 +1,215 @@
+{
+  "question": "How do Ben Goertzel's direct efforts in developing embodied Artificial General Intelligence for robotics, such as with Sophia and the 'embodied communication prior,' contrast with Sara Walker and Lee Cronin's Assembly Theory on the emergence of complex systems, and Sebastian Raschka and Nathan Lambert's focus on large language models, in shaping our understanding of advanced artificial systems?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel embodied AGI robotics Sophia embodied communication prior",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 11.556933403015137,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8722,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 7.329241752624512,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8745,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 170,
+          "text": "We've had them chatting to each other for a number of weeks on the server just... That's funny. We're generating training data of what Sophia says in a wide variety of conversations. But we can see, compared to Sophia's current chat bot, the Facebook deep neural chat bot comes up with a wider variety of fluent sounding sentences. On the other hand, it rambles like mad. The Sophia chat bot, it's a little more repetitive in the sentence structures it uses. On the other hand, it's able to keep like a conversation arc over a much longer, longer period, right? So there... Now, you can probably surmount that using Reformer and like using various other deep neural architectures to improve the way these Transformer models are trained. But in the end, neither one of them really understands what's going on. I mean, that's the challenge I had with Sophia is if I were doing a robotics project aimed at AGI, I would wanna make like a robo toddler that was just learning about what it was seeing.",
+          "score": 7.179080486297607,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8746,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 171,
+          "text": "Because then the language is grounded in the experience of the robot. But what Sophia needs to do to be Sophia is talk about sports or the weather or robotics or the conference she's talking at. She needs to be fluent talking about any damn thing in the world. And she doesn't have grounding for all those things. So there's this, just like, I mean, Google Mina and Facebook's chat, but I don't have grounding for what they're talking about either. So in a way, the need to speak fluently about things where there's no nonlinguistic grounding pushes what you can do for Sophia in the short term a bit away from AGI. I mean, it pushes you towards IBM Watson situation where you basically have to do heuristic and hard code stuff and rule based stuff. I have to ask you about this, okay. So because in part Sophia is like an art creation because it's beautiful. She's beautiful because she inspires through our human nature of anthropomorphize things. We immediately see an intelligent being there.",
+          "score": 7.145312309265137,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 48877,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 77,
+          "text": "Ben Shapiro: Sure. Destiny: You hear that, right? Ben Shapiro: Sure. Destiny: The deposition of Saddam Hussein and everything that followed after probably contributed more to the growth of ISIS and the destabilization of that entire region probably more than anything else. I think that prior to Bush for Clinton and even at the beginning of Bush\u2019s presidency, we were on some kind of road to normalcy with Iran, which I think has to happen whether we liked them or not until Bush, for whatever reason, decides to throw Iran into the Axis of Evil. Ben Shapiro: You emphasized that we\u2019re on a road to normalcy with Iran in the 1990s. Destiny: We do in the\u2026 wait, what? Ben Shapiro: That we are on a road to normalcy with Iran in the 1990s. Destiny: My understanding is that, yeah, from the late \u201990s and prior to the Axis of Evil labeling of Iran, that there was going to be some path forward to where we could start to normalize relationships with them.",
+          "score": 6.760765552520752,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 5 is completely irrelevant and should be ignored. Chunks 1-4 provide useful context on Ben Goertzel's work with Sophia and his views on embodied AGI, particularly the concept of language grounded in robot experience, though the specific term \"embodied communication prior\" isn't explicitly defined.\n\nTo fill the gaps, the agent needs to search for information on Sara Walker and Lee Cronin's Assembly Theory, and Sebastian Raschka and Nathan Lambert's focus on large language models. Then, the agent should look for information that directly contrasts these different approaches.",
+      "timestamp": 1.7402734756469727
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Sara Walker Lee Cronin Assembly Theory emergence complex systems",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 52945,
+          "episode_id": 433,
+          "guest": "Sara Walker",
+          "chunk_index": 16,
+          "text": "I don\u2019t think that\u2019s good either. I think there\u2019s a confusion because life emerges in chemistry that life is chemical. I don\u2019t think life is chemical. I think life emerges in chemistry because chemistry is the first thing the universe builds where it cannot exhaust all the possibilities, because the combinatorial space of chemistry is too large. Lex Fridman: Well, but is it possible to have a life that is not a chemical system? Sara Walker: Yes. Lex Fridman: Well, there\u2019s a guy I know named Lee Cronin who\u2019s been on a podcast a couple of times who just got really pissed off listening to this. Sara Walker: I know. What a coincidence. Lex Fridman: He probably just got really pissed off hearing that. For people who somehow don\u2019t know, he\u2019s a chemist. Sara Walker: Yeah, but he would agree with that statement. Lex Fridman: Would he? I don\u2019t think he would. He would broaden the definition of chemistry until it\u2019ll include everything. Sara Walker: Oh, sure. Lex Fridman: Okay.",
+          "score": 12.505727767944336,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53006,
+          "episode_id": 433,
+          "guest": "Sara Walker",
+          "chunk_index": 77,
+          "text": "And we just kind of don\u2019t really think about it. Sara Walker: Right. Lex Fridman: We think about the final product. Sara Walker: Yeah. Lex Fridman: Maybe the key to understanding the organism is understanding that process, not the final product. Sara Walker: Probably, yes. I think most of the things about understanding anything about what we are embedded in time. Lex Fridman: Well, of course you would say that. Sara Walker: I know. So predictable. It\u2019s turning into a deterministic universe. Lex Fridman: It always has been. Always was like the meme. Sara Walker: Yeah, always was, but it won\u2019t be in the future. Lex Fridman: Well, before we talk about the future, let\u2019s talk about the past. The assembly theory.\n\n\n## Assembly theory\n\nSara Walker: Yes. Lex Fridman: Can you explain assembly theory to me? I listened to Lee talk about it for many hours, and I understood nothing. No, I\u2019m just kidding.",
+          "score": 11.38412094116211,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53040,
+          "episode_id": 433,
+          "guest": "Sara Walker",
+          "chunk_index": 111,
+          "text": "That explains why we have not seen aliens. And you\u2019re saying that there\u2019s something like that in the temporal history of the creation of complex objects, that at a certain point they become an island, an island too far to reach based on the perceptions? Sara Walker: I hope not, but yeah, I worry about it. Yeah. Lex Fridman: But that\u2019s basically meaning there\u2019s something fundamental about the universe where if the more complex you become, the harder it will be to perceive other complex creatures. Sara Walker: I mean, just think about us with microbial life. We used to once be cells. And for most of human history, we didn\u2019t even recognize cellular life was there until we built a new technology, microscopes, that allowed us to see them. It\u2019s weird. Things that we-\n\nLex Fridman: And they\u2019re close to us. Sara Walker: They\u2019re close, they\u2019re everywhere. Lex Fridman: But also in the history of the development of complex objects, they\u2019re pretty close. Sara Walker: Yeah, super close.",
+          "score": 10.966135025024414,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 47789,
+          "episode_id": 404,
+          "guest": "Lee Cronin",
+          "chunk_index": 129,
+          "text": "Lee Cronin: Impossible. Impossible. So here\u2019s why. I\u2019ll make a really quick argument and this argument isn\u2019t mine. It\u2019s Nick\u2019s and a few other people. Lex Fridman: Can you explain his view on time being fundamental? Lee Cronin: Yeah. So I\u2019ll give my view, which resonates with his, but basically it\u2019s very simple actually. It would say your ability to design and do an experiment is exercising free will. So he used that thought process. I never really thought about it that way, and that you actively make decisions. I used to think that free will was a consequence of just selection but I\u2019m understanding that human free will is something really interesting. And he very much inspired me. But I think that what Sara Walker said that inspired me as well, these will converge, is that I think that the universe, and the universe is very big, huge, but actually the place that is largest in the universe right now, the largest place in the universe, is earth.",
+          "score": 10.960152626037598,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 47702,
+          "episode_id": 404,
+          "guest": "Lee Cronin",
+          "chunk_index": 42,
+          "text": "Lee Cronin: Yeah, that was so interesting. I always understood the copy number is really important, but I never explained it properly, for ages. And I kept having this, it goes back to this, if I give you a, I don\u2019t know, a really complicated molecule, and I say it\u2019s complicated, you could say, \u201cHey, that\u2019s really complicated.\u201d But is it just really random? Lex Fridman: Mm-hmm. Lee Cronin: So I realized that ultimate randomness and ultimate complexity are indistinguishable until you can see a structure in the randomness, so you can see copies. Lex Fridman: So copies implies structure. Lee Cronin: Yeah. The factory-\n\nLex Fridman: I mean, there\u2019s a deep profound thing in there. Because if you just have a random process, you\u2019re going to get a lot of complex, beautiful, sophisticated things. Lee Cronin: Mm-hmm. Lex Fridman: What makes them complex in the way we think life is complex or, yeah, something like a factory that\u2019s operating under a selection processes, there should be copies.",
+          "score": 10.357376098632812,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "1.  No chunks are clearly irrelevant. All chunks discuss Sara Walker, Lee Cronin, or concepts related to the emergence of complex systems and Assembly Theory.\n2.  The chunks contain useful information, particularly Chunk 2 which sets up an explanation of Assembly Theory, and Chunk 5 which introduces the concept of \"copies\" as central to complexity, a key idea in Assembly Theory.\n3.  The current chunks provide context and some core ideas, but a more direct and concise explanation of Assembly Theory itself, including how it quantifies complexity (e.g., assembly index), is still needed. The next search should aim for a clearer definition and mechanism of Assembly Theory.",
+      "timestamp": 9.194861650466919
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Assembly Theory definition complexity assembly index",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 42033,
+          "episode_id": 311,
+          "guest": "Magatte Wade",
+          "chunk_index": 41,
+          "text": "Right? So, and we are so badly in need of that. And so that's what all the things that have been stolen from us as long as things remain the same. So Lex, once I found out that basically at the end of the day the answer is economic freedom. And that when it comes to that, the indexes, economic indexes that measure that, whether it's the doing business index ranking of the World Bank, or the Fraser Economic Freedom Index of the Heritage Foundation. When you look at all of those indexes and others, what do they have in common? One after another they show you that it is harder to do business in almost anywhere in Sub Saharan Africa than it is per se anywhere in Scandinavia. So it is telling you that Scandinavian nations, that socialist Americans tend to love so much and take as an example, although there too they're showing you that they don't understand what's going on really in Scandinavia, that Scandinavia is more capitalist.",
+          "score": 4.483774185180664,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 35624,
+          "episode_id": 272,
+          "guest": "Brett Johnson",
+          "chunk_index": 63,
+          "text": "They shut that down. The next database I had access to was the Texas Driver's License database, and started using that to create fake driver's licenses, what have you. And then finally, we happened upon the California Death Index, all right? Complete information, mother's maiden, socials, DOBs, all that, and it's like, gotta be a use for that. Well, you can use it to create identities all day long. My idea was, I wonder if you could take somebody that's died and then file for social security death benefit, not death benefits, but social security benefits for that individual, and get that recurring paycheck in. So that takes a lot of research to start seeing if you can do that. How does the federal government know if you're dead? Do federal indexes reference state indexes? You got all these questions that pop up. Well, it turns out, federal indexes don't reference state indexes, it's against the law.",
+          "score": 4.455416679382324,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36871,
+          "episode_id": 279,
+          "guest": "Alien Debate",
+          "chunk_index": 37,
+          "text": "But to me, it feels like we don't have any of the tools to see the signal. No, we don't know what we're doing, yeah, I agree. That's the biggest, like to hear. We don't have the tools to really hear, to see. Yeah. Aliens are everywhere. We just don't have the, yeah, well, oh, that's. I mean, I got this in part, actually, because you were like, you know, last time I was here, he was like, look at the carpet. You know, if you had an alien detector where the carpet be aliens. I mean, I think we really don't. I think it would be. But the aliens would nevertheless have a high assembly index or produce things of high assembly index. And those things of high assembly index, you have to have a detector that can recognize high assembly index in all its forms. Yeah. Yes. That's it, that's it. Take data, construct assembly space. Yeah. Those patterns, basically. So one way to think about high assembly index is interesting patterns of basic ingredients.",
+          "score": 4.35219669342041,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 17856,
+          "episode_id": 163,
+          "guest": "Eric Weinstein",
+          "chunk_index": 80,
+          "text": "That's as good of a diversity statement as I've ever heard. This is a U turn, but somebody commented on the tweet you sent that as one of the top comments, they definitely have to ask you about cryptocurrency. So it's a U turn, but not really. Since you're an economist, since you're deep, not an economist. I mean, I pretend to be an economist, hoping that the economists will take issue that I'm not an economist so that I can advance gauge theoretic and field theoretic economics, which the economics profession has failed to acknowledge was a major innovation that happened approximately 25 years ago. I don't think that economists understand what a price index is that measures inflation, nor do I think economists understand what a growth index or a product, a quantity index is that measures GDP. I think that they don't even understand the basics of price and quantity index construction. And therefore they can't possibly review field theoretic economics.",
+          "score": 4.285151481628418,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 10078,
+          "episode_id": 115,
+          "guest": "Dileep George",
+          "chunk_index": 62,
+          "text": "How do you now say that, okay, I experienced this thing. Now I want to be careful about similar situations. So you need to be able to index that similarity using your other giants that is the model of the world that you have learned. Although the situation came from the episode, you need to be able to index the other one. So the episodic memory being implemented as an indexing over the other model that you're building. So the memories remain and they're indexed into the statistical thing that you form. Yeah, statistical causal structural model that you built over time. So it's basically the idea is that the hippocampus is just storing or sequencing a set of pointers that happens over time. And then whenever you want to reconstitute that memory and evaluate the different aspects of it, whether it was good, bad, do I need to encounter the situation again? You need the cortex to reinstantiate, to replay that memory. So how do you find that memory?",
+          "score": 4.205215930938721,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1, 2, 4, and 5 are irrelevant and should be ignored as they discuss various types of \"indexes\" unrelated to complexity or Assembly Theory. Chunk 3 is highly relevant as it directly mentions and provides a conceptual definition of \"assembly index\" in the context of detecting complex patterns.\n\nTo further build on this, the agent should search for \"Assembly Theory Sara Walker Lee Cronin definition\" to get a more formal explanation of the theory and its connection to the named researchers.",
+      "timestamp": 18.913994789123535
+    }
+  ],
+  "final_answer": "Ben Goertzel's work focuses on the direct development of embodied Artificial General Intelligence, exemplified by Sophia the robot, aiming to ground language in robotic experience for general intelligence and computational compassion. In contrast, Sara Walker and Lee Cronin's Assembly Theory provides a theoretical framework for understanding the emergence of complex systems, identifying complexity through concepts like \"copy number\" and \"assembly index.\" The provided context does not contain information about Sebastian Raschka and Nathan Lambert's focus on large language models.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    163,
+    103,
+    272,
+    433,
+    115,
+    404,
+    311,
+    410,
+    279
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 29.114986181259155
+}

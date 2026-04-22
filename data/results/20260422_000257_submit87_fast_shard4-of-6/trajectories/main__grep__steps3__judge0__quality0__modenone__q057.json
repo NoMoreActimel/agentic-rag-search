@@ -1,0 +1,88 @@
+{
+  "question": "Initially, discussions around US export controls on semiconductors, such as those involving Dylan Patel and Nathan Lambert, highlighted China's adaptive strategies like DeepSeek's efficient training and large GPU clusters. How did the perspective on the *ultimate effect* of these US controls on China's domestic technological capacity evolve in later discussions, particularly as articulated by Keyu Jin?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Keyu Jin US export controls China semiconductors",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63186,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 71,
+          "text": "Same thing with the US, right? So I think this is all the old thinking of who wins, who dominates. I think we need a new playbook.\n\n\n## CHIPS Act\n\nLex Fridman: So to you, maybe when you refer to Biden and Trump, if you go back to Biden, it would be the CHIPS Act. So the export controls created unintended, unexpected effect where it had the reverse geopolitical effect. Keyu Jin: I hope it was unintentional. Otherwise, you\u2019d be questioning the level of intelligence of the US administration. But I think that the things they laid out did the opposite of what was intended. It sped up domestic capacity. It motivated the whole country to do this whole of a nation program to go after technologies, kind of like the way they go after Olympics, Olympic gold medals. They wanted to maximize Olympic gold medals, and they put the whole nation at work and all the resources, and that\u2019s what China did. Huawei, another example, they were sanctioned. Guess what?",
+          "score": 0.8333333333333334,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58676,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 105,
+          "text": "Intel has made seven nanometer chips that are not profitable and things like this. So this is how it all feeds back into the economic engine of export controls.\n\n\n## Cold war with China\n\nLex Fridman: Well, so you\u2019re saying that for now, Xi Jinping has not felt the AGI, but it feels like the DeepSeek moment, there might be meetings going on now where he\u2019s going to start wearing the same t-shirt and things are going to escalate. Dylan Patel: I mean, he may have woken up last week. Liang Feng met the second command guy, and they had a meeting, and then the next day, they announced the AI subsidies, which are a trillion RMB. Lex Fridman: So it\u2019s possible that this DeepSeek moment is truly the beginning of a cold war. Nathan Lambert: That\u2019s what a lot of people are worried about. People in AI have been worried that this is going towards a cold war or already is.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63144,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 29,
+          "text": "It\u2019s all in the data. But the downside is that a lot of the capital is wasted. And this is what I also discussed in my book is that it is inefficient, although maybe it\u2019s necessary. The amount of waste of investment plowed into these companies that will ultimately just go under, but also the misallocation-\n\nKeyu Jin: \u2026 Ultimately, just go under, but also the misallocation of resources, because it\u2019s led by the state, are some of the downsides, but I guess on balance, it\u2019s been positive, because look at China\u2019s internal combustion engine effort. Nothing, right? Semiconductors. Thanks to Biden, thanks to Trump, it\u2019s improved dramatically, but all these things that they tried to do before, they couldn\u2019t do, but when it\u2019s a new thing, like something that there\u2019s no incumbent, no particular advantage in any country. Actually, China\u2019s really spearheading these sectors. Lex Fridman: Can we linger a little bit more on this mayor economy?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63169,
+          "episode_id": 477,
+          "guest": "Keyu Jin",
+          "chunk_index": 54,
+          "text": "What is important to understand about the whole situation? To what degree is it reflective of the issues entrepreneurs face in China? Keyu Jin: In the US, capital controls politics, one could argue. In China, it has to be the other way around. Capital must be reigned in by politics. As part of the capitalist class, do not have the ambition to exceed the powers of the political class, is really at the core of it, I\u2019d say, is the biggest difference between US and China. There are important details that I think the West has not fully provided to the public. For instance, and financial, as innovative as it was, was doing banking jobs without being regulated like a bank, right? So that, obviously, poses a host of financial stability questions and rules and regulations and so forth, so the fact that IPO was halted, you could say that there were strong, economic, regulatory grounds for that.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 34828,
+          "episode_id": 266,
+          "guest": "Nicole Perlroth",
+          "chunk_index": 49,
+          "text": "Uyghurs are their Petri dish, and eventually they will export that level of surveillance overseas. I mean, in 2015, Obama and Xi Jinping reached a deal where basically the White House said, you better cut it out on intellectual property theft. And so they made this agreement that they would not hack each other for commercial benefit. And for a period of about 18 months, we saw this huge drop off in Chinese cyber attacks on American companies. But some of them continued. Where did they continue? They continued on aviation companies, on hospitality companies like Marriott. Why? Because that was still considered fair game to China. It wasn't IP theft they were after. They wanted to know who was staying in this city at this time when Chinese citizens were staying there so they could cross match for counterintelligence who might be a likely Chinese spy. I'm sure we're doing some of that too. Counterintelligence is counterintelligence. It's considered fair game.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.588650703430176
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 15.815999269485474
+    }
+  ],
+  "final_answer": "Keyu Jin articulated that the US export controls on semiconductors had an unintended and opposite effect to what was intended. Instead of hindering China's technological progress, these controls inadvertently sped up China's domestic capacity development and motivated a nationwide effort to pursue advanced technologies, akin to a national drive for Olympic gold medals. She specifically noted that China's semiconductor efforts, which struggled previously, dramatically improved thanks to these US policies.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    266,
+    459,
+    477
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 15.816000938415527
+}

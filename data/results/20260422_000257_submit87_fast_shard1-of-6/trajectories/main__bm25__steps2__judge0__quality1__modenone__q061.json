@@ -1,0 +1,135 @@
+{
+  "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI OpenCog primary driver",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.5225122661590575,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 11.593382835388184
+        },
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 0.4698052520751953,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.334510803222656
+        },
+        {
+          "chunk_id": 8635,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 60,
+          "text": "No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code. And you can use SingularityNet as part of the infrastructure for a distributed OpenCog system, but there are different layers. Yeah, got it. So OpenCog on the one hand as a software framework could be used to implement a variety of different AI architectures and algorithms, but in practice, there's been a group of developers which I've been leading together with Linus Vepstas, Neil Geisweiler, and a few others, which have been using the OpenCog platform and infrastructure to implement certain ideas about how to make an AGI. So there's been a little bit of ambiguity about OpenCog, the software platform versus OpenCog, the AGI design, because in theory, you could use that software to do, you could use it to make a neural net. You could use it to make a lot of different AGI.",
+          "score": 0.4650352274576823,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.130081176757812
+        },
+        {
+          "chunk_id": 8717,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 142,
+          "text": "Then your body interacts even more loosely with the other people that you talk to. So you often have networks within networks within networks with progressively looser coupling as you get higher up in that hierarchy. I mean, you have that in biology, you have that in the internet as a just networking medium. And I think that's what we're gonna have in the network of software processes leading to AGI. That's a beautiful way to see the world. Again, the same similar question is with OpenCog. If somebody wanted to build an AI system and plug into the SingularityNet, what would you recommend? Yeah, so that's much easier. I mean, OpenCog is still a research system. So it takes some expertise to, and sometimes, we have tutorials, but it's somewhat cognitively labor intensive to get up to speed on OpenCog. And I mean, what's one of the things we hope to change with the true AGI OpenCog 2.0 version is just make the learning curve more similar to TensorFlow or Torch or something.",
+          "score": 0.44205161285400385,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.145069122314453
+        },
+        {
+          "chunk_id": 8632,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.4352747443517049,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 7.8546319007873535
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.036672353744507
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel AGI primary approach or architecture",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 49004,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 204,
+          "text": "We need to continue to mix up. And there\u2019s other things I wanted to talk about, but Lex is opening his mouth. Lex Fridman: Destiny, the uniter. Wow. Destiny: Like Biden. Not like Trump.\n\n\n## Monogamy vs open relationships\n\nLex Fridman: As we approach the end, let us descend into the meme further and further. Ben, you\u2019re in a monogamous marriage. And Destiny, you\u2019ve been mostly in an open marriage until recently. How foundational is marriage, monogamous marriage, to the United States of America? Can open marriages work? Are they harmful to society? Ben. Ben Shapiro: Marriages are the single most important thing that people can do in the United States because the things within your control are easier to control than the things outside your control.",
+          "score": 0.3722811018625895,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.154904365539551
+        },
+        {
+          "chunk_id": 46222,
+          "episode_id": 394,
+          "guest": "Neri Oxman",
+          "chunk_index": 112,
+          "text": "This is sort of a new form of emergence perhaps of novelty as you say, that exists by virtue of using old things to create new things. But it\u2019s not as if the AGI has self-awareness. Maybe. Maybe it has, but as far as I can tell, it\u2019s not as if AGI has approached consciousness or sentience just yet. It\u2019s probably getting there. But the language appears to present itself as if there is sentience there, but it doesn\u2019t. But I think that\u2019s the problem at the point where this AGI sounds like me and speaks like me and behaves like me and feels like me and breathes like me and my daughter knows the AGI to be me as sort of the end of everything is the end of human agency. But what is the end of human agency to humans I think is the beginning of agency to nature.",
+          "score": 0.3450979553858439,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.2756266593933105
+        },
+        {
+          "chunk_id": 23027,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 240,
+          "text": "Like I met Ben Gortzell. And Ben and I are gonna do an AGI project together. And of all places, Rwanda. And he gave me this 85 fucking page paper. He was wearing that damn hat that he always wears. I think he showers with the hat on. He never takes that thing off. I think he refused, I interviewed him and he refused to tell me the story of the hat. He wouldn't tell me either. I interviewed him as well in Wyoming. And every time I call him, he'll have his shirt off. He'll have the fucking hat on. And now all I can think about is the hat. I wonder what the story there is. I know, it's like, it's gotta be. That might be the AGI. Yeah, exactly. But anyway, he gives me this 80 page paper and he says, Charles, it's like the combination of everything. This is how we're gonna do AGI. And I said, that's crazy, Ben. I said, I'll throw some money at it. So we're gonna hire some developers. I have no idea where it's gonna go, but I mean, I get to hang out with Ben Corson. That's fun.",
+          "score": 0.34380069287618,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 6.505743980407715
+        },
+        {
+          "chunk_id": 9189,
+          "episode_id": 107,
+          "guest": "Peter Singer",
+          "chunk_index": 50,
+          "text": "Maybe if I could ask, I apologize, hopefully it's not a ridiculous question, but so as far as we know, we cannot communicate with animals through natural language, but we would be able to communicate with robots. So I'm returning to sort of a small parallel between perhaps animals and the future of AI. If we do create an AGI system or as we approach creating that AGI system, what kind of questions would you ask her to try to intuit whether there is consciousness or more importantly, whether there's capacity to suffer? I might ask the AGI what she was feeling or does she have feelings? And if she says yes, to describe those feelings, to describe what they were like, to see what the phenomenal account of consciousness is like. That's one question. I might also try to find out if the AGI has a sense of itself.",
+          "score": 0.34011816851298016,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.062207221984863
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.693776607513428
+    }
+  ],
+  "final_answer": "The provided context details Ben Goertzel's work with OpenCog and his perspective on Artificial General Intelligence (AGI), noting that while he believes there's much to learn from deep neural nets, he doesn't see current deep neural net architectures as the sole path to AGI. However, the retrieved information does not contain any discussions or analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026. Therefore, a comparison of their views on the primary driver or most promising path towards AGI cannot be made from the given text.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    192,
+    103,
+    394,
+    107,
+    410
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 9.03139066696167
+}

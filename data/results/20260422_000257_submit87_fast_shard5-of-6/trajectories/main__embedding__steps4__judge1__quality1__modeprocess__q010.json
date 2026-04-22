@@ -1,0 +1,205 @@
+{
+  "question": "During Michael Paulson's conversation about programming and software engineering, he mentions Dave Plummer. What iconic Windows operating system feature, which Michael Paulson likely references as one of Plummer's key contributions, did Dave Plummer create, and for which specific Windows operating system version was it originally developed?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Michael Paulson Dave Plummer Windows feature",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63266,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 38,
+          "text": "And so he came over after, I believe it was Prism and MICA were some projects at DEC West that got canceled. And so you had a whole team of guys where their project is canceled, and basically, they took a whole bunch of them and came to Microsoft. And I don\u2019t know the specifics of the deal, but they all showed up. So you had Dave Cutler and Mark Lucovsky and all these really smart guys from DEC, and they did basically a clean sheet, but they also had OS/2 as a starting point. But OS/2 was, of course, written in assembly language, and NT is going to be written in C. Dave Plummer: So to what extent they were able to leverage any of that, I don\u2019t actually know, but at least they had a system to start with.\n\n\n## The man behind Windows\n\nLex Fridman: You said that Dave Cutler\u2019s the man, the mind behind Windows. Can you explain? Dave Plummer: So Dave Cutler is the architect of the kernel. So he is Linus in the Linux world. It\u2019s Dave C. in the Windows world. Lex Fridman: Yeah. Dave C., okay.",
+          "score": 0.7563020355701446,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.6775743365287781
+        },
+        {
+          "chunk_id": 63309,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 81,
+          "text": "But it became ubiquitous in the entire PC industry, and pretty much everybody was using it. So when Windows came out, there was no way to open up a ZIP file, but everybody had been creating them for a decade, and so that really drove the desire to have the ZIP support right in Windows. Lex Fridman: Yeah, and that\u2019s another piece of software that\u2019s just kind of with us to this day. Dave Plummer: Mm-hmm. And it could be vastly improved, but, you know, it was written in the single-core days, so it doesn\u2019t do anything multi-threaded. And you\u2019ve got a 96-core 7995, well, it uses one of them to unzip your file. Lex Fridman: What other awesome things were you a part of at Microsoft? What other pieces of software? Dave Plummer: I worked on the initial prototypes of Windows Media Center. So we did\u2014\n\nLex Fridman: Nice. Dave Plummer: \u2026that in \u201996, I believe.",
+          "score": 0.7182113547325134,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6660162210464478
+        },
+        {
+          "chunk_id": 63333,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 105,
+          "text": "But there are three ways to sell something, I think, and you can use sex, fear, or greed. Sex doesn\u2019t work really well for software. Fear works well for antivirus and stuff, but not so much for optimization and make your computer faster utilities. Dave Plummer: And so I always tried to cater to the greed aspect. You know, make your computer faster, get more RAM available, whatever the value proposition is. But I realize now that I\u2019m looking at that with my knowledge, and as an autistic person, I now have an appreciation that other people are going to look at it with their background knowledge and may conclude something different. So I might be scaring people where I was just trying to incentivize or get their greed instinct going. So I\u2019d be more sensitive about that kind of thing today.\n\n\n## Best Windows version\n\nLex Fridman: Ridiculous question, but what do you think are the top three Windows operating systems? The different versions? Dave Plummer: I\u2019m a fan of Windows 2000 server.",
+          "score": 0.7180575628280639,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6657965183258057
+        },
+        {
+          "chunk_id": 63304,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 76,
+          "text": "Tell the story of that. Dave Plummer: So that was a piece of software that I wrote at home again, and what happened was, I was out with my wife, and I think it was a Sunday afternoon. We were driving around. This is 1993, and we\u2019re living in our apartment, and we\u2019re just seeing what the housing market is like out there. And there\u2019s a guy, he\u2019s got this beautiful three-bedroom house and a Corvette convertible, \u201993 red, torch red, parked in the driveway, and the house is for sale, and it\u2019s like 300K, I think. And there\u2019s no chance I\u2019m coming up with 300K at that point, or even the down payment on that. So I took the flyer, and I cut the picture of the house out, and I taped it to my monitor. And that was my incentive to just write something at night, because when I came home, I was doing two things. Dave Plummer: I was, one, expressing a creativity that I couldn\u2019t get out at work when I was just fixing bugs, and I was trying to make some extra money. And so I wrote a Shell extension.",
+          "score": 0.6762141206264496,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.674591600894928
+        },
+        {
+          "chunk_id": 63245,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 17,
+          "text": "Dave Plummer: Yeah, it\u2019s a big jump. So, I had gone back to school, and I think it was in my third year of university. I was working for the phone company for the summer as a summer job, and I\u2019m doing conversions of their UBNet to TCP/IP and modern networking, which really amounts to swapping cards but then figuring out why their config.sys doesn\u2019t allow Lotus to run anymore because it\u2019s got 10K less than it used to, and it\u2019s just a horrible time to be working in computers, but I was doing it. And at lunch, I\u2019m sitting in the food court with the old and the bored, and I\u2019m reading a book that I had bought called \u201cMicrosoft or Bill Gates and the Making of Microsoft Hard Drive,\u201d I think is the title. And it\u2019s a great book. Dave Plummer: It\u2019s just sort of a matter-of-fact history of how Microsoft came to be, what it\u2019s like, how it operates, what the people are like there.",
+          "score": 0.6699394860267639,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6656278371810913
+        }
+      ],
+      "judge_feedback": "1.  All chunks are relevant to Dave Plummer's work, but none are from a conversation *with Michael Paulson* about Dave Plummer. The question specifically asks what Michael Paulson *likely references*.\n2.  Chunk 4 is highly useful, as Dave Plummer mentions creating a \"Shell extension\" at home in 1993, which is a strong lead for an iconic feature like Task Manager. Chunk 2 also mentions Windows Media Center prototypes.\n3.  The agent should search for \"Michael Paulson mentions Dave Plummer\" or \"Michael Paulson on Dave Plummer's contributions\" to find the specific conversation where Paulson discusses Plummer. If that yields no results, then \"Michael Paulson Dave Plummer Task Manager\" could be a good follow-up, assuming the agent can infer the likely feature.",
+      "timestamp": 5.290740251541138
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Michael Paulson Dave Plummer discussion",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 63326,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 98,
+          "text": "Dave Plummer: I was like, \u201cHoly crap. How am I going to explain this to my wife? This is a bug, it\u2019s a mistake, it was my fault.\u201d And I looked at the sales and it had made like $38,000 worth of sales. And I was like, \u201cHoly cow. So all I have to do is scale that at some point,\u201d and basically did that for the next several years. And the reason we got in trouble was the AG came in and they had\u2026 well, I was blown away because they had like 12 court claims of action and 10 of them were outrageous, which to me as a person with autism, I couldn\u2019t get past. It\u2019s like, I know these 10 things are absolutely not true. Why are we even here talking about them? And then all they care are the two things that might be true. Dave Plummer: And the two things that might be true were that it was a 30-day trial version, and after your 30 days were up, it would then, if you continued to run it and not buy it or uninstall it, it would remind you once a day.",
+          "score": 0.7307468552589416,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6839240789413452
+        },
+        {
+          "chunk_id": 63241,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 13,
+          "text": "Lex Fridman: Oh, wow. Dave Plummer: And I realized, \u201cI don\u2019t want to do this for a whole life.\u201d I knew that, so\u2026\n\nLex Fridman: Okay. So you stand there frozen with splinters in your hand. Dave Plummer: And at some point, I have a revelation about my life that next time I\u2019m going to do it differently. And then how ludicrous that is hits me about three seconds later, right? And I think that was really the moment for me where I realized that I\u2019ve got to do something different. And so even though I was 21, I went and I talked to the principal of my local high school and I was like, \u201cCan you let me back in?\u201d And he\u2019s, \u201cNo, you\u2019re too old and we don\u2019t have room,\u201d was his main reason. And I said, \u201cWell, between now and then, somebody\u2019s going to drop out. So, you\u2019ll have room. So, let\u2019s assume you have room. Can I come back?\u201d And he was gracious and let me come back. And so I did the three or four classes that I needed. Lex Fridman: Yeah, just if you can linger on that, the slow dropping out.",
+          "score": 0.6839375586509704,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6599107980728149
+        },
+        {
+          "chunk_id": 63270,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 42,
+          "text": "The response that came back was an epic flame that I wish I would have saved, and I won\u2019t name the guy who wrote it. He knows who he is, but\u2026 \u2026 It was a work of art of angry flame mail, kind of like the ones you see Linus send every now and then about kernel stuff. So it\u2019s a very similar sentiment. Lex Fridman: Were there, like, kind of intellectual debates, like-\n\nDave Plummer: Oh yeah. Lex Fridman: \u2026 there\u2019s some, some heated stuff with the engineers? Dave Plummer: It was\u2026 Yeah, it got contentious. So you\u2019ve got intellects competing, and eventually, the technical merits for some people are secondary, and it\u2019s about besting the other person in that argument. And it\u2019s no longer productive at that point half the time, but there was a fair bit of that.",
+          "score": 0.6751219310760498,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6730313301086426
+        },
+        {
+          "chunk_id": 63354,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 126,
+          "text": "Dave Plummer: About 20 years ago, I had it restored, and it was a three-year process of craftsmen working on this car for thousands of hours. I go out to pick it up and I\u2019m inspecting the car and I\u2019m very impressed with the work, and I\u2019m saying, \u201cOh, this is nice and this is great,\u201d and everything else. Then I fly home and write the check and the car gets delivered. And then I realized probably 10 years later that I had a whole bunch of craftsmen that had worked on my car for three years, and I probably should have blown some smoke up their butts about what a great job they did, but I never did that because it\u2019s not what I wanted or needed in that moment. And I was completely oblivious to that.",
+          "score": 0.6703578867912292,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.6662255525588989
+        }
+      ],
+      "judge_feedback": "These chunks are irrelevant as they do not mention Michael Paulson or any specific Windows features created by Dave Plummer. The current search query failed to connect Michael Paulson to Dave Plummer's work.\n\nThe agent should search for discussions or interviews where Michael Paulson specifically mentions Dave Plummer and his contributions to Windows. A more targeted query like \"Michael Paulson Dave Plummer Windows feature\" or \"Michael Paulson on Dave Plummer's contributions\" would be beneficial.",
+      "timestamp": 19.921534538269043
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Michael Paulson Dave Plummer Task Manager",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63282,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 54,
+          "text": "And it gives you the ability to terminate and kill those ones. So it\u2019s an inspection and a fixing tool. Lex Fridman: Yeah, it lists all the processes. I mean, it\u2019s a legendary piece of software. It\u2019s crazy. You just take it for granted. It\u2019s like the Start menu, right? It\u2019s like genius. Dave Plummer: Well, I had the great fortune of working on a lot of things that people are familiar with. And Task Manager was one of those side projects that I started as something that I wanted for myself and eventually came in-house. So I started writing it at home and I got the basics up and running. I was using, I think it\u2019s HKey Current Performance or HKey Performance in the registry to get the stats because I didn\u2019t have access to the internal APIs because I was working from home and I don\u2019t call those if I\u2019m working from home.",
+          "score": 0.7414808292388916,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6992583274841309
+        },
+        {
+          "chunk_id": 63281,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 53,
+          "text": "And don\u2019t be afraid, because if it asserts, it\u2019s doing you a favor. I think some people are afraid. You know, it\u2019s like when you turn out of an intersection, and you think maybe there\u2019s somebody coming, and you don\u2019t look left. Or maybe I\u2019m one to do that. But it\u2019s like that. People don\u2019t assert because they\u2019re afraid they\u2019re going to fire. Well, no, you want to know.\n\n\n## Task Manager\n\nLex Fridman: You mentioned Task Manager. Obviously, we have to talk about this, the legendary program that you created, the Windows Task Manager. Tell me every detail of how you built it. What is Windows Task Manager? Dave Plummer: So Windows Task Manager is a way to go in and find out which apps on your system are using the computer, using the hardware, using the CPU, using the memory, and which ones might be using too much or locked up or going crazy. And it gives you the ability to terminate and kill those ones. So it\u2019s an inspection and a fixing tool. Lex Fridman: Yeah, it lists all the processes.",
+          "score": 0.7386070985794067,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.695152997970581
+        },
+        {
+          "chunk_id": 63286,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 58,
+          "text": "What are some interesting aspects of tracking down every process and how much CPU usage is in that process? Dave Plummer: One of the cooler things that I saw is\u2026 I don\u2019t want to say I invented Hamming code, but I kind of invented Hamming code without knowing Hamming code existed. So every column and every row in Task Manager has a bit on whether it\u2019s become dirty or not, and then I can look, basically the same way Hamming code looks in your X and Y columns, to find out which rows have changed, go through, and find out which ones actually need to be repainted. So Task Manager is super efficient and it works in concert with the ListView control, which provides that functionality to go through and repaint as little as an individual cell that changes from frame to frame. So it could paint very fast, it can resize very smoothly, and resizing was probably my biggest personal goal with that app.",
+          "score": 0.7377213139533996,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6938875913619995
+        },
+        {
+          "chunk_id": 63278,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 50,
+          "text": "But occasionally we would get this bug where people would still see it, and so I finally put my phone number in the assert, and I was like, \u201cIf you see this message, call DavePL at 425-836,\u201d my phone number. And finally, we did get a catch in the actual stress debugger that I was talking about earlier where it happened to somebody with a debugger connected. Dave Plummer: We were able to go through, and it was actually a kernel accounting issue, and it wasn\u2019t a Task Manager issue, so they just fixed it in the kernel once I was able to prove that it was in fact a kernel issue. And you\u2019d think we would then remove my phone number, but we just commented it out, so it\u2019s shipped, and it\u2019s in all the damn source code leaks for NT that are out there, so\u2026\n\nLex Fridman: That\u2019s awesome. Dave Plummer: \u2026that\u2019s how I find Task Manager code. I search for my phone number on Google, and it will reverse-find\u2026\n\nLex Fridman: Oh, yeah, that\u2019s fantastic. Dave Plummer: \u2026the NT source code.",
+          "score": 0.7307871599197387,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6839816570281982
+        },
+        {
+          "chunk_id": 63287,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 59,
+          "text": "So it could paint very fast, it can resize very smoothly, and resizing was probably my biggest personal goal with that app. Dave Plummer: So you can size it to any size and it still works and even if you have 32 CPUs, which wasn\u2019t possible in the day, it will draw, I think, only eight graphs and then it wraps but it still works today. So kind of proud of that. Lex Fridman: It is incredible. You\u2019ve gotten the chance to observe the evolution of Task Manager. In some ways, it really hasn\u2019t changed much. Maybe there are some prettier aspects to it that fit into whatever version of Windows it\u2019s in, but it\u2019s really basically the same thing. Dave Plummer: The functionality is very same. The reporting is more because they\u2019ve added GPU and thermals and things like that, which is really nice to have. And we didn\u2019t have that ability in the day, so\u2026\n\nLex Fridman: I mean, what can you say? Do you know about, like, was there any refactoring done or is it basically the same code?",
+          "score": 0.7300468225479126,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.6829240322113037
+        }
+      ],
+      "judge_feedback": "The chunks confirm Dave Plummer created the Windows Task Manager and describe its functionality. However, they do not mention Michael Paulson or the specific Windows operating system version for which Task Manager was originally developed.\n\nThe agent should search for \"Michael Paulson Dave Plummer Task Manager\" specifically within episodes featuring Michael Paulson to confirm his reference, and also search for \"Dave Plummer Task Manager original Windows version\" to find the specific OS.",
+      "timestamp": 201.71999406814575
+    },
+    {
+      "step_number": 4,
+      "tool_used": "embedding",
+      "query": "Michael Paulson on Dave Plummer Task Manager",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 207.63315534591675
+    }
+  ],
+  "final_answer": "Dave Plummer created the iconic Windows Task Manager. He started writing it at home as a side project, and it eventually became an in-house feature. The source code for Task Manager is associated with leaks for Windows NT, indicating it was originally developed for that operating system.",
+  "total_chunks_retrieved": 14,
+  "unique_episodes_found": [
+    479
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 210.43127155303955
+}

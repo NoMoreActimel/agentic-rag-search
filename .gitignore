@@ -30,3 +30,10 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local transfer archives / one-off exports
+agentic-rag-search-data-*.zip
+*.zip
+
+# Stale cancelled benchmark run (kept locally, not for git history)
+data/results/20260421_200613_tuned_parallel_v1/

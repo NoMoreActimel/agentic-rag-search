@@ -1,0 +1,187 @@
+{
+  "question": "Considering Ben Goertzel's discussions on Artificial General Intelligence (AGI) and his work with OpenCog, how has the perceived primary driver or most promising path towards achieving AGI evolved when compared to the later analysis by Sebastian Raschka and Nathan Lambert regarding the state of AI in 2026?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel AGI OpenCog primary driver path",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8634,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 0.7728940792083739,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7012772560119629
+        },
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 0.7556195039749145,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7194564342498779
+        },
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 0.7504177410602569,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7120253443717957
+        },
+        {
+          "chunk_id": 8636,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 61,
+          "text": "You could use it to make a lot of different AGI. What kind of stuff does the software platform provide, like in terms of utilities, tools, like what? Yeah, let me first tell about OpenCog as a software platform, and then I'll tell you the specific AGI R&D we've been building on top of it. So the core component of OpenCog as a software platform is what we call the atom space, which is a weighted labeled hypergraph. ATOM, atom space. Atom space, yeah, yeah, not atom, like Adam and Eve, although that would be cool too. Yeah, so you have a hypergraph, which is like, so a graph in this sense is a bunch of nodes with links between them. A hypergraph is like a graph, but links can go between more than two nodes. So you have a link between three nodes. And in fact, OpenCog's atom space would properly be called a metagraph because you can have links pointing to links, or you could have links pointing to whole subgraphs, right? So it's an extended hypergraph or a metagraph.",
+          "score": 0.7487361688613892,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7096230983734131
+        },
+        {
+          "chunk_id": 8633,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 58,
+          "text": "So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah. Yeah, maybe talk through the history of OpenCog and your thinking about these ideas. I would say OpenCog 2.0 is a term we're throwing around sort of tongue in cheek because the existing OpenCog system that we're working on now is not remotely close to what we'd consider a 1.0, right? I mean, it's an early... It's been around, what, 13 years or something, but it's still an early stage research system, right? And actually, we are going back to the beginning in terms of theory and implementation because we feel like that's the right thing to do, but I'm sure what we end up with is gonna have a huge amount in common with the current system. I mean, we all still like the general approach. So first of all, what is OpenCog?",
+          "score": 0.7464462299346923,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7063517570495605
+        }
+      ],
+      "judge_feedback": "Chunk 2 contains irrelevant ad content. The chunks provide good background on OpenCog's history and technical structure (atom space) but do not explicitly detail Ben Goertzel's perceived *primary driver* or *most promising path* for achieving AGI through OpenCog.\n\nTo fill this gap, the agent should search for Ben Goertzel's specific AGI methodology, theory, or core principles that underpin OpenCog's approach to achieving AGI. A separate search will be needed later for Sebastian Raschka and Nathan Lambert's analysis.",
+      "timestamp": 2.622098445892334
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Ben Goertzel OpenCog AGI methodology theory core principles",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 8632,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 57,
+          "text": "And I do think there's a lot to be learned from the recent successes with deep neural nets and deep reinforcement systems. I mean, people made these essentially trivial systems work much better than I thought they would. And there's a lot to be learned from that. And I wanna incorporate that knowledge appropriately in our OpenCog 2.0 system. On the other hand, I also think current deep neural net architectures as such will never get you anywhere near AGI. So I think you wanna avoid the pathology of throwing the baby out with the bathwater and like saying, well, these things are garbage because foolish journalists overblow them as being the path to AGI and a few researchers overblow them as well. There's a lot of interesting stuff to be learned there even though those are not the golden path. So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah.",
+          "score": 0.7663740475177765,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7348200678825378
+        },
+        {
+          "chunk_id": 8651,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 76,
+          "text": "So what to you is the most beautiful aspect of OpenCog? Just to you personally, some aspect that captivates your imagination from beauty or power? What fascinates me is finding a common representation that underlies abstract, declarative knowledge and sensory knowledge and movement knowledge and procedural knowledge and episodic knowledge, finding the right level of representation where all these types of knowledge are stored in a sort of universal and interconvertible yet practically manipulable way, right? So to me, that's the core, because once you've done that, then the different learning algorithms can help each other out.",
+          "score": 0.7355905265808105,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7337007522583008
+        },
+        {
+          "chunk_id": 8607,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 32,
+          "text": "Like what's your sense with OpenCog, with your work, but in general, I was logic based systems and expert systems. For me, always seemed to capture a deep element of intelligence that needs to be there. Like you said, it needs to learn, it needs to be automated somehow, but that seems to be missing from a lot of research currently. So what's your sense? I guess one way to ask this question, what's your sense of what kind of things will an AGI system need to have? Yeah, that's a very interesting topic that I've thought about for a long time. And I think there are many, many different approaches that can work for getting to human level AI. So I don't think there's like one golden algorithm, or one golden design that can work. And I mean, flying machines is the much worn analogy here, right? Like, I mean, you have airplanes, you have helicopters, you have balloons, you have stealth bombers that don't look like regular airplanes. You've got all blimps. Birds too.",
+          "score": 0.7186543269157408,
+          "source": "embedding",
+          "quality_score": 0.64,
+          "original_score": 0.7523633241653442
+        }
+      ],
+      "judge_feedback": "These chunks are highly relevant, providing Ben Goertzel's perspective on AGI drivers, including his nuanced view on deep learning and OpenCog's core methodology of unified knowledge representation. They establish his belief that there isn't one \"golden algorithm\" but rather a need for integrated approaches.\n\nTo answer the full question, the agent needs to find information on Sebastian Raschka and Nathan Lambert's analysis regarding the state of AI in 2026 and their views on the most promising paths or drivers for AGI.\n\n**Next search query:** `Sebastian Raschka Nathan Lambert \"state of AI 2026\" AGI \"most promising path\"`",
+      "timestamp": 17.833401441574097
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Sebastian Raschka Nathan Lambert \"state of AI 2026\" AGI \"most promising path\"",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65874,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 234,
+          "text": "I think it\u2019s just the same thing but way more sophisticated. Is there a threshold when we call it AGI? I think the real cool thing here is that we have foundation models that we can specialize. That\u2019s the breakthrough. Sebastian Raschka: Right now, I think we are not there yet because first, it\u2019s too expensive, but also ChatGPT doesn\u2019t just give away their model to customize it. I can imagine a business model where OpenAI says at some point, \u201cHey, Bank of America, for $100 million we will do your custom model.\u201d I think that will be the huge economic value add. The other thing though is, what is the differentiating factor? If everyone uses ChatGPT, they will all do the same thing. Everyone is moving in lockstep, but usually companies want to have a competitive advantage. I think there is no way around using some of their private data and experimenting with specialization. It\u2019s going to be interesting. Nathan Lambert: Given the pace of progress, it does feel like things are coming.",
+          "score": 0.7919938344955444,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7714197635650635
+        },
+        {
+          "chunk_id": 58655,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 84,
+          "text": "I read into this and I don\u2019t have enough background in physical sciences to gauge exactly how competent I am, and if AI can revolutionize biology. I am safe saying that AI is going to accelerate the progress of any computational science.\n\n\n## AGI timeline\n\nLex Fridman: So we\u2019re doing a depth-first search here on topics, taking tangent of a tangent, so let\u2019s continue on that depth-first search. You said that you\u2019re both feeling the AGI. What\u2019s your timeline? Dario is 2026 for the super powerful AI that\u2019s basically agentic to a degree where it\u2019s a real security threat, that level of AGI. What\u2019s your timeline? Nathan Lambert: I don\u2019t like to attribute specific abilities because predicting specific abilities and when is very hard. I think mostly if you\u2019re going to say that I\u2019m feeling the AGI is that I expect continued, rapid, surprising progress over the next few years.",
+          "score": 0.7855383296012878,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7621976137161255
+        },
+        {
+          "chunk_id": 65880,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 240,
+          "text": "So there\u2019s a lot of things coming. Sebastian Raschka: I used that feature before, and I always feel bad because it does that every day, and I rarely check it out. How much compute is burned on something I don\u2019t even look at, you know? Nathan Lambert: There\u2019s also a lot of idle compute in the world, so don\u2019t feel too bad. Lex Fridman: Okay. Do you think new ideas might be needed? Is it possible that the path to AGI\u2014whatever that is, however we define that\u2014to solve computer use more generally, to solve biology and chemistry and physics, sort of the Dario definition of AGI or powerful AI? Do you think it\u2019s possible that totally new ideas are needed? Non-LLM, non-RL ideas. What might they look like? We\u2019re now going into philosophy land a little bit. Nathan Lambert: For something like a singularity to happen, I would say yes. And the new ideas could be architectures or training algorithms, which are fundamental deep learning things. But they\u2019re, in that nature, pretty hard to predict.",
+          "score": 0.7610894412994385,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7701277732849121
+        },
+        {
+          "chunk_id": 65950,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 310,
+          "text": "Nathan Lambert: But it is something that is probably doable. It just will take longer than people want. And we have to go through that long period of hard, distraught AI discussions if we want to have the lasting benefits. Lex Fridman: Yeah. Through that process, I\u2019m especially excited that we get a chance to better understand ourselves at the individual level as humans and at the civilization level, and answer some of the big mysteries, like what is this whole consciousness thing going on here? It seems to be truly special. Like, there\u2019s a real miracle in our mind. And AI puts a mirror to ourselves and we get to answer some of the big questions about what is this whole thing going on here. Sebastian Raschka: Well, one thing about that is also what I do think makes us very different from AI and why I don\u2019t worry about AI taking over is, like you said, consciousness. We humans, we decide what we want to do. AI in its current implementation, I can\u2019t see it changing.",
+          "score": 0.7545750231742858,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7608214616775513
+        },
+        {
+          "chunk_id": 65640,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.7076462624073029,
+          "source": "embedding",
+          "quality_score": 0.52,
+          "original_score": 0.7880660891532898
+        }
+      ],
+      "judge_feedback": "Chunk 5 is introductory and does not contain direct information relevant to the question.\n\nChunks 1, 2, 3, and 4 provide useful context on Raschka and Lambert's views regarding the state of AI in 2026 and AGI, particularly Chunk 3 which discusses the need for \"new ideas\" beyond current deep learning for AGI. However, there is no information about Ben Goertzel's discussions on AGI or OpenCog.\n\nThe agent should search for Ben Goertzel's views on AGI, OpenCog, and his perspective on the most promising path to achieving AGI. A good next query would be: `\"Ben Goertzel\" AGI OpenCog \"most promising path\" \"primary driver\"`.",
+      "timestamp": 24.96636199951172
+    }
+  ],
+  "final_answer": "Ben Goertzel, through his work with OpenCog, emphasized a hybrid approach to AGI, focusing on a common knowledge representation using a weighted labeled hypergraph, and stated that current deep neural net architectures alone would never achieve AGI, though he acknowledged learning from their successes. In contrast, Sebastian Raschka and Nathan Lambert, discussing the state of AI in 2026, highlighted specialized foundation models as a significant breakthrough and a key driver of progress, suggesting that customizing these models with private data would be crucial for competitive advantage. While they also pondered if entirely new ideas beyond current LLM/RL paradigms might be needed for AGI, their immediate focus was on the evolution and specialization of existing powerful AI models.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    490,
+    459,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 38.336925983428955
+}

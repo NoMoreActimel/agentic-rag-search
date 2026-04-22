@@ -1,0 +1,86 @@
+{
+  "question": "Considering the discussion where Michael Paulson mentions Pieter Levels, what is Pieter Levels' preferred approach to funding his startups, as detailed in his own interview?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Pieter Levels funding startups interview",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54561,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 2,
+          "text": "This was an honor and a pleasure for me. This is the Lex Friedman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s Pieter Levels.\n\n\n## Startup philosophy\n\nLex Fridman: You\u2019ve launched a lot of companies and built a lot of products. As you say, most failed, but some succeeded. What\u2019s your philosophy behind building the startups that you did? Pieter Levels: I think my philosophy is very different than most people in startups, because most people in startups, they build a company and they raise money and they hire people and then they build a product and they find something that makes money. And I don\u2019t really raise money. I don\u2019t use VC funding, I do everything myself. I\u2019m a designer, I\u2019m the developer, I make everything, I make the logo. So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54559,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nPieter Levels: So I was trying to figure out how to do photorealistic AI photos, and it was \u2026 Stable Diffusion by itself is not doing that well. The faces look all mangled, and it doesn\u2019t have enough resolution or something to do that well. But I started seeing these base models, these fine-tuned models, and people would train on porn, and I would try them and they would be very photorealistic. They would have bodies that actually made sense, body anatomy. But if you look at the photorealistic models that people use now, there\u2019s still core of porn there, of naked people. So I need to prompt out, and everybody needs to do this with AI startups, with imaging, you need to prompt out the naked stuff. Lex Fridman: You have to keep reminding the model, \u201cYou need to put clothes on the thing.\u201d\n\nPieter Levels: Yeah. \u201cDon\u2019t put naked,\u201d because it\u2019s very risky. I have Google Vision that checks every photo before it\u2019s shown to the user to check for NSFW.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54560,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 1,
+          "text": "I have Google Vision that checks every photo before it\u2019s shown to the user to check for NSFW. Lex Fridman: Like a nipple detector? Oh, an NSFW detector. Pieter Levels: Because the journalist gets very angry. Lex Fridman: The following is a conversation with Pieter Levels, also known on X as levelsio. He is a self-taught developer and entrepreneur who designed, programed shipped and ran over 40 startups, many of which are hugely successful. In most cases, he did it all by himself while living the digital nomad life in over 40 countries and over 150 cities, programming on a laptop while chilling on a couch, using vanilla HTML, jQuery, PHP and SQLight. He builds and ships quickly, and improves on the fly, all in the open, documenting his work, both his successes and failures, with a raw honesty of a true indie hacker. Pieter is an inspiration to a huge number of developers and entrepreneurs who love creating cool things in the world that are hopefully useful for people.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54562,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 3,
+          "text": "So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works. I have an idea in my mind and I build it like a mini startup, and I launch it very quickly, within two weeks or something, of building it. And I check if there\u2019s demand and if people actually sign up and not just sign up, but if people actually pay money. They need to take out their credit cards, pay me money, and then I can see if the idea is validated. And most ideas don\u2019t work, as you say, most fail. Lex Fridman: So there\u2019s this rapid iterative phase where you just build a prototype that works, launch it, see if people like it, improving it really, really quickly to see if people like it a little bit more enough to pay and all that. That whole rapid process is how you think of-\n\nPieter Levels: Yeah. I think it\u2019s very rapid. If I compare it to, for example, Google or big tech companies, especially Google right now is struggling.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54566,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 7,
+          "text": "He breaks through one room and then he goes to the next room and he\u2019s just going in a circle around the house for the last 40 years. But so he\u2019s always doing construction in the house and it\u2019s his hobby. And he taught me, when I\u2019m depressed for something, he says, \u201cGet a big mountain of sand or something from construction, and just get a shovel and bring it to the other side and just do physical labor, do hard work, and do something, Set a goal, do something.\u201d And I did that with startups too. Lex Fridman: Yeah, construction is not about the destination, man. It\u2019s about the journey. Sometimes I wonder, people who are always remodeling their house, is it really about the remodeling or is it-\n\nPieter Levels: No, no. It\u2019s not. Lex Fridman: Is it about the project-\n\nPieter Levels: It\u2019s a journey. Lex Fridman: The puzzle of it. Pieter Levels: No, he doesn\u2019t care about the results.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 7.0814361572265625
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 12.619518756866455
+    }
+  ],
+  "final_answer": "Pieter Levels' preferred approach to funding his startups is to avoid raising money or using VC funding. Instead, he operates scrappily, doing everything himself, and focuses on building and launching products very quickly to see if there is demand. He validates ideas by checking if people are willing to pay for them, using customer payments as his primary funding mechanism.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    440
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 12.619520664215088
+}

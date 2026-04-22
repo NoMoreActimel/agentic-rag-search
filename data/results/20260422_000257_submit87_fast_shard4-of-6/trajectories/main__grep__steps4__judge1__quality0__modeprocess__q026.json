@@ -1,0 +1,229 @@
+{
+  "question": "Considering Robin Hanson's theoretical work on advanced civilizations, John Carmack's focus on building artificial general intelligence, and Elon Musk's vision for human-AI symbiosis through Neuralink, how do their perspectives diverge regarding the primary challenges or opportunities presented by artificial intelligence?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Robin Hanson AI challenges opportunities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1472,
+          "episode_id": 20,
+          "guest": "Oriol Vinyals",
+          "chunk_index": 113,
+          "text": "Out of this. So I think that as a domain, it still has a lot of opportunities, not only because of course we wanna learn with less experience, we would like to, I mean, if I learned to play Protoss, I can play Terran and learn it much quicker than Alpha Star can, right? So there are obvious interesting research challenges as well, but even as the raw performance goes, really the claim here can be we are at pro level or at high grandmaster level, but obviously the players also did not know what to expect, right? Their prior distribution was a bit off because they played this kind of new like alien brain as they like to say it, right? And that's what makes it exciting for them. But also I think if you look at the games closely, you see there were weaknesses in some points, maybe Alpha Star did not scout, or if it had invisible units going against at certain points, it wouldn't have known and it would have been bad.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2486,
+          "episode_id": 33,
+          "guest": "Keoki Jackson",
+          "chunk_index": 13,
+          "text": "And that was what led to what we call the pogo stick collection, right? Where basically a thing comes down, it's only there for seconds, does that collection, grabs the, essentially blows the regolith material into the collection hopper and off it goes. It doesn't really land almost. It's a very short landing. Wow, that's incredible. So what is, in those, we talked a little bit more about space, what's the role of the human in all of this? What are the challenges? What are the opportunities for humans as they pilot these vehicles in space? And for humans that may step foot on either the moon or Mars? Yeah, it's a great question because, you know, I just have been extolling the virtues of robotic and, you know, rovers, autonomous systems, and those absolutely have a role. I think the thing that we don't know how to replace today is the ability to adapt on the fly to new information. And I believe that will come, but we're not there yet. There's a ways to go.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3407,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 107,
+          "text": "But not several hundred years. No, I don't think it's several hundred years. I don't think it's several hundred years. But again, so much depends on how committed we are to investing and incentivizing this type of work. And it's sort of interesting. Like, I don't think it's obvious how incentivized we are. I think from a task perspective, if we see business opportunities to take this technique or that technique to solve that problem, I think that's the main driver for many of these things. From a general intelligence, it's kind of an interesting question. Are we really motivated to do that? And like, we just struggled ourselves right now to even define what it is. So it's hard to incentivize when we don't even know what it is we're incentivized to create. And if you said mimic a human intelligence, I just think there are so many challenges with the significance and meaning of that. That there's not a clear directive. There's no clear directive to do precisely that thing.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5776,
+          "episode_id": 73,
+          "guest": "Andrew Ng",
+          "chunk_index": 24,
+          "text": "AI is a general purpose technology and I think it will transform every industry our community has already transformed to a large extent the software internet sector most software internet companies outside the top right five or six or three or four already have reasonable machine learning capabilities or or getting there it's still room for improvement but when I look outside the software internet sector everything from manufacturing agriculture, healthcare logistics transportation there's so many opportunities that very few people are working on so I think the next wave of AI is for us to also transform all of those other industries there was a McKinsey study estimating 13 trillion dollars of global economic growth US GDP is 19 trillion dollars so 13 trillion is a big number or PwC estimates 16 trillion dollars so whatever number is is large but the interesting thing to me was a lot of that impact will be outside the software internet sector so we need more teams to work with these companies to help them adopt AI and I think this is one thing so make you know help drive global economic growth and make humanity more powerful and like you said the impact is there so what are the best industries the biggest industries where AI can help perhaps outside the software tech sector frankly I think it's all of them some of the ones I'm spending a lot of time on are manufacturing agriculture look into healthcare for example in manufacturing we do a lot of work in visual inspection where today there are people standing around using the eye human eye to check if you know this plastic part or the smartphone or this thing has a scratch or a dent or something in it we can use a camera to take a picture use a algorithm deep learning and other things to check if it's defective or not and thus help factories improve yield and improve quality and improve throughput it turns out the practical problems we run into are very different than the ones you might read about in in most research papers the data sets are really small so we face small data problems you know the factories keep on changing the environment so it works well on your test set but guess what something changes in the factory the lights go on or off recently there was a factory in which a bird threw through the factory and pooped on something and so that changed stuff and so increasing our algorithm makes robustness so all the changes happen in the factory I find that we run a lot of practical problems that are not as widely discussed in academia and it's really fun kind of being on the cutting edge solving these problems before maybe before many people are even aware that there is a problem there and that's such a fascinating space you're absolutely right but what is the first step that a company should take it's just scary leap into this new world of going from the human eye inspecting to digitizing that process having a camera having an algorithm what's the first step like what's the early journey that you recommend that you see these companies taking I published a document called the AI Transformation Playbook that's online and taught briefly in the AI for Everyone course on Coursera about the long term journey that companies should take but the first step is actually to start small I've seen a lot more companies fail by starting too big than by starting too small take even Google you know most people don't realize how hard it was and how controversial it was in the early days so when I started Google Brain it was controversial you know people thought deep learning near nest tried it didn't work why would you want to do deep learning so my first internal customer within Google was the Google speech team which is not the most lucrative project in Google not the most important it's not web search or advertising but by starting small my team helped the speech team build a more accurate speech recognition system and this caused their peers other teams to start to have more faith in deep learning my second internal customer was the Google Maps team where we used computer vision to read house numbers from basic street view images to more accurately locate houses within Google Maps so improve the quality of geodata and it was only after those two successes that I then started a more serious conversation with the Google Ads team and so there's a ripple effect that you showed that it works in these cases and then it just propagates through the entire company that this thing has a lot of value and use for us I think the early small scale projects it helps the teams gain faith but also helps the teams learn what these technologies do I still remember when our first GPU server it was a server under some guy's desk and you know and then that taught us early important lessons about how do you have multiple users share a set of GPUs which is really not obvious at the time but those early lessons were important we learned a lot from that first GPU server that later helped the teams think through how to scale it up to much larger deployments Are there concrete challenges that companies face that you see is important for them to solve?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 13148,
+          "episode_id": 133,
+          "guest": "Manolis Kellis",
+          "chunk_index": 59,
+          "text": "The reason why CRISPR is amazingly, awesomely revolutionary is because instead of having this team of engineers design a new set of proteins for every locus that you want to target, you just type it in your computer and you just synthesize an RNA guide. The beauty of CRISPR is not the cutting, it's not the fixing. All of that was there before. It's the guiding, and the only thing that changes is that it makes the guiding easier by sort of just typing in the RNA sequence, which then allows the system to sort of scan the DNA to find that. So the coding, the engineering of the cutter is easier in terms of SP. That's kind of similar to the story of deep learning versus old school machine learning. Some of the challenging parts are automated. But CRISPR is just one cutting technology, and then that's part of the challenges and exciting opportunities of the field is to design different cutting technologies.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant as none of them mention Robin Hanson, John Carmack, or Elon Musk. They discuss general AI challenges and opportunities, but not the specific perspectives of the individuals named in the question.\n\nThe agent needs to find content directly related to Robin Hanson's theoretical work on advanced civilizations and AI challenges/opportunities. A more targeted search for \"Robin Hanson AI theory\" or \"Robin Hanson advanced civilizations AI\" might be more effective. Subsequently, the agent will need to search for John Carmack's and Elon Musk's specific views.",
+      "timestamp": 3.6956279277801514
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Robin Hanson AI challenges opportunities advanced civilizations",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 1958,
+          "episode_id": 26,
+          "guest": "Sean Carroll",
+          "chunk_index": 22,
+          "text": "If you thought that there were other solar systems with planets around them, where maybe intelligent life didn't yet exist, but might someday, you wouldn't try to talk to it with radio waves, you would send a spacecraft out there and you would park it around there and it would be like, from our point of view, it'd be like 2001, where there was a monolith. Monolith. There could be an artifact, in fact, the other way works also, right? There could be artifacts in our solar system that have been put there by other technologically advanced civilizations and that's how we will eventually contact them. We just haven't explored the solar system well enough yet to find them. The reason why we don't think about that is because we're young and impatient, right? Like, it would take more than my lifetime to actually send something to another star system and wait for it and then come back.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3347,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 47,
+          "text": "It was a success. It was a success for our goal. Our goal was to build the most advanced open domain question answering system. We went back to the old problems that we used to try to solve, and we did dramatically better on all of them, as well as we beat Jeopardy. So we won at Jeopardy. So it was a success. It was, I worry that the community or the world would not understand it as a success because it came down to only one game. And I knew statistically speaking, this can be a huge technical success, and we could still lose that one game. And that's a whole nother theme of this, of the journey. But it was a success. It was not a success in natural language understanding, but that was not the goal. Yeah, that was, but I would argue, I understand what you're saying in terms of the science, but I would argue that the inspiration of it, right? The, not a success in terms of solving natural language understanding. There was a success of being an inspiration to future challenges.",
+          "score": 0.3333333333333333,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Ignore Chunk 1 and Chunk 2; both are irrelevant. They discuss advanced civilizations and AI success stories, but not in the context of Robin Hanson's specific theoretical work on AI challenges or opportunities.\n\nThe agent needs to find information directly linking Robin Hanson to AI challenges, opportunities, and advanced civilizations. Search specifically for \"Robin Hanson AI challenges opportunities\" or \"Robin Hanson AI risks advanced civilizations\" to get his perspective.",
+      "timestamp": 14.331124782562256
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Robin Hanson AI risks opportunities emulation",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 20928,
+          "episode_id": 181,
+          "guest": "Sergey Nazarov",
+          "chunk_index": 87,
+          "text": "And so they're confused when you tell them, I'm gonna make the world work this way because they think they're already in that world. But then things like Robinhood make it immediately, painfully clear that that's not how the world works so that the second real property of DeFi is control, which means that you control your assets, not a bank, not a broker, not a third party, you. You control your Bitcoins, you control your tokens in the finance protocol. If you don't like how something's going in that protocol, you can remove it, you can send it to another protocol, or you can use a feature of the protocol to do something it's supposed to do. And guess what? Nobody can just say, oops, that feature, that isn't so good for my friends over here. That feature is actually, we're just gonna pause that feature in the critical moment when you need it to execute your strategy, which is why you took all the risks to begin with.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 22562,
+          "episode_id": 191,
+          "guest": "Daniel Schmachtenberger",
+          "chunk_index": 56,
+          "text": "There's definitely game theoretic advantage to those who focus on the opportunities and don't focus on the risks or pretend there aren't risks because they get to market first. And then they externalize all of the costs through limited liability or whatever it is to the commons or wherever happen to have it. Other people are going to have to solve those, but now they have the power and capital associated. The person who looked at the risks and tried to do better design and go slower is probably not going to move into positions of as much power influences quickly. So this is one of the issues we have to deal with is some of the bad game theoretic dispositions in the system relative to its own stability. And the key aspect to that, sorry to interrupt, is the externalities generated. Yes. What flavors of catastrophic risk are we talking about here? What's your favorite flavor in terms of ice cream? So mine is coconut. Nobody seems to like coconut ice cream.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 36101,
+          "episode_id": 274,
+          "guest": "Karl Deisseroth",
+          "chunk_index": 113,
+          "text": "For now it's really, I just have this like very negative voice, but that voice seems to be very useful for productivity and so I channel it. I just put it on the table and let that voice like talk to me, but I'm very, I'm like monitoring that voice because looking at Robin Williams, you know, you get older, your brain changes or like you're, and then that voice can now all of a sudden grow, right? And then where you can't control as much, you have to be very careful with these kinds of things. You're very right about that. So my negativity, I have this, I never think I've done enough is sort of where my negativity comes from inside. I never think that I've met the potential of the moment. I haven't done, I haven't, you know, made the most of the opportunities that are available. Still early, I haven't, you know, progressed as far as I should. And exactly as you're saying, that works for a while.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 42894,
+          "episode_id": 315,
+          "guest": "Magnus Carlsen",
+          "chunk_index": 36,
+          "text": "Then I just froze. I just completely froze. Mentally? Yeah, mentally. What happened? I realized that all the thoughts of I might lose this. What have I done? Why did I take so many risks? I knew that I could have drawn at any moment. Just be patient. Don't give him these opportunities. What triggered that phase transition in your mind? No, it was just a position on the board. Realizing there was one particular move he played that I missed. And then I realized that this could potentially not go my way. So then I made another couple of mistakes and he, to his credit, once he realized he had the chance, he knew that this was his one chance. He had to take it. And so he did. And yeah, that's the worst I've ever felt after a chess game. I realized that I'm probably gonna lose my title against somebody who's not even close to my level. And I've done it because of my own stupidity, most of all. And that was really, really... At the time, I was all in my own head. That was hard to deal with.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54552,
+          "episode_id": 439,
+          "guest": "Craig Jones",
+          "chunk_index": 150,
+          "text": "Lex Fridman: Yeah. When I show the sport of Jiu-Jitsu, the most exciting stuff is whenever both people want to be wrestling, scrambling, wrestling, they both want to get on top. Craig Jones: Yeah, the scramble. Lex Fridman: That looks like fighting versus guard stuff. Craig Jones: I\u2019m a guy that totally agrees with you, but if I think the guy\u2019s a better wrestler, I\u2019ll concede. It\u2019s like that\u2019s the hard part. Lex Fridman: But then the whole crowd will then mock you ceaselessly, as they should for conceding. Craig Jones: That\u2019s what the million should be. We should have a tournament or a round-robin thing where it\u2019s like the million goes to the most exciting man, who took the most risks. Lex Fridman: I mean, in a way that\u2019s what\u2019s going to happen because this is quite open. So the benefit of being exciting is you\u2019re going to be glorified on social media and if you\u2019re going to be boring and stall, you\u2019re going to be endlessly sort of willified.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant and do not contain any information about Robin Hanson, AI, or the other individuals mentioned in the question. Please ignore all of them.\n\nThe search should focus on finding Robin Hanson's specific theoretical work on AI, especially regarding risks, opportunities, or his concept of \"emulation.\" A good next step would be to search for \"Robin Hanson AI theory\" or \"Robin Hanson whole brain emulation challenges.\"",
+      "timestamp": 20.826608657836914
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "Robin Hanson whole brain emulation AI challenges opportunities",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 5775,
+          "episode_id": 73,
+          "guest": "Andrew Ng",
+          "chunk_index": 23,
+          "text": "So if you flip over, that didn't work because the downward facing one couldn't synchronize if you're flipping quickly. Morgan Quigley was exploring this crazy, complicated configuration of specialized hardware like Google, Facebook, Baidu all these large sort of companies that already have huge teams of machine learning engineers you can also do with an industry sort of more research groups that kind of like Google Research, Google Brain then you can also do like we said a professor in academia and what else oh you can build your own company you can do a startup is there anything that stands out between those options or are they all beautiful different journeys that people should consider I think the thing that affects your experience more is less are you in this company versus that company or academia versus industry I think the thing that affects your experience most is who are the people you're interacting with in a daily basis so even if you look at some of the large companies the experience of individuals in different teams is very different and what matters most is not the logo above the door when you walk into the giant building every day what matters the most is who are the 10 people who are the 30 people you interact with every day so I actually tend to advise people if you get a job from a company ask who is your manager who are your peers who are you actually going to talk to we're all social creatures we tend to become more like the people around us and if you're working with great people you will learn faster or if you get admitted if you get a job at a great company or a great university maybe the logo you walk in is great but you're actually stuck on some team doing really work that doesn't excite you and then that's actually a really bad experience so this is true both for universities and for large companies for small companies you can kind of figure out who you'll be working with quite quickly and I tend to advise people if a company refuses to tell you who you will work with someone say oh join us the rotation system will figure it out I think that that's a worrying answer because it because it means you may not get sent to you may not actually get to a team with great peers and great people to work with it's actually a really profound advice that we kind of sometimes sweep we don't consider too rigorously or carefully the people around you are really often especially when you accomplish great things it seems the great things are accomplished because of the people around you so that's a it's not about the the where whether you learn this thing or that thing or like you said the logo that hangs up top it's the people that's a fascinating and it's such a hard search process of finding just like finding the right friends and somebody to get married with and that kind of thing it's a very hard search it's a people search problem yeah but I think when someone interviews you know at a university or the research lab or the large corporation it's good to insist on just asking who are the people who is my manager and if you refuse to tell me I'm gonna think well maybe that's because you don't have a good answer it may not be someone I like and if you don't particularly connect if something feels off with the people then don't stick to it you know that's a really important signal to consider yeah yeah and actually I actually in my standard class CS230 as well as an ACM talk I think I gave like a hour long talk on career advice including on the job search process and then some of these so you can find those videos online awesome and I'll point them I'll point people to them beautiful so the AI fund helps AI startups get off the ground or perhaps you can elaborate on all the fun things it's involved with what's your advice and how does one build a successful AI startup you know in Silicon Valley a lot of startup failures come from building other products that no one wanted so when you know cool technology but who's going to use it so I think I tend to be very outcome driven and customer obsessed ultimately we don't get to vote if we succeed or fail it's only the customer that they're the only one that gets a thumbs up or thumbs down vote in the long term in the short term you know there are various people that get various votes but in the long term that's what really matters so as you build the startup you have to constantly ask the question will the customer give a thumbs up on this I think so I think startups that are very customer focused customer obsessed deeply understand the customer and are oriented to serve the customer are more likely to succeed with the provisional I think all of us should only do things that we think create social good and moves the world forward so I personally don't want to build addictive digital products just to sell a lot of ads or you know there are things that could be lucrative that I won't do but if we can find ways to serve people in meaningful ways I think those can be great things to do either in the academic setting or in a corporate setting or a startup setting so can you give me the idea of why you started the AI fund I remember when I was leading the AI group at Baidu I had two jobs two parts of my job one was to build an AI engine to support the existing businesses and that was running just ran just performed by itself there was a second part of my job at the time which was to try to systematically initiate new lines of businesses using the company's AI capabilities so you know the self driving car team came out of my group the smart speaker team similar to what is Amazon Echo Alexa in the US but we actually announced it before Amazon did so Baidu wasn't following Amazon that came out of my group and I found that to be actually the most fun part of my job so what I wanted to do was to build AI fund as a startup studio to systematically create new startups from scratch with all the things we can now do with AI I think the ability to build new teams to go after this rich space of opportunities is a very important way to very important mechanism to get these projects done that I think will move the world forward so I've been fortunate to build a few teams that had a meaningful positive impact and I felt that we might be able to do this in a more systematic repeatable way so a startup studio is a relatively new concept there are maybe dozens of startup studios you know right now but I feel like all of us many teams are still trying to figure out how do you systematically build companies with a high success rate so I think even a lot of my you know venture capital friends are seem to be more and more building companies rather than investing in companies but I find a fascinating thing to do to figure out the mechanisms by which we could systematically build successful teams, successful businesses in areas that we find meaningful so a startup studio is something is a place and a mechanism for startups to go from zero to success to try to develop a blueprint it's actually a place for us to build startups from scratch so we often bring in founders and work with them or maybe even have existing ideas that we match founders with and then this launches you know hopefully into successful companies so how close are you to figuring out a way to automate the process of starting from scratch and building a successful AI startup yeah I think we've been constantly improving and iterating on our processes how we do that so things like you know how many customer calls do we need to make in order to get customer validation how do we make sure this technology can be built quite a lot of our businesses need cutting edge machine learning algorithms so you know kind of algorithms have developed in the last one or two years and even if it works in a research paper it turns out taking the production is really hard there are a lot of issues for making these things work in the real life that are not widely addressed in academia so how do we validate that this is actually doable how do you build a team get the specialized domain knowledge be it in education or health care whatever sector we're focusing on so I think we've actually getting we've been getting much better at giving the entrepreneurs a high success rate but I think we're still I think the whole world is still in the early phases of figuring this out but do you think there is some aspects of that process that are transferable from one startup to another to another to another yeah very much so you know starting from scratch you know starting a company to most entrepreneurs is a really lonely thing and I've seen so many entrepreneurs not know how to make certain decisions like when do you need to how do you do B2B sales right if you don't know that it's really hard or how do you market this efficiently other than you know buying ads which is really expensive are there more efficient tactics for that or for a machine learning project you know basic decisions can change the course of whether machine learning product works or not and so there are so many hundreds of decisions that entrepreneurs need to make and making a mistake and a couple key decisions can have a huge impact on the fate of the company so I think a startup studio provides a support structure that makes starting a company much less of a lonely experience and also when facing with these key decisions like trying to hire your first uh the VP of engineering what's a good selection criteria how do you solve should I hire this person or not by helping by having a ecosystem around the entrepreneurs the founders to help I think we help them at the key moments and hopefully significantly make them more enjoyable and then higher success rate so there's somebody to brainstorm with in these very difficult decision points and also to help them recognize what they may not even realize is a key decision point that's that's the first and probably the most important part yeah actually I can say one other thing um you know I think building companies is one thing but I feel like it's really important that we build companies that move the world forward for example within the AI Fund team there was once an idea for a new company that if it had succeeded would have resulted in people watching a lot more videos in a certain narrow vertical type of video um I looked at it the business case was fine the revenue case was fine but I looked and just said I don't want to do this like you know I don't actually just want to have a lot more people watch this type of video wasn't educational it's an educational baby and so and so I I I I code the idea on the basis that I didn't think it would actually help people so um whether building companies or working enterprises or doing personal projects I think um it's up to each of us to figure out what's the difference we want to make in the world With landing AI you help already established companies grow their AI and machine learning efforts how does a large company integrate machine learning into their efforts?",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 7697,
+          "episode_id": 93,
+          "guest": "Daphne Koller",
+          "chunk_index": 49,
+          "text": "Yeah, brain organoids. That's organoids. It's possibly the coolest thing I've ever seen. Is that not like the coolest thing? Yeah. And then I think on the horizon, we're starting to see things like connecting these organoids to each other so that you could actually start, and there's some really cool papers that start to do that where you can actually start to say, okay, can we do multi organ system stuff? There's many challenges to that. It's not easy by any stretch, but it might, I'm sure people will figure it out. And in three years or five years, there will be disease models that we could make for things that we can't make today. Yeah, and this conversation would seem almost outdated with the kind of scale that could be achieved in like three years. I hope so. That's the hope. That would be so cool. So you've cofounded Coursera with Andrew Ng and were part of the whole MOOC revolution.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 17845,
+          "episode_id": 163,
+          "guest": "Eric Weinstein",
+          "chunk_index": 69,
+          "text": "We can try to figure out where our real opportunities are. It feels like everybody with the ability to do something like that, and with the brains and experience and the resources, would rather sit in the current system and hope to figure out where they can flee to if the whole thing comes apart. Well, yeah, and maybe to push back in a little bit, I agree with you, but you know, it feels like some people are trying that. So for example, Google purchased DeepMind. DeepMind is a company that kind of represents a lot of radical ideas. They've become acceptable, actually. AGI, artificial general intelligence, used to be really radical of a thing to talk about. And DeepMind and OpenAI are two places which has made it more acceptable. I know you can now start to criticize, well, they're really, now that it's become acceptable, they're not taking the further step of being more and more radical. But you know, that wasn't an attempt by Google to say that let's try some wild stuff.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All three chunks are irrelevant. They discuss general AI industry trends, brain organoids, and the acceptance of AGI, but none mention Robin Hanson, John Carmack, or Elon Musk, nor do they address their specific perspectives on AI challenges or opportunities.\n\nThe previous search query for \"Robin Hanson whole brain emulation AI challenges opportunities\" failed to retrieve any relevant information. The agent should try a more direct search for Robin Hanson's views on AI, focusing on his theoretical work and whole brain emulation.\n\n**Next search query:** \"Robin Hanson AI challenges opportunities whole brain emulation\"",
+      "timestamp": 31.230602264404297
+    }
+  ],
+  "final_answer": "The provided text does not contain information about Robin Hanson's theoretical work on advanced civilizations, John Carmack's focus on building artificial general intelligence, or Elon Musk's vision for human-AI symbiosis through Neuralink. Therefore, it is not possible to describe how their perspectives diverge regarding the primary challenges or opportunities presented by artificial intelligence based on the given context.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    33,
+    163,
+    133,
+    73,
+    44,
+    274,
+    20,
+    181,
+    439,
+    26,
+    315,
+    93,
+    191
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 42.16359281539917
+}

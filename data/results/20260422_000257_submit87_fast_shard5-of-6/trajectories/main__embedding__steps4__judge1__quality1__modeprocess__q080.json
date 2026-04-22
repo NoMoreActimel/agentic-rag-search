@@ -1,0 +1,154 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "OpenCog programming languages Lex Fridman",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8634,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 59,
+          "text": "I mean, we all still like the general approach. So first of all, what is OpenCog? Sure, OpenCog is an open source software project that I launched together with several others in 2008 and probably the first code written toward that was written in 2001 or two or something that was developed as a proprietary code base within my AI company, Novamente LLC. Then we decided to open source it in 2008, cleaned up the code throughout some things and added some new things and... What language is it written in? It's C++. Primarily, there's a bunch of scheme as well, but most of it's C++. And it's separate from something we'll also talk about, the SingularityNet. So it was born as a non networked thing. Correct, correct. Well, there are many levels of networks involved here. No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code.",
+          "score": 0.8062373824119566,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7489105463027954
+        },
+        {
+          "chunk_id": 59317,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 201,
+          "text": "Everyone keeps telling me new C++ is great. It has every feature you\u2019ve ever wanted and all the features you don\u2019t want. Lex Fridman: Yeah, exactly. I mean there\u2019s smart pointers, there\u2019s dumb pointers, there\u2019s all kinds of pointers. There\u2019s no memory leaks. That\u2019s not an issue. ThePrimeagen: Foot guns, face guns, soft beds. There\u2019s everything in there. Lex Fridman: Unless you like memory leaks, it has that too if you want that kind of thing. It\u2019s great. ThePrimeagen: Okay. How about this one? Languages that I actually want to really learn, that at least sit in my curiosity bank. There\u2019s three languages, which is going to be Swift, Elixir, OCaml, and then I\u2019m going to throw Odin in there, just because Ginger Bill is great. But Elixir and OCaml, I don\u2019t have a strong functional language underneath my belt. That\u2019s something that I just genuinely lack. Lex Fridman: Yeah, I\u2019ve heard incredible things about Elixir, about Odin, about OCaml.",
+          "score": 0.7717399497032166,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7424856424331665
+        },
+        {
+          "chunk_id": 62616,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 372,
+          "text": "Lex Fridman: Go, Ruby, and JavaScript. Okay. Functional languages. DHH: Someone\u2019s talking about OCaml. Lex Fridman: They are always going to show up. It must be some kind of OCaml industrial complex or something like this, but they always say, \u201cMention OCaml.\u201d\n\nDHH: I love that there are people who love functional languages to that degree. Those people are not me. I don\u2019t care at all. I care about functional principles when they help me in these isolated cases where that\u2019s just better than everything else. But at heart, I\u2019m an object-oriented guy. That\u2019s just how I think about programs. That\u2019s how I like to think about programs. That\u2019s how I carve up a big problem space into the main language. Objects are my jam. Lex Fridman: Yeah, me too. So I program in Lisp a bunch for AI applications for basic\u2026 So, Othello, chess engines, that kind of stuff. And I did try OCaml just to force myself to program just a very basic Game of Life, a little simulation. Lisp is just parentheses everywhere.",
+          "score": 0.7671885271072387,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7359836101531982
+        },
+        {
+          "chunk_id": 59302,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 186,
+          "text": "So I think it\u2019s a super powerful way to learn. But yeah, you need to also write from scratch. ThePrimeagen: At some point you have to take off the training wheels, because I think what you\u2019re really spotting is the difference between reading and writing code. I can read a lot of languages very well. I can see what\u2019s happening. I can understand it, but I would not be very good at writing it. I can understand a lot of things about C++ and I can read it, but I\u2019m just not that because I just don\u2019t done it in so long. I can\u2019t remember where all the semicolons, and colons and you do public and private, and how should you do naming conventions? All those things kind of add all together, and then you\u2019re just like, oh, I\u2019m really bad at writing it, though I can read it. And so there\u2019s a skill gap chasm that exists between those two.\n\n\n## Best programming languages in 2025\n\nLex Fridman: All right. Well, let me talk about the various languages.",
+          "score": 0.7370152921676635,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7357361316680908
+        },
+        {
+          "chunk_id": 8650,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 75,
+          "text": "You can also have procedure like nodes and links as in say a combinatorial logic or Lambda calculus representing programs. So you can have nodes and links representing many different types of semantics, which means you could make a horrible ugly mess or you could make a system where these different types of knowledge all interpenetrate and synergize with each other beautifully, right? So the hypergraph can contain programs. Yeah, it can contain programs, although in the current version, it is a very inefficient way to guide the execution of programs, which is one thing that we are aiming to resolve with our rewrite of the system now. So what to you is the most beautiful aspect of OpenCog? Just to you personally, some aspect that captivates your imagination from beauty or power?",
+          "score": 0.7340903253555298,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7315576076507568
+        }
+      ],
+      "judge_feedback": "Chunk 1 is highly relevant and answers the first part of the question: OpenCog is primarily written in C++ and Scheme. Chunks 2, 3, 4, and 5 are off-topic as they discuss other programming languages or general OpenCog concepts, not its implementation languages.\n\nThe current chunks do not contain any information about LLMs or the specified guests. The agent should search for discussions with Sebastian Raschka and Nathan Lambert about LLMs.",
+      "timestamp": 2.4997525215148926
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Sebastian Raschka Nathan Lambert large language models LLMs named",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65678,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 38,
+          "text": "Did you actually name LLaMA? Nathan Lambert: No. Lex Fridman: I feel like \u2026\n\nNathan Lambert: RIP. Sebastian Raschka: This was not on purpose. Lex Fridman: RIP LLaMA. All right. Can you mention what are some interesting models that stand out? You mentioned Qwen 3 is obviously a standout. Sebastian Raschka: So I would say the year\u2019s almost book-ended by DeepSeek-V3 and DeepSeek R1. And then on the other hand, in December, DeepSeek-V3.2. Because what I like about those is they always have an interesting architecture tweak- \u2026 that others don\u2019t have. But otherwise, if you want to go with the familiar but really good performance, Qwen 3 and, like Nathan said, also gpt-oss. And I think with gpt-oss, what\u2019s interesting about it is it\u2019s kind of the first open-weight model that was really trained with tool use in mind, which I do think is a bit of a paradigm shift where the ecosystem was not quite ready for it.",
+          "score": 0.8138741559982299,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7598202228546143
+        },
+        {
+          "chunk_id": 65675,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 35,
+          "text": "Qwen might be the one\u2014\n\nNathan Lambert: Oh, yeah. Qwen was the obvious name I was gonna say. I was trying to get through\u2026 you can get at least 10 Chinese and at least 10 Western. I mean, OpenAI released their first open model\u2014\n\nSebastian Raschka: A long time ago. Nathan Lambert: \u2026since GPT-2. When I was writing about OpenAI\u2019s open model release, people were like, \u201cDon\u2019t forget about GPT-2,\u201d which I thought was really funny because it\u2019s just such a different time. But gpt-oss is actually a very strong model and does some things that the other models don\u2019t do very well. Selfishly, I\u2019ll promote a bunch of Western companies; both in the US and Europe have these fully open models. I work at the Allen Institute for AI where we\u2019ve been building OLMo, which releases data and code and all of this. And now we have actual competition for people that are trying to release everything so that other people can train these models.",
+          "score": 0.7975169081687927,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.779309868812561
+        },
+        {
+          "chunk_id": 65787,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 147,
+          "text": "And the beautiful thing is also you can self-verify. It\u2019s almost like RLVR. When you code these from scratch, you can take an existing model from the Hugging Face Transformers library. The Hugging Face Transformers library is great, but if you want to learn about LLMs, I think that\u2019s not the best place to start because the code is so complex. It has to fit so many use cases and some people use it in production. It has to be really sophisticated, so it\u2019s intertwined and hard; it\u2019s not linear to read. Nathan Lambert: It started as a fine-tuning library, and then it grew to be the standard representation of every model architecture and the way it is loaded. Hugging Face is the default place to get a model, and Transformers is the software that enables it\u2014 \u2014so people can easily load a model\u2014 \u2014and do something basic with it. Sebastian Raschka: And all frontier labs that have open-weight models have a Hugging Face Transformers version of it, from DeepSeek to gpt-oss.",
+          "score": 0.7840303678512572,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7600433826446533
+        },
+        {
+          "chunk_id": 65641,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 1,
+          "text": "First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch. I truly believe in the machine learning and computer science world, the best way to learn and understand something is to build it yourself from scratch. Nathan is the post-training lead at the Allen Institute for AI, and author of the definitive book on reinforcement learning from human feedback. Both of them have great X accounts, great Substacks. Sebastian has courses on YouTube, Nathan has a podcast. And everyone should absolutely follow all of those. This is the Lex Fridman podcast. Lex Fridman: To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, get feedback, and so on. And now, dear friends, here\u2019s Sebastian Raschka and Nathan Lambert.\n\n\n## China vs US: Who wins the AI race? Lex Fridman: So I think one useful lens to look at all this through is the so-called DeepSeek moment.",
+          "score": 0.7436400630474089,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7709143757820129
+        },
+        {
+          "chunk_id": 65640,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation all about the state of the art in artificial intelligence, including some of the exciting technical breakthroughs and developments in AI that happened over the past year, and some of the interesting things we think might happen this upcoming year. At times, it does get super technical, but we do try to make sure that it remains accessible to folks outside the field without ever dumbing it down. It is a great honor and pleasure to be able to do this kind of episode with two of my favorite people in the AI community, Sebastian Raschka and Nathan Lambert. They are both widely respected machine learning researchers and engineers who also happen to be great communicators, educators, writers, and X posters. Lex Fridman: Sebastian is the author of two books I highly recommend for beginners and experts alike. First is Build a Large Language Model from Scratch, and Build a Reasoning Model from Scratch.",
+          "score": 0.7139594075679779,
+          "source": "embedding",
+          "quality_score": 0.52,
+          "original_score": 0.7970848679542542
+        }
+      ],
+      "judge_feedback": "All chunks are relevant and contain useful information for the second part of the question regarding named LLMs. However, they contain no information about OpenCog, cognitive architectures, or programming languages.\n\nThe agent should search for \"OpenCog programming languages\" or \"cognitive architectures programming languages\" to address the first part of the question.",
+      "timestamp": 8.19166088104248
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 18.56259250640869
+    }
+  ],
+  "final_answer": "Based on discussions, OpenCog is primarily written in two programming languages: C++ and Scheme. When discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert, seven distinct large language models (LLMs) are referenced by name: LLaMA, Qwen (including Qwen 3), DeepSeek-V3, DeepSeek R1, DeepSeek-V3.2, gpt-oss, and OLMo.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    474,
+    490,
+    461,
+    103
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 18.562596559524536
+}

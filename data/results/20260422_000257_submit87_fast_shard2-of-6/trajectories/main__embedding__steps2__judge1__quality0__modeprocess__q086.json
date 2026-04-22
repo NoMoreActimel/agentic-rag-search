@@ -1,0 +1,146 @@
+{
+  "question": "What is the total count of distinct programming languages or core development technologies explicitly mentioned as being foundational to or primarily used by Travis Oliphant, John Carmack, and Pieter Levels in their programming careers, and which of these guests utilizes the most such technologies?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming languages or development technologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 27968,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 1,
+          "text": "To support this podcast, please check out our sponsors in the description. This is the Lex Friedman Podcast, and here is my conversation with Travis Oliphant. What was the first computer program you've ever written? Do you remember? Whoa, that's a good question. I think it was in fourth grade. Just a simple loop in BASIC. BASIC. BASIC, yeah, on an Atari 800, Atari 400, I think, or maybe it was an Atari 800. It was a part of a class, and we just were just BASIC loops to print things out. Did you use go to statements? Yes, yes, we used go to statements. I remember in the early days, that's when I first realized there's like principles to programming, when I was told that don't use go to statements. Those are bad software engineering principles, like it goes against what great, beautiful code is. I was like, oh, okay, there's rules to this game. I didn't see that until high school when I took an AP computer science course.",
+          "score": 0.7364799380302429,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27967,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.7247152328491211,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 32216,
+          "episode_id": 250,
+          "guest": "Peter Wang",
+          "chunk_index": 82,
+          "text": "Those bits are very cheap to fling across the oceans. So you mentioned Travis. We've been talking and we'll continue to talk about open source. Maybe you can comment. How did you meet Travis? Who is Travis Aliphant? What's your relationship been like through the years? Where did you work together? How did you meet? What's the present and the future look like? Yeah, so the first time I met Travis was at a SciFi conference in Pasadena. Do you remember the year? 2005. I was working at, again, at nthought, working on scientific computing consulting. And a couple of years later, he joined us at nthought, I think 2007. And he came in as the president. One of the founders of nthought was the CEO, Eric Jones. And we were all very excited that Travis was joining us and that was great fun. And so I worked with Travis on a number of consulting projects and we worked on some open source stuff. I mean, it was just a really, it was a good time there. And then... It was primarily Python related?",
+          "score": 0.7207512855529785,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 28174,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 207,
+          "text": "Build, don't destroy. Build, like so often the tendency is to not like something and wanna go attack it. Build something, build something to replace it. Yeah. Build up, attract people to your new thing. You'll be far better, right? You don't need to destroy something to build something else. So that's, I guess, generally. And then definitely like curiosity, follow your curiosity and let it, don't just follow the money. And all of that, like you said, is grounded in family, friendship, and ultimately love. Yes. Which is a great way to end it. Travis, you're one of the most impactful people in the engineering and the computer science in the human world. So I truly appreciate everything you've done. And I really appreciate that you would spend your valuable time with me. It was an honor. It was a real pleasure for me. I appreciate that. Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.6973240375518799,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 17280,
+          "episode_id": 160,
+          "guest": "Brendan Eich",
+          "chunk_index": 62,
+          "text": "Is there some number of languages, three to five programming languages that you would recommend people learn, or maybe a broader advice on how to get started in programming? Well, so you asked about machine learning, and JavaScript is a general purpose language, and it's a language that's not that great for doing matrix operations or doing parallel programming, I would say, without using some extensions or some libraries that have some magic in them. So if someone wanted to learn, there are amazing languages in sort of the APL family that are very useful for, I would say, linear algebra, which gets to a lot of the kernels in machine learning. And so APL had like J and then K and their K variants because the guy that did K is still going, and they're proprietary, but he's still innovating there. There are, you know, Python is used. So people talk about TensorFlow.js.",
+          "score": 0.666885495185852,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 5 is irrelevant as it discusses general programming languages with Brendan Eich, not Travis Oliphant's specific usage. The other chunks provide useful information about Travis Oliphant's foundational technologies, including BASIC, Python, NumPy, SciPy, and Anaconda/Conda.\n\nTo fill the gaps, the agent should now search for the programming languages or core development technologies used by John Carmack and Pieter Levels.",
+      "timestamp": 171.7308521270752
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "John Carmack programming languages or development technologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.7464357614517212,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7397676706314087,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60704,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 58,
+          "text": "Without good sleep, I would just become a zombie and wouldn\u2019t be nearly at my best. So I always needed to get sleep. But I didn\u2019t need anything else going on. The programming itself was so energizing and enthralling. So it was three and a half years of that during the project. Mostly spent programming. I would say probably 60 hours a week of programming, five hours a week of coordinating with other people and iterating and sitting down with them and looking at what\u2019s going on on screen and figuring out what they needed. Maybe five hours of business stuff. And there was a good division of labor then. Didn\u2019t have a big executive team, but it was basically myself running the techno and development part of the company and Mark Rein running the business part of it, doing deals and maxing out his credit card and going around the world bringing in sources of revenue to keep the company funded. Lex Fridman: What programming language are we talking about? C?",
+          "score": 0.7322674989700317,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.7315295934677124,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.7275029420852661,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 3 and Chunk 5 are irrelevant; Chunk 3 discusses Tim Sweeney, and Chunk 5 is an introduction without specific language mentions. Chunks 1, 2, and 4 provide useful information about John Carmack's use of Quake C, C, and potentially BASIC (implied by TRS 80).\n\nTo fill gaps, the agent should search for \"Travis Oliphant programming languages\" and \"Pieter Levels programming languages\" to gather information for the other two individuals.",
+      "timestamp": 190.8159384727478
+    }
+  ],
+  "final_answer": "For Travis Oliphant, the distinct programming languages or core development technologies mentioned are BASIC, Python, NumPy, SciPy, and Anaconda, totaling five. For John Carmack, the mentioned languages are BASIC, Quake C, and C, totaling three. Pieter Levels is not mentioned in the provided context, so a total count for all three guests cannot be determined, nor can it be determined which of the three utilizes the most technologies.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    224,
+    160,
+    467,
+    309,
+    250
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 218.00348734855652
+}

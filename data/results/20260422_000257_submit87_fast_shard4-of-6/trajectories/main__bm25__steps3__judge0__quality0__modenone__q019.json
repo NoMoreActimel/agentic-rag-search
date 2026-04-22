@@ -1,0 +1,152 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Dylan Patel Nathan Lambert Dario Amodei Anthropic AI safety strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58884,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 313,
+          "text": "Lex Fridman: Let\u2019s talk about the broad AI race. Who do you think wins? We talked about Google, Meta. Nathan Lambert: The default leader has been Google because of their infrastructure advantage. Lex Fridman: Well, in the news, OpenAI is the leader. Nathan Lambert: They\u2019re the leading in the narrative. Dylan Patel: They have the best model. Nathan Lambert: They have the best model that people can use and they\u2019re experts-Experts. Dylan Patel: And they have the most AI revenue. Nathan Lambert: Yeah. OpenAI is winning. Lex Fridman: So who\u2019s making money on AI right now? Is anyone making money? Dylan Patel: So accounting profit-wise, Microsoft is making money, but they\u2019re spending a lot of CapEx and that gets depreciated over years. Meta\u2019s making tons of money with recommendation systems, which is AI, but not with Llama, right? Llama\u2019s losing money for sure. I think Anthropic and OpenAI are obviously not making money otherwise they wouldn\u2019t be raising money.",
+          "score": 16.614704132080078,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58891,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 320,
+          "text": "So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are. Lex Fridman: But it\u2019s such a cutting edge. I mean-\n\nNathan Lambert: It depends on where you think AI capabilities are going. Lex Fridman: You have to keep winning. Dylan Patel: Yes. Lex Fridman: You have to keep winning as you climb, even if the AI capabilities are going super rapidly awesome into the direction of AGI, there\u2019s still a boost for X in terms of data, Google in terms of data, Meta in terms of data, in terms of other products and the money and there\u2019s just huge amounts of money. Dylan Patel: The whole idea is human data is kind of tapped out. We don\u2019t care. We all care about self-play, verifiable task. Nathan Lambert: Think about AWS. Lex Fridman: Yes, self-play, which is an RNG problem. Nathan Lambert: AWS does not make a lot of money on each individual machine.",
+          "score": 15.65267276763916,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58876,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 305,
+          "text": "Dylan Patel: Google Cloud is third. Yeah. Microsoft is the second biggest, but Amazon is the biggest, right? Lex Fridman: Yeah. Dylan Patel: And Microsoft deceptively sort of includes Microsoft Office 365 and things like that, some of these enterprise-wide licenses. So in reality, the gulf is even larger. Microsoft is still second though, right? Amazon is way bigger. Why? Because using AWS is better and easier. And in many cases, it\u2019s cheaper-\n\nNathan Lambert: It was first. Dylan Patel: And it\u2019s first. It was first. Lex Fridman: Yeah. But there\u2019s a lot of things that are first that lose the-\n\nNathan Lambert: Well, it\u2019s harder to switch than it is to-\n\nLex Fridman: Yeah, okay. Dylan Patel: AWS is-\n\nLex Fridman: Because there\u2019s large-\n\nNathan Lambert: There\u2019s big fees for switching too. Dylan Patel: AWS generates over 80% of Amazon\u2019s profit. I think over 90%. Lex Fridman: That\u2019s insane.",
+          "score": 15.647368431091309,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58803,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 232,
+          "text": "And then OpenAI has o1-pro, and what they did with o3, which is also very unique, is that they stacked search on top of chain of thought. And so chain of thought is one thing where it\u2019s one chain, it backtracks, goes back and forth, but how they solved the ARC-AGI challenge was not just the chain of thought, it was also sampling many times, i.e., running them in parallel and then selecting. Nathan Lambert: Is running in parallel actually search? Because I don\u2019t know if we have the full information on how o1-pro works. So, I don\u2019t have enough information-\n\nDylan Patel: Agreed. Nathan Lambert: \u2026 to confidently say that it is search. Dylan Patel: It is parallel samples. Nathan Lambert: Yeah. And then what. Dylan Patel: And then it selects something. Nathan Lambert: And we don\u2019t know what the selection function is.",
+          "score": 15.398194313049316,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58710,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 139,
+          "text": "And obviously there\u2019s butting of heads here, in the most simple terms. Lex Fridman: And that could take shape in all kinds of ways, including proxy wars. And now-\n\nNathan Lambert: Yeah, it seems like it\u2019s already happening. As much as I want there to be centuries of prolonged peace, it looks like further instability internationally is ahead. Dylan Patel: And the US\u2019 current task is, \u201cHey, if we control AI, if we\u2019re the leader in AI and AI significantly accelerates progress, then we can maintain the global hegemony position.\u201d And therefore-\n\nNathan Lambert: I hope that works. Dylan Patel: And as an American, like, okay, I guess that\u2019s going to lead to peace for us. Now obviously other people around the world get affected negatively.",
+          "score": 15.223135948181152,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.315735101699829
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Dario Amodei Anthropic AI safety strategy encourage other companies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 56881,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 42,
+          "text": "Lex Fridman: Are we going to get it before GTA 6 or no? Dario Amodei: Like Duke Nukem Forever? Lex Fridman: Duke Nukem. Right. Dario Amodei: What was that game? There was some game that was delayed 15 years. Lex Fridman: That\u2019s right. Dario Amodei: Was that Duke Nukem Forever? Lex Fridman: Yeah. And I think GTA is now just releasing trailers. Dario Amodei: It\u2019s only been three months since we released the first Sonnet. Lex Fridman: Yeah, it\u2019s the incredible pace of release. Dario Amodei: It just tells you about the pace, the expectations for when things are going to come out.\n\n\n## Claude 4.0\n\nLex Fridman: So what about 4.0? So how do you think, as these models get bigger and bigger, about versioning and also just versioning in general, why Sonnet 3.5 updated with the date? Why not Sonnet 3.6, which a lot of people are calling it? Dario Amodei: Naming is actually an interesting challenge here, right? Because I think a year ago, most of the model was pre-training.",
+          "score": 10.17207145690918,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56924,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 85,
+          "text": "Dario Amodei: It\u2019s like a thing as old, people scamming each other, it\u2019s this thing as old as time. And it\u2019s just every time, you got to deal with it. Lex Fridman: It\u2019s almost silly to say, but it\u2019s true, sort of bots and spam in general is a thing as it gets more and more intelligent-\n\nDario Amodei: Yeah, yeah. Lex Fridman: \u2026 it\u2019s harder and harder to fight it. Dario Amodei: Like I said, there are a lot of petty criminals in the world and it\u2019s like every new technology is a new way for petty criminals to do something stupid and malicious. Lex Fridman: Is there any ideas about sandboxing it? How difficult is the sandboxing task? Dario Amodei: Yeah, we sandbox during training. So for example, during training we didn\u2019t expose the model to the internet. I think that\u2019s probably a bad idea during training because the model can be changing its policy, it can be changing what it\u2019s doing and it\u2019s having an effect in the real world.",
+          "score": 9.96125316619873,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56964,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 125,
+          "text": "So I think RLHF unhobbles the models in some ways. And then there are other ways where that model hasn\u2019t yet been unhobbled and needs to unhobble. Lex Fridman: If you can say in terms of cost, is pre-training the most expensive thing? Or is post-training creep up to that? Dario Amodei: At the present moment, it is still the case that pre-training is the majority of the cost. I don\u2019t know what to expect in the future, but I could certainly anticipate a future where post-training is the majority of the cost. Lex Fridman: In that future you anticipate, would it be the humans or the AI that\u2019s the costly thing for the post-training? Dario Amodei: I don\u2019t think you can scale up humans enough to get high quality.",
+          "score": 9.89855670928955,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56865,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 26,
+          "text": "And in a way that takes away our competitive advantage, because it\u2019s like, \u201cOh, now others are doing it as well.\u201d But it\u2019s good for the broader system, and so we have to invent some new thing that we\u2019re doing that others aren\u2019t doing as well. And the hope is to basically bid up the importance of doing the right thing. And it\u2019s not about us in particular. It\u2019s not about having one particular good guy. Other companies can do this as well. If they join the race to do this, that\u2019s the best news ever. It\u2019s about shaping the incentives to point upward instead of shaping the incentives to point downward. Lex Fridman: And we should say this example of the field of mechanistic interpretability is just a rigorous non-hand wavy wave doing AI safety-\n\nDario Amodei: Yes. Lex Fridman: \u2026 or it\u2019s tending that way. Dario Amodei: Trying to.",
+          "score": 9.796944618225098,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 57008,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 169,
+          "text": "Dario Amodei: Yeah, yeah. Can we just one step at a time and can that add up to a lot of steps? Even though though we still need clinical trials, even though we still need laws, even though the FDA and other organizations will still not be perfect, can we just move everything in a positive direction and when you add up all those positive directions, do you get everything that was going to happen from here to 2100 instead happens from 2027 to 2032 or something?\n\n\n## Programming\n\nLex Fridman: Another way that I think the world might be changing with AI even today, but moving towards this future of the powerful super useful AI is programming. So how do you see the nature of programming because it\u2019s so intimate to the actual act of building AI. How do you see that changing for us humans? Dario Amodei: I think that\u2019s going to be one of the areas that changes fastest for two reasons. One, programming is a skill that\u2019s very close to the actual building of the AI.",
+          "score": 9.545138359069824,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 16.87351083755493
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 26.712769746780396
+    }
+  ],
+  "final_answer": "Dario Amodei's company, Anthropic, employs a strategy to \"bid up the importance of doing the right thing\" by openly pursuing AI safety measures, even if it temporarily diminishes their competitive advantage. The intended outcome is to encourage other companies to join this \"race to do this,\" thereby shaping incentives to prioritize safety across the industry rather than pointing them downward.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    459,
+    452
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 26.712772369384766
+}

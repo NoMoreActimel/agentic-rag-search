@@ -1,0 +1,277 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language views blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64134,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 189,
+          "text": "But it\u2019s a very low commission. Presently it\u2019s 5%. So we\u2019re not greedy here. We want people to succeed in building these tools for our users. We understand that mini apps bring us users. The more users we have, the more successful and relevant Telegram becomes. We need third-party developers. I think at this point, Telegram gives developers by far the most powerful tools to create.\n\n\n## TON\n\nLex Fridman: Plus there\u2019s a bot API. And I mean you have to tell me about the TON blockchain and the crypto ecosystem available through Telegram. So what is TON aka The Open Network blockchain? Pavel Durov: TON is a blockchain technology that we initially developed in 2018 and 2019, and we started to develop it because we needed a blockchain platform to be integrated deeply into Telegram because we believe in blockchain. We think it\u2019s one of the technologies that enable freedom.",
+          "score": 0.3826494887669881,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 4.313549518585205
+        },
+        {
+          "chunk_id": 22104,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 105,
+          "text": "So does that mean that the blockchain would be taking a position in this big mega political debate? So I think like for just those kinds of reasons, I would personally like prefer Ethereum itself to be more of this sort of pure platform that just analyzes transactions just mathematically using deterministic consensus rules. And then if you need the oracles, that can be layer twos. Like I think Ethereum like benefits from not trying to do everything at layer one and having this like very robust layer two ecosystem where you have all these projects doing interesting things. Yeah, focus on the basic technology avoid the politics. Gotcha. Let me ask a bit of a human question. Charles Hoskinson, someone you've worked with in the early days of Ethereum, there appears to my outsider view to have been a bit of a falling out. Is there positive inspiring human story to be told about why you two parted ways?",
+          "score": 0.38252194595336914,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.59379768371582
+        },
+        {
+          "chunk_id": 8705,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 130,
+          "text": "And the setup of those channels uses the Ethereum blockchain. Once the channels are set up, then data flows along those channels without having to be on the blockchain. All that goes on the blockchain is the fact that some data went along that channel. So you can do... So there's not a shared knowledge. Well, the identity of each agent is on the blockchain, on the Ethereum blockchain. If one agent rates the reputation of another agent, that goes on the blockchain. And agents can publish what APIs they will fulfill on the blockchain. But the actual data for AI and the results for AI is not on the blockchain. Do you think it could be? Do you think it should be? In some cases, it should be. In some cases, maybe it shouldn't be. But I mean, I think that... So I'll give you an example. Using Ethereum, you can't do it. Using now, there's more modern and faster blockchains where you could start to do that in some cases. Two years ago, that was less so. It's a very rapidly evolving ecosystem.",
+          "score": 0.3631876694361369,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.765185832977295
+        },
+        {
+          "chunk_id": 29723,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 208,
+          "text": "As we realized, people were using Wolfram Alpha as the oracle for smart contracts, so to speak. And so that got us interested in blockchains in general. And what was ended up happening is Wolfram Language is, with its symbolic representation of things, is really very good at representing things like blockchains. And so I think we now have, and we don't really know all the comparisons, but we now have a really nice environment within Wolfram Language for dealing with the sort of, for representing what happens in blockchains, for analyzing what happens in blockchains. We have a whole effort in blockchain analytics. And we've sort of published some samples of how that works. But it's because our technology stack, Wolfram Language and Mathematica, are very widely used in the quant finance world. There's a sort of immediate coevolution there of the quant finance kind of thing and blockchain analytics. So it's kind of the representation of blockchain in computational language.",
+          "score": 0.3593097213109334,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 4.598988056182861
+        },
+        {
+          "chunk_id": 23160,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 373,
+          "text": "Who knows? It's an undiscovered country. I just had the image of Charles Hoskinson alone on a bison farm trying to raise a woolly mammoth. Just start wearing a white suit and say welcome to Hoskinson's ranch. I'll have a cane with amber on it. Yeah, with a chalkboard that you keep scrambling on like the beautiful mind in the movie and you'll have voices. All the schizophrenia's already come. You guys are all figments of my imagination anyway. Now one of my goals though, I love catfish and they live a long time. They get really damn big if you see those guys. I'd love to catch one now and be in my 60s and catch the same fish twice and recognize it. Maybe I'll lift a scar or something. That'd be really cool, going back to the fish thing. Because both the fish has gone through a lot, I've gone through a lot. We can just be like old friends. Reminisce. Exactly, exactly. About a life well lived. Then I'll die of a heart attack and my mammoths will eat me.",
+          "score": 0.1384212064743042,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 4.646623134613037
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant to Charles Hoskinson's views on programming languages. They discuss other blockchain topics or unrelated anecdotes from Hoskinson.\n\nThe agent should search for Charles Hoskinson's specific views on programming languages, focusing on Cardano or Plutus. A good next query would be: \"Charles Hoskinson programming language views Cardano Plutus\".",
+      "timestamp": 9.829009294509888
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Charles Hoskinson programming language views Cardano Plutus",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22106,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 107,
+          "text": "I think such things are possible. I think people definitely absolutely have a right to, and I think should strive to just constantly change and reinvent themselves. Is there something you could say about your thoughts about the Cardano project that Charles Hoskinson leads? They've worked on some interesting ideas that mirror some of the ideas in Ethereum, proof of stake, working on smart contracts and all those kinds of things. Is there something, again, positive, inspiring that you could say? Are they a competitor? Is it complimentary technology? There's definitely interesting ideas in there. I do think Cardano takes a bit of a different approach than Ethereum in that they really emphasize having these big academic proofs for everything, whereas Ethereum tends to be more okay with heuristic arguments in part because it's just trying to do more faster. But there's definitely very interesting things that come out of IOHK research. Can you comment on that kind of idea?",
+          "score": 0.42506530952453614,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 7.417084693908691
+        },
+        {
+          "chunk_id": 22991,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 204,
+          "text": "But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it. So it's entirely possible to write a Scala to Plutus core compiler or TypeScript compiler or something like that. But I'm a big believer of separation of concerns and we don't live in a single chain model anymore. So you have a situation where you probably wanna have different execution environments and different chains. So you have different virtual machines there. And that's why we work so closely with the University of Illinois, Urbana Champaign, Kagori Roshu's team at runtime verification. What they did is they said, let's start with something very familiar, LLVM, which has been around for a really long time and they happened to have created it there with Apple. And let's take that and translate that into the blockchain space.",
+          "score": 0.3928084185918172,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.034646511077881
+        },
+        {
+          "chunk_id": 22990,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 203,
+          "text": "Any other language, I guess this is the key question I wanna ask. Any other language support other than Haskell? The example this person gives is TypeScript, Go, Java, Python, et cetera. Also, have you considered a yearly conference focused around developers? Ha ha, yeah, we saw the Plutus Fest. And we did the first one in 2018, 2019, I can't remember. And we were gonna do one last year, but then COVID hit. So we'll bring it back and we'll probably do it annually at the University of Wyoming for their hackathon there. In fact, it just so happens that coincides with the Goguen Summit. So we're doing that, I think the third week of September. But yeah, it's great to do an annual conference. You can bring a lot of cool people together and you can do hackathons and awards and so forth. But to the question in particular, Plutus is like any other language. Plutus core, you can compile things into it.",
+          "score": 0.3558578367233276,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.736764430999756
+        },
+        {
+          "chunk_id": 22787,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Charles Hoskinson, founder of Cardano, co founder of Ethereum, and a mathematician who is one of the most well read and knowledgeable people on the technical side of cryptocurrency that I've ever spoken to. Quick mention of our sponsors, Galila Games, Allform, Indeed, ExpressVPN, and Asleep. Check them out in the description to support this podcast. As a side note, let me say that Charles is not just a mathematician or cryptocurrency innovator, but also a Colorado based farmer of bison and mushrooms, a gamer, a fisherman, and a world traveler. When I asked him if he has a nice professional picture of himself, he sent me a picture of him in Mongolia with a hawk on his shoulder, meeting the Mongolian president. That to me pretty much says it all, speaking to the humor and the intelligence of a man who is bold, innovative, and does not shy away from a bit of fun and a bit of controversy, which makes him a fascinating human being to explore ideas with.",
+          "score": 0.34751842721303305,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 6.150789737701416
+        },
+        {
+          "chunk_id": 29690,
+          "episode_id": 234,
+          "guest": "Stephen Wolfram",
+          "chunk_index": 175,
+          "text": "You know, is it important that there's a bromine atom here, et cetera, et cetera, et cetera. This is all chemistry that I don't know much about. And, you know, that's a sort of, you know, unfortunately that's down at the level, you know, I would like to be at the software level, not at the level of the transistors, so to speak. But in chemistry, you know, there's a certain amount we have to do, I think, at the level of transistors before we get up to being able to do it. Although, you know, the automated labs certainly help in setting that up. I talked to a guy named Charles Hoskinson. He mentioned that he's collaborating with you. He's an interesting guy. He sends me papers on speaking of automated theorem proving a lot. He's exceptionally well read on that area as well. So what's the nature of your collaboration with him? He's the creator of Cardano.",
+          "score": 0.340426939646403,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 6.361154556274414
+        }
+      ],
+      "judge_feedback": "Chunk 4 is irrelevant biographical filler. Chunks 2, 3, and 5 provide useful insights into Charles Hoskinson's views, highlighting Plutus as a flexible compilation target and his emphasis on formal verification and academic rigor for blockchain languages.\n\nTo address the full question, the agent should now search for ThePrimeagen's views on programming languages, focusing on general software engineering contexts.",
+      "timestamp": 35.6019983291626
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen programming language views software engineering",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59499,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 383,
+          "text": "ThePrimeagen: Yeah. It\u2019s a really positive way to look at it and I think that\u2019s really nice. Lex Fridman: Well, we should always be skeptical. ThePrimeagen: Yeah, I mean because at the end of the day, companies, they\u2019re not good, they\u2019re not bad, they\u2019re morally neutral. It\u2019s the people that are running them, the decisions those people make that are really where the bad or the good comes from. Lex Fridman: Another question, ask him if he knows how to milk a cow? I\u2019ve already asked that. The answer is-\n\nThePrimeagen: No. Lex Fridman: Oh, no, you don\u2019t know. ThePrimeagen: I\u2019ve never milked a cow. Lex Fridman: Never milked a cow. ThePrimeagen: Almost been killed by a cow, but never milked a cow. Lex Fridman: Did you ever ride a bull? ThePrimeagen: No. Lex Fridman: All right. Why male models? ThePrimeagen: Okay, so I can explain that one. I will say something like, \u201cI really dislike the color purple because the color purple makes me upset.\u201d I don\u2019t know, just something very benign.",
+          "score": 0.307763845761617,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 4.447021961212158
+        },
+        {
+          "chunk_id": 59408,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 292,
+          "text": "ThePrimeagen: It feels great. The problem is whenever I get a back, I just slouch and I find myself just getting uncomfortable. And I\u2019m like, \u201cI\u2019m uncomfortable.\u201d My shoulders are getting goofed up. I\u2019m chicken necking constantly. It\u2019s just like-\n\nLex Fridman: But you\u2019re able to keep your posture for hours on the yoga ball? ThePrimeagen: Yeah. And so I can just do that. And then I find myself, if I slouch, I\u2019m like, \u201cOkay, Nope. Got to get back. Lex Fridman: Do you have incredible back muscles or what? ThePrimeagen: No. Well, I don\u2019t think it takes incredible back muscles to-\n\nLex Fridman: Keep posture. ThePrimeagen: \u2026 remain upright. Yeah, I think that\u2019s a pretty basic human function. I would not consider myself a strong person. Lex Fridman: Yeah. Basic human function. I don\u2019t know. ThePrimeagen: Facts and logic. Lex Fridman: Okay, cool. With one screen. Neovim. What operating system? ThePrimeagen: Linux, just because I want a good window manager.",
+          "score": 0.3055404748916626,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 4.351734638214111
+        },
+        {
+          "chunk_id": 59141,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 25,
+          "text": "And so when we say DevOps, I think people get very particular about terms specifically in this category. They\u2019re like, \u201cWell actually, you\u2019re mentioning infrastructure engineer versus site reliability engineer.\u201d It\u2019s just like, \u201cOkay, yes, I hear you,\u201d but generally when someone thinks DevOps, they think somebody that manages the servers and their life cycles and the reliability. There\u2019s DevOps. Is it real? I\u2019m not sure. Lex Fridman: Okay. ThePrimeagen: Did Vercel kill DevOps? Lex Fridman: Question mark? ThePrimeagen: Question mark. Lex Fridman: Yeah. Wow, you\u2019re almost a journalist. That\u2019s a headline. Let\u2019s go back to the beginning.\n\n\n## Life story\n\nThePrimeagen: All right. Lex Fridman: Baby Prime. So you mentioned Netflix. ThePrimeagen: Oh, I worked at Netflix by the way. Lex Fridman: For people who don\u2019t know who ThePrimeagen is, he mentions the fact that he has been very successful and has worked at Netflix in basically every other sentence. ThePrimeagen: Correct.",
+          "score": 0.30512873872121177,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 4.3340888023376465
+        },
+        {
+          "chunk_id": 59304,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 188,
+          "text": "And so I\u2019m not sure if Stack Overflow is a great place to get data. It could be a very biased set of data. Lex Fridman: Is it really only new people? ThePrimeagen: I mean that\u2019s who\u2019s using Stack Overflow. Lex Fridman: All right. Most popular technologies. On this\u2026\n\nThePrimeagen: JavaScript, HTML, Python, SQL. Lex Fridman: SQL is the more general kind of\u2026 I\u2019m sure they\u2019re not doing the individual sort of flavors of SQL. By the way, pronounce SQL versus SQL? ThePrimeagen: It\u2019s squeal. Lex Fridman: Squeal? You squeal? ThePrimeagen: Squeal, I think is the correct way. Lex Fridman: Squeal. ThePrimeagen: I did SQL because I didn\u2019t know the audience. I don\u2019t know if they can handle the truth, which is its squeal. Lex Fridman: The squeal of joy, squeal\u2026\n\nThePrimeagen: Squeal light, my squeal, Postgres squeal. Lex Fridman: By the way, I had a lot of joy from earlier saying pigfucker, for some reason. ThePrimeagen: It\u2019s such a [inaudible 02:31:36].",
+          "score": 0.29688595644632976,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 4.495112419128418
+        },
+        {
+          "chunk_id": 59131,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 15,
+          "text": "ThePrimeagen: I\u2019m more than just good looks. I want you to know that. Lex Fridman: It\u2019s a low bar. What do you identify as? I\u2019m enjoying asking the general question. ThePrimeagen: 38, male. Lex Fridman: Male. ThePrimeagen: Husband of beautiful wife.\n\n\n## Types of programming\n\nLex Fridman: Okay. You stream about all kinds of programming, but what kind of programmer are you? Are you full-stack developer, web programming? And maybe can you lay out all the different kinds of programming and then place yourself in that, in terms of your identity. Sexual identity as well. ThePrimeagen: Yeah, we can put it all in there. Lex Fridman: Okay. ThePrimeagen: Plus, obviously those two are very, very tightly coupled. Lex Fridman: I have seen you on the border of sexually aroused by certain languages. I think you got real excited about OCaml, or\u2026\n\nThePrimeagen: OCaml. Let\u2019s go. Thank you Dillon Mulroy [inaudible 00:13:08]\n\nLex Fridman: Okay, wow. ThePrimeagen: Yeah. Lex Fridman: I did not expect that.",
+          "score": 0.24739511235555012,
+          "source": "bm25",
+          "quality_score": 0.48,
+          "original_score": 4.431219100952148
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, and 3 are largely irrelevant, focusing on personal anecdotes, posture, and definitions of DevOps rather than programming language views. Chunk 4 mentions popular languages but doesn't delve into his opinions on their purpose or characteristics. Chunk 5 is the most relevant, as it directly asks about \"types of programming\" and mentions his excitement for OCaml, hinting at his preferences, but lacks detail on his specific views.\n\nThe chunks contain very little useful information regarding ThePrimeagen's views on the *purpose and desired characteristics* of programming languages.\n\nTo fill this gap, the agent should search for more direct discussions or statements from ThePrimeagen about his philosophy on programming languages, their design, or what makes a good language from a software engineering perspective. A good next query would be: \"ThePrimeagen programming language philosophy design principles\" or \"ThePrimeagen ideal programming language characteristics\".",
+      "timestamp": 56.2126202583313
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen programming language design principles characteristics",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59310,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 194,
+          "text": "Lex Fridman: Okay, so JavaScript. I\u2019ll say Python. ThePrimeagen: Python\u2019s a great one too. You can get quite far with it, but you can\u2019t write the front end. What happened if you love the front end? What happened if you really just want to design things and you just didn\u2019t know that? Lex Fridman: Well, it\u2019s okay. So for that, JavaScript. ThePrimeagen: But Python\u2019s a good choice because you can\u2019t do the ML stuff in JavaScript nearly as easy.\n\n\n## HTML & CSS\n\nLex Fridman: Do we count HTML and CSS as programming languages? ThePrimeagen: I think there\u2019s some technical definition that it is. If you use this certain amalgamation of CSS plus HTML, it actually has, it can be a Turing complete language. But I mean for practical purposes, no. HTML is not a language.",
+          "score": 0.3755575564702352,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 5.295323848724365
+        },
+        {
+          "chunk_id": 59477,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 361,
+          "text": "ThePrimeagen: I would argue that people don\u2019t have a good grasp of what complex is in programming. Lex Fridman: Sure, yeah. ThePrimeagen: If you say, \u201cWrite me quicksort,\u201d some people will think quicksort\u2019s super complex. But I would argue that that\u2019s actually probably the simplest thing you could ask an AI to do. Things that are so well documented, it\u2019s going to do a great job at that. Lex Fridman: Yeah. Probably high-level design decisions, which people don\u2019t even use AI for right now, I guess agents are supposed to be doing that kind of stuff. That\u2019s probably the most difficult thing or the most impactful thing, or the most difficult thing is finding bugs. ThePrimeagen: Yeah. Lex Fridman: AI tools next year, writing code, and so on. ThePrimeagen: Now, this one, the ethics part. I\u2019m actually super curious your take on the ethics. Will we see Europe laying down some new regulations? Lex Fridman: Oh, boy. ThePrimeagen: What about artists?",
+          "score": 0.35091238530476887,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 5.524816513061523
+        },
+        {
+          "chunk_id": 59263,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 147,
+          "text": "Quick example, Netflix. Are you familiar with the dystopian, Black Mirror? Lex Fridman: Yeah. ThePrimeagen: Okay. Season one, episode one. Do you know season one, episode one? Everyone who watches Black Mirror typically knows this episode. Lex Fridman: Okay, yeah. I don\u2019t remember what it is. ThePrimeagen: Forgive my language, but they call it the pig-fucker episode. Lex Fridman: Oh yeah, of course. ThePrimeagen: Once you\u2019ve seen the episode, you will then know this episode. Well, when Netflix adopted it, I got pulled into a room, there\u2019s like a VP, a product designer, a VP, and they said, Hey, we\u2019re about to release our own version of Black Mirror, season three, I think at that time. We need episode one, season one to not be the first thing people see. So let\u2019s just reverse the season order. That required me\u2026 I had like 20 engineers I had to gather together to be able to have this happen.",
+          "score": 0.33809322230021155,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 4.975423812866211
+        },
+        {
+          "chunk_id": 59423,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 307,
+          "text": "Every developer loves coffee. Maybe we could figure out this coffee business.\u201d And so I had a good friend named Dax, THDXR. Dax, yeah, Dax. The most sassiest man alive. Lex Fridman: Sassiest? ThePrimeagen: Oh yeah, he has a lot of sass. Lex Fridman: Beard? ThePrimeagen: Yep, he has a beard. He does SST. He does a lot of stuff. Very, very talented. We\u2019ll call him DevOps engineer. He\u2019s more than that. But very talented guy. Him and another person named Adamdotdev, vegan, by the way, great guy. We take him to Korean barbecue all the time. He eats nothing. Lex Fridman: That\u2019s great. ThePrimeagen: And Liz, she has been super important to the terminal coffee company. I think without her, we would not have been able to do what we have done. And then also David Hill, designer, he does Laravel. He designs for Laravel. Very talented designer. And so we all came together. And we were just laughing about how could we do something that\u2019s just ridiculous? And that\u2019s what we came up with.",
+          "score": 0.33384525044759117,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 5.564796447753906
+        },
+        {
+          "chunk_id": 59421,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 305,
+          "text": "Okay, can I just origin, origin story you? Lex Fridman: Yeah, yeah. Yeah, right, I was going to do some kind of command line. Command to request or dash dash help or something or-\n\nThePrimeagen: Command coffee? Lex Fridman: Command coffee. ThePrimeagen: Okay. TJ and I, again, same Teej, Teej TV, about\u2026 By the way, very amazing designs done by David Hill. They\u2019re very, very good. Let me give the basic ideas. It must\u2019ve been about a year and a half ago, TJ and I were talking like, \u201cHey, every one of these people that have some sort of following, some sort of online presence, they\u2019re always selling a thing,\u201d but I got nothing to sell. I don\u2019t really want to do merch. I\u2019ve never really enjoyed doing merch. I just find that, I don\u2019t know, it\u2019s just not as much fun for me. Lex Fridman: Don\u2019t want to have a tequila? ThePrimeagen: I don\u2019t want a tequila. I want something that-\n\nLex Fridman: Like The Rock. ThePrimeagen: And I also want something that I really don\u2019t feel bad about selling.",
+          "score": 0.3114217809041341,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 5.118076324462891
+        }
+      ],
+      "judge_feedback": "Chunks 2, 3, 4, and 5 are irrelevant; they discuss AI ethics, Netflix anecdotes, and a coffee company, not programming language design. Chunk 1 offers some useful context on language suitability (Python for ML, JS for frontend) and the definition of a programming language.\n\nTo fill the gaps, the agent should search for ThePrimeagen's explicit opinions on what makes a good programming language, his preferred language features, or his general philosophy on language design.",
+      "timestamp": 86.33287692070007
+    }
+  ],
+  "final_answer": "Charles Hoskinson, focused on blockchain infrastructure, views programming languages in terms of their ability to compile into a core blockchain language like Plutus Core, and the need for diverse execution environments and virtual machines across different chains. ThePrimeagen, from a general software engineering and DevOps background, values practical, widely used languages such as Python and JavaScript for their utility in various applications, including front-end development, machine learning, and infrastructure management. The provided context does not contain information about Tim Sweeney's views on programming languages.",
+  "total_chunks_retrieved": 20,
+  "unique_episodes_found": [
+    192,
+    482,
+    103,
+    234,
+    461,
+    188
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 100.49574303627014
+}

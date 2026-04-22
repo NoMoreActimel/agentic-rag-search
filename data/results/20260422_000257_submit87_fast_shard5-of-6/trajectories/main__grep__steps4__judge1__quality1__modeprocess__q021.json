@@ -1,0 +1,224 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7819999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.8
+        },
+        {
+          "chunk_id": 28167,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 200,
+          "text": "Now the plotting tool I used was something from Yorick actually. It was a plotting, a PLT kind of a plotting language that I used. Yorick is a programming language? It was a programming language, had a plotting tool, Dyslin, it had integration to Dyslin. I ended up using Dyslin plus some of the plotting from Yorick linked to from Python. Anyway, it was, people don't plot that way now, but this is before, and Sidepy was trying to add plotting. Yeah. Right? It didn't have much success. Really the success of plotting came from John Hunter, who had a similar experience to my experience, my kind of maverick experience as a person just trying to get stuff done and kind of having more time than money maybe, right? And John Hunter created what? MapPlotLib. He's the creator of MapPlotLib. Yeah, so John Hunter was, you know, he wasn't a student at the time, but he was an, he was working in Quant field and he said, we need better plotting.",
+          "score": 0.702,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 27543,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 98,
+          "text": "And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java. And for some of our programmers who are doing, say, user interface work, then they never have to even learn Sub L. They just have to learn APIs into the basic psych engine. So you're not necessarily feeling the burden of like, it's extremely efficient. That's not a problem to solve. Okay. Right. The other thing is, remember that we're talking about hiring programmers to do inference, who are programmers interested in effectively automatic theorem proving. And so those are people already predisposed to representing things in logic and so on. And Lisp really was the programming language based on logic that John McCarthy and others who developed it basically took the formalisms that Alonzo Church and other philosophers, other logicians, had come up with and basically said, can we basically make a programming language which is effectively logic?",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.612,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": "Ignore Chunks 2, 3, and 4 as they are completely irrelevant. Chunk 1 features John Carmack but doesn't address his views on programming languages, and Chunk 5 mentions Carmack and id Software but not his language philosophy.\n\nThe current results do not contain the specific discussion by ThePrimeagen about John Carmack's pragmatic view on programming languages.\n\nThe agent should search for episodes where ThePrimeagen discusses John Carmack's philosophy on programming languages, focusing on terms like \"pragmatic,\" \"best language,\" or \"language choice\" in relation to id Software or Oculus VR.",
+      "timestamp": 2.7152085304260254
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language pragmatic best",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 59314,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 198,
+          "text": "It is the most amazing thing to see because I think FFMPEG does not get the love it deserves. Every single application, OBS, probably FFMPEG underneath the hood. Everything, FFMPEG underneath the hood, and yet they do not get the love they deserve. I just love it. I just think they\u2019re the best. Lex Fridman: Yeah, I would say JavaScript, HTML, CSS, Python, SQL, I mean that is SQL Squeal is a programming language. It\u2019s an incredibly sophisticated programming language. Yeah? ThePrimeagen: SQL is interesting. I believe you can classify it as a programming language. It does have, if. You have case statements and it\u2019s pretty crazy what you can do with it. Lex Fridman: You could do functions, you can do all that stuff. You shouldn\u2019t. ThePrimeagen: Yeah, for stored procedures, that\u2019s how you make your life hell. I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any.",
+          "score": 0.6519999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 59302,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 186,
+          "text": "So I think it\u2019s a super powerful way to learn. But yeah, you need to also write from scratch. ThePrimeagen: At some point you have to take off the training wheels, because I think what you\u2019re really spotting is the difference between reading and writing code. I can read a lot of languages very well. I can see what\u2019s happening. I can understand it, but I would not be very good at writing it. I can understand a lot of things about C++ and I can read it, but I\u2019m just not that because I just don\u2019t done it in so long. I can\u2019t remember where all the semicolons, and colons and you do public and private, and how should you do naming conventions? All those things kind of add all together, and then you\u2019re just like, oh, I\u2019m really bad at writing it, though I can read it. And so there\u2019s a skill gap chasm that exists between those two.\n\n\n## Best programming languages in 2025\n\nLex Fridman: All right. Well, let me talk about the various languages.",
+          "score": 0.622,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 59303,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 187,
+          "text": "Well, let me talk about the various languages. The cheesy, ridiculous question of what\u2019s the best programming language? Let\u2019s say, what\u2019s the best programming language that everybody should learn? Maybe let\u2019s go with the top five. I\u2019m going to pull up the Stack Overflow developer survey, because I think we have\u2026 You don\u2019t like them? ThePrimeagen: You got to remember, because I mean, you\u2019re a data guy. You know about biases and data. What does Stack Overflow naturally bias towards? Lex Fridman: Well, they have the different slices of professional developers, junior developers, they have different slices. Okay, what is the bias? ThePrimeagen: I hear you, but who fills out a Stack Overflow survey? Someone who participates on Stack Overflow. Who\u2019s participating on Stack Overflow? Largely very, very new people, and that one guy that loves answering questions. And so I\u2019m not sure if Stack Overflow is a great place to get data. It could be a very biased set of data.",
+          "score": 0.622,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5714285714285714
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant as none of them mention John Carmack or his views on programming languages. They focus on ThePrimeagen and Lex Fridman's general discussion about programming languages and the concept of a \"best\" language.\n\nThe agent should search for specific instances where ThePrimeagen discusses John Carmack's philosophy or pragmatic approach to programming languages. A more targeted query could be: \"ThePrimeagen John Carmack programming language philosophy\" or \"ThePrimeagen John Carmack language choice\".",
+      "timestamp": 9.55973505973816
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language philosophy id Software Oculus VR",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 1475,
+          "episode_id": 21,
+          "guest": "Chris Lattner",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Chris Latner. Currently, he's a senior director at Google working on several projects, including CPU, GPU, TPU accelerators for TensorFlow, Swift for TensorFlow, and all kinds of machine learning compiler magic going on behind the scenes. He's one of the top experts in the world on compiler technologies, which means he deeply understands the intricacies of how hardware and software come together to create efficient code. He created the LLVM compiler infrastructure project and the Clang compiler. He led major engineering efforts at Apple, including the creation of the Swift programming language. He also briefly spent time at Tesla as vice president of Autopilot software during the transition from Autopilot hardware 1 to hardware 2, when Tesla essentially started from scratch to build an in house software infrastructure for Autopilot. I could have easily talked to Chris for many more hours.",
+          "score": 0.5625,
+          "source": "grep",
+          "quality_score": 1.0,
+          "original_score": 0.375
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.554,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 447,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 94,
+          "text": "And OK, I see it's implicitly an integer. Bam, awesome. Duck equals 5. Well, duck is now an integer of 5, right? And you're like, cool, awesome, simpler, right? Why would I want to worry about typing? And for a long time, in the Ruby community, they're like, yeah, this is awesome. You just do a bunch of unit testing, which is testing your program's validity after the fact to catch any bugs that strict typing of variables would have caught. And now you have this thing called TypeScript for Microsoft from the guy who built C Sharp Anders, who's one of the greatest minds in software development, right, like in terms of language design. And says, no, no, no, we want to bolt on a strict type system to JavaScript because it makes things better. And now everybody's like, oh my god, we deployed TypeScript and found 50 latent bugs that we didn't know about, right? Like, this is super common. So I think there is a truth in programming that strictness, it's not the goal.",
+          "score": 0.5145,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.375
+        }
+      ],
+      "judge_feedback": "Ignore Chunk 1 and Chunk 3; they are irrelevant. Chunk 2 introduces John Carmack but does not contain his views on programming languages or a discussion by ThePrimeagen.\n\nThe agent needs to find content *from ThePrimeagen* discussing John Carmack's pragmatic view on programming languages. Search specifically for \"ThePrimeagen discusses John Carmack programming language choice\" or \"ThePrimeagen on Carmack's language pragmatism.\"",
+      "timestamp": 14.775424718856812
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language choice pragmatic",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 59307,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 191,
+          "text": "If you\u2019re looking to do embedded, you probably want to do C, C++, like that would probably be a good choice. And so I think you have to first determine what do you really want to get out. Lex Fridman: If you\u2019re just curious about programming, which I talked to a lot of people who are, yeah, you can consider jobs, but basically their question is, okay, what\u2019s the first language I should learn, and maybe what are the several languages I should explore? ThePrimeagen: Can I say something that\u2019s going to make a lot of people angry? Lex Fridman: Yeah, sure. ThePrimeagen: I think the first language people should learn if they have no idea about anything is JavaScript. Lex Fridman: Yeah. Why would that make people angry? ThePrimeagen: Oh, because people just, first off, I\u2019m not supposed to say anything nice about JavaScript. Lex Fridman: Yeah, usually that\u2019s the meme, that you hate JavaScript, right? ThePrimeagen: Yeah.",
+          "score": 0.6519999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 59310,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 194,
+          "text": "Lex Fridman: Okay, so JavaScript. I\u2019ll say Python. ThePrimeagen: Python\u2019s a great one too. You can get quite far with it, but you can\u2019t write the front end. What happened if you love the front end? What happened if you really just want to design things and you just didn\u2019t know that? Lex Fridman: Well, it\u2019s okay. So for that, JavaScript. ThePrimeagen: But Python\u2019s a good choice because you can\u2019t do the ML stuff in JavaScript nearly as easy.\n\n\n## HTML & CSS\n\nLex Fridman: Do we count HTML and CSS as programming languages? ThePrimeagen: I think there\u2019s some technical definition that it is. If you use this certain amalgamation of CSS plus HTML, it actually has, it can be a Turing complete language. But I mean for practical purposes, no. HTML is not a language.",
+          "score": 0.6519999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 59349,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 233,
+          "text": "And there, sort of the stress testing the system and getting all of the signals from that system that everything is working correctly is something that fills me with joy and makes sure that the system actually works. So yeah, that, I don\u2019t know if it\u2019s 5, 10,000 lines of code, if it\u2019s Java or C++ it\u2019s millions lines of code. But yeah, in Python, yeah, I would say 10,000 lines of code. That\u2019s when you first get to see the magic. But anyway, you were saying? ThePrimeagen: Okay, so you and John Carmack had a conversation about asserts. Lex Fridman: Yes. ThePrimeagen: You talked about this idea of putting asserts everywhere that effectively crash the program when you have some state in your program that should not be represented and you have made this choice actively. And so I\u2019ve never done that before. And I know this is like an old technique and I obviously must be too young or too dumb to know that this was a thing people did.",
+          "score": 0.622,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.5714285714285714
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.504,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.42857142857142855
+        }
+      ],
+      "judge_feedback": "Chunk 4 is irrelevant. Chunks 1 and 2 discuss ThePrimeagen's general views on programming languages, not John Carmack's. Chunk 3 mentions John Carmack but only in the context of 'asserts', not his pragmatic view on programming language choice for id Software or Oculus VR.\n\nThe chunks do not contain useful information to answer the question. The agent should search for ThePrimeagen discussing John Carmack's philosophy or pragmatic approach to programming language selection, specifically mentioning id Software or Oculus VR.",
+      "timestamp": 21.29167103767395
+    }
+  ],
+  "final_answer": "The provided context does not contain John Carmack's pragmatic view on the 'best' programming language. While it mentions his work at id Software and Oculus VR and his early programming experiences, it does not detail his opinions on which programming language is \"best.\"",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    224,
+    6,
+    7,
+    461,
+    48,
+    309,
+    21,
+    221
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 30.79262113571167
+}

@@ -1,0 +1,87 @@
+{
+  "question": "What is the total count of distinct programming languages or core development technologies explicitly mentioned as being foundational to or primarily used by Travis Oliphant, John Carmack, and Pieter Levels in their programming careers, and which of these guests utilizes the most such technologies?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming languages technologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22114,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 115,
+          "text": "So a lot of the time there just isn't actual science behind why this hack works and why this other hack doesn't work. You just sort of like trial and error your way into it. And I could see how that approach works, but at the same time, like, that approach is not good for eligibility, for example. Like, it's not good for like understanding what the heck is actually going on, like how these kinds of systems conceivably might fail. Like, there's even, you know, a debate on like, can you take GPT3 like things and just scale them up and their intelligence will continue to improve or is there just like some types of reasoning that they're fundamentally bad at and like they're not gonna get good at it no matter how much you like scale this exact same approach and add more hardware to it. So having like thinking about what's going on more explicitly, I mean, my understanding is that a big part of AI safety research is trying to do that sort of stuff, right? Formalize.",
+          "score": 0.222,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 0.0
+        },
+        {
+          "chunk_id": 22109,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 110,
+          "text": "And then once you go out of the model, those other issues do exist, right? So, but then at the same time, there definitely are protocols that turn out to be, that do have failures inside the model. Like this reminds me of the time when I think I found a bug in a proposed consensus implementation from either BitShares or EOS. This happened around the end of 2017. So that was definitely inside the model because like they had a very clear idea of what they were trying to achieve. They had a very clear description and like there's a very clear mathematical argument for why the description doesn't lead to what they're trying to achieve. But ultimately what you're trying to achieve can never be fully described in formal language, right? Like I think this is the big discovery of, the AI safety people, for example, right? Like just having a specification of what you want is an insanely hard problem.",
+          "score": 0.222,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 0.0
+        },
+        {
+          "chunk_id": 22113,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 114,
+          "text": "And some people are really worried about the existential risks of artificial intelligence. Is there something you could say that's hopeful about how we avoid in the same kind of line of reasoning about creating formal models versus kind of looking outside the model into what the real world actually is like? Is there some lessons from that we can take and map onto the AI safety world where the potentials of the technology, whether it's in autonomous weapon systems or just the paperclip problem that we can avoid AI destroying the world? So my impression is actually that, like, this is more of a kind of far away impression and it could be wrong, that it might even be that one of the challenges is that AI is not formal enough. Like, because AI is very practitioner oriented, right? Like, it's all about like, hey, I found a couple of hacks and look, I ran them and look, they seem to improve classification accuracy from 0.684 to 0.773.",
+          "score": 0.21,
+          "source": "bm25",
+          "quality_score": 0.7,
+          "original_score": 0.0
+        },
+        {
+          "chunk_id": 22110,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 111,
+          "text": "Like just having a specification of what you want is an insanely hard problem. And like the more powerful the optimizer that you're giving the instructions to, the more you have to be careful. And so, I think there are the kind of these two sides. And then the other thing is that a lot of the academic approach ends up basically optimizing for other people inside of the academic system. And it doesn't really optimize for like curious outsiders. Whereas like I personally totally optimize for curious outsiders, or at least I feel like I strive to. So I guess like that's my case for why I like tends to behave in ways that, you know, occasionally traditional academic types criticize as being reckless. But I mean, on the other hand, you know, there's definitely real benefits that come from like just taking a rigorous approach, especially when, you know, you know what the thing, like, you know what the specification is of what you're trying to get.",
+          "score": 0.20400000000000001,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 0.0
+        },
+        {
+          "chunk_id": 66339,
+          "episode_id": 492,
+          "guest": "Rick Beato",
+          "chunk_index": 174,
+          "text": "Thank you for being who you are and thank you for talking to me. Rick Beato: Thanks, I appreciate it. Lex Fridman: Thanks for listening to this conversation with Rick Beato. To support this podcast, please check out our sponsors in the description where you can also find links to contact me, ask questions, give feedback, and so on. And now, let me leave you with some words from Friedrich Nietzsche, as I often do. \u201cWithout music, life would be a mistake.\u201d Thank you for listening, and I hope to see you next time.",
+          "score": 0.03,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 0.0
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.4622020721435547
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Travis Oliphant programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 3.628547430038452
+    }
+  ],
+  "final_answer": "The provided transcript chunks do not contain any information about Travis Oliphant, John Carmack, or Pieter Levels, nor do they mention any programming languages or core development technologies used by them. Therefore, it is not possible to determine the total count of distinct technologies or which guest utilizes the most. The context is insufficient to answer the question.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    188,
+    492
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 5.806750774383545
+}

@@ -1,0 +1,153 @@
+{
+  "question": "Considering the discussion where Michael Paulson mentions Pieter Levels, what is Pieter Levels' preferred approach to funding his startups, as detailed in his own interview?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Pieter Levels funding approach interview",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54664,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 105,
+          "text": "And you can hire someone to launch the thing. So, all you need is the robot that goes to the asteroid and the robotics\u2019 interesting. I want to also learn robotics. So, maybe that could be-\n\nLex Fridman: I think both the asteroid mining and the robotics is\u2026\n\nPieter Levels: Yeah, together. Lex Fridman: I feel like [inaudible 01:18:40]. Pieter Levels: No, exactly. This is it. \u201cWe do this not because it\u2019s easy, but because we thought it would be easy.\u201d Exactly. That\u2019s me with asteroid mining. Exactly. That\u2019s why I should do this. Lex Fridman: It\u2019s not nomadlist.com. It\u2019s asteroid mining. Gravity is really hard to overcome. Pieter Levels: Yeah. But it seems, man, I sound like idiot. Probably not. But it sounds quite approachable. Relatively approachable. You don\u2019t have to build the rockets. Lex Fridman: Oh, you use something like SpaceX to get out space. Pieter Levels: Yeah, you hire SpaceX to send this dog robots or whatever.",
+          "score": 6.08632755279541,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54622,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 63,
+          "text": "Pieter Levels: It could be true. Lex Fridman: Is it just overrepresented? Same with WordPress. Pieter Levels: Yeah. Lex Fridman: Yes, there\u2019s a reputation that WordPress has a gigantic number of security holes. I don\u2019t know if that\u2019s true. I know it gets attacked a lot, because it\u2019s so popular. It definitely does have security holes, but maybe a lot of other systems have security holes as well. Anyway, I just sort of questioning the conventional wisdom that keeps wanting to push software engineers towards frameworks, towards complex, like super complicated software engineering approaches that stretch out the time it takes to actually build a thing. Pieter Levels: Man, 100%, and it\u2019s the same thing with big corporations\u2026 80% of the people don\u2019t do anything. It\u2019s not efficient, and if your benchmark is people building stuff that actually gets done.",
+          "score": 5.338749408721924,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59918,
+          "episode_id": 463,
+          "guest": "Douglas Murray",
+          "chunk_index": 160,
+          "text": "They are the people who taunt Americans, Westerners, Israelis and others with lines like, we love death more than you love life. Lex Fridman: Yeah, that\u2019s the line you return to. That\u2019s a really difficult line to load in, because if you base your whole existence on that notion then, well, you\u2019re a danger to the world. That\u2019s a good foundation for committing evil.\n\n\n## Interview advice\n\nI have to ask, because you mentioned that interview, you had a good interview with Benjamin Netanyahu after October 7th, and I\u2019ve been very fortunate to get the opportunity to interview a few world leaders, it looks like I\u2019ll interview Vladimir Putin and others. Want to have a general question about how do you interview people like this? Maybe to put your historian hat on of how do you approach the interview of world leaders such that you can gain a deeper understanding in the hope that that adds to the compassion in the world.",
+          "score": 4.946013927459717,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 49656,
+          "episode_id": 414,
+          "guest": "Tucker Carlson",
+          "chunk_index": 141,
+          "text": "You\u2019re obviously not a political activist, you\u2019re an interviewer. But I think it would be so interesting. Lex Fridman: But for an interview itself, is there advice you have about how to carry an interview? It is fundamentally different when you do it in the native language. Tucker Carlson: Yes, I mean, I think I approached\u2026 And maybe I did it incorrectly, but this was the product of a lot of thought. I was coming into that interview aware that he hadn\u2019t given an interview at all with anybody since the war started. So I had a million different questions, and as noted, I didn\u2019t ask them because I just wanted to focus on the war. But I mean, there\u2019s so many\u2026 I\u2019ll send you my notes that I wrote, I was like a diligent little girl. Lex Fridman: That would be amazing, but I think\u2026\n\nTucker Carlson: All these questions, and some of them I thought were pretty funny. Lex Fridman: In your case, I think the very fact of the interview was the most important thing.",
+          "score": 4.869462013244629,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54808,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 249,
+          "text": "Lex Fridman: Yeah. So, there\u2019s a source of distraction. Pieter Levels: Yeah, in the coworking space, we would do a money pot, like a mug. So, if you would work for 45 minutes and then if you would say a pair of words, you would get a fine, which is like $1. So, you\u2019d put $1 to say, \u201cHey, what\u2019s up?\u201d So, $3 you put in the mug. And then 15 minutes free time, we can party whatever. And then 45 minutes again working and that worked. But you need to shut people up or they\u2026\n\nLex Fridman: I think there\u2019s an intimacy in being silent together that maybe I\u2019m uncomfortable with, but you need to make yourself vulnerable and actually do it with close friends to just sit there in silence for long periods of time and doing a thing. Pieter Levels: Dude, I watched this video of this podcast. It was like this Buddhism podcast with people meditating and they were interviewing each other or whatever like a podcast.",
+          "score": 4.817882061004639,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 3 and 4 are completely irrelevant. Chunks 1, 2, and 5 are from an interview with Pieter Levels but do not contain any information about his preferred approach to funding his startups.\n\nThe agent should search for more specific terms related to startup funding methods (e.g., \"bootstrapping,\" \"venture capital,\" \"self-funding\") within episodes featuring Pieter Levels, especially Ep#440.",
+      "timestamp": 2.705045700073242
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Pieter Levels startup funding bootstrapping venture capital self-funding",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54710,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 151,
+          "text": "Pieter Levels: They don\u2019t anymore. Lex Fridman: There\u2019s a bunch of bureaucracy, yeah. Pieter Levels: At Google. Lex Fridman: There\u2019s so many brilliant, brilliant people there, but it just moves slowly. Pieter Levels: Yeah. Lex Fridman: I wonder why that is and maybe that\u2019s the natural way of a company, but you have people like Elon who rolls in and just fires most of the folks and always push the company to operate as a startup even when it\u2019s already big. Pieter Levels: But Apple does this. I started in business school. Apple does competing product teams that operate as startups. So it\u2019s three to five people, they make something, they have multiple teams make the same thing. The best team wins. So I think you need to emulate a free market inside a company to make it entrepreneurial.",
+          "score": 7.149537086486816,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54560,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 1,
+          "text": "I have Google Vision that checks every photo before it\u2019s shown to the user to check for NSFW. Lex Fridman: Like a nipple detector? Oh, an NSFW detector. Pieter Levels: Because the journalist gets very angry. Lex Fridman: The following is a conversation with Pieter Levels, also known on X as levelsio. He is a self-taught developer and entrepreneur who designed, programed shipped and ran over 40 startups, many of which are hugely successful. In most cases, he did it all by himself while living the digital nomad life in over 40 countries and over 150 cities, programming on a laptop while chilling on a couch, using vanilla HTML, jQuery, PHP and SQLight. He builds and ships quickly, and improves on the fly, all in the open, documenting his work, both his successes and failures, with a raw honesty of a true indie hacker. Pieter is an inspiration to a huge number of developers and entrepreneurs who love creating cool things in the world that are hopefully useful for people.",
+          "score": 6.878419399261475,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54561,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 2,
+          "text": "This was an honor and a pleasure for me. This is the Lex Friedman Podcast. To support it, please check out our sponsors in the description. And now, dear friends, here\u2019s Pieter Levels.\n\n\n## Startup philosophy\n\nLex Fridman: You\u2019ve launched a lot of companies and built a lot of products. As you say, most failed, but some succeeded. What\u2019s your philosophy behind building the startups that you did? Pieter Levels: I think my philosophy is very different than most people in startups, because most people in startups, they build a company and they raise money and they hire people and then they build a product and they find something that makes money. And I don\u2019t really raise money. I don\u2019t use VC funding, I do everything myself. I\u2019m a designer, I\u2019m the developer, I make everything, I make the logo. So for me, I\u2019m much more scrappy. And because I don\u2019t have funding, I need to go fast. I need to make things fast to see if an idea works.",
+          "score": 6.841087341308594,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54829,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 270,
+          "text": "Pieter Levels: Yeah. I have this problem that I try, I want to try help people and also like, \u201cOh, let\u2019s make startups,\u201d and whatever. And I\u2019ve learned over the years that generally for me\u2026 And it sounds maybe bad, but I helped my friend Andre, for example. He came up to me in the coworking space. That\u2019s how I met him. And he said, \u201cI want to learn to code. I want to do startups. How do we do it?\u201d I said, \u201cOkay, let\u2019s go, install Nginx. Let\u2019s start coding.\u201d\n\nAnd he has this self energy that he actually, he doesn\u2019t need to be pushed, he just goes and he just goes, and he asks questions and he doesn\u2019t ask too many questions. He just goes, goes and learns it. And now, he has a company and makes a lot of money, has his own startups. And the people that ask me for help, but then I gave help, and then they started debating it. Do you have that? People ask you for advice and they go against you to say, \u201cNo, you\u2019re wrong because\u2026\u201d I\u2019m like, \u201cOkay, bro, I don\u2019t want to debate.",
+          "score": 6.454187393188477,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54613,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 54,
+          "text": "That\u2019s what I\u2019m talking about. This is with cats, but look at the cat face. It\u2019s also kind of mangled. Lex Fridman: I\u2019m a little bit disturbed. Pieter Levels: You can zoom in on the cat if you want. This is a very sad cat. It doesn\u2019t have a nose. Lex Fridman: It doesn\u2019t have a nose, wow. Pieter Levels: Man, but this is the problem with AI startups, because they all act like it\u2019s perfect, like this is groundbreaking, but it\u2019s not perfect. It\u2019s really bad half the time. Lex Fridman: So, if I wanted to sort of update model as-\n\nPieter Levels: Yeah, so you remove this stuff, and you write whatever you want, like in Thailand or something, or in Tokyo. Lex Fridman: In Tokyo? Pieter Levels: Yeah. Lex Fridman: And-\n\nPieter Levels: You could say like at night with neon lights. You can add more detail to [inaudible 00:40:11]-\n\nLex Fridman: I\u2019ll go in Austin. Do you think it\u2019ll know-\n\nPieter Levels: Yeah, Austin-\n\nLex Fridman: \u2026 in Texas? In Austin, Texas? Pieter Levels: With cowboy hat?",
+          "score": 6.325125694274902,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, 4, and 5 are irrelevant to Pieter Levels' startup funding approach. Chunk 3 directly answers the question, stating he does not raise money or use VC funding and does everything himself. No further search is needed for this specific question.",
+      "timestamp": 10.530102968215942
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 18.545175790786743
+    }
+  ],
+  "final_answer": "Pieter Levels' preferred approach to funding his startups is to avoid raising money or using venture capital (VC) funding. Instead, he does everything himself, acting as the designer and developer, and creating all aspects of the product. This 'scrappy' method allows him to move quickly and test ideas without external financial pressures.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    440,
+    414,
+    463
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 18.545178174972534
+}

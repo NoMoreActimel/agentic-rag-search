@@ -1,0 +1,120 @@
+{
+  "question": "How do the entrepreneurial philosophies of Travis Oliphant, Tim Sweeney, and Pavel Durov differ regarding the balance between fostering collaborative ecosystems versus maintaining absolute independent control in building their respective tech ventures? While Oliphant championed open-source communities like NumPy and Anaconda, and Sweeney scaled Epic Games through licensing and a developer ecosystem, what unique emphasis does Durov place on absolute ownership and independence for Telegram?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Pavel Durov Telegram absolute ownership independence control",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63989,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 44,
+          "text": "That was very important for us. That\u2019s why we can say with confidence, there hasn\u2019t been ever a leakage of data, any leak of data from Telegram. Not in terms of private messages, not in terms of say contact lists. Lex Fridman: Do you see in the future a possible scenario where you might share user private messages with governments or with intelligence agencies? Pavel Durov: No. We designed a system in a way that\u2019s impossible. It\u2019ll require us to change the system and we won\u2019t do that because we made a promise to our users. We would rather shut Telegram down in a certain country than do that. Lex Fridman: So that\u2019s one of the principles you operate under is you go into protect user privacy. Pavel Durov: I think it\u2019s fundamental. Without the right to privacy, people can\u2019t feel fully free and protected. Lex Fridman: I mean, this is a good place to ask. I\u2019m sure you\u2019re pressured by all kinds of people, all kinds of organizations to share private data.",
+          "score": 0.7941781110763548,
+          "source": "embedding",
+          "quality_score": 0.94,
+          "original_score": 0.7316830158233643
+        },
+        {
+          "chunk_id": 63992,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 47,
+          "text": "It\u2019s true, most tech companies are like this, but there are projects like Telegram which are a bit different and I\u2019m not sure they realize that. Lex Fridman: So for you, the value of maintaining your integrity in relation to your principles is more important than anything else. Of course, we should say that you also have full ability and control to do just that because you, Pavel Durov, own 100% of Telegram. So, there\u2019s no anybody with a say on this question. Pavel Durov: There are no shareholders, which is quite unique. Lex Fridman: Very unique. I don\u2019t think there\u2019s anything even close to that in any major tech company. Pavel Durov: And this allows us to operate the way we operate, to build this project and maintain it based on certain fundamental principles, which by the way, I think everybody believes in. I think the right to privacy is included in the constitution of most countries, at least most Western countries, but it\u2019s still under attack almost every week.",
+          "score": 0.7935637969970702,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7736625671386719
+        },
+        {
+          "chunk_id": 64129,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 184,
+          "text": "So how the hell were you able to be profitable? What are the ways that Telegram makes money? Pavel Durov: Yeah. We had to innovate a lot in order to reach a point where we are profitable without having to resort to dubious business activities involving exploiting personal data of users, something that most of our competitors do. Because money has never been the primary goal, at least not for me. When I sold the remaining share of my first company and I had to do it below market price because I didn\u2019t leave Russia completely without any pressures, I reinvested the vast majority of everything in Telegram. Telegram is an operation that is losing money for me personally. I didn\u2019t extract more from Telegram than I invested in it. I never sold a single share, but I also didn\u2019t want to sell Telegram. So how do you reach a point when you\u2019re profitable without sacrificing your values? One of the ideas we explored was a subscription model, but only for certain additional features.",
+          "score": 0.7609991331100464,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7271416187286377
+        },
+        {
+          "chunk_id": 63988,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 43,
+          "text": "So, that\u2019s the thing. We talk about encryption, we talk about privacy, we talk about security, all these kinds of things. I think the number one thing that people are concerned about, about which there\u2019s also misinformation, is about private messages. So, Telegram is very, very protective of the private messages of users. So, you\u2019re saying employees never can access the private messages. Have any governments or intelligence agencies ever accessed private user messages in the past? Pavel Durov: No, never. Telegram has never shared a single private message with anyone, including governments and intelligence services. If you try to access any server in any of the data center locations, it\u2019s all encrypted. You can extract all the hard drives and analyze it, but you won\u2019t get anything. It\u2019s all encrypted in the way that is undecipherable. That was very important for us. That\u2019s why we can say with confidence, there hasn\u2019t been ever a leakage of data, any leak of data from Telegram.",
+          "score": 0.7602749009132385,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7261070013046265
+        },
+        {
+          "chunk_id": 63945,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 0,
+          "text": "## Introduction\n\nLex Fridman: The following is a conversation with Pavel Durov, Founder and CEO of Telegram, a messaging platform actively used by over 1 billion people. Pavel has spent his life fighting for freedom of speech, building tools that protect human communication from surveillance and censorship. For this, he has faced pressure from some of the most powerful governments and organizations on earth. In the face of this immense pressure, he has always held his ground, continuously fighting to protect user privacy and the freedom of all of us humans to communicate with each other. I got the chance to spend a few weeks with him and can definitively say that he\u2019s one of the most principled and fearless humans I\u2019ve ever met. Plus, when I posted that I\u2019m hanging out with Pavel, a lot of people, fans of his, wrote to me asking if he does, in fact, privately live the disciplined ascetic life he\u2019s known for.",
+          "score": 0.7391914882659911,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.764559268951416
+        }
+      ],
+      "judge_feedback": "1.  No chunks are clearly irrelevant.\n2.  Chunks 2 and 3 are highly useful, directly confirming Pavel Durov's 100% ownership of Telegram and how this enables him to maintain principles like user privacy without shareholder pressure. Chunks 1, 4, and 5 provide context on his commitment to privacy, which is a direct outcome of this independence.\n3.  The current chunks establish Durov's absolute control and its benefits for privacy. The next search should focus on his *philosophical justification* for this model, specifically how he views it *in contrast* to fostering collaborative ecosystems (like open-source or developer communities), and why he prioritizes absolute independence over such collaboration.\n\n**Next Search Query:** Pavel Durov philosophy absolute ownership vs collaborative ecosystems Telegram",
+      "timestamp": 5.89286994934082
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Pavel Durov philosophy absolute ownership vs collaborative ecosystems Telegram",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 64066,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 121,
+          "text": "Pavel Durov: This person has no prior experience of using Telegram. Their understanding would be very limited. Why would I even try to hire somebody from LinkedIn who worked at Google and other companies, is used to receiving salary for nothing, is used to shift responsibility and being stuck in endless meetings and have very limited understanding of what Telegram stands for? It\u2019s just crazy if you think about it.\n\n\n## Telegram engineering & design\n\nLex Fridman: Because of that, you\u2019re extremely selective and slow in hiring. People really have to earn their spot and then as a result, I got a chance to sit in one of the team meetings where people discuss the different features that are being developed, the different ideas, some of which are at the very cutting edge and so you get to see behind the scenes how it\u2019s possible to have such a fast rate of idea generation. You generate the idea, you implement the prototype and then eventually it becomes an actual feature in the product.",
+          "score": 0.7509185869693755,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7127408385276794
+        },
+        {
+          "chunk_id": 64132,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 187,
+          "text": "Of course, we leave probably 80% of value on the table because we\u2019re not ready to engage in all this practices, exploiting personal data. Lex Fridman: Just to be clear, targeted ads is what most social media companies, most tech companies that do any kinds of advertisement do. And that\u2019s the kind of advertisement that uses personal data from users. Just to clarify. And when you said 80%, that\u2019s a lot of money. Pavel Durov: Of course, because we would never use, for example, your personal messaging data or your context data or your metadata or your activity data to target ads. It\u2019s sad that it became synonymous with the internet industry, this kind of exploitation. But we are happy with the fact that we managed to make Telegram profitable despite that. We are also experimenting a lot with blockchain-based technologies. We\u2019re the first app to allow people to directly own their username or their digital identities using smart contracts and NFTs removing Telegram from the picture.",
+          "score": 0.7481934328079223,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7088477611541748
+        },
+        {
+          "chunk_id": 63948,
+          "episode_id": 482,
+          "guest": "Pavel Durov",
+          "chunk_index": 3,
+          "text": "This is the Lex Fridman podcast, to support it please check out our sponsors in the description. And now, dear friends, here\u2019s Pavel Durov.\n\n\n## Philosophy of freedom\n\nLex Fridman: You\u2019ve been an advocate for freedom for many years, writing that you should be ready to risk everything for freedom. What were some influences and insights that help you arrive at this value of human freedom? Pavel Durov: I get to experience the difference between a society with freedom and a society without freedom pretty early in life. I was four years old when my family moved from the Soviet Union to northern Italy, and I could see that a society without freedom cannot enjoy the abundance of opinions, of ideas, of goods and services. Even for a four or five-year-old kid, it was obvious. You can\u2019t experience all the toys, the ice cream of sorts, the cartoons in the Soviet Union that you can access in Italy. And then I got to realize something even more important.",
+          "score": 0.701166919708252,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7102384567260742
+        }
+      ],
+      "judge_feedback": "1.  Ignore Chunk 3; it discusses Durov's general philosophy of freedom, which is too broad and not directly relevant to his entrepreneurial approach regarding control vs. collaboration for Telegram.\n2.  Chunk 1 is useful as it highlights Durov's strong preference for internal, highly selective team building, indicating a focus on maintaining tight control over Telegram's development. Chunk 2 is also useful, showing his independent stance on data privacy and a willingness to forgo revenue for principles, which aligns with absolute ownership. The mention of blockchain/NFTs for user ownership is an interesting nuance regarding decentralization.\n3.  The agent should search for Pavel Durov's explicit statements or actions regarding Telegram's open-source contributions (or lack thereof), its developer ecosystem, API policies, or any third-party integrations to understand his stance on external collaboration versus maintaining absolute control over the platform.",
+      "timestamp": 57.31837439537048
+    }
+  ],
+  "final_answer": "The provided context extensively details Pavel Durov's philosophy for Telegram, emphasizing absolute ownership and independence. He owns 100% of Telegram with no shareholders, which he states allows him to operate based on fundamental principles like user privacy and freedom of speech without external pressure or compromise. This independence enables him to refuse sharing user data with governments and to build a profitable company without exploiting personal data, even if it means leaving 80% of potential value on the table.\n\nHowever, the provided text does not contain any information about Travis Oliphant, Tim Sweeney, NumPy, Anaconda, or Epic Games, making it impossible to compare their entrepreneurial philosophies regarding collaborative ecosystems versus independent control.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    482
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 68.30686855316162
+}

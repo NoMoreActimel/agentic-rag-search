@@ -1,0 +1,195 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 301,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 21,
+          "text": "Oh, interesting. So you basically, exactly, you first observe what you like. Yeah, and so that's why if you're 17 years old and you want to sort of create a programming language, you're not going to be very successful at it because you have no experience with other languages, whereas I was in my, let's say mid 30s, I had written parsers before, so I had worked on the implementation of ABC, I had spent years debating the design of ABC with its authors, with its designers, I had nothing to do with the design, it was designed fully as it ended up being implemented when I joined the team. But so you borrow ideas and concepts and very concrete sort of local rules from different languages like the indentation and certain other syntactic features from ABC, but I chose to borrow string literals and how numbers work from C and various other things.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 347,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 67,
+          "text": "I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah. And if you look, I just have a list of programming languages, all of which I've now played with a little bit. I mean, they're all beautiful in different ways from Fortran, Cobalt, Lisp, Algol 60, Basic, Logo again, C, as a few, the object oriented came along in the 60s, Simula, Pascal, Smalltalk. All of that leads. They're all the classics. The classics. Yeah. The classic hits, right? Steam, that's built on top of Lisp. On the database side, SQL, C++, and all of that leads up to Python, Pascal too, and that's before Python, MATLAB, these kind of different communities, different languages. So can you talk about that world? I know that sort of Python came out of ABC, which I actually never knew that language.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 326,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 46,
+          "text": "So I think it's consciousness and intelligence are not all or nothing. The spectrum is really interesting. But in returning to programming languages and the way we think about building these kinds of things, about building intelligence, building consciousness, building artificial beings. So I think one of the exciting ideas came in the 17th century and with Leibniz, Hobbes, Descartes, where there's this feeling that you can convert all thought, all reasoning, all the thing that we find very special in our brains, you can convert all of that into logic. So you can formalize it, formal reasoning, and then once you formalize everything, all of knowledge, then you can just calculate and that's what we're doing with our brains is we're calculating. So there's this whole idea that this is possible, that this we can actually program. But they weren't aware of the concept of pattern matching in the sense that we are aware of it now.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 346,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 66,
+          "text": "Everything they've learned in college was almost always about a much smaller scale and somehow that difference in scale makes a qualitative difference in how you do things and how you think about it. If you then take a few steps back into decades, 70s and 80s, when you were first thinking about Python or just that world of programming languages, did you ever think that there would be systems as large as underlying Google, Facebook, and Dropbox? Did you, when you were thinking about Python? I was actually always caught by surprise by sort of this, yeah, pretty much every stage of computing. So maybe just because you've spoken in other interviews, but I think the evolution of programming languages are fascinating and it's especially because it leads from my perspective towards greater and greater degrees of intelligence. I learned the first programming language I played with in Russia was with the Turtle logo. Logo, yeah.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.6706666666666666,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.879437208175659
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages OR Sebastian Raschka LLM OR Nathan Lambert LLM",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65674,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 34,
+          "text": "But that\u2019s just a wonderful interface where you can have an intermediary and not have to do the awful low-level work that you would have to do to maintain different web projects.\n\n\n## Open Source vs Closed Source LLMs\n\nLex Fridman: All right. So we just talked about a bunch of the closed-weight models. Let\u2019s talk about the open ones. Tell me about the landscape of open LLM models. Which are interesting ones? Which stand out to you and why? We already mentioned DeepSeek. Nathan Lambert: Do you wanna see how many we can name off the top of our head? Lex Fridman: Yeah, yeah. Without looking at notes. Nathan Lambert: DeepSeek, Kimi, MiniMax, Z.ai, Antlang. We\u2019re just going Chinese. Sebastian Raschka: Let\u2019s throw in Mistral AI, Gemma\u2014 \u2026gpt-oss, the open source model by OpenAI. Actually, NVIDIA had a really cool one, Nemotron 3. There\u2019s a lot of stuff, especially at the end of the year. Qwen might be the one\u2014\n\nNathan Lambert: Oh, yeah. Qwen was the obvious name I was gonna say.",
+          "score": 0.7486666666666666,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 65723,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 83,
+          "text": "Sebastian Raschka: So, you teach it something, it forgets other things. It\u2019s not 100% forgetting, but there\u2019s no free lunch. It\u2019s also the same with humans. If you ask me some math I learned 10 years ago, I wouldn\u2019t know; I would have to look at it again. Lex Fridman: Nathan was actually saying that he\u2019s consuming so much content that there\u2019s a catastrophic forgetting issue. Nathan Lambert: Yeah, I\u2019m trying to learn so much about AI, and it\u2019s like when I was learning about pre-training parallelism, I\u2019m like, \u201cI lost something and I don\u2019t know what it was.\u201d\n\nSebastian Raschka: I don\u2019t want to anthropomorphize LLMs, but I think it\u2019s the same in terms of how humans learn. Quantity is not always better because it\u2019s about being selective. Mid-training is being selective in terms of quality content at the end, so the last thing the LLM has seen is the quality stuff. And then post-training is all the fine-tuning: supervised fine-tuning, DPO, RLVR with human feedback and so forth.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 65752,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 112,
+          "text": "That could potentially lead to burnout. For example, if I use an LLM to do all my coding for me, now there\u2019s no coding; I\u2019m just managing something that is coding for me. Sebastian Raschka: Two years later, let\u2019s say, if I just do that eight hours a day\u2014having something code for me\u2014do I still feel fulfilled? Is this hurting me in terms of being excited about my job and what I\u2019m doing? Am I still proud to build something? Lex Fridman: On that topic of enjoyment, it\u2019s quite interesting. We should just throw this in there, that there\u2019s this recent survey of about 791 professional developers\u2014professional meaning 10-plus years of experience. Nathan Lambert: That\u2019s a long time. As a junior developer? Lex Fridman: Yeah, in this day and age. The results are surprising on many fronts. They break it down by junior and senior developers, and it shows that both groups use AI-generated code in the code they ship. This is not just for fun or learning; this is code they ship.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 65738,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 98,
+          "text": "What do you do in that kind of world? How big of a problem is that? Nathan Lambert: The largest problem is the infrastructure and systems, but from an AI point of view, it\u2019s kind of inevitable. Lex Fridman: So it\u2019s basically LLM-generated data that\u2019s curated by humans essentially, right? Nathan Lambert: Yes, and I think that a lot of open source contributors are legitimately burning out. If you have a popular open source repo, somebody\u2019s like, \u201cOh, I want to do open source AI. It\u2019s good for my career,\u201d and they just vibe code something and throw it in. You might get more of this than I do. Sebastian Raschka: Yeah, so I actually have a case study here. I have a repository called mlxtend that I developed as a student, around 10 or 15 years ago, and it is a reasonably popular library still for certain algorithms, especially frequent data mining stuff. There were recently two or three people who submitted a lot of PRs in a very short amount of time.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 65721,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 81,
+          "text": "I think of it like with humans. If someone reads a book compared to a messy\u2014no offense, but like\u2014Reddit post or something like that. I do think you learn\u2014no offense, but I think\u2014\n\nLex Fridman: There\u2019s going to be a post about this, Sebastian. Nathan Lambert: Some Reddit data is very coveted and excellent for training. You just have to filter it. Sebastian Raschka: And I think that\u2019s the idea. I think it\u2019s like if someone took that and rephrases it in a, let\u2019s say, more concise and structured way\u2014 I think it\u2019s higher quality data that gets the LLM maybe the same\u2014you get the same LLM out of it at the end, but it gets there faster. It trains faster because if the grammar and the punctuation are correct, it already learns the correct way versus getting information from a messy way and then learning later how to correct that.",
+          "score": 0.6706666666666666,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 10.47864031791687
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "OpenCog programming language",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 289,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 9,
+          "text": "You did not see the computer. I don't think I really saw it that way. I was really more interested in the tinkering. It's maybe not a sort of a complete coincidence that I ended up sort of creating a programming language which is a tool for other programmers. I've always been very focused on the sort of activity of programming itself and not so much what happens with the program you write. Right. I do remember, and I don't remember, maybe in my second or third year, probably my second actually, someone pointed out to me that there was this thing called Conway's Game of Life. You're probably familiar with it. I think \u2013 In the 70s, I think is when they came up with it. So there was a Scientific American column by someone who did a monthly column about mathematical diversions. I'm also blanking out on the guy's name. It was very famous at the time and I think up to the 90s or so.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 310,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 30,
+          "text": "As an onlooker, I may be totally wrong on this, but what do you think of this? Yeah, holy wars are sort of a favorite activity in the programming community. And what is the psychology behind that? Is that okay for a healthy community to have? Is that a productive force ultimately for the evolution of a language? Well, if everybody is patting each other on the back and never telling the truth, it would not be a good thing. I think there is a middle ground where sort of being nasty to each other is not okay, but there is a middle ground where there is healthy ongoing criticism and feedback that is very productive. And you mean at every level you see that. I mean, someone proposes to fix a very small issue in a code base, chances are that some reviewer will sort of respond by saying, well, actually, you can do it better the other way. When it comes to deciding on the future of the Python core developer community, we now have, I think, five or six competing proposals for a constitution.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 288,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 8,
+          "text": "And so all you could do was write a program that did something very abstract. And I don't even remember what my first forays into programming were, but they were sort of doing simple math exercises and just to learn how a programming language worked. Did you sense, okay, first year of college, you see this computer, you're able to have a program and it generates some output. Did you start seeing the possibility of this, or was it a continuation of the tinkering with circuits? Did you start to imagine that one, the personal computer, but did you see it as something that is a tool, like a word processing tool, maybe for gaming or something? Or did you start to imagine that it could be going to the world of robotics, like the Frankenstein picture that you could create an artificial being? There's like another entity in front of you. You did not see the computer. I don't think I really saw it that way. I was really more interested in the tinkering.",
+          "score": 0.6106666666666666,
+          "source": "grep",
+          "quality_score": 0.48,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.352083683013916
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "OpenCog programming languages",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 19.65812921524048
+    }
+  ],
+  "final_answer": "The provided context does not explicitly mention any primary programming languages for cognitive architectures like OpenCog. However, when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert, ten distinct large language models are referenced by name: DeepSeek, Kimi, MiniMax, Z.ai, Antlang, Mistral AI, Gemma, gpt-oss, Nemotron 3, and Qwen.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    490,
+    6
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 25.17985224723816
+}

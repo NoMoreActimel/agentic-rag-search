@@ -1,0 +1,165 @@
+{
+  "question": "Ben Goertzel, in his discussion of Artificial General Intelligence, mentions Demis Hassabis as another prominent figure in the field. What is Demis Hassabis's estimate for the probability of achieving AGI by 2030, and how does he define AGI in his own discussion?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Demis Hassabis AGI 2030 probability",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61597,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 41,
+          "text": "I\u2019ll answer your question, but I\u2019ll also throw out this. I almost feel the term doesn\u2019t matter, what I know is by 2030 there\u2019ll be such dramatic progress. We\u2019ll be dealing with the consequences of that progress, both the positive externalities and the negative externalities that come with it in a big way by 2030. So that I strongly feel. Whatever, we may be arguing about the term or maybe Gemini can answer what that moment is in time in 2030, but I think the progress will be dramatic. So that I believe in. Will the AI think it has reached AGI by 2030? I would say we will just fall short of that timeline, so I think it\u2019ll take a bit longer.",
+          "score": 7.911935806274414,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62728,
+          "episode_id": 475,
+          "guest": "Demis Hassabis",
+          "chunk_index": 62,
+          "text": "Demis Hassabis: Yeah. Lex Fridman: It is a beautiful balance of being in it as living organisms and the cutting edge of science. They actually might be using DeepMind systems. Demis Hassabis: Yeah. But hopefully they are. And I\u2019d love to join them in one of those checks. They look amazing. Right. That\u2019s great to actually experience it one time.\n\n\n## Path to AGI\n\nLex Fridman: Exactly. And then also to experience the correct prediction where something will come and how it\u2019s going to evolve. It\u2019s incredible. You\u2019ve estimated that we\u2019ll have AGI by 2030, so there\u2019s interesting questions around that. How will we actually know that we got there and what may be the move quote, \u201cMove 37\u201d of AGI. Demis Hassabis: My estimate is sort of 50% chance by in the next five years, so by 2030 let\u2019s say. So I think there\u2019s a good chance that that could happen. Part of it is what is your definition of AGI?",
+          "score": 7.736488342285156,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61598,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 42,
+          "text": "Will the AI think it has reached AGI by 2030? I would say we will just fall short of that timeline, so I think it\u2019ll take a bit longer. It\u2019s amazing, in the early days of Google DeepMind in 2010, they talked about a 20-year timeframe to achieve AGI, which is kind of fascinating to see, but for me, the whole thing, seeing what Google Brain did in 2012, and when we acquired DeepMind in 2014, right close to where we are sitting, in 2012, Jeff Dean showed the image of when the neural networks could recognize a picture of a cat and identify it. This is the early versions of Brain. And so we all talked about couple decades. I don\u2019t think we\u2019ll quite get there by 2030, so my sense is it\u2019s slightly after that, but I would stress it doesn\u2019t matter what that definition is because you will have mind-blowing progress on many dimensions. Maybe AI can create videos.",
+          "score": 6.8773298263549805,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58661,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 90,
+          "text": "I think that\u2026 You\u2019re asking about the AGI thing. If you\u2019re making me give a year, I\u2019m going to be like, \u201cOkay, I have AI CEOs saying this. They\u2019ve been saying two years for a while. I think that there are people like Dario at Anthropic, the CEO, has thought about this so deeply. I need to take their word seriously, but also understand that they have different incentives.\u201d So I would be like, \u201cAdd a few years to that.\u201d Which is how you get something similar to 2030 or a little after 2030. Dylan Patel: I think to some extent, we have capabilities that hit a certain point where any one person could say, \u201cOh, okay, if I can leverage those capabilities for X amount of time, this is AGI, call it \u201927, \u201928.\u201d But then the cost of actually operating that capability-\n\nNathan Lambert: Yeah, this was going to be my point. Dylan Patel: \u2026 is so, so extreme that no one can actually deploy it at scale en masse to actually completely revolutionize the economy on a snap of a finger.",
+          "score": 6.681001663208008,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61595,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 39,
+          "text": "So lots of folks are talking about timelines for AGI or ASI, artificial super intelligence. So AGI loosely defined is basically human expert level at a lot of the main fields of pursuit for humans. And then ASI is what AGI becomes, presumably quickly, by being able to self-improve. So becoming far superior in intelligence across all these disciplines than humans. When do you think we\u2019ll have AGI? It\u2019s 2030 a possibility? Sundar Pichai: There\u2019s one other term we should throw in there. I don\u2019t know who used it first, maybe Karpathy did, AJI. Have you heard AJI, the artificial jagged intelligence? Sometimes feels that way, both their progress and you see what they can do and then you can trivially find they make numerical errors or counting R\u2019s in strawberry or something, which seems to trip up most models or whatever it is. So maybe we should throw that term in there.",
+          "score": 6.305727481842041,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 2 is highly relevant as it provides Demis Hassabis's probability estimate for AGI by 2030. Chunks 1, 3, 4, and 5 are irrelevant as they discuss other individuals' opinions or general AGI timelines.\n\nWhile Chunk 2 mentions the importance of an AGI definition, it does not provide Demis Hassabis's specific definition. The agent should search for \"Demis Hassabis AGI definition\" to address the second part of the question.",
+      "timestamp": 3.886991024017334
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Demis Hassabis AGI definition",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 3148,
+          "episode_id": 42,
+          "guest": "Peter Norvig",
+          "chunk_index": 15,
+          "text": "And he said, you know, half of that was okay. That certainly there's lots of new things that have been developed, but some of the core was still the same. So I think we'll gain a better understanding of what you can do there. I think we'll need to incorporate all the things we can do with the other technologies, right? So deep learning started out with convolutional networks and very close to perception. And it's since moved to be able to do more with actions and some degree of longer term planning. But we need to do a better job with representation than reasoning and one shot learning and so on. And I think we don't know yet how that's gonna play out. So do you think looking at some success, but certainly eventual demise, a partial demise of experts to symbolic systems in the 80s, do you think there is kernels of wisdom and the work that was done there with logic and reasoning and so on that will rise again in your view?",
+          "score": 4.808574676513672,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8811,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 236,
+          "text": "And I'd rather see that than a lot of the garbage that the society spends their money on. On the other hand, I don't think Mars colonization or inventing amazing new genres of music is not one of the things that is most likely to make a critical difference in the evolution of human or nonhuman life in this part of the universe over the next decade. Do you think AGI is really? AGI is by far the most important thing that's on the horizon. And then technologies that have direct ability to enable AGI or to accelerate AGI are also very important. For example, say, quantum computing. I don't think that's critical to achieve AGI, but certainly you could see how the right quantum computing architecture could massively accelerate AGI, similar other types of nanotechnology. Right now, the quest to cure aging and end disease while not in the big picture as important as AGI, of course, it's important to all of us as individual humans.",
+          "score": 3.879765272140503,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8812,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 237,
+          "text": "And if someone made a super longevity pill and distributed it tomorrow, I mean, that would be huge and a much larger impact than a Mars colony is gonna have for quite some time. But perhaps not as much as an AGI system. No, because if you can make a benevolent AGI, then all the other problems are solved. I mean, if then the AGI can be, once it's as generally intelligent as humans, it can rapidly become massively more generally intelligent than humans. And then that AGI should be able to solve science and engineering problems much better than human beings, as long as it is in fact motivated to do so. That's why I said a benevolent AGI. There could be other kinds. Maybe it's good to step back a little bit. I mean, we've been using the term AGI. People often cite you as the creator, or at least the popularizer of the term AGI, artificial general intelligence. Can you tell the origin story of the term maybe?",
+          "score": 3.8515572547912598,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 7774,
+          "episode_id": 94,
+          "guest": "Ilya Sutskever",
+          "chunk_index": 52,
+          "text": "Well, the ideal world I'd like to imagine is one where humanity, I like, the board members of a company where the AGI is the CEO. So it would be, I would like, the picture which I would imagine is you have some kind of different entities, different countries or cities, and the people that leave their vote for what the AGI that represents them should do, and the AGI that represents them goes and does it. I think a picture like that, I find very appealing. You could have multiple AGI, you would have an AGI for a city, for a country, and there would be multiple AGI's, for a city, for a country, and there would be, it would be trying to, in effect, take the democratic process to the next level. And the board can always fire the CEO. Essentially, press the reset button, say. Press the reset button. Rerandomize the parameters. But let me sort of, that's actually, okay, that's a beautiful vision, I think, as long as it's possible to press the reset button.",
+          "score": 3.753375768661499,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8601,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 26,
+          "text": "So I mean it's... AKA neural networks. Yeah, yeah, yeah. Well, certain architectures for learning using neural networks. So yeah, the AGI conferences are sort of now the main concentration of people not obsessed with deep neural nets and deep reinforcement learning, but still interested in AGI, not the only ones. I mean, there's other little conferences and groupings interested in human level AI and cognitive architectures and so forth. But yeah, it's been a big shift. Like back then, you couldn't really... It'll be very, very edgy then to give a university department seminar that mentioned AGI or human level AI. It was more like you had to talk about something more short term and immediately practical than in the bar after the seminar, you could bullshit about AGI in the same breath as time travel or the simulation hypothesis or something. Whereas now, AGI is not only in the academic seminar room, like you have Vladimir Putin knows what AGI is.",
+          "score": 3.707406997680664,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All chunks are irrelevant and do not mention Demis Hassabis, his AGI definition, or any probability estimates. None of the retrieved information is useful.\n\nThe agent should search for \"Demis Hassabis AGI definition\" and \"Demis Hassabis AGI 2030 probability\" to directly address both parts of the question.",
+      "timestamp": 10.945895671844482
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Demis Hassabis definition of AGI",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 20.848987817764282
+    },
+    {
+      "step_number": 4,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 23.29199242591858
+    }
+  ],
+  "final_answer": "Demis Hassabis estimates a 50% chance of achieving AGI by 2030. While he acknowledges that the definition of AGI is a crucial part of this discussion, his specific definition of AGI is not provided in the available podcast transcripts.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    103,
+    42,
+    459,
+    471,
+    475,
+    94
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 23.29199481010437
+}

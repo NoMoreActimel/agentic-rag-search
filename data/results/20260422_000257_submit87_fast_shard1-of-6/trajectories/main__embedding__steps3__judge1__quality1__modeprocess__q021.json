@@ -1,0 +1,154 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language best id Software Oculus VR",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7553466756343842,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7190666794776917
+        },
+        {
+          "chunk_id": 41383,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 14,
+          "text": "So you could say that we've been trying to build those virtual experiences from the very beginning. And in the modern era of virtual reality, especially on the mobile side of things, when it's standalone and you're basically using a cell phone chip to be able to produce these very immersive experiences, it does require work. It's not at the level of what an old school console game programmer would have operated at where you're looking at hardware registers and you're scheduling all the DMA accesses, but it is still definitely a different level than what a web developer or even a PC Steam game developer usually has to work at. And again, it's great. There's opportunities for people that wanna operate at either end of that spectrum there and still provide a lot of value to the world. Let me ask you sort of a big question about preference. What would you say is the best programming language? Your favorite, but also the best.",
+          "score": 0.736765578508377,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7353793978691101
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7208975167274475,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7127107381820679
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7204437763690948,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7120625376701355
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.714921448469162,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7298877835273743
+        }
+      ],
+      "judge_feedback": "Chunk 3 and 5 are largely irrelevant filler. Chunk 2 sets up the question to John Carmack about the \"best programming language\" but does not contain his answer. Chunks 1 and 4 provide ThePrimeagen's general views on programming languages, not his discussion of Carmack's specific pragmatic view.\n\nThe agent needs to find John Carmack's direct answer to the question about the \"best programming language\" from Episode #309. Then, it should search for ThePrimeagen discussing *Carmack's* specific view on this topic.",
+      "timestamp": 7.00346565246582
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "John Carmack best programming language pragmatic view id Software Oculus VR episode 309",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.7570139784812927,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.721448540687561
+        },
+        {
+          "chunk_id": 60704,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 58,
+          "text": "Without good sleep, I would just become a zombie and wouldn\u2019t be nearly at my best. So I always needed to get sleep. But I didn\u2019t need anything else going on. The programming itself was so energizing and enthralling. So it was three and a half years of that during the project. Mostly spent programming. I would say probably 60 hours a week of programming, five hours a week of coordinating with other people and iterating and sitting down with them and looking at what\u2019s going on on screen and figuring out what they needed. Maybe five hours of business stuff. And there was a good division of labor then. Didn\u2019t have a big executive team, but it was basically myself running the techno and development part of the company and Mark Rein running the business part of it, doing deals and maxing out his credit card and going around the world bringing in sources of revenue to keep the company funded. Lex Fridman: What programming language are we talking about? C?",
+          "score": 0.7530273218154907,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7157533168792725
+        },
+        {
+          "chunk_id": 41630,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 261,
+          "text": "So yeah, I definitely kind of wanted to be, there was a point where I did make a pitch. It's like, hey, make me VR dictator and I'll go in and get shit done. I am, and that's just, it's not in the culture at Meta. You know, and they understand the trade offs they, and that's just not the way, that's not the company that they want, the team that they wanna do. It's fascinating because VR and we'll talk about it more. It's still unclear to me in what way VR will change the world because it does seem clear that VR will somehow fundamentally transform this world and it's unclear to me how yet. Let me know when you wanna get into that. Who will? Well, hold on a second. So in the stick to the you being the best programmer ever. Okay, in the early days when you didn't have, when you didn't have adult responsibilities of leading teams and all that kind of stuff and you can focus on just being a programmer, what did the productive day in the life of John Carmack look like?",
+          "score": 0.7244908430576324,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7435583472251892
+        }
+      ],
+      "judge_feedback": "Chunk 2 is irrelevant as it features Tim Sweeney, not John Carmack. Chunk 3, while featuring John Carmack, discusses his role at Meta/Oculus but not his views on programming languages.\n\nChunk 1 is highly relevant, detailing Carmack's pragmatic shift from Quake C to C/C interpreters at id Software, emphasizing a language's utility over its syntax. To fully answer the question, the agent needs to find information about John Carmack's pragmatic view on programming languages specifically during his time at Oculus VR.\n\n**Next search query:** \"John Carmack programming language preference Oculus VR\" or \"John Carmack C++ Oculus VR\"",
+      "timestamp": 789.1420161724091
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "John Carmack programming language preference Oculus VR",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.7703594524860382,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7405135035514832
+        },
+        {
+          "chunk_id": 41384,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 15,
+          "text": "Let me ask you sort of a big question about preference. What would you say is the best programming language? Your favorite, but also the best. You've seen throughout your career, you're considered by many to be the greatest programmer ever. I mean, it's so difficult to place that label on anyone, but if you put it on anyone, it's you. So let me ask you these kind of ridiculous questions of what's the best band of all time, but in your case, what's the best programming language? Everything has all the caveats about it. But so what I use, so nowadays I do program a reasonable amount of Python for AI, ML sorts of work. I'm not a native Python programmer. It's something I came to very late in my career. I understand what it's good for. But you don't dream in Python. I do not.",
+          "score": 0.7682956953048706,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.737565279006958
+        }
+      ],
+      "judge_feedback": "Chunk 1 and Chunk 2 are relevant. Chunk 1 discusses his custom language for Quake (id Software), and Chunk 2 addresses his general view on programming languages, mentioning Python for current AI/ML work. However, neither chunk specifically details his pragmatic view on programming languages *during his groundbreaking work at Oculus VR*. The agent should search for John Carmack's programming language choices or views specifically related to his work at Oculus VR.",
+      "timestamp": 796.9872188568115
+    }
+  ],
+  "final_answer": "When asked about the best programming language, John Carmack stated that \"everything has all the caveats about it,\" indicating a pragmatic, context-dependent view rather than a single \"best\" option. He noted his current use of Python for AI/ML work, though he doesn't consider himself a native Python programmer. Carmack also shared his experience of building his own language, Quake C, for Quake, which allowed users to \"do something that they cared about.\"",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    309,
+    461,
+    467
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 802.2651448249817
+}

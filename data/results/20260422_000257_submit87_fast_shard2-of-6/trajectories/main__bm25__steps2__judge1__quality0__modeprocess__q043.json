@@ -1,0 +1,122 @@
+{
+  "question": "How do Ben Goertzel's direct efforts in developing embodied Artificial General Intelligence for robotics, such as with Sophia and the 'embodied communication prior,' contrast with Sara Walker and Lee Cronin's Assembly Theory on the emergence of complex systems, and Sebastian Raschka and Nathan Lambert's focus on large language models, in shaping our understanding of advanced artificial systems?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel embodied AGI robotics Sophia embodied communication prior",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8575,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ben Goertzel, one of the most interesting minds in the artificial intelligence community. He's the founder of SingularityNet, designer of OpenCog AI Framework, formerly a director of research at the Machine Intelligence Research Institute, and chief scientist of Hanson Robotics, the company that created the Sophia robot. He has been a central figure in the AGI community for many years, including in his organizing and contributing to the conference on artificial general intelligence, the 2020 version of which is actually happening this week, Wednesday, Thursday, and Friday. It's virtual and free. I encourage you to check out the talks, including by Yosha Bach from episode 101 of this podcast. Quick summary of the ads. Two sponsors, The Jordan Harbinger Show and Masterclass. Please consider supporting this podcast by going to jordanharbinger.com slash lex and signing up at masterclass.com slash lex. Click the links, buy all the stuff.",
+          "score": 11.556933403015137,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8722,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 147,
+          "text": "This is for people who don't know the company that created Sophia the Robot. Can you tell me who Sophia is? I'd rather start by telling you who David Hanson is. Because David is the brilliant mind behind the Sophia Robot. And he remains, so far, he remains more interesting than his creation, although she may be improving faster than he is, actually. I mean, he's a... So yeah, I met David maybe 2007 or something at some futurist conference we were both speaking at. And I could see we had a great deal in common. I mean, we were both kind of crazy, but we both had a passion for AGI and the singularity. And we were both huge fans of the work of Philip K. Dick, the science fiction writer. And I wanted to create benevolent AGI that would create massively better life for all humans and all sentient beings, including animals, plants, and superhuman beings. And David, he wanted exactly the same thing, but he had a different idea of how to do it. He wanted to get computational compassion.",
+          "score": 7.329241752624512,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8745,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 170,
+          "text": "We've had them chatting to each other for a number of weeks on the server just... That's funny. We're generating training data of what Sophia says in a wide variety of conversations. But we can see, compared to Sophia's current chat bot, the Facebook deep neural chat bot comes up with a wider variety of fluent sounding sentences. On the other hand, it rambles like mad. The Sophia chat bot, it's a little more repetitive in the sentence structures it uses. On the other hand, it's able to keep like a conversation arc over a much longer, longer period, right? So there... Now, you can probably surmount that using Reformer and like using various other deep neural architectures to improve the way these Transformer models are trained. But in the end, neither one of them really understands what's going on. I mean, that's the challenge I had with Sophia is if I were doing a robotics project aimed at AGI, I would wanna make like a robo toddler that was just learning about what it was seeing.",
+          "score": 7.179080486297607,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8746,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 171,
+          "text": "Because then the language is grounded in the experience of the robot. But what Sophia needs to do to be Sophia is talk about sports or the weather or robotics or the conference she's talking at. She needs to be fluent talking about any damn thing in the world. And she doesn't have grounding for all those things. So there's this, just like, I mean, Google Mina and Facebook's chat, but I don't have grounding for what they're talking about either. So in a way, the need to speak fluently about things where there's no nonlinguistic grounding pushes what you can do for Sophia in the short term a bit away from AGI. I mean, it pushes you towards IBM Watson situation where you basically have to do heuristic and hard code stuff and rule based stuff. I have to ask you about this, okay. So because in part Sophia is like an art creation because it's beautiful. She's beautiful because she inspires through our human nature of anthropomorphize things. We immediately see an intelligent being there.",
+          "score": 7.145312309265137,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 48877,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 77,
+          "text": "Ben Shapiro: Sure. Destiny: You hear that, right? Ben Shapiro: Sure. Destiny: The deposition of Saddam Hussein and everything that followed after probably contributed more to the growth of ISIS and the destabilization of that entire region probably more than anything else. I think that prior to Bush for Clinton and even at the beginning of Bush\u2019s presidency, we were on some kind of road to normalcy with Iran, which I think has to happen whether we liked them or not until Bush, for whatever reason, decides to throw Iran into the Axis of Evil. Ben Shapiro: You emphasized that we\u2019re on a road to normalcy with Iran in the 1990s. Destiny: We do in the\u2026 wait, what? Ben Shapiro: That we are on a road to normalcy with Iran in the 1990s. Destiny: My understanding is that, yeah, from the late \u201990s and prior to the Axis of Evil labeling of Iran, that there was going to be some path forward to where we could start to normalize relationships with them.",
+          "score": 6.760765552520752,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 5 is completely irrelevant and should be ignored. Chunks 1-4 provide useful context on Ben Goertzel's work with Sophia and embodied AGI, touching on the concept of grounding, but they do not explicitly define or discuss the 'embodied communication prior'. Crucially, there is no information on Sara Walker/Lee Cronin's Assembly Theory or Sebastian Raschka/Nathan Lambert's focus on large language models, which are essential for the requested contrast.\n\nTo fill these gaps, first search for \"Ben Goertzel embodied communication prior\" to clarify that specific concept. Then, conduct separate searches for \"Sara Walker Lee Cronin Assembly Theory\" and \"Sebastian Raschka Nathan Lambert large language models\" to gather information on the contrasting perspectives.",
+      "timestamp": 1.9762015342712402
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Ben Goertzel embodied communication prior",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 48835,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 35,
+          "text": "When I was in school, I was doing football practice, I was doing cross country practice. I went in early for a band. I agree with you that sometimes people only focus on one end of the problem as I hate to be that guy, but as somebody that\u2026 Have you ever watched The Wire? Ben Shapiro: Sure. Destiny: I\u2019m not going to cite The Wire as a real life example, but obviously there\u2019s only so much you can do in a school when the children coming in are so beyond destroyed because of the family life and everything prior to them even getting to school that day. So I agree. Government is not like the solution to broken families. That would never be the case. Ben Shapiro: And it\u2019s actually not the solution to education depending on the kind of solutions that you\u2019re talking about. Some solutions, yes. Some solutions, no. Destiny: Yeah.",
+          "score": 5.34431266784668,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 48858,
+          "episode_id": 410,
+          "guest": "Ben Shapiro vs Destiny Debate",
+          "chunk_index": 58,
+          "text": "And Joe Biden, again, started off with a patina of being non-divisive and now has emerged as divisive. If you don\u2019t mind, I actually want to get to the foreign policy questions because this one is actually slightly less interesting to me. Destiny: Sure. Can I ask just one quick thing, I guess. Ben Shapiro: [inaudible 00:37:48], go for it. Destiny: We can say the reality of it and we can look at opinion polls. What if we look at legislative accomplishments? Like Biden is working on a 50-50 divided Senate. Donald Trump had both House of Congress and the Supreme Court and got no major legislation passed. Ben Shapiro: Well, I mean, he did lose Congress in 2018. Destiny: But prior to that, we got the Infrastructure bill, I think, in one year, which Trump promised for his entire presidency, didn\u2019t get anywhere on it. Ben Shapiro: I mean, yes, his Republican base was not in favor of mass spending on infrastructure and neither am I. So there\u2019s that.",
+          "score": 5.342382431030273,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 10720,
+          "episode_id": 120,
+          "guest": "Fran\u00e7ois Chollet",
+          "chunk_index": 33,
+          "text": "They had a limited amount of energy. And of course, this started from a different set of priors. This started from innate human priors. So I think if you want to compare the intelligence of two systems, like the intelligence of an AI and the intelligence of a human, you have to control for priors. You have to start from the same set of knowledge priors about the task, and you have to control for experience, that is to say, for training data. So what's priors? So prior is whatever information you have about a given task before you start learning about this task. And how's that different from experience? Well, experience is acquired. So for instance, if you're trying to play Go, your experience with Go is all the Go games you've played, or you've seen, or you've simulated in your mind, let's say. And your priors are things like, well, Go is a game on the 2D grid. And we have lots of hardcoded priors about the organization of 2D space.",
+          "score": 4.394692420959473,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunks 1 and 2 are completely irrelevant, discussing political topics and using \"prior\" in a temporal sense. Chunk 3 defines \"priors\" in a general AI context but does not mention Ben Goertzel, embodied AI, or communication.\n\nThe chunks contain no useful information about Ben Goertzel's \"embodied communication prior\" or his work on embodied AGI.\n\nThe agent should search for \"Ben Goertzel AGI embodied communication prior\" to find specific discussions of this concept in the context of his work.",
+      "timestamp": 11.624334335327148
+    }
+  ],
+  "final_answer": "The provided context details Ben Goertzel's work with Sophia the robot, focusing on the challenges of achieving AGI with embodied systems and the need for language to be grounded in a robot's experience. However, the retrieved information does not contain any mention of Sara Walker, Lee Cronin, Assembly Theory, Sebastian Raschka, or Nathan Lambert. Therefore, it is not possible to contrast their work with Ben Goertzel's based solely on the provided text.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    120,
+    410,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 79.20285129547119
+}

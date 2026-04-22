@@ -1,0 +1,101 @@
+{
+  "question": "Considering the podcast's discussions on 'politics,' how did the focus evolve from Kelsi Sheren's insights on the personal and societal consequences of political decisions related to war and veteran support, to Marc Andreessen's later analysis of macro-level political trends, national future, and technology's role in governance?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Kelsi Sheren politics war veteran support",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 49793,
+          "episode_id": 415,
+          "guest": "Serhii Plokhy",
+          "chunk_index": 56,
+          "text": "So, we should clarify that the applause wasn\u2019t knowing, it wasn\u2019t for the SS. It was for Ukrainian, it was for World War II veterans, but the propaganda, or at least an interpretation from the Russian side, from whatever side, is that they were applauding the full person standing before them, which wasn\u2019t just a Ukrainian veteran, but Ukrainian veteran that fought for the SS. Serhii Plokhy: I don\u2019t have any particular insights, but I would be very much surprised if even one person in the Parliament, I mean, the members of the Parliament actually knew the whole story. I would be very surprised. Lex Fridman: Yeah. The whole story of this person, and frankly, the whole story of Ukraine and Russia in World War II, period. Serhii Plokhy: Yes, yes. Lex Fridman: Nevertheless, it had a lot of power and really reverberated in support of the narrative that there is a neo-Nazi, a Nazi problem in Ukraine.",
+          "score": 0.4079323485692342,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 7.968529224395752
+        },
+        {
+          "chunk_id": 53421,
+          "episode_id": 435,
+          "guest": "Andrew Huberman",
+          "chunk_index": 93,
+          "text": "Ibogaine, as I understand it, gives a 22-hour psychedelic journey where no hallucinations with the eyes open, but you close your eyes and you get a very high-resolution image of actual events that happened in your life. But then you have agency within those movies. I think you have to be of healthy heart to be able to do it. I think you have to be on a heart rate monitor. It\u2019s not trivial. It\u2019s not like these other psychedelics. But there\u2019s a wonderful group called Veteran Solutions that has used iboga combined with some other psychedelics in the veterans\u2019 community to great success for things like PTSD. And it\u2019s a group I\u2019ve really tried to support in any way that I can, mainly by being vocal about the great work they\u2019re doing. But you hear incredible stories of people who are just near-cratered in their life or zombied by PTSD and other things post-war, get back a lightness or achieve a lightness and a clarity that they didn\u2019t feel they had. So I\u2019m very curious about these compounds.",
+          "score": 0.4023432051340739,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 6.443280220031738
+        },
+        {
+          "chunk_id": 31357,
+          "episode_id": 244,
+          "guest": "Robert Crews",
+          "chunk_index": 117,
+          "text": "But we don't want a generation of disillusioned veterans if we look at the other postwar moments. And this is kind of a postwar moment where, I think we need a conversation with American veterans about what they've gone through and what they're feeling. And they still have skin in the game because their personal connections and the end of their histories. And they're also gonna be future leaders. I mean, veterans. People who have served are often great men and women. That's true. And throughout history, whether you sacrifice you served in fighting World War II, in fighting Vietnam, that's going to mold you in different ways. That's going to mold how you are as a leader that leads this country forward. And so you have to have an honest conversation about what was the role of the war in Afghanistan, the war in the Middle East, the war on terror in the history of America.",
+          "score": 0.38551928551991776,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 7.007969379425049
+        },
+        {
+          "chunk_id": 28878,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Kelsey Sharon, Canadian Forces veteran, artillery gunner who served in Afghanistan at 18 years old and came home with severe PTSD. She went on to found Brass in Unity which creates unique jewellery, large part of the proceeds from which go to help rehabilitate the lives, limbs and mental health of veterans and first responders. She has a big personality, big heart and an intense passion for life. So when our paths happened to cross, I knew we needed to talk. This is the Lex Friedman Podcast, to support it please check out our sponsors in the description. And now here's my conversation with Kelsey Sharon. You mentioned that studying history had a big impact on you and that your grandfather was a World War II vet. So people that have gone through World War II, in my family too, they don't seem to talk about it much. Like the worse the tragedy, the less they talk about it.",
+          "score": 0.3841256955464681,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.948244094848633
+        },
+        {
+          "chunk_id": 49792,
+          "episode_id": 415,
+          "guest": "Serhii Plokhy",
+          "chunk_index": 55,
+          "text": "Let\u2019s applaud, when Zelenskyy shows up, let\u2019s have a Ukrainian veteran, let\u2019s applaud a veteran of World War II, and then all of a sudden, you realize, well, there\u2019s actually complexities to wars. We can talk about, for example, a lot of dark aspects on all sides of World War II, the mass rape at the end of World War II by the Red Army, when they [inaudible 01:03:40] Germany. There\u2019s a lot of really dark complexity in it on all sides. So, that could be an opportunity to explore the dark complexity that some of the Ukrainians were in the SS, or Bandera, the complexities there, but I think they were doing not a complex thing. They were doing a very shallow applaud. And we should applaud veterans, of course, but in that case, they were doing it for show, for Zelenskyy and so on. So, we should clarify that the applause wasn\u2019t knowing, it wasn\u2019t for the SS.",
+          "score": 0.343159130414327,
+          "source": "bm25",
+          "quality_score": 0.6,
+          "original_score": 6.992534160614014
+        }
+      ],
+      "judge_feedback": "Chunk 1 and Chunk 5 are irrelevant as they discuss historical complexities of WWII veterans and propaganda, not Kelsi Sheren's insights. Chunk 4 is highly relevant, introducing Kelsi Sheren and her work with veterans. Chunks 2 and 3 provide useful general context on veteran support and the impact of war.\n\nTo fill gaps, the agent needs to find Kelsi Sheren's specific discussions on the *political decisions* related to war and veteran support, and their *personal and societal consequences*. Then, the agent must search for Marc Andreessen's analysis.\n\nNext search: \"Kelsi Sheren political decisions war consequences veteran support\"",
+      "timestamp": 3.1493632793426514
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Kelsi Sheren political decisions war veteran consequences",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 28999,
+          "episode_id": 230,
+          "guest": "Kelsi Sheren",
+          "chunk_index": 121,
+          "text": "They left on the Thursday before the Tuesday that was the 31st. There were high value Canadian visa holders that are still in that country that are on the top of the kill list. Canada's not doing anything about it. I'm disgusted in the way my government has acted because number one, there's an active lawsuit with veterans against the Supreme Court of Canada right now. We are leaving our vets and our Canadians stranded over there and we are leaving the vets that have been maimed by this war in Canada. They're turned down for everything. I've been turned down for hearing loss. They're saying it's not military related. They have PIs follow me. This is normal behavior. There's a veteran named Brock who was told by Trudeau in a meeting that after he lost his leg, he was just trying to get a new prosthetic because it was just killing him. Trudeau stood up in a meeting and said, you're just asking for too much.",
+          "score": 0.40430546951293944,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 5.241662979125977
+        }
+      ],
+      "judge_feedback": "Chunk 1 is highly relevant and useful, directly addressing Kelsi Sheren's insights on political decisions, war, and veteran support consequences.\n\nTo address the second part of the question and understand the evolution, the agent needs to find information about Marc Andreessen's political analysis. Search for \"Marc Andreessen political trends national future technology governance\".",
+      "timestamp": 17.630633115768433
+    }
+  ],
+  "final_answer": "Kelsi Sheren's discussions focused on the personal and societal consequences of political decisions related to war and veteran support, detailing her own PTSD, the struggles of other veterans, and her disgust with the Canadian government's treatment of those who served. She highlighted issues like veterans being left stranded, denied support for injuries, and facing legal battles. However, the provided context does not contain any discussions or insights from Marc Andreessen, so it's not possible to describe how the focus evolved to his analysis of macro-level political trends, national future, or technology's role in governance.",
+  "total_chunks_retrieved": 6,
+  "unique_episodes_found": [
+    435,
+    244,
+    230,
+    415
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 648.399730682373
+}

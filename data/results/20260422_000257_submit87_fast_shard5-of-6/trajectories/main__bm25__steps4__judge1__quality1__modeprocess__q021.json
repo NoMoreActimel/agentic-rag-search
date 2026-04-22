@@ -1,0 +1,118 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen John Carmack programming language best",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 60743,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 97,
+          "text": "It\u2019s so inspiring to hear these kinds of stories when there\u2019s so much uncertainty and you figure out and so many constraints and you figure out how to bring it to life in real time and create this world that Unreal did. Maybe if we could just pause, since you mentioned John Carmack a few times, as a fellow pioneer in the game industry at that time, what do you admire about John?\n\n\n## John Carmack\n\nTim Sweeney: John singularly has this intense dedication to getting the best result from his code and having absolutely no attachment to passcode and some of the legendary things he did. The end result was an absolute breakthrough in real-time computer graphics, weren\u2019t his first try. They were like his seventh or eighth try after he\u2019d done something time and time again, tried it, found a better approach, thrown out the old one, built it again, and continually rewrite his code until he found the absolute best solution to a problem.",
+          "score": 0.4632844975789388,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.055049896240234
+        },
+        {
+          "chunk_id": 59349,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 233,
+          "text": "And there, sort of the stress testing the system and getting all of the signals from that system that everything is working correctly is something that fills me with joy and makes sure that the system actually works. So yeah, that, I don\u2019t know if it\u2019s 5, 10,000 lines of code, if it\u2019s Java or C++ it\u2019s millions lines of code. But yeah, in Python, yeah, I would say 10,000 lines of code. That\u2019s when you first get to see the magic. But anyway, you were saying? ThePrimeagen: Okay, so you and John Carmack had a conversation about asserts. Lex Fridman: Yes. ThePrimeagen: You talked about this idea of putting asserts everywhere that effectively crash the program when you have some state in your program that should not be represented and you have made this choice actively. And so I\u2019ve never done that before. And I know this is like an old technique and I obviously must be too young or too dumb to know that this was a thing people did.",
+          "score": 0.4098295548756917,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 8.049838066101074
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.38362136713663736,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.926630020141602
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.3788960590362549,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 7.495545387268066
+        },
+        {
+          "chunk_id": 41735,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 366,
+          "text": "You're an incredible human being. I can't wait what you do next, but you've already changed the world. You're an inspiration to so many people. And again, we haven't covered like most of what I was planning to talk about, so I hope we get a chance to talk someday in the future. I can't wait to see what you do next. Thank you so much again for talking to me. Thank you very much. Thanks for listening to this conversation with John Carmack. To support this podcast, please check out our sponsors in the description. And now, let me leave you with some words from John Carmack himself. Focused hard work is the real key to success. Keep your eyes on the goal, and just keep taking the next step towards completing it. If you aren't sure which way to do something, do it both ways and see which works better. Thank you for listening and hope to see you next time.",
+          "score": 0.18795125643412272,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 6.769339561462402
+        }
+      ],
+      "judge_feedback": "1. No chunks are clearly irrelevant.\n2. Chunk 2 confirms ThePrimeagen discusses John Carmack's programming practices, but none of the chunks contain information about Carmack's pragmatic view on the 'best' programming language.\n3. The agent should search for discussions by ThePrimeagen specifically about John Carmack's choice of programming languages (e.g., C, C++, assembly) or his philosophy on language selection for performance and pragmatism.",
+      "timestamp": 1.6309783458709717
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen John Carmack programming language choice",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 13.145869970321655
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "John Carmack programming language philosophy pragmatism",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 41606,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 237,
+          "text": "I am constantly kind of crying out for it's like, we can do better than this. And you wonder what the mechanisms to unlock that efficiency are. I don't, there is some sense in a large company that like an individual engineer might not believe that they can change the world. Maybe you delegate a little bit of the responsibility to be the one who changes the world in a big company, I think, but the reality is like the world will get changed by a single engineer anyway. So if whether inside Google or inside a startup, it doesn't matter, it's just like Google and Meta needs to help those engineers believe they're the ones that are gonna decrease that latency. It'll take one John Carmack, the 20 year old Carmack that's inside Meta right now to change everything. And I try to point that out and push people. It's like, try to go ahead.",
+          "score": 0.3555224822362264,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 6.493820667266846
+        }
+      ],
+      "judge_feedback": "Chunk 1 is irrelevant. It discusses John Carmack's impact as an engineer but does not mention his views on programming languages.\n\nThe agent should search for John Carmack's specific statements or discussions about programming language choices, particularly in the context of id Software or Oculus VR, and look for his pragmatic reasoning.",
+      "timestamp": 16.061160564422607
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "John Carmack programming language philosophy performance pragmatism id Software Oculus",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 21.095046997070312
+    }
+  ],
+  "final_answer": "The provided text does not contain John Carmack's pragmatic view on the 'best' programming language, nor does it show ThePrimeagen discussing this specific topic. While Carmack's work at id Software and Oculus VR is mentioned, and his dedication to finding the best solutions through iterative development is highlighted, his opinion on programming languages is not detailed.",
+  "total_chunks_retrieved": 6,
+  "unique_episodes_found": [
+    309,
+    467,
+    461
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 24.976094961166382
+}

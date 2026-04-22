@@ -1,0 +1,196 @@
+{
+  "question": "Dylan Patel and Nathan Lambert discussed DeepSeek's AI models in comparison to those from Google. Considering Google's AI-first strategy, what specific AI product did Sundar Pichai highlight as central to this strategy, and what impressive scaling metric did he share about its processing capabilities?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Dylan Patel Nathan Lambert Sundar Pichai Google AI-first strategy specific AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58884,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 313,
+          "text": "Lex Fridman: Let\u2019s talk about the broad AI race. Who do you think wins? We talked about Google, Meta. Nathan Lambert: The default leader has been Google because of their infrastructure advantage. Lex Fridman: Well, in the news, OpenAI is the leader. Nathan Lambert: They\u2019re the leading in the narrative. Dylan Patel: They have the best model. Nathan Lambert: They have the best model that people can use and they\u2019re experts-Experts. Dylan Patel: And they have the most AI revenue. Nathan Lambert: Yeah. OpenAI is winning. Lex Fridman: So who\u2019s making money on AI right now? Is anyone making money? Dylan Patel: So accounting profit-wise, Microsoft is making money, but they\u2019re spending a lot of CapEx and that gets depreciated over years. Meta\u2019s making tons of money with recommendation systems, which is AI, but not with Llama, right? Llama\u2019s losing money for sure. I think Anthropic and OpenAI are obviously not making money otherwise they wouldn\u2019t be raising money.",
+          "score": 0.7130310535430908,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58662,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 91,
+          "text": "So I don\u2019t think it will be a snap of the finger moment. Nathan Lambert: It\u2019s a physical constraint [inaudible 01:14:37]. Dylan Patel: Rather, it\u2019ll be a, \u201cOh, the capabilities are here, but I can\u2019t deploy it everywhere.\u201d And so one simple example, going back sort of to 2023 was when being when GPT-4 came out, everyone was freaking out about search. Perplexity came out. If you did the cost on like, hey, implementing GPT-3 into every Google search, it was like, oh, okay, this is just physically impossible to implement. And as we step forward to going back to the test-time compute thing, a query for\u2026 You ask ChatGPT a question, it costs cents for their most capable model of Chat to get a query back. To solve an AGI problem though costs 5 to 20 bucks, and this is in-\n\nNathan Lambert: It\u2019s only going up from there. Dylan Patel: This is 1,000, 10,000 X factor difference in cost to respond to a query versus do a task.",
+          "score": 0.7101478576660156,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58661,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 90,
+          "text": "I think that\u2026 You\u2019re asking about the AGI thing. If you\u2019re making me give a year, I\u2019m going to be like, \u201cOkay, I have AI CEOs saying this. They\u2019ve been saying two years for a while. I think that there are people like Dario at Anthropic, the CEO, has thought about this so deeply. I need to take their word seriously, but also understand that they have different incentives.\u201d So I would be like, \u201cAdd a few years to that.\u201d Which is how you get something similar to 2030 or a little after 2030. Dylan Patel: I think to some extent, we have capabilities that hit a certain point where any one person could say, \u201cOh, okay, if I can leverage those capabilities for X amount of time, this is AGI, call it \u201927, \u201928.\u201d But then the cost of actually operating that capability-\n\nNathan Lambert: Yeah, this was going to be my point. Dylan Patel: \u2026 is so, so extreme that no one can actually deploy it at scale en masse to actually completely revolutionize the economy on a snap of a finger.",
+          "score": 0.7043585777282715,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58890,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 319,
+          "text": "Dylan Patel: The chat application clearly does not have tons of room to continue. The standard chat where you\u2019re just using it for a random question and stuff. The cost continues to collapse. V3 is the latest one. Nathan Lambert: It\u2019ll go down with the ads. Dylan Patel: But it\u2019s going to get supported by ads. Meta already serves 405B and probably loses the money, but at some point the models are going to get so cheap that they can just serve them for free with ad supported and that\u2019s what Google is going to be able to do. And obviously they\u2019ve got a bigger reach. Chat is not going to be the only use case. It\u2019s like these reasoning, code, agents, computer use, all this stuff is where OpenAI has to actually go to make money in the future otherwise they\u2019re kaputs. Lex Fridman: But X, Google, and Meta have these other products. So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are.",
+          "score": 0.7024127244949341,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.7012216448783875,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 13.488723993301392
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Sundar Pichai Google AI-first strategy specific AI product scaling metric",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 61591,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 35,
+          "text": "It\u2019s gone up to 480. It\u2019s a 50x\u2026\n\nSundar Pichai: \u2026 right, it\u2019s gone up to 480, it\u2019s a 50 X increase. So there\u2019s no limit to human curiosity. And I think it\u2019s one of those moments, I don\u2019t think it is there today, but maybe one day there\u2019s a five word phrase which says what the actual universe is or something like that and something very meaningful, but I don\u2019t think we are quite there yet.\n\n\n## Scaling laws\n\nLex Fridman: Do you think the scaling laws are holding strong on, there\u2019s a lot of ways to describe the scaling laws for AI, but on the pre-training, on post-training fronts, so the flip side of that, do you anticipate AI progress will hit a wall? Is there a wall? Sundar Pichai: It\u2019s a cherished micro kitchen conversation, once in a while I have it, like when Demis is visiting or if Demis, Koray, Jeff, Norm, Sergey, a bunch of our people, we sit and talk about this. Look, we see a lot of headroom ahead, I think.",
+          "score": 0.7374005317687988,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61649,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 93,
+          "text": "Sundar Pichai: I think a few things. Looking at Google, we\u2019ve given various stats around 30% of code now uses AI- generated suggestions or whatever it is. But the most important metric, and we carefully measure it is, like, how much has our engineering velocity increased as a company due to AI, right? It\u2019s tough measure, and we rigorously try to measure it, and our estimates are that number is now at 10%, right? Like, now, across the company, we\u2019ve accomplished a 10% engineering velocity increase using AI, but we plan to hire more engineers next year, right? Because the opportunity space of what we can do is expanding too, right? Lex Fridman: Mm-hmm. Sundar Pichai: So I think, hopefully, at least in the near to midterm, for many engineers, it frees up more and more of the\u2026 Even in engineering and coding, there are aspects which are so much fun. You\u2019re designing. You\u2019re architecting. You\u2019re solving a problem.",
+          "score": 0.7313897013664246,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61610,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 54,
+          "text": "And now a year later, it\u2019s crazy. You showed this plot of all the things that were shipped over the past year. It\u2019s incredible. And Gemini Pro is winning across many benchmarks and products as we sit here today. So take me through that experience when there\u2019s all these articles saying you\u2019re the wrong guy to lead Google through this. Google is lost, is done, it\u2019s over, to today where Google is winning again. What were some low points during that time? Sundar Pichai: Look, lots to unpack. Obviously, the main bet I made as a CEO was to really make sure the company was approaching everything in a AI-first way, really setting ourselves up to develop AGI responsibly, and make sure we are putting out products which embodies that, things that are very, very useful for people. So look, I knew even through moments like that last year, I had a good sense of what we were building internally.",
+          "score": 0.7235467433929443,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61600,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 44,
+          "text": "And I think shadcn Tweeted that Google is just one great UI from completely winning the AI race, meaning UI is a huge part of it. How that intelligence, I think the [inaudible 00:42:45] Project likes to talk about this right now, it\u2019s an LLM, but when is it going to become a system where you\u2019re talking about shipping systems versus shipping a particular model? Yeah, that matters too, how the system manifests itself and how it presents itself to the world. That really, really matters\n\nSundar Pichai: Oh, hugely so. There are simple UI innovations which have changed the world and I absolutely think so. We will see a lot more progress in the next couple of years as I think AI itself on a self-improving track for UI itself. Today, we are constraining the models, the models can\u2019t quite express themselves in terms of the UI to people.",
+          "score": 0.715326189994812,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61571,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 15,
+          "text": "We can go to electricity or the labor mechanization of the Industrial Revolution, or we can go back to the first Agricultural Revolution 12,000 years ago. In that long list of inventions, do you think AI\u2026 When history is written 1,000 years from now, do you think it has a chance to be the number one productivity multiplier? Sundar Pichai: It\u2019s a great question. Many years ago, I think it might\u2019ve been 2017 or 2018, I said at the time, AI is the most profound technology humanity will ever work on. It\u2019ll be more profound than fire or electricity. So, I have to back myself. I still think that\u2019s the case. When you ask this question, I was thinking, do we have a recency bias? In sports, it\u2019s very tempting to call the current person you\u2019re seeing the greatest\u2026\n\nLex Fridman: Yes. Sundar Pichai: \u2026 player. Is there a recency bias? I do think, from first principles I would argue, AI will be bigger than all of those. I didn\u2019t live through those moments.",
+          "score": 0.7095339894294739,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 16.801188707351685
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Sundar Pichai Google AI product scaling metric processing capabilities",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 61593,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 37,
+          "text": "Sitting here today, I feel like the year ahead will have a lot of progress. Lex Fridman: And do you feel any limitations like the bottlenecks, compute limited, data limited, idea limited, do you feel any of those limitations or is it full steam ahead on all fronts? Sundar Pichai: I think it\u2019s compute limited in this sense, part of the reason you\u2019ve seen us do Flash, Nano Flash and Pro models, but not an Ultra model, it\u2019s like for each generation we feel like we\u2019ve been able to get the Pro model at, I don\u2019t know, 80, 90% of Ultra\u2019s capability, but Ultra would be a lot more slow and lot more expensive to serve. But what we\u2019ve been able to do is to go to the next generation and make the next generation\u2019s Pro as good as the previous generation\u2019s Ultra, but be able to serve it in a way that it\u2019s fast and you can use it and so on.",
+          "score": 0.7312396764755249,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 61623,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 67,
+          "text": "Of course once you show up to a page, you can use a basic translate, but that process of figuring it out, if you empathize with a large part of the world that doesn\u2019t speak English, their web is much smaller in that original language. And so it, again, unlocks that huge cognitive capacity there. You take for granted here with all the bloggers and the journalists writing about AI mode, you forget that this now unlocks because Gemini is really good at translation. Sundar Pichai: Oh it is. I mean the multimodality, the translation, it\u2019s ability to reason, we\u2019re dramatically improving tool use, and putting that power in the flow of Search, look, I\u2019m super excited with AI overviews. We\u2019ve seen the product has gotten much better, we measured using all kinds of user metrics. It\u2019s obviously driven strong growth of the product, and we\u2019ve been testing AI mode. It\u2019s now in the hands of millions of people and the early metrics are very encouraging.",
+          "score": 0.7101913690567017,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 31.2418851852417
+    },
+    {
+      "step_number": 4,
+      "tool_used": "embedding",
+      "query": "Sundar Pichai Google AI overviews scaling metric processing capabilities",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 61590,
+          "episode_id": 471,
+          "guest": "Sundar Pichai",
+          "chunk_index": 34,
+          "text": "So, that\u2019s like learning. Those tokens are people are curious, they ask a question and they find something out, and it truly could be life-changing. Sundar Pichai: Oh, it is. I had the same feeling about Search many, many years ago. These tokens per month has grown 50 times in the last 12 months. Lex Fridman: Is that accurate, by the way? The 4\u2026\n\nSundar Pichai: Yeah, it is. It is. It is accurate. I\u2019m glad it got it right. But that number was 9.7 trillion tokens per month, 12 months ago. It\u2019s gone up to 480. It\u2019s a 50x\u2026\n\nSundar Pichai: \u2026 right, it\u2019s gone up to 480, it\u2019s a 50 X increase. So there\u2019s no limit to human curiosity.",
+          "score": 0.6996334791183472,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 36.26315212249756
+    }
+  ],
+  "final_answer": "Sundar Pichai highlighted Search, particularly with AI overviews and AI mode, as central to Google's AI-first strategy. He shared that the processing capabilities for Search, measured in tokens per month, increased 50 times in 12 months, going from 9.7 trillion to 480 trillion tokens per month.",
+  "total_chunks_retrieved": 13,
+  "unique_episodes_found": [
+    459,
+    471
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 39.549317359924316
+}

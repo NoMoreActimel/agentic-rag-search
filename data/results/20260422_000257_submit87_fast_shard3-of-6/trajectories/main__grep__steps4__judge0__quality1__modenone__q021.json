@@ -1,0 +1,181 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7819999999999999,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.8
+        },
+        {
+          "chunk_id": 28167,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 200,
+          "text": "Now the plotting tool I used was something from Yorick actually. It was a plotting, a PLT kind of a plotting language that I used. Yorick is a programming language? It was a programming language, had a plotting tool, Dyslin, it had integration to Dyslin. I ended up using Dyslin plus some of the plotting from Yorick linked to from Python. Anyway, it was, people don't plot that way now, but this is before, and Sidepy was trying to add plotting. Yeah. Right? It didn't have much success. Really the success of plotting came from John Hunter, who had a similar experience to my experience, my kind of maverick experience as a person just trying to get stuff done and kind of having more time than money maybe, right? And John Hunter created what? MapPlotLib. He's the creator of MapPlotLib. Yeah, so John Hunter was, you know, he wasn't a student at the time, but he was an, he was working in Quant field and he said, we need better plotting.",
+          "score": 0.702,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 27543,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 98,
+          "text": "And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java. And for some of our programmers who are doing, say, user interface work, then they never have to even learn Sub L. They just have to learn APIs into the basic psych engine. So you're not necessarily feeling the burden of like, it's extremely efficient. That's not a problem to solve. Okay. Right. The other thing is, remember that we're talking about hiring programmers to do inference, who are programmers interested in effectively automatic theorem proving. And so those are people already predisposed to representing things in logic and so on. And Lisp really was the programming language based on logic that John McCarthy and others who developed it basically took the formalisms that Alonzo Church and other philosophers, other logicians, had come up with and basically said, can we basically make a programming language which is effectively logic?",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.612,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.6
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.712854623794556
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack pragmatic programming language best",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 651,
+          "episode_id": 11,
+          "guest": "Juergen Schmidhuber",
+          "chunk_index": 19,
+          "text": "And then in many ways this came back later because the G\u00f6del machine, for example, has a proof searcher on board and without that it would not be optimal. Well, Markus Futter's universal algorithm for solving all well defined problems has a proof searcher on board so that's very much logic programming. Without that it would not be asymptotically optimal. But then on the other hand, because we are very pragmatic guys also, we focused on recurrent neural networks and suboptimal stuff such as gradient based search and program space rather than provably optimal things. The logic programming certainly has a usefulness when you're trying to construct something provably optimal or provably good or something like that. But is it useful for practical problems? It's really useful for our theorem proving. The best theorem provers today are not neural networks. No, they are logic programming systems and they are much better theorem provers than most math students in the first or second semester.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 2608,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 12,
+          "text": "But you don't come across it very much because it's like $100,000 per CPU to run it. It's like this path of programming languages is just so much, I don't know, so much more powerful in every way than the ones that almost anybody uses every day. So it's all about computation. It's really focused on computation. It's pretty heavily focused on computation. I mean, so much of programming is data processing by definition. So there's a lot of things you can do with it. But yeah, there's not much work being done on making like user interface toolkits or whatever. I mean, there's some, but they're not great. At the same time, you've done a lot of stuff with Perl and Python. So where does that fit into the picture of J and K and APL? Well, it's just much more pragmatic. Like in the end, you kind of have to end up where the libraries are, you know? Like, cause to me, my focus is on productivity. I just want to get stuff done and solve problems. So Perl was great.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 2610,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 14,
+          "text": "It was everything, everywhere, but then the guy that ran Perl, Larry Wohl, kind of just didn't put the time in anymore. And no project can be successful if there isn't, you know, particularly one that started with a strong leader that loses that strong leadership. So then Python has kind of replaced it. You know, Python is a lot less elegant language in nearly every way, but it has the data science libraries and a lot of them are pretty great. So I kind of use it cause it's the best we have, but it's definitely not good enough. But what do you think the future of programming looks like? What do you hope the future of programming looks like if we zoom in on the computational fields, on data science, on machine learning? I hope Swift is successful because the goal of Swift, the way Chris Latner describes it, is to be infinitely hackable. And that's what I want.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 14.588201522827148
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language philosophy",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 3719,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 43,
+          "text": "It's almost like birth and death is what defines human life. That's right. By the way, philosophy is important. You can't do good language design without philosophy because what you are determining is what people can express and how. This is very important. By the way, constructors destructors came into C++ in 79 in about the second week of my work with what was then called C of the classes. It is a fundamental idea. Next comes the fact that you need to control copying because once you control, as you said, birth and death, you have to control taking copies, which is another way of creating an object. And finally, you have to be able to move things around so you get the move operations. And that's the set of key operations you can define on a C++ type. And so to you, those things are just just a beautiful part of C++ that is at the core of it all. Yes. You mentioned that you hope there will be one unified set of guidelines in the future for how to construct a programming language.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 12835,
+          "episode_id": 131,
+          "guest": "Chris Lattner",
+          "chunk_index": 139,
+          "text": "And whether it be implementing a new programming language or employing a new system or employing a new research paper, designing a new thing, moving the world forward in science and philosophy, whatever, it really comes down to somebody who's willing to put in the work, right? And you have, the work is hard for a whole bunch of different reasons. One of which is, it's work, right? And so you have to have the space in your life in which you can do that work, which is why going to grad school can be a beautiful thing for certain people. But also there's a self doubt that happens. Like you're two years into a project, is it going anywhere, right? Well, what do you do? Do you just give up because it's hard? No, no, I mean, some people like suffering. And so you plow through it. The secret to me is that you have to love what you're doing and follow that passion because when you get to the hard times, that's when, if you love what you're doing, you're willing to kind of push through.",
+          "score": 0.524,
+          "source": "grep",
+          "quality_score": 0.58,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 18.135257482528687
+    },
+    {
+      "step_number": 4,
+      "tool_used": "grep",
+      "query": "John Carmack programming language choice pragmatic",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.554,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 22.94891047477722
+    }
+  ],
+  "final_answer": "The provided context does not contain information about John Carmack's pragmatic view on the 'best' programming language. While he is mentioned, the discussions revolve around his first program and the working conditions at id Software without modern resources, not his opinion on programming languages for his groundbreaking work. Therefore, the context is insufficient to answer the question.",
+  "total_chunks_retrieved": 11,
+  "unique_episodes_found": [
+    224,
+    35,
+    131,
+    6,
+    7,
+    11,
+    48,
+    309,
+    221
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 28.20380139350891
+}

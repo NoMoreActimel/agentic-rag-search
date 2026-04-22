@@ -1,0 +1,123 @@
+{
+  "question": "Considering Ryan Hall's discussions of historical figures, Kelsi Sheren's reflections on past wars, and the Neuralink team's focus on future human evolution, how do these guests demonstrate distinct approaches to the significance or utility of 'history'?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Ryan Hall historical figures history",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 12008,
+          "episode_id": 125,
+          "guest": "Ryan Hall",
+          "chunk_index": 242,
+          "text": "No, they, they signed up to be there. Well, that's the interesting thing about Dyson is there's that weird, uh, like nonstandard behavior. I mean, like your fighting style is not standard. He's nonstandard to another degree of like, uh, who else has that in Jiu Jitsu, uh, uh, Polaris, uh, uh, has this kind of weirdness, like what's, what's in there? Like there's a fear that I think, uh, most opponents would have because it's like, it's no longer about like, it takes you out of the realm of its game. It takes us back to the thing we were talking about, like before is it strips away that like several layers of Ryan Hall, the, the podcast, uh, guest, Ryan Hall, the Jiu Jitsu instructor, Ryan Hall, Jiu Jitsu competitor, it keeps going down to a point where like Ryan Hall, the murderer of all things that get in his way that lies underneath all of it.",
+          "score": 0.3919946829477946,
+          "source": "bm25",
+          "quality_score": 0.6,
+          "original_score": 9.08548641204834
+        },
+        {
+          "chunk_id": 54527,
+          "episode_id": 439,
+          "guest": "Craig Jones",
+          "chunk_index": 125,
+          "text": "Craig Jones: \u201cTry some food, have a couple drinks and enjoy the place.\u201d But to them it\u2019s time to go. You got to rope it open a bit. If I meet pressure with pressure, I get tired. But if I don\u2019t provide resistance where they think there should be resistance now it slows their pace down. They get shocked a bit. But 100%. If I\u2019m at a seminar and someone\u2019s rolling too hard with me, if I feel like I might get hurt, I\u2019ll 100% rip a submission on them. You know what I mean? It\u2019s like, you\u2019re confronted with a threat. You have to meet it with a threat. It\u2019s like, I\u2019ve spoken about this with Ryan Hall. Ryan Hall will give them a warning and then gone. And I think it\u2019s perfectly acceptable. I won\u2019t endanger them for no reason, but if you are coming hot, you better tap fast. If I feel a threat, you better tap. I\u2019m not going to break it for the sake of breaking it. But if you do some crazy shit that might potentially hurt me and I get a submission and I\u2019m tired.",
+          "score": 0.3853330217997233,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 6.99998664855957
+        },
+        {
+          "chunk_id": 11766,
+          "episode_id": 125,
+          "guest": "Ryan Hall",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ryan Hall, one of the most insightful minds and systems thinkers in the martial arts world. He's a black belt in jiu jitsu, accomplished competitor, an MMA fighter undefeated in the UFC, and truly a philosopher who seeks to understand the underlying principles of the martial arts. Jiu jitsu is such an important part of who I am, and I was hoping to share that with folks who might know me only as a researcher. I think there's no better person to do that with than Ryan, who somehow, remarkably, I can say is a friend, and also a modern day warrior philosopher of the Miyamoto Masashi line of especially dangerous and brilliant humans. Also, his amazing wife, Jen Hall, was there as well, so if you hear a kind of voice of wisdom coming from above, you know who it is. Quick summary of the sponsors, PowerDot, Babbel, and Cash App. Please check out the sponsors in the description to get a discount and to support this podcast.",
+          "score": 0.37071267191569013,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 7.144828796386719
+        },
+        {
+          "chunk_id": 18825,
+          "episode_id": 169,
+          "guest": "Ryan Hall",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Ryan Hall, his second time in the podcast. He's one of the most innovative scholars of martial arts in the modern era. Quick mention of our sponsors. Indeed hiring website, Audible audio books, ExpressVPN and Element electrolyte drink. Click the sponsor links to get a discount and to support this podcast. As a side note, let me say that I've gotten a chance to train with Ryan recently and to both discuss and try out on the mat his ideas about grappling and fighting. What struck me is his unapologetic drive to solve martial arts. It reminds me of the ambitious vision and effort of Google's DeepMind to solve intelligence. In Ryan's case, this isn't some out there martial arts guru talk. This is a style of thinking about the game of human chess, of seeking to define the rules and to engineer ways from first principles of escaping the constraints of those rules.",
+          "score": 0.36104670747121176,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 6.7305731773376465
+        },
+        {
+          "chunk_id": 19007,
+          "episode_id": 169,
+          "guest": "Ryan Hall",
+          "chunk_index": 182,
+          "text": "That's a good hiring pitch. You still taking resumes? You want to be on the team that doesn't die during the great apocalypse. Not immediately. You want to be on the one that's, you know, eventually long suffering and stepped on, right? Yeah. Life is suffering, Ryan Hall. This was an amazing conversation. I really enjoyed talking to you. I could probably talk to you for many more hours. I hope I do as well. Ryan, I love you, buddy. This was a great conversation. Thanks for talking to me. Thank you so much for having me. I really appreciate it. Thanks for listening to this conversation with Ryan Hall and thank you to our sponsors. Indeed hiring website, Audible audio books, ExpressVPN and Element Electrolyte Drink. Click the sponsor links to get a discount and to support this podcast. And now let me leave you with some words from Frank Herbert in Dune. I must not fear. Fear is the mind killer. Fear is the little death that brings total obliteration. I will face my fear.",
+          "score": 0.20677417278289795,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 7.576035976409912
+        }
+      ],
+      "judge_feedback": "1.  Chunks 1, 2, 4, and 5 are largely irrelevant, focusing on Ryan Hall's fighting style, general introductions, or podcast outros rather than his discussions of historical figures or history.\n2.  Chunk 3 offers a small piece of useful information by comparing Ryan Hall to \"Miyamoto Masashi,\" suggesting a connection to historical warrior-philosophers, but it doesn't contain his direct discussions or views on history.\n3.  The agent should search for specific instances where Ryan Hall *discusses* historical figures or articulates his *perspective on the significance or utility of history*. A more targeted query like \"Ryan Hall discusses Miyamoto Musashi history\" or \"Ryan Hall historical perspective\" would be beneficial.",
+      "timestamp": 4.608131408691406
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Ryan Hall Miyamoto Musashi history perspective",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 11778,
+          "episode_id": 125,
+          "guest": "Ryan Hall",
+          "chunk_index": 12,
+          "text": "But if we just look at like the greatest martial artists in history in that direction, do you have somebody in mind? I would say at least three that pop into my head and would be Hannibal, Alexander the Great, and then maybe Miyamoto Musashi, the two commanders and then one guy. But so it's interesting. And then again, you mentioned warriors being able to make a lot out of a little. Musashi's famous for winning duels that were oftentimes one on one. The Alexander and Hannibal were military commanders and one of them faced Rome. And that was an interesting thing. Oftentimes coming up with novel tactics, different strategies, sometimes under resourced, having to do novel and crazy things, there's skin in the game. That's an interesting thing too. I think a lot of times it's, if you're playing a video game, I don't think you can be a warrior because there's no skin in the game. You get hurt, you lose, that's a bummer.",
+          "score": 0.44432462882995605,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 8.242484092712402
+        },
+        {
+          "chunk_id": 11975,
+          "episode_id": 125,
+          "guest": "Ryan Hall",
+          "chunk_index": 209,
+          "text": "And you're like, all right, wait, what? Yeah. It almost doesn't feel like a fight happening, but we mentioned Miyamoto Musashi. I mean, Musashi was famous for the way he poked and prodded that people with what he was doing, whether overtly or not, it's like, Oh, we're supposed to fight to the death. And, uh, you know, at 3 PM tomorrow, great. 4 PM rolls around, I'm just not there. Five. I mean, you remember all the, all the antics and nonsense that Conner was pulling prior to that, like speaking personally, that's not, it's not something I would feel comfortable doing, but it's like, everyone's different. And the effect that it had on, on Jose was, I mean, beyond evident. When was the last time Jose started the, started the fight with leaping left hand, leaping right hand, you're like, wait, what? And then he was obviously, you know, living rent free and in Jose's head at that point.",
+          "score": 0.38499609502156573,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 8.271261215209961
+        },
+        {
+          "chunk_id": 34020,
+          "episode_id": 260,
+          "guest": "Georges St-Pierre, John Danaher & Gordon Ryan",
+          "chunk_index": 174,
+          "text": "Yeah Harshly. Yeah. Yeah. All right. All right. Thanks so much guys. This is awesome Thanks for listening to this conversation with george saint pierre john donahue and gordon ryan to support this podcast Please check out our sponsors in the description And now let me leave you some words from miyamoto musashi There's nothing outside yourself that can ever enable you to get better stronger richer quicker or smarter Everything is within everything exists Seek nothing outside of yourself Thank you for listening and hope to see you next time You'd probably be thinking of probably someone who's really technically advanced Actually, it was Mark Coleman. Oh, no, Kevin Randleman and Phil Barone He used to love watching that was a hammer house. That was his favorite. He would love those guys and whenever their fights were on georgie watching the hammer house crew and It's funny what you said about how those guys bought an intensity to To MMA that was off the charts.",
+          "score": 0.23446480433146158,
+          "source": "bm25",
+          "quality_score": 0.1,
+          "original_score": 8.762777328491211
+        }
+      ],
+      "judge_feedback": "Chunk 3 is irrelevant as it features different guests (Georges St-Pierre, John Danaher & Gordon Ryan) and the Musashi quote is not discussed by Ryan Hall. Chunks 1 and 2 are useful, showing Ryan Hall uses historical figures like Musashi, Hannibal, and Alexander the Great to draw practical lessons in strategy, martial arts, and psychology, emphasizing \"skin in the game.\"\n\nTo fill the gaps, the agent should next search for Kelsi Sheren's discussions on past wars and the Neuralink team's perspective on future human evolution in relation to history.",
+      "timestamp": 13.404295921325684
+    }
+  ],
+  "final_answer": "Ryan Hall demonstrates an approach to history by referencing historical figures like Hannibal, Alexander the Great, and Miyamoto Musashi to understand martial arts principles and the ethos of a warrior. He uses their strategies and tactics as examples of \"warrior philosophers\" who faced challenges with novel approaches and \"skin in the game.\" The provided context does not contain information about Kelsi Sheren's reflections on past wars or the Neuralink team's focus on future human evolution.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    169,
+    260,
+    125,
+    439
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 23.020990133285522
+}

@@ -1,0 +1,142 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen John Carmack programming language id Software Oculus VR",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 16.023109436035156,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41630,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 261,
+          "text": "So yeah, I definitely kind of wanted to be, there was a point where I did make a pitch. It's like, hey, make me VR dictator and I'll go in and get shit done. I am, and that's just, it's not in the culture at Meta. You know, and they understand the trade offs they, and that's just not the way, that's not the company that they want, the team that they wanna do. It's fascinating because VR and we'll talk about it more. It's still unclear to me in what way VR will change the world because it does seem clear that VR will somehow fundamentally transform this world and it's unclear to me how yet. Let me know when you wanna get into that. Who will? Well, hold on a second. So in the stick to the you being the best programmer ever. Okay, in the early days when you didn't have, when you didn't have adult responsibilities of leading teams and all that kind of stuff and you can focus on just being a programmer, what did the productive day in the life of John Carmack look like?",
+          "score": 9.285238265991211,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41576,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 207,
+          "text": "And asked if I was interested in collaborating. And it's not in line with what I'm doing. But I do wish almost everyone the best. I mean, I know I may not have partnered on the best of terms with some people. But I was thrilled to see Tom Hall writing VR games now. He wrote, I'm working on a game called Demio, which is really an awesome VR game. It's like Dungeons and Dragons. We all used to play Dungeons and Dragons together. That was one of the things. That was what we did on Sundays in the early days. I would Dungeon Master, and they'd all play. And so it really made me smile seeing Tom involved with an RPG game in virtual reality. You were the CTO of Oculus VR since 2013, and maybe less than a year involved in a bit in 2019. Oculus was acquired by Facebook Now Meta in 2014. You've spoken brilliantly about both the low level details, the experimental design, and the big picture vision of virtual reality.",
+          "score": 8.944948196411133,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59349,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 233,
+          "text": "And there, sort of the stress testing the system and getting all of the signals from that system that everything is working correctly is something that fills me with joy and makes sure that the system actually works. So yeah, that, I don\u2019t know if it\u2019s 5, 10,000 lines of code, if it\u2019s Java or C++ it\u2019s millions lines of code. But yeah, in Python, yeah, I would say 10,000 lines of code. That\u2019s when you first get to see the magic. But anyway, you were saying? ThePrimeagen: Okay, so you and John Carmack had a conversation about asserts. Lex Fridman: Yes. ThePrimeagen: You talked about this idea of putting asserts everywhere that effectively crash the program when you have some state in your program that should not be represented and you have made this choice actively. And so I\u2019ve never done that before. And I know this is like an old technique and I obviously must be too young or too dumb to know that this was a thing people did.",
+          "score": 8.049838066101074,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60743,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 97,
+          "text": "It\u2019s so inspiring to hear these kinds of stories when there\u2019s so much uncertainty and you figure out and so many constraints and you figure out how to bring it to life in real time and create this world that Unreal did. Maybe if we could just pause, since you mentioned John Carmack a few times, as a fellow pioneer in the game industry at that time, what do you admire about John?\n\n\n## John Carmack\n\nTim Sweeney: John singularly has this intense dedication to getting the best result from his code and having absolutely no attachment to passcode and some of the legendary things he did. The end result was an absolute breakthrough in real-time computer graphics, weren\u2019t his first try. They were like his seventh or eighth try after he\u2019d done something time and time again, tried it, found a better approach, thrown out the old one, built it again, and continually rewrite his code until he found the absolute best solution to a problem.",
+          "score": 7.502355575561523,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "The chunks confirm John Carmack's roles at id Software and Oculus VR, and that ThePrimeagen discussed him. However, none of the chunks contain information about Carmack's pragmatic view on programming languages.\n\nThe agent should search for discussions by ThePrimeagen or John Carmack specifically mentioning programming languages, C++, assembly, or performance in the context of id Software or Oculus VR.",
+      "timestamp": 26.713457107543945
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "John Carmack pragmatic view programming language C++ assembly performance id Software Oculus VR",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 2361,
+          "episode_id": 31,
+          "guest": "George Hotz",
+          "chunk_index": 80,
+          "text": "I watched the latest one, yeah. Yeah, yeah. Oh, the Ashley 2 one? No, where there's two friends who are having sex with each other in... Oh, in the VR game. In the VR game. It's just two guys, but one of them was a female, yeah. Which is another mind blowing concept. That in VR, you don't have to be the form. You can be two animals having sex. It's weird. I mean, I'll see how nice that the software maps the nerve endings, right? Yeah, it's huge. I mean, yeah, they sweep a lot of the fascinating, really difficult technical challenges under the rug, like assuming it's possible to do the mapping of the nerve endings, then... I wish, yeah, I saw that, the way they did it with the little like stim unit on the head, that'd be amazing. So, well, no, no, on a shallow level, like you could set up like almost a brothel with like real dolls and Oculus Quests, write some good software. I think it'd be a cool novelty experience.",
+          "score": 7.476300239562988,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 1 is completely irrelevant. It discusses VR in a sexual context with George Hotz and does not mention John Carmack, programming languages, or his work at id Software or Oculus VR.\n\nThe agent needs to find discussions by or about John Carmack regarding his pragmatic views on programming languages, particularly C++ and assembly, and how these views relate to performance and his work at id Software and Oculus VR. Focus on direct quotes or summaries of his opinions.",
+      "timestamp": 49.762020111083984
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen John Carmack programming language C++ assembly performance",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 6.926630020141602,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41735,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 366,
+          "text": "You're an incredible human being. I can't wait what you do next, but you've already changed the world. You're an inspiration to so many people. And again, we haven't covered like most of what I was planning to talk about, so I hope we get a chance to talk someday in the future. I can't wait to see what you do next. Thank you so much again for talking to me. Thank you very much. Thanks for listening to this conversation with John Carmack. To support this podcast, please check out our sponsors in the description. And now, let me leave you with some words from John Carmack himself. Focused hard work is the real key to success. Keep your eyes on the goal, and just keep taking the next step towards completing it. If you aren't sure which way to do something, do it both ways and see which works better. Thank you for listening and hope to see you next time.",
+          "score": 6.769339561462402,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Both chunks are irrelevant as they are from an interview *with* John Carmack, not ThePrimeagen discussing Carmack's views. The question specifically asks what ThePrimeagen brought up about Carmack's pragmatic view on programming languages.\n\nThe agent should search for discussions by ThePrimeagen *about* John Carmack's pragmatic approach to programming languages, focusing on C++ and assembly, and potentially including terms like \"best language\" or \"language choice.\"",
+      "timestamp": 79.35249018669128
+    },
+    {
+      "step_number": 4,
+      "tool_used": "bm25",
+      "query": "ThePrimeagen John Carmack \"best programming language\" pragmatic C++ assembly",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 85.13085055351257
+    }
+  ],
+  "final_answer": "The provided context does not contain information about John Carmack's pragmatic view on the 'best' programming language. While it mentions his dedication to finding the best solution and his willingness to rewrite code, it does not specify his opinion on which programming language is superior.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    461,
+    467,
+    309,
+    31
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 119.37886571884155
+}

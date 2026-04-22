@@ -1,0 +1,173 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language best",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7791982312202453,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7531403303146362
+        },
+        {
+          "chunk_id": 59324,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 208,
+          "text": "But for the most part, Zig will give you safety for the most part. So it\u2019s like a little bit of safety, but more like C. So it kind of gives you everything you want in that region where you can express safe code and unsafe code. It\u2019s very easy to write. It\u2019s very pretty. Or at least the idea behind it is very pretty. The language itself is bland, but. Lex Fridman: Wow, there\u2019s beauty in everything, Prime. ThePrimeagen: Yeah.\n\n\n## Rust\n\nLex Fridman: You\u2019ve programmed in Rust a lot. What do you love about Rust? What are the strengths? What are the weaknesses? Maybe you can speak about memory management that you already mentioned, the challenge of memory management that several of these languages address, but yeah, what do you love about Rust? ThePrimeagen: What I love about Rust, I love the ability to free the memory that you\u2019re using is directly tied to the stack.",
+          "score": 0.7709101994037628,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7413002848625183
+        },
+        {
+          "chunk_id": 59320,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 204,
+          "text": "ThePrimeagen: Yeah, side honeys. They\u2019re not my mainstay. Right now Go\u2019s kind of my favorite one to build a web app in. If I\u2019m going to build some sort of backend with a lot of complicated logic, Go\u2019s just so convenient. But I get really frustrated with its ability to express everything that I need. If you have a list, a heterogeneous list, a list that contains two types, Go\u2019s just really not that fun to use. And I could see, so the ones I\u2019m exploring is Jai or J, or the language as Jonathan Blow says, and Zig. And both of them have a lot of power to them. They\u2019re both very interesting. They definitely have foot guns in them. They\u2019re definitely more, they don\u2019t take it easy on you. Zig seems like it\u2019s a really amazing language, and so does Jai. They\u2019re both very cool.\n\n\n## Performance\n\nLex Fridman: Yeah. Actually, I saw Dave Plummer\u2019s testing of close to 100 languages for speed, and Zig came out on top. ThePrimeagen: That was a mistake.",
+          "score": 0.7703052539825439,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7404360771179199
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7366568894386291,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7352241277694702
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7351686210632323,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.733098030090332
+        }
+      ],
+      "judge_feedback": "None of the retrieved chunks contain useful information. Chunks 1-4 are ThePrimeagen discussing his own programming language preferences, not John Carmack's. Chunk 5 is John Carmack discussing his first program, not his pragmatic view on the 'best' language or his work at id Software/Oculus, nor is it discussed by ThePrimeagen.\n\nThe agent should search for instances where ThePrimeagen specifically discusses John Carmack's views on programming languages, ideally mentioning id Software or Oculus. A good next query would be: `ThePrimeagen \"John Carmack\" \"programming language\" \"view\" OR \"philosophy\" \"id Software\" OR \"Oculus\"`.",
+      "timestamp": 601.8636939525604
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language philosophy id Software Oculus",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.756023802280426,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7200340032577515
+        },
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.7537809271812439,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7168298959732056
+        },
+        {
+          "chunk_id": 41370,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 1,
+          "text": "This is going to be powerful and it's going to matter. The following is a conversation with John Carmack, widely considered to be one of the greatest programmers ever. He was the cofounder of id Software and the lead programmer on several games that revolutionized the technology, the experience, and the role of gaming in our society, including Commander Keen, Wolfenstein 3D, Doom, and Quake. He spent many years as the CTO of Oculus VR, helping to create portals into virtual worlds and to define the technological path to the metaverse and meta. And now he has been shifting some of his attention to the problem of artificial general intelligence. This was the longest conversation on this podcast at over five hours. And still, I could talk to John many, many more times, and we hope to do just that. This is the Lux Readman podcast. To support it, please check out our sponsors in the description. And now, dear friends, here's John Carmack. What was the first program you've ever written?",
+          "score": 0.7270644166469573,
+          "source": "embedding",
+          "quality_score": 0.68,
+          "original_score": 0.7472348809242249
+        },
+        {
+          "chunk_id": 59369,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 253,
+          "text": "What can you say to the skill of achieving focus in programming? Do you have a process of how you sit down and try to sort of approach a problem? So, all the different, not just distractions but the challenges of starting a project, of thinking through the design, how to maintain real focus, because it\u2019s really difficult intellectual endeavor. ThePrimeagen: At this point I\u2019m lucky, but when I first started I can remember that every last part of programming. I had to go look up, I had to go read, I had side quests at all time. Every step was a side quest. Why is my screen blinking when I\u2019m trying to render this thing out? Oh, I didn\u2019t know about double buffering. Why is this happening? How do I even write to the screen? How do I\u2026 Everything was a question. I had more questions than answers. And so I constantly had the problem of side quests, and I find that to be a very exhausting thing. But as I learned my instrument very, very well, I don\u2019t have as many side quests.",
+          "score": 0.7203429312705993,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7119184732437134
+        }
+      ],
+      "judge_feedback": "Chunk 4 is irrelevant as it discusses ThePrimeagen's personal programming challenges, not John Carmack's views. Chunks 1, 2, and 3 are useful, providing Carmack's pragmatic perspective on Quake C and C at id Software.\n\nThe current chunks lack Carmack's specific views on programming languages during his time at Oculus VR. The next search should focus on John Carmack's programming language philosophy or choices specifically related to Oculus VR.",
+      "timestamp": 612.9241507053375
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language Oculus VR",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 41383,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 14,
+          "text": "So you could say that we've been trying to build those virtual experiences from the very beginning. And in the modern era of virtual reality, especially on the mobile side of things, when it's standalone and you're basically using a cell phone chip to be able to produce these very immersive experiences, it does require work. It's not at the level of what an old school console game programmer would have operated at where you're looking at hardware registers and you're scheduling all the DMA accesses, but it is still definitely a different level than what a web developer or even a PC Steam game developer usually has to work at. And again, it's great. There's opportunities for people that wanna operate at either end of that spectrum there and still provide a lot of value to the world. Let me ask you sort of a big question about preference. What would you say is the best programming language? Your favorite, but also the best.",
+          "score": 0.7104389579296112,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.6977699398994446
+        },
+        {
+          "chunk_id": 59131,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 15,
+          "text": "ThePrimeagen: I\u2019m more than just good looks. I want you to know that. Lex Fridman: It\u2019s a low bar. What do you identify as? I\u2019m enjoying asking the general question. ThePrimeagen: 38, male. Lex Fridman: Male. ThePrimeagen: Husband of beautiful wife.\n\n\n## Types of programming\n\nLex Fridman: Okay. You stream about all kinds of programming, but what kind of programmer are you? Are you full-stack developer, web programming? And maybe can you lay out all the different kinds of programming and then place yourself in that, in terms of your identity. Sexual identity as well. ThePrimeagen: Yeah, we can put it all in there. Lex Fridman: Okay. ThePrimeagen: Plus, obviously those two are very, very tightly coupled. Lex Fridman: I have seen you on the border of sexually aroused by certain languages. I think you got real excited about OCaml, or\u2026\n\nThePrimeagen: OCaml. Let\u2019s go. Thank you Dillon Mulroy [inaudible 00:13:08]\n\nLex Fridman: Okay, wow. ThePrimeagen: Yeah. Lex Fridman: I did not expect that.",
+          "score": 0.6307583870887756,
+          "source": "embedding",
+          "quality_score": 0.48,
+          "original_score": 0.6953691244125366
+        }
+      ],
+      "judge_feedback": "Chunk 2 is irrelevant as it focuses on ThePrimeagen's personal preferences, not John Carmack's. Chunk 1 is highly relevant as it directly asks John Carmack about the \"best programming language\" in the context of VR, but it cuts off before his answer.\n\nThe agent should search for John Carmack's response to the \"best programming language\" question in Ep#309. Additionally, search for instances where ThePrimeagen specifically discusses John Carmack's views on programming languages, potentially using terms like \"Carmack programming language philosophy\" or \"Carmack language choice.\"",
+      "timestamp": 619.8304061889648
+    },
+    {
+      "step_number": 4,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen discusses John Carmack programming language philosophy Oculus id Software",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 628.9999985694885
+    }
+  ],
+  "final_answer": "John Carmack's pragmatic view on programming languages, as discussed in the context, suggests that while he once built his own language (Quake C) for Quake, he later considered using a C interpreter/compiler a \"much smarter thing to do.\" He also emphasized that people are drawn to programming because a language allows them to achieve something they care about, rather than its syntax. The provided context does not contain his direct answer to Lex Fridman's question about the \"best\" programming language.",
+  "total_chunks_retrieved": 11,
+  "unique_episodes_found": [
+    309,
+    461
+  ],
+  "num_steps": 4,
+  "elapsed_seconds": 632.8082902431488
+}

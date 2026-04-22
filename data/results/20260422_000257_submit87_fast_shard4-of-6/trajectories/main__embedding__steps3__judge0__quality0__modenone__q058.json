@@ -1,0 +1,152 @@
+{
+  "question": "How has the discussion surrounding the role and limitations of AI in video game development evolved, as reflected in the perspectives shared by Tim Sweeney and Dan Houser?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Tim Sweeney AI in video game development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 60782,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 136,
+          "text": "What do you think is the future of the interplay between what a human artist creates and what an AI system can create in Unreal Engine? Tim Sweeney: I think a lot of people in the industry are overly optimistic about the rate of progress of AI for video and other things like that. The real problem is consistency, like spurting out an image is really high quality, but with video over the course of seeing all the AI approaches have consistency issues going from one place to another. I don\u2019t think that those will just be remedied easily. Fundamentally, AI just doesn\u2019t have anything resembling an understanding of the entire scene they\u2019re in, the entire arc of the movie or plot they\u2019re in and the entirety of the world around them and how it might affect the scene. Whereas game engines have that exactly where they need to be.",
+          "score": 0.8204225301742554,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60794,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 148,
+          "text": "Tim Sweeney: There\u2019s a lot of complicated trends underway. It can be hard to break them down and distinguish them. I think a lot of people like the theories that get the biggest traction on social media often don\u2019t capture the real underlying motive forces at play there. But I think AI involved in code production will probably create a net benefit for the need for humanity to be involved in coding. It may change parts of jobs. I don\u2019t think it\u2019s going to obsolete anybody who\u2019s willing to learn new ways of doing things. It\u2019s always been this way. I think that there\u2019s also a lot of over hype in AI. AI is really great at spewing out code that does something that a million GitHub repositories already do because it\u2019s learned the underlying pattern. It\u2019s notoriously hard to get to do something new that hasn\u2019t been done before, especially when it\u2019s a complex task. The bigger amount of code you ask AI for, the more it leaves you with just a mess of code that sort of works.",
+          "score": 0.7889973521232605,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60799,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 153,
+          "text": "Lex Fridman: The realistic humans, that\u2019s going to be the bottom line. Visual and behavior too, so everything? Tim Sweeney: Yeah, I was asked about this about 10 years ago, and I said that even if you gave us an infinite amount of computing power, we couldn\u2019t simulate realistic humans because we simply don\u2019t have the algorithms. We have no idea how to simulate human intelligence. That was absolutely the case then, but it\u2019s not really true anymore. What we\u2019re seeing with generative text AI is not only at a level that you could say that it\u2019s actually doing a pretty good job of simulating a human, at least humans at the text level, not at the emotional level yet, but at least at the level of words spoken and find more and more ways of training on more and more scenarios that you might have a very, very compelling human simulation going on in the next five years even.",
+          "score": 0.7846996784210205,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60796,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 150,
+          "text": "That\u2019s interesting.\u201d Then you could talk to it. Maybe that shows something about the programming experience that it is in part sometimes a bit lonely. Tim Sweeney: The topic of boilerplate code is an interesting one because the mere existence of boilerplate code is a failure of programming language and of the idea of creating software modules. You ask AI to create a sorting function, great. Now you have another sorting function that might be buggy alongside the million others that different people have written. It would be better to have a sorting function that\u2019s been written and tested and optimized and everybody relies on it. More modular software I think will actually reduce the opportunity of AI because people doing programming work will largely be solving unique problems.",
+          "score": 0.761419415473938,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60786,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 140,
+          "text": "I\u2019m an optimist on this and an optimist that it\u2019s going to create opportunity for everyone. Lex Fridman: Do you think it will be possible to generate, so use generative AI to create dynamic objects, like you mentioned trees, in the Unreal Engine world to create meshes and textures and empower the creator to create faster, use meta knobs like hyperparameters versus very nuanced, where you can control much faster the look of a face, the look of a tree, all that kind of stuff? Tim Sweeney: I think that\u2019s the central challenge of the next decade of game engines and AI for content creation of all sorts, because you have two very different models to the world that are emerging. There\u2019s the scene graph, the technical term we use to describe the set of all of the objects in the world in a 3D world maintained by Unreal Engine or another engine. In the videos you saw, it\u2019s the rocks and the trees and the snow and the bridge and the people and all of these things.",
+          "score": 0.7612979412078857,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 2.7811410427093506
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Dan Houser AI in video game development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64428,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 46,
+          "text": "Dan Houser: And so this, I finally felt we found an interesting hypothesis. The AI is more intelligent than us, but he\u2019s also as broken as we are. That was an interesting hypothesis to explore. You know, what happens when AI runs rampant in its own fake digital world? I felt that we had a hypothesis that was worth exploring and could give us some really interesting visuals and give us a really interesting story to tell. Lex Fridman: And it would be incredible to create a sort of AI video game as the world is developing smarter and smarter AIs. It allows us as humans to play the game and to reflect on the thing that we humans are creating. It\u2019s a real commentary as the thing is happening. So I have to ask, as a person\u2026 you, as a person who loves literature, and one of the, if not the greatest writer in video game history. Kurt in the book\u2026\n\n\n## Can LLMs write video games?",
+          "score": 0.8192743062973022,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64582,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 200,
+          "text": "But if you want to make something that\u2019s cinematic, you need resources. You can still make something that\u2019s really interesting that isn\u2019t super cinematic, but it\u2019s an interesting experience in some ways. But the second you\u2019re involving actors and motion capture and one of those big experiences, it\u2019s going to cost some money. So therefore, if you want to do that, you\u2019ve got to figure out what companies you want to work at and figure out how you get to work there. Lex Fridman: Do you have hope for AI helping with some of the video generation, some of the world generation, or some of the open-world assistance in generating the world? Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff.",
+          "score": 0.7886358499526978,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64406,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 24,
+          "text": "It created a feeling of an open world. What do you think it takes to create that feeling? You know, there were like these looming skyscrapers. There were the changing traffic lights. There\u2019s the feeling like\u2026 First of all, you had a feeling you could do anything, and then the world was\u2026 Reacting to it\u2026\n\nDan Houser: Yes\n\nLex Fridman: \u2026 in a way that didn\u2019t feel scripted. Dan Houser: Yes. And it wasn\u2019t scripted. It was, it was really, really, really low-rent AI. Like, it was a simulation that you could prod and push and see what happened, and I think that was incredibly\u2026 It was two things. It was the fact that here was a simulation that you could mess about with and the simulation seemed to have a personality. So you could push and see\u2026 And the world would push you back to what\u2026 in whatever way that meant. And then the other thing was just this\u2026 I think that one of the reasons it was so captivating was also the idea of if I did nothing, the world still existed.",
+          "score": 0.7655742168426514,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64583,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 201,
+          "text": "Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff. You know, I\u2019ve been in games for 29 years, and all the time, the piece of tech that\u2019s going to make making games much easier and much cheaper is about to turn up, and all that\u2019s happened is the games have got much better and way more expensive. So I\u2019m always nervous about saying, \u201cFinally, we have that bit of tech that makes our lives easier,\u201d but it looks as if it might be able to do that when you use it in the right way. If you use it to try and substitute for creativity, it\u2019s going to be really generic. Lex Fridman: A big, ridiculous question: What\u2019s the meaning of this whole thing we have going on here, of life, of existence? Why are we here? Dan Houser: To watch the universe. The easiest plausible answer is we are designed by the universe to watch itself and to comment on it in interesting ways.",
+          "score": 0.7631438970565796,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 64514,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 132,
+          "text": "Lex Fridman: Artists\n\nDan Houser: \u2026modelers, I think. I don\u2019t think it was that hard. Lex Fridman: Okay. Uh-\n\nDan Houser: Enough of that pun. Lex Fridman: Thank you. Thank you for that. Arthur\u2019s hair and beard grow in real time. So, gun maintenance matters. Firearms get dirty and perform worse over time. Animal carcasses decompose realistically. Dan Houser: They feel like they do. Lex Fridman: That\u2019s still extremely rare in video games. That, the temporal aspect. Dan Houser: Yes. Yeah. Lex Fridman: That permeates through time. You know, NPCs remembering you. Dan Houser: That\u2019s the best. I mean, that\u2019s the thing I love. Playing around with a lot of stuff in the new games around that, \u2019cause I think it\u2019s super interesting. Okay? Lex Fridman: It\u2019s really powerful, right? Dan Houser: To make them\u2026 Yeah, really interesting. I think the\u2026 It just gives a\u2026 It\u2019s a really fun way of giving you kind of narrative content that is also systemic and procedural. Lex Fridman: Yeah.",
+          "score": 0.7583056688308716,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 5.0366051197052
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 622.094179391861
+    }
+  ],
+  "final_answer": "Tim Sweeney views AI as a powerful tool for content creation, particularly for generating dynamic objects, meshes, and textures, which he sees as a central challenge for game engines in the coming decade. However, he cautions against over-optimism, highlighting AI's current limitations in consistency for video and its lack of understanding of entire scenes or plots. Dan Houser acknowledges AI's potential as a 'great tool' if used correctly, but warns that its misuse could lead to generic content and stresses that it should not substitute creativity. Both agree that AI has a role in assisting development, but they emphasize its current limitations and the need for human oversight and creativity, reflecting an evolving discussion that balances AI's promise with its practical constraints and potential pitfalls.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    467,
+    484
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 622.0941812992096
+}

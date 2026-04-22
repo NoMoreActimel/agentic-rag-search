@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-04-22T00:02:57.505299",
+  "args": {
+    "mode": "full",
+    "num_questions": 3,
+    "limit": 87,
+    "seed": 42,
+    "top_k": 5,
+    "max_steps_values": "2,3,4",
+    "run_main_grid": true,
+    "only_quality_off": false,
+    "run_oracle_mini_study": false,
+    "output_tag": "submit87_fast",
+    "output_dir": null,
+    "resume": false,
+    "retry_errors": false,
+    "profile": "aggressive",
+    "max_in_flight_llm": 16,
+    "qa_concurrency": 8,
+    "eval_concurrency": 4,
+    "condition_concurrency": 1,
+    "shard": "0/6"
+  },
+  "qa_count": 87,
+  "qa_file": "/home/adhiraj/Downloads/llm_project/agentic-rag-search/data/processed/qa_pairs.json",
+  "quality_scores_path": "/home/adhiraj/Downloads/llm_project/agentic-rag-search/data/processed/chunk_quality_scores.json",
+  "resume_events": []
+}

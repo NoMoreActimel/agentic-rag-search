@@ -1,0 +1,134 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack programming language",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27543,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 98,
+          "text": "And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java. And for some of our programmers who are doing, say, user interface work, then they never have to even learn Sub L. They just have to learn APIs into the basic psych engine. So you're not necessarily feeling the burden of like, it's extremely efficient. That's not a problem to solve. Okay. Right. The other thing is, remember that we're talking about hiring programmers to do inference, who are programmers interested in effectively automatic theorem proving. And so those are people already predisposed to representing things in logic and so on. And Lisp really was the programming language based on logic that John McCarthy and others who developed it basically took the formalisms that Alonzo Church and other philosophers, other logicians, had come up with and basically said, can we basically make a programming language which is effectively logic?",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 28167,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 200,
+          "text": "Now the plotting tool I used was something from Yorick actually. It was a plotting, a PLT kind of a plotting language that I used. Yorick is a programming language? It was a programming language, had a plotting tool, Dyslin, it had integration to Dyslin. I ended up using Dyslin plus some of the plotting from Yorick linked to from Python. Anyway, it was, people don't plot that way now, but this is before, and Sidepy was trying to add plotting. Yeah. Right? It didn't have much success. Really the success of plotting came from John Hunter, who had a similar experience to my experience, my kind of maverick experience as a person just trying to get stuff done and kind of having more time than money maybe, right? And John Hunter created what? MapPlotLib. He's the creator of MapPlotLib. Yeah, so John Hunter was, you know, he wasn't a student at the time, but he was an, he was working in Quant field and he said, we need better plotting.",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.869817495346069
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "ThePrimeagen John Carmack best programming language",
+      "num_results": 3,
+      "results": [
+        {
+          "chunk_id": 59302,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 186,
+          "text": "So I think it\u2019s a super powerful way to learn. But yeah, you need to also write from scratch. ThePrimeagen: At some point you have to take off the training wheels, because I think what you\u2019re really spotting is the difference between reading and writing code. I can read a lot of languages very well. I can see what\u2019s happening. I can understand it, but I would not be very good at writing it. I can understand a lot of things about C++ and I can read it, but I\u2019m just not that because I just don\u2019t done it in so long. I can\u2019t remember where all the semicolons, and colons and you do public and private, and how should you do naming conventions? All those things kind of add all together, and then you\u2019re just like, oh, I\u2019m really bad at writing it, though I can read it. And so there\u2019s a skill gap chasm that exists between those two.\n\n\n## Best programming languages in 2025\n\nLex Fridman: All right. Well, let me talk about the various languages.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59303,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 187,
+          "text": "Well, let me talk about the various languages. The cheesy, ridiculous question of what\u2019s the best programming language? Let\u2019s say, what\u2019s the best programming language that everybody should learn? Maybe let\u2019s go with the top five. I\u2019m going to pull up the Stack Overflow developer survey, because I think we have\u2026 You don\u2019t like them? ThePrimeagen: You got to remember, because I mean, you\u2019re a data guy. You know about biases and data. What does Stack Overflow naturally bias towards? Lex Fridman: Well, they have the different slices of professional developers, junior developers, they have different slices. Okay, what is the bias? ThePrimeagen: I hear you, but who fills out a Stack Overflow survey? Someone who participates on Stack Overflow. Who\u2019s participating on Stack Overflow? Largely very, very new people, and that one guy that loves answering questions. And so I\u2019m not sure if Stack Overflow is a great place to get data. It could be a very biased set of data.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 59314,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 198,
+          "text": "It is the most amazing thing to see because I think FFMPEG does not get the love it deserves. Every single application, OBS, probably FFMPEG underneath the hood. Everything, FFMPEG underneath the hood, and yet they do not get the love they deserve. I just love it. I just think they\u2019re the best. Lex Fridman: Yeah, I would say JavaScript, HTML, CSS, Python, SQL, I mean that is SQL Squeal is a programming language. It\u2019s an incredibly sophisticated programming language. Yeah? ThePrimeagen: SQL is interesting. I believe you can classify it as a programming language. It does have, if. You have case statements and it\u2019s pretty crazy what you can do with it. Lex Fridman: You could do functions, you can do all that stuff. You shouldn\u2019t. ThePrimeagen: Yeah, for stored procedures, that\u2019s how you make your life hell. I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 11.135704040527344
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 27.127361536026
+    }
+  ],
+  "final_answer": "The provided context does not contain information about John Carmack's pragmatic view on the 'best' programming language, nor does it show ThePrimeagen discussing such a view from Carmack. The chunks mention Carmack's first program and his work in general, but not his opinion on programming language superiority. Therefore, the context is insufficient to answer the question.",
+  "total_chunks_retrieved": 8,
+  "unique_episodes_found": [
+    224,
+    7,
+    461,
+    48,
+    309,
+    221
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 27.12736463546753
+}

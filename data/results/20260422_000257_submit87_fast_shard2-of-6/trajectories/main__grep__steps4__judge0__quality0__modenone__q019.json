@@ -1,0 +1,87 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Nathan Lambert Dario Amodei Anthropic safety strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58741,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 170,
+          "text": "There\u2019s been news of how Anthropic has done pre-release testing with the UK AI Safety Institute. All of these things add inertia to the process of getting things out. And we\u2019re on this trend line where the progress is very high. So if you reduce the time from when your model is done training, you run the vals, it\u2019s good. You want to get it out as soon as possible to maximize the perceived quality of your outputs. DeepSeek does this so well. Dylan Patel: Dario explicitly said Claude 3.5 Sonnet was trained like nine months or a year-\n\nNathan Lambert: Nine to 10 months ago [inaudible 02:18:42]. Dylan Patel: Nine to 10 months ago. And I think it took them another handful of months to release it. So it\u2019s like, there is a significant gap here. And especially with reasoning models, the word in the San Francisco street is that Anthropic has a better model than o3 and they won\u2019t release it. Why? Because chains-of-thought are scary, and they are legitimately scary.",
+          "score": 0.7142857142857143,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 56946,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 107,
+          "text": "We think that\u2019s good. We should adopt it too.\u201d The only difference is I think we try to be more forward leaning. We try and adopt more of these practices first and adopt them more quickly when others invent them. But I think this dynamic is what we should be pointing at and that I think it abstracts away the question of which company\u2019s winning, who trusts who. I think all these questions of drama are profoundly uninteresting and the thing that matters is the ecosystem that we all operate in and how to make that ecosystem better because that constrains all the players. Lex Fridman: And so Anthropic is this kind of clean experiment built on a foundation of what concretely AI safety should look like? Dario Amodei: Well, look, I\u2019m sure we\u2019ve made plenty of mistakes along the way. The perfect organization doesn\u2019t exist. It has to deal with the imperfection of a thousand employees. It has to deal with the imperfection of our leaders, including me.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58645,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 74,
+          "text": "What is it? Dario Amodei just published a blog post about export controls. The case he makes is that if AI becomes super powerful and he says by 2026, we\u2019ll have AGI or super powerful AI and that\u2019s going to give a significant \u2026 Whoever builds that will have a significant military advantage. And so because The United States is a democracy and as he says, China is authoritarian or has authoritarian elements, you want a unipolar world where the super powerful military, because of the AI is one that\u2019s a democracy. It\u2019s a much more complicated world geopolitically when you have two superpowers with super powerful AI and one is authoritarian. So, that\u2019s the case he makes. And so the United States wants to use export controls to slow down, to make sure that China can\u2019t do these gigantic training runs that will be presumably required to build the AGI. Nathan Lambert: This is very abstract. I think this can be the goal of how some people describe export controls, is this super powerful AI.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58661,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 90,
+          "text": "I think that\u2026 You\u2019re asking about the AGI thing. If you\u2019re making me give a year, I\u2019m going to be like, \u201cOkay, I have AI CEOs saying this. They\u2019ve been saying two years for a while. I think that there are people like Dario at Anthropic, the CEO, has thought about this so deeply. I need to take their word seriously, but also understand that they have different incentives.\u201d So I would be like, \u201cAdd a few years to that.\u201d Which is how you get something similar to 2030 or a little after 2030. Dylan Patel: I think to some extent, we have capabilities that hit a certain point where any one person could say, \u201cOh, okay, if I can leverage those capabilities for X amount of time, this is AGI, call it \u201927, \u201928.\u201d But then the cost of actually operating that capability-\n\nNathan Lambert: Yeah, this was going to be my point. Dylan Patel: \u2026 is so, so extreme that no one can actually deploy it at scale en masse to actually completely revolutionize the economy on a snap of a finger.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58740,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 169,
+          "text": "So people have been looking at it and been like, \u201cWow. And then they just released the R1 model. I think they\u2019re just shipping as fast as they can, and who cares about Christmas, who cares about \u2026 Get it out before Chinese New Year, obviously, which just happened. I don\u2019t think they actually were timing the market or trying to make the biggest splash possible, I think they\u2019re just shipping. Nathan Lambert: I think that\u2019s one of their big advantages. We know that a lot of the American companies are very invested in safety, and that is the central culture of a place like Anthropic. And I think Anthropic sounds like a wonderful place to work, but if safety is your number one goal, it takes way longer to get artifacts out. That\u2019s why Anthropic is not open sourcing things, that\u2019s their claims. But there\u2019s reviews internally. Anthropic mentions things to international governments. There\u2019s been news of how Anthropic has done pre-release testing with the UK AI Safety Institute.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 6.074232816696167
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 11.573189973831177
+    }
+  ],
+  "final_answer": "Dario Amodei's company, Anthropic, employs a strategy of being \"forward leaning\" by adopting AI safety practices first and more quickly than others. The intended outcome of this approach is to improve the overall AI ecosystem, making it better for all participants by setting a precedent that encourages other companies to adopt similar safety measures, thereby constraining all players within a safer framework.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    459,
+    452
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 11.573191404342651
+}

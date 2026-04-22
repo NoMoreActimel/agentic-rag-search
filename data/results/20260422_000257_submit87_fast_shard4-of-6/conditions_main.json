@@ -1,0 +1,56 @@
+[
+  {
+    "suite": "main",
+    "retriever": "grep",
+    "max_steps": 3,
+    "process_feedback": false,
+    "quality_reweight": false,
+    "judge_mode": "none",
+    "condition_id": "main__grep__steps3__judge0__quality0__modenone"
+  },
+  {
+    "suite": "main",
+    "retriever": "grep",
+    "max_steps": 4,
+    "process_feedback": true,
+    "quality_reweight": false,
+    "judge_mode": "process",
+    "condition_id": "main__grep__steps4__judge1__quality0__modeprocess"
+  },
+  {
+    "suite": "main",
+    "retriever": "bm25",
+    "max_steps": 3,
+    "process_feedback": false,
+    "quality_reweight": false,
+    "judge_mode": "none",
+    "condition_id": "main__bm25__steps3__judge0__quality0__modenone"
+  },
+  {
+    "suite": "main",
+    "retriever": "bm25",
+    "max_steps": 4,
+    "process_feedback": true,
+    "quality_reweight": false,
+    "judge_mode": "process",
+    "condition_id": "main__bm25__steps4__judge1__quality0__modeprocess"
+  },
+  {
+    "suite": "main",
+    "retriever": "embedding",
+    "max_steps": 3,
+    "process_feedback": false,
+    "quality_reweight": false,
+    "judge_mode": "none",
+    "condition_id": "main__embedding__steps3__judge0__quality0__modenone"
+  },
+  {
+    "suite": "main",
+    "retriever": "embedding",
+    "max_steps": 4,
+    "process_feedback": true,
+    "quality_reweight": false,
+    "judge_mode": "process",
+    "condition_id": "main__embedding__steps4__judge1__quality0__modeprocess"
+  }
+]

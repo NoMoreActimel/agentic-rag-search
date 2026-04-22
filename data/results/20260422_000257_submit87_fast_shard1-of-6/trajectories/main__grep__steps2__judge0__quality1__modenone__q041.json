@@ -1,0 +1,136 @@
+{
+  "question": "How do Charles Hoskinson, ThePrimeagen (Michael Paulson), and Tim Sweeney's distinct professional focuses\u2014blockchain infrastructure, general software engineering, and game/metaverse development, respectively\u2014shape their views on the primary purpose and desired characteristics of programming languages?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Charles Hoskinson programming languages blockchain",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 22104,
+          "episode_id": 188,
+          "guest": "Vitalik Buterin",
+          "chunk_index": 105,
+          "text": "So does that mean that the blockchain would be taking a position in this big mega political debate? So I think like for just those kinds of reasons, I would personally like prefer Ethereum itself to be more of this sort of pure platform that just analyzes transactions just mathematically using deterministic consensus rules. And then if you need the oracles, that can be layer twos. Like I think Ethereum like benefits from not trying to do everything at layer one and having this like very robust layer two ecosystem where you have all these projects doing interesting things. Yeah, focus on the basic technology avoid the politics. Gotcha. Let me ask a bit of a human question. Charles Hoskinson, someone you've worked with in the early days of Ethereum, there appears to my outsider view to have been a bit of a falling out. Is there positive inspiring human story to be told about why you two parted ways?",
+          "score": 0.6719999999999999,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 23108,
+          "episode_id": 192,
+          "guest": "Charles Hoskinson",
+          "chunk_index": 321,
+          "text": "And so the financial regulations are not built for rapid innovation. They're not built for Bitcoin. There's a reason Satoshi was anonymous. It wasn't because he enjoyed the anonymity. There was legitimate criminal risk for this type of activity. So the fact that I've gotten this far and I'm doing pretty good, that's a win. You take that, life is good. What does a productive day in the life of Charles Hoskinson look like? Now we're getting to the details here. Diet, like fasting or not maybe, coffee, non coffee, exercise, sleep, scheduling like periods of deep work, programming, then the social media stuff that you do. You clearly enjoy being on social media and also live streaming, educating, inspiring the world or getting drunk and ranting at the computer. Well, first off you do a wet year and a dry year. That's what prevents you from becoming an alcoholic. So unfortunately the way that schedule worked, 2020 was my dry year. Like I didn't drink the entire year.",
+          "score": 0.624,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.6
+        },
+        {
+          "chunk_id": 301,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 21,
+          "text": "Oh, interesting. So you basically, exactly, you first observe what you like. Yeah, and so that's why if you're 17 years old and you want to sort of create a programming language, you're not going to be very successful at it because you have no experience with other languages, whereas I was in my, let's say mid 30s, I had written parsers before, so I had worked on the implementation of ABC, I had spent years debating the design of ABC with its authors, with its designers, I had nothing to do with the design, it was designed fully as it ended up being implemented when I joined the team. But so you borrow ideas and concepts and very concrete sort of local rules from different languages like the indentation and certain other syntactic features from ABC, but I chose to borrow string literals and how numbers work from C and various other things.",
+          "score": 0.532,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.4
+        },
+        {
+          "chunk_id": 326,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 46,
+          "text": "So I think it's consciousness and intelligence are not all or nothing. The spectrum is really interesting. But in returning to programming languages and the way we think about building these kinds of things, about building intelligence, building consciousness, building artificial beings. So I think one of the exciting ideas came in the 17th century and with Leibniz, Hobbes, Descartes, where there's this feeling that you can convert all thought, all reasoning, all the thing that we find very special in our brains, you can convert all of that into logic. So you can formalize it, formal reasoning, and then once you formalize everything, all of knowledge, then you can just calculate and that's what we're doing with our brains is we're calculating. So there's this whole idea that this is possible, that this we can actually program. But they weren't aware of the concept of pattern matching in the sense that we are aware of it now.",
+          "score": 0.502,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.4
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.484,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.4
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 6.137570142745972
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Charles Hoskinson programming language design principles",
+      "num_results": 4,
+      "results": [
+        {
+          "chunk_id": 3736,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 60,
+          "text": "So I'm very happy and proud of some of the things C++ is being used at and some of the things I wish people wouldn't do. Bitcoin mining being my favorite example uses as much energy as Switzerland and mostly serves criminals. But back to the languages, I actually think that having JavaScript run in the browser was an enabling thing for a lot of things. Yes, you could have done it better, but people were trying to do it better and they were using more principles, language designs, but they just couldn't do it right. And the nonprofessional programmers that write lots of that code just couldn't understand them. So it did an amazing job for what it was. It's not the prettiest language and I don't think it ever will be the prettiest language, but let's not be bigots here. So what was the origin story of C++? Yeah, you basically gave a few perspectives of your inspiration of object oriented programming.",
+          "score": 0.7186666666666666,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 60875,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 229,
+          "text": "These decisions about programming languages have long-term implications. Lex Fridman: It\u2019s really fascinating that in building these systems that hundreds of millions of people use, you\u2019re rethinking about how do you actually build it from first principles. So I should mention that Verse\u2019s primary design goal is it should be simple enough to learn as a first-time programmer, general enough for writing any kind of code and data, productive in the context of building, iterating, and shipping a project in a team setting, statically verified to catch as many categories of runtime problems as possible, compile time as we were talking about, performant for real-time open-world multiplayer games. We didn\u2019t really quite talk about performance. Maybe I could ask you about that in a second. Complete so that every feature of the language supports programmer abstraction over that feature, timeless, built for the needs of today and for foreseeable future needs.",
+          "score": 0.6886666666666666,
+          "source": "grep",
+          "quality_score": 0.74,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 3720,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 44,
+          "text": "Yes. You mentioned that you hope there will be one unified set of guidelines in the future for how to construct a programming language. So perhaps not one programming language, but a unification of how we build programming languages, if you remember such statements. I have some trouble remembering it, but I know the origin of that idea. So maybe you can talk about sort of C++ has been improving. There's been a lot of programming language. Do you, where does the arc of history taking us? Do you hope that there is a unification about the languages with which we communicate in the digital space? Well, I think that languages should be designed not by clobbering language features together and and doing slightly different versions of somebody else's ideas, but through the creation of a set of principles, rules of thumbs, whatever you call them. I made them for C++.",
+          "score": 0.6466666666666666,
+          "source": "grep",
+          "quality_score": 0.6,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 12704,
+          "episode_id": 131,
+          "guest": "Chris Lattner",
+          "chunk_index": 8,
+          "text": "How do you get people to be vulnerable sometimes with an idea that maybe isn't good enough, but it's the start of something beautiful? How do you provide an environment where you're not just like top down, thou shalt do the thing that I tell you to do, right? But you're encouraging people to be part of the solution and providing a safe space where if you're not doing the right thing, they're willing to tell you about it, right? So you're asking dumb questions? Yeah, dumb questions are my specialty, yeah. Well, so I've been in the hardware realm recently and I don't know much at all about how chips are designed. I know a lot about using them. I know some of the principles and the art's technical level of this, but it turns out that if you ask a lot of dumb questions, you get smarter really, really quick. And when you're surrounded by people that want to teach and learn themselves, it can be a beautiful thing. So let's talk about programming languages, if it's okay. Sure, sure.",
+          "score": 0.6106666666666666,
+          "source": "grep",
+          "quality_score": 0.48,
+          "original_score": 0.6666666666666666
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 14.755321264266968
+    }
+  ],
+  "final_answer": "The provided context is insufficient to describe how Charles Hoskinson's and ThePrimeagen's professional focuses shape their views on programming languages. However, Tim Sweeney's work on game and metaverse development influences his view that programming languages should be simple for beginners, general, productive for teams, statically verified, performant for real-time open-world multiplayer games, complete, and timeless.",
+  "total_chunks_retrieved": 9,
+  "unique_episodes_found": [
+    192,
+    131,
+    6,
+    48,
+    467,
+    188
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 22.797971963882446
+}

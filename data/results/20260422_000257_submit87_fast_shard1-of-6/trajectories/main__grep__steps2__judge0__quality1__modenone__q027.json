@@ -1,0 +1,114 @@
+{
+  "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Travis Oliphant programming languages development methodologies",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28175,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 208,
+          "text": "Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description. And now, let me leave you with something that in the programming world is called Hodgson's Law. Every sufficiently advanced Lisp application will eventually be re implemented in Python. Thank you for listening and hope to see you next time. this proprietary software. Right, and there's also culture around MATLAB as much, because I've talked to a few folks in, MathWorks creates MATLAB? Yeah. I mean, there's just a culture, they try really hard, but it just, there's this corporate IBM style culture that's like, or whatever. I don't want to say negative things about IBM or whatever, but there's a... No, it's really that connection. It's something I'm in the middle of right now is the business of open source. And how do you connect the ethos of cooperative development with the necessity of creating profits, right?",
+          "score": 0.6466666666666666,
+          "source": "grep",
+          "quality_score": 0.6,
+          "original_score": 0.6666666666666666
+        },
+        {
+          "chunk_id": 2603,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 7,
+          "text": "So it's kind of nice being able to get the computer and computers to talk to each other and to do things for you. And then I think that one, the programming language I most loved then would have been Delphi, which was Object Pascal, created by Anders Heilsberg, who previously did Turbo Pascal and then went on to create.NET and then went on to create TypeScript. Delphi was amazing because it was like a compiled, fast language that was as easy to use as Visual Basic. Delphi, what is it similar to in more modern languages? Visual Basic. Visual Basic. Yeah, but a compiled, fast version. So I'm not sure there's anything quite like it anymore. If you took like C Sharp or Java and got rid of the virtual machine and replaced it with something, you could compile a small type binary. I feel like it's where Swift could get to with the new Swift UI and the cross platform development going on. Like that's one of my dreams is that we'll hopefully get back to where Delphi was.",
+          "score": 0.6319999999999999,
+          "source": "grep",
+          "quality_score": 0.94,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 2605,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 9,
+          "text": "So there was a couple of major directions. One was the kind of Lambda Calculus Alonzo Church direction, which I guess kind of lisp and scheme and whatever, which has a history going back to the early days of computing. The second was the kind of imperative slash OO, algo similar going on to C, C++ and so forth. There was a third, which are called array oriented languages, which started with a paper by a guy called Ken Iverson, which was actually a math theory paper, not a programming paper. It was called Notation as a Tool for Thought. And it was the development of a new way, a new type of math notation. And the idea is that this math notation was much more flexible, expressive, and also well defined than traditional math notation, which is none of those things. Math notation is awful. And so he actually turned that into a programming language and cause this was the early 50s or the sorry, late 50s, all the names were available. So he called his language a programming language or APL.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 27542,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 97,
+          "text": "Like, what's your sense? How much of the value is in the silly software engineering aspect, and how much of the value is in the knowledge? So development of programs in Lisp proceeds, I think, somewhere between a thousand and fifty thousand times faster than development in any of what you're calling modern or improved computer languages. Well, there's other functional languages like, you know, Clojure and all that. But I mean, I'm with you. I like Lisp. I just wonder how many great programmers there are. There's still like... Yes. So it is true when a new inference programmer comes on board, they need to learn some of Lisp. And in fact, we have a subset of Lisp, which we call cleverly Sub L, which is really all they need to learn. And so the programming actually goes on in Sub L, not in full Lisp. And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java.",
+          "score": 0.602,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.5
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.554,
+          "source": "grep",
+          "quality_score": 0.68,
+          "original_score": 0.5
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.524368524551392
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack programming languages development methodologies priorities",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.552,
+          "source": "grep",
+          "quality_score": 0.84,
+          "original_score": 0.42857142857142855
+        },
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.492,
+          "source": "grep",
+          "quality_score": 0.64,
+          "original_score": 0.42857142857142855
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 41.07718014717102
+    }
+  ],
+  "final_answer": "The provided context indicates Travis Oliphant is concerned with the business of open source and the practical evolution of languages like Python, balancing cooperative development with profit. John Carmack, as referenced, prioritized self-reliance and fundamental problem-solving in an era without modern development resources. However, the provided information is insufficient to describe Pieter Levels' approach to programming languages and development methodologies.",
+  "total_chunks_retrieved": 7,
+  "unique_episodes_found": [
+    224,
+    35,
+    6,
+    7,
+    48,
+    221
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 62.46469688415527
+}

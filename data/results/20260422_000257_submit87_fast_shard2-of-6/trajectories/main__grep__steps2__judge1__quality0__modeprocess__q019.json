@@ -1,0 +1,145 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Nathan Lambert Dylan Patel Dario Amodei Anthropic safety strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58741,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 170,
+          "text": "There\u2019s been news of how Anthropic has done pre-release testing with the UK AI Safety Institute. All of these things add inertia to the process of getting things out. And we\u2019re on this trend line where the progress is very high. So if you reduce the time from when your model is done training, you run the vals, it\u2019s good. You want to get it out as soon as possible to maximize the perceived quality of your outputs. DeepSeek does this so well. Dylan Patel: Dario explicitly said Claude 3.5 Sonnet was trained like nine months or a year-\n\nNathan Lambert: Nine to 10 months ago [inaudible 02:18:42]. Dylan Patel: Nine to 10 months ago. And I think it took them another handful of months to release it. So it\u2019s like, there is a significant gap here. And especially with reasoning models, the word in the San Francisco street is that Anthropic has a better model than o3 and they won\u2019t release it. Why? Because chains-of-thought are scary, and they are legitimately scary.",
+          "score": 0.7777777777777778,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58661,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 90,
+          "text": "I think that\u2026 You\u2019re asking about the AGI thing. If you\u2019re making me give a year, I\u2019m going to be like, \u201cOkay, I have AI CEOs saying this. They\u2019ve been saying two years for a while. I think that there are people like Dario at Anthropic, the CEO, has thought about this so deeply. I need to take their word seriously, but also understand that they have different incentives.\u201d So I would be like, \u201cAdd a few years to that.\u201d Which is how you get something similar to 2030 or a little after 2030. Dylan Patel: I think to some extent, we have capabilities that hit a certain point where any one person could say, \u201cOh, okay, if I can leverage those capabilities for X amount of time, this is AGI, call it \u201927, \u201928.\u201d But then the cost of actually operating that capability-\n\nNathan Lambert: Yeah, this was going to be my point. Dylan Patel: \u2026 is so, so extreme that no one can actually deploy it at scale en masse to actually completely revolutionize the economy on a snap of a finger.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58744,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 173,
+          "text": "Lex Fridman: Yeah. So, the bar for safety is probably lowered a bit because of DeepSeek. There\u2019s parallels here to the space race. The reason the Soviets probably put a man in space first is because their approach to safety, the bar for safety, was lowered\n\nDylan Patel: And they killed that dog, and all these things, so it\u2019s like\u2026\n\nLex Fridman: Less risk averse than the US Space Program. And there\u2019s parallels here, but there\u2019s probably going to be downward pressure on that safety bar for the US companies. Nathan Lambert: This is something that Dario talks about. That\u2019s the situation that Dario wants to avoid is, Dario talks too about the difference between race to the bottom and race to the top. And the race to the top is where there\u2019s a very high standard on safety. There\u2019s a very high standard on your model forms and certain crucial evaluations. And when certain companies are really good to it, they will converge. This is the idea.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58571,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 0,
+          "text": "Lex Fridman: The following is a conversation with Dylan Patel and Nathan Lambert. Dylan runs SemiAnalysis, a well-respected research and analysis company that specializes in semiconductors, GPUs, CPUs, and AI hardware in general. Nathan is a research scientist at the Allen Institute for AI and is the author of the amazing blog on AI called Interconnects. They are both highly respected, read and listened to by the experts, researchers and engineers in the field of AI. And personally, I\u2019m just a fan of the two of them, so I used the DeepSeek moment that shook the AI world a bit as an opportunity to sit down with them and lay it all out from DeepSeek, OpenAI, Google XAI, Meta, Anthropic to NVIDIA and DSMC, and to US-China-Taiwan relations and everything else that is happening at the cutting edge of AI. This conversation is a deep dive into many critical aspects of the AI industry.",
+          "score": 0.5555555555555556,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58624,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 53,
+          "text": "It\u2019s like tokens per second. Loss not blown up. They\u2019re just watching this. Lex Fridman: And the heart rate goes up if there\u2019s a spike. Dylan Patel: And some level of spikes is normal, it\u2019ll recover and be back. Sometimes a lot of the old strategy was like, you just stop the run, restart from the old version and then change the data mix and then it keeps going. Nathan Lambert: There are even different types of spikes. So Dirk Groeneveld has a theory today too, that\u2019s like fast spikes and slow spikes, where there are, sometimes where you\u2019re looking at the loss and there are other parameters, you could see it start to creep up and then blow up, and that\u2019s really hard to recover from. So you have to go back much further. So you have the stressful period where it\u2019s flat or it might start going up and you\u2019re like, \u201cWhat do I do?\u201d Whereas, there are also loss spikes that are, it looks good and then there\u2019s one spiky data point. And what you could do is you just skip those.",
+          "score": 0.5555555555555556,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "Chunk 3 is highly relevant, describing Dario Amodei's \"race to the top\" philosophy, where high safety standards and crucial evaluations are intended to make companies converge on better practices. Chunks 1 and 2 provide some context on Anthropic's internal safety measures and Dario's general views but don't detail a strategy to influence *other* companies. Chunks 4 and 5 are irrelevant.\n\nThe current information describes the *what* (race to the top) and the *why* (avoid race to the bottom, achieve convergence), but not the *how* Anthropic specifically encourages other companies to adopt these standards.\n\n**Next search query:** \"Anthropic specific actions to promote 'race to the top' AI safety standards in other companies\" or \"Anthropic's strategy to encourage other AI companies to prioritize safety\"",
+      "timestamp": 4.378657817840576
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Anthropic strategy encourage other AI companies safety standards",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 62277,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 33,
+          "text": "The webpage I did in ninth grade would render on a modern browser today, 30 years later. Lex Fridman: That\u2019s crazy. DHH: That is completely crazy when you think about the amount of evolution we\u2019ve had with the web, how much better we\u2019ve made it, how many more standards browsers have adopted. It\u2019s essentially an Apollo project today to create a new browser, which is why it doesn\u2019t happen very often, which is why even companies like Microsoft had to throw in the towel and say, we can\u2019t do it. Now, I actually don\u2019t think that\u2019s good for the web. There is the danger of the monoculture if we just get a single browser engine that runs everything, and we are in danger of that. I love the fact that the Ladybird project, for example, is trying to make a new browser engine from scratch. I\u2019ve supported that project. I would encourage people to look into that. It\u2019s really a wonderful thing. It\u2019s staffed by a bunch of people who worked on other browser projects in the past.",
+          "score": 0.5714285714285714,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 744,
+          "episode_id": 12,
+          "guest": "Tuomas Sandholm",
+          "chunk_index": 41,
+          "text": "So how do you start to now moving away from poker, moving beyond poker into other applications like negotiations, how do you start applying this to other domains, even real world domains that you've worked on? Yeah, I actually have two startup companies doing exactly that. One is called Strategic Machine, and that's for kind of business applications, gaming, sports, all sorts of things like that. Any applications of this to business and to sports and to gaming, to various types of things in finance, electricity markets and so on. And the other is called Strategy Robot, where we are taking these to military security, cyber security and intelligence applications. I think you worked a little bit in, how do you put it, advertisement, sort of suggesting ads kind of thing, auction. That's another company, optimized markets. But that's much more about a combinatorial market and optimization based technology. That's not using these game theoretic reasoning technologies.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 747,
+          "episode_id": 12,
+          "guest": "Tuomas Sandholm",
+          "chunk_index": 44,
+          "text": "Okay, so I haven't really thought about jaywalking, but one thing that I think could be a good application in autonomous vehicles is the following. So let's say that you have fleets of autonomous cars operating by different companies. So maybe here's the Waymo fleet and here's the Uber fleet. If you think about the rules of the road, they define certain legal rules, but that still leaves a huge strategy space open. Like as a simple example, when cars merge, how humans merge, they slow down and look at each other and try to merge. Wouldn't it be better if these situations would already be prenegotiated so we can actually merge at full speed and we know that this is the situation, this is how we do it, and it's all gonna be faster. But there are way too many situations to negotiate manually. So you could use automated negotiation, this is the idea at least, you could use automated negotiation to negotiate all of these situations or many of them in advance.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2159,
+          "episode_id": 29,
+          "guest": "Gustav Soderstrom",
+          "chunk_index": 57,
+          "text": "So it was a complicated model to get across. But time helped with that. And now the revenues to the music industry actually are bigger again than it's gone through this incredible dip and now they're back up. And so we're very proud of having been a part of that. So there have been distinct problems. I think when it comes to the labels, we have taken the painful approach. Some of our competition at the time, they kind of looked at other companies and said, if we just ignore the rights, we get really big, really fast. We're going to be too big for the labels to kind of, too big to fail. They're not going to kill us. We didn't take that approach. We went legal from day one and we negotiated and negotiated and negotiated. It was very slow. It was very frustrating. We were angry at seeing other companies taking shortcuts and seeming to get away with it. It was this game theory thing where over many rounds of playing the game, this would be the right strategy.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2160,
+          "episode_id": 29,
+          "guest": "Gustav Soderstrom",
+          "chunk_index": 58,
+          "text": "It was this game theory thing where over many rounds of playing the game, this would be the right strategy. And even though clearly there's a lot of frustrations at times during renegotiations, there is this there is this weird trust where we have been honest and fair. We've never screwed them. They've never screwed us. It's 10 years, but there's this trust and like they know that if music doesn't get really big, if lots of people do not want to listen to music and want to pay for it, Spotify has no business model. So we actually are incredibly aligned. Other companies, not to be tense, but other companies have other business models where even if they made no money from music, they'd still be profitable companies. But Spotify won't. So I think the industry sees that we are actually aligned business wise. So there is this trust that allows us to do product development, even if it's scary, taking risks.",
+          "score": 0.42857142857142855,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are irrelevant to the question about Dario Amodei, Anthropic, and their safety strategy. They discuss web browsers, game theory applications, and Spotify's business model.\n\nThe agent should search for \"Dario Amodei Anthropic safety strategy encourage other companies\" or \"Anthropic responsible scaling policy\" to find specific methods and their intended outcomes.",
+      "timestamp": 37.335243225097656
+    }
+  ],
+  "final_answer": "Dario Amodei's company, Anthropic, advocates for a \"race to the top\" strategy to encourage AI companies to prioritize safety. This approach involves setting a very high standard for safety and crucial model evaluations. The intended outcome is for other companies to converge on these high standards, rather than engaging in a \"race to the bottom\" where safety is compromised.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    474,
+    459,
+    12,
+    29
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 48.98349213600159
+}

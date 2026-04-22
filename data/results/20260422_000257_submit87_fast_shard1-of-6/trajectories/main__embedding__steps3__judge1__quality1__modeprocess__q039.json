@@ -1,0 +1,152 @@
+{
+  "question": "How do Tim Sweeney and Dan Houser's views diverge regarding the application and limitations of AI in the creative aspects of video game development?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Tim Sweeney views on AI in creative video game development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 60782,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 136,
+          "text": "What do you think is the future of the interplay between what a human artist creates and what an AI system can create in Unreal Engine? Tim Sweeney: I think a lot of people in the industry are overly optimistic about the rate of progress of AI for video and other things like that. The real problem is consistency, like spurting out an image is really high quality, but with video over the course of seeing all the AI approaches have consistency issues going from one place to another. I don\u2019t think that those will just be remedied easily. Fundamentally, AI just doesn\u2019t have anything resembling an understanding of the entire scene they\u2019re in, the entire arc of the movie or plot they\u2019re in and the entirety of the world around them and how it might affect the scene. Whereas game engines have that exactly where they need to be.",
+          "score": 0.8419999022483825,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8428570032119751
+        },
+        {
+          "chunk_id": 60794,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 148,
+          "text": "Tim Sweeney: There\u2019s a lot of complicated trends underway. It can be hard to break them down and distinguish them. I think a lot of people like the theories that get the biggest traction on social media often don\u2019t capture the real underlying motive forces at play there. But I think AI involved in code production will probably create a net benefit for the need for humanity to be involved in coding. It may change parts of jobs. I don\u2019t think it\u2019s going to obsolete anybody who\u2019s willing to learn new ways of doing things. It\u2019s always been this way. I think that there\u2019s also a lot of over hype in AI. AI is really great at spewing out code that does something that a million GitHub repositories already do because it\u2019s learned the underlying pattern. It\u2019s notoriously hard to get to do something new that hasn\u2019t been done before, especially when it\u2019s a complex task. The bigger amount of code you ask AI for, the more it leaves you with just a mess of code that sort of works.",
+          "score": 0.817983247756958,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8085474967956543
+        },
+        {
+          "chunk_id": 60790,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 144,
+          "text": "Lex Fridman: I can\u2019t wait until AI can operate not in the space of pixels, but in the space of scene graphs, creating objects in the scene graph, whether it\u2019s like you mentioned, audio or any of the things that you mentioned about that empower the creator. That\u2019s a super exciting future. I wonder if you could speak to a fear that people have on this topic of artists, engineers are losing their jobs, being replaced by AI. Are there words of hope that you could offer them? Tim Sweeney: This is certainly the most extreme example of it because AI is just so far ahead of prior technologies, but similar fears were had in every other industry. There\u2019s a fear that digital music synthesis would obsolete musicians. There was a very brief period of time in which songs with digital music instruments, like the early Minimoogs and Yamaha synthesizers weren\u2019t allowed to win certain music industry awards because they weren\u2019t considered real music.",
+          "score": 0.8083915729522705,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7948451042175293
+        },
+        {
+          "chunk_id": 60796,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 150,
+          "text": "That\u2019s interesting.\u201d Then you could talk to it. Maybe that shows something about the programming experience that it is in part sometimes a bit lonely. Tim Sweeney: The topic of boilerplate code is an interesting one because the mere existence of boilerplate code is a failure of programming language and of the idea of creating software modules. You ask AI to create a sorting function, great. Now you have another sorting function that might be buggy alongside the million others that different people have written. It would be better to have a sorting function that\u2019s been written and tested and optimized and everybody relies on it. More modular software I think will actually reduce the opportunity of AI because people doing programming work will largely be solving unique problems.",
+          "score": 0.7946855683326721,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.775265097618103
+        },
+        {
+          "chunk_id": 60786,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 140,
+          "text": "I\u2019m an optimist on this and an optimist that it\u2019s going to create opportunity for everyone. Lex Fridman: Do you think it will be possible to generate, so use generative AI to create dynamic objects, like you mentioned trees, in the Unreal Engine world to create meshes and textures and empower the creator to create faster, use meta knobs like hyperparameters versus very nuanced, where you can control much faster the look of a face, the look of a tree, all that kind of stuff? Tim Sweeney: I think that\u2019s the central challenge of the next decade of game engines and AI for content creation of all sorts, because you have two very different models to the world that are emerging. There\u2019s the scene graph, the technical term we use to describe the set of all of the objects in the world in a 3D world maintained by Unreal Engine or another engine. In the videos you saw, it\u2019s the rocks and the trees and the snow and the bridge and the people and all of these things.",
+          "score": 0.7655439825057982,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7764914035797119
+        }
+      ],
+      "judge_feedback": "All chunks are relevant to Tim Sweeney's views on AI in creative video game development. They provide good insight into his perspective on AI's limitations (consistency, understanding context, novelty) and potential applications (empowering creators, generating assets).\n\nTo answer the question about divergence, the agent needs to find Dan Houser's views.\n\n**Next Search Query:** Dan Houser views on AI in creative video game development",
+      "timestamp": 2.0609889030456543
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "Dan Houser views on AI in creative video game development",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 64428,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 46,
+          "text": "Dan Houser: And so this, I finally felt we found an interesting hypothesis. The AI is more intelligent than us, but he\u2019s also as broken as we are. That was an interesting hypothesis to explore. You know, what happens when AI runs rampant in its own fake digital world? I felt that we had a hypothesis that was worth exploring and could give us some really interesting visuals and give us a really interesting story to tell. Lex Fridman: And it would be incredible to create a sort of AI video game as the world is developing smarter and smarter AIs. It allows us as humans to play the game and to reflect on the thing that we humans are creating. It\u2019s a real commentary as the thing is happening. So I have to ask, as a person\u2026 you, as a person who loves literature, and one of the, if not the greatest writer in video game history. Kurt in the book\u2026\n\n\n## Can LLMs write video games?",
+          "score": 0.8324246246814727,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8291780352592468
+        },
+        {
+          "chunk_id": 64583,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 201,
+          "text": "Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff. You know, I\u2019ve been in games for 29 years, and all the time, the piece of tech that\u2019s going to make making games much easier and much cheaper is about to turn up, and all that\u2019s happened is the games have got much better and way more expensive. So I\u2019m always nervous about saying, \u201cFinally, we have that bit of tech that makes our lives easier,\u201d but it looks as if it might be able to do that when you use it in the right way. If you use it to try and substitute for creativity, it\u2019s going to be really generic. Lex Fridman: A big, ridiculous question: What\u2019s the meaning of this whole thing we have going on here, of life, of existence? Why are we here? Dan Houser: To watch the universe. The easiest plausible answer is we are designed by the universe to watch itself and to comment on it in interesting ways.",
+          "score": 0.822097953081131,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.8144256472587585
+        },
+        {
+          "chunk_id": 64433,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 51,
+          "text": "But it\u2019s hard to argue because they\u2019re incredibly impressive. Winning all kinds- of math competitions. But what is that magic? And again, that could be just a romantic human side of me saying that LLMs won\u2019t be able to capture that, maybe desperately holding on for hope. Dan Houser: I don\u2019t think they\u2019re going to come up with magic. I think they\u2019re going to be fantastic at coming up with really cheap, decent stuff.\n\n\n## Creating GTA 4 and GTA 5\n\nLex Fridman: I have to ask you about your writing process. And we can break it, break it up. On Grand Theft Auto\u2026 \u2026GTA IV is when it really started ramping up. How much writing went into the Grand Theft Auto series? How many words are we talking about? I saw some thousands of pages. Dan Houser: I mean, when we printed out the scripts for GTA IV, it was about this high. And GTA V, it was about that high.",
+          "score": 0.8013887841701507,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7848411202430725
+        },
+        {
+          "chunk_id": 64582,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 200,
+          "text": "But if you want to make something that\u2019s cinematic, you need resources. You can still make something that\u2019s really interesting that isn\u2019t super cinematic, but it\u2019s an interesting experience in some ways. But the second you\u2019re involving actors and motion capture and one of those big experiences, it\u2019s going to cost some money. So therefore, if you want to do that, you\u2019ve got to figure out what companies you want to work at and figure out how you get to work there. Lex Fridman: Do you have hope for AI helping with some of the video generation, some of the world generation, or some of the open-world assistance in generating the world? Dan Houser: Yes, limited. Absolutely, if used correctly, it will be a great tool. If used incorrectly, it will lead to loads of generic stuff.",
+          "score": 0.7986610622406005,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.8238015174865723
+        },
+        {
+          "chunk_id": 64429,
+          "episode_id": 484,
+          "guest": "Dan Houser",
+          "chunk_index": 47,
+          "text": "Kurt in the book\u2026\n\n\n## Can LLMs write video games? Lex Fridman: \u2026of A Bitter Paradise has this nice line that I think is thoughtful. \u201cAt one point in college, I even wanted to be a writer. How ridiculous is that? A writer. Language models ended that fantasy for me and millions of others, so instead I decided to get a master\u2019s in marketing and started to sell language models.\u201d So you as a writer and creator of some of the most legendary narratives\u2026 In recent history, how do you feel about LLMs being able to write in a way that looks awfully human? Dan Houser: I\u2019m not that afraid of them for large-scale concepts. I don\u2019t think they\u2019re going to be very good at that. I think it\u2019s harder if\u2026 You know, I began, and I was too shy to tell anyone I wanted to be a writer. That\u2019s why I ended up in video games. And I would scribble away, writing manuals and writing on PS1 games, all 12 lines of dialogue in a game. Sometimes I wouldn\u2019t even get that job and I\u2019d just write the website copy.",
+          "score": 0.7791759283542632,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.7959656119346619
+        }
+      ],
+      "judge_feedback": "All retrieved chunks are relevant, providing a comprehensive view of Dan Houser's nuanced perspective on AI in creative game development, highlighting its potential as a tool but also its limitations in generating truly creative or \"magical\" content.\n\nTo answer the question about diverging views, the next step is to find Tim Sweeney's opinions. Search for \"Tim Sweeney views on AI in creative video game development\" or \"Tim Sweeney AI game development creativity\".",
+      "timestamp": 7.950312376022339
+    },
+    {
+      "step_number": 3,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 25.284612894058228
+    }
+  ],
+  "final_answer": "Tim Sweeney believes AI currently lacks consistency and a fundamental understanding of entire scenes or plots, making it struggle with complex, novel creative tasks, though he is optimistic about its role in empowering creators to generate dynamic assets like meshes and textures within game engines. Dan Houser, however, is more cautious, stating that while AI can be a great tool if used correctly, it will lead to generic content if misused and won't be able to generate \"magic\" or excel at large-scale creative concepts, though it can assist with \"cheap, decent stuff\" and limited world generation.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    467,
+    484
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 25.28461718559265
+}

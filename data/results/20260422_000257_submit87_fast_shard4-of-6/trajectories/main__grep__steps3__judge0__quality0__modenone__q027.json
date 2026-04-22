@@ -1,0 +1,181 @@
+{
+  "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Travis Oliphant programming languages development methodology",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 28175,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 208,
+          "text": "Thanks for listening to this conversation with Travis Oliphant. To support this podcast, please check out our sponsors in the description. And now, let me leave you with something that in the programming world is called Hodgson's Law. Every sufficiently advanced Lisp application will eventually be re implemented in Python. Thank you for listening and hope to see you next time. this proprietary software. Right, and there's also culture around MATLAB as much, because I've talked to a few folks in, MathWorks creates MATLAB? Yeah. I mean, there's just a culture, they try really hard, but it just, there's this corporate IBM style culture that's like, or whatever. I don't want to say negative things about IBM or whatever, but there's a... No, it's really that connection. It's something I'm in the middle of right now is the business of open source. And how do you connect the ethos of cooperative development with the necessity of creating profits, right?",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 280,
+          "episode_id": 6,
+          "guest": "Guido van Rossum",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Guido van Rossum, creator of Python, one of the most popular programming languages in the world, used in almost any application that involves computers from web back end development to psychology, neuroscience, computer vision, robotics, deep learning, natural language processing, and almost any subfield of AI. This conversation is part of MIT course on artificial general intelligence and the artificial intelligence podcast. If you enjoy it, subscribe on YouTube, iTunes, or your podcast provider of choice, or simply connect with me on Twitter at Lex Friedman, spelled F R I D. And now, here's my conversation with Guido van Rossum. You were born in the Netherlands in 1956. Your parents and the world around you was deeply deeply impacted by World War Two, as was my family from the Soviet Union. So with that context, what is your view of human nature? Are some humans inherently good, and some inherently evil?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2603,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 7,
+          "text": "So it's kind of nice being able to get the computer and computers to talk to each other and to do things for you. And then I think that one, the programming language I most loved then would have been Delphi, which was Object Pascal, created by Anders Heilsberg, who previously did Turbo Pascal and then went on to create.NET and then went on to create TypeScript. Delphi was amazing because it was like a compiled, fast language that was as easy to use as Visual Basic. Delphi, what is it similar to in more modern languages? Visual Basic. Visual Basic. Yeah, but a compiled, fast version. So I'm not sure there's anything quite like it anymore. If you took like C Sharp or Java and got rid of the virtual machine and replaced it with something, you could compile a small type binary. I feel like it's where Swift could get to with the new Swift UI and the cross platform development going on. Like that's one of my dreams is that we'll hopefully get back to where Delphi was.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2605,
+          "episode_id": 35,
+          "guest": "Jeremy Howard",
+          "chunk_index": 9,
+          "text": "So there was a couple of major directions. One was the kind of Lambda Calculus Alonzo Church direction, which I guess kind of lisp and scheme and whatever, which has a history going back to the early days of computing. The second was the kind of imperative slash OO, algo similar going on to C, C++ and so forth. There was a third, which are called array oriented languages, which started with a paper by a guy called Ken Iverson, which was actually a math theory paper, not a programming paper. It was called Notation as a Tool for Thought. And it was the development of a new way, a new type of math notation. And the idea is that this math notation was much more flexible, expressive, and also well defined than traditional math notation, which is none of those things. Math notation is awful. And so he actually turned that into a programming language and cause this was the early 50s or the sorry, late 50s, all the names were available. So he called his language a programming language or APL.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27542,
+          "episode_id": 221,
+          "guest": "Douglas Lenat",
+          "chunk_index": 97,
+          "text": "Like, what's your sense? How much of the value is in the silly software engineering aspect, and how much of the value is in the knowledge? So development of programs in Lisp proceeds, I think, somewhere between a thousand and fifty thousand times faster than development in any of what you're calling modern or improved computer languages. Well, there's other functional languages like, you know, Clojure and all that. But I mean, I'm with you. I like Lisp. I just wonder how many great programmers there are. There's still like... Yes. So it is true when a new inference programmer comes on board, they need to learn some of Lisp. And in fact, we have a subset of Lisp, which we call cleverly Sub L, which is really all they need to learn. And so the programming actually goes on in Sub L, not in full Lisp. And so it does not take programmers very long at all to learn Sub L. And that's something which can then be translated efficiently into Java.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 123.77764558792114
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack programming languages development methodology",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3687,
+          "episode_id": 48,
+          "guest": "Bjarne Stroustrup",
+          "chunk_index": 11,
+          "text": "And this is actually a real example. They used it to simulate and optimize the emergency services for somewhere in Norway back in the 60s. So this was one of the early examples for why you needed inheritance and you needed a runtime polymorphism because you wanted to handle this set of vehicles in a manageable way. You can't just rewrite your code each time a new kind of vehicle comes along. Yeah, that's a beautiful, powerful idea. And of course it stretches through your work with C++ as we'll talk about. But I think you've structured it nicely. What other breakthroughs came along in the history of programming languages if we were to tell the history in that way? Obviously, I'm better at telling the part of the history that is the path I'm on as opposed to all the paths. Yeah, you skipped the hippie John McCarthy and Lisp, one of my favorite languages. Functional. But Lisp is not one of my favorite languages. It's obviously important. It's obviously interesting.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 128.89392256736755
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "Pieter Levels programming languages development methodology",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54705,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 146,
+          "text": "My theory would be that great software engineers are not allowed to make changes. Basically there\u2019s some kind of bureaucracy,. There\u2019s way too many managers. There\u2019s a lot of bureaucracy and great engineers show up, they try to work there and they\u2019re not allowed to really make any contributions and then they leave. And so they have a lot of mediocre software engineers. They\u2019re not really interested in improving any other thing. And literally they would like to improve the stuff, but the bureaucracy of the place, plus all the bosses, all the high up people are not technical people probably. They don\u2019t know much about web development. They don\u2019t know much about programming, so they just don\u2019t give any respect. You have to give the freedom and the respect to great engineers as they try to do great things. That feels like an explanation. If you were a great programmer, would you want to work at America Airlines or\u2026\n\nPieter Levels: No. No.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54711,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 152,
+          "text": "The best team wins. So I think you need to emulate a free market inside a company to make it entrepreneurial. And you need entrepreneurial mentality in a company to come up with new ideas and do it better.\n\n\n## Learning new programming languages\n\nLex Fridman: So one of the things you do really, really well is learn a new thing. You have an idea, you try to build it, and then you learn everything you need to in order to build it. You have your current skills, but you learn just the minimal amount of stuff. So you\u2019re a good person to ask how do you learn? How do you learn quickly and effectively and just the stuff you need? Just by way of example, you did a 30 days learning session on 3D where you documented yourself giving yourself only 30 days to learn everything you can about 3D. Pieter Levels: Yeah, I tried to learn virtual reality because this was same as AI. It came up suddenly 2016, 2017 with I think HTC Vive, these big VR glasses before Apple Vision Pro.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54716,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 157,
+          "text": "People anywhere can ask this question and start building stuff. Lex Fridman: Yeah, it clarifies it for sure. And just start building, keep build, build. Actually apply the thing, whether it\u2019s AI or any of the programming for web development. Just have a project in mind, which I love the idea of 12 startups in 12 months or build a project almost every day. Just build a thing and get it to work and finish it every single day. That\u2019s a cool experiment. Pieter Levels: I think that was the inspiration. There was a girl who did 160 websites in 160 days or something, literally mini websites, and she learned to code that way. So I think it\u2019s good to set yourself challenges. You can go to some coding bootcamp, but I don\u2019t think they actually work. I think it\u2019s better to do for me out of the dark self-learning and setting yourself challenges and just getting in. But you need discipline. You need discipline to keep doing it. And coding, coding is very\u2026 It\u2019s a steep learning curve to get in.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54761,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 202,
+          "text": "It\u2019s super-fast. PHP is really fast now. It\u2019s crazy. JavaScript-\n\nPieter Levels: Much faster than Ruby, yeah. Lex Fridman: \u2026 really fast now. So, if speed is something you care about, it\u2019s super-fast. And there\u2019s gigantic communities of people using those programming languages. And there\u2019s frameworks if you like the framework. So, whatever, it doesn\u2019t really matter what you use. But also, if I was a developer working with you, you are extremely successful. You\u2019ve shipped a lot. So, if I roll in, I\u2019m going to be like, I don\u2019t assume you know nothing. Assume Pieter is a genius, the smartest developer ever. And learn from it. And yes, and notice parts in the code where, \u201cOkay, okay, I got it, here\u2019s how he\u2019s thinking.\u201d And now if I want to add another little feature, definitely needs to have emoji in front of it, and then just follow the same style and add it.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 62378,
+          "episode_id": 474,
+          "guest": "DHH",
+          "chunk_index": 134,
+          "text": "Pieter Levels who\u2019ve been doing this wonderful flight simulator was talking to that where at a certain scale the thing just keeps biting its own tail. You want to fix something and it breaks five other things, which I think is actually uniquely human because that\u2019s how most bad programmers are at a certain level of complexity with the domain. They can\u2019t fix one thing without breaking three other things, so in that way I\u2019m actually in some way it\u2019s almost a positive signal for that. The AI is going to figure this out because it\u2019s done an extremely human trajectory right now. The kind of mistakes it\u2019s making are the kind of mistakes that junior programmers make all the time.\n\n\n## Rails manifesto: Principles of a great programming language\n\nLex Fridman: Yeah. Can we zoom out and look at the vision, the manifesto, the doctrine of Rails? What are some of the things that make a programming language a framework? Great, especially for web development, so we talked about happiness. DHH: Yes.",
+          "score": 0.6666666666666666,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 134.70089030265808
+    }
+  ],
+  "final_answer": "The provided context offers insight into Pieter Levels' approach, which prioritizes rapid, project-based learning and building, focusing on shipping products quickly by learning only what's necessary and fostering an entrepreneurial environment. John Carmack's approach, as inferred from the context, highlights self-reliance and working effectively with limited external resources. However, the context does not provide sufficient information to detail Travis Oliphant's specific approaches to programming languages and development methodologies or to fully compare how their priorities diverge for successful software creation.",
+  "total_chunks_retrieved": 12,
+  "unique_episodes_found": [
+    224,
+    35,
+    6,
+    7,
+    48,
+    440,
+    474,
+    221
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 141.06966185569763
+}

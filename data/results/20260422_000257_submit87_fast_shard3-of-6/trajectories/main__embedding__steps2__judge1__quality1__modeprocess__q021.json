@@ -1,0 +1,99 @@
+{
+  "question": "During his discussion on software engineering challenges and personal development, ThePrimeagen (Michael Paulson) brought up John Carmack. What was John Carmack's pragmatic view on the 'best' programming language when he discussed his groundbreaking work at id Software and Oculus VR?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language pragmatic view",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 59324,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 208,
+          "text": "But for the most part, Zig will give you safety for the most part. So it\u2019s like a little bit of safety, but more like C. So it kind of gives you everything you want in that region where you can express safe code and unsafe code. It\u2019s very easy to write. It\u2019s very pretty. Or at least the idea behind it is very pretty. The language itself is bland, but. Lex Fridman: Wow, there\u2019s beauty in everything, Prime. ThePrimeagen: Yeah.\n\n\n## Rust\n\nLex Fridman: You\u2019ve programmed in Rust a lot. What do you love about Rust? What are the strengths? What are the weaknesses? Maybe you can speak about memory management that you already mentioned, the challenge of memory management that several of these languages address, but yeah, what do you love about Rust? ThePrimeagen: What I love about Rust, I love the ability to free the memory that you\u2019re using is directly tied to the stack.",
+          "score": 0.7745835561752319,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7465479373931885
+        },
+        {
+          "chunk_id": 59311,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 195,
+          "text": "But I mean for practical purposes, no. HTML is not a language. For me, yes, the Turing test is a good one, but for those that are just not wanting to be as academic, if I can\u2019t write a function and an if statement, I don\u2019t feel like that\u2019s\u2026 If I can\u2019t loop, if, and function, I don\u2019t feel like that\u2019s a good, that\u2019s a programming language. Lex Fridman: Although modern HTML has a lot of features. ThePrimeagen: It\u2019s crazy how much it has, but it\u2019s more of a specification than anything else. I specify it to be a pop-up. I specify it to have this kind of accessibility, this kind of look. Under these conditions look like this, transform like this, move down here.\n\n\n## Bash\n\nLex Fridman: I don\u2019t know. I kind of like these popular programming languages in this list. I like JavaScript. ThePrimeagen: You like Bash? Lex Fridman: Oh, yeah. I like Bash a lot. Yeah. Why? ThePrimeagen: Okay. Bash is kind of one of those ones where it\u2019s like, do you really like it? I like it up until I need an array.",
+          "score": 0.7690776724815368,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7386823892593384
+        },
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.769037284374237,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7386246919631958
+        },
+        {
+          "chunk_id": 59315,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 199,
+          "text": "I will say that all the top languages there, none of them are strict static typed languages. And so even TypeScript, I don\u2019t like this any. And so for people that are learning, doing something that\u2019s much more strict would be great. Something like Go, Rust, I mean even C Sharp, C++. Anything that kind of changes your perspective of types I think is really helpful to kind of go through. They\u2019re not getting nearly as much love on this most popular language list, but I think they\u2019re very fantastic. Lex Fridman: All right, well, if I put a gun to your head, top five languages, let\u2019s list them out. There\u2019s a bright-eyed 20-year-old asking you, what are the top languages, five languages to learn? ThePrimeagen: If I were to pick five languages that I think people should learn, or at least, let\u2019s restate it this way, I\u2019m going to say a couple languages and you should at least explore some of them.",
+          "score": 0.7684735198020934,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7378193140029907
+        },
+        {
+          "chunk_id": 59291,
+          "episode_id": 461,
+          "guest": "ThePrimeagen",
+          "chunk_index": 175,
+          "text": "You go all out on certain programming languages like Rust and then go and then try to pick a new one, but also are experimenting constantly. So maybe one question I could ask is about learning. What\u2019s your approach to learning a new programming language, and maybe what\u2019s your advice on learning a new programming language when you begin that journey? ThePrimeagen: So I\u2019ve kind of done a bunch of different ways to go through this learning process, and I\u2019ve tried a lot of different ones. Something that is obviously successful is just start building something. Just put your hands on the keyboard, especially if you already know how to program. You\u2019re like, okay, I\u2019m now using Zig. How do I do a main function so I can just run the program? Okay, now I know how to build. Okay, how do I do an if statement? What does it look like? Okay, how do I declare my own functions? How do I do modules, right?",
+          "score": 0.7491161615848541,
+          "source": "embedding",
+          "quality_score": 0.74,
+          "original_score": 0.753023087978363
+        }
+      ],
+      "judge_feedback": "Chunks 1, 2, 4, and 5 are irrelevant as they discuss ThePrimeagen's general views on programming languages without mentioning John Carmack. Chunk 3 provides John Carmack's direct pragmatic view on programming languages, which is useful, but it does not show ThePrimeagen discussing Carmack's view, which is a key part of the question.\n\nThe agent needs to find a segment where ThePrimeagen explicitly discusses John Carmack's pragmatic view on programming languages. A more targeted search for \"ThePrimeagen discusses John Carmack programming language philosophy\" or \"ThePrimeagen on John Carmack's language choices\" would be beneficial.",
+      "timestamp": 1.7094523906707764
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "ThePrimeagen John Carmack programming language philosophy",
+      "num_results": 1,
+      "results": [
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.7684659261703491,
+          "source": "embedding",
+          "quality_score": 0.84,
+          "original_score": 0.7378084659576416
+        }
+      ],
+      "judge_feedback": "This chunk is relevant as it features John Carmack discussing his programming language choices for Quake. It highlights his experience with Quake C but doesn't explicitly state his pragmatic view on the \"best\" programming language or connect to his work at Oculus VR.\n\nThe agent should now search for ThePrimeagen's specific discussion of John Carmack's programming language philosophy, focusing on his pragmatic views and any mention of Oculus VR.",
+      "timestamp": 16.209734201431274
+    }
+  ],
+  "final_answer": "John Carmack's pragmatic view was that people are drawn to programming languages because they enable them to create things they care about, rather than for the language's syntax itself. While he built his own language, Quake C, for the original Quake, he later switched to using DLLs with C for Quake two and implemented a C interpreter for Quake three, acknowledging that building his own language was an experience he learned from but not necessarily the \"smarter thing to do\" initially. He felt somewhat bad about Quake C, comparing it unfavorably to JavaScript, but recognized it allowed people to \"do magical things.\"",
+  "total_chunks_retrieved": 6,
+  "unique_episodes_found": [
+    309,
+    461
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 26.121825218200684
+}

@@ -1,0 +1,86 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Dylan Patel Nathan Lambert Dario Amodei Anthropic safety strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58741,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 170,
+          "text": "There\u2019s been news of how Anthropic has done pre-release testing with the UK AI Safety Institute. All of these things add inertia to the process of getting things out. And we\u2019re on this trend line where the progress is very high. So if you reduce the time from when your model is done training, you run the vals, it\u2019s good. You want to get it out as soon as possible to maximize the perceived quality of your outputs. DeepSeek does this so well. Dylan Patel: Dario explicitly said Claude 3.5 Sonnet was trained like nine months or a year-\n\nNathan Lambert: Nine to 10 months ago [inaudible 02:18:42]. Dylan Patel: Nine to 10 months ago. And I think it took them another handful of months to release it. So it\u2019s like, there is a significant gap here. And especially with reasoning models, the word in the San Francisco street is that Anthropic has a better model than o3 and they won\u2019t release it. Why? Because chains-of-thought are scary, and they are legitimately scary.",
+          "score": 0.7598743438720703,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58752,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 181,
+          "text": "Nathan Lambert: Anthropic has research on this where they show that if you put certain phrases in at pre-training, you can then elicit different behavior when you\u2019re actually using the model because they\u2019ve poisoned the pre-training data, as of now, I don\u2019t think anybody in a production system is trying to do anything like this. I think it\u2019s Anthropic is doing very direct work and mostly just subtle things. We don\u2019t know how they\u2019re going to generate tokens, what information they\u2019re going to represent, and what the complex representations they have are. Lex Fridman: Well, we\u2019re talking about an Anthropic, which is generally just is permeated with good humans trying to do good in the world. We just don\u2019t know of any labs\u2026 This would be done in a military context that are explicitly trained to\u2026 Okay.",
+          "score": 0.7477341890335083,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58922,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 351,
+          "text": "And DeepSeek would be like 79% average score without safety and their safety score would bring it down to like 70 or there abouts. Dylan Patel: Oh, so you\u2019d beat them even ignoring safety. Nathan Lambert: Yeah. So this is something that internally, it\u2019s like I don\u2019t want to win only by how you shape the eval benchmark. So if there\u2019s something that\u2019s like people may or may not care about safety in their model, safety can come downstream, safety can be when you host the model for an API, like safety is addressed in a spectrum of locations in AI applications. So it\u2019s like if you want to say that you have the best recipe, you can\u2019t just gate it on these things that some people might not want. And this is, it\u2019s like the time of progress and we benefit if we can release a model later, we have more time to learn new techniques like this RL technique, we had started this in the fall, it\u2019s now really popular reasoning models.",
+          "score": 0.743537187576294,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58744,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 173,
+          "text": "Lex Fridman: Yeah. So, the bar for safety is probably lowered a bit because of DeepSeek. There\u2019s parallels here to the space race. The reason the Soviets probably put a man in space first is because their approach to safety, the bar for safety, was lowered\n\nDylan Patel: And they killed that dog, and all these things, so it\u2019s like\u2026\n\nLex Fridman: Less risk averse than the US Space Program. And there\u2019s parallels here, but there\u2019s probably going to be downward pressure on that safety bar for the US companies. Nathan Lambert: This is something that Dario talks about. That\u2019s the situation that Dario wants to avoid is, Dario talks too about the difference between race to the bottom and race to the top. And the race to the top is where there\u2019s a very high standard on safety. There\u2019s a very high standard on your model forms and certain crucial evaluations. And when certain companies are really good to it, they will converge. This is the idea.",
+          "score": 0.7403391599655151,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 58920,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 349,
+          "text": "We\u2019re at AI2, we don\u2019t have a ton of compute. We can\u2019t train 405B models all the time. So we just did a few runs and they tend to work. And it just shows that there\u2019s a lot of room for people to play in these things and that\u2019s \u2013\n\nDylan Patel: And they crushed Llama\u2019s actual release, they\u2019re way better than it. Nathan Lambert: \u2026 Yeah. So our eval numbers, I mean we have extra months in this, but our eval numbers are much better than the Llama instruct model that they released. Lex Fridman: And then you also said better than DeepSeek V3? Nathan Lambert: Yeah, on our eval benchmark. DeepSeek V3 is really similar. We have a safety benchmark to understand if it will say harmful things and things like that. And that\u2019s what draws down most of the way. It\u2019s still-\n\nDylan Patel: It\u2019s like an amalgamation of multiple benchmarks or what do you mean? Nathan Lambert: \u2026 Yeah, so we have a 10 evaluator. This is standard practice in post-training is you choose your evaluations you care about.",
+          "score": 0.7315505146980286,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 8.409515619277954
+    },
+    {
+      "step_number": 2,
+      "tool_used": "none",
+      "query": "",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 27.856193780899048
+    }
+  ],
+  "final_answer": "Dario Amodei's company, Anthropic, employs a strategy to encourage other AI companies to prioritize safety by setting a very high standard for safety and crucial evaluations for their models. This approach, which Amodei refers to as a 'race to the top,' aims for other companies to converge to these high safety standards, rather than lowering them in a 'race to the bottom' bottom.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    459
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 27.856196403503418
+}

@@ -1,0 +1,90 @@
+{
+  "question": "Considering Robin Hanson's theoretical work on advanced civilizations, John Carmack's focus on building artificial general intelligence, and Elon Musk's vision for human-AI symbiosis through Neuralink, how do their perspectives diverge regarding the primary challenges or opportunities presented by artificial intelligence?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Robin Hanson AI challenges opportunities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 1472,
+          "episode_id": 20,
+          "guest": "Oriol Vinyals",
+          "chunk_index": 113,
+          "text": "Out of this. So I think that as a domain, it still has a lot of opportunities, not only because of course we wanna learn with less experience, we would like to, I mean, if I learned to play Protoss, I can play Terran and learn it much quicker than Alpha Star can, right? So there are obvious interesting research challenges as well, but even as the raw performance goes, really the claim here can be we are at pro level or at high grandmaster level, but obviously the players also did not know what to expect, right? Their prior distribution was a bit off because they played this kind of new like alien brain as they like to say it, right? And that's what makes it exciting for them. But also I think if you look at the games closely, you see there were weaknesses in some points, maybe Alpha Star did not scout, or if it had invisible units going against at certain points, it wouldn't have known and it would have been bad.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 2486,
+          "episode_id": 33,
+          "guest": "Keoki Jackson",
+          "chunk_index": 13,
+          "text": "And that was what led to what we call the pogo stick collection, right? Where basically a thing comes down, it's only there for seconds, does that collection, grabs the, essentially blows the regolith material into the collection hopper and off it goes. It doesn't really land almost. It's a very short landing. Wow, that's incredible. So what is, in those, we talked a little bit more about space, what's the role of the human in all of this? What are the challenges? What are the opportunities for humans as they pilot these vehicles in space? And for humans that may step foot on either the moon or Mars? Yeah, it's a great question because, you know, I just have been extolling the virtues of robotic and, you know, rovers, autonomous systems, and those absolutely have a role. I think the thing that we don't know how to replace today is the ability to adapt on the fly to new information. And I believe that will come, but we're not there yet. There's a ways to go.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3407,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 107,
+          "text": "But not several hundred years. No, I don't think it's several hundred years. I don't think it's several hundred years. But again, so much depends on how committed we are to investing and incentivizing this type of work. And it's sort of interesting. Like, I don't think it's obvious how incentivized we are. I think from a task perspective, if we see business opportunities to take this technique or that technique to solve that problem, I think that's the main driver for many of these things. From a general intelligence, it's kind of an interesting question. Are we really motivated to do that? And like, we just struggled ourselves right now to even define what it is. So it's hard to incentivize when we don't even know what it is we're incentivized to create. And if you said mimic a human intelligence, I just think there are so many challenges with the significance and meaning of that. That there's not a clear directive. There's no clear directive to do precisely that thing.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 5776,
+          "episode_id": 73,
+          "guest": "Andrew Ng",
+          "chunk_index": 24,
+          "text": "AI is a general purpose technology and I think it will transform every industry our community has already transformed to a large extent the software internet sector most software internet companies outside the top right five or six or three or four already have reasonable machine learning capabilities or or getting there it's still room for improvement but when I look outside the software internet sector everything from manufacturing agriculture, healthcare logistics transportation there's so many opportunities that very few people are working on so I think the next wave of AI is for us to also transform all of those other industries there was a McKinsey study estimating 13 trillion dollars of global economic growth US GDP is 19 trillion dollars so 13 trillion is a big number or PwC estimates 16 trillion dollars so whatever number is is large but the interesting thing to me was a lot of that impact will be outside the software internet sector so we need more teams to work with these companies to help them adopt AI and I think this is one thing so make you know help drive global economic growth and make humanity more powerful and like you said the impact is there so what are the best industries the biggest industries where AI can help perhaps outside the software tech sector frankly I think it's all of them some of the ones I'm spending a lot of time on are manufacturing agriculture look into healthcare for example in manufacturing we do a lot of work in visual inspection where today there are people standing around using the eye human eye to check if you know this plastic part or the smartphone or this thing has a scratch or a dent or something in it we can use a camera to take a picture use a algorithm deep learning and other things to check if it's defective or not and thus help factories improve yield and improve quality and improve throughput it turns out the practical problems we run into are very different than the ones you might read about in in most research papers the data sets are really small so we face small data problems you know the factories keep on changing the environment so it works well on your test set but guess what something changes in the factory the lights go on or off recently there was a factory in which a bird threw through the factory and pooped on something and so that changed stuff and so increasing our algorithm makes robustness so all the changes happen in the factory I find that we run a lot of practical problems that are not as widely discussed in academia and it's really fun kind of being on the cutting edge solving these problems before maybe before many people are even aware that there is a problem there and that's such a fascinating space you're absolutely right but what is the first step that a company should take it's just scary leap into this new world of going from the human eye inspecting to digitizing that process having a camera having an algorithm what's the first step like what's the early journey that you recommend that you see these companies taking I published a document called the AI Transformation Playbook that's online and taught briefly in the AI for Everyone course on Coursera about the long term journey that companies should take but the first step is actually to start small I've seen a lot more companies fail by starting too big than by starting too small take even Google you know most people don't realize how hard it was and how controversial it was in the early days so when I started Google Brain it was controversial you know people thought deep learning near nest tried it didn't work why would you want to do deep learning so my first internal customer within Google was the Google speech team which is not the most lucrative project in Google not the most important it's not web search or advertising but by starting small my team helped the speech team build a more accurate speech recognition system and this caused their peers other teams to start to have more faith in deep learning my second internal customer was the Google Maps team where we used computer vision to read house numbers from basic street view images to more accurately locate houses within Google Maps so improve the quality of geodata and it was only after those two successes that I then started a more serious conversation with the Google Ads team and so there's a ripple effect that you showed that it works in these cases and then it just propagates through the entire company that this thing has a lot of value and use for us I think the early small scale projects it helps the teams gain faith but also helps the teams learn what these technologies do I still remember when our first GPU server it was a server under some guy's desk and you know and then that taught us early important lessons about how do you have multiple users share a set of GPUs which is really not obvious at the time but those early lessons were important we learned a lot from that first GPU server that later helped the teams think through how to scale it up to much larger deployments Are there concrete challenges that companies face that you see is important for them to solve?",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 13148,
+          "episode_id": 133,
+          "guest": "Manolis Kellis",
+          "chunk_index": 59,
+          "text": "The reason why CRISPR is amazingly, awesomely revolutionary is because instead of having this team of engineers design a new set of proteins for every locus that you want to target, you just type it in your computer and you just synthesize an RNA guide. The beauty of CRISPR is not the cutting, it's not the fixing. All of that was there before. It's the guiding, and the only thing that changes is that it makes the guiding easier by sort of just typing in the RNA sequence, which then allows the system to sort of scan the DNA to find that. So the coding, the engineering of the cutter is easier in terms of SP. That's kind of similar to the story of deep learning versus old school machine learning. Some of the challenging parts are automated. But CRISPR is just one cutting technology, and then that's part of the challenges and exciting opportunities of the field is to design different cutting technologies.",
+          "score": 0.5,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": "None of the retrieved chunks are relevant to Robin Hanson's specific theoretical work on AI. They discuss general AI challenges and opportunities from other guests' perspectives.\n\nThe agent needs to search for information directly linking Robin Hanson to AI challenges and opportunities. A more targeted query focusing on his specific theories or writings would be beneficial.",
+      "timestamp": 2.2877440452575684
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "Robin Hanson emulations AI challenges opportunities",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 9.464281797409058
+    }
+  ],
+  "final_answer": "Unable to generate answer due to an error.",
+  "total_chunks_retrieved": 5,
+  "unique_episodes_found": [
+    33,
+    133,
+    73,
+    44,
+    20
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 17.978027820587158
+}

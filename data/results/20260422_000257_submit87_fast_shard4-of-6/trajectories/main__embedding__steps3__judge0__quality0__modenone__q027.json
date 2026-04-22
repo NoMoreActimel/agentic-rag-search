@@ -1,0 +1,211 @@
+{
+  "question": "Considering their diverse fields, how do Travis Oliphant, John Carmack, and Pieter Levels' approaches to programming languages and development methodologies diverge, particularly in what they prioritize for successful software creation?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "embedding",
+      "query": "Travis Oliphant programming languages development methodologies priorities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 32141,
+          "episode_id": 250,
+          "guest": "Peter Wang",
+          "chunk_index": 7,
+          "text": "So it's almost like a, it's a necessity is the mother of invention aspect. And also it was a really harsh filter for utility and compactness and expressiveness. Like it was too hard to use, then they wouldn't have built it because that was just too much trouble, right? It was a side project for them. And also necessity creates a kind of deadline. It seems like a lot of these projects are quickly thrown together in the first step. And that, even though it's flawed, that just seems to work well for software projects. Well, it does work well for software projects in general. And in this particular space, one of my colleagues, Stan Siebert identified this, that all the projects in the SciPy ecosystem, if we just rattle them off, there's NumPy, there's SciPy built by different collaborations of people. Although Travis is the heart of both of them. But NumPy coming from numeric and numery, these are different people.",
+          "score": 0.7047473788261414,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27967,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 0,
+          "text": "The following is a conversation with Travis Oliphant, one of the most impactful programmers and data scientists ever. He created NumPy, SciPy, and Anaconda. NumPy formed the foundation of tensor based machine learning in Python, SciPy formed the foundation of scientific programming in Python, and Anaconda, specifically with Conda, made Python more accessible to a much larger audience. Travis's life work across a large number of programming and entrepreneurial efforts has and will continue to have immeasurable impact on millions of lives by empowering scientists and engineers in big companies, small companies, and open source communities to take on difficult problems and solve them with the power of programming. Plus, he's a truly kind human being, which is something that when combined with vision and ambition makes for a great leader and a great person to chat with. To support this podcast, please check out our sponsors in the description.",
+          "score": 0.7019884586334229,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 27968,
+          "episode_id": 224,
+          "guest": "Travis Oliphant",
+          "chunk_index": 1,
+          "text": "To support this podcast, please check out our sponsors in the description. This is the Lex Friedman Podcast, and here is my conversation with Travis Oliphant. What was the first computer program you've ever written? Do you remember? Whoa, that's a good question. I think it was in fourth grade. Just a simple loop in BASIC. BASIC. BASIC, yeah, on an Atari 800, Atari 400, I think, or maybe it was an Atari 800. It was a part of a class, and we just were just BASIC loops to print things out. Did you use go to statements? Yes, yes, we used go to statements. I remember in the early days, that's when I first realized there's like principles to programming, when I was told that don't use go to statements. Those are bad software engineering principles, like it goes against what great, beautiful code is. I was like, oh, okay, there's rules to this game. I didn't see that until high school when I took an AP computer science course.",
+          "score": 0.6863119006156921,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 32216,
+          "episode_id": 250,
+          "guest": "Peter Wang",
+          "chunk_index": 82,
+          "text": "Those bits are very cheap to fling across the oceans. So you mentioned Travis. We've been talking and we'll continue to talk about open source. Maybe you can comment. How did you meet Travis? Who is Travis Aliphant? What's your relationship been like through the years? Where did you work together? How did you meet? What's the present and the future look like? Yeah, so the first time I met Travis was at a SciFi conference in Pasadena. Do you remember the year? 2005. I was working at, again, at nthought, working on scientific computing consulting. And a couple of years later, he joined us at nthought, I think 2007. And he came in as the president. One of the founders of nthought was the CEO, Eric Jones. And we were all very excited that Travis was joining us and that was great fun. And so I worked with Travis on a number of consulting projects and we worked on some open source stuff. I mean, it was just a really, it was a good time there. And then... It was primarily Python related?",
+          "score": 0.6810804605484009,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 32142,
+          "episode_id": 250,
+          "guest": "Peter Wang",
+          "chunk_index": 8,
+          "text": "Although Travis is the heart of both of them. But NumPy coming from numeric and numery, these are different people. And then you've got Pandas, you've got Jupyter or IPython, there's Matplotlib, there's just so many others, I'm not gonna do justice if I try to name them all. But all of them are actually different people. And as they rolled out their projects, the fact that they had limited resources meant that they were humble about scope. A great famous hacker, Jamie Zawisky, once said that every geek's dream is to build the ultimate middleware, right? And the thing is with these scientists turned programmers, they had no such dream. They were just trying to write something that was a little bit better for what they needed, the MATLAB, and they were gonna leverage what everyone else had built. So naturally, almost in kind of this annealing process or whatever, we built a very modular cover of the basic needs of a scientific computing library.",
+          "score": 0.6798989176750183,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 4.361588954925537
+    },
+    {
+      "step_number": 2,
+      "tool_used": "embedding",
+      "query": "John Carmack programming languages development methodologies priorities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 41539,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 170,
+          "text": "And teachers had a range of reactions to that, some more accepting of it than others. I'm with you on that. So let us return to Quake for a bit with the technical challenges. What everything together from the networking to the graphics, what are some things you remember that were innovations you had to come up with in order to make it all happen? Yeah, so there were a bunch of things on Quake where on the one hand, the idea that I built my own programming language to implement the game in. Looking back, and I try to tell people, it's like every high level programmer sometime in their career goes through and they invent their own language. It just seems to be a thing that's pretty broadly done. People will be like, I'm gonna go write a computer programming language. And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there.",
+          "score": 0.7388778924942017,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60704,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 58,
+          "text": "Without good sleep, I would just become a zombie and wouldn\u2019t be nearly at my best. So I always needed to get sleep. But I didn\u2019t need anything else going on. The programming itself was so energizing and enthralling. So it was three and a half years of that during the project. Mostly spent programming. I would say probably 60 hours a week of programming, five hours a week of coordinating with other people and iterating and sitting down with them and looking at what\u2019s going on on screen and figuring out what they needed. Maybe five hours of business stuff. And there was a good division of labor then. Didn\u2019t have a big executive team, but it was basically myself running the techno and development part of the company and Mark Rein running the business part of it, doing deals and maxing out his credit card and going around the world bringing in sources of revenue to keep the company funded. Lex Fridman: What programming language are we talking about? C?",
+          "score": 0.7365356683731079,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41540,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 171,
+          "text": "And I don't regret having done it, but after that, I switched from Quake C, my quirky little pseudo object oriented or entity oriented language there. Quake two went back to using DLLs with C and then Quake three, I implemented my own C interpreter or compiler, which was a much smarter thing to do that I should have done originally for Quake. But building my own language was an experience. I learned a lot from that. And then there was a generation of game programmers that learned programming with Quake C, which I feel kind of bad about, because we give JavaScript a lot of crap, but Quake C was nothing to write home about there. But it allowed people to do magical things. You get into programming, not because you love the BNF syntax of a language, it's because the language lets you do something that you cared about. And here's very much, you could do something in a whole beautiful three dimensional world.",
+          "score": 0.7307854890823364,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.7241932153701782,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41383,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 14,
+          "text": "So you could say that we've been trying to build those virtual experiences from the very beginning. And in the modern era of virtual reality, especially on the mobile side of things, when it's standalone and you're basically using a cell phone chip to be able to produce these very immersive experiences, it does require work. It's not at the level of what an old school console game programmer would have operated at where you're looking at hardware registers and you're scheduling all the DMA accesses, but it is still definitely a different level than what a web developer or even a PC Steam game developer usually has to work at. And again, it's great. There's opportunities for people that wanna operate at either end of that spectrum there and still provide a lot of value to the world. Let me ask you sort of a big question about preference. What would you say is the best programming language? Your favorite, but also the best.",
+          "score": 0.7198810577392578,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 11.564670085906982
+    },
+    {
+      "step_number": 3,
+      "tool_used": "embedding",
+      "query": "Pieter Levels programming languages development methodologies priorities",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54711,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 152,
+          "text": "The best team wins. So I think you need to emulate a free market inside a company to make it entrepreneurial. And you need entrepreneurial mentality in a company to come up with new ideas and do it better.\n\n\n## Learning new programming languages\n\nLex Fridman: So one of the things you do really, really well is learn a new thing. You have an idea, you try to build it, and then you learn everything you need to in order to build it. You have your current skills, but you learn just the minimal amount of stuff. So you\u2019re a good person to ask how do you learn? How do you learn quickly and effectively and just the stuff you need? Just by way of example, you did a 30 days learning session on 3D where you documented yourself giving yourself only 30 days to learn everything you can about 3D. Pieter Levels: Yeah, I tried to learn virtual reality because this was same as AI. It came up suddenly 2016, 2017 with I think HTC Vive, these big VR glasses before Apple Vision Pro.",
+          "score": 0.7402572631835938,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54616,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 57,
+          "text": "PHP just stays the same and works. Lex Fridman: Yeah. Can you actually just speak to that stack? You build all your websites, apps, startups, projects, all of that with mostly vanilla HTML, JavaScript with jQuery, PHP, and SQLite. So, that\u2019s a really simple stack, and you get stuff done really fast with that. Can you just speak to the philosophy behind that? Pieter Levels: I think it\u2019s accidental, because that\u2019s the thing I knew. I knew PHP, I knew HTML, CSS, because you make websites, and when my startups started taking off, I didn\u2019t have time to\u2026 I remember putting on my to-do list like, \u201cLearn Node.js,\u201d because it\u2019s important to switch, because this obviously is much better language than PHP, and I never learned it. I never did it, because I didn\u2019t have time. These things were growing like this, and I was launching more projects, and I never had time. It\u2019s like, \u201cOne day I\u2019ll start coding properly,\u201d and I never got to it.",
+          "score": 0.7383421659469604,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54618,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 59,
+          "text": "I do think that frameworks and just constantly wanting to learn the new thing, this complicated way of software engineering gets in the way. I\u2019m not sure what to say about that, because definitely you shouldn\u2019t build everything from just vanilla JavaScript or vanilla C for example, C++ when you\u2019re building systems engineering is like\u2026 There\u2019s a lot of benefits for a pointer safety, and all that kind of stuff. So I don\u2019t know, but it just feels like you can get so much more stuff done if you don\u2019t care about how you do it. Pieter Levels: Man, this is my most controversial take, I think, and maybe I\u2019m wrong, but I feel like this frameworks now that raise money, they raise a lot of money.",
+          "score": 0.7281798124313354,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54761,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 202,
+          "text": "It\u2019s super-fast. PHP is really fast now. It\u2019s crazy. JavaScript-\n\nPieter Levels: Much faster than Ruby, yeah. Lex Fridman: \u2026 really fast now. So, if speed is something you care about, it\u2019s super-fast. And there\u2019s gigantic communities of people using those programming languages. And there\u2019s frameworks if you like the framework. So, whatever, it doesn\u2019t really matter what you use. But also, if I was a developer working with you, you are extremely successful. You\u2019ve shipped a lot. So, if I roll in, I\u2019m going to be like, I don\u2019t assume you know nothing. Assume Pieter is a genius, the smartest developer ever. And learn from it. And yes, and notice parts in the code where, \u201cOkay, okay, I got it, here\u2019s how he\u2019s thinking.\u201d And now if I want to add another little feature, definitely needs to have emoji in front of it, and then just follow the same style and add it.",
+          "score": 0.7275054454803467,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54782,
+          "episode_id": 440,
+          "guest": "Pieter Levels",
+          "chunk_index": 223,
+          "text": "Pieter Levels: Yeah, stopwatch. Lex Fridman: I have to figure out actually something sufficiently complicated. Because it should probably do some kind of thing where it accesses the database and dynamically is changing stuff. Pieter Levels: Some AI stuff, some LLM stuff. Lex Fridman: Yeah. It doesn\u2019t have to be AI LLM, but maybe API call. Pieter Levels: But then you do it API. Lex Fridman: API call to something. Pieter Levels: Yeah. To replicate, for example. And then that would be a very cool part. Lex Fridman: Yeah, yeah, yeah. And time it. And also report on my happiness. I\u2019m going to totally do this. Pieter Levels: Because nobody benchmarks this. Nobody\u2019s benchmark developer happiness with frameworks. Nobody\u2019s benchmark the shipping time. Lex Fridman: Just take a month and do this. How many frameworks are there? There\u2019s five main ways of doing it. So, there\u2019s backend and frontend. Pieter Levels: This stuff confused me, too.",
+          "score": 0.722811758518219,
+          "source": "embedding",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 16.833834886550903
+    }
+  ],
+  "final_answer": "Travis Oliphant prioritizes creating foundational, utilitarian tools for scientific computing, driven by necessity and aiming for compactness and expressiveness to empower scientists and engineers. John Carmack focuses on solving performance-critical technical challenges and enabling \"magical things\" in game development, even to the extent of creating custom languages or interpreters for direct control and specific project needs. Pieter Levels, in contrast, prioritizes rapid development and shipping products quickly, favoring simple, familiar technology stacks and avoiding complex new frameworks to maximize efficiency and developer happiness.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    224,
+    467,
+    309,
+    440,
+    250
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 25.547184467315674
+}

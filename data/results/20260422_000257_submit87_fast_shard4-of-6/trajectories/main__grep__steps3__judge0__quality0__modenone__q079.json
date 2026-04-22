@@ -1,0 +1,215 @@
+{
+  "question": "What was the specified memory capacity of Dave Plummer's first computer, and what memory capacity is mentioned for John Carmack's initial TRS-80 computer during his early programming experiences?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "grep",
+      "query": "Dave Plummer first computer memory",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 63229,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 1,
+          "text": "All this taken together, this was a super fun conversation about the history and future of programming, computing, technology, and just building cool stuff in the proverbial garage. This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description, and now, dear friends, here\u2019s Dave Plummer.\n\n\n## First computer\n\nLex Fridman: Tell me about your first computer. Do you remember? Dave Plummer: I do. I didn\u2019t own my first computer for a long time, but the first computer I ever used was a TRS-80 Model 1, Level 1, 4K machine, and I rode my bike in fifth or sixth grade, so I was about 11, to the local RadioShack. They had the standard component stereo systems, everything else RadioShack had, but they had a stack of boxes that was labeled \u201ccomputer.\u201d So I was asking the people who worked there about it, and they said they just got it and they hadn\u2019t set it up yet. I was rather precocious and I figured, \u201cWell, I\u2019ll set it up for you,\u201d and they said, \u201cOkay.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63232,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 4,
+          "text": "Dave Plummer: Probably in retrospect. Well, I would probably give that to the Commodore 64. Lex Fridman: Yeah. You and I agree on this, that that was my first computer probably many years after it was released, but yeah, Commodore 64\u2019s incredible. But yes, Apple II had a huge impact on the history of personal computers. Dave Plummer: Right. It\u2019s hard to gauge the long-term impact, but I think the 64 itself probably influenced more people, so that\u2019s my reason for picking that one. Lex Fridman: You think so? Dave Plummer: The sales were certainly higher. Lex Fridman: So Commodore 64 sold a lot? Dave Plummer: Yeah. I mean, the numbers are hard to believe. It depends which numbers you believe, but even the medium estimates were pretty high. Lex Fridman: All right, cool. So you eventually graduated to the Commodore 64. Tell me about that machine. What did you do on the Commodore 64?",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63233,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 5,
+          "text": "Lex Fridman: All right, cool. So you eventually graduated to the Commodore 64. Tell me about that machine. What did you do on the Commodore 64? Dave Plummer: Well, the first thing I did was overheat the floppy drive on it, which was unfortunate because it wasn\u2019t a warranty machine. My parents didn\u2019t have a lot of money so we bought it from Computer House as opposed to one of the major retailers, which meant when it died, it had to go back to Germany or something to be fixed. So I was left with no floppy and so I had a cassette deck, which was the best you could do at the time, and so I was writing small things, and I had a machine language monitor that you could load from cassette. It didn\u2019t have an assembler built in, but it had a disassembler, so you could enter the op codes in 6502 in hex, and if you were careful about planning, you\u2019d be able to write some basic programs. Dave Plummer: So that\u2019s kind of how I learned, and the first thing I ever wrote on it was a clone of Galaga.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63253,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 25,
+          "text": "Can you just speak to what the heck MS-DOS is? Dave Plummer: It\u2019s largely a command launcher. So you type in a name of a command, it looks it up to see if that\u2019s in the current directory or on a special path of folders, and it loads it into memory and executes it if it\u2019s there. And that\u2019s 90% of what MS-DOS does. Now, it has environment variables and some complexity and a small scripting language built in, but it is basically just an operating system shell that allows you to use the resources of the computer, like the hard drive or the CPU, and it doesn\u2019t allow you to multitask. There\u2019s no graphical interface. Now, Microsoft did a- add a text-based graphical interface for things like an editor and QuickBASIC in DOS 5.0, I believe, and there was a DOS shell, which was sort of a graphical file manager in MS-DOS 4.0. Dave Plummer: So they experimented with it, but it\u2019s largely a command prompt.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 63281,
+          "episode_id": 479,
+          "guest": "Dave Plummer",
+          "chunk_index": 53,
+          "text": "And don\u2019t be afraid, because if it asserts, it\u2019s doing you a favor. I think some people are afraid. You know, it\u2019s like when you turn out of an intersection, and you think maybe there\u2019s somebody coming, and you don\u2019t look left. Or maybe I\u2019m one to do that. But it\u2019s like that. People don\u2019t assert because they\u2019re afraid they\u2019re going to fire. Well, no, you want to know.\n\n\n## Task Manager\n\nLex Fridman: You mentioned Task Manager. Obviously, we have to talk about this, the legendary program that you created, the Windows Task Manager. Tell me every detail of how you built it. What is Windows Task Manager? Dave Plummer: So Windows Task Manager is a way to go in and find out which apps on your system are using the computer, using the hardware, using the CPU, using the memory, and which ones might be using too much or locked up or going crazy. And it gives you the ability to terminate and kill those ones. So it\u2019s an inspection and a fixing tool. Lex Fridman: Yeah, it lists all the processes.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 12.039619445800781
+    },
+    {
+      "step_number": 2,
+      "tool_used": "grep",
+      "query": "John Carmack TRS-80 memory capacity",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 36222,
+          "episode_id": 275,
+          "guest": "Rick Rubin",
+          "chunk_index": 31,
+          "text": "There's too many of you to cry. Brother, brother, brother. There's far too many of you to die. there's some just very subtle backing vocals this one hurts father father we don't need to escalate i wonder who the father he's talking about is oh that's interesting i mean i have so for people who don't know his his own father ended up uh killing marvin gay yeah i mean that one is really pain i mean for a lot of people your relationship with your father your mother i mean there's different dynamics but there's it's almost like part of life is resolving some kind of complex puzzle you have or the people you love the people close to you or the people who are not there all those kinds of things that's so much pain in that we don't need to escalate father father i never thought if it's i always thought it's his father directly yeah i don't get that it could be but i don't i feel like it's a more um masculine spirituality like a father figure or just broadly some kind of spirituality could be like god father god mother god you know like could be i don't know but there's there's so much it's like both hope and melancholy you seeing war is not the answer it's like you you don't tell your father war is not your your blood father war is not the answer it's strange conversation it's a bigger conversation they're not personal don't you think it feels like war if one is personal what's the difference between is the war is personal too it's only leaders think about war in a geopolitical sense yeah when people that fight wars you lose your brothers you lose i mean you death is just right there so it might feel just like that but yeah there is a dance between like the personal and like talking to the entirety of the society it's like john lennon imagine like also a song where is that is that a hopeful is that cynical is it like melancholy like heartbroken like you you hope you wish things would be a certain way and they're not yeah i don't know i don't know john lennon is giving up on the world in imagine yeah i don't know you know it's a it's an interesting question there's another uh john lennon lyric um in let me think of what it is take me a second and different songs keep coming into my head the one that i'm looking and you keep pressing next um across the universe um nothing's going to change my world and when i hear that i hear it as hopeless but i don't think i don't believe that that's well it may be how he meant it but i don't think that's how it's normally taken and it's also the taker is important i'm generally optimistic and hopeful so i i always like look for the hope and the actually the harshest love uh heartbreak songs are always somehow hopeful to me that's a love song uh to me like a song about losing love is is a song about the great capacity for love in the human heart that's what i hear so to me losing love is exciting because it's like that means you really cared that means you felt something you feel something you can sit in that pain and that pain is a reminder what it means to be human when you're that um what is it uh we're just listening uh the only man who could have reached me was the son of a preacher man so see um it's like that early love or something or partially sexual or whatever that's not as interesting to me it's fun it's great but it's not as interesting to me as it is to me it's fun it's great but it's that heartbreak that's the reminder that it can go deep although that's a damn good song have you ever heard the uh detroit mix of the marvin gay album no call it up how by far better mind blowing i just heard it recently blew my mind oh wow reverb distant interesting there's there's far too many of you it feels like it's all around the room more to bring some loving here today more voices more voices he's layering his own vocals just like there's multiple people singing don't punish me with brutality talk to me so you can see oh what's going on that's beautiful yeah seems to have more energy if you if you listen to the whole album even even though you just said you don't listen albums anymore the detroit mix of the whole album changes the album a lot i mean that that felt uh so that's the opposite of a cappella i would say yes because it's saying it's it's um there's layers there's um and that maybe i don't know if you remember but if memory serves me uh correct here he produces this own album here marvin gay was the producer on this i believe i believe so and this one sounds more like it's a get together and the whole album sounds more like a get together where it's a group of people in a room playing music together whereas the album version sounds more like an out like a recording this sounds less like a recording and a little more like a party now you had a series of conversations with paul mccartney which is amazing that people should should watch but is is there this is continuing our therapy session is there a case to be made that uh what's going on is number one album above the beatles uh white album or abbey road above pet sounds can you still manage case there's there's always a case i mean there's always a case every there's no uh in reality in art there is no um there's no metric that makes sense so um you could put numbers on things but it's like is this apple better than this peach like it's not really a fair comparison but if you just had to keep one to represent the human species that's the way i think to the aliens so i think it's a very personal decision i don't i think you can make you can make your choice to represent the human species and i'll make mine you know well i would pick the beatles over the beach boys so that's my if i became dictator of the world i was talking to the aliens but i do think that aliens but i don't know the full historical context to the impact of the music i don't know if that's something to consider like this kind of thought experiment of imagine what it was like back then to create to go into the studio to do such interesting work in the studio as opposed to like listening to just as a pop song almost from because i've never been able to understand uh beach boys god only knows the song god only knows god only knows but all of it the album the pet sounds just in my room was uh in my room that's all um is that what's your favorite on the album that sounds album that sounds um the opening track do you mind if i play it please it's it's it's too fun that's part of their trip though the you uh you open the heart with the fun it's possible original mono and stereo mix versions i don't know what's the opening song wouldn't it be nice yeah that's the song we could say good night and stay together wouldn't that be nice wouldn't it be nice wake up together but we're not there's heartbreak in this one too still to me like george harris like um uh is that the way that album while my guitar gently weeps i mean that um with the beatles it's so hard to depending on the day i'll i'll say a very different song that's my favorite song but i often return to while my guitar gently weeps is my favorite song spectacular spectacular anything george harrison honestly something something in the way she moves the bet i what would you classify that there's like several beatle songs categories of beatles categories of beatles songs so that's like the melancholy love songs or ballads or something like that um yesterday let it be what's do you have favorites so from your like how have you changed as a man as a human being as a musician and music producer ever having done that lengthy interaction with with mccartney hmm anytime you're around someone who's such a hero and you spend time with them and they're a human being it helps put perspective on everything you know that they're just human that well obviously i mean every everyone's just human and um but i remember the first time i got to see paul mccartney play live it was in a stadium of 70 000 people and he started playing and i started crying and i couldn't believe i was in even with 70 000 people i couldn't believe i that this man walks the earth and that i'm in the same place as him and he's the person who wrote that and played that and now he's here playing it for us it's mind blowing that's the voice that's the it's overwhelming is it inspiring or is it um like because sometimes when you have and i've gotten a chance to me i mean i love people in general like every every person is fascinating to me but yeah when you've been a fan for a long time and you meet a person uh sort of uh i'll just remove present company is you um it's like oh they're just human so there's both it's both inspiring that just a simple human can achieve such beautiful things but it's also like almost wishing there were gods moving in around us it's it's somehow peaceful this is it's more uh comforting to know that there's you know uh there's bigger fish i'm just a small fish and then there's bigger fish and it will take care of the ocean for us i think we're all capable of being big fish i don't think that there are special people i don't think it it's like that i i would make a case so the variety of artists that you worked with and brought the best out of it does seem the year out of this world so do you think you would know like if you're the same kind of species maybe you're just a meat vehicle and you're channeling ideas from somewhere else i feel like i'm channeling ideas from somewhere else 100 but i think have you asked questions about where from i believe we i believe we all are though you know i believe we are um we're vehicles for information that when it's ready to come through it comes through and the people who have good antennas pick up the signal but um if i'm sure you've had an experience in your life where you've had an idea for something and you've not acted on it and eventually someone else does it and it's not because they're doing and it's not because they're doing it because you had the idea and they stole your idea it's because the time has come for that idea and if you don't do it someone else is going to it's being broadcast by whatever the source whatever the source is uh yeah i tend to i tend to see humans as not quite special in that way yeah it's it's different kinds of antennas walking around listening to ideas and ideas that are i like the the notion of uh richard dawkins of memes or it's kind of the ideas of the organisms and they're just using our brains to multiply to to select to compete to to evolve and humans we really want to hold on to the specialness of our body of our mind but it's it's really the ideas so for a group when was born two centuries ago you wouldn't be a music producer you'd be or i mean maybe but you have an antenna and if no signal is coming in uh or you'd be hearing a potentially a different signal is there um i think we all have our own antenna for whatever it is that we you know maybe not everyone has tuned into their antenna to see what it is that their strength and bringing through is i'm lucky in that it found me because i didn't know that it was a i didn't even know this was a job i sometimes wonder i mean a lot of young people a lot of people wonder like what's the purpose and the the specs of my antenna what am i put on this earth to do like if um you know i i can live a thousand lives there's so many trajectories and imagine the greatest possible trajectory that reveals the the most beautiful thing i can possibly create in this world live the most beautiful way uh what is that i feel like that's a good exercise to think about um because it's also liberating to think that you can do anything i mean that um more and more i suppose that's kind of life it's like society is pushing conformity on you you know i thought i i had my own flavor of conformity i thought i'm supposed to be following and then early on i would say like in the late 20s you realize wait a minute you don't have to tell you don't have to do what teachers tell you to do what parents tell you to do what society tells you do you can like um i would never wear a suit if i listened to like my colleagues and community who think a suit is like the symbol of uh what is it a symbol of conformity actually which is hilarious but uh it's actually a kind of rebellion and everything else like of that nature doing doing these silly podcasts like um i have a question i have to ask sure because you brought up the suit yeah uh do you wear the suit is this your daily uniform outside of podcasting so uh for the longest time it was some kind of suit and then recently i mean coinciding with going to texas there's a i'm such a loner i'm an introvert and there's a bit of a hiding from the world when i wear other stuff i really want to um to not make fame recognition money all those things a motivation at all and the world kind of wants you to make those motivations not not the world but i would say maybe the western world and maybe america maybe a capitalist system does but that's a choice to buy into that or not right it takes a brave person a person of character to not buy in and i'm i'm like a like a baby deer trying to find his legs you don't have to buy in because i love people and i think i'm kind of an idiot and so when other people say do this and do that it uh there's a there is a pressure there it's actually very difficult to not listen necessarily to the advice of others and yet keep yourself fragile and open to the world it's easy to be like i'm always right you know just kind of sticking a ground but if you want to be like vulnerable if you want to connect with people and just wear your heart on your sleeve then you're going to listen to them i mean that's the double edged sword of it and uh but then again that pain like if you don't let it destroy you can grow grow from that has fame affected you at all did you unplug from the system at some point same i've always been sort of removed i don't feel like i'm part of any system do you feel famous um i'm aware that when i go out people will you know say nice things to me which is great but that's about it that's about as far as but it doesn't affect your art about your creativity or your thoughts like when you're sitting alone and thinking about the world it can't it's a destructive force the the thing the reason that you're who you are and the reason that you're finding the success you're finding is because you've been true to yourself to get to that stage so to start changing that to conform to either conform to someone else's idea what you should be doing it just seems like uh it doesn't make sense do you have a sense of who you are because i don't necessarily have a i don't know i i know that i really like making good things and i know that i'm um crazy about it in that um it's like an obsession and i want things to be as good as they could be whatever it is and if i'm if i finish a music project and i have a window of time where i'm not working on music i might be moving the furniture around in the house you know i'm always looking for a prod a creative outlet to find a way to make something better or there was a period of time where i was in a weird corporate situation that was uh that didn't allow me to flourish and i turned i focused the creativity and on myself and i lost a bunch of weight and changed my life and so that was the kind of art like the you've gone through a whole process of losing weight getting in shape getting healthy that was a kind of creative act it certainly was it wasn't an intentional creative act but i had a lot of energy and i just a series of events happened i read a book at the time that was my heaviest i weighed about 318 pounds yeah and i'd never been i'd been sedentary my whole life basically laying on a couch working on music so i've never been physically active in my life and i read a book about a guy named stew middleman a runner who ran a thousand miles in 11 days and i thought wow i you know get out of breath walking to the corner and another human being can run a thousand miles in 11 days i feel like i have bad information you know i'm doing clearly i'm doing something wrong and um and i reached out to a person that stew mentioned in the book phil maffatone who's a legend i i really appreciate him as well he's math 180 method too he's such an interesting i think he focuses on heart rate uh training and he was the first person to talk about um essentially a low carbs paleo yeah keto diet 40 40 years ago for a person who's going to be healthy who can exercise and actually perform at an early level he's the first person when i um you know talked about heart rate training him and other endurance athletes he influenced he gave me permission to like run slower yeah it's the first time i realized oh i can run long distances if i just run slower and then take that seriously and i actually fell in love with running very much so because for me everyone's different but for me the love of running happens in the longer distances yeah did you read born to run great book amazing book there is something special about running and everybody has their own their own journey with it and even ultra marathon running those kinds of things it's a it is like many journeys one that can pull you in like you won't be the same person after and i i try to be deliberate about making deliberate about making choices after which you'll not be the same person and so i'm nervous about like the ultra marathon running world i have to talk to you about johnny cash i mean when people ask me what my favorite musical thing is of all time i'm you know it's a very difficult question to answer of course but i'm pretty quick if i'm not allowed to pick anything by tom ways i'm pretty quick to say hurt by johnny cash the performance the whatever you call it whatever the heck that is because that's not just a song covered by an artist that's a human being at the end of their life that the rawness of that the i mean just the there's also a music video which for a lot of people adds a lot to it uh for me just the music alone is i mean the guitar every choice on that see the the few things i've heard about it it seemed like almost accidental i mean like little subtle choices here and there can you maybe comment on that um to to the degree i i think you had a huge role in sort of bringing johnny cash back from from a different part of his life it's like bringing something out that wasn't there before and it was it was it was incredible it was a celebration of a really special musician and a totally new kind of celebration now hurt is just one of the songs that's that's a that's an amazing celebration of johnny cash but hurt is like at the at the at the peak of that so what was that like putting that song together okay maybe maybe uh it might be nice to listen to it because i freaking love that song and as a guitarist i just the simplicity of it uh it seems like every choice contributes to the greatness of the song simple it's crisp but it's dark too i hurt myself today it's one of the greatest opening lines of any song to see if i still feel yeah i'm talking about the lyrics i don't even mean the performance the words but those words out of Trent Reznor are not the same they have a different meaning coming out of johnny cash's mouth try to kill it all away but i remember everything what have i become what have i become my sweetest friend written probably for a young man i think he was 20 when he wrote it the way the guitarist played the choice of instrument the layers there the uh the freedom to give him to use the voice that's um fading it's not fading it's changing maybe he's losing some aspects of his voice and it's it's almost like shaking a little bit and it's a little bit out of tune in parts uh how much of that was deliberate how much was like how do you give johnny castor freedom to to do that how do you find that together is there any insights you can give i think it's a it's a case almost of like the right pairing the right role with the right actor you could say the the song lyrics that the reason we chose the song was because the lyrics purely about the lyrics and at that point in time both johnny and i would send each other songs of possible ideas to record and um that was one that i sent him and he didn't respond to initially i sent i would send him see at that time we would burn cds and i would send him like cd of 20 songs or 25 songs and then and he would send them to me he burned a cd for johnny cash and you sent him uh of different songs of like songs to consider recording yeah um and we would send these back and forth and then that i had hurt on one of the ones that i sent him and he didn't respond and usually if he didn't respond we didn't go back to it you know and that one i remember i sent it again and i put it first on the next on the next cd and um and when when we spoke about when he listened to cd again he didn't respond i said check out that first song and i really feel like that one could be good what did you see in that song it's the lyrics it's the lyrics because i feel like nobody there's very few people in the world that would see these lyrics in johnny cash's mouth and think this is a good idea including for president yeah i know that trant was trant had trepidations in the evening um but if you listen to the words if you forget the music and if you get what if you forget what nine ish nail sounds like and you just read it like a poem and then you imagine a 70 year old man reading these lyrics it'll be it'll be profound it's profound so that was the based on lyrics that started the journey and then at this point in time johnny was not in great",
+          "score": 0.6,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 196,
+          "episode_id": 3,
+          "guest": "Steven Pinker",
+          "chunk_index": 41,
+          "text": "Stephen Jay Gould's first collection, Ever Since Darwin, also an excellent example of lively writing. George Miller, a psychologist that most psychologists are familiar with, came up with the idea that human memory has a capacity of seven plus or minus two chunks. That's probably his biggest claim to fame. But he wrote a couple of books on language and communication that I read as an undergraduate. Again, beautifully written and intellectually deep. Wonderful. Stephen, thank you so much for taking the time today. My pleasure. Thanks a lot, Lex.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 452,
+          "episode_id": 7,
+          "guest": "Jeff Atwood",
+          "chunk_index": 99,
+          "text": "But anyway, that's always been the perception. You start to behave like the computer. It's like, oh, you're wrong, out of the way, you know? You've written so many blog posts about programming, about programs, programming, programmers. What do you think makes a good, let's start with, what makes a good solo programmer? Well, I don't think you should be a solo programmer. I think to be a good solo programmer, it's kind of like what I talked about, well, not on Mike, but one of the things John Carmack, one of the best points he makes in the book Masters of Doom, which is a fantastic book, and anybody listening to this who hasn't read it, please read it. It's such a great book, is that at the time, they were working on stuff like Wolfenstein and Doom. They didn't have the resources that we have today. They didn't have Stack Overflow. They didn't have Wikipedia. They didn't have discourse forums. They didn't have places to go to get people to help them. They had to work on their own.",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3307,
+          "episode_id": 44,
+          "guest": "David Ferrucci",
+          "chunk_index": 7,
+          "text": "I think it requires training and teaching. I think we are, the human mind certainly is capable of it, but we find it more difficult. And then there are other weaknesses, if you will, as you mentioned earlier, just memory capacity and how many chains of inference can you actually go through without like losing your way? So just focus and... So the way you think about intelligence, and we're really sort of floating in this philosophical space, but I think you're like the perfect person to talk about this, because we'll get to Jeopardy and beyond. That's like one of the most incredible accomplishments in AI, in the history of AI, but hence the philosophical discussion. So let me ask, you've kind of alluded to it, but let me ask again, what is intelligence? Underlying the discussions we'll have with Jeopardy and beyond, how do you think about intelligence? Is it a sufficiently complicated problem being able to reason your way through solving that problem?",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 3609,
+          "episode_id": 47,
+          "guest": "Sean Carroll",
+          "chunk_index": 37,
+          "text": "Does the universe have a memory of itself where we could, in, in, so not time travel, but peek back in time and do a little like replay? Well, it's exactly the same in quantum mechanics as classical mechanics. So whatever you want to say about that, you know, the fundamental laws of physics in either many worlds, quantum mechanics or Newtonian physics conserve information. So if you have all the information about the quantum state of the world right now, your Laplace is demon like in your knowledge and calculational capacity, you can wind the clock backward. But none of us is. Right? And, you know, so in practice you can never do that. You can do experiments over and over again, starting from the same initial conditions for small systems. But once things get to be large, Avogadro's number of particles, right? Bigger than a cell, no chance. We we've talked a little bit about arrow of time last time, but in many worlds that there is a kind of implied arrow of time, right?",
+          "score": 0.4,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 15.458899974822998
+    },
+    {
+      "step_number": 3,
+      "tool_used": "grep",
+      "query": "John Carmack first computer memory",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 39802,
+          "episode_id": 299,
+          "guest": "Demis Hassabis",
+          "chunk_index": 16,
+          "text": "And how hard of a problem is that? So a million questions just as a brief tangent. Well, look, I think games have been significant in my life for three reasons. So first of all, I was playing them and training myself on games when I was a kid. Then I went through a phase of designing games and writing AI for games. So all the games I professionally wrote had AI as a core component. And that was mostly in the 90s. And the reason I was doing that in games industry was at the time the games industry, I think was the cutting edge of technology. So whether it was graphics with people like John Carmack and Quake and those kinds of things or AI, I think actually all the action was going on in games. And we're still reaping the benefits of that even with things like GPUs, which I find ironic was obviously invented for graphics, computer graphics, but then turns out to be amazingly useful for AI. It just turns out everything's a matrix multiplication it appears in the whole world.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41371,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 2,
+          "text": "And now, dear friends, here's John Carmack. What was the first program you've ever written? Do you remember? Yeah, I do. So I remember being in a radio shack going up to the TRS 80 computers and learning just enough to be able to do 10 print John Carmack. And it's kind of interesting how, of course, Carnegie and Ritchie kind of standardized Hello World as the first thing that you do in every computer programming language in every computer, but not having any interaction with the cultures of Unix or any other standardized things. It was just like, well, what am I gonna say? I'm gonna say my name. And then you learn how to do go to 10 and have it scroll all off the screen. And that was definitely the first thing that I wound up doing on a computer. Can I ask you a programming advice? I was always told in the beginning that you're not allowed to use go to statements. That's really bad programming. Is this correct or not?",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41374,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 5,
+          "text": "So print John Carmack, when is the first time, if we could talk about love, that you fell in love with programming? You said like, this is really something special. It really was something that was one of those love at first sight things where just really from the time that I understood what a computer was even, I mean, I remember looking through old encyclopedias of the black and white photos of the IBM mainframes at the reel to reel tape decks. And for people nowadays, it can be a little hard to understand what the world was like then from information gathering where I would go to the libraries and there would be a couple books on the shelf about computers and they would be very out of date even at that point, just not a lot of information, but I would grab everything that I could find and devour everything. Whenever Time or Newsweek had some article about computers, I would like cut it out with scissors and put it somewhere.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 41375,
+          "episode_id": 309,
+          "guest": "John Carmack",
+          "chunk_index": 6,
+          "text": "Whenever Time or Newsweek had some article about computers, I would like cut it out with scissors and put it somewhere. It just, it felt like this magical thing to me, this idea that the computer would just do exactly what you told it to. I mean, and there's a little bit of the genie monkey's paw sort of issues there where you'd better be really, really careful with what you're telling it to do, but it wasn't gonna back talk you. It wasn't gonna have a different point of view. It was gonna carry out what you told it to do. And if you had the right commands, you could make it do these pretty magical things. And so what kind of programs did you write at first? So beyond the print, John Carmack. So I can remember as going through the learning process where you find at the start, you're just learning how to do the most basic possible things.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 60743,
+          "episode_id": 467,
+          "guest": "Tim Sweeney",
+          "chunk_index": 97,
+          "text": "It\u2019s so inspiring to hear these kinds of stories when there\u2019s so much uncertainty and you figure out and so many constraints and you figure out how to bring it to life in real time and create this world that Unreal did. Maybe if we could just pause, since you mentioned John Carmack a few times, as a fellow pioneer in the game industry at that time, what do you admire about John?\n\n\n## John Carmack\n\nTim Sweeney: John singularly has this intense dedication to getting the best result from his code and having absolutely no attachment to passcode and some of the legendary things he did. The end result was an absolute breakthrough in real-time computer graphics, weren\u2019t his first try. They were like his seventh or eighth try after he\u2019d done something time and time again, tried it, found a better approach, thrown out the old one, built it again, and continually rewrite his code until he found the absolute best solution to a problem.",
+          "score": 0.8,
+          "source": "grep",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 19.43847131729126
+    }
+  ],
+  "final_answer": "Dave Plummer's first computer was a TRS-80 Model 1, Level 1, 4K machine. The provided context mentions John Carmack's early programming experiences on TRS-80 computers but does not specify the memory capacity of his initial machine.",
+  "total_chunks_retrieved": 15,
+  "unique_episodes_found": [
+    3,
+    7,
+    299,
+    44,
+    47,
+    275,
+    467,
+    309,
+    479
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 21.43944025039673
+}

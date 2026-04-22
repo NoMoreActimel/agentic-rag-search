@@ -1,0 +1,152 @@
+{
+  "question": "In the discussion between Dylan Patel and Nathan Lambert, Nathan Lambert mentions Dario Amodei. What specific strategy does Dario Amodei's company, Anthropic, employ to encourage other AI companies to prioritize safety, and what is the intended outcome of this approach?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Dylan Patel Nathan Lambert Dario Amodei Anthropic AI safety strategy",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 58884,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 313,
+          "text": "Lex Fridman: Let\u2019s talk about the broad AI race. Who do you think wins? We talked about Google, Meta. Nathan Lambert: The default leader has been Google because of their infrastructure advantage. Lex Fridman: Well, in the news, OpenAI is the leader. Nathan Lambert: They\u2019re the leading in the narrative. Dylan Patel: They have the best model. Nathan Lambert: They have the best model that people can use and they\u2019re experts-Experts. Dylan Patel: And they have the most AI revenue. Nathan Lambert: Yeah. OpenAI is winning. Lex Fridman: So who\u2019s making money on AI right now? Is anyone making money? Dylan Patel: So accounting profit-wise, Microsoft is making money, but they\u2019re spending a lot of CapEx and that gets depreciated over years. Meta\u2019s making tons of money with recommendation systems, which is AI, but not with Llama, right? Llama\u2019s losing money for sure. I think Anthropic and OpenAI are obviously not making money otherwise they wouldn\u2019t be raising money.",
+          "score": 0.6696764297485351,
+          "source": "bm25",
+          "quality_score": 0.94,
+          "original_score": 16.614704132080078
+        },
+        {
+          "chunk_id": 58876,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 305,
+          "text": "Dylan Patel: Google Cloud is third. Yeah. Microsoft is the second biggest, but Amazon is the biggest, right? Lex Fridman: Yeah. Dylan Patel: And Microsoft deceptively sort of includes Microsoft Office 365 and things like that, some of these enterprise-wide licenses. So in reality, the gulf is even larger. Microsoft is still second though, right? Amazon is way bigger. Why? Because using AWS is better and easier. And in many cases, it\u2019s cheaper-\n\nNathan Lambert: It was first. Dylan Patel: And it\u2019s first. It was first. Lex Fridman: Yeah. But there\u2019s a lot of things that are first that lose the-\n\nNathan Lambert: Well, it\u2019s harder to switch than it is to-\n\nLex Fridman: Yeah, okay. Dylan Patel: AWS is-\n\nLex Fridman: Because there\u2019s large-\n\nNathan Lambert: There\u2019s big fees for switching too. Dylan Patel: AWS generates over 80% of Amazon\u2019s profit. I think over 90%. Lex Fridman: That\u2019s insane.",
+          "score": 0.6171052633921306,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 15.647368431091309
+        },
+        {
+          "chunk_id": 58803,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 232,
+          "text": "And then OpenAI has o1-pro, and what they did with o3, which is also very unique, is that they stacked search on top of chain of thought. And so chain of thought is one thing where it\u2019s one chain, it backtracks, goes back and forth, but how they solved the ARC-AGI challenge was not just the chain of thought, it was also sampling many times, i.e., running them in parallel and then selecting. Nathan Lambert: Is running in parallel actually search? Because I don\u2019t know if we have the full information on how o1-pro works. So, I don\u2019t have enough information-\n\nDylan Patel: Agreed. Nathan Lambert: \u2026 to confidently say that it is search. Dylan Patel: It is parallel samples. Nathan Lambert: Yeah. And then what. Dylan Patel: And then it selects something. Nathan Lambert: And we don\u2019t know what the selection function is.",
+          "score": 0.6112912006378174,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 15.398194313049316
+        },
+        {
+          "chunk_id": 58710,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 139,
+          "text": "And obviously there\u2019s butting of heads here, in the most simple terms. Lex Fridman: And that could take shape in all kinds of ways, including proxy wars. And now-\n\nNathan Lambert: Yeah, it seems like it\u2019s already happening. As much as I want there to be centuries of prolonged peace, it looks like further instability internationally is ahead. Dylan Patel: And the US\u2019 current task is, \u201cHey, if we control AI, if we\u2019re the leader in AI and AI significantly accelerates progress, then we can maintain the global hegemony position.\u201d And therefore-\n\nNathan Lambert: I hope that works. Dylan Patel: And as an American, like, okay, I guess that\u2019s going to lead to peace for us. Now obviously other people around the world get affected negatively.",
+          "score": 0.5772065054575601,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 15.223135948181152
+        },
+        {
+          "chunk_id": 58891,
+          "episode_id": 459,
+          "guest": "DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters",
+          "chunk_index": 320,
+          "text": "So isn\u2019t it likely that OpenAI and Anthropic disappear eventually? Dylan Patel: Unless they\u2019re so good at models, which they are. Lex Fridman: But it\u2019s such a cutting edge. I mean-\n\nNathan Lambert: It depends on where you think AI capabilities are going. Lex Fridman: You have to keep winning. Dylan Patel: Yes. Lex Fridman: You have to keep winning as you climb, even if the AI capabilities are going super rapidly awesome into the direction of AGI, there\u2019s still a boost for X in terms of data, Google in terms of data, Meta in terms of data, in terms of other products and the money and there\u2019s just huge amounts of money. Dylan Patel: The whole idea is human data is kind of tapped out. We don\u2019t care. We all care about self-play, verifiable task. Nathan Lambert: Think about AWS. Lex Fridman: Yes, self-play, which is an RNG problem. Nathan Lambert: AWS does not make a lot of money on each individual machine.",
+          "score": 0.5572290312449137,
+          "source": "bm25",
+          "quality_score": 0.64,
+          "original_score": 15.65267276763916
+        }
+      ],
+      "judge_feedback": "1. All retrieved chunks are irrelevant to the specific question about Anthropic's safety strategy. They discuss general AI race dynamics, company finances, and technical aspects of other models.\n2. The chunks do not contain any useful information regarding Dario Amodei's company Anthropic's specific safety strategy or its intended outcome.\n3. The agent should search for more specific terms like \"Anthropic safety strategy,\" \"constitutional AI,\" or \"Dario Amodei safety approach\" within the context of the discussion between Dylan Patel and Nathan Lambert to find relevant details.",
+      "timestamp": 1.7520694732666016
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Anthropic safety strategy constitutional AI Dario Amodei",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 56840,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 1,
+          "text": "The scale-up is very quick. We do this today, we make a model, and then we deploy thousands, maybe tens of thousands of instances of it. I think by the time, certainly within two to three years, whether we have these super powerful AIs or not, clusters are going to get to the size where you\u2019ll be able to deploy millions of these. I am optimistic about meaning. I worry about economics and the concentration of power. That\u2019s actually what I worry about more, the abuse of power. Lex Fridman: And AI increases the amount of power in the world. And if you concentrate that power and abuse that power, it can do immeasurable damage. Dario Amodei: Yes, it\u2019s very frightening. It\u2019s very frightening. Lex Fridman: The following is a conversation with Dario Amodei, CEO of Anthropic, the company that created Claude, that is currently and often at the top of most LLM benchmark leader boards.",
+          "score": 0.468878350575765,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.29478645324707
+        },
+        {
+          "chunk_id": 56964,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 125,
+          "text": "So I think RLHF unhobbles the models in some ways. And then there are other ways where that model hasn\u2019t yet been unhobbled and needs to unhobble. Lex Fridman: If you can say in terms of cost, is pre-training the most expensive thing? Or is post-training creep up to that? Dario Amodei: At the present moment, it is still the case that pre-training is the majority of the cost. I don\u2019t know what to expect in the future, but I could certainly anticipate a future where post-training is the majority of the cost. Lex Fridman: In that future you anticipate, would it be the humans or the AI that\u2019s the costly thing for the post-training? Dario Amodei: I don\u2019t think you can scale up humans enough to get high quality.",
+          "score": 0.4688062305450439,
+          "source": "bm25",
+          "quality_score": 0.84,
+          "original_score": 9.291695594787598
+        },
+        {
+          "chunk_id": 56924,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 85,
+          "text": "Dario Amodei: It\u2019s like a thing as old, people scamming each other, it\u2019s this thing as old as time. And it\u2019s just every time, you got to deal with it. Lex Fridman: It\u2019s almost silly to say, but it\u2019s true, sort of bots and spam in general is a thing as it gets more and more intelligent-\n\nDario Amodei: Yeah, yeah. Lex Fridman: \u2026 it\u2019s harder and harder to fight it. Dario Amodei: Like I said, there are a lot of petty criminals in the world and it\u2019s like every new technology is a new way for petty criminals to do something stupid and malicious. Lex Fridman: Is there any ideas about sandboxing it? How difficult is the sandboxing task? Dario Amodei: Yeah, we sandbox during training. So for example, during training we didn\u2019t expose the model to the internet. I think that\u2019s probably a bad idea during training because the model can be changing its policy, it can be changing what it\u2019s doing and it\u2019s having an effect in the real world.",
+          "score": 0.4417910563151042,
+          "source": "bm25",
+          "quality_score": 0.74,
+          "original_score": 9.41961669921875
+        },
+        {
+          "chunk_id": 56881,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 42,
+          "text": "Lex Fridman: Are we going to get it before GTA 6 or no? Dario Amodei: Like Duke Nukem Forever? Lex Fridman: Duke Nukem. Right. Dario Amodei: What was that game? There was some game that was delayed 15 years. Lex Fridman: That\u2019s right. Dario Amodei: Was that Duke Nukem Forever? Lex Fridman: Yeah. And I think GTA is now just releasing trailers. Dario Amodei: It\u2019s only been three months since we released the first Sonnet. Lex Fridman: Yeah, it\u2019s the incredible pace of release. Dario Amodei: It just tells you about the pace, the expectations for when things are going to come out.\n\n\n## Claude 4.0\n\nLex Fridman: So what about 4.0? So how do you think, as these models get bigger and bigger, about versioning and also just versioning in general, why Sonnet 3.5 updated with the date? Why not Sonnet 3.6, which a lot of people are calling it? Dario Amodei: Naming is actually an interesting challenge here, right? Because I think a year ago, most of the model was pre-training.",
+          "score": 0.44134833399454754,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 10.17207145690918
+        },
+        {
+          "chunk_id": 56976,
+          "episode_id": 452,
+          "guest": "Dario Amodei",
+          "chunk_index": 137,
+          "text": "But, you also get very serious about anything that could derail them. Lex Fridman: So I think the starting point is to talk about what this Powerful AI, which is the term you like to use, most of the world uses AGI, but you don\u2019t like the term, because it\u2019s basically has too much baggage, it\u2019s become meaningless. It\u2019s like we\u2019re stuck with the terms whether we like them or not. Dario Amodei: Maybe we\u2019re stuck with the terms and my efforts to change them are futile. Lex Fridman: It\u2019s admirable. Dario Amodei: I\u2019ll tell you what else I don\u2019t \u2026 This is a pointless semantic point, but I keep talking about it-\n\nLex Fridman: It\u2019s back to naming again. Dario Amodei: I\u2019m just going to do it once more. I think it\u2019s a little like, let\u2019s say it was like 1995 and Moore\u2019s law is making the computers faster. And for some reason there had been this verbal tick that everyone was like, \u201cWell, someday we\u2019re going to have supercomputers.",
+          "score": 0.42581006113688147,
+          "source": "bm25",
+          "quality_score": 0.68,
+          "original_score": 9.506145477294922
+        }
+      ],
+      "judge_feedback": "None of the retrieved chunks contain useful information about Anthropic's specific strategy to encourage *other* AI companies to prioritize safety, nor do they mention Constitutional AI. They focus on general concerns, internal development, and model naming.\n\nThe agent should search for information specifically on \"Anthropic's strategy to influence AI safety in other companies\" or \"Constitutional AI as a model for industry-wide safety standards.\"",
+      "timestamp": 13.074061870574951
+    },
+    {
+      "step_number": 3,
+      "tool_used": "bm25",
+      "query": "Nathan Lambert Dylan Patel Dario Amodei Anthropic Constitutional AI influence other companies safety standards",
+      "num_results": 0,
+      "results": [],
+      "judge_feedback": null,
+      "timestamp": 29.689017057418823
+    }
+  ],
+  "final_answer": "The provided context mentions Dario Amodei's concerns about the concentration and abuse of power with AI, and Anthropic's internal practice of sandboxing models during training by not exposing them to the internet. However, the retrieved information does not describe a specific strategy that Anthropic employs to encourage *other* AI companies to prioritize safety, nor the intended outcome of such an approach. Therefore, the context is insufficient to answer the question.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    459,
+    452
+  ],
+  "num_steps": 3,
+  "elapsed_seconds": 32.03303360939026
+}

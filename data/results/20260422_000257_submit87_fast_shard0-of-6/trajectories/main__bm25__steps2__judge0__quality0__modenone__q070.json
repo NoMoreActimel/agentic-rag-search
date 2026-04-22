@@ -1,0 +1,109 @@
+{
+  "question": "According to the Neuralink team, how many human participants have received implants as of the recording, and what is their target number of implants by the end of the year? How does Kelsi Sheren's age when she served in Afghanistan compare to these Neuralink figures?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "Neuralink human implants target number",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 54214,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 380,
+          "text": "Yeah, so for Noland, and for me playing this task, there\u2019s also different modes that you can configure this task. So the Webgrid task can be presented as just sort of a left click on the screen, or you could have targets that you just dwell over, or you could have targets that you left, right click on, you could have targets that are left, right click, middle click, scrolling, clicking and dragging. You can do all sorts of things within this general framework, but the simplest, purest form is just blue targets show up on the screen, blue means left click. That\u2019s the simplest form of the game. And the sort of prior records here in academic work and at Neuralink internally with NHPs have all been matched or beaten by Noland with his Neuralink device. So prior to Neuralink, the world record for a human using device is somewhere between 4.2 to 4.6 BPS, depending on exactly what paper you read and how you interpret it.",
+          "score": 7.9527058601379395,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54215,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 381,
+          "text": "Noland\u2019s current record is 8.5 BPS. and again, this sort of median Neuralinker performance is 10 BPS. So you can think of it roughly as, he\u2019s 85% the level of control of a median Neuralinker using their cursor to select blue targets on the screen. I think there\u2019s a very interesting journey ahead to get us to that same level of 10 BPS performance. It\u2019s not the case that the tricks that got us from 4 to 6 BPS, and then 6 to 8 BPS are going to be the ones that get us from 8 to 10. And in my view, the core challenge here is really the labeling problem. It\u2019s how do you understand, at a very, very fine resolution, what the user\u2019s attempting to do? And I highly encourage folks in academia to work on this problem. Lex Fridman: What\u2019s the journey with Noland on that quest of increasing the BPS on Webgrid? In March, you said that he selected 89,285 targets in Webgrid. So he loves this game, he\u2019s really serious about improving his performance in this game.",
+          "score": 6.072722911834717,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54250,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 416,
+          "text": "It also matters how difficult the task is. You can imagine some people might be able to do 10,000 targets on the screen, and maybe they can do better that way. So there\u2019s some task optimizations you could do to try to boost your performance as well. Lex Fridman: What do you think it takes for Noland to be able to do above 8.5, to keep increasing that number? You said every increase in the number\u2026\n\nLex Fridman: \u2026 to keep increasing that number. You said every increase in the number might require different improvements in the system. Bliss Chapman: Yeah. The first answer that\u2019s important to say is, I don\u2019t know. This is edge of the research so, again, nobody\u2019s gotten to that number before, so what\u2019s next is going to be a heuristic guess from my part. What we\u2019ve seen historically is that different parts of the stack can compile next to different time points. So when I first joined Neuralink, three years ago or so, one of the major problems was just the latency of the Bluetooth connection.",
+          "score": 6.0018310546875,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54296,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 462,
+          "text": "And they\u2019re like, \u201cThat\u2019s not how that works.\u201d I\u2019m like, \u201cIt works for me. Just don\u2019t stress and everything will be fine. Everything will work out.\u201d Obviously not everything always goes well, and it\u2019s not like it all works out for the best all the time, but I just don\u2019t think stress has had any place in my life since I was a kid.\n\n\n## First Neuralink human participant\n\nLex Fridman: What was the experience like of you being selected to be the first human being to have a Neuralink device implanted in your brain? Were you scared? Excited? Noland Arbaugh: No, no. It was cool. I was never afraid of it. I had to think through a lot. Should I do this? Be the first person? I could wait until number two or three and get a better version of the Neuralink. The first one might not work. Maybe it\u2019s actually going to kind of suck. It\u2019s going to be the worst version ever in a person, so why would I do the first one? I\u2019ve already kind of been selected?",
+          "score": 5.772748947143555,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 53867,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 33,
+          "text": "Let\u2019s say you look at this plant or whatever, and hey, I\u2019d really like to make that plant happy, but it\u2019s not saying a lot. Lex Fridman: So the more we increase the data rate that humans can intake and output, then that means the better, the higher the chance we have in a world full of AGI\u2019s. Elon Musk: Yeah. We could better align collective human will with AI if the output rate especially was dramatically increased. And I think there\u2019s potential to increase the output rate by, I don\u2019t know, three, maybe six, maybe more orders of magnitude. So, it\u2019s better than the current situation. Lex Fridman: And that output rate would be by increasing the number of electrodes, number of channels, and also maybe implanting multiple Neuralinks? Elon Musk: Yeah. Lex Fridman: Do you think there\u2019ll be a world in the next couple of decades where it\u2019s hundreds of millions of people have Neuralinks? Elon Musk: Yeah, I do.",
+          "score": 5.765732765197754,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.5408661365509033
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "Neuralink number of human implants target by year end",
+      "num_results": 2,
+      "results": [
+        {
+          "chunk_id": 53836,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 2,
+          "text": "So, first, let\u2019s step back, and big congrats on getting Neuralink implanted into a human. That\u2019s a historic step for Neuralink. Elon Musk: Thanks. Yeah. Lex Fridman: And there\u2019s many more to come. Elon Musk: Yeah. And we just obviously have our second implant as well. Lex Fridman: How did that go? Elon Musk: So far, so good. It looks like we\u2019ve got, I think, on the order of 400 electrodes that are providing signals. Lex Fridman: Nice. Elon Musk: Yeah. Lex Fridman: How quickly do you think the number of human participants will scale? Elon Musk: It depends somewhat on the regulatory approval, the rate at which we get regulatory approvals. So, we\u2019re hoping to do 10 by the end of this year, total of 10. So, eight more. Lex Fridman: And with each one, you\u2019re going to be learning a lot of lessons about the neurobiology of the brain, everything. The whole chain of the Neuralink, the decoding, the signal processing, all that kind of stuff. Elon Musk: Yeah. Yeah.",
+          "score": 7.203711032867432,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 54102,
+          "episode_id": 438,
+          "guest": "Elon Musk",
+          "chunk_index": 268,
+          "text": "The modern version of that is to use a robot. Just like a little Kuka arm you might see building cars at the Tesla factory, this small robot arm can show you the trajectory that you intended from the pre-op MRI and establish a very rigid holder through which you can drill a small hole in the skull and pass a small rigid wire deep into that area of the brain that\u2019s hollow, and put your electrode through that hollow wire and then remove all of that except the electrode. So you end up with the electrode very, very precisely placed far from the skull surface. Now, that\u2019s standard technology that\u2019s already been out in the world for a while. Neuralink right now is focused entirely on cortical targets, surface targets because there\u2019s no trivial way to get, say, hundreds of wires deep inside the brain without doing a lot of damage. So your question, what do you see? Well, I see an MRI on a screen. I can\u2019t see everything that DBS electrode is passing through on its way to that deep target.",
+          "score": 6.229730129241943,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 81.99458527565002
+    }
+  ],
+  "final_answer": "As of the recording, two human participants have received Neuralink implants. The Neuralink team is hoping to have a total of 10 implants by the end of the year. The provided context does not contain any information about Kelsi Sheren's age when she served in Afghanistan, so a comparison to Neuralink figures cannot be made.",
+  "total_chunks_retrieved": 7,
+  "unique_episodes_found": [
+    438
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 84.22453474998474
+}

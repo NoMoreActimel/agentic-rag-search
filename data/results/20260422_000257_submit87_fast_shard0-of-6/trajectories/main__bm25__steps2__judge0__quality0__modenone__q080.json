@@ -1,0 +1,143 @@
+{
+  "question": "Based on discussions about AI development, how many primary programming languages are explicitly mentioned for cognitive architectures like OpenCog, and how many distinct large language models (LLMs) are referenced by name when discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert?",
+  "steps": [
+    {
+      "step_number": 1,
+      "tool_used": "bm25",
+      "query": "OpenCog programming languages Sebastian Raschka Nathan Lambert",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 65933,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 293,
+          "text": "Nathan Lambert: I don\u2019t think it would be a company that exists. Sebastian Raschka: A new company. Nathan Lambert: I think it would be a different company that would rise. Sebastian Raschka: Like Silicon Graphics or something. Nathan Lambert: So yeah, some company that has died would have done it. Lex Fridman: But looking at it, it seems like these singular figures, these leaders, have a huge impact on the trajectory of the world. Obviously, incredible teams are behind them. But, you know, having that kind of very singular, almost dogmatic focus- \u2026is necessary to make progress. Sebastian Raschka: Yeah, I mean, even with GPT, it wouldn\u2019t exist if there wasn\u2019t a person, Ilya, who pushed for this scaling, right? Nathan Lambert: Yeah, Dario was also deeply involved in that.",
+          "score": 16.025163650512695,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65678,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 38,
+          "text": "Did you actually name LLaMA? Nathan Lambert: No. Lex Fridman: I feel like \u2026\n\nNathan Lambert: RIP. Sebastian Raschka: This was not on purpose. Lex Fridman: RIP LLaMA. All right. Can you mention what are some interesting models that stand out? You mentioned Qwen 3 is obviously a standout. Sebastian Raschka: So I would say the year\u2019s almost book-ended by DeepSeek-V3 and DeepSeek R1. And then on the other hand, in December, DeepSeek-V3.2. Because what I like about those is they always have an interesting architecture tweak- \u2026 that others don\u2019t have. But otherwise, if you want to go with the familiar but really good performance, Qwen 3 and, like Nathan said, also gpt-oss. And I think with gpt-oss, what\u2019s interesting about it is it\u2019s kind of the first open-weight model that was really trained with tool use in mind, which I do think is a bit of a paradigm shift where the ecosystem was not quite ready for it.",
+          "score": 13.094009399414062,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65865,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 225,
+          "text": "But will it do things independently where\u2026\n\nSebastian Raschka: Will you still have humans asking the AI to do something? Like will there be a person to say, \u201cBuild that website?\u201d Or will there be AI that just builds websites or something, or whatever? Lex Fridman: I think talking about building websites is the\u2014\n\nNathan Lambert: Too simple. Sebastian Raschka: Yeah. Sure. Lex Fridman: It\u2019s just that the problem with websites and the problem with the web, you know, HTML and all that kind of stuff, it\u2019s very resilient to just\u2014 slop. It will show you slop. It\u2019s good at showing slop. I would rather think of safety-critical systems, like asking AI to end-to-end generate something that manages logistics\u2014 or manages cars\u2014 a fleet of cars, all that kind of stuff. So it end-to-end generates that for you. Nathan Lambert: I think a more intermediate example is take something like Slack or Microsoft Word.",
+          "score": 12.880736351013184,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65895,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 255,
+          "text": "Nathan Lambert: And I personally would think that Google is probably going to be better at figuring out how to do this because they already have ad supply. If they figure out how to turn this demand in their Gemini app into useful ads, then they can turn it on. I don\u2019t know if I think it\u2019s this year, but there will be experiments with it. Sebastian Raschka: I do think what holds companies back right now is really just that the competition is not doing it. It\u2019s more like a reputation thing. I think people are just afraid right now of ruining their reputation or losing users- \u2026because it would make headlines if someone launched these ads. But-\n\nNathan Lambert: Unless they were great, but the first ads won\u2019t be great because it\u2019s a hard problem that we don\u2019t know how to solve. Sebastian Raschka: Yeah, I think also the first version of that will likely be something like on X, like the timeline where you have a promoted post sometimes in between.",
+          "score": 12.765832901000977,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 65892,
+          "episode_id": 490,
+          "guest": "State of AI in 2026",
+          "chunk_index": 252,
+          "text": "It is a very customized, on-the-fly package. Personalization is essentially like\u2014\n\n\n## How AI will make money? Sebastian Raschka: \u2026pulling information from the sparse internet, the non-information-dense thing where there\u2019s no better version that exists. You make it from scratch almost. Lex Fridman: And if it does exist, it\u2019s full of\u2014speaking of Disney World\u2014ad slop. Like any city in the world, if you ask \u201cwhat are the top 10 things to do?\u201d An LLM is just way better to ask\u2026 \u2026Than anything on the internet. Nathan Lambert: Well, for now, that\u2019s because they\u2019re massively subsidized, and eventually they\u2019re going to be paid for by ads. Lex Fridman: Oh my goodness. Nathan Lambert: It\u2019s coming. Lex Fridman: No. I\u2019m hoping there\u2019s a very clear indication of what\u2019s an ad and what\u2019s not an ad in that context, but\u2014\n\nSebastian Raschka: That\u2019s something I mentioned a few years ago. It\u2019s like, I don\u2019t know, if you are looking for a new running shoe, is it a coincidence that Nike maybe comes up first?",
+          "score": 12.469209671020508,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 1.917837142944336
+    },
+    {
+      "step_number": 2,
+      "tool_used": "bm25",
+      "query": "OpenCog programming languages",
+      "num_results": 5,
+      "results": [
+        {
+          "chunk_id": 8695,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 120,
+          "text": "So the natural question they ask is what advice would you give? I mean, maybe I could ask if people were interested in working on OpenCog or in some kind of direct or indirect connection to OpenCog or AGI research, what would you recommend? OpenCog, first of all, is open source project. There's a Google group discussion list. There's a GitHub repository. So if anyone's interested in lending a hand with that aspect of AGI, introduce yourself on the OpenCog email list. And there's a Slack as well. I mean, we're certainly interested to have inputs into our redesign process for a new version of OpenCog, but also we're doing a lot of very interesting research. I mean, we're working on data analysis for COVID clinical trials. We're working with Hanson Robotics. We're doing a lot of cool things with the current version of OpenCog now. So there's certainly opportunity to jump into OpenCog or various other open source AGI oriented projects.",
+          "score": 6.250426769256592,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8633,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 58,
+          "text": "So maybe this is a good chance to step back. You mentioned OpenCog 2.0, but... Go back to OpenCog 0.0, which exists now. Alpha, yeah. Yeah, maybe talk through the history of OpenCog and your thinking about these ideas. I would say OpenCog 2.0 is a term we're throwing around sort of tongue in cheek because the existing OpenCog system that we're working on now is not remotely close to what we'd consider a 1.0, right? I mean, it's an early... It's been around, what, 13 years or something, but it's still an early stage research system, right? And actually, we are going back to the beginning in terms of theory and implementation because we feel like that's the right thing to do, but I'm sure what we end up with is gonna have a huge amount in common with the current system. I mean, we all still like the general approach. So first of all, what is OpenCog?",
+          "score": 6.13538122177124,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8635,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 60,
+          "text": "No connectivity to the internet, or no, at birth. Yeah, I mean, SingularityNet is a separate project and a separate body of code. And you can use SingularityNet as part of the infrastructure for a distributed OpenCog system, but there are different layers. Yeah, got it. So OpenCog on the one hand as a software framework could be used to implement a variety of different AI architectures and algorithms, but in practice, there's been a group of developers which I've been leading together with Linus Vepstas, Neil Geisweiler, and a few others, which have been using the OpenCog platform and infrastructure to implement certain ideas about how to make an AGI. So there's been a little bit of ambiguity about OpenCog, the software platform versus OpenCog, the AGI design, because in theory, you could use that software to do, you could use it to make a neural net. You could use it to make a lot of different AGI.",
+          "score": 5.95247220993042,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8717,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 142,
+          "text": "Then your body interacts even more loosely with the other people that you talk to. So you often have networks within networks within networks with progressively looser coupling as you get higher up in that hierarchy. I mean, you have that in biology, you have that in the internet as a just networking medium. And I think that's what we're gonna have in the network of software processes leading to AGI. That's a beautiful way to see the world. Again, the same similar question is with OpenCog. If somebody wanted to build an AI system and plug into the SingularityNet, what would you recommend? Yeah, so that's much easier. I mean, OpenCog is still a research system. So it takes some expertise to, and sometimes, we have tutorials, but it's somewhat cognitively labor intensive to get up to speed on OpenCog. And I mean, what's one of the things we hope to change with the true AGI OpenCog 2.0 version is just make the learning curve more similar to TensorFlow or Torch or something.",
+          "score": 5.507433891296387,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        },
+        {
+          "chunk_id": 8676,
+          "episode_id": 103,
+          "guest": "Ben Goertzel",
+          "chunk_index": 101,
+          "text": "I mean, Hugo Latapie from Cisco gave a talk touching on that at last year's AGI conference, it was in Shenzhen. On the other hand, we learned from there, it was kind of clunky to get the deep neural models to work well with the symbolic system because we were using torch. And torch keeps a sort of state computation graph, but you needed like real time access to that computation graph within our hypergraph. And we certainly did it, Alexey Polopov who leads our St. Petersburg team wrote a great paper on cognitive modules in OpenCog explaining sort of how do you deal with the torch compute graph inside OpenCog. But in the end we realized like, that just hadn't been one of our design thoughts when we built OpenCog, right?",
+          "score": 5.267947673797607,
+          "source": "bm25",
+          "quality_score": null,
+          "original_score": null
+        }
+      ],
+      "judge_feedback": null,
+      "timestamp": 588.2371938228607
+    }
+  ],
+  "final_answer": "Only one primary programming language or framework, Torch, is explicitly mentioned as being used for cognitive architectures like OpenCog. When discussing the current state and future of AI with Sebastian Raschka and Nathan Lambert, eight distinct large language models are referenced by name: GPT, LLaMA, Qwen 3, DeepSeek-V3, DeepSeek R1, DeepSeek-V3.2, gpt-oss, and Gemini.",
+  "total_chunks_retrieved": 10,
+  "unique_episodes_found": [
+    490,
+    103
+  ],
+  "num_steps": 2,
+  "elapsed_seconds": 594.8619000911713
+}
