@@ -6,6 +6,21 @@
 
 **Grep (exact-match) retrieval benefits the most from iterativeness and process-level feedback in agentic RAG.** Evaluated on a proposed multi-hop Q&A dataset that controls for the model's pre-training knowledge, grep-like retrieval becomes almost equivalent to embedding-based and BM25 retrieval once the agent is allowed to iterate and receives in-context feedback from an LLM-as-a-Judge between retrieval steps.
 
+<table>
+<tr>
+<td width="50%" valign="top">
+<img src="data/results/submit87_fast_merged/analysis/plots/paper_clean/feedback_effect.png" width="100%">
+</td>
+<td width="50%" valign="top">
+<img src="data/results/submit87_fast_merged/analysis/plots/paper_clean/figure_2b_judge_score_feedback.png" width="100%">
+</td>
+</tr>
+<tr>
+<td valign="top"><sub><b>Figure 1.</b> Effect of process-level LLM-as-a-Judge feedback by retriever (Δ judge score, +fb − no fb). Grep benefits the most, embedding shows intermediate gains, and BM25 does not improve.</sub></td>
+<td valign="top"><sub><b>Figure 2b.</b> Judge score vs. max retrieval steps with process feedback. As steps increase, grep climbs to be comparable with BM25 and embedding.</sub></td>
+</tr>
+</table>
+
 ### Main takeaways
 
 - **Iteration + feedback close the gap for grep.** Grep starts as the weakest retriever at shallow depth (2 steps, no feedback) but climbs to be competitive with BM25 and embedding once retrieval depth increases and process feedback is added.
@@ -17,16 +32,6 @@
 - **Contamination check:** older (pre-cutoff) examples score *lower*, not higher, suggesting time-dependent distribution drift rather than pre-training leakage.
 
 The setup: a 36-condition grid (3 retrievers × max depth 2/3/4 × feedback on/off × quality-scores on/off) over 87 synthetic multi-hop Q&A items built from Lex Fridman podcast transcripts, evaluated with multi-metric reporting (LLM-as-judge, hallucination rate, reference-episode recall, F1/EM, success, cost/latency).
-
-### Figures
-
-**Judge score vs. retrieval steps** — grep (orange) climbs with depth and, with process feedback (right), converges toward BM25 and embedding:
-
-![Judge score vs iterations by retriever](data/results/submit87_fast_merged/analysis/plots/paper_clean/figure_1_judge_score.png)
-
-**Hallucination rate** — grep (red, no-feedback bars) starts high at 2 steps and drops sharply with more steps and process feedback:
-
-![Hallucination rate by retriever, steps, and feedback](data/results/submit87_fast_merged/analysis/plots/paper_clean/figure_2_hallucination.png)
 
 ## Problem
 
