@@ -1,5 +1,33 @@
 # Process-Level Feedback for Agentic Information Search
 
+> 📄 **Paper:** [**Process-Level Feedback and Retrieval Quality in Agentic Information Search**](paper.pdf) (Sedov, Singh, Jagtap — NYU). An arXiv preprint is on the way.
+
+## TL;DR
+
+**Grep (exact-match) retrieval benefits the most from iterativeness and process-level feedback in agentic RAG.** Evaluated on a proposed multi-hop Q&A dataset that controls for the model's pre-training knowledge, grep-like retrieval becomes almost equivalent to embedding-based and BM25 retrieval once the agent is allowed to iterate and receives in-context feedback from an LLM-as-a-Judge between retrieval steps.
+
+### Main takeaways
+
+- **Iteration + feedback close the gap for grep.** Grep starts as the weakest retriever at shallow depth (2 steps, no feedback) but climbs to be competitive with BM25 and embedding once retrieval depth increases and process feedback is added.
+- **Process feedback is conditional, not universal.** It helps grep the most, gives embedding intermediate gains, and barely moves BM25. Treat it as a tunable policy, not a default.
+- **Feedback and depth crush grep's hallucination.** Grep's hallucination rate falls from ~13% (2 steps, no feedback) toward ~1% with more steps and a process judge.
+- **Embedding is strongest overall** on quality indicators and most robust across conditions; it dominates aggregation-type questions where grep and BM25 struggle.
+- **Number of retrieval steps matters more than process feedback** for final performance, though the feedback contribution is still statistically significant.
+- **Query-independent chunk quality scores did not yield consistent gains** — likely because the Lex Fridman transcript corpus is already low-noise.
+- **Contamination check:** older (pre-cutoff) examples score *lower*, not higher, suggesting time-dependent distribution drift rather than pre-training leakage.
+
+The setup: a 36-condition grid (3 retrievers × max depth 2/3/4 × feedback on/off × quality-scores on/off) over 87 synthetic multi-hop Q&A items built from Lex Fridman podcast transcripts, evaluated with multi-metric reporting (LLM-as-judge, hallucination rate, reference-episode recall, F1/EM, success, cost/latency).
+
+### Figures
+
+**Judge score vs. retrieval steps** — grep (orange) climbs with depth and, with process feedback (right), converges toward BM25 and embedding:
+
+![Judge score vs iterations by retriever](data/results/submit87_fast_merged/analysis/plots/paper_clean/figure_1_judge_score.png)
+
+**Hallucination rate** — grep (red, no-feedback bars) starts high at 2 steps and drops sharply with more steps and process feedback:
+
+![Hallucination rate by retriever, steps, and feedback](data/results/submit87_fast_merged/analysis/plots/paper_clean/figure_2_hallucination.png)
+
 ## Problem
 
 Current RAG evaluations focus on final retrieval quality but ignore the *search process* — how an agentic system iteratively queries, evaluates, and refines its retrieval strategy. This project builds infrastructure for evaluating agentic RAG over podcast transcripts, where questions require multi-step reasoning across episodes.
